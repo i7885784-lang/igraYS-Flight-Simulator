@@ -1,0 +1,2 @@
+626bb9b703713bac9fc2bdeb2e43031360c22b0e87d026bf204ecac2c7543b31  YSFlight_UI_v3_32bit.zip
+4e50f2facf4c802effa5bcc4d0ddef34cbe903f34fa21fc88f25811b34d0d9e3  YSFlight_UI_v3_Sources.zip
