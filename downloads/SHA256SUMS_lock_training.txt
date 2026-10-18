@@ -1,0 +1,2 @@
+4c84b18090f12bbe1e85837b2b692f0bc7b5d836779ccdb80b7ac788521d4873  YSFlight_Lock_Test_32bit.zip
+a5c8de1ff4e8cc5c33b89d5429bbb4b8eecb937e9283cb4f465becf780f16199  YSFlight_Lock_Training.zip

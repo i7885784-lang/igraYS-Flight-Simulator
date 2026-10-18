@@ -1,0 +1,220 @@
+{
+  "ysflight32_gl1.exe": {
+    "sha256": "9094a8d6cb97aa4fcbdae79b1454f19d0015a2a5290454f555257124d63d1493",
+    "identical_to_published_v7": true,
+    "architecture": "PE32 i386"
+  },
+  "ysflight32_gl2.exe": {
+    "sha256": "5233383224ea8a9e56d5b51b46118b083b41179bac4db61943f33724bfa5d052",
+    "identical_to_published_v7": true,
+    "architecture": "PE32 i386"
+  },
+  "keyboard": {
+    "passed": true,
+    "normal_space_key": true,
+    "no_script_button_injection": true,
+    "initial_missile_preselected": true,
+    "reports": [
+      {
+        "time": 1.07,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 1.045,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 2.62,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 2.595,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 4.248,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 6.131,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 8.167,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      }
+    ]
+  },
+  "mouse": {
+    "passed": true,
+    "normal_space_key": true,
+    "no_script_button_injection": true,
+    "initial_missile_preselected": true,
+    "reports": [
+      {
+        "time": 1.058,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 1.033,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 2.71,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 2.685,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 4.046,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 6.075,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 8.078,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      }
+    ]
+  },
+  "manual": {
+    "passed": true,
+    "normal_space_key": true,
+    "no_script_button_injection": true,
+    "initial_missile_preselected": true,
+    "reports": [
+      {
+        "time": 1.06,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 1.035,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 2.581,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 2147483647.0,
+        "lock": 2.556,
+        "ready": 0.0,
+        "paused": 0.0
+      },
+      {
+        "time": 4.085,
+        "weapon": 1.0,
+        "aim9": 2.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 6.094,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 65573.0,
+        "target": 65573.0,
+        "lock": 3.0,
+        "ready": 1.0,
+        "paused": 0.0
+      },
+      {
+        "time": 8.093,
+        "weapon": 1.0,
+        "aim9": 1.0,
+        "aim9x": 2.0,
+        "aim120": 2.0,
+        "candidate": 2147483647.0,
+        "target": 2147483647.0,
+        "lock": 0.0,
+        "ready": 0.0,
+        "paused": 0.0
+      }
+    ]
+  },
+  "all_original_files_preserved": true,
+  "no_test_profiles_or_history": true,
+  "source_and_executables_unchanged": true,
+  "gui_open_and_fly_verified": true
+}
