@@ -1,0 +1,508 @@
+--- a/YSFLIGHT/runtime/language/en.uitxt
++++ b/YSFLIGHT/runtime/language/en.uitxt
+@@ -864,8 +864,8 @@
+ 
+ +show/tab #Airshow
+ +show/title #AIRSHOW - FLIGHT PAUSED
+-+show/unitColor #Smoke colour for aircraft
+-+show/palette #Palette
+++show/unitColor #1. Choose whose smoke colour to change
+++show/palette #2. Choose a colour
+ +show/white #White
+ +show/red #Red
+ +show/blue #Blue
+@@ -874,13 +874,13 @@
+ +show/pink #Pink
+ +show/cyan #Cyan
+ +show/orange #Orange
+-+show/supply #Show equipment: 500 flares and smoke oil
+-+show/all #Synchronize smoke and flares for all aircraft
+++show/supply #Add smoke oil and 500 flares per aircraft
+++show/all #Apply smoke and flares to the whole squad
+ +show/autoAB #Automatic reheat at full throttle (equipped jets)
+ +show/burstCount #Flares per burst (1-64)
+ +show/interval #Burst interval, ms
+ +show/sensitivity #Camera sensitivity, percent
+-+show/hint #F10: smoke / flares / camera target. F2: orbit camera.\nRight drag: rotate; wheel: zoom. RGB is separate for every aircraft.
+++show/hint #Before departure: choose aircraft, then colour. Smoke starts OFF.\nDuring flight: F10 opens buttons for smoke, flares and camera.
+ +show/keys #F10: airshow | F2: camera | right drag: rotate | wheel: zoom
+ +show/flare #Release flare burst
+ +show/smoke #Smoke on / off
+@@ -889,8 +889,8 @@
+ +show/camera #Camera target
+ +show/burst #Burst length
+ +show/stop #Stop flare burst
+-+show/close #Close (F10 / Esc)
+-+show/cameraHelp #F2: orbit camera; right drag: rotate 360 degrees; wheel: zoom. F1: cockpit.
+++show/close #Resume flight (F10 / Esc)
+++show/cameraHelp #F2: outside view | right drag: rotate | wheel: zoom | F1: cockpit
+ +v4/key/AIRSHOWMENU #Airshow menu
+ 
+ +show/allState #All aircraft. Selected / burst / camera: 
+@@ -898,3 +898,28 @@
+ 
+ +show/noFlares #No flares: enable show equipment before departure.
+ +show/noOil #No smoke oil: enable show equipment before departure.
+++show/menuGuide #Click a button or press 1-8. Close the menu to resume the show.
+++show/smokeOff #Switch smoke OFF
+++show/smokeOn #Switch smoke ON
+++show/scopeAll #Commands: WHOLE SQUAD
+++show/scopeOne #Commands: SELECTED AIRCRAFT
+++show/recipient #Commands to: 
+++show/wholeSquad #Whole squad
+++show/cameraState #Camera: 
+++show/burstState #Flares per burst: 
+++show/chooseRow #Click a row to command that aircraft alone:
+++show/playerName #Player
+++show/wingmanName #Wingman
+++show/isSmoking # - smoke ON
+++show/isNotSmoking # - smoke OFF
+++show/resumeHint #Commands run after closing. Set smoke colours before departure.
+++show/wing1 #Wingman 1
+++show/wing2 #Wingman 2
+++show/wing3 #Wingman 3
+++show/wing4 #Wingman 4
+++show/wing5 #Wingman 5
+++show/wing6 #Wingman 6
+++show/wing7 #Wingman 7
+++show/wing8 #Wingman 8
++
+++show/customColour #Optional: fine colour adjustment below (0-255)
+--- a/YSFLIGHT/runtime/language/ru.uitxt
++++ b/YSFLIGHT/runtime/language/ru.uitxt
+@@ -871,8 +871,8 @@
+ 
+ +show/tab #Авиашоу
+ +show/title #АВИАШОУ — ПОЛЁТ НА ПАУЗЕ
+-+show/unitColor #Цвет дыма для машины
+-+show/palette #Палитра
+++show/unitColor #1. Для кого выбираем цвет дыма
+++show/palette #2. Выбери цвет
+ +show/white #Белый
+ +show/red #Красный
+ +show/blue #Синий
+@@ -881,13 +881,13 @@
+ +show/pink #Розовый
+ +show/cyan #Бирюзовый
+ +show/orange #Оранжевый
+-+show/supply #Снаряжение для шоу: 500 ловушек и запас дыма
+-+show/all #Одновременный дым и ловушки у всего отряда
+++show/supply #Запас для шоу: дым и 500 ловушек каждому
+++show/all #Дым и ловушки сразу у всего отряда
+ +show/autoAB #Автофорсаж при полном газе (если есть у двигателя)
+ +show/burstCount #Ловушек в серии (1–64)
+ +show/interval #Интервал выпуска, мс
+ +show/sensitivity #Чувствительность камеры, %
+-+show/hint #F10: дым, ловушки, выбор машины для камеры. F2: внешний вид.\nПКМ: вращение; колесо: приближение. RGB — отдельно для каждой машины.
+++show/hint #Перед вылетом: выбери самолёт, затем цвет. Дым пока выключен.\nВ полёте нажми F10 — появятся кнопки дыма, ловушек и камеры.
+ +show/keys #F10: авиашоу | F2: камера | ПКМ: вращение | колесо: приближение
+ +show/flare #Серия тепловых ловушек
+ +show/smoke #Дым включить / выключить
+@@ -896,8 +896,8 @@
+ +show/camera #За кем следит камера
+ +show/burst #Изменить длину серии
+ +show/stop #Остановить выпуск ловушек
+-+show/close #Закрыть (F10 / Esc)
+-+show/cameraHelp #F2: внешний вид | ПКМ: вращение 360° | Колесо: расстояние | F1: кабина
+++show/close #Продолжить полёт (F10 / Esc)
+++show/cameraHelp #F2: снаружи | ПКМ: вращение | Колесо: ближе/дальше | F1: кабина
+ +v4/key/AIRSHOWMENU #Меню авиашоу
+ 
+ +show/allState #Все машины. Выбор / серия / камера: 
+@@ -905,3 +905,28 @@
+ 
+ +show/noFlares #Нет ловушек: включите снаряжение для шоу перед вылетом.
+ +show/noOil #Нет запаса дыма: включите снаряжение для шоу перед вылетом.
+++show/menuGuide #Нажми кнопку мышкой или цифру 1–8. Закрой меню, чтобы продолжить шоу.
+++show/smokeOff #Выключить дым
+++show/smokeOn #Включить дым
+++show/scopeAll #Команды: ВЕСЬ ОТРЯД
+++show/scopeOne #Команды: ОДИН САМОЛЁТ
+++show/recipient #Кому: 
+++show/wholeSquad #Весь отряд
+++show/cameraState #Камера: 
+++show/burstState #Ловушек в серии: 
+++show/chooseRow #Нажми строку — команды только этой машине:
+++show/playerName #Игрок
+++show/wingmanName #Ведомый
+++show/isSmoking # — дым ВКЛ
+++show/isNotSmoking # — дым ВЫКЛ
+++show/resumeHint #Команды начнутся после закрытия. Цвет дыма выбирается до вылета.
+++show/wing1 #Ведомый 1
+++show/wing2 #Ведомый 2
+++show/wing3 #Ведомый 3
+++show/wing4 #Ведомый 4
+++show/wing5 #Ведомый 5
+++show/wing6 #Ведомый 6
+++show/wing7 #Ведомый 7
+++show/wing8 #Ведомый 8
++
+++show/customColour #Необязательно: точная настройка цвета ниже (0–255)
+--- a/YSFLIGHT/src/autopilot/fsautopilot.cpp
++++ b/YSFLIGHT/src/autopilot/fsautopilot.cpp
+@@ -1714,7 +1714,7 @@
+ 	// It takes a second or so to recover from inverted position.  Take it into account.  Multiply 50% safety factor.
+ 	const double tRecoverBank=1.5*fabs(air.GetAttitude().b()/air.Prop().GetMaxRollRate());
+ 	const double altLossRecoverBank=vv*tRecoverBank;
+-	printf("tBankRecovery=%lf\n",tRecoverBank);
++	// Avoid printing terrain-recovery diagnostics every simulation step.
+ 
+ 
+ 	double descendingAngle,angularVelocity,t,r;
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
+@@ -331,6 +331,11 @@
+ // Slot error is available in FLIGHTCMD:REPORT.
+ 
+ 		radar=atan2(sqrt(dev.x()*dev.x()+dev.y()*dev.y()),YsAbs(dev.z()));
++
++        // Ordinary squads use one continuous controller in world height/yaw.
++        // The legacy mode-0 controller interprets offsets in the leader's rolled
++        // frame, which contradicts headingOnly goals and can command a dive.
++        if(headingOnly==YSTRUE && air.Prop().IsOnGround()!=YSTRUE)return YSOK;
+ 
+ 		const YsAtt3 *myAtt,*leadAtt;
+ 		myAtt=&air.GetAttitude();
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.h
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.h
+@@ -66,7 +66,8 @@
+ 	YsArray <int,6> afterTransFormationAirplane;
+ 	YsArray <YsVec3,6> afterTransFormationPos;
+ 
+-    bool safeGoalValid=false,recovering=false;
++    bool safeGoalValid=false,recovering=false,headingTracked=false;
++    double lastLeaderHeading=0.0,formationTurnRate=0.0;
+     YsVec3 safeGoal=YsOrigin();
+     double safeTerrain=0.0;
+     YSRESULT SafeFormationControl(FsAirplane &,FsSimulation *,double);
+--- a/YSFLIGHT/src/autopilot/fsformationsafety.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationsafety.cpp
+@@ -1,72 +1,83 @@
+ #include "fs.h"
+ #include "fsformationautopilot.h"
++
+ YSRESULT FsFormation::SafeFormationControl(FsAirplane &air,FsSimulation *sim,double dt)
+ {
+  auto &p=air.Prop();YsVec3 velocity,leadVelocity;p.GetVelocity(velocity);leader->Prop().GetVelocity(leadVelocity);
+- const double margin=YsGreater(12.0,air.GetApproximatedCollideRadius()*0.8);
++ const double margin=YsGreater(18.0,air.GetApproximatedCollideRadius()*0.8);
+  safeTerrain=sim->GetFieldElevation(air.GetPosition().x(),air.GetPosition().z());
+- // Look along velocity and the intended path, not only straight down.
+  for(int i=1;i<=8;++i){auto sample=air.GetPosition()+velocity*(i*0.5);safeTerrain=YsGreater(safeTerrain,sim->GetFieldElevation(sample.x(),sample.z()));}
+- bool collisionRisk=false;double avoidanceSign=1.0,closestRiskTime=4.0;
+  const double groundAtSlot=sim->GetFieldElevation(goal.x(),goal.z());goal.SetY(YsGreater(goal.y(),groundAtSlot+margin));
+- // Predict closest approach to nearby live aircraft. Different slots get a stable
+- // side/height priority so reciprocal avoidance does not oscillate.
++ if(!safeGoalValid){safeGoal=goal;safeGoalValid=true;}
++ else {auto move=goal-safeGoal;const double maxMove=YsGreater(80.0,leadVelocity.GetLength()*2.0)*dt;if(move.GetLength()>maxMove){move.Normalize();move*=maxMove;}safeGoal+=move;}
++ // A turning slot has its own velocity. Never copy the leader's pitch or roll.
++ const double heading=leader->GetAttitude().h();
++ if(headingTracked && dt>YsTolerance)
++ {
++  const double rate=atan2(sin(heading-lastLeaderHeading),cos(heading-lastLeaderHeading))/dt;
++  formationTurnRate+=(YsBound(rate,-0.25,0.25)-formationTurnRate)*dt/(0.7+dt);
++ }
++ lastLeaderHeading=heading;headingTracked=true;
++ auto slot=safeGoal-leader->GetPosition();
++ YsVec3 slotVelocity=leadVelocity+YsVec3(-slot.z()*formationTurnRate,0.0,slot.x()*formationTurnRate);
++ YsVec3 error=safeGoal-air.GetPosition(),correction=error/5.0+(slotVelocity-velocity)*1.2;correction.SetY(0.0);
++ const double correctionLimit=YsBound(leadVelocity.GetLength()*0.45,35.0,100.0);
++ if(correction.GetLength()>correctionLimit){correction.Normalize();correction*=correctionLimit;}
++ auto wantedVelocity=slotVelocity+correction;wantedVelocity.SetY(0.0);
++ // Keep moving toward the slot while separating intersecting approach paths.
++ double avoidance=0.0,closestTime=4.0;
+  for(auto other=sim->FindNextAirplane(nullptr);other;other=sim->FindNextAirplane(other))if(other!=&air && other->IsAlive()==YSTRUE)
+  {
+   const auto relative=other->GetPosition()-air.GetPosition();if(relative.GetSquareLength()>250000.0)continue;
+   YsVec3 ov;other->Prop().GetVelocity(ov);const auto rv=ov-velocity;
+   const double t=YsBound(-(relative*rv)/YsGreater(1.0,rv.GetSquareLength()),0.0,3.0);
+-  const auto closest=relative+rv*t;const double separation=YsGreater(35.0,(air.GetApproximatedCollideRadius()+other->GetApproximatedCollideRadius())*2.0);
+-  if(closest.GetLength()<separation)
++  const double separation=YsGreater(30.0,(air.GetApproximatedCollideRadius()+other->GetApproximatedCollideRadius())*1.5);
++  if((relative+rv*t).GetLength()<separation && (t>0.1 || relative.GetLength()<separation*0.75))
+   {
+-   collisionRisk=true;
+-   const double pairSign=(FsExistence::GetSearchKey(&air)<FsExistence::GetSearchKey(other) ? -1.0:1.0);
+-   if(t<closestRiskTime){closestRiskTime=t;avoidanceSign=pairSign;}
+-   YsVec3 away=-closest;away.SetY(0);if(away.Normalize()!=YSOK)away.Set(pairSign,0,0);
+-   goal+=away*(separation-closest.GetLength()+20.0);goal.AddY(12.0*(YsGreater(0,air.squadSlot)+1));
++   if(t<closestTime){closestTime=t;avoidance=(FsExistence::GetSearchKey(&air)<FsExistence::GetSearchKey(other) ? -1.0:1.0)*(30.0+5.0*YsGreater(0,air.squadSlot));}
+   }
+  }
+- const double downNow=YsGreater(0.0,-velocity.y());
+- const bool lowSlot=(goal.y()-groundAtSlot<200.0);
+- if(air.GetPosition().y()-safeTerrain>200.0+downNow*3.0 && collisionRisk && !recovering)
+- {
+-  p.NeutralDirectAttitudeControl();p.BankController(YsBound(air.GetAttitude().b(),-YsDegToRad(35.0),YsDegToRad(35.0)));
+-  ControlGForAltitude(air,sim,air.GetPosition().y()+avoidanceSign*45.0,0.0,3.0);
+-  p.SpeedController(YsGreater(p.GetEstimatedLandingSpeed()*1.35,leader->Prop().GetVelocity()));safeGoalValid=false;return YSOK;
+- }
+- if(air.GetPosition().y()-safeTerrain>200.0+downNow*3.0 && !collisionRisk && !recovering && !lowSlot){safeGoalValid=false;return YSERR;}
+- if(!safeGoalValid){safeGoal=goal;safeGoalValid=true;}
+- else {auto move=goal-safeGoal;const double maxMove=YsGreater(60.0,leadVelocity.GetLength()*1.8)*dt;if(move.GetLength()>maxMove){move.Normalize();move*=maxMove;}safeGoal+=move;}
+- const double down=YsGreater(0.0,-velocity.y());const double gLimit=YsBound(GetDefaultGLimit(air),2.0,7.0);
+- const double rollTime=YsAbs(air.GetAttitude().b())/YsDegToRad(70.0);
+- const double reserve=margin+down*(1.5+rollTime)+down*down/(2.0*YsGreater(3.0,(gLimit-1.0)*FsGravityConst*0.50));
+  const double clearance=air.GetPosition().y()-safeTerrain;
+- if(clearance<reserve && (down>1.0 || clearance<margin))recovering=true;
+- if(recovering && velocity.y()>1.0 && clearance>margin+8.0)recovering=false;
+- p.NeutralDirectAttitudeControl();
+- const double minSpeed=YsGreater(25.0,p.GetEstimatedLandingSpeed()*1.35);
++ const double down=YsGreater(0.0,-velocity.y()),bank=air.GetAttitude().b();
++ const double gLimit=YsBound(GetDefaultGLimit(air),2.0,6.0);
++ const double rollTime=YsAbs(bank)/YsDegToRad(70.0);
++ const double reserve=margin+down*(1.5+rollTime)+down*down/(2.0*YsGreater(3.0,(gLimit-1.0)*FsGravityConst*0.5));
++ if((clearance<reserve && (down>1.0 || clearance<margin)) || cos(bank)<0.2)recovering=true;
++ if(recovering && velocity.y()>0.0 && clearance>margin+20.0 && YsAbs(bank)<YsDegToRad(20.0))recovering=false;
++ p.NeutralDirectAttitudeControl();p.SetBrake(0.0);
++ const double weight=p.GetTotalWeight()*FsGravityConst;
++ // Reference landing speed alone is not a safe true-airspeed limit at altitude.
++ const double liftAt100=YsGreater(1.0,p.GetLift(p.GetCriticalAOA()*0.7,100.0));
++ const double levelSpeed=YsGreater(25.0,100.0*sqrt(weight*1.15/liftAt100));
++ const double availableG=p.GetLift(p.GetCriticalAOA()*0.8,p.GetVelocity())/YsGreater(1.0,weight);
++ const double minSpeed=levelSpeed/sqrt(YsGreater(0.4,cos(bank)));
+  if(recovering)
+  {
+-  p.BankController(0.0,YsDegToRad(100.0));p.SetSpoiler(0.0);p.SetBrake(0.0);
+-  const double bank=air.GetAttitude().b();
+-  p.GController(cos(bank)>0.3 ? YsBound(1.4+down*0.14,1.5,gLimit) : cos(bank)<-0.3 ? -0.5 : 0.0);
+-  p.SpeedController(YsGreater(minSpeed,leader->Prop().GetVelocity()));mode=FSFOMMODE_RECOVER_FROM_LOWALT;
++  p.BankController(0.0,YsDegToRad(100.0));p.SetSpoiler(0.0);
++  p.GController(cos(bank)>0.3 ? YsBound(1.6+down*0.18,1.6,gLimit) : cos(bank)<-0.3 ? -0.5 : 0.0);
++  p.SpeedController(YsGreater(minSpeed,leadVelocity.GetLength()));mode=FSFOMMODE_RECOVER_FROM_LOWALT;
+  }
+  else
+  {
+-  FollowTarget(air,sim,safeGoal,leader->GetAttitude(),leadVelocity,leader->Prop().GetG(),dt,gLimit,-1.0,YSFALSE);
+-  YsAtt3 heading=leader->GetAttitude();heading.SetP(0);heading.SetB(0);YsVec3 relative;heading.MulInverse(relative,safeGoal-air.GetPosition());
+-  double requested=leader->Prop().GetVelocity()+YsBound(relative.z()/8.0,-30.0,45.0);
+-  p.SpeedController(YsGreater(minSpeed,requested));
+-  if(clearance<150.0 || lowSlot)
+-  {
+-   YsVec3 local;air.GetAttitude().MulInverse(local,safeGoal+leadVelocity*1.0-air.GetPosition());
+-   double bearing=atan2(-local.x(),local.z());const double bankLimit=YsDegToRad(YsBound(20.0+clearance*0.25,20.0,55.0));
+-   p.BankController(YsBound(bearing*2.5,-bankLimit,bankLimit),YsDegToRad(60.0));
+-   const double floor=safeTerrain+margin;const double target=YsGreater(safeGoal.y(),floor);
+-   ControlGForAltitude(air,sim,target,YsBound(leadVelocity.y(),-8.0,12.0),gLimit);
+-  }
++  YsAtt3 yaw=air.GetAttitude();yaw.SetP(0.0);yaw.SetB(0.0);YsVec3 local;yaw.MulInverse(local,wantedVelocity);
++  const double bearing=atan2(-local.x(),local.z());
++  double bankLimit=YsSmaller(acos(1.0/(gLimit-0.3)),YsDegToRad(clearance<120.0 ? 35.0 : clearance<200.0 ? 55.0 : 75.0));
++  if(gLimit<3.1)bankLimit=YsSmaller(bankLimit,YsDegToRad(35.0));
++  bankLimit=YsSmaller(bankLimit,acos(1.0/YsGreater(1.01,availableG*0.85)));
++  if(p.GetVelocity()<minSpeed*1.05)bankLimit=YsSmaller(bankLimit,YsDegToRad(20.0));
++  const double feedforward=atan2(wantedVelocity.GetLength()*formationTurnRate,FsGravityConst);
++  p.BankController(YsBound(bearing*2.4+feedforward,-bankLimit,bankLimit),YsDegToRad(60.0));
++  const double targetHeight=YsGreater(safeGoal.y()+avoidance,safeTerrain+margin);
++  const double descent=YsBound((clearance-margin)/6.0,2.0,15.0);
++  const double desiredClimb=YsBound(leadVelocity.y()+(targetHeight-air.GetPosition().y())/6.0,-descent,20.0);
++  // Positive lift throughout normal following. The old pursuit path allowed -3G.
++  const double requestedG=(1.0+(desiredClimb-velocity.y())*0.15)/YsGreater(0.25,cos(bank));
++  p.GController(YsBound(requestedG,0.6,YsGreater(0.6,YsSmaller(gLimit,availableG*0.9))));
++  const double desiredSpeed=(YsAbs(bearing)>YsDegToRad(25.0) ? YsSmaller(leadVelocity.GetLength()*0.85,wantedVelocity.GetLength()) : wantedVelocity.GetLength());
++  p.SpeedController(YsGreater(minSpeed,desiredSpeed));
++  mode=(error.GetLength()<YsGreater(30.0,air.GetApproximatedCollideRadius()*1.5) && YsAbs(bearing)<YsDegToRad(12.0) ? FSFOMMODE_INPOSITION : FSFOMMODE_LOSTPOSITION);
+  }
++ p.SetGControllerAOALimit(-p.GetCriticalAOA()*0.4,p.GetCriticalAOA()*(recovering ? 0.95 : 0.8));
+  p.SetGear(leader->Prop().GetLandingGear());p.SetFlap(leader->Prop().GetFlap());p.SetRudder(0.0);p.SmartRudder(dt);
+  return YSOK;
+ }
+--- a/YSFLIGHT/src/config/fsoption.cpp
++++ b/YSFLIGHT/src/config/fsoption.cpp
+@@ -88,7 +88,7 @@
+ 	myD3dDriverSucks=YSFALSE;
+ 
+ 	fontName.Set("");
+-	fontHeight=12;
++	fontHeight=16;
+ 
+ 	languageType=AUTOMATIC;
+ }
+@@ -194,6 +194,7 @@
+ 			}
+ 		}
+ 		fclose(fp);
++        fontHeight=YsGreater(16,fontHeight);
+ 		return YSOK;
+ 	}
+ 	SetDefault();
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -72,24 +72,64 @@
+  if(replaying)return;
+  if(action==0){for(int i=0;i<9;++i)if(config.synchronized || i==selected){if(auto a=Aircraft(sim,i)){if(a->Prop().GetNumWeapon(FSWEAPON_FLARE)>0)remaining[i]=config.burst;else sim->AddTimedMessage(T("show/noFlares",L"No flares: enable show equipment before departure."));}}nextFlare=sim->GetClock();}
+  if(action==1){bool on=!smoke[selected];for(int i=0;i<9;++i)if(config.synchronized || i==selected){smoke[i]=on;if(auto a=Aircraft(sim,i)){if(on && a->Prop().GetSmokeOil()<=0.0){smoke[i]=false;sim->AddTimedMessage(T("show/noOil",L"No smoke oil: enable show equipment before departure."));}a->Prop().SetSmokeButton(smoke[i] ? YSTRUE : YSFALSE);}}}
+- if(action==2){for(int n=0;n<9;++n){selected=(selected+1)%9;if(Aircraft(sim,selected))break;}}
++ if(action==2){for(int n=0;n<9;++n){selected=(selected+1)%9;if(Aircraft(sim,selected))break;}config.synchronized=false;}
+  if(action==3)config.synchronized=!config.synchronized;
+- if(action==4){for(int n=0;n<9;++n){cameraUnit=(cameraUnit+1)%9;if(Aircraft(sim,cameraUnit))break;}}
++ if(action==4){for(int n=0;n<9;++n){cameraUnit=(cameraUnit+1)%9;if(Aircraft(sim,cameraUnit))break;}sim->SimProcessButtonFunction(FSBTF_OUTSIDEPLAYERVIEW,FSUSC_ENABLE);}
+  if(action==5){const int values[]={4,8,16,32,64};int n=0;while(n<5 && values[n]<=config.burst)++n;config.burst=values[n%5]; }
+  if(action==6)for(auto &n:remaining)n=0;
+ }
++namespace
++{
++struct ShowLayout
++{
++ int x,y,width,height,left,right,top,row;
++ ShowLayout(){int w,h;FsGetWindowSize(w,h);width=YsSmaller(1120,w-24);height=YsSmaller(650,h-24);x=(w-width)/2;y=(h-height)/2;left=x+20;right=x+width/2+10;top=y+100;row=YsSmaller(51,(height-170)/8);}
++};
++YsWString ShowUnitName(int i)
++{
++ YsWString name(T(i==0 ? "show/playerName" : "show/wingmanName",i==0 ? L"Player" : L"Wingman"));
++ if(i>0){YsString number;number.Printf(" %d",i);YsWString tail;tail.SetUTF8String(number);name.Append(tail);}return name;
++}
++}
+ void FsSimExtension_Airshow::DrawMenu(const FsSimulation *sim) const
+ {
+- int w,h;FsGetWindowSize(w,h);FsDrawRect(0,0,w,h,C(13,23,35),YSTRUE);FsDrawString(35,35,T("show/title",L"AIRSHOW - FLIGHT PAUSED"),YsWhite());
+- const wchar_t *names[]={T("show/flare",L"Release flare burst"),T("show/smoke",L"Toggle smoke"),T("show/unit",L"Select aircraft"),T("show/sync",L"All / selected"),T("show/camera",L"Camera target"),T("show/burst",L"Burst length"),T("show/stop",L"Stop flare burst"),T("show/close",L"Close (F10 / Esc)")};
+- for(int i=0;i<8;++i){FsDrawRect(35,85+i*49,510,126+i*49,C(36,72,92),YSTRUE);YsString n;n.Printf("%d: ",i+1);YsWString line;line.SetUTF8String(n);line.Append(names[i]);FsDrawString(48,96+i*49,line,YsWhite());}
+- YsString state;state.Printf("#%d | %d | #%d",selected,config.burst,cameraUnit);YsWString line(T(config.synchronized ? "show/allState" : "show/oneState",L"Aircraft / burst / camera: "));YsWString tail;tail.SetUTF8String(state);line.Append(tail);FsDrawString(550,95,line,YsYellow());
+- int y=145;for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i)){YsString s;s.Printf("#%d  %s   RGB %d/%d/%d   FLR %d",i,a->Prop().GetIdentifier(),config.rgb[i][0],config.rgb[i][1],config.rgb[i][2],a->Prop().GetNumWeapon(FSWEAPON_FLARE));FsDrawRect(530,y,542,y+15,C(config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]),YSTRUE);FsDrawString(550,y,s,YsWhite());y+=32;}
+- FsDrawString(35,h-70,T("show/cameraHelp",L"F2: orbit camera; right drag: rotate 360 degrees; wheel: zoom. F1: cockpit."),YsWhite());
+- int l,m,rr,x,y2;FsGetMouseState(l,m,rr,x,y2);FsDrawCircle(x,y2,5,YsWhite(),YSFALSE);
++ const ShowLayout l;const auto ink=C(25,30,35),paper=C(225,227,230),edge=C(105,112,120);
++ FsDrawRect(l.x,l.y,l.x+l.width,l.y+l.height,paper,YSTRUE);FsDrawRect(l.x,l.y,l.x+l.width,l.y+l.height,edge,YSFALSE);
++ FsDrawRect(l.x,l.y,l.x+l.width,l.y+42,C(50,64,78),YSTRUE);
++ FsDrawString(l.left,l.y+12,T("show/title",L"AIRSHOW - FLIGHT PAUSED"),YsWhite());
++ FsDrawString(l.left,l.y+57,T("show/menuGuide",L"Click a button or press its number. Close this menu to resume the show."),ink);
++ const wchar_t *names[]={T("show/flare",L"Release flare burst"),T(smoke[selected] ? "show/smokeOff" : "show/smokeOn",L"Smoke on / off"),T("show/unit",L"Select aircraft"),T(config.synchronized ? "show/scopeAll" : "show/scopeOne",L"Who receives commands"),T("show/camera",L"Camera target"),T("show/burst",L"Burst length"),T("show/stop",L"Stop flare burst"),T("show/close",L"Resume flight (F10 / Esc)")};
++ for(int i=0;i<8;++i)
++ {
++  int y=l.top+i*l.row;FsDrawRect(l.left,y,l.right-22,y+l.row-6,i==7 ? C(185,205,190) : C(248,249,250),YSTRUE);FsDrawRect(l.left,y,l.right-22,y+l.row-6,edge,YSFALSE);
++  YsString num;num.Printf("%d",i+1);YsWString key;key.SetUTF8String(num);FsDrawString(l.left+10,y+10,key,ink);FsDrawString(l.left+35,y+10,names[i],ink);
++ }
++ YsWString recipient(T("show/recipient",L"Commands to: "));recipient.Append(config.synchronized ? YsWString(T("show/wholeSquad",L"Whole squad")) : ShowUnitName(selected));FsDrawString(l.right,l.top,recipient,ink);
++ YsWString camera(T("show/cameraState",L"Camera: "));camera.Append(ShowUnitName(cameraUnit));FsDrawString(l.right,l.top+28,camera,ink);
++ YsString count;count.Printf("%d",config.burst);YsWString series(T("show/burstState",L"Flares per burst: "));YsWString number;number.SetUTF8String(count);series.Append(number);FsDrawString(l.right,l.top+56,series,ink);
++ FsDrawString(l.right,l.top+86,T("show/chooseRow",L"Click an aircraft below to command it alone:"),ink);
++ int y=l.top+115;const int row=YsSmaller(30,(l.height-290)/9);
++ for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))
++ {
++  if(i==selected && !config.synchronized)FsDrawRect(l.right-4,y-3,l.x+l.width-16,y+row-4,C(192,211,230),YSTRUE);
++  FsDrawRect(l.right,y+1,l.right+14,y+15,C(config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]),YSTRUE);FsDrawRect(l.right,y+1,l.right+14,y+15,edge,YSFALSE);
++  YsWString unit=ShowUnitName(i);unit.Append(smoke[i] ? T("show/isSmoking",L" - smoke ON") : T("show/isNotSmoking",L" - smoke OFF"));FsDrawString(l.right+23,y,unit,ink);y+=row;
++ }
++ FsDrawString(l.left,l.y+l.height-60,T("show/cameraHelp",L"F2: outside view | right drag: rotate | wheel: zoom | F1: cockpit"),ink);
++ FsDrawString(l.left,l.y+l.height-33,T("show/resumeHint",L"Commands run after closing the menu. Smoke colours are set before departure."),ink);
++ int lb,mb,rb,x,y2;FsGetMouseState(lb,mb,rb,x,y2);FsDrawCircle(x,y2,5,ink,YSFALSE);
+ }
+ void FsSimExtension_Airshow::Click(FsSimulation *sim,int x,int y)
+-{if(x>=35 && x<=510 && y>=85 && y<85+8*49){int i=(y-85)/49;if(i==7)menuOpen=false;else Command(sim,i);}}
++{
++ const ShowLayout l;
++ if(x>=l.left && x<=l.right-22 && y>=l.top && y<l.top+8*l.row)
++ {
++  int i=(y-l.top)/l.row;if((y-l.top)%l.row>l.row-6)return;
++  if(i==7)menuOpen=false;else Command(sim,i);return;
++ }
++ const int row=YsSmaller(30,(l.height-290)/9);int rowY=l.top+115;
++ for(int i=0;i<9;++i)if(Aircraft(sim,i)){if(x>=l.right && x<=l.x+l.width-16 && y>=rowY-3 && y<rowY+row-3){selected=i;config.synchronized=false;return;}rowY+=row;}
++}
+ void FsSimExtension_Airshow::CameraInput(int key,bool right,int x,int y)
+ {
+  if(key==FSKEY_WHEELUP)distance=YsBound(distance/1.12,10.0,10000.0);
+--- a/YSFLIGHT/src/core/fsairshow_setup.cpp
++++ b/YSFLIGHT/src/core/fsairshow_setup.cpp
+@@ -5,12 +5,14 @@
+ void FsGuiNewFlightDialogClass::MakeShowTab()
+ {
+  int tab=AddTab(mainTab,T("show/tab",L"Airshow"));BeginAddTabItem(mainTab,tab);
+- const wchar_t *units[]={T("v8/player",L"Player"),L"1",L"2",L"3",L"4",L"5",L"6",L"7",L"8"};
++ const wchar_t *units[]={T("v8/player",L"Player"),T("show/wing1",L"Wingman 1"),T("show/wing2",L"Wingman 2"),T("show/wing3",L"Wingman 3"),T("show/wing4",L"Wingman 4"),T("show/wing5",L"Wingman 5"),T("show/wing6",L"Wingman 6"),T("show/wing7",L"Wingman 7"),T("show/wing8",L"Wingman 8")};
+  AddStaticText(0,FSKEY_NULL,T("show/unitColor",L"Smoke colour for aircraft"),YSTRUE);
+- showUnit=AddDropList(MkId("showUnit"),FSKEY_NULL,L"",9,units,9,10,10,YSFALSE);
++ showUnit=AddDropList(MkId("showUnit"),FSKEY_NULL,L"",9,units,9,16,16,YSFALSE);
+  const wchar_t *palette[]={T("show/white",L"White"),T("show/red",L"Red"),T("show/blue",L"Blue"),T("show/green",L"Green"),T("show/yellow",L"Yellow"),T("show/pink",L"Pink"),T("show/cyan",L"Cyan"),T("show/orange",L"Orange")};
+- showPalette=AddDropList(MkId("showPalette"),FSKEY_NULL,T("show/palette",L"Palette"),8,palette,8,15,15,YSTRUE);
+- for(int i=0;i<3;++i){const char *labels[]={"R","G","B"};YsString id;id.Printf("showRGB%d",i);showRGB[i]=AddTextBox(MkId(id),FSKEY_NULL,FsGuiTextBox::HORIZONTAL,labels[i],"255",4,i==0 ? YSTRUE : YSFALSE);showRGB[i]->SetTextType(FSGUI_INTEGER);}
++ AddStaticText(0,FSKEY_NULL,T("show/palette",L"2. Choose a colour"),YSTRUE);
++ showPalette=AddDropList(MkId("showPalette"),FSKEY_NULL,T("show/palette",L"Palette"),8,palette,8,15,15,YSFALSE);
++ AddStaticText(0,FSKEY_NULL,T("show/customColour",L"Optional: fine colour adjustment below (0-255)"),YSTRUE);
++ for(int i=0;i<3;++i){const char *labels[]={"R (0-255)","G (0-255)","B (0-255)"};YsString id;id.Printf("showRGB%d",i);showRGB[i]=AddTextBox(MkId(id),FSKEY_NULL,FsGuiTextBox::HORIZONTAL,labels[i],"255",4,i==0 ? YSTRUE : YSFALSE);showRGB[i]->SetTextType(FSGUI_INTEGER);}
+  showSupply=AddTextButton(MkId("showSupply"),FSKEY_NULL,FSGUI_CHECKBOX,T("show/supply",L"Show equipment: 500 flares and smoke oil"),YSTRUE);showSupply->SetCheck(YSTRUE);
+  showSync=AddTextButton(MkId("showSync"),FSKEY_NULL,FSGUI_CHECKBOX,T("show/all",L"Synchronize smoke and flare bursts for all aircraft"),YSTRUE);showSync->SetCheck(YSTRUE);
+  showAutoAB=AddTextButton(MkId("showAutoAB"),FSKEY_NULL,FSGUI_CHECKBOX,T("show/autoAB",L"Automatic reheat at full throttle (equipped jets only)"),YSTRUE);showAutoAB->SetCheck(YSTRUE);
+--- a/YSFLIGHT/src/core/fssquadcommands.cpp
++++ b/YSFLIGHT/src/core/fssquadcommands.cpp
+@@ -309,6 +309,7 @@
+         currentTime,int(player->Prop().GetWeaponOfChoice()),player->Prop().GetNumWeapon(FSWEAPON_AIM9),
+         player->Prop().GetNumWeapon(FSWEAPON_AIM9X),player->Prop().GetNumWeapon(FSWEAPON_AIM120),playerLockCandidate,
+         player->Prop().GetAirTargetKey(),playerLockSeconds,playerLockReady ? 1 : 0,int(pause));
++    printf("V8LEADER h=%.3f b=%.3f p=%.3f y=%.3f speed=%.3f\n",YsRadToDeg(player->GetAttitude().h()),YsRadToDeg(player->GetAttitude().b()),YsRadToDeg(player->GetAttitude().p()),player->GetPosition().y(),player->Prop().GetVelocity());
+     auto members=GetPlayerSquad();printf("V7SQUAD count=%d\n",int(members.GetN()));
+     for(auto wing:members)
+     {
+@@ -319,6 +320,7 @@
+             wing->ysfId,wing->squadSlot,wing->squadTask,wing->GetAutopilot()!=nullptr ? int(wing->GetAutopilot()->Type()) : -1,
+             pos.x(),pos.y(),pos.z(),wing->squadOffset.x(),wing->squadOffset.y(),wing->squadOffset.z(),
+             (goal-pos).GetLength(),fm!=nullptr ? fm->mode : -1);
++        printf("V8FOLLOW slot=%d safe=%d agl=%.3f speed=%.3f bank=%.3f pitch=%.3f spoiler=%.3f alive=%d\n",wing->squadSlot,fm!=nullptr ? int(fm->headingOnly) : 0,wing->GetAGL(),wing->Prop().GetVelocity(),YsRadToDeg(wing->GetAttitude().b()),YsRadToDeg(wing->GetAttitude().p()),wing->Prop().GetSpoiler(),int(wing->IsAlive()));
+     }
+     if(auto op=FsGetOperation(this))op->Report(this);
+     if(auto show=FsGetAirshow(this))show->Report(this);
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.1";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif
+@@ -217,7 +217,7 @@
+ 	FsGuiObject::defAsciiRenderer=&fsAsciiRenderer;
+ 	FsGuiObject::defUnicodeRenderer=&fsUnicodeRenderer;
+ 
+-	FsSetFont(opt.fontName,opt.fontHeight);
++	FsSetFont(opt.fontName,YsGreater(16,opt.fontHeight));
+ 
+ 	FsLoadPlugIn();
+ 	FsApplyNonScreenOption(opt);
+--- a/YSFLIGHT/src/platform/common/fswindow.cpp
++++ b/YSFLIGHT/src/platform/common/fswindow.cpp
+@@ -6,6 +6,9 @@
+ 
+ #include "fsconfig.h"
+ #include "fsoption.h"
++#ifdef _WIN32
++#include <windows.h>
++#endif
+ #include "platform/common/fswindow.h"
+ 
+ 
+@@ -34,6 +37,21 @@
+ 			FsLoadWindowSize(x0,y0,wid,hei,prevWindowSizeFile);
+ 		}
+ 
++#ifdef _WIN32
++        // A saved window can belong to a monitor that is no longer connected.
++        x0=YsBound(x0,-100000,100000);y0=YsBound(y0,-100000,100000);
++        RECT rect={x0,y0,x0+YsBound(wid,320,16384),y0+YsBound(hei,240,16384)};
++        MONITORINFO monitor={};monitor.cbSize=sizeof(monitor);
++        if(GetMonitorInfo(MonitorFromRect(&rect,MONITOR_DEFAULTTONEAREST),&monitor))
++        {
++            const int availableW=monitor.rcWork.right-monitor.rcWork.left;
++            const int availableH=monitor.rcWork.bottom-monitor.rcWork.top;
++            wid=YsBound(wid,320,YsGreater(320,availableW-16));
++            hei=YsBound(hei,240,YsGreater(240,availableH-48));
++            x0=YsBound(x0,int(monitor.rcWork.left),YsGreater(int(monitor.rcWork.left),int(monitor.rcWork.right)-wid-16));
++            y0=YsBound(y0,int(monitor.rcWork.top),YsGreater(int(monitor.rcWork.top),int(monitor.rcWork.bottom)-hei-48));
++        }
++#endif
+ 		windowOpt.x0=x0;
+ 		windowOpt.y0=y0;
+ 		windowOpt.wid=wid;
+--- a/YSFLIGHT/src/platform/win32/fswin32.cpp
++++ b/YSFLIGHT/src/platform/win32/fswin32.cpp
+@@ -326,6 +326,7 @@
+ 
+ 	hMainWnd.hWnd=FsWin32GetMainWindowHandle();
+ 	hMainWnd.hDc=GetDC(hMainWnd.hWnd);
++    ShowWindow(hMainWnd.hWnd,IsIconic(hMainWnd.hWnd) ? SW_RESTORE : SW_SHOW);
+ 
+ 	FsWin32InitializeGraphicEngine(hMainWnd.hWnd,hMainWnd.hDc);  // <- This function is written in fswin32gl.cpp/fswin32bi.cpp
+ 	// FsWin32PrepareDirectDraw();

@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "duration": 144.576,
+  "wingmen": [
+    {
+      "slot": 0,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 24.67667286890802,
+      "max_pitch_degrees": 1.5032808262406434,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 67021.50868,
+        "y": 999.452091,
+        "z": -14324.71335,
+        "h": -1.74532926,
+        "pitch": 0.01914132,
+        "bank": 0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 1,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 29.417406452869564,
+      "max_pitch_degrees": 1.596731388542071,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66873.789591,
+        "y": 999.452081,
+        "z": -14298.66649,
+        "h": -1.74532926,
+        "pitch": 0.01913684,
+        "bank": -0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 2,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 53.15865868516448,
+      "max_pitch_degrees": 2.427049220174167,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66726.06832,
+        "y": 999.452083,
+        "z": -14272.619243,
+        "h": -1.74532926,
+        "pitch": 0.01913764,
+        "bank": 0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 3,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 54.493947139957186,
+      "max_pitch_degrees": 2.4114768002603064,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66578.349616,
+        "y": 999.452083,
+        "z": -14246.572451,
+        "h": -1.74532926,
+        "pitch": 0.01913581,
+        "bank": -0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 4,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 57.63408588096409,
+      "max_pitch_degrees": 2.49336908496056,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66430.628241,
+        "y": 999.452085,
+        "z": -14220.525186,
+        "h": -1.74532926,
+        "pitch": 0.0191366,
+        "bank": 0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 5,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 54.576592291200235,
+      "max_pitch_degrees": 2.3401807970232027,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66282.909954,
+        "y": 999.452086,
+        "z": -14194.478469,
+        "h": -1.74532926,
+        "pitch": 0.01913507,
+        "bank": -0.0,
+        "state": 0
+      }
+    },
+    {
+      "slot": 6,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 57.09210333015363,
+      "max_pitch_degrees": 2.4630905573190764,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 66135.188512,
+        "y": 999.452094,
+        "z": -14168.431189,
+        "h": -1.74532926,
+        "pitch": 0.01913743,
+        "bank": 1e-08,
+        "state": 0
+      }
+    },
+    {
+      "slot": 7,
+      "records": 2406,
+      "min_altitude": 995.727679,
+      "max_bank_degrees": 54.61489623867812,
+      "max_pitch_degrees": 2.4894322919502163,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 144.576,
+        "x": 65987.470669,
+        "y": 999.452093,
+        "z": -14142.384552,
+        "h": -1.74532926,
+        "pitch": 0.01913479,
+        "bank": -1e-08,
+        "state": 0
+      }
+    }
+  ]
+}
