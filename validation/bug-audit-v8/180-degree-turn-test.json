@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "actual_turn_degrees": -179.8907080948988,
+  "duration_s": 107.204,
+  "wingmen": 8,
+  "all_back_in_position": true,
+  "max_error_m": 54.836882696418414,
+  "members": [
+    {
+      "slot": 0,
+      "error_m": 7.632813376120984,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 1,
+      "error_m": 7.678283539280066,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 2,
+      "error_m": 15.256218409559601,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 3,
+      "error_m": 15.23037735650108,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 4,
+      "error_m": 54.836882696418414,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 5,
+      "error_m": 22.838767574834115,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 6,
+      "error_m": 30.463087518475845,
+      "mode": "INPOSITION",
+      "time": 107.204
+    },
+    {
+      "slot": 7,
+      "error_m": 30.449726569976125,
+      "mode": "INPOSITION",
+      "time": 107.204
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+YSFLIGHT
+VERSION 20181124
+YFSVERSION 20180930
+NETVERSION 20180930
+Depth Bits:   24
+Stencil Bits: 8
+Bit Depth=24
+Loading Sound Plug-In.
+Could not load Sound Plug-In : GetLastError=126
+Loading Voice Plug-In.
+Could not load Voice Plug-In : GetLastError=126
+Localization File: ru.uitxt
+Initialization Counter 0
+Initialization Counter 1
+Initialization Counter 2
+Free 452
+Free 458
+Free 464
+Free 470
+Free 476
+Free 482
+Free 488
+User YSFLIGHT Dir=C:\users\agent\Documents/YSFLIGHT.COM/YSFLIGHT
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 3
+Initialization Counter 4
+Date 20261019
+Initialization Counter 5
+Common YSFLIGHT Dir=
+Common YSFLIGHT Dir=.
+Detected Z:\workspace\ysflight-work\safe-launcher-test\startup_safe_config/20181124
+Date 20261019
+Initialization Counter 6
+Initialization Counter 7
+Initialization Counter 8
+The file does not have PNG signature.
