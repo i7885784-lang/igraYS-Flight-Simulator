@@ -1,0 +1,1 @@
+Native startup options verified against source. Separate config opened the main menu in Wine using Win64 build of the same sources. Screenshot: startup-safe-check.png. Win32 execution on actual Windows not available here. This is a diagnostic workaround; actual cause of reported invisible window is not confirmed. No game EXEs, user settings or history modified.
