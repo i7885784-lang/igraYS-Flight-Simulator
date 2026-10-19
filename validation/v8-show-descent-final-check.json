@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "initial_height_m": 200,
+  "final_height_m": 35.396,
+  "max_final_slot_error_m": 0.034,
+  "all_four_alive": true
+}

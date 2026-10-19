@@ -1,0 +1,52 @@
+YSFlight v8 Airshow — full native C++ changes relative to delivered v8.
+Same static MinGW i686 build, no engine change or extra DLLs. GL1 and GL2 targets
+are built sequentially; the separate Win64 GL1 build is for runtime validation.
+Keep -fno-delete-null-pointer-checks (legacy YsList sentinel). Full source trees,
+original modified files, diff, scripts, native records and results are included.
+
+New core/fsairshowconfig.h, fsairshow.{h,cpp}, fsairshow_setup.cpp; new
+native autopilot/fsformationsafety.cpp. Existing CMake lists include modules.
+AIRSHOW_V8 extension serializes per-unit RGB, burst count/interval, synchronized
+scope, show-equipment opt-in and orbit sensitivity. Its members are resolved by
+existing explicit squad metadata. Unrelated map aircraft are never included.
+Setup adds a native smoke generator only when none exists. Show supply uses
+500 finite native flares and at least 100 kg smoke oil (the stock aerobatic
+inventory), not a fictitious time quantity. Native fuel/weight/damage remain.
+Replay restores colours/generators without refilling ammunition or issuing AI
+or effect commands. History retry restores the starting setup as before.
+
+The show control hook runs after user/computer controls so player's smoke and
+auto reheat are not overwritten. Flares use native FireWeapon(FLARE), real finite
+inventory, simulation-clock scheduling, record and rendering. No missile physics
+or aircraft assets are replaced. Auto reheat at >98% throttle is configurable,
+manual-player-only and requires an equipped jet, excluding helicopters and AMX
+(non-reheat engine exception already present in v4 visual logic).
+
+F10 is AIRSHOWMENU appended to the enum, keeping prior key IDs. Migration replaces
+only the original F10 GHOSTVIEW or a free F10; other custom F10 bindings remain.
+AIRSHOWKEYSET preserves explicit remapping/unassignment. Enter wheel centre is
+an alternate entry. Menu pauses/restores local flight using existing wheel logic.
+Full circle formation commands and previous control options stay available.
+
+Orbit external view reuses native viewpoint/projection/rendering: unbounded yaw,
+pitch clamped before the poles, near-distance aircraft-size bound, terrain clamp,
+right-drag sensitivity, wheel zoom and squad target selection. Drag restores the
+cursor to its original position, preserves stick input and suppresses firing and
+weapon cycling. Native cockpit and other F2 views remain available.
+
+Regular heading-relative formations keep native guidance at safe height, with
+localized terrain and collision protection. Look-ahead samples four seconds of
+terrain along velocity; pull-out reserve includes sink rate, braking distance
+and roll recovery time. Low target slots use gentle altitude control across the
+approach rather than re-entering aggressive pursuit at a fixed height boundary.
+Collision avoidance uses predicted closest approach and deterministic pair
+priority/slot altitude offsets. Safe speed and category-dependent G limits guard
+heavy/utility types. Regular catch-up no longer uses inverted diving. Helicopter
+formation retains native thrust control with bounded gentle pitch/roll gains.
+Legacy scripted inverted aerobatics are not reclassified as regular formations.
+The mission button is removed; old mission-format save readers remain compatible.
+
+Limitations: this is a practical formation AI improvement, not exhaustive terrain,
+obstacle and aircraft certification. Damage/collisions remain possible. Ground
+taxi formation/automatic group landing are not introduced. Smoke/flares cost
+native rendering work; burst length and group size can be reduced on x86 PCs.

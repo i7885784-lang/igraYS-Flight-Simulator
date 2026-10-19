@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "all_five_flare_500_to_484": true,
+  "selected_only_second_burst_484_to_468": true,
+  "player_reheat_at_full_throttle": true,
+  "individual_rgb": true,
+  "orbit_heading_radians": 6.72,
+  "zoom_distance_m": 56.743
+}

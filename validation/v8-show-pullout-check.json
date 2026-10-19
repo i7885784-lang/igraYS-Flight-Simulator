@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "initial_pitch_deg": -12,
+  "all_four_wingmen_survived": true,
+  "aircraft": [
+    {
+      "name": "F-18E_SUPERHORNET TRUE SUBST:F-18C_HORNET",
+      "min_height_m": 34.804157,
+      "final_time": 41.402
+    },
+    {
+      "name": "F-18E_SUPERHORNET FALSE SUBST:F-18C_HORNET",
+      "min_height_m": 109.871639,
+      "final_time": 41.402
+    },
+    {
+      "name": "F-18E_SUPERHORNET FALSE SUBST:F-18C_HORNET",
+      "min_height_m": 116.354405,
+      "final_time": 41.402
+    },
+    {
+      "name": "F-18E_SUPERHORNET FALSE SUBST:F-18C_HORNET",
+      "min_height_m": 118.320513,
+      "final_time": 41.402
+    },
+    {
+      "name": "F-18E_SUPERHORNET FALSE SUBST:F-18C_HORNET",
+      "min_height_m": 118.320513,
+      "final_time": 41.402
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "three_alive": true,
+  "no_reheat": true,
+  "aircraft": [
+    {
+      "name": "UH-60_BLACKHAWK TRUE",
+      "max_roll_degrees": 0.0,
+      "duration": 46.557
+    },
+    {
+      "name": "AH-64_APACHE FALSE",
+      "max_roll_degrees": 8.91679892617222,
+      "duration": 46.557
+    },
+    {
+      "name": "AH-64_APACHE FALSE",
+      "max_roll_degrees": 9.004352033888367,
+      "duration": 46.557
+    }
+  ]
+}

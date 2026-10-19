@@ -1,0 +1,67 @@
+YSFlight v8 Airshow — 2026-10-19
+Functional checks used a separate Win64 GL1 build of the same source under Wine
+10/software OpenGL/Xvfb 1920x1080. They did not run the packaged 32-bit EXEs.
+
+PASSED
+- Native new-flight UI: four selected wingmen; distinct per-slot palette/RGB
+  values survived saving. The Russian Airshow tab and F10 panel were visually
+  inspected; supply, sync, auto reheat, burst length/interval and sensitivity
+  controls are present. Mission button is absent from the main screen.
+- Formation descent: player and four F18 followers descended from 200 m to
+  ~35.396 m over flat terrain, stayed airborne and held column positions. Final
+  four slot errors were ~0.034 m in the final 61-second check. Native record and
+  JSON evidence included. This is an easy steady descent, not a universal bound.
+- Pull-out: four followers initially at 150 m with -12 degree pitch all survived
+  a 41-second run. Their minimum recorded altitudes were 109.87–118.32 m; after
+  the protective action they continued following the leader. Native record kept.
+- Formation turn: eight regular followers completed a physical 180-degree turn
+  and returned to INPOSITION. See final JSON/log for actual slot error, duration
+  and membership; unrelated aircraft are excluded from squad counts.
+  Final native record: 107.204 s, heading -179.891 deg, all eight INPOSITION,
+  maximum slot error 54.837 m. The 90-second scripted phase was followed by
+  a physical Pause-key resume for ~15 seconds to let the last member settle.
+- Crossing paths: two fighters exchanged left/right formation positions and
+  remained alive; recorded minimum centre distance was 17.145 m. Avoidance is
+  gradual with physical response time, not a guaranteed separation boundary.
+- Helicopters: UH60 leader and two AH64 followers remained alive for 46.557 s.
+  Followers' maximum absolute banks were 8.917 / 9.004 degrees. No helicopter
+  reported afterburner activation. This does not test all helicopter manoeuvres.
+- Physical F10 opened the show menu on a legacy control profile. All five
+  aircraft dispensed native finite flares: 500 -> 484. A second burst for selected
+  wingman only changed its count to 468 while the others remained at 484.
+  Native smoke flags and distinct RGB colours were enabled for every member.
+- Manual player's reheat at full throttle: afterburner=1, throttle=1.0; external
+  screenshot shows both exhaust plumes on the player's F18. No helicopter flame
+  is added; existing jet/non-reheat/AMX visual policy remains in force.
+- Physical camera drag accumulated heading 6.720 radians (>360 degrees). Wheel
+  reduced distance from 100 to 56.743 m; menu changed focus to a wingman. Drag
+  cursor restoration and suppression of fire/weapon-cycle input are implemented.
+- Native YFS effect record contains MAXNMFLR/LOADWEPN/SMOKEOIL/SMOKECOL commands;
+  replay was opened and actual recorded smoke was visually inspected at 9.80 s.
+  Replay setup restores generators/colours without refilling flare ammunition.
+- Both x86 GL1/GL2 builds completed. Packaging separately verifies PE32/i386,
+  only system DLL imports, stripped code equality, original assets/config and
+  prior-v8/original-2018 EXE backups, paired translations, ZIP paths/CRC/manifest.
+
+DEFECTS FOUND DURING VALIDATION AND CORRECTED
+- Applying a new pursuit controller to every situation degraded distant recovery;
+  native guidance is retained at safe heights, with local protective overrides.
+- Native inverted catch-up and repeated aggressive pursuit of a low slot could
+  create a second dangerous dive. Low slots use gentle altitude guidance across
+  the approach; recovery reserve includes roll and vertical-velocity response.
+- Smoke oil is a WEIGHT in YSFlight. Final show equipment uses stock aerobatic
+  100 kg, not a time-like quantity. Correct inventory mass was retested.
+- Original F10 was GHOSTVIEW, not free. Migration replaces that standard binding,
+  respects other custom bindings and explicit AIRSHOWKEYSET changes; wheel
+  centre also opens the panel. Old control IDs remain unchanged.
+- Show equipment changed directly in properties was missing from native record
+  commands. Explicit load/oil commands now preserve recorded equipment/colours.
+
+LIMITATIONS
+Ready-made x86 executables must be checked on the user's Windows 10 32-bit.
+GL2, audio and performance on that machine were not runtime-tested here.
+No absolute crash-prevention guarantee: all terrain, buildings, wind, aircraft,
+engine failures and extreme manoeuvre combinations are not exhaustively tested.
+No ground-taxi formation, automatic group landing or invulnerability is added.
+Large flare/smoke displays use native rendering resources; use smaller bursts
+and groups on slow computers. Only the named functional scenarios were run.

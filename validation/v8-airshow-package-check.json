@@ -1,0 +1,72 @@
+{
+  "ysflight32_gl1.exe": {
+    "architecture": "PE32 i386",
+    "system_imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "bytes": 8012154,
+    "stripped_code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "architecture": "PE32 i386",
+    "system_imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "bytes": 8243940,
+    "stripped_code_matches_build": true
+  },
+  "original_game_files_changed": [
+    "ysflight32_gl1.exe",
+    "ysflight32_gl2.exe",
+    "language/en.uitxt",
+    "scenery/aomori.fld"
+  ],
+  "backups_match_previous_v8": true,
+  "original_exe_backups_preserved": true,
+  "game_zip_crc": true,
+  "game_zip_bytes": 27980649,
+  "changed_sources": [
+    "YSFLIGHT/runtime/language/en.uitxt",
+    "YSFLIGHT/runtime/language/ru.uitxt",
+    "YSFLIGHT/runtime/ys_timestamp.txt",
+    "YSFLIGHT/src/autopilot/CMakeLists.txt",
+    "YSFLIGHT/src/autopilot/fsformationautopilot.cpp",
+    "YSFLIGHT/src/autopilot/fsformationautopilot.h",
+    "YSFLIGHT/src/autopilot/fsformationsafety.cpp",
+    "YSFLIGHT/src/core/CMakeLists.txt",
+    "YSFLIGHT/src/core/fsairshow.cpp",
+    "YSFLIGHT/src/core/fsairshow.h",
+    "YSFLIGHT/src/core/fsairshow_setup.cpp",
+    "YSFLIGHT/src/core/fsairshowconfig.h",
+    "YSFLIGHT/src/core/fscontrol.cpp",
+    "YSFLIGHT/src/core/fscontrol.h",
+    "YSFLIGHT/src/core/fsdialog.h",
+    "YSFLIGHT/src/core/fsguinewflightdialog.cpp",
+    "YSFLIGHT/src/core/fsguinewflightdialog.h",
+    "YSFLIGHT/src/core/fssimextension.cpp",
+    "YSFLIGHT/src/core/fssimulation.cpp",
+    "YSFLIGHT/src/core/fssquadcommands.cpp",
+    "YSFLIGHT/src/gui/fsmenu.cpp",
+    "YSFLIGHT/src/gui/fsmenu_sim.cpp"
+  ]
+}
