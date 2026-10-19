@@ -1,0 +1,71 @@
+YSFLIGHT v8 — validation, 2026-10-19
+
+FUNCTIONAL RUNTIME: separate Win64 OpenGL 1 build of the same C++ sources,
+Wine 10, software OpenGL, Xvfb 1920x1080. Not the delivered x86 executables.
+
+PASS full authored mission through native menu and simulation:
+UH60 + 2 AH64, shared start at 180 m. Native AGM ammunition 2 -> 0 on each
+AH64, actual OP_AAA_1 destroyed (guards 1 -> 0). Transport auto-approached,
+landed at (48642.768,0.939,-11083.016), inside the authored LZ, touchdown
+vertical speed -0.32 m/s. Continuous landing 8.006 s -> operation victory.
+All three survived the full 283.237 s record; max absolute bank < 0.191 rad.
+Wingmen remained ~61.66 m above the ground during transport landing.
+Native result screen displayed mission complete, defence destroyed, transport
+protected and landed safely. See validation/mission-win.record.yfs and JSON.
+
+Three real defects found and corrected before delivery:
+- Empty target-tag lookup picked an unrelated unnamed stock tank. Reject empty
+  names before lookup and explicitly resolve authored live hostile defenders.
+- Native UH60 hover lateral gain rolled it over in transit; native formation
+  could also descend a wingman into the ground during delivery. Bounded native
+  attitude commands and a 60 m escort floor fixed the full repeated run.
+- MustTerminate originally hid the base const-pointer signature: victory HUD
+  worked but result did not open. Exact override + CanContinue terminal gating
+  fixed automatic end and was verified in the repeated complete mission.
+
+PASS failure: a validation-only fixture placed the same native AAA in range of
+a hovering transport. Native gunfire killed it, operation changed to status 2,
+and native result screen displayed failure. No debug damage command was used.
+
+PASS ordinary new-flight menu: choose 2 wingmen with NO advanced group boxes.
+Native saved starting positions were all 1000 m high and within 213 m of player.
+Unrelated stock map aircraft were excluded from this check by squad metadata.
+Separate starts are explicit opt-in; ground taxi formation is not implemented.
+
+PASS real GUI operation planner: invalid transport selection and an empty
+initial route kept the dialog open. Two mouse-selected map points were saved
+for the player. Native YFS save/load/save preserved all operation metadata,
+including Russian UTF-8 group names. Config and prior flight files retained.
+
+PASS physical F11 opens tactical map on a pre-v8 control profile. Native circle
+opened extra orders, selected group 2 and individual wingman 1. Map point was
+added and both group members followed route. Individual retreat changed only
+wingman 1; wingman 2 retained its route. Follow-group order to transport accepted;
+attempt to follow own group rejected without changing the earlier target group.
+Saved native record kept UNIT 0 task 7 / followGroup 1. Pause restored on exit.
+Screenshots show readable map, planner, recipients and command wheel.
+
+PASS main-menu Retry from an isolated history containing the completed mission:
+status reset to 0, guard 1, all 3 alive at original airborne start, AH64 ammunition
+restored to 2 each. No deletion-confirmation dialog.
+
+PASS AIM9 regression after changes to key-assignment migration: early FIREWEAPON
+and FIREAAM left 2 missiles; lock reached 3 seconds and ready=1; permitted fire
+used exactly one missile; pause did not advance acquisition. See saved log/JSON.
+Prior v7 full missile/squad tests remain in v7 source archive; not all repeated.
+
+PASS native replay: completed record opened, jumped to 120 seconds and played
+recorded movement. Operation orders remain disabled during replay; terminal
+mission HUD is hidden to avoid displaying a future victory at replay start.
+
+DELIVERY: both x86 GL1 and GL2 built successfully. Packaging separately verifies
+PE32/i386, only system imports, stripped .text equals build, unchanged original
+assets/config except previously documented AOMORI decoration removal, intact
+v7 and original EXE backups, resource pairs, unique ZIP paths/CRC, SHA256 manifest.
+
+LIMITS: packaged 32-bit EXEs cannot be run in this cloud Wine environment;
+the user must verify them on Windows 10 x86. GL2 and audible sound not run here.
+The complete mission run used the default three helicopters; all possible mixed
+models, weapons, weather and route combinations are not exhaustively tested.
+Tactical map is a position grid, not terrain imagery. There is one finished
+mission, no mission editor, ground taxi formation or dynamic campaign in v8.

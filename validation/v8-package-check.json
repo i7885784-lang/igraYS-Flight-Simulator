@@ -1,0 +1,74 @@
+{
+  "ysflight32_gl1.exe": {
+    "architecture": "PE32 i386",
+    "system_imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "bytes": 7963514,
+    "stripped_code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "architecture": "PE32 i386",
+    "system_imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "bytes": 8195300,
+    "stripped_code_matches_build": true
+  },
+  "original_game_files_changed": [
+    "ysflight32_gl1.exe",
+    "ysflight32_gl2.exe",
+    "language/en.uitxt",
+    "scenery/aomori.fld"
+  ],
+  "backups_match_v7": true,
+  "original_exe_backups_preserved": true,
+  "game_zip_crc": true,
+  "game_zip_bytes": 27785153,
+  "changed_sources": [
+    "YSFLIGHT/runtime/language/en.uitxt",
+    "YSFLIGHT/runtime/language/ru.uitxt",
+    "YSFLIGHT/runtime/ys_timestamp.txt",
+    "YSFLIGHT/src/core/CMakeLists.txt",
+    "YSFLIGHT/src/core/fscontrol.cpp",
+    "YSFLIGHT/src/core/fscontrol.h",
+    "YSFLIGHT/src/core/fsdialog.h",
+    "YSFLIGHT/src/core/fsguinewflightdialog.cpp",
+    "YSFLIGHT/src/core/fsguinewflightdialog.h",
+    "YSFLIGHT/src/core/fsoperation.cpp",
+    "YSFLIGHT/src/core/fsoperation.h",
+    "YSFLIGHT/src/core/fsoperation_setup.cpp",
+    "YSFLIGHT/src/core/fssimextension.cpp",
+    "YSFLIGHT/src/core/fssiminfo.cpp",
+    "YSFLIGHT/src/core/fssimulation.cpp",
+    "YSFLIGHT/src/core/fssimulation.h",
+    "YSFLIGHT/src/core/fssquadcommands.cpp",
+    "YSFLIGHT/src/gui/CMakeLists.txt",
+    "YSFLIGHT/src/gui/fsguimaincanvas.h",
+    "YSFLIGHT/src/gui/fsmenu.cpp",
+    "YSFLIGHT/src/gui/fsmenu.h",
+    "YSFLIGHT/src/gui/fsmenu_sim.cpp",
+    "YSFLIGHT/src/gui/fsmissionmenu.cpp",
+    "YSFLIGHT/src/ui/fsrunloop.cpp"
+  ]
+}

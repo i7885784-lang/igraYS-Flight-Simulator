@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "status": 1,
+  "landing_seconds": 8.006,
+  "real_native_agm_combat": true,
+  "all_three_alive_at_end": true,
+  "units": [
+    {
+      "name": "UH-60_BLACKHAWK TRUE",
+      "samples": 4158,
+      "last_time": 283.237,
+      "last_position": [
+        48642.767866,
+        0.939482,
+        -11083.015702
+      ],
+      "max_abs_roll": 0.17810772
+    },
+    {
+      "name": "AH-64_APACHE FALSE",
+      "samples": 4319,
+      "last_time": 283.237,
+      "last_position": [
+        48556.084876,
+        61.658932,
+        -11173.522366
+      ],
+      "max_abs_roll": 0.19025114
+    },
+    {
+      "name": "AH-64_APACHE FALSE",
+      "samples": 4319,
+      "last_time": 283.237,
+      "last_position": [
+        48736.088721,
+        61.659937,
+        -11173.552043
+      ],
+      "max_abs_roll": 0.19031593
+    }
+  ]
+}

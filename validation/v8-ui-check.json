@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "physical_f11_opens_map": true,
+  "circle_group_and_individual_scopes": true,
+  "group_route_and_individual_retreat_isolated": true,
+  "follow_group_order": true,
+  "rejected_same_group_retains_previous_follow_group": 1,
+  "unicode_group_save_load": true,
+  "planner_route_clicks_saved": 2,
+  "invalid_transport_and_empty_route_keep_dialog_open": true
+}

@@ -1,0 +1,36 @@
+YSFlight UI v8: C++11 native simulation extension, no new engine or DLL.
+New core/fsoperation.{h,cpp}, core/fsoperation_setup.cpp, gui/fsmissionmenu.cpp.
+Core/gui CMake source lists include the new modules; build-x86.sh unchanged.
+Build GL1 and GL2 sequentially using the existing static MinGW x86 toolchain.
+Keep -fno-delete-null-pointer-checks for the legacy YsList null-this sentinel.
+Runtime uses only original aircraft, AAA, weapons, field and native physics.
+
+SQUAD_OPERATION_V8 extension serializes authored landing/rally points, guards,
+group names, per-unit orders, routes and terminal state into standard YFS.
+Replay does not issue orders or alter physics. Retry uses the history start file.
+Native mission goal success is gated by actual operation victory, preventing
+premature success from merely landing elsewhere or aborting a flight.
+Victory requires guards dead, transport grounded/still in 130 m for 8 seconds.
+Loss of player/transport fails. Terminal result ends the simulation after 8 s.
+MustTerminate/CanContinue overrides use the native const-pointer signatures.
+
+Helicopter ground attack uses native AGM65 firing, ammunition and damage.
+Empty ground tags are never looked up (native lookup of an empty tag returns
+an unrelated unnamed stock object). Native fixed-wing ground attack remains.
+OperationHover reuses native thrust/vertical control with bounded attitude
+commands; native lateral attitude gains could flip a heavy UH60 during transit.
+Following helicopters hold at least 60 m AGL while the transport lands.
+Fixed wing cannot hover in a slow helicopter formation: it orbits nearby.
+
+F11 is a new remappable control enum at the end, preserving prior IDs. Old
+profiles receive F11 only if free; TACTICALKEYSET preserves explicit unassignment.
+The mapping is rebuilt immediately after migration. Command wheel scopes filter
+existing squad orders and new operation tasks; routes have 16-point maximum.
+Group-follow rejects dead/empty targets, self-group and cyclic dependencies.
+Shared airborne start is default for selected wingmen, with explicit separate
+start opt-in. UI slot indices remain stable with disabled gaps.
+
+Automation OPORDER/OPSCOPE calls production order functions; REPORT is read-only.
+No debug damage shortcut or teleportation is used to complete the mission test.
+Package x86 executables only; Win64 binary is used solely for Wine validation.
+Original assets/config, original EXE backups and previous v7 rollback retained.
