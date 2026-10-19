@@ -1,0 +1,262 @@
+{
+  "passed": true,
+  "duration": 110.344,
+  "wingmen": [
+    {
+      "slot": 0,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 77.10916770931267,
+      "max_pitch_degrees": 16.65403474260594,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61921.9554,
+        "y": 999.795715,
+        "z": -13425.422054,
+        "h": -1.74565649,
+        "pitch": 0.01904181,
+        "bank": 0.00072164,
+        "state": 0
+      }
+    },
+    {
+      "slot": 1,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 76.48739505595229,
+      "max_pitch_degrees": 16.662133501040113,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61774.199826,
+        "y": 999.795693,
+        "z": -13399.567736,
+        "h": -1.74501467,
+        "pitch": 0.01902988,
+        "bank": -0.0007063,
+        "state": 0
+      }
+    },
+    {
+      "slot": 2,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 76.25934868616551,
+      "max_pitch_degrees": 16.75205177853456,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61626.509543,
+        "y": 999.795694,
+        "z": -13373.347343,
+        "h": -1.74549842,
+        "pitch": 0.01903007,
+        "bank": 0.00018901,
+        "state": 0
+      }
+    },
+    {
+      "slot": 3,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 76.49000430575131,
+      "max_pitch_degrees": 16.642269627240722,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61478.771442,
+        "y": 999.795596,
+        "z": -13347.352699,
+        "h": -1.74523473,
+        "pitch": 0.01899635,
+        "bank": -0.00056303,
+        "state": 0
+      }
+    },
+    {
+      "slot": 4,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 76.25400069810576,
+      "max_pitch_degrees": 17.959249788647806,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61331.054986,
+        "y": 999.795588,
+        "z": -13321.282078,
+        "h": -1.74571669,
+        "pitch": 0.01898939,
+        "bank": 0.00130003,
+        "state": 0
+      }
+    },
+    {
+      "slot": 5,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 77.0776533117071,
+      "max_pitch_degrees": 16.45815021273323,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61183.300465,
+        "y": 999.795619,
+        "z": -13295.43818,
+        "h": -1.7444607,
+        "pitch": 0.0189975,
+        "bank": -0.00263174,
+        "state": 0
+      }
+    },
+    {
+      "slot": 6,
+      "records": 1815,
+      "min_altitude": 995.473028,
+      "max_bank_degrees": 76.44458364950013,
+      "max_pitch_degrees": 19.621347640205176,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 110.344,
+        "x": 61035.634062,
+        "y": 999.795599,
+        "z": -13269.07781,
+        "h": -1.74621379,
+        "pitch": 0.01898673,
+        "bank": 0.00266176,
+        "state": 0
+      }
+    }
+  ],
+  "cover_cancelled": true,
+  "loss_compacted": [
+    [
+      "6",
+      "0"
+    ],
+    [
+      "7",
+      "1"
+    ],
+    [
+      "8",
+      "2"
+    ],
+    [
+      "10",
+      "3"
+    ],
+    [
+      "11",
+      "4"
+    ],
+    [
+      "12",
+      "5"
+    ],
+    [
+      "13",
+      "6"
+    ]
+  ],
+  "break_starts": [
+    [
+      30.157,
+      0
+    ],
+    [
+      30.948,
+      1
+    ],
+    [
+      31.746,
+      2
+    ],
+    [
+      32.538,
+      3
+    ],
+    [
+      33.34,
+      4
+    ],
+    [
+      34.138,
+      5
+    ],
+    [
+      34.955,
+      6
+    ],
+    [
+      35.736,
+      7
+    ]
+  ],
+  "break_returns": [
+    [
+      38.142,
+      0
+    ],
+    [
+      38.954,
+      1
+    ],
+    [
+      39.742,
+      2
+    ],
+    [
+      40.533,
+      3
+    ],
+    [
+      41.333,
+      4
+    ],
+    [
+      42.135,
+      5
+    ],
+    [
+      42.951,
+      6
+    ],
+    [
+      43.744,
+      7
+    ]
+  ],
+  "leader_speed": 150.001,
+  "follower_speeds": [
+    149.997,
+    149.997,
+    149.997,
+    149.998,
+    149.998,
+    149.998,
+    149.998
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "duration": 40.03,
+  "wingmen": [
+    {
+      "slot": 0,
+      "records": 661,
+      "min_altitude": 115.435124,
+      "max_bank_degrees": 15.790077412906122,
+      "max_pitch_degrees": 13.49301455475549,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 40.03,
+        "x": -2.523131,
+        "y": 147.789438,
+        "z": 7939.068054,
+        "h": 0.01134948,
+        "pitch": -0.05944068,
+        "bank": -0.05958613,
+        "state": 0
+      }
+    },
+    {
+      "slot": 1,
+      "records": 661,
+      "min_altitude": 118.618775,
+      "max_bank_degrees": 5.153997728349095,
+      "max_pitch_degrees": 13.440658817352025,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 40.03,
+        "x": -0.561704,
+        "y": 147.842534,
+        "z": 7788.372246,
+        "h": 0.00418446,
+        "pitch": -0.05955242,
+        "bank": -0.0200425,
+        "state": 0
+      }
+    },
+    {
+      "slot": 2,
+      "records": 661,
+      "min_altitude": 118.618775,
+      "max_bank_degrees": 5.131564138838543,
+      "max_pitch_degrees": 13.433453873078255,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 40.03,
+        "x": 0.573953,
+        "y": 147.825463,
+        "z": 7638.402208,
+        "h": -0.00408955,
+        "pitch": -0.05951756,
+        "bank": 0.01971702,
+        "state": 0
+      }
+    },
+    {
+      "slot": 3,
+      "records": 661,
+      "min_altitude": 118.618775,
+      "max_bank_degrees": 15.188447090833566,
+      "max_pitch_degrees": 13.366134769897153,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 40.03,
+        "x": 1.8023,
+        "y": 147.799374,
+        "z": 7488.541786,
+        "h": -0.01155017,
+        "pitch": -0.05944845,
+        "bank": 0.05663904,
+        "state": 0
+      }
+    }
+  ]
+}

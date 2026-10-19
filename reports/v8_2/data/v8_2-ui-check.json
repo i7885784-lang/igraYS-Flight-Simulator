@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "flare_counts": [
+    {
+      "0": 500,
+      "1": 500,
+      "2": 500
+    },
+    {
+      "0": 484,
+      "1": 500,
+      "2": 500
+    },
+    {
+      "0": 468,
+      "1": 484,
+      "2": 484
+    }
+  ],
+  "colour_after_click": [
+    "255",
+    "215",
+    "0"
+  ],
+  "player_flap_values_during_hotkeys": [
+    0
+  ],
+  "hotkeys_do_not_lower_flaps": true
+}

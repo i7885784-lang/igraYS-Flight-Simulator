@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "duration": 29.986,
+  "wingmen": [
+    {
+      "slot": 0,
+      "records": 500,
+      "min_altitude": 200.0,
+      "max_bank_degrees": 8.938909940444113,
+      "max_pitch_degrees": 0.1315006894760655,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 29.986,
+        "x": 25.043512,
+        "y": 201.970623,
+        "z": -148.351091,
+        "h": 0.00013469,
+        "pitch": 0.00033651,
+        "bank": 0.03780606,
+        "state": 0
+      }
+    },
+    {
+      "slot": 1,
+      "records": 500,
+      "min_altitude": 200.0,
+      "max_bank_degrees": 9.02711106342655,
+      "max_pitch_degrees": 8.218452182365992,
+      "states_after_start": [
+        0
+      ],
+      "final_mode": "INPOSITION",
+      "final": {
+        "time": 29.986,
+        "x": -24.739074,
+        "y": 204.107914,
+        "z": -330.380956,
+        "h": 0.00903042,
+        "pitch": -0.05111928,
+        "bank": -0.03776153,
+        "state": 0
+      }
+    }
+  ]
+}

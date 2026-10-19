@@ -1,0 +1,78 @@
+{
+  "turn-braking": {
+    "min_pair_distance_m": 43.498463516277944,
+    "min_height_m": 9916.495709,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ]
+  },
+  "pullout": {
+    "min_pair_distance_m": 149.78618000243787,
+    "min_height_m": 115.435124,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ]
+  },
+  "descent": {
+    "min_pair_distance_m": 149.99991335744144,
+    "min_height_m": 35.420757,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ]
+  },
+  "crossing": {
+    "min_pair_distance_m": 60.446487957681455,
+    "min_height_m": 981.075185,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION"
+    ]
+  },
+  "heli": {
+    "min_pair_distance_m": 122.35871016120242,
+    "min_height_m": 200.0,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION"
+    ]
+  },
+  "height": {
+    "min_pair_distance_m": 149.9999999999991,
+    "min_height_m": 1000.204799,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "final_height_difference_m": 0.03489400000000842
+  },
+  "vee": {
+    "min_pair_distance_m": 183.84953708419656,
+    "min_height_m": 994.547789,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "break_start_spread_seconds": 0.0
+  }
+}
