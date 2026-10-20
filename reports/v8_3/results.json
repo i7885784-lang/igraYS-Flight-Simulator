@@ -1,0 +1,513 @@
+{
+  "dense": {
+    "required_clearance": 20.0,
+    "count": 8,
+    "duration": 30.018,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 49.977527499206296,
+    "max_height_difference_after_5s": 0.07072299999992993,
+    "final": {
+      "time": 30.018,
+      "max_error": 0.010874097295926302,
+      "max_height_difference": 0.010874000000058004
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "max_bank_after_5s_degrees": 0.0,
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "no_uncommanded_climb": true,
+      "no_uncommanded_roll": true
+    },
+    "passed": true
+  },
+  "turn": {
+    "required_clearance": 20.0,
+    "count": 8,
+    "duration": 90.027,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 40.74046184924114,
+    "max_height_difference_after_5s": 19.033653999999956,
+    "final": {
+      "time": 90.027,
+      "max_error": 0.008728072566400668,
+      "max_height_difference": 0.008728000000019165
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "rapid_response": true
+    },
+    "passed": true,
+    "response": {
+      "leader_bank_onset": 10.274,
+      "follower_bank_onsets": [
+        10.945,
+        10.945,
+        10.945,
+        11.001,
+        11.001,
+        11.053,
+        11.121,
+        11.186
+      ],
+      "max_response_delay": 0.9120000000000008,
+      "leader_turn_finished": 26.733,
+      "all_slots_within_10m_from": 44.078,
+      "seconds_after_leader_finished": 17.345000000000002
+    }
+  },
+  "vertical": {
+    "required_clearance": 20.0,
+    "count": 8,
+    "duration": 90.044,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 36.8810188987689,
+    "max_height_difference_after_5s": 7.094677000000047,
+    "final": {
+      "time": 90.044,
+      "max_error": 0.0831741681659747,
+      "max_height_difference": 0.017570999999975356
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "final_leader_speed": 150.0,
+    "final_follower_speeds": [
+      149.985,
+      149.985,
+      149.985,
+      149.985,
+      149.985,
+      149.985,
+      149.985,
+      149.985
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "speed_synchronized": true,
+      "rapid_response": true
+    },
+    "passed": true,
+    "response": {
+      "leader_climb_onset": 10.658,
+      "follower_climb_onsets": [
+        11.063,
+        11.063,
+        11.063,
+        11.063,
+        11.063,
+        11.063,
+        11.063,
+        11.063
+      ],
+      "max_response_delay": 0.40500000000000114
+    }
+  },
+  "break": {
+    "required_clearance": 20.0,
+    "count": 8,
+    "duration": 100.067,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 33.500029689748594,
+    "max_height_difference_after_5s": 60.53383900000006,
+    "final": {
+      "time": 100.067,
+      "max_error": 0.17879141230854928,
+      "max_height_difference": 0.010781000000065433
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "break_starts": [
+      [
+        10.077,
+        0
+      ],
+      [
+        10.86,
+        1
+      ],
+      [
+        11.66,
+        2
+      ],
+      [
+        12.459,
+        3
+      ],
+      [
+        13.256,
+        4
+      ],
+      [
+        14.073,
+        5
+      ],
+      [
+        14.86,
+        6
+      ],
+      [
+        15.668,
+        7
+      ],
+      [
+        50.069,
+        0
+      ],
+      [
+        50.856,
+        1
+      ],
+      [
+        51.663,
+        2
+      ],
+      [
+        52.454,
+        3
+      ],
+      [
+        53.258,
+        4
+      ],
+      [
+        54.052,
+        5
+      ],
+      [
+        54.863,
+        6
+      ]
+    ],
+    "break_returns": [
+      [
+        23.658,
+        7
+      ],
+      [
+        23.658,
+        6
+      ],
+      [
+        23.658,
+        5
+      ],
+      [
+        23.658,
+        4
+      ],
+      [
+        23.658,
+        3
+      ],
+      [
+        23.658,
+        2
+      ],
+      [
+        23.658,
+        1
+      ],
+      [
+        23.658,
+        0
+      ],
+      [
+        55.046,
+        7
+      ],
+      [
+        55.046,
+        6
+      ],
+      [
+        55.046,
+        5
+      ],
+      [
+        55.046,
+        4
+      ],
+      [
+        55.046,
+        3
+      ],
+      [
+        55.046,
+        2
+      ],
+      [
+        55.046,
+        1
+      ],
+      [
+        55.046,
+        0
+      ]
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "recall_captured_within_25s": true,
+      "holds_formation_after_80s": true,
+      "first_departure_order": true,
+      "automatic_return_simultaneous": true,
+      "recall_simultaneous": true
+    },
+    "passed": true
+  },
+  "pullout": {
+    "required_clearance": 20.6,
+    "count": 4,
+    "duration": 40.064,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 150.08843048030153,
+    "max_height_difference_after_5s": 54.529494,
+    "final": null,
+    "final_modes": [
+      "LOSTPOSITION",
+      "LOSTPOSITION",
+      "LOSTPOSITION",
+      "LOSTPOSITION"
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true
+    },
+    "passed": true
+  },
+  "heli": {
+    "required_clearance": 26.0,
+    "count": 2,
+    "duration": 30.016,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 122.35394298708725,
+    "max_height_difference_after_5s": 16.264734000000004,
+    "final": null,
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true
+    },
+    "passed": true
+  },
+  "su-dense": {
+    "required_clearance": 22.0,
+    "count": 8,
+    "duration": 30.014,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 49.960206288665624,
+    "max_height_difference_after_5s": 0.07661700000005567,
+    "final": {
+      "time": 30.014,
+      "max_error": 0.01886606625664362,
+      "max_height_difference": 0.018866000000002714
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "max_bank_after_5s_degrees": 0.0,
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "no_uncommanded_climb": true,
+      "no_uncommanded_roll": true
+    },
+    "passed": true
+  },
+  "su-turn": {
+    "required_clearance": 22.0,
+    "count": 8,
+    "duration": 90.007,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 42.04995853277995,
+    "max_height_difference_after_5s": 18.304397000000108,
+    "final": {
+      "time": 90.007,
+      "max_error": 0.015193250478065967,
+      "max_height_difference": 0.015192999999953827
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true
+    },
+    "passed": true
+  },
+  "slow-regroup": {
+    "required_clearance": 20.0,
+    "count": 8,
+    "duration": 30.042,
+    "states_after_start": [
+      0
+    ],
+    "minimum_pair_distance": 37.71255654091996,
+    "max_height_difference_after_5s": 2.8295040000000427,
+    "final": {
+      "time": 30.042,
+      "max_error": 0.1017786058502818,
+      "max_height_difference": 0.017999999999915417
+    },
+    "final_modes": [
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION",
+      "INPOSITION"
+    ],
+    "checks": {
+      "all_airborne": true,
+      "physical_clearance": true,
+      "eight_wingmen": true,
+      "final_slot_error_under_10m": true,
+      "slow_regroup_keeps_formation_controller": true
+    },
+    "passed": true
+  },
+  "gui-retry": {
+    "passed": true,
+    "new_default_spacing": 50,
+    "eight_wingmen_both_starts": true,
+    "started_without_space_key": true,
+    "first_and_retry_clock": [
+      10.135,
+      15.103
+    ],
+    "offsets": [
+      [
+        0,
+        -50.0,
+        0.0,
+        -50.0
+      ],
+      [
+        1,
+        50.0,
+        0.0,
+        -50.0
+      ],
+      [
+        2,
+        -100.0,
+        0.0,
+        -100.0
+      ],
+      [
+        3,
+        100.0,
+        0.0,
+        -100.0
+      ],
+      [
+        4,
+        -150.0,
+        0.0,
+        -150.0
+      ],
+      [
+        5,
+        150.0,
+        0.0,
+        -150.0
+      ],
+      [
+        6,
+        -200.0,
+        0.0,
+        -200.0
+      ],
+      [
+        7,
+        200.0,
+        0.0,
+        -200.0
+      ]
+    ]
+  }
+}
