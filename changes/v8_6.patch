@@ -1,0 +1,376 @@
+--- a/YSFLIGHT/runtime/language/en.uitxt
++++ b/YSFLIGHT/runtime/language/en.uitxt
+@@ -927,7 +927,7 @@
+ +v4/pattern7 #Staircase up
+ +v4/pattern8 #Staircase left
+ +v4/pattern9 #Staircase right
+-+v4/pattern10 #Double column
+++v4/pattern10 #Staggered pairs
+ +v4/pattern11 #Reverse V
+ +show/purple #Purple
+ +show/black #Black
+@@ -943,7 +943,7 @@
+ +v84/wheel7 #Staircase\nup
+ +v84/wheel8 #Staircase\nleft
+ +v84/wheel9 #Staircase\nright
+-+v84/wheel10 #Double\ncolumn
+++v84/wheel10 #Staggered\npairs
+ +v84/wheel11 #Reverse\nV
+ 
+ +show/custom #Custom
+--- a/YSFLIGHT/runtime/language/ru.uitxt
++++ b/YSFLIGHT/runtime/language/ru.uitxt
+@@ -934,7 +934,7 @@
+ +v4/pattern7 #Лесенка вверх
+ +v4/pattern8 #Лесенка влево
+ +v4/pattern9 #Лесенка вправо
+-+v4/pattern10 #Двойная колонна
+++v4/pattern10 #Фронт пар
+ +v4/pattern11 #Обратный клин
+ +show/purple #Фиолетовый
+ +show/black #Чёрный
+@@ -950,7 +950,7 @@
+ +v84/wheel7 #Лесенка\nвверх
+ +v84/wheel8 #Лесенка\nвлево
+ +v84/wheel9 #Лесенка\nвправо
+-+v84/wheel10 #Двойная\nколонна
+++v84/wheel10 #Фронт\nпар
+ +v84/wheel11 #Обратный\nклин
+ 
+ +show/custom #Свой цвет
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
+@@ -174,6 +174,7 @@
+ 
+ 	fprintf(fp,"FOM_SYNC %s\n",FsTrueFalseString(synchronizeTrigger));
+     if(YSTRUE==headingOnly)fprintf(fp,"FOMLEVEL TRUE\n");
++    if(independentDeparture)fprintf(fp,"FOMDEPART %.9f %.9f %.9f %.6f\n",departureVelocity.x(),departureVelocity.y(),departureVelocity.z(),departureAltitude);
+ 
+ 
+ 	return YSOK;
+@@ -225,6 +226,8 @@
+ 			{
+ 				FsGetBool(synchronizeTrigger,args[1]);
+ 			}
++            else if(0==strcmp(args[0],"FOMDEPART") && args.GetN()>=5)
++            {independentDeparture=true;headingOnly=YSTRUE;departureVelocity.Set(atof(args[1]),atof(args[2]),atof(args[3]));departureAltitude=atof(args[4]);}
+             else if(0==strcmp(args[0],"FOMLEVEL") && 2<=args.GetN())
+             {
+                 headingOnly=YsStrToBool(args[1]);
+@@ -283,6 +286,12 @@
+ {
+ // Formation state is available to diagnostic tools without printing every frame.
+ 	flareDispenser.MakeDecision(air,sim,dt);
++    if(independentDeparture)
++    {
++        if(pendingLeaderId>=0){leader=sim->GetAirplaneById(pendingLeaderId);pendingLeaderId=-1;}
++        goal=air.GetPosition()+departureVelocity*5.0;goal.SetY(departureAltitude);
++        return YSOK;
++    }
+ 
+     if(air.Prop().GetAircraftClass()==FSCL_HELICOPTER)
+     {
+@@ -538,7 +547,7 @@
+ {
+     if(air.Prop().GetAircraftClass()==FSCL_HELICOPTER)
+     {
+-        YsVec3 velocity=YsOrigin();if(nullptr!=leader) leader->Prop().GetVelocity(velocity);
++        YsVec3 velocity=YsOrigin();if(independentDeparture)velocity=departureVelocity;else if(nullptr!=leader) leader->Prop().GetVelocity(velocity);
+         auto result=VTOLHover(air,sim,goal,velocity);
+         YsVec3 current;air.Prop().GetVelocity(current);auto error=goal-air.GetPosition();error.SetY(0.0);
+         auto desired=velocity+error*0.12;desired.SetY(0.0);if(desired.GetLength()>30.0){desired.Normalize();desired*=30.0;}
+@@ -552,7 +561,7 @@
+         air.Prop().SetDirectPitchControl(YsBound(YsRadToDeg(wantedP-air.GetAttitude().p())*0.025,-0.3,0.3));
+         return result;
+     }
+-    if(headingOnly==YSTRUE && leader!=nullptr && air.Prop().IsOnGround()!=YSTRUE && SafeFormationControl(air,sim,dt)==YSOK)return YSOK;
++    if(headingOnly==YSTRUE && (leader!=nullptr || independentDeparture) && air.Prop().IsOnGround()!=YSTRUE && SafeFormationControl(air,sim,dt)==YSOK)return YSOK;
+ 	flareDispenser.ApplyControl(air,sim,dt);
+ 
+ // // Formation state is available to diagnostic tools without printing every frame.
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.h
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.h
+@@ -73,6 +73,10 @@
+     bool rejoining=true,collisionRisk=false;
+     double joinStableSeconds=0.0,avoidanceHeight=0.0,commandedSpeed=0.0,commandedClimb=0.0;
+     YsVec3 previousLeaderVelocity=YsOrigin(),leaderAcceleration=YsOrigin();
++    // Independent departure retains the same terrain and traffic protection.
++    bool independentDeparture=false;
++    YsVec3 departureVelocity=YsOrigin();
++    double departureAltitude=0.0;
+     YSRESULT SafeFormationControl(FsAirplane &,FsSimulation *,double);
+ 	YSBOOL headingOnly=YSFALSE;
+ 	YSBOOL inverted;
+--- a/YSFLIGHT/src/autopilot/fsformationsafety.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationsafety.cpp
+@@ -3,15 +3,15 @@
+ 
+ YSRESULT FsFormation::SafeFormationControl(FsAirplane &air,FsSimulation *sim,double dt)
+ {
+- auto &p=air.Prop();YsVec3 velocity,leadVelocity;p.GetVelocity(velocity);leader->Prop().GetVelocity(leadVelocity);
++ auto &p=air.Prop();YsVec3 velocity,leadVelocity;p.GetVelocity(velocity);if(independentDeparture)leadVelocity=departureVelocity;else leader->Prop().GetVelocity(leadVelocity);
+  const double margin=YsGreater(18.0,air.GetApproximatedCollideRadius()*0.8);
+  safeTerrain=sim->GetFieldElevation(air.GetPosition().x(),air.GetPosition().z());
+  for(int i=1;i<=8;++i){auto sample=air.GetPosition()+velocity*(i*0.5);safeTerrain=YsGreater(safeTerrain,sim->GetFieldElevation(sample.x(),sample.z()));}
+  goal.SetY(YsGreater(goal.y(),sim->GetFieldElevation(goal.x(),goal.z())+margin));
+  // Follow current leader motion immediately; never wait for another wingman.
+  safeGoal=goal;safeGoalValid=true;
+- const double heading=leader->GetAttitude().h();
+- if(headingTracked && dt>YsTolerance)
++ const double heading=independentDeparture ? air.GetAttitude().h() : leader->GetAttitude().h();
++ if(!independentDeparture && headingTracked && dt>YsTolerance)
+  {
+   const double rate=atan2(sin(heading-lastLeaderHeading),cos(heading-lastLeaderHeading))/dt;
+   formationTurnRate+=(YsBound(rate,-0.35,0.35)-formationTurnRate)*dt/(0.15+dt);
+@@ -20,7 +20,7 @@
+   leaderAcceleration+=(accel-leaderAcceleration)*dt/(0.25+dt);
+  }
+  previousLeaderVelocity=leadVelocity;lastLeaderHeading=heading;headingTracked=true;
+- auto slot=safeGoal-leader->GetPosition();
++ auto slot=independentDeparture ? YsOrigin() : safeGoal-leader->GetPosition();
+  YsVec3 slotVelocity=leadVelocity+YsVec3(-slot.z()*formationTurnRate,0.0,slot.x()*formationTurnRate);
+  auto error=safeGoal-air.GetPosition();auto horizontalError=error;horizontalError.SetY(0.0);
+  const double velocityError=(slotVelocity-velocity).GetLength();
+@@ -30,8 +30,8 @@
+  // Hybrid: feed forward the manoeuvre now, use stronger interception while displaced.
+  // Normal tracking and recapture share one continuous flight controller.
+  const double response=(rejoining ? 2.2:1.8);
+- auto steeringError=horizontalError;
+- if(rejoining && YsAbs(shouldBe.x())<1.0)
++ auto steeringError=independentDeparture ? YsOrigin() : horizontalError;
++ if(!independentDeparture && rejoining && YsAbs(shouldBe.x())<1.0)
+  {
+   YsAtt3 leadYaw=leader->GetAttitude();leadYaw.SetP(0.0);leadYaw.SetB(0.0);YsVec3 localError;leadYaw.MulInverse(localError,horizontalError);
+   const double lane=40.0*YsBound((YsAbs(localError.z())-15.0)/100.0,0.0,1.0)*YsBound((YsAbs(localError.x())-10.0)/20.0,0.0,1.0);
+@@ -43,12 +43,12 @@
+  YsVec3 correction=steeringError/response+(slotVelocity-velocity)*velocityDamping;correction.SetY(0.0);
+  const double correctionLimit=YsBound(leadVelocity.GetLength()*0.7,40.0,150.0);
+  if(correction.GetLength()>correctionLimit){correction.Normalize();correction*=correctionLimit;}
+- auto wantedVelocity=slotVelocity+correction;wantedVelocity.SetY(0.0);
++ auto wantedVelocity=independentDeparture ? departureVelocity : slotVelocity+correction;wantedVelocity.SetY(0.0);
+  double configuredSeparation=shouldBe.GetLength();
+  double avoidanceTarget=0.0,closestTime=7.0;YsVec3 avoidVelocity=YsOrigin();collisionRisk=false;
+  for(auto other=sim->FindNextAirplane(nullptr);other;other=sim->FindNextAirplane(other))if(other!=&air && other->IsAlive()==YSTRUE)
+  {
+-  if(other!=leader && air.squadSlot>=0 && other->squadSlot>=0 && air.squadLeaderKey==other->squadLeaderKey)
++  if(!independentDeparture && other!=leader && air.squadSlot>=0 && other->squadSlot>=0 && air.squadLeaderKey==other->squadLeaderKey)
+    configuredSeparation=YsSmaller(configuredSeparation,(air.squadOffset-other->squadOffset).GetLength());
+   auto relative=other->GetPosition()-air.GetPosition();const double distance=relative.GetLength();
+   if(distance>1200.0)continue;
+@@ -58,7 +58,9 @@
+   // One physical clearance for both tracking and avoidance. Parallel aircraft
+   // 50m apart must not be permanently pushed into slot-indexed altitude steps.
+   const double physical=YsGreater(6.0,(air.GetApproximatedCollideRadius()+other->GetApproximatedCollideRadius())*1.2+3.0);
+-  const double separation=physical+YsSmaller(35.0,closing*0.2);
++  // Add manoeuvring room only while converging. Parallel tight formations
++  // keep their original physical clearance, without a permanent altitude step.
++  const double separation=physical+YsSmaller(45.0,closing*0.35+(closing>1.0 ? 5.0:0.0));
+   const double predicted=(relative+rv*t).GetLength();
+   if(predicted<separation && ((t>0.05 && closing>0.5) || distance<physical))
+   {
+@@ -71,15 +73,18 @@
+     away.Normalize();avoidVelocity=away*YsBound((separation-predicted)*1.2,12.0,55.0);
+     // Short-lived vertical separation only for an imminent crossing; never
+     // a permanent altitude assigned by wingman number.
+-    if(t<3.0)avoidanceTarget=sign*YsBound(physical*0.7,12.0,22.0);
++    if(t<4.0)avoidanceTarget=sign*YsBound(separation*0.85,18.0,32.0);
+    }
+   }
+  }
++ // Safety wins over the desire to occupy the requested slot. Otherwise a
++ // large interception correction can overpower the avoidance vector.
++ if(collisionRisk && !independentDeparture)wantedVelocity=slotVelocity+correction*0.35;
+  avoidanceHeight+=(avoidanceTarget-avoidanceHeight)*dt/(0.25+dt);
+  // Closely spaced aircraft must brake with the leader, before positional error
+  // develops. This affects only requested target gaps below 45m, not normal 50m formations.
+  auto leadDirection=leadVelocity;leadDirection.SetY(0.0);
+- if(leadDirection.Normalize()==YSOK)
++ if(!independentDeparture && leadDirection.Normalize()==YSOK)
+   wantedVelocity+=leadDirection*(leaderAcceleration*leadDirection)*(2.5*YsBound((45.0-configuredSeparation)/5.0,0.0,1.0));
+  wantedVelocity+=avoidVelocity;
+  const double clearance=air.GetPosition().y()-safeTerrain;
+@@ -127,6 +132,6 @@
+   mode=(!rejoining && error.GetLength()<10.0 ? FSFOMMODE_INPOSITION:FSFOMMODE_LOSTPOSITION);
+  }
+  p.SetGControllerAOALimit(-p.GetCriticalAOA()*0.4,p.GetCriticalAOA()*(recovering ? 0.95:0.8));
+- p.SetGear(leader->Prop().GetLandingGear());p.SetFlap(leader->Prop().GetFlap());p.SetRudder(0.0);p.SmartRudder(dt);
++ if(!independentDeparture){p.SetGear(leader->Prop().GetLandingGear());p.SetFlap(leader->Prop().GetFlap());}p.SetRudder(0.0);p.SmartRudder(dt);
+  return YSOK;
+ }
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -74,7 +74,8 @@
+   {
+    YsAtt3 yaw;yaw.Set(order.departureHeading,0,0);YsVec3 forward;yaw.Mul(forward,YsVec3(0,0,200000));auto target=wing->GetPosition()+forward;
+    target.SetY(YsGreater(wing->GetPosition().y(),sim->GetFieldElevation(wing->GetPosition().x(),wing->GetPosition().z())+300.0));
+-   auto ap=FsGotoPosition::Create();ap->SetSingleDestination(target);ap->SetSpeed(YsGreater(wing->Prop().GetVelocity(),wing->Prop().GetEstimatedLandingSpeed()*1.5));ap->SetUseAfterburner(YSFALSE);wing->SetAutopilot(ap);
++   auto ap=FsFormation::Create();ap->leader=leader;ap->shouldBe=wing->squadOffset;ap->headingOnly=YSTRUE;ap->synchronizeTrigger=YSFALSE;ap->independentDeparture=true;
++   forward.Normalize();ap->departureVelocity=forward*YsGreater(wing->Prop().GetVelocity(),wing->Prop().GetEstimatedLandingSpeed()*1.5);ap->departureAltitude=target.y();wing->SetAutopilot(ap);
+    wing->squadTask=1;order.started=true;printf("V82BREAK start time=%.3f slot=%d id=%d\n",sim->GetClock(),wing->squadSlot,wing->ysfId);
+   }
+  }
+@@ -211,15 +212,22 @@
+ {for(int n=int(breaks.GetN())-1;n>=0;--n)if(breaks[n].key==key)breaks.Delete(n);}
+ void FsSimExtension_Airshow::StartBreak(FsSimulation *sim,const YsArray<FsAirplane *,8> &members)
+ {
++ auto leader=sim->GetPlayerAirplane();if(!leader)return;
+  bool column=true;for(auto wing:members)if(YsAbs(wing->squadOffset.x())>1.0)column=false;
+- double spacing=120.0;for(auto wing:members)spacing=YsGreater(spacing,wing->GetRadiusFromCollision()*4.0);
++ YsAtt3 yaw=leader->GetAttitude();yaw.SetP(0.0);yaw.SetB(0.0);
++ // Use actual positions: a break can be ordered before reassembly has finished.
++ YsArray<YsVec3,8> local;double width=1.0;
++ for(auto wing:members){YsVec3 p;yaw.MulInverse(p,wing->GetPosition()-leader->GetPosition());local.Append(p);width=YsGreater(width,YsAbs(p.x()));}
+  for(int i=0;i<members.GetN();++i)
+  {
+   auto wing=members[i];CancelBreak(FsExistence::GetSearchKey(wing));
+   BreakOrder o;o.key=FsExistence::GetSearchKey(wing);o.start=sim->GetClock()+(column ? i*0.8 : 0.0);o.finish=-1.0;
+-  const int rank=i/2+1;const double sign=(column ? (i%2==0 ? -1.0:1.0) : wing->squadOffset.x()<0.0 ? -1.0:wing->squadOffset.x()>0.0 ? 1.0:(i%2==0 ? -1.0:1.0));
+-  o.offset=wing->squadOffset+YsVec3(sign*(500.0+rank*spacing),30.0*(i%3),-rank*spacing);
+-  o.departureHeading=sim->GetPlayerAirplane()->GetAttitude().h()+sign*YsDegToRad(35.0+rank*5.0);
++  const double x=local[i].x();
++  const double side=column ? (i%2==0 ? -1.0:1.0) : (x < -1.0 ? -1.0 : x > 1.0 ? 1.0 : (i%2==0 ? -1.0:1.0));
++  const double angle=column ? 45.0 : 25.0+35.0*YsBound(YsAbs(x)/width,0.0,1.0);
++  // YsAtt3 positive heading rotates +Z towards -X: subtract the outward side.
++  o.departureHeading=yaw.h()-side*YsDegToRad(angle);
++  printf("V86PLAN slot=%d x=%.3f outward=%d heading=%.3f column=%d\n",wing->squadSlot,x,int(side),YsRadToDeg(o.departureHeading),int(column));
+   breaks.Append(o);
+  }
+ }
+--- a/YSFLIGHT/src/core/fsairshow.h
++++ b/YSFLIGHT/src/core/fsairshow.h
+@@ -10,7 +10,7 @@
+     bool menuOpen=false,replaying=false,smoke[FsMaxShowAircraft]={false},orbit=true,dragging=false;
+     int selected=0,cameraUnit=0,remaining[FsMaxShowAircraft]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
+     double nextFlare=0,heading=0,pitch=0.22,distance=100;
+-    struct BreakOrder { unsigned int key=YSNULLHASHKEY; double start=0,finish=0; YsVec3 offset=YsOrigin(); bool started=false; double departureHeading=0.0; };
++    struct BreakOrder { unsigned int key=YSNULLHASHKEY; double start=0,finish=0; bool started=false; double departureHeading=0.0; };
+     YsArray<BreakOrder> breaks;
+     void ReleaseFlares(FsSimulation *,bool all);
+     void StartBreak(FsSimulation *,const YsArray<FsAirplane *,8> &);
+--- a/YSFLIGHT/src/core/fsgrouplayout.h
++++ b/YSFLIGHT/src/core/fsgrouplayout.h
+@@ -1,5 +1,8 @@
+ #ifndef FSGROUPLAYOUT_IS_INCLUDED
+ #define FSGROUPLAYOUT_IS_INCLUDED
++#include <cmath>
++#include <limits>
++#include <vector>
+ constexpr int FsGroupPatternCount=10;
+ static const int FsGroupPatternIds[FsGroupPatternCount]={0,1,2,3,4,5,6,7,10,11};
+ inline bool FsGroupPatternAvailable(int id){for(auto p:FsGroupPatternIds)if(p==id)return true;return false;}
+@@ -21,10 +24,54 @@
+     case 7:p={0.0,double(-index-1),0.4*(index+1)};break;
+     case 8:p={double(-index-1),double(-index-1),0.4*(index+1)};break;
+     case 9:p={double(index+1),double(-index-1),0.4*(index+1)};break;
+-    case 10:p={index%2==0 ? 1.0:0.0,double(-(index+1)/2)};break;
++    case 10:{const int n=index+1,row=n/2;p={double(n%2)+0.5*(row%2),double(-row)};break;}
+     case 11:p={double(index%2==0 ? -rank : rank),double(rank)};break;
+     default:p={0.0,double(-index-1)};break;
+     }
+     p.x*=spacing;p.y*=spacing;p.z*=spacing;return p;
+ }
++// Minimum total travel distance avoids assigning geometrically crossing routes.
++// Aircraft identity, smoke colour and squad number stay with the same aircraft.
++inline void FsAssignGroupSlots(int count,const FsGroupOffset current[],const FsGroupOffset target[],int assignment[])
++{
++ if(count<=0)return;
++ // Legacy saves may contain more than the current eight-wingman UI limit.
++ if(count>12)
++ {
++  std::vector<bool> used(count,false);
++  for(int i=0;i<count;++i){double best=std::numeric_limits<double>::infinity();int selected=0;
++   for(int j=0;j<count;++j)if(!used[j]){const double dx=current[i].x-target[j].x,dz=current[i].z-target[j].z,dy=current[i].y-target[j].y;const double d=dx*dx+dz*dz+dy*dy;if(d<best){best=d;selected=j;}}
++   assignment[i]=selected;used[selected]=true;}return;
++ }
++ const int states=1<<count;std::vector<double> cost(states);std::vector<int> previous(states),chosen(states);
++ for(int i=0;i<states;++i){cost[i]=std::numeric_limits<double>::infinity();previous[i]=-1;chosen[i]=-1;}cost[0]=0;
++ for(int mask=0;mask<states;++mask)
++ {
++  int row=0;for(int bits=mask;bits;bits>>=1)row+=bits&1;if(row>=count)continue;
++  for(int j=0;j<count;++j)if(!(mask&(1<<j)))
++  {
++   const double dx=current[row].x-target[j].x,dz=current[row].z-target[j].z,dy=current[row].y-target[j].y;
++   const double next=cost[mask]+sqrt(dx*dx+dz*dz+dy*dy);const int dest=mask|(1<<j);
++   if(next<cost[dest]){cost[dest]=next;previous[dest]=mask;chosen[dest]=j;}
++  }
++ }
++ for(int row=count-1,mask=states-1;row>=0;--row){assignment[row]=chosen[mask];mask=previous[mask];}
++}
++inline double FsInferGroupSpacing(int count,const FsGroupOffset current[],double fallback)
++{
++ double outer=0;for(int i=0;i<count;++i)outer=fmax(outer,sqrt(current[i].x*current[i].x+current[i].y*current[i].y+current[i].z*current[i].z));
++ for(auto pattern:FsGroupPatternIds)
++ {
++  double canonical=0;for(int i=0;i<count;++i){auto p=FsGetGroupOffset(pattern,i,1);canonical=fmax(canonical,sqrt(p.x*p.x+p.y*p.y+p.z*p.z));}
++  if(canonical<1e-6)continue;const double scale=outer/canonical;bool match=scale>1;
++  for(int i=0;i<count && match;++i)
++  {
++   auto p=FsGetGroupOffset(pattern,i,scale);bool found=false;
++   for(int j=0;j<count;++j)if(fabs(p.x-current[j].x)<.02 && fabs(p.y-current[j].y)<.02 && fabs(p.z-current[j].z)<.02){found=true;break;}
++   if(!found)match=false;
++  }
++  if(match)return scale;
++ }
++ return fallback;
++}
+ #endif
+--- a/YSFLIGHT/src/core/fsguinewflightdialog.cpp
++++ b/YSFLIGHT/src/core/fsguinewflightdialog.cpp
+@@ -430,7 +430,7 @@
+         tabId=AddTab(mainTab,FSGUI_NEWFLTDLG_FORMATION);
+         BeginAddTabItem(mainTab,tabId);
+         groupFormationCheck=AddTextButton(MkId("groupFormation"),FSKEY_NULL,FSGUI_CHECKBOX,FsGetTextResource("v4/formation",L"Customize formation (air start)"),YSTRUE);
+-        const wchar_t *patterns[]={FsGetTextResource("v4/pattern0",L"Diamond"),FsGetTextResource("v4/pattern1",L"Delta"),FsGetTextResource("v4/pattern2",L"V formation"),FsGetTextResource("v4/pattern3",L"Column"),FsGetTextResource("v4/pattern4",L"Line abreast"),FsGetTextResource("v4/pattern5",L"Echelon left"),FsGetTextResource("v4/pattern6",L"Echelon right"),FsGetTextResource("v4/pattern7",L"Staircase up"),FsGetTextResource("v4/pattern10",L"Double column"),FsGetTextResource("v4/pattern11",L"Reverse V")};
++        const wchar_t *patterns[]={FsGetTextResource("v4/pattern0",L"Diamond"),FsGetTextResource("v4/pattern1",L"Delta"),FsGetTextResource("v4/pattern2",L"V formation"),FsGetTextResource("v4/pattern3",L"Column"),FsGetTextResource("v4/pattern4",L"Line abreast"),FsGetTextResource("v4/pattern5",L"Echelon left"),FsGetTextResource("v4/pattern6",L"Echelon right"),FsGetTextResource("v4/pattern7",L"Staircase up"),FsGetTextResource("v4/pattern10",L"Staggered pairs"),FsGetTextResource("v4/pattern11",L"Reverse V")};
+         groupPatternChoice=AddDropList(MkId("groupPattern"),FSKEY_NULL,L"",FsGroupPatternCount,patterns,8,23,23,YSTRUE);groupPatternChoice->Select(0);
+         groupSpacingBox=AddTextBox(MkId("groupSpacing"),FSKEY_NULL,FsGuiTextBox::HORIZONTAL,FsGetTextResource("v4/spacing",L"Spacing, m (10-5000)"),"50",6,YSTRUE);
+         groupFormationCheck->SetCheck(YSFALSE);
+--- a/YSFLIGHT/src/core/fssquadcommands.cpp
++++ b/YSFLIGHT/src/core/fssquadcommands.cpp
+@@ -150,16 +150,21 @@
+     double radius=YsGreater(leader->GetRadiusFromCollision(),leader->GetApproximatedCollideRadius());
+     for(auto wing:members)radius=YsGreater(radius,YsGreater(wing->GetRadiusFromCollision(),wing->GetApproximatedCollideRadius()));
+     const double minSpacing=YsGreater(10.0,radius*2.4+8.0);
+-    const auto first=members[0]->squadOffset;
+-    const double inferred=YsGreater(YsAbs(first.x()),YsAbs(first.z()));
+-    if(inferred>1.0)squadSpacing=inferred;
++    std::vector<FsGroupOffset> existing(members.GetN());
++    for(int i=0;i<members.GetN();++i){auto p=members[i]->squadOffset;existing[i]={p.x(),p.z(),p.y()};}
++    squadSpacing=FsInferGroupSpacing(int(members.GetN()),existing.data(),squadSpacing);
+     squadSpacing=YsBound(squadSpacing,minSpacing,5000.0);
+     if(command==0)return false; // Opens the formation submenu in the UI.
+     if(command>=100 && FsGroupPatternAvailable(command-100))
+     {
++        std::vector<FsGroupOffset> current(members.GetN()),target(members.GetN());std::vector<int> assignment(members.GetN());
++        YsAtt3 yaw=leader->GetAttitude();yaw.SetP(0);yaw.SetB(0);
+         for(int i=0;i<members.GetN();++i)
+-        {
+-            auto wing=members[i];const auto p=FsGetGroupOffset(command-100,i,squadSpacing);
++        {YsVec3 local;yaw.MulInverse(local,members[i]->GetPosition()-leader->GetPosition());current[i]={local.x(),local.z(),local.y()};target[i]=FsGetGroupOffset(command-100,i,squadSpacing);}
++        FsAssignGroupSlots(int(members.GetN()),current.data(),target.data(),assignment.data());
++        for(int i=0;i<members.GetN();++i)
++        {
++            auto wing=members[i];const auto p=target[assignment[i]];
+             wing->squadOffset.Set(p.x,p.y,p.z);Form(*wing,*leader);
+         }
+         AddTimedMessage(T("v7/changing",L"Wingmen: changing formation."));return true;
+@@ -330,7 +335,7 @@
+     const int count=operationPage ? int(extra.GetN()) : squadWheelFormations ? FsGroupPatternCount : 9;
+     int lb,mb,rb,mx,my;FsGetMouseState(lb,mb,rb,mx,my);const int hover=WheelItem(mx,my,w,h,count);
+     const wchar_t *main[]={T("v7/shape",L"Formation"),T("v7/regroup",L"Regroup"),T("v7/scatter",L"Scatter"),T("v7/closer",L"Closer"),T("v7/farther",L"Farther"),T("v7/cover",L"Cover me"),T("v7/attack",L"Attack target"),T("v7/hold",L"Hold area"),T("v7/abort",L"Abort attack")};
+-    const wchar_t *patterns[]={T("v7/diamond",L"Diamond"),T("v7/delta",L"Delta"),T("v7/vee",L"V formation"),T("v7/trail",L"Column"),T("v7/line",L"Line abreast"),T("v7/left",L"Echelon left"),T("v7/right",L"Echelon right"),T("v84/wheel7",L"Staircase up"),T("v84/wheel8",L"Staircase left"),T("v84/wheel9",L"Staircase right"),T("v84/wheel10",L"Double column"),T("v84/wheel11",L"Reverse V")};
++    const wchar_t *patterns[]={T("v7/diamond",L"Diamond"),T("v7/delta",L"Delta"),T("v7/vee",L"V formation"),T("v7/trail",L"Column"),T("v7/line",L"Line abreast"),T("v7/left",L"Echelon left"),T("v7/right",L"Echelon right"),T("v84/wheel7",L"Staircase up"),T("v84/wheel8",L"Staircase left"),T("v84/wheel9",L"Staircase right"),T("v84/wheel10",L"Staggered pairs"),T("v84/wheel11",L"Reverse V")};
+     for(int item=0;item<count;++item)
+     {
+         int points[44];int n=0;points[n++]=cx;points[n++]=cy;
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.5";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.6";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif

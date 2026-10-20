@@ -1,0 +1,866 @@
+{
+  "ysflight32_gl1.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "3b2d700f47fff3353177248c7c3c057961ae712cf66451d1723456e80a4685ed",
+    "code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "ba2bcb551bc3bbb540693b1109a1f63568f158de3b8f47826d33fa2529be0a28",
+    "code_matches_build": true
+  },
+  "original_assets_preserved": true,
+  "after-0": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 0,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.6824069282961,
+    "minimum_at": [
+      0.928,
+      1,
+      0
+    ],
+    "break_minimum": 70.71067811865467,
+    "final_error": null,
+    "starts": [
+      [
+        "5.135",
+        "7"
+      ],
+      [
+        "5.135",
+        "6"
+      ],
+      [
+        "5.135",
+        "5"
+      ],
+      [
+        "5.135",
+        "4"
+      ],
+      [
+        "5.135",
+        "3"
+      ],
+      [
+        "5.135",
+        "2"
+      ],
+      [
+        "5.135",
+        "1"
+      ],
+      [
+        "5.135",
+        "0"
+      ]
+    ]
+  },
+  "shape-1": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 1,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.68254073376829,
+    "minimum_at": [
+      0.958,
+      1,
+      0
+    ],
+    "break_minimum": 70.71067811865467,
+    "final_error": null,
+    "starts": [
+      [
+        "5.096",
+        "7"
+      ],
+      [
+        "5.096",
+        "6"
+      ],
+      [
+        "5.096",
+        "5"
+      ],
+      [
+        "5.096",
+        "4"
+      ],
+      [
+        "5.096",
+        "3"
+      ],
+      [
+        "5.096",
+        "2"
+      ],
+      [
+        "5.096",
+        "1"
+      ],
+      [
+        "5.096",
+        "0"
+      ]
+    ]
+  },
+  "shape-2": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 2,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.68160622703198,
+    "minimum_at": [
+      0.889,
+      1,
+      0
+    ],
+    "break_minimum": 70.71067811865467,
+    "final_error": null,
+    "starts": [
+      [
+        "5.048",
+        "7"
+      ],
+      [
+        "5.048",
+        "6"
+      ],
+      [
+        "5.048",
+        "5"
+      ],
+      [
+        "5.048",
+        "4"
+      ],
+      [
+        "5.048",
+        "3"
+      ],
+      [
+        "5.048",
+        "2"
+      ],
+      [
+        "5.048",
+        "1"
+      ],
+      [
+        "5.048",
+        "0"
+      ]
+    ]
+  },
+  "shape-3": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 3,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 49.95912555486117,
+    "minimum_at": [
+      0.926,
+      1,
+      0
+    ],
+    "break_minimum": 49.99977674877104,
+    "final_error": null,
+    "starts": [
+      [
+        "5.043",
+        "0"
+      ],
+      [
+        "5.838",
+        "1"
+      ],
+      [
+        "6.635",
+        "2"
+      ],
+      [
+        "7.450",
+        "3"
+      ],
+      [
+        "8.238",
+        "4"
+      ],
+      [
+        "9.041",
+        "5"
+      ],
+      [
+        "9.837",
+        "6"
+      ],
+      [
+        "10.641",
+        "7"
+      ]
+    ]
+  },
+  "shape-4": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 4,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 49.999999999999986,
+    "minimum_at": [
+      5.169,
+      5,
+      3
+    ],
+    "break_minimum": 49.999999999999986,
+    "final_error": null,
+    "starts": [
+      [
+        "5.036",
+        "7"
+      ],
+      [
+        "5.036",
+        "6"
+      ],
+      [
+        "5.036",
+        "5"
+      ],
+      [
+        "5.036",
+        "4"
+      ],
+      [
+        "5.036",
+        "3"
+      ],
+      [
+        "5.036",
+        "2"
+      ],
+      [
+        "5.036",
+        "1"
+      ],
+      [
+        "5.036",
+        "0"
+      ]
+    ]
+  },
+  "shape-5": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 5,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.68190140503931,
+    "minimum_at": [
+      0.897,
+      1,
+      0
+    ],
+    "break_minimum": 70.71067811865467,
+    "final_error": null,
+    "starts": [
+      [
+        "5.060",
+        "7"
+      ],
+      [
+        "5.060",
+        "6"
+      ],
+      [
+        "5.060",
+        "5"
+      ],
+      [
+        "5.060",
+        "4"
+      ],
+      [
+        "5.060",
+        "3"
+      ],
+      [
+        "5.060",
+        "2"
+      ],
+      [
+        "5.060",
+        "1"
+      ],
+      [
+        "5.060",
+        "0"
+      ]
+    ]
+  },
+  "shape-6": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 6,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.68154600680573,
+    "minimum_at": [
+      0.934,
+      1,
+      0
+    ],
+    "break_minimum": 70.71067811865473,
+    "final_error": null,
+    "starts": [
+      [
+        "5.052",
+        "7"
+      ],
+      [
+        "5.052",
+        "6"
+      ],
+      [
+        "5.052",
+        "5"
+      ],
+      [
+        "5.052",
+        "4"
+      ],
+      [
+        "5.052",
+        "3"
+      ],
+      [
+        "5.052",
+        "2"
+      ],
+      [
+        "5.052",
+        "1"
+      ],
+      [
+        "5.052",
+        "0"
+      ]
+    ]
+  },
+  "shape-7": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 7,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 53.60938063475163,
+    "minimum_at": [
+      1.596,
+      1,
+      0
+    ],
+    "break_minimum": 53.623650764410975,
+    "final_error": null,
+    "starts": [
+      [
+        "5.055",
+        "0"
+      ],
+      [
+        "5.843",
+        "1"
+      ],
+      [
+        "6.641",
+        "2"
+      ],
+      [
+        "7.435",
+        "3"
+      ],
+      [
+        "8.248",
+        "4"
+      ],
+      [
+        "9.039",
+        "5"
+      ],
+      [
+        "9.836",
+        "6"
+      ],
+      [
+        "10.641",
+        "7"
+      ]
+    ]
+  },
+  "shape-10": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 10,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 49.99999999999999,
+    "minimum_at": [
+      5.637,
+      3,
+      2
+    ],
+    "break_minimum": 49.99999999999999,
+    "final_error": null,
+    "starts": [
+      [
+        "5.058",
+        "7"
+      ],
+      [
+        "5.058",
+        "6"
+      ],
+      [
+        "5.058",
+        "5"
+      ],
+      [
+        "5.058",
+        "4"
+      ],
+      [
+        "5.058",
+        "3"
+      ],
+      [
+        "5.058",
+        "2"
+      ],
+      [
+        "5.058",
+        "1"
+      ],
+      [
+        "5.058",
+        "0"
+      ]
+    ]
+  },
+  "shape-11": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 11,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 70.70036938465209,
+    "minimum_at": [
+      2.581,
+      1,
+      0
+    ],
+    "break_minimum": 70.70840844223402,
+    "final_error": null,
+    "starts": [
+      [
+        "5.058",
+        "7"
+      ],
+      [
+        "5.058",
+        "6"
+      ],
+      [
+        "5.058",
+        "5"
+      ],
+      [
+        "5.058",
+        "4"
+      ],
+      [
+        "5.058",
+        "3"
+      ],
+      [
+        "5.058",
+        "2"
+      ],
+      [
+        "5.058",
+        "1"
+      ],
+      [
+        "5.058",
+        "0"
+      ]
+    ]
+  },
+  "recall-column": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true,
+      "regrouped": true,
+      "independent_mode_cleared": true
+    },
+    "pattern": 3,
+    "requested_spacing": 35.2,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 33.78296589809526,
+    "minimum_at": [
+      73.289,
+      7,
+      6
+    ],
+    "break_minimum": 35.19866357195498,
+    "final_error": 0.038,
+    "starts": [
+      [
+        "5.037",
+        "0"
+      ],
+      [
+        "5.847",
+        "1"
+      ],
+      [
+        "6.639",
+        "2"
+      ],
+      [
+        "7.443",
+        "3"
+      ],
+      [
+        "8.235",
+        "4"
+      ],
+      [
+        "9.030",
+        "5"
+      ],
+      [
+        "9.829",
+        "6"
+      ],
+      [
+        "10.652",
+        "7"
+      ]
+    ]
+  },
+  "recall-pairs": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true,
+      "regrouped": true,
+      "independent_mode_cleared": true
+    },
+    "pattern": 10,
+    "requested_spacing": 35.2,
+    "model": "SU-27_FLANKER",
+    "heading": 135,
+    "minimum_distance": 30.347196351450204,
+    "minimum_at": [
+      75.13,
+      2,
+      0
+    ],
+    "break_minimum": 35.17247792694625,
+    "final_error": 0.402,
+    "starts": [
+      [
+        "5.059",
+        "7"
+      ],
+      [
+        "5.059",
+        "6"
+      ],
+      [
+        "5.059",
+        "5"
+      ],
+      [
+        "5.059",
+        "4"
+      ],
+      [
+        "5.059",
+        "3"
+      ],
+      [
+        "5.059",
+        "2"
+      ],
+      [
+        "5.059",
+        "1"
+      ],
+      [
+        "5.059",
+        "0"
+      ]
+    ]
+  },
+  "cycle": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "all_wingmen_alive": true,
+      "clearance_over_20m": true,
+      "all_departed": true,
+      "finished": true
+    },
+    "pattern": 0,
+    "requested_spacing": 50,
+    "model": "SU-27_FLANKER",
+    "heading": 0,
+    "minimum_distance": 23.693242951646702,
+    "minimum_at": [
+      16.624,
+      8,
+      7
+    ],
+    "break_minimum": 23.693242951646702,
+    "final_error": null,
+    "starts": [
+      [
+        "76.066",
+        "7"
+      ],
+      [
+        "76.066",
+        "6"
+      ],
+      [
+        "76.066",
+        "5"
+      ],
+      [
+        "76.066",
+        "4"
+      ],
+      [
+        "76.066",
+        "3"
+      ],
+      [
+        "76.066",
+        "2"
+      ],
+      [
+        "76.066",
+        "1"
+      ],
+      [
+        "76.066",
+        "0"
+      ],
+      [
+        "77.067",
+        "7"
+      ],
+      [
+        "77.067",
+        "6"
+      ],
+      [
+        "77.067",
+        "5"
+      ],
+      [
+        "77.067",
+        "4"
+      ],
+      [
+        "77.067",
+        "3"
+      ],
+      [
+        "77.067",
+        "2"
+      ],
+      [
+        "77.067",
+        "1"
+      ],
+      [
+        "77.067",
+        "0"
+      ]
+    ]
+  },
+  "gui": {
+    "passed": true,
+    "checks": {
+      "eight_units": true,
+      "staggered_pairs_matches_save": true,
+      "new_label_in_both_languages": true,
+      "all_eight_survive": true
+    },
+    "offsets": [
+      [
+        0.0,
+        50.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        25.0,
+        0.0,
+        -50.0
+      ],
+      [
+        2.0,
+        75.0,
+        0.0,
+        -50.0
+      ],
+      [
+        3.0,
+        0.0,
+        0.0,
+        -100.0
+      ],
+      [
+        4.0,
+        50.0,
+        0.0,
+        -100.0
+      ],
+      [
+        5.0,
+        25.0,
+        0.0,
+        -150.0
+      ],
+      [
+        6.0,
+        75.0,
+        0.0,
+        -150.0
+      ],
+      [
+        7.0,
+        0.0,
+        0.0,
+        -200.0
+      ]
+    ]
+  },
+  "game_zip_sha256": "d327e9d00724dff8d454d84a759ab2fbfaa36091342daa97632d10fd3711033d",
+  "game_zip_bytes": 76326787
+}
