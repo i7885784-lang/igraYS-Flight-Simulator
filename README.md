@@ -1,5 +1,7 @@
 # YSFlight v8.2 — строи, разлёт и дым
 
+**[Разбор твоего видео: 20 кадров с короткими пояснениями](reports/video-review-2026-10-20/README.md)** · [Скачать разбор с картинками](downloads/YSFlight_v8_2_Video_Review.zip?raw=true)
+
 Для **Windows 10 x86, 32 бита**. Полная игра с моделями, картами и сохранёнными оригиналами.
 
 **[Скачать игру v8.2 — ZIP](downloads/YSFlight_v8_2_32bit.zip?raw=true)**

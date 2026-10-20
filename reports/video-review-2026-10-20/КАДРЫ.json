@@ -1,0 +1,132 @@
+{
+  "source_sha256": "5e85e6f4253eca1ba2b11a0fbd65ccd46c272e107b4bece14bfc9ca7c367de57",
+  "duration_seconds": 351.4,
+  "width": 960,
+  "height": 540,
+  "version_seen": "Airshow v8.2",
+  "aircraft_user_recollection": "Possibly MiG-29; exact identifier unknown",
+  "second_flight_user_confirmed": "Retry previous flight",
+  "audio": "Track is effectively silent: measured maximum -91 dB",
+  "frames": [
+    {
+      "file": "images/start-a.jpg",
+      "time_seconds": 8,
+      "title": "Начало первого полёта",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/start-b.jpg",
+      "time_seconds": 16,
+      "title": "Группа выглядит выше игрока",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/break-a.jpg",
+      "time_seconds": 22,
+      "title": "Команда разлёта",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/break-b.jpg",
+      "time_seconds": 28,
+      "title": "Разлёт — поведение устраивает игрока",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/rejoin-a.jpg",
+      "time_seconds": 34,
+      "title": "Начало возвращения",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/rejoin-b.jpg",
+      "time_seconds": 88,
+      "title": "Группа всё ещё растянута",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/distance-a.jpg",
+      "time_seconds": 96,
+      "title": "В меню выделено «Держаться дальше»",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/distance-b.jpg",
+      "time_seconds": 98,
+      "title": "Подтверждение увеличения дистанции",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/distance-c.jpg",
+      "time_seconds": 114,
+      "title": "Позже дана команда сближения",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/overload-a.jpg",
+      "time_seconds": 134,
+      "title": "Затемнение при большой перегрузке",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/overload-b.jpg",
+      "time_seconds": 142,
+      "title": "Повторное затемнение",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/end.jpg",
+      "time_seconds": 162,
+      "title": "Конец первого полёта",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/calibration.jpg",
+      "time_seconds": 164,
+      "title": "Экран центровки управления",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/retry.jpg",
+      "time_seconds": 166,
+      "title": "Повтор того же полёта",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/turn.jpg",
+      "time_seconds": 178,
+      "title": "Манёвр после повторного старта",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/late-a.jpg",
+      "time_seconds": 220,
+      "title": "Группа ещё не собралась возле ведущего",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/late-b.jpg",
+      "time_seconds": 272,
+      "title": "Ведомые подтягиваются",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/late-c.jpg",
+      "time_seconds": 292,
+      "title": "Ведомые снова хорошо различимы",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/top.jpg",
+      "time_seconds": 306,
+      "title": "Вид сверху на вытянутый строй",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    },
+    {
+      "file": "images/camera.jpg",
+      "time_seconds": 328,
+      "title": "Крупный план мешает видеть весь отряд",
+      "processing": "Original decoded frame with a timestamp band added above; gameplay image unchanged."
+    }
+  ]
+}
