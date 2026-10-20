@@ -1,0 +1,280 @@
+{
+  "pattern0": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 70.69476531791838,
+    "final": {
+      "time": 18.059,
+      "max_error": 0.010807708822761934,
+      "pattern": 0
+    }
+  },
+  "pattern1": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 70.69482869759244,
+    "final": {
+      "time": 18.002,
+      "max_error": 0.010800535171949994,
+      "pattern": 1
+    }
+  },
+  "pattern7": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 53.61422833542029,
+    "final": {
+      "time": 18.081,
+      "max_error": 0.01117984047290397,
+      "pattern": 7
+    }
+  },
+  "pattern8": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 73.30945968482729,
+    "final": {
+      "time": 18.068,
+      "max_error": 0.011180803012272629,
+      "pattern": 8
+    }
+  },
+  "pattern9": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 73.30944755553656,
+    "final": {
+      "time": 18.006,
+      "max_error": 0.011182293369503962,
+      "pattern": 9
+    }
+  },
+  "pattern10": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 49.99999999999977,
+    "final": {
+      "time": 18.015,
+      "max_error": 0.010803448569802577,
+      "pattern": 10
+    }
+  },
+  "pattern11": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 70.70394539134685,
+    "final": {
+      "time": 18.04,
+      "max_error": 0.010805710203417824,
+      "pattern": 11
+    }
+  },
+  "turn10": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true
+    },
+    "minimum_distance": 40.97218238228111,
+    "final": {
+      "time": 90.048,
+      "max_error": 0.008758795963498706,
+      "pattern": 3
+    }
+  },
+  "reform10": {
+    "passed": true,
+    "checks": {
+      "ten_wingmen": true,
+      "all_airborne": true,
+      "physical_clearance": true,
+      "final_position_error": true,
+      "every_new_formation_held": true
+    },
+    "minimum_distance": 26.975528862413356,
+    "final": {
+      "time": 210.025,
+      "max_error": 0.2494358646889616,
+      "pattern": 11
+    }
+  },
+  "gui": {
+    "passed": true,
+    "checks": {
+      "ten_created": true,
+      "last_two_staircase_positions": true,
+      "all_11_colours_saved": true,
+      "ten_in_both_flights": true,
+      "colours_flight_1": true,
+      "colours_flight_2": true,
+      "all_15_colours_in_flight_menu": true
+    },
+    "offsets": [
+      [
+        0.0,
+        -50.0,
+        20.0,
+        -50.0
+      ],
+      [
+        1.0,
+        -100.0,
+        40.0,
+        -100.0
+      ],
+      [
+        2.0,
+        -150.0,
+        60.0,
+        -150.0
+      ],
+      [
+        3.0,
+        -200.0,
+        80.0,
+        -200.0
+      ],
+      [
+        4.0,
+        -250.0,
+        100.0,
+        -250.0
+      ],
+      [
+        5.0,
+        -300.0,
+        120.0,
+        -300.0
+      ],
+      [
+        6.0,
+        -350.0,
+        140.0,
+        -350.0
+      ],
+      [
+        7.0,
+        -400.0,
+        160.0,
+        -400.0
+      ],
+      [
+        8.0,
+        -450.0,
+        180.0,
+        -450.0
+      ],
+      [
+        9.0,
+        -500.0,
+        200.0,
+        -500.0
+      ]
+    ],
+    "colors": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        255,
+        255,
+        255
+      ],
+      [
+        2,
+        70,
+        140,
+        255
+      ],
+      [
+        3,
+        255,
+        60,
+        60
+      ],
+      [
+        4,
+        255,
+        215,
+        0
+      ],
+      [
+        5,
+        50,
+        230,
+        90
+      ],
+      [
+        6,
+        190,
+        80,
+        255
+      ],
+      [
+        7,
+        255,
+        130,
+        30
+      ],
+      [
+        8,
+        50,
+        230,
+        230
+      ],
+      [
+        9,
+        255,
+        100,
+        180
+      ],
+      [
+        10,
+        255,
+        0,
+        255
+      ]
+    ]
+  }
+}

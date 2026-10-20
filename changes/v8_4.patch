@@ -1,0 +1,627 @@
+--- a/YSFLIGHT/runtime/language/en.uitxt
++++ b/YSFLIGHT/runtime/language/en.uitxt
+@@ -924,3 +924,26 @@
+ 
+ +show/customColour #Optional: fine colour adjustment below (0-255)
+ +show/flareKeys #Ctrl+F: player flares | Ctrl+Shift+F: all flares
+++v4/pattern7 #Staircase up
+++v4/pattern8 #Staircase left
+++v4/pattern9 #Staircase right
+++v4/pattern10 #Double column
+++v4/pattern11 #Reverse V
+++show/purple #Purple
+++show/black #Black
+++show/gray #Gray
+++show/brown #Brown
+++show/navy #Dark blue
+++show/lime #Lime
+++show/magenta #Magenta
+++show/wing9 #Wingman 9
+++show/wing10 #Wingman 10
+++v84/moreForms #New\nformations
+++v84/firstForms #First\nformations
+++v84/wheel7 #Staircase\nup
+++v84/wheel8 #Staircase\nleft
+++v84/wheel9 #Staircase\nright
+++v84/wheel10 #Double\ncolumn
+++v84/wheel11 #Reverse\nV
++
+++show/custom #Custom
+--- a/YSFLIGHT/runtime/language/ru.uitxt
++++ b/YSFLIGHT/runtime/language/ru.uitxt
+@@ -614,8 +614,8 @@
+ +v4/pattern2 #Клин
+ +v4/pattern3 #Колонна
+ +v4/pattern4 #Фронт
+-+v4/pattern5 #Левый пеленг
+-+v4/pattern6 #Правый пеленг
+++v4/pattern5 #Пеленг влево
+++v4/pattern6 #Пеленг вправо
+ +v4/spacing #Интервал, м (50–5000)
+ +v4/groupstart #Общий старт группы в воздухе
+ +v4/groupheight #Высота над землёй, м (50–20000)
+@@ -879,7 +879,7 @@
+ +show/green #Зелёный
+ +show/yellow #Жёлтый
+ +show/pink #Розовый
+-+show/cyan #Бирюзовый
+++show/cyan #Голубой
+ +show/orange #Оранжевый
+ +show/supply #Запас для шоу: дым и 500 ловушек каждому
+ +show/all #Команды дыма для всей группы
+@@ -931,3 +931,26 @@
+ 
+ +show/customColour #Необязательно: точная настройка цвета ниже (0–255)
+ +show/flareKeys #Ctrl+F: свои ловушки | Ctrl+Shift+F: всем
+++v4/pattern7 #Лесенка вверх
+++v4/pattern8 #Лесенка влево
+++v4/pattern9 #Лесенка вправо
+++v4/pattern10 #Двойная колонна
+++v4/pattern11 #Обратный клин
+++show/purple #Фиолетовый
+++show/black #Чёрный
+++show/gray #Серый
+++show/brown #Коричневый
+++show/navy #Тёмно-синий
+++show/lime #Салатовый
+++show/magenta #Пурпурный
+++show/wing9 #Ведомый 9
+++show/wing10 #Ведомый 10
+++v84/moreForms #Новые\nстрои
+++v84/firstForms #Первые\nстрои
+++v84/wheel7 #Лесенка\nвверх
+++v84/wheel8 #Лесенка\nвлево
+++v84/wheel9 #Лесенка\nвправо
+++v84/wheel10 #Двойная\nколонна
+++v84/wheel11 #Обратный\nклин
++
+++show/custom #Свой цвет
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -2,6 +2,7 @@
+ #include <fssimplewindow.h>
+ #include "fs.h"
+ #include "fsairshow.h"
++#include "fssmokepalette.h"
+ #include "fsafterburnervisual.h"
+ #include "fsformationautopilot.h"
+ #include "fsoperation.h"
+@@ -21,13 +22,13 @@
+ YsArray<YsString> FsSimExtension_Airshow::Serialize(const FsSimulation *)
+ {
+  YsArray<YsString> rows;YsString s;s.Printf("EXTENSIO %s CONFIG %d %d %d %d %.3f %.3f",Ident(),config.supply,config.synchronized,config.autoAfterburner,config.burst,config.interval,config.cameraSensitivity);rows.Append(s);
+- for(int i=0;i<9;++i){s.Printf("EXTENSIO %s COLOR %d %d %d %d",Ident(),i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);rows.Append(s);}
++ for(int i=0;i<FsMaxShowAircraft;++i){s.Printf("EXTENSIO %s COLOR %d %d %d %d",Ident(),i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);rows.Append(s);}
+  return rows;
+ }
+ YSRESULT FsSimExtension_Airshow::ProcessCommand(FsSimulation *,const YsConstArrayMask<YsString> &a)
+ {
+  if(a.GetN()>=9 && 0==a[2].Strcmp("CONFIG")){config.supply=atoi(a[3])!=0;config.synchronized=atoi(a[4])!=0;config.autoAfterburner=atoi(a[5])!=0;config.burst=YsBound(atoi(a[6]),1,64);config.interval=YsBound(atof(a[7]),0.1,2.0);config.cameraSensitivity=YsBound(atof(a[8]),0.05,2.0);return YSOK;}
+- if(a.GetN()>=7 && 0==a[2].Strcmp("COLOR")){int i=atoi(a[3]);if(i>=0 && i<9)for(int c=0;c<3;++c)config.rgb[i][c]=YsBound(atoi(a[4+c]),0,255);return YSOK;}return YSERR;
++ if(a.GetN()>=7 && 0==a[2].Strcmp("COLOR")){int i=atoi(a[3]);if(i>=0 && i<FsMaxShowAircraft)for(int c=0;c<3;++c)config.rgb[i][c]=YsBound(atoi(a[4+c]),0,255);return YSOK;}return YSERR;
+ }
+ void FsSimExtension_Airshow::StartSimulation(FsSimulation *sim)
+ {
+@@ -37,7 +38,7 @@
+ void FsSimExtension_Airshow::StartReplay(FsSimulation *sim){replaying=true;sim->GetPlayerSquad();SetupAircraft(sim,false);}
+ void FsSimExtension_Airshow::SetupAircraft(FsSimulation *sim,bool resupply)
+ {
+- for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))
++ for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))
+  {
+   if(config.supply && resupply){a->SendCommand("MAXNMFLR 500");a->Prop().SetNumWeapon(FSWEAPON_FLARE_INTERNAL,500);a->SendCommand("LOADWEPN IFLR 500");YsString oil;oil.Printf("SMOKEOIL %.3fkg",YsGreater(100.0,a->Prop().GetSmokeOil()));a->SendCommand(oil);}
+   if(a->Prop().GetNumSmokeGenerator()==0){YsString s;s.Printf("SMOKEGEN 0m 0m %.3fm",-a->GetApproximatedCollideRadius()*0.5);a->SendCommand(s);}
+@@ -48,7 +49,7 @@
+ void FsSimExtension_Airshow::ApplyControls(FsSimulation *sim)
+ {
+  if(replaying)return;
+- for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))if(a->IsAlive()==YSTRUE)
++ for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))if(a->IsAlive()==YSTRUE)
+  {
+   if(smoke[i]){a->Prop().SetSmokeSelector(255);a->Prop().SetSmokeButton(YSTRUE);}
+   // Auto reheat uses the native engine, fuel consumption and plume visibility.
+@@ -62,7 +63,7 @@
+  sim->DiscoverSquadMembers();
+  if(!Aircraft(sim,selected))selected=0;
+  if(!Aircraft(sim,cameraUnit))cameraUnit=0;
+- for(int i=1;i<9;++i)if(!Aircraft(sim,i)){remaining[i]=0;smoke[i]=false;}
++ for(int i=1;i<FsMaxShowAircraft;++i)if(!Aircraft(sim,i)){remaining[i]=0;smoke[i]=false;}
+  for(int n=int(breaks.GetN())-1;n>=0;--n)
+  {
+   auto &order=breaks[n];auto wing=sim->FindAirplane(order.key);auto leader=sim->GetPlayerAirplane();
+@@ -78,7 +79,7 @@
+  }
+  if(sim->GetClock()>=nextFlare)
+  {
+-  for(int i=0;i<9;++i)if(remaining[i]>0)
++  for(int i=0;i<FsMaxShowAircraft;++i)if(remaining[i]>0)
+   {
+    if(auto a=Aircraft(sim,i))if(a->IsAlive()==YSTRUE){YSBOOL blocked=YSFALSE;a->Prop().FireWeapon(blocked,sim,sim->GetClock(),sim->GetWeaponStore(),a,FSWEAPON_FLARE);}
+    --remaining[i];
+@@ -90,10 +91,10 @@
+ {
+  if(replaying)return;
+ 
+- if(action==1){bool on=!smoke[selected];for(int i=0;i<9;++i)if(config.synchronized || i==selected){smoke[i]=on;if(auto a=Aircraft(sim,i)){if(on && a->Prop().GetSmokeOil()<=0.0){smoke[i]=false;sim->AddTimedMessage(T("show/noOil",L"No smoke oil: enable show equipment before departure."));}a->Prop().SetSmokeButton(smoke[i] ? YSTRUE : YSFALSE);}}}
+- if(action==2){for(int n=0;n<9;++n){selected=(selected+1)%9;if(Aircraft(sim,selected))break;}config.synchronized=false;cameraUnit=selected;}
++ if(action==1){bool on=!smoke[selected];for(int i=0;i<FsMaxShowAircraft;++i)if(config.synchronized || i==selected){smoke[i]=on;if(auto a=Aircraft(sim,i)){if(on && a->Prop().GetSmokeOil()<=0.0){smoke[i]=false;sim->AddTimedMessage(T("show/noOil",L"No smoke oil: enable show equipment before departure."));}a->Prop().SetSmokeButton(smoke[i] ? YSTRUE : YSFALSE);}}}
++ if(action==2){for(int n=0;n<FsMaxShowAircraft;++n){selected=(selected+1)%FsMaxShowAircraft;if(Aircraft(sim,selected))break;}config.synchronized=false;cameraUnit=selected;}
+  if(action==3)config.synchronized=!config.synchronized;
+- if(action==4){for(int n=0;n<9;++n){cameraUnit=(cameraUnit+1)%9;if(Aircraft(sim,cameraUnit))break;}sim->SimProcessButtonFunction(FSBTF_OUTSIDEPLAYERVIEW,FSUSC_ENABLE);}
++ if(action==4){for(int n=0;n<FsMaxShowAircraft;++n){cameraUnit=(cameraUnit+1)%FsMaxShowAircraft;if(Aircraft(sim,cameraUnit))break;}sim->SimProcessButtonFunction(FSBTF_OUTSIDEPLAYERVIEW,FSUSC_ENABLE);}
+  if(action==5){const int values[]={4,8,16,32,64};int n=0;while(n<5 && values[n]<=config.burst)++n;config.burst=values[n%5]; }
+  if(action==6)for(auto &n:remaining)n=0;
+ }
+@@ -127,12 +128,14 @@
+  YsWString camera(T("show/cameraState",L"Camera: "));camera.Append(ShowUnitName(cameraUnit));FsDrawString(l.right,l.top+28,camera,ink);
+  FsDrawString(l.right,l.top+56,T("show/flareKeys",L"Ctrl+F: player flares | Ctrl+Shift+F: all flares"),ink);
+  FsDrawString(l.right,l.top+86,T("show/chooseRow",L"Click aircraft name to select, colour square to change:"),ink);
+- int y=l.top+115;const int row=YsSmaller(30,(l.height-290)/9);
+- for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))
++ int y=l.top+115;const int row=YsSmaller(30,(l.height-290)/FsMaxShowAircraft);
++ for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))
+  {
+   if(i==selected && !config.synchronized)FsDrawRect(l.right-4,y-3,l.x+l.width-16,y+row-4,C(192,211,230),YSTRUE);
+   FsDrawRect(l.right,y+1,l.right+14,y+15,C(config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]),YSTRUE);FsDrawRect(l.right,y+1,l.right+14,y+15,edge,YSFALSE);
+-  YsWString unit=ShowUnitName(i);unit.Append(smoke[i] ? T("show/isSmoking",L" - smoke ON") : T("show/isNotSmoking",L" - smoke OFF"));FsDrawString(l.right+23,y,unit,ink);y+=row;
++  YsWString unit=ShowUnitName(i);unit.Append(L" - ");const wchar_t *colour=T("show/custom",L"Custom");
++  for(int c=0;c<FsSmokePaletteCount;++c)if(config.rgb[i][0]==FsSmokePalette[c].rgb[0] && config.rgb[i][1]==FsSmokePalette[c].rgb[1] && config.rgb[i][2]==FsSmokePalette[c].rgb[2])colour=T(FsSmokePalette[c].key,FsSmokePalette[c].name);
++  unit.Append(colour);unit.Append(smoke[i] ? T("show/isSmoking",L" - smoke ON") : T("show/isNotSmoking",L" - smoke OFF"));FsDrawString(l.right+23,y,unit,ink);y+=row;
+  }
+  FsDrawString(l.left,l.y+l.height-60,T("show/cameraHelp",L"F2: outside view | right drag: rotate | wheel: zoom | F1: cockpit"),ink);
+  FsDrawString(l.left,l.y+l.height-33,T("show/resumeHint",L"Commands run after closing the menu. Click colour squares to change smoke during flight."),ink);
+@@ -146,9 +149,9 @@
+   int i=(y-l.top)/l.row;if((y-l.top)%l.row>l.row-6)return;
+   if(i==3)menuOpen=false;else Command(sim,i+1);return;
+  }
+- const int row=YsSmaller(30,(l.height-290)/9);int rowY=l.top+115;
+- static const int palette[][3]={{255,255,255},{70,140,255},{255,60,60},{255,215,0},{50,230,90},{190,80,255},{255,130,30},{50,230,230},{255,100,180}};
+- for(int i=0;i<9;++i)if(Aircraft(sim,i))
++ const int row=YsSmaller(30,(l.height-290)/FsMaxShowAircraft);int rowY=l.top+115;
++
++ for(int i=0;i<FsMaxShowAircraft;++i)if(Aircraft(sim,i))
+  {
+   if(x>=l.right && x<=l.x+l.width-16 && y>=rowY-3 && y<rowY+row-3)
+   {
+@@ -156,8 +159,8 @@
+    if(x<=l.right+18)
+    {
+     int next=0;
+-    for(int n=0;n<9;++n)if(config.rgb[i][0]==palette[n][0] && config.rgb[i][1]==palette[n][1] && config.rgb[i][2]==palette[n][2])next=(n+1)%9;
+-    SetColour(sim,i,palette[next][0],palette[next][1],palette[next][2]);
++    for(int n=0;n<FsSmokePaletteCount;++n)if(config.rgb[i][0]==FsSmokePalette[n].rgb[0] && config.rgb[i][1]==FsSmokePalette[n].rgb[1] && config.rgb[i][2]==FsSmokePalette[n].rgb[2])next=(n+1)%FsSmokePaletteCount;
++    SetColour(sim,i,FsSmokePalette[next].rgb[0],FsSmokePalette[next].rgb[1],FsSmokePalette[next].rgb[2]);
+    }
+    return;
+   }
+@@ -176,15 +179,15 @@
+ void FsSimExtension_Airshow::Report(const FsSimulation *sim) const
+ {
+  printf("V8SHOW selected=%d sync=%d burst=%d camera=%d heading=%.3f pitch=%.3f distance=%.3f\n",selected,config.synchronized,config.burst,cameraUnit,heading,pitch,distance);
+- for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))printf("V8SHOWUNIT slot=%d flare=%d smoke=%d ab=%d throttle=%.3f\n",i,a->Prop().GetNumWeapon(FSWEAPON_FLARE),int(a->Prop().IsTrailingSmoke(0)),int(a->Prop().GetAfterBurner()),a->Prop().GetThrottle());
+- for(int i=0;i<9;++i)if(auto a=Aircraft(sim,i))printf("V82COLOR id=%d slot=%d r=%d g=%d b=%d remaining=%d\n",a->ysfId,i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2],remaining[i]);
++ for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))printf("V8SHOWUNIT slot=%d flare=%d smoke=%d ab=%d throttle=%.3f\n",i,a->Prop().GetNumWeapon(FSWEAPON_FLARE),int(a->Prop().IsTrailingSmoke(0)),int(a->Prop().GetAfterBurner()),a->Prop().GetThrottle());
++ for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))printf("V82COLOR id=%d slot=%d r=%d g=%d b=%d remaining=%d\n",a->ysfId,i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2],remaining[i]);
+ }
+ 
+ void FsSimExtension_Airshow::ReleaseFlares(FsSimulation *sim,bool all)
+ {
+  if(replaying || !sim->GetPlayerAirplane() || sim->GetPlayerAirplane()->isPlayingRecord==YSTRUE)return;
+  bool any=false;
+- for(int i=0;i<9;++i)if(all || i==0)if(auto a=Aircraft(sim,i))
++ for(int i=0;i<FsMaxShowAircraft;++i)if(all || i==0)if(auto a=Aircraft(sim,i))
+  {
+   if(a->Prop().GetNumWeapon(FSWEAPON_FLARE)>0){remaining[i]=config.burst;any=true;}
+  }
+@@ -192,13 +195,13 @@
+ }
+ void FsSimExtension_Airshow::SetColour(FsSimulation *sim,int i,int r,int g,int b)
+ {
+- if(i<0 || i>8 || replaying)return;
++ if(i<0 || i>=FsMaxShowAircraft || replaying)return;
+  config.rgb[i][0]=r;config.rgb[i][1]=g;config.rgb[i][2]=b;
+  if(auto a=Aircraft(sim,i)){YsString s;s.Printf("SMOKECOL ALL %d %d %d",r,g,b);a->SendCommand(s);}
+ }
+ void FsSimExtension_Airshow::MoveUnit(int from,int to)
+ {
+- if(from<1 || from>8 || to<1 || to>8)return;
++ if(from<1 || from>=FsMaxShowAircraft || to<1 || to>=FsMaxShowAircraft)return;
+  smoke[to]=smoke[from];remaining[to]=remaining[from];for(int c=0;c<3;++c)config.rgb[to][c]=config.rgb[from][c];
+  if(selected==from)selected=to;if(cameraUnit==from)cameraUnit=to;
+ }
+--- a/YSFLIGHT/src/core/fsairshow.h
++++ b/YSFLIGHT/src/core/fsairshow.h
+@@ -7,8 +7,8 @@
+ {
+ public:
+     FsAirshowConfig config;
+-    bool menuOpen=false,replaying=false,smoke[9]={false},orbit=true,dragging=false;
+-    int selected=0,cameraUnit=0,remaining[9]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
++    bool menuOpen=false,replaying=false,smoke[FsMaxShowAircraft]={false},orbit=true,dragging=false;
++    int selected=0,cameraUnit=0,remaining[FsMaxShowAircraft]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
+     double nextFlare=0,heading=0,pitch=0.22,distance=100;
+     struct BreakOrder { unsigned int key=YSNULLHASHKEY; double start=0,finish=0; YsVec3 offset=YsOrigin(); bool started=false; };
+     YsArray<BreakOrder> breaks;
+--- a/YSFLIGHT/src/core/fsairshow_setup.cpp
++++ b/YSFLIGHT/src/core/fsairshow_setup.cpp
+@@ -1,16 +1,17 @@
+ #include "fs.h"
++#include "fssmokepalette.h"
+ #include "fsguinewflightdialog.h"
+ #include "fstextresource.h"
+ namespace{const wchar_t *T(const char *k,const wchar_t *s){return FsGetTextResource(k,s);}}
+ void FsGuiNewFlightDialogClass::MakeShowTab()
+ {
+  int tab=AddTab(mainTab,T("show/tab",L"Airshow"));BeginAddTabItem(mainTab,tab);
+- const wchar_t *units[]={T("v8/player",L"Player"),T("show/wing1",L"Wingman 1"),T("show/wing2",L"Wingman 2"),T("show/wing3",L"Wingman 3"),T("show/wing4",L"Wingman 4"),T("show/wing5",L"Wingman 5"),T("show/wing6",L"Wingman 6"),T("show/wing7",L"Wingman 7"),T("show/wing8",L"Wingman 8")};
++ const wchar_t *units[]={T("v8/player",L"Player"),T("show/wing1",L"Wingman 1"),T("show/wing2",L"Wingman 2"),T("show/wing3",L"Wingman 3"),T("show/wing4",L"Wingman 4"),T("show/wing5",L"Wingman 5"),T("show/wing6",L"Wingman 6"),T("show/wing7",L"Wingman 7"),T("show/wing8",L"Wingman 8"),T("show/wing9",L"Wingman 9"),T("show/wing10",L"Wingman 10")};
+  AddStaticText(0,FSKEY_NULL,T("show/unitColor",L"Smoke colour for aircraft"),YSTRUE);
+- showUnit=AddDropList(MkId("showUnit"),FSKEY_NULL,L"",9,units,9,16,16,YSFALSE);
+- const wchar_t *palette[]={T("show/white",L"White"),T("show/red",L"Red"),T("show/blue",L"Blue"),T("show/green",L"Green"),T("show/yellow",L"Yellow"),T("show/pink",L"Pink"),T("show/cyan",L"Cyan"),T("show/orange",L"Orange")};
++ showUnit=AddDropList(MkId("showUnit"),FSKEY_NULL,L"",FsMaxShowAircraft,units,FsMaxShowAircraft,16,16,YSFALSE);
++ const wchar_t *palette[FsSmokePaletteCount];for(int i=0;i<FsSmokePaletteCount;++i)palette[i]=T(FsSmokePalette[i].key,FsSmokePalette[i].name);
+  AddStaticText(0,FSKEY_NULL,T("show/palette",L"2. Choose a colour"),YSTRUE);
+- showPalette=AddDropList(MkId("showPalette"),FSKEY_NULL,T("show/palette",L"Palette"),8,palette,8,15,15,YSFALSE);
++ showPalette=AddDropList(MkId("showPalette"),FSKEY_NULL,T("show/palette",L"Palette"),FsSmokePaletteCount,palette,10,18,18,YSFALSE);
+  AddStaticText(0,FSKEY_NULL,T("show/customColour",L"Optional: fine colour adjustment below (0-255)"),YSTRUE);
+  for(int i=0;i<3;++i){const char *labels[]={"R (0-255)","G (0-255)","B (0-255)"};YsString id;id.Printf("showRGB%d",i);showRGB[i]=AddTextBox(MkId(id),FSKEY_NULL,FsGuiTextBox::HORIZONTAL,labels[i],"255",4,i==0 ? YSTRUE : YSFALSE);showRGB[i]->SetTextType(FSGUI_INTEGER);}
+  showSupply=AddTextButton(MkId("showSupply"),FSKEY_NULL,FSGUI_CHECKBOX,T("show/supply",L"Show equipment: 500 flares and smoke oil"),YSTRUE);showSupply->SetCheck(YSTRUE);
+@@ -29,4 +30,4 @@
+  info.show.supply=showSupply->GetCheck()==YSTRUE;info.show.synchronized=showSync->GetCheck()==YSTRUE;info.show.autoAfterburner=showAutoAB->GetCheck()==YSTRUE;
+  info.show.burst=YsBound(showBurst->GetInteger(),1,64);info.show.interval=YsBound(showInterval->GetInteger()/1000.0,0.1,2.0);info.show.cameraSensitivity=YsBound(showSensitivity->GetInteger()*0.0035,0.05,2.0);
+ }
+-void FsGuiNewFlightDialogClass::UpdateShow(){for(int c=0;c<3;++c)showRGB[c]->SetInteger(info.show.rgb[showEdit][c]);SetNeedRedraw(YSTRUE);}
++void FsGuiNewFlightDialogClass::UpdateShow(){showPalette->Select(-1);for(int i=0;i<FsSmokePaletteCount;++i)if(info.show.rgb[showEdit][0]==FsSmokePalette[i].rgb[0] && info.show.rgb[showEdit][1]==FsSmokePalette[i].rgb[1] && info.show.rgb[showEdit][2]==FsSmokePalette[i].rgb[2])showPalette->Select(i);for(int c=0;c<3;++c)showRGB[c]->SetInteger(info.show.rgb[showEdit][c]);SetNeedRedraw(YSTRUE);}
+--- a/YSFLIGHT/src/core/fsairshowconfig.h
++++ b/YSFLIGHT/src/core/fsairshowconfig.h
+@@ -1,10 +1,11 @@
+ #ifndef FSAIRSHOWCONFIG_IS_INCLUDED
+ #define FSAIRSHOWCONFIG_IS_INCLUDED
++#include "fssquadlimits.h"
+ struct FsAirshowConfig
+ {
+     bool supply=true,synchronized=true,autoAfterburner=true;
+     int burst=16;double interval=0.2,cameraSensitivity=0.35;
+-    int rgb[9][3];
++    int rgb[FsMaxShowAircraft][3];
+     FsAirshowConfig(){for(auto &c:rgb)for(auto &v:c)v=255;}
+ };
+ #endif
+--- a/YSFLIGHT/src/core/fsdialog.h
++++ b/YSFLIGHT/src/core/fsdialog.h
+@@ -51,7 +51,7 @@
+ public:
+ 	enum
+ 	{
+-		MaxNumWingman=8
++		MaxNumWingman=FsMaxPlayerWingmen
+ 	};
+ 
+ 	void Initialize(void);
+--- a/YSFLIGHT/src/core/fsgrouplayout.h
++++ b/YSFLIGHT/src/core/fsgrouplayout.h
+@@ -1,22 +1,28 @@
+ #ifndef FSGROUPLAYOUT_IS_INCLUDED
+ #define FSGROUPLAYOUT_IS_INCLUDED
+-struct FsGroupOffset { double x,z; };
++constexpr int FsGroupPatternCount=12;
++struct FsGroupOffset { double x,z,y;FsGroupOffset(double x=0.0,double z=0.0,double y=0.0):x(x),z(z),y(y){} };
+ inline FsGroupOffset FsGetGroupOffset(int pattern,int index,double spacing)
+ {
+-    static const int diamond[8][2]={{-1,-1},{1,-1},{0,-2},{-2,-2},{2,-2},{-1,-3},{1,-3},{0,-4}};
+-    static const int delta[8][2]={{-1,-1},{1,-1},{-2,-2},{0,-2},{2,-2},{-3,-3},{-1,-3},{1,-3}};
+-    const int rank=index/2+1;
+-    FsGroupOffset p;
++    static const int diamond[10][2]={{-1,-1},{1,-1},{0,-2},{-2,-2},{2,-2},{-1,-3},{1,-3},{0,-4},{-2,-4},{2,-4}};
++    static const int delta[10][2]={{-1,-1},{1,-1},{-2,-2},{0,-2},{2,-2},{-3,-3},{-1,-3},{1,-3},{3,-3},{0,-4}};
++    const int rank=index/2+1;FsGroupOffset p;
+     switch(pattern)
+     {
+-    case 0:p={double(diamond[index%8][0]),double(diamond[index%8][1])};break;
+-    case 1:p={double(delta[index%8][0]),double(delta[index%8][1])};break;
++    case 0:p={double(diamond[index%10][0]),double(diamond[index%10][1])};break;
++    case 1:p={double(delta[index%10][0]),double(delta[index%10][1])};break;
+     case 2:p={double(index%2==0 ? -rank : rank),double(-rank)};break;
+     case 3:p={0.0,double(-index-1)};break;
+     case 4:p={double(index%2==0 ? -rank : rank),0.0};break;
+     case 5:p={double(-index-1),double(-index-1)};break;
+-    default:p={double(index+1),double(-index-1)};break;
++    case 6:p={double(index+1),double(-index-1)};break;
++    case 7:p={0.0,double(-index-1),0.4*(index+1)};break;
++    case 8:p={double(-index-1),double(-index-1),0.4*(index+1)};break;
++    case 9:p={double(index+1),double(-index-1),0.4*(index+1)};break;
++    case 10:p={index%2==0 ? -0.5:0.5,double(-rank)};break;
++    case 11:p={double(index%2==0 ? -rank : rank),double(rank)};break;
++    default:p={0.0,double(-index-1)};break;
+     }
+-    p.x*=spacing;p.z*=spacing;return p;
++    p.x*=spacing;p.y*=spacing;p.z*=spacing;return p;
+ }
+ #endif
+--- a/YSFLIGHT/src/core/fsguinewflightdialog.cpp
++++ b/YSFLIGHT/src/core/fsguinewflightdialog.cpp
+@@ -10,6 +10,8 @@
+ #include <fssimplewindow.h>
+ 
+ #include "fsconfig.h"
++#include "fsgrouplayout.h"
++#include "fssmokepalette.h"
+ 
+ #include "fs.h"
+ #include "fsfilename.h"
+@@ -397,12 +399,12 @@
+     {
+         wingmanTabId=AddTab(mainTab,FSGUI_NEWFLTDLG_WINGMAN);
+         BeginAddTabItem(mainTab,wingmanTabId);
+-        const wchar_t *counts[]={L"0",L"1",L"2",L"3",L"4",L"5",L"6",L"7",L"8"};
++        const wchar_t *counts[]={L"0",L"1",L"2",L"3",L"4",L"5",L"6",L"7",L"8",L"9",L"10"};
+         AddStaticText(0,FSKEY_NULL,FsGetTextResource("v4/count",L"Wingmen"),YSTRUE);
+-        wingmanCount=AddDropList(MkId("wingmanCount"),FSKEY_NULL,L"",9,counts,9,3,3,YSFALSE);
++        wingmanCount=AddDropList(MkId("wingmanCount"),FSKEY_NULL,L"",MAXNUMWINGMAN+1,counts,MAXNUMWINGMAN+1,3,3,YSFALSE);
+         wingmanCount->Select(0);
+         AddStaticText(0,FSKEY_NULL,FsGetTextResource("v4/slot",L"Edit wingman"),YSTRUE);
+-        wingmanSlot=AddDropList(MkId("wingmanSlot"),FSKEY_NULL,L"",8,counts+1,8,3,3,YSFALSE);
++        wingmanSlot=AddDropList(MkId("wingmanSlot"),FSKEY_NULL,L"",MAXNUMWINGMAN,counts+1,MAXNUMWINGMAN,3,3,YSFALSE);
+         wingmanSlot->Select(0);
+         separateStartsCheck=AddTextButton(MkId("separateStarts"),FSKEY_NULL,FSGUI_CHECKBOX,FsGetTextResource("v8/separate",L"Separate start positions"),YSTRUE);
+         separateStartsCheck->SetCheck(YSFALSE);
+@@ -428,8 +430,8 @@
+         tabId=AddTab(mainTab,FSGUI_NEWFLTDLG_FORMATION);
+         BeginAddTabItem(mainTab,tabId);
+         groupFormationCheck=AddTextButton(MkId("groupFormation"),FSKEY_NULL,FSGUI_CHECKBOX,FsGetTextResource("v4/formation",L"Customize formation (air start)"),YSTRUE);
+-        const wchar_t *patterns[]={FsGetTextResource("v4/pattern0",L"Diamond"),FsGetTextResource("v4/pattern1",L"Delta"),FsGetTextResource("v4/pattern2",L"V formation"),FsGetTextResource("v4/pattern3",L"Column"),FsGetTextResource("v4/pattern4",L"Line abreast"),FsGetTextResource("v4/pattern5",L"Echelon left"),FsGetTextResource("v4/pattern6",L"Echelon right")};
+-        groupPatternChoice=AddDropList(MkId("groupPattern"),FSKEY_NULL,L"",7,patterns,7,18,18,YSTRUE);groupPatternChoice->Select(0);
++        const wchar_t *patterns[]={FsGetTextResource("v4/pattern0",L"Diamond"),FsGetTextResource("v4/pattern1",L"Delta"),FsGetTextResource("v4/pattern2",L"V formation"),FsGetTextResource("v4/pattern3",L"Column"),FsGetTextResource("v4/pattern4",L"Line abreast"),FsGetTextResource("v4/pattern5",L"Echelon left"),FsGetTextResource("v4/pattern6",L"Echelon right"),FsGetTextResource("v4/pattern7",L"Staircase up"),FsGetTextResource("v4/pattern8",L"Staircase left"),FsGetTextResource("v4/pattern9",L"Staircase right"),FsGetTextResource("v4/pattern10",L"Double column"),FsGetTextResource("v4/pattern11",L"Reverse V")};
++        groupPatternChoice=AddDropList(MkId("groupPattern"),FSKEY_NULL,L"",FsGroupPatternCount,patterns,8,23,23,YSTRUE);groupPatternChoice->Select(0);
+         groupSpacingBox=AddTextBox(MkId("groupSpacing"),FSKEY_NULL,FsGuiTextBox::HORIZONTAL,FsGetTextResource("v4/spacing",L"Spacing, m (50-5000)"),"50",6,YSTRUE);
+         groupFormationCheck->SetCheck(YSFALSE);
+         groupStartCheck=AddTextButton(MkId("groupStart"),FSKEY_NULL,FSGUI_CHECKBOX,FsGetTextResource("v4/groupstart",L"Common airborne start"),YSTRUE);
+@@ -839,7 +841,7 @@
+         if(btn==okBtn || btn==flyNowButton)
+         {
+             const int slot=operationTransport;
+-            const auto &transport=(slot<0 ? info.playerAirInfo : info.wingmanInfo[YsBound(slot,0,7)]);
++            const auto &transport=(slot<0 ? info.playerAirInfo : info.wingmanInfo[YsBound(slot,0,MAXNUMWINGMAN-1)]);
+             const bool goodTransport=(slot<0 || info.wingman[slot]==YSTRUE) &&
+                 (0==transport.typeName.Strcmp("UH-60_BLACKHAWK") || 0==transport.typeName.Strcmp("UH-60J_BLACKHAWK") || 0==transport.typeName.Strcmp("V-107"));
+             bool armed=false,emptyRoute=false;
+@@ -1090,7 +1092,7 @@
+ void FsGuiNewFlightDialogClass::OnDropListSelChange(FsGuiDropList *drp,int /*prevSel*/)
+ {
+     if(drp==showUnit){CaptureShow();showEdit=showUnit->GetSelection();UpdateShow();return;}
+-    if(drp==showPalette){const int colors[8][3]={{255,255,255},{255,60,60},{70,140,255},{60,255,100},{255,220,40},{255,90,220},{40,230,230},{255,130,40}};int i=YsBound(showPalette->GetSelection(),0,7);for(int c=0;c<3;++c)showRGB[c]->SetInteger(colors[i][c]);CaptureShow();return;}
++    if(drp==showPalette){int i=YsBound(showPalette->GetSelection(),0,FsSmokePaletteCount-1);for(int c=0;c<3;++c)showRGB[c]->SetInteger(FsSmokePalette[i].rgb[c]);CaptureShow();return;}
+     if(option.operationSetup && drp!=nullptr && drp==operationUnitChoice)
+     {CaptureOperationControls();operationEdit=operationUnitChoice->GetSelection()-1;UpdateOperationControls();return;}
+     if(option.operationSetup && drp!=nullptr && (drp==operationGroupChoice || drp==operationTaskChoice || drp==operationTransportChoice))
+@@ -2116,7 +2118,7 @@
+     info.groupFormation=groupFormationCheck->GetCheck();
+     info.groupAirStart=groupStartCheck->GetCheck();
+     info.groupMission=groupMissionCheck->GetCheck();
+-    info.groupPattern=YsBound(groupPatternChoice->GetSelection(),0,6);
++    info.groupPattern=YsBound(groupPatternChoice->GetSelection(),0,FsGroupPatternCount-1);
+     info.groupTask=YsBound(groupTaskChoice->GetSelection(),0,3);
+     info.groupSpacing=YsBound(double(groupSpacingBox->GetInteger()),50.0,5000.0);
+     info.groupHeight=YsBound(double(groupHeightBox->GetInteger()),50.0,20000.0);
+--- a/YSFLIGHT/src/core/fsoperation.cpp
++++ b/YSFLIGHT/src/core/fsoperation.cpp
+@@ -3,6 +3,7 @@
+ #include <fssimplewindow.h>
+ #include "fs.h"
+ #include "fsoperation.h"
++#include "fssquadlimits.h"
+ #include "fsformationautopilot.h"
+ #include "fsgroundattackautopilot.h"
+ #include "fsdogfightautopilot.h"
+@@ -361,7 +362,7 @@
+     if(wheelPage==2)
+     {labels.Append(T("v8/allUnits",L"All units"));for(const auto &name:groupName)labels.Append(W(name));labels.Append(T("v8/individual",L"Individual"));labels.Append(T("v7/back",L"Back"));}
+     else if(wheelPage==3)
+-    {labels.Append(T("v8/player",L"Player"));for(int i=0;i<8;++i){YsString s;s.Printf(" %d",i+1);YsWString name(T("v8/wingman",L"Wingman"));name.Append(W(s));labels.Append(name);}}
++    {labels.Append(T("v8/player",L"Player"));for(int i=0;i<FsMaxPlayerWingmen;++i){YsString s;s.Printf(" %d",i+1);YsWString name(T("v8/wingman",L"Wingman"));name.Append(W(s));labels.Append(name);}}
+     else if(wheelPage==4)
+     {for(const auto &name:groupName)labels.Append(W(name));labels.Append(T("v7/back",L"Back"));}
+     else
+--- a/YSFLIGHT/src/core/fsoperation_setup.cpp
++++ b/YSFLIGHT/src/core/fsoperation_setup.cpp
+@@ -9,11 +9,11 @@
+ void FsGuiNewFlightDialogClass::MakeOperationTab()
+ {
+     const int tab=AddTab(mainTab,T("v8/planning",L"Orders"));BeginAddTabItem(mainTab,tab);
+-    const wchar_t *slots[]={T("v8/player",L"Player"),L"1",L"2",L"3",L"4",L"5",L"6",L"7",L"8"};
++    const wchar_t *slots[]={T("v8/player",L"Player"),L"1",L"2",L"3",L"4",L"5",L"6",L"7",L"8",L"9",L"10"};
+     const wchar_t *groups[]={L"1",L"2",L"3",L"4"};
+     const wchar_t *tasks[]={T("v8/follow",L"Follow commander"),T("v8/wait",L"Wait / hover"),T("v8/route",L"Follow route"),T("v8/airattack",L"Attack air targets"),T("v8/groundattack",L"Attack ground targets")};
+     AddStaticText(0,FSKEY_NULL,T("v8/editUnit",L"Configure unit"),YSTRUE);
+-    operationUnitChoice=AddDropList(MkId("opUnit"),FSKEY_NULL,L"",9,slots,9,10,10,YSFALSE);
++    operationUnitChoice=AddDropList(MkId("opUnit"),FSKEY_NULL,L"",FsMaxShowAircraft,slots,FsMaxShowAircraft,10,10,YSFALSE);
+     AddStaticText(0,FSKEY_NULL,T("v8/unitGroup",L"Group"),YSFALSE);
+     operationGroupChoice=AddDropList(MkId("opGroup"),FSKEY_NULL,L"",4,groups,4,3,3,YSFALSE);
+     operationTaskChoice=AddDropList(MkId("opTask"),FSKEY_NULL,T("v8/task",L"Initial order"),5,tasks,5,25,25,YSTRUE);
+@@ -23,7 +23,7 @@
+     operationRouteList=AddEmptyListBox(MkId("opRoute"),FSKEY_NULL,L"",4,40,YSTRUE);
+     operationRouteClear=AddTextButton(MkId("opRouteClear"),FSKEY_NULL,FSGUI_PUSHBUTTON,T("v8/clearRoute",L"Clear route"),YSTRUE);
+     AddStaticText(0,FSKEY_NULL,T("v8/transport",L"Transport to deliver troops"),YSTRUE);
+-    operationTransportChoice=AddDropList(MkId("opTransport"),FSKEY_NULL,L"",9,slots,9,10,10,YSFALSE);
++    operationTransportChoice=AddDropList(MkId("opTransport"),FSKEY_NULL,L"",FsMaxShowAircraft,slots,FsMaxShowAircraft,10,10,YSFALSE);
+     for(int i=0;i<4;++i)
+     {
+         YsString id;id.Printf("opName%d",i+1);YsString label;label.Printf("%d: ",i+1);
+@@ -33,7 +33,7 @@
+     AddStaticText(0,FSKEY_NULL,T("v8/planningHint",L"Enable wingmen in their tab. Map orders can be changed during flight (F11)."),YSTRUE);
+     EndAddTabItem();
+     operationUnits.Clear();
+-    for(int slot=-1;slot<8;++slot){FsOperationUnit u;u.slot=slot;u.group=(slot<0 ? 1 : 2);u.task=(slot<0 ? 1 : 0);operationUnits.Append(u);}
++    for(int slot=-1;slot<FsMaxPlayerWingmen;++slot){FsOperationUnit u;u.slot=slot;u.group=(slot<0 ? 1 : 2);u.task=(slot<0 ? 1 : 0);operationUnits.Append(u);}
+     operationGroups[0].EncodeUTF8(T("v8/transportGroup",L"Transport"));operationGroups[1].EncodeUTF8(T("v8/strikeGroup",L"Strike"));
+     operationGroups[2].EncodeUTF8(T("v8/coverGroup",L"Cover"));operationGroups[3].EncodeUTF8(T("v8/reserveGroup",L"Reserve"));
+     operationUnitChoice->Select(0);operationTransportChoice->Select(0);operationEdit=-1;UpdateOperationControls();
+--- a/YSFLIGHT/src/core/fssimulation.h
++++ b/YSFLIGHT/src/core/fssimulation.h
+@@ -84,6 +84,7 @@
+ {
+ private:
+     bool squadWheelOpen=false,squadWheelFormations=false,squadInputRelease=false;
++    int squadFormationPage=0;
+     YSBOOL squadWasPaused=YSFALSE;
+     int squadMouseX=0,squadMouseY=0;
+     double squadSpacing=50.0;
+--- a/YSFLIGHT/src/core/fssquadcommands.cpp
++++ b/YSFLIGHT/src/core/fssquadcommands.cpp
+@@ -118,7 +118,7 @@
+     if(auto op=FsGetOperation(this))
+     {
+         for(int i=int(members.GetN())-1;i>=0;--i)if(!op->InScope(members[i]->squadSlot))members.Delete(i);
+-        for(auto wing:members)if(auto unit=op->Unit(wing->squadSlot)){const bool formation=(command==1 || command==8 || command==3 || command==4 || (command>=100 && command<=106));unit->task=(formation ? 0 : 9);unit->pending=formation;unit->landRequested=false;}
++        for(auto wing:members)if(auto unit=op->Unit(wing->squadSlot)){const bool formation=(command==1 || command==8 || command==3 || command==4 || (command>=100 && command<100+FsGroupPatternCount));unit->task=(formation ? 0 : 9);unit->pending=formation;unit->landRequested=false;}
+     }
+     if(0==members.GetN()){AddTimedMessage(T("v7/noWingmen",L"No available wingmen."));return false;}
+     if(command==5)
+@@ -140,12 +140,12 @@
+     if(inferred>1.0)squadSpacing=inferred;
+     squadSpacing=YsBound(squadSpacing,minSpacing,5000.0);
+     if(command==0)return false; // Opens the formation submenu in the UI.
+-    if(command>=100 && command<=106)
++    if(command>=100 && command<100+FsGroupPatternCount)
+     {
+         for(int i=0;i<members.GetN();++i)
+         {
+             auto wing=members[i];const auto p=FsGetGroupOffset(command-100,i,squadSpacing);
+-            wing->squadOffset.Set(p.x,0.0,p.z);Form(*wing,*leader);
++            wing->squadOffset.Set(p.x,p.y,p.z);Form(*wing,*leader);
+         }
+         AddTimedMessage(T("v7/changing",L"Wingmen: changing formation."));return true;
+     }
+@@ -226,7 +226,7 @@
+     if(squadWheelOpen){CloseSquadWheel();return;}
+     auto player=GetPlayerAirplane();if(nullptr==player || YSTRUE==player->isPlayingRecord)return;
+     if(nullptr!=netServer || nullptr!=netClient){SetUpRadioCommTargetDialog();return;}
+-    DiscoverSquadMembers();if(auto op=FsGetOperation(this)){op->wheelPage=0;op->mapOpen=false;}squadWasPaused=pause;pause=YSTRUE;squadWheelOpen=true;squadWheelFormations=false;
++    DiscoverSquadMembers();if(auto op=FsGetOperation(this)){op->wheelPage=0;op->mapOpen=false;}squadWasPaused=pause;pause=YSTRUE;squadWheelOpen=true;squadWheelFormations=false;squadFormationPage=0;
+     int lb,mb,rb;FsGetMouseState(lb,mb,rb,squadMouseX,squadMouseY);
+     int w,h;FsGetWindowSize(w,h);FsSetMousePosition(w/2,h/2);
+     player->Prop().SetAllVirtualButton(YSFALSE);
+@@ -278,10 +278,12 @@
+         if(!op && item==-2 && !squadWheelFormations)if(auto show=FsGetAirshow(this)){show->menuOpen=true;return;}
+         if(squadWheelFormations)
+         {
+-            if(item==7 || item==-2){squadWheelFormations=false;return;}
+-            if(item>=0 && item<7){IssueSquadCommand(100+item);CloseSquadWheel();}
+-        }
+-        else if(item==0)squadWheelFormations=true;
++            const int first=squadFormationPage*7,num=YsSmaller(7,FsGroupPatternCount-first);
++            if(item==num+1 || item==-2){squadWheelFormations=false;return;}
++            if(item==num){squadFormationPage=1-squadFormationPage;return;}
++            if(item>=0 && item<num){IssueSquadCommand(100+first+item);CloseSquadWheel();}
++        }
++        else if(item==0){squadWheelFormations=true;squadFormationPage=0;}
+         else if(item>=1 && item<=8){IssueSquadCommand(item);CloseSquadWheel();}
+         else if(item==-2)CloseSquadWheel();
+     };
+@@ -297,7 +299,7 @@
+         if(event==FSMOUSEEVENT_RBUTTONDOWN){CloseSquadWheel();break;}
+         if(event==FSMOUSEEVENT_LBUTTONDOWN)
+         {
+-            int w,h;FsGetWindowSize(w,h);const int item=WheelItem(mx,my,w,h,op && op->wheelPage>0 ? int(op->WheelLabels().GetN()) : squadWheelFormations ? 8 : 9);
++            int w,h;FsGetWindowSize(w,h);const int item=WheelItem(mx,my,w,h,op && op->wheelPage>0 ? int(op->WheelLabels().GetN()) : squadWheelFormations ? YsSmaller(7,FsGroupPatternCount-squadFormationPage*7)+2 : 9);
+             if(item==-1)CloseSquadWheel();else choose(item);
+         }
+     }
+@@ -311,10 +313,10 @@
+     int w,h;FsGetWindowSize(w,h);const int cx=w/2,cy=h/2,r=YsSmaller(260,int(h*0.34));
+     const auto extra=op ? op->WheelLabels() : YsArray<YsWString>();
+     const bool operationPage=op && op->wheelPage>0;
+-    const int count=operationPage ? int(extra.GetN()) : squadWheelFormations ? 8 : 9;
++    const int count=operationPage ? int(extra.GetN()) : squadWheelFormations ? YsSmaller(7,FsGroupPatternCount-squadFormationPage*7)+2 : 9;
+     int lb,mb,rb,mx,my;FsGetMouseState(lb,mb,rb,mx,my);const int hover=WheelItem(mx,my,w,h,count);
+     const wchar_t *main[]={T("v7/shape",L"Formation"),T("v7/regroup",L"Regroup"),T("v7/scatter",L"Scatter"),T("v7/closer",L"Closer"),T("v7/farther",L"Farther"),T("v7/cover",L"Cover me"),T("v7/attack",L"Attack target"),T("v7/hold",L"Hold area"),T("v7/abort",L"Abort attack")};
+-    const wchar_t *patterns[]={T("v7/diamond",L"Diamond"),T("v7/delta",L"Delta"),T("v7/vee",L"V"),T("v7/trail",L"Trail"),T("v7/line",L"Line abreast"),T("v7/left",L"Echelon left"),T("v7/right",L"Echelon right"),T("v7/back",L"Back")};
++    const wchar_t *patterns[]={T("v7/diamond",L"Diamond"),T("v7/delta",L"Delta"),T("v7/vee",L"V formation"),T("v7/trail",L"Column"),T("v7/line",L"Line abreast"),T("v7/left",L"Echelon left"),T("v7/right",L"Echelon right"),T("v84/wheel7",L"Staircase up"),T("v84/wheel8",L"Staircase left"),T("v84/wheel9",L"Staircase right"),T("v84/wheel10",L"Double column"),T("v84/wheel11",L"Reverse V")};
+     for(int item=0;item<count;++item)
+     {
+         int points[44];int n=0;points[n++]=cx;points[n++]=cy;
+@@ -326,7 +328,7 @@
+         FsDrawPolygon(n/2,points,item==hover ? SquadColor(25,103,121) : SquadColor(17,29,45));
+         FsDrawLine(cx,cy,points[2],points[3],SquadColor(100,155,175));
+         const double a=double(item)*2*YsPi/count;
+-        YsString number;number.Printf("%d\n",item+1);YsWString label;label.SetUTF8String(number);label.Append(operationPage ? extra[item].Txt() : squadWheelFormations ? patterns[item] : main[item]);
++        YsString number;number.Printf("%d\n",item+1);YsWString label;label.SetUTF8String(number);label.Append(operationPage ? extra[item].Txt() : squadWheelFormations ? (item<count-2 ? patterns[squadFormationPage*7+item] : item==count-2 ? T(squadFormationPage==0 ? "v84/moreForms":"v84/firstForms",L"Other formations") : T("v7/back",L"Back")) : main[item]);
+         CenterText(cx+int(sin(a)*r*0.69),cy-int(cos(a)*r*0.69),label,YsWhite());
+     }
+     FsDrawCircle(cx,cy,r,SquadColor(125,190,205),YSFALSE);
+--- a/YSFLIGHT/src/gui/fsmenu_sim.cpp
++++ b/YSFLIGHT/src/gui/fsmenu_sim.cpp
+@@ -301,15 +301,15 @@
+     double safeY=origin.y();
+     for(int i=0;i<count;++i)
+     {
+-        const auto p=FsGetGroupOffset(pattern,i,spacing);offsets[i].Set(p.x,0.0,p.z);
++        const auto p=FsGetGroupOffset(pattern,i,spacing);offsets[i].Set(p.x,p.y,p.z);
+         wingmen[i]->squadOffset=offsets[i];
+         YsVec3 offset;attitude.Mul(offset,offsets[i]);positions[i]=origin+offset;
+-        safeY=YsGreater(safeY,world.GetFieldElevation(positions[i].x(),positions[i].z())+50.0);
++        safeY=YsGreater(safeY,world.GetFieldElevation(positions[i].x(),positions[i].z())+50.0-offset.y());
+     }
+     origin.SetY(safeY);RecordGroupStart(leader,origin,attitude,speed);
+     for(int i=0;i<count;++i)
+     {
+-        auto wing=wingmen[i];positions[i].SetY(safeY);const double wingSpeed=(wing->Prop().GetAircraftClass()==FSCL_HELICOPTER ? YsSmaller(speed,wing->Prop().GetEstimatedCruiseSpeed()*0.8) : YsGreater(speed,wing->Prop().GetEstimatedLandingSpeed()*1.5));
++        auto wing=wingmen[i];positions[i].SetY(safeY+offsets[i].y());const double wingSpeed=(wing->Prop().GetAircraftClass()==FSCL_HELICOPTER ? YsSmaller(speed,wing->Prop().GetEstimatedCruiseSpeed()*0.8) : YsGreater(speed,wing->Prop().GetEstimatedLandingSpeed()*1.5));
+         RecordGroupStart(*wing,positions[i],attitude,wingSpeed);
+         const int task=(info.groupMission==YSTRUE ? info.groupTask : 0);
+         wing->squadTask=(task==0 ? 0 : (task==1 ? 2 : 3));
+--- a/YSFLIGHT/src/gui/fsmissionmenu.cpp
++++ b/YSFLIGHT/src/gui/fsmissionmenu.cpp
+@@ -67,7 +67,7 @@
+     auto dlg=dynamic_cast<FsGuiNewFlightDialogClass *>(closed);if(dlg==nullptr || code!=YSOK)return;
+     dlg->CaptureOperationControls();auto world=runLoop->GetWorld();auto &info=dlg->info;
+     const int transportSlot=dlg->operationTransport;
+-    const auto &data=(transportSlot<0 ? info.playerAirInfo : info.wingmanInfo[YsBound(transportSlot,0,7)]);
++    const auto &data=(transportSlot<0 ? info.playerAirInfo : info.wingmanInfo[YsBound(transportSlot,0,FsNewFlightDialogInfo::MaxNumWingman-1)]);
+     auto tmpl=world->GetAirplaneTemplate(data.typeName);
+     if((transportSlot>=0 && info.wingman[transportSlot]!=YSTRUE) || tmpl==nullptr || (0!=data.typeName.Strcmp("UH-60_BLACKHAWK") && 0!=data.typeName.Strcmp("UH-60J_BLACKHAWK") && 0!=data.typeName.Strcmp("V-107")))
+     {StartMessageBox(FSGUI_COMMON_ERROR,T("v8/transportError",L"Choose an enabled helicopter as transport in Orders, then prepare the mission again."),FSGUI_COMMON_OK,nullptr,0,0);return;}
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.3";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.4";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif
+--- /dev/null
++++ b/YSFLIGHT/src/core/fssquadlimits.h
+@@ -0,0 +1,5 @@
++#ifndef FSSQUADLIMITS_IS_INCLUDED
++#define FSSQUADLIMITS_IS_INCLUDED
++constexpr int FsMaxPlayerWingmen=10;
++constexpr int FsMaxShowAircraft=FsMaxPlayerWingmen+1;
++#endif
+--- /dev/null
++++ b/YSFLIGHT/src/core/fssmokepalette.h
+@@ -0,0 +1,22 @@
++#ifndef FSSMOKEPALETTE_IS_INCLUDED
++#define FSSMOKEPALETTE_IS_INCLUDED
++struct FsSmokePaletteEntry { const char *key;const wchar_t *name;int rgb[3]; };
++static const FsSmokePaletteEntry FsSmokePalette[]={
++{"show/white",L"White",{255,255,255}},
++{"show/blue",L"Blue",{70,140,255}},
++{"show/red",L"Red",{255,60,60}},
++{"show/yellow",L"Yellow",{255,215,0}},
++{"show/green",L"Green",{50,230,90}},
++{"show/purple",L"Purple",{190,80,255}},
++{"show/orange",L"Orange",{255,130,30}},
++{"show/cyan",L"Cyan",{50,230,230}},
++{"show/pink",L"Pink",{255,100,180}},
++{"show/black",L"Black",{0,0,0}},
++{"show/gray",L"Gray",{120,120,120}},
++{"show/brown",L"Brown",{145,85,45}},
++{"show/navy",L"Dark blue",{20,40,130}},
++{"show/lime",L"Lime",{170,255,30}},
++{"show/magenta",L"Magenta",{255,0,255}},
++};
++constexpr int FsSmokePaletteCount=sizeof(FsSmokePalette)/sizeof(FsSmokePalette[0]);
++#endif
