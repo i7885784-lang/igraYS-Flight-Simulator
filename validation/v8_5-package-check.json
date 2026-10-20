@@ -1,0 +1,259 @@
+{
+  "ysflight32_gl1.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "638592928ba65a43eb28e6fabc1c2b9fc6aaddae3e471437a88d92d1e154077f",
+    "code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "1f2ecb57b49ac193b833c11db54d496869bb9c7c200fa40d425686b72ee9dabf",
+    "code_matches_build": true
+  },
+  "original_assets_preserved": true,
+  "resume": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "wingmen_survive": true,
+      "physical_clearance": true,
+      "start_maximized": true,
+      "three_reports": true,
+      "clock_not_reset": true,
+      "exact_suspended_clock": true,
+      "keyboard_default": true
+    },
+    "clock_reports": [
+      8.033,
+      8.45,
+      11.04
+    ],
+    "pause_clock": [
+      8.41
+    ],
+    "resume_clock": [
+      8.41
+    ],
+    "start_window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    },
+    "minimum_distance": 49.97761376925653
+  },
+  "focus": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "wingmen_survive": true,
+      "physical_clearance": true,
+      "two_focus_pauses": true,
+      "two_resumes": true,
+      "clock_frozen_in_both": true,
+      "no_reset": true
+    },
+    "pause_clock": [
+      3.346,
+      4.166
+    ],
+    "resume_clock": [
+      3.346,
+      4.166
+    ],
+    "reports": [
+      3.05,
+      3.398,
+      3.933,
+      4.214,
+      4.744
+    ],
+    "minimum_distance": 49.9777871302299
+  },
+  "scatter": {
+    "passed": true,
+    "checks": {
+      "eight_wingmen": true,
+      "wingmen_survive": true,
+      "physical_clearance": true,
+      "sequential_departures": true,
+      "no_auto_return_before_recall": true,
+      "outgoing_independent": true,
+      "formation_after_recall": true,
+      "regroup_error": true
+    },
+    "minimum_distance": 36.78407107973749,
+    "return_times": [
+      40.049,
+      40.049,
+      40.049,
+      40.049,
+      40.049,
+      40.049,
+      40.049,
+      40.049
+    ],
+    "final_error": 0.412
+  },
+  "death": {
+    "passed": true,
+    "checks": {
+      "eight_departures": true,
+      "detached_from_player": true,
+      "wingmen_alive": true,
+      "not_diving_after_wreck": true
+    },
+    "departures": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "gui": {
+    "passed": true,
+    "checks": {
+      "eight_created": true,
+      "spacing_10_accepted_with_body_guard": true,
+      "double_column_matches_actual_offsets": true,
+      "keyboard_by_default": true,
+      "only_six_colours_in_mouse_cycle": true,
+      "eight_survive_close_spacing": true,
+      "safe_close_spacing": true
+    },
+    "requested_spacing": 10,
+    "effective_safe_spacing": 35.155372,
+    "offsets": [
+      [
+        0.0,
+        35.155372,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        -35.155372
+      ],
+      [
+        2.0,
+        35.155372,
+        0.0,
+        -35.155372
+      ],
+      [
+        3.0,
+        0.0,
+        0.0,
+        -70.310744
+      ],
+      [
+        4.0,
+        35.155372,
+        0.0,
+        -70.310744
+      ],
+      [
+        5.0,
+        0.0,
+        0.0,
+        -105.466116
+      ],
+      [
+        6.0,
+        35.155372,
+        0.0,
+        -105.466116
+      ],
+      [
+        7.0,
+        0.0,
+        0.0,
+        -140.621488
+      ]
+    ],
+    "palette_cycle": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        70,
+        140,
+        255
+      ],
+      [
+        255,
+        60,
+        60
+      ],
+      [
+        50,
+        230,
+        90
+      ],
+      [
+        255,
+        215,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "minimum_distance": 26.451523454010264
+  },
+  "cancel": {
+    "passed": true,
+    "checks": {
+      "cancel_new_preserves_current_flight": true,
+      "same_clock": true,
+      "continues_after_cancel": true
+    },
+    "clock_reports": [
+      3.049,
+      3.572,
+      6.029
+    ]
+  },
+  "game_zip_sha256": "114dd7919fdc8183d95b40f2d484e83bfcee61eaabbf1cab17251cecd7ffa959",
+  "game_zip_bytes": 67213852
+}
