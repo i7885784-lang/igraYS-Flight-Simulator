@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "flight_cases": 6,
+  "results": [
+    {
+      "name": "balanced-MIG-29_FULCRUM-h1000-s180",
+      "count": 0,
+      "pattern": 3,
+      "model": "MIG-29_FULCRUM",
+      "height": 1000,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 1000.0,
+        "final_height": 1004.324056,
+        "min_height": 999.979099,
+        "max_height": 1004.324056,
+        "final_pitch": 0.5112250304522478,
+        "final_state": 0
+      }
+    },
+    {
+      "name": "balanced-F-18E_SUPERHORNET-h1000-s180",
+      "count": 0,
+      "pattern": 3,
+      "model": "F-18E_SUPERHORNET",
+      "height": 1000,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 1000.0,
+        "final_height": 1004.085802,
+        "min_height": 999.97678,
+        "max_height": 1004.126452,
+        "final_pitch": 0.585683760718474,
+        "final_state": 0
+      }
+    },
+    {
+      "name": "balanced-MIG-29_FULCRUM-h3000-s180",
+      "count": 0,
+      "pattern": 3,
+      "model": "MIG-29_FULCRUM",
+      "height": 3000,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 3000.0,
+        "final_height": 3005.015731,
+        "min_height": 2999.971641,
+        "max_height": 3005.250384,
+        "final_pitch": 0.7662279185843526,
+        "final_state": 0
+      }
+    },
+    {
+      "name": "balanced-MIG-29_FULCRUM-h1000-s260",
+      "count": 0,
+      "pattern": 3,
+      "model": "MIG-29_FULCRUM",
+      "height": 1000,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 1000.0,
+        "final_height": 1004.431383,
+        "min_height": 1000.0,
+        "max_height": 1004.431383,
+        "final_pitch": -0.10005963046826157,
+        "final_state": 0
+      }
+    },
+    {
+      "name": "balanced-ground",
+      "count": 0,
+      "pattern": 3,
+      "model": "MIG-29_FULCRUM",
+      "height": 0,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 1.7,
+        "final_height": 1.7,
+        "min_height": 1.7,
+        "max_height": 1.7,
+        "final_pitch": 0.0,
+        "final_state": 6
+      }
+    },
+    {
+      "name": "balanced-realtime",
+      "count": 0,
+      "pattern": 3,
+      "model": "MIG-29_FULCRUM",
+      "height": 1000,
+      "spacing": 50,
+      "alive": true,
+      "minimum_distance": 1000000000.0,
+      "final_error": [],
+      "maximized": true,
+      "player": {
+        "start_height": 1000.0,
+        "final_height": 1004.291275,
+        "min_height": 999.979099,
+        "max_height": 1004.291275,
+        "final_pitch": 0.5125829404267078,
+        "final_state": 0
+      }
+    }
+  ],
+  "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+}

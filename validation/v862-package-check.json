@@ -1,0 +1,205 @@
+{
+  "ysflight32_gl1.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "8d1b3a7f545eaa1d6632dc2ce4c26508cf0b19e7615da37f0b753577e35582ee"
+  },
+  "ysflight32_gl2.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "8f4f6ebde345a01fdcecfb25ebd4a555e7731a01b6dfbf3be6d1f213c9280c55"
+  },
+  "unchanged_asset_files": 870,
+  "previous_version_only": true,
+  "sweep-summary": {
+    "passed": true,
+    "cases": 37,
+    "failed_cases": [],
+    "minimum_distance": 21.193686640544897,
+    "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+  },
+  "regression-summary": {
+    "passed": true,
+    "flight_cases": 18,
+    "geometry": {
+      "passed": true,
+      "cases": 1400
+    },
+    "minimum_distance": 37.76810120946634,
+    "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+  },
+  "manual-summary": {
+    "passed": true,
+    "flight_cases": 6,
+    "results": [
+      {
+        "name": "balanced-MIG-29_FULCRUM-h1000-s180",
+        "count": 0,
+        "pattern": 3,
+        "model": "MIG-29_FULCRUM",
+        "height": 1000,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 1000.0,
+          "final_height": 1004.324056,
+          "min_height": 999.979099,
+          "max_height": 1004.324056,
+          "final_pitch": 0.5112250304522478,
+          "final_state": 0
+        }
+      },
+      {
+        "name": "balanced-F-18E_SUPERHORNET-h1000-s180",
+        "count": 0,
+        "pattern": 3,
+        "model": "F-18E_SUPERHORNET",
+        "height": 1000,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 1000.0,
+          "final_height": 1004.085802,
+          "min_height": 999.97678,
+          "max_height": 1004.126452,
+          "final_pitch": 0.585683760718474,
+          "final_state": 0
+        }
+      },
+      {
+        "name": "balanced-MIG-29_FULCRUM-h3000-s180",
+        "count": 0,
+        "pattern": 3,
+        "model": "MIG-29_FULCRUM",
+        "height": 3000,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 3000.0,
+          "final_height": 3005.015731,
+          "min_height": 2999.971641,
+          "max_height": 3005.250384,
+          "final_pitch": 0.7662279185843526,
+          "final_state": 0
+        }
+      },
+      {
+        "name": "balanced-MIG-29_FULCRUM-h1000-s260",
+        "count": 0,
+        "pattern": 3,
+        "model": "MIG-29_FULCRUM",
+        "height": 1000,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 1000.0,
+          "final_height": 1004.431383,
+          "min_height": 1000.0,
+          "max_height": 1004.431383,
+          "final_pitch": -0.10005963046826157,
+          "final_state": 0
+        }
+      },
+      {
+        "name": "balanced-ground",
+        "count": 0,
+        "pattern": 3,
+        "model": "MIG-29_FULCRUM",
+        "height": 0,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 1.7,
+          "final_height": 1.7,
+          "min_height": 1.7,
+          "max_height": 1.7,
+          "final_pitch": 0.0,
+          "final_state": 6
+        }
+      },
+      {
+        "name": "balanced-realtime",
+        "count": 0,
+        "pattern": 3,
+        "model": "MIG-29_FULCRUM",
+        "height": 1000,
+        "spacing": 50,
+        "alive": true,
+        "minimum_distance": 1000000000.0,
+        "final_error": [],
+        "maximized": true,
+        "player": {
+          "start_height": 1000.0,
+          "final_height": 1004.291275,
+          "min_height": 999.979099,
+          "max_height": 1004.291275,
+          "final_pitch": 0.5125829404267078,
+          "final_state": 0
+        }
+      }
+    ],
+    "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+  },
+  "gui-summary": {
+    "passed": true,
+    "checks": {
+      "only_one_balance": true,
+      "exact_resume": true,
+      "alive": true,
+      "maximized": true,
+      "eight_in_formation": true
+    },
+    "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+  },
+  "game_zip_sha256": "82d7f9f94a17d57352fb260ada85321f1f9d4c75dc9871ec3661cb1508ded238",
+  "game_zip_bytes": 23036448,
+  "changed_source_sha256": {
+    "YSFLIGHT/src/autopilot/fsformationautopilot.h": "8dfea40877b45159a18e20a7d249add83da3d1231257fc81761c0b7e17b94c47",
+    "YSFLIGHT/src/autopilot/fsformationsafety.cpp": "329946ef907f6bac2b0424b7abe01f256f1670cc7015a5ecfbc4f732a557c216",
+    "YSFLIGHT/src/core/fsairshow.cpp": "d1b5eaf26c6c5eba2b2bccf9bc7f787d3a04ea05b59f07bd67031bf1c54396bd",
+    "YSFLIGHT/src/main/fsmain.cpp": "b0fbf01468fb35bc1b8ddb8907baa551b02a4f4e513e1c2d01d32107e22bd8b4",
+    "YSFLIGHT/src/vehicle/fsairplaneproperty.cpp": "938c7a94cedc09cd88c5a4979f57ddd8e69c7724e3f59eefc33942cf7e0d763d",
+    "YSFLIGHT/src/vehicle/fsairplaneproperty.h": "a94a68a8be1b9644f5c4c5228f1df4cecf62301bf62bc45e5e799a303c3ce815"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "only_one_balance": true,
+    "exact_resume": true,
+    "alive": true,
+    "maximized": true,
+    "eight_in_formation": true
+  },
+  "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+}

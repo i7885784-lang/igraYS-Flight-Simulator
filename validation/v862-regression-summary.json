@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "flight_cases": 18,
+  "geometry": {
+    "passed": true,
+    "cases": 1400
+  },
+  "minimum_distance": 37.76810120946634,
+  "exe_sha256": "624a9e53af50cd80d50aaaacc494bcc0f5677a4ba92888ef35ac51c6bfd0fe94"
+}
