@@ -1,0 +1,23 @@
+[
+  {
+    "name": "YSFlight_v8_6_1_32bit.zip",
+    "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/raw/refs/heads/ysflight-center-download/downloads/YSFlight_v8_6_1_32bit.zip",
+    "bytes": 86090402,
+    "sha256": "f40d6fba3373ee467a4e282df29dca18573c96558b5af7a7bbbce5d55471def7",
+    "matches": true
+  },
+  {
+    "name": "YSFlight_v8_6_1_Sources.zip",
+    "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/raw/refs/heads/ysflight-center-download/downloads/YSFlight_v8_6_1_Sources.zip",
+    "bytes": 91871627,
+    "sha256": "dbeac103d11b858c541f63798336e2890f34c7376fe88b794d782af2cc529292",
+    "matches": true
+  },
+  {
+    "name": "YSFlight_v8_6_1_Report.zip",
+    "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/raw/refs/heads/ysflight-center-download/downloads/YSFlight_v8_6_1_Report.zip",
+    "bytes": 2889097,
+    "sha256": "154dbfba68d79570de9f1df10c1ebfc9b633c2c09576e63ec022c21bdfe45980",
+    "matches": true
+  }
+]
