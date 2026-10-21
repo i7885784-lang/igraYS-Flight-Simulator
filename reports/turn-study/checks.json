@@ -1,0 +1,8 @@
+{
+  "flights": 20,
+  "all_survived": true,
+  "minimum_sampled_clearance": 30.656966645876434,
+  "source_restored": true,
+  "validation_exe_restored": true,
+  "production_archives_changed": false
+}

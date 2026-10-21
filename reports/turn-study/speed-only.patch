@@ -1,0 +1,25 @@
+--- v8.6.1/fsformationsafety.cpp
++++ experiment/fsformationsafety.cpp
+@@ -89,6 +89,7 @@
+  wantedVelocity+=avoidVelocity;
+  const double clearance=air.GetPosition().y()-safeTerrain;
+  const double down=YsGreater(0.0,-velocity.y()),bank=air.GetAttitude().b();
++ const bool fighter=p.GetAirplaneCategory()==FSAC_FIGHTER;
+  const double gLimit=YsBound(GetDefaultGLimit(air),2.0,6.0);
+  const double rollTime=YsAbs(bank)/YsDegToRad(90.0);
+  const double reserve=margin+down*(1.5+rollTime)+down*down/(2.0*YsGreater(3.0,(gLimit-1.0)*FsGravityConst*0.5));
+@@ -127,7 +128,13 @@
+   p.GController(YsBound(requestedG,minimumG,YsGreater(minimumG,YsSmaller(gLimit,availableG*0.9))));
+   // Acceleration is available during capture, not disabled at 45 degrees.
+   // Slow only when the desired track is actually behind the aircraft.
+-  const double desiredSpeed=(YsAbs(bearing)>YsDegToRad(100.0) ? YsSmaller(leadVelocity.GetLength(),wantedVelocity.GetLength()) : wantedVelocity.GetLength());
++  double desiredSpeed=(YsAbs(bearing)>YsDegToRad(100.0) ? YsSmaller(leadVelocity.GetLength(),wantedVelocity.GetLength()) : wantedVelocity.GetLength());
++  if(fighter && !independentDeparture)
++  {
++   const double turning=YsGreater(YsAbs(bearing)/YsDegToRad(25.0),YsAbs(formationTurnRate)/0.08);
++   const double cap=leadVelocity.GetLength()*(turning>1.0 ? 1.02 : turning>0.5 ? 1.10:1.50);
++   desiredSpeed=YsSmaller(desiredSpeed,cap);
++  }
+   commandedSpeed=YsGreater(minSpeed,desiredSpeed);p.SpeedController(commandedSpeed);
+   mode=(!rejoining && error.GetLength()<10.0 ? FSFOMMODE_INPOSITION:FSFOMMODE_LOSTPOSITION);
+  }
