@@ -1,0 +1,49 @@
+{
+  "matrix-summary": {
+    "passed": true,
+    "cases": 160,
+    "minimum": 29.00011404498146
+  },
+  "extra-summary": {
+    "passed": true,
+    "cases": 97,
+    "minimum": 26.904036877043154
+  },
+  "layout": {
+    "passed": true,
+    "cases": 1400
+  },
+  "gui": {
+    "passed": true,
+    "checks": {
+      "setting_saved": true,
+      "six_cover": true,
+      "height_applied": true,
+      "settled": true,
+      "safe_route_found": true,
+      "transition_finished": true,
+      "no_selector": true,
+      "maximized": true
+    },
+    "errors": [
+      0.253,
+      0.696,
+      0.749,
+      0.921,
+      0.172,
+      1.174
+    ]
+  },
+  "cover-return-summary": {
+    "passed": true,
+    "cases": 8,
+    "minimum": 39.807848418421905
+  },
+  "photo": {
+    "passed": true,
+    "checks": {
+      "six_cover": true,
+      "safe_route": true
+    }
+  }
+}

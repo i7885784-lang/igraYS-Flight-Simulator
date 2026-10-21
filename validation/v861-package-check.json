@@ -1,0 +1,92 @@
+{
+  "ysflight32_gl1.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "3817cbd75de36185a09daa5b291dc3fa12e6e4e9021fc7032bd0c1618532ae11",
+    "code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "cfb389d4cdb4fcb7cf7b131ec118ff44c4359335eee24c3c7ffbf8e6bca83934",
+    "code_matches_build": true
+  },
+  "original_assets_preserved": true,
+  "matrix-summary": {
+    "passed": true,
+    "cases": 160,
+    "minimum": 29.00011404498146
+  },
+  "extra-summary": {
+    "passed": true,
+    "cases": 97,
+    "minimum": 26.904036877043154
+  },
+  "layout": {
+    "passed": true,
+    "cases": 1400
+  },
+  "gui": {
+    "passed": true,
+    "checks": {
+      "setting_saved": true,
+      "six_cover": true,
+      "height_applied": true,
+      "settled": true,
+      "safe_route_found": true,
+      "transition_finished": true,
+      "no_selector": true,
+      "maximized": true
+    },
+    "errors": [
+      0.253,
+      0.696,
+      0.749,
+      0.921,
+      0.172,
+      1.174
+    ]
+  },
+  "cover-return-summary": {
+    "passed": true,
+    "cases": 8,
+    "minimum": 39.807848418421905
+  },
+  "photo": {
+    "passed": true,
+    "checks": {
+      "six_cover": true,
+      "safe_route": true
+    }
+  },
+  "base_version": "v8.6 (exact source snapshot restored before edits)",
+  "validation_commands_absent_from_x86": true,
+  "game_zip_sha256": "f40d6fba3373ee467a4e282df29dca18573c96558b5af7a7bbbce5d55471def7",
+  "game_zip_bytes": 86090402
+}
