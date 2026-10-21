@@ -1,0 +1,323 @@
+--- a/YSFLIGHT/runtime/language/en.uitxt
++++ b/YSFLIGHT/runtime/language/en.uitxt
+@@ -968,3 +968,5 @@
+ +v88/cover8 #Eight
+ +v88/coverBack #Return\nto formation
+ +v88/coverHint #1–8: aircraft count. 9: return. Esc: cancel.
++
+++v89/cover #Cover\nwhole squad
+--- a/YSFLIGHT/runtime/language/ru.uitxt
++++ b/YSFLIGHT/runtime/language/ru.uitxt
+@@ -975,3 +975,5 @@
+ +v88/cover8 #Восемь
+ +v88/coverBack #Вернуть\nв строй
+ +v88/coverHint #1–8: сколько ведомых. 9: вернуть. Esc: отмена.
++
+++v89/cover #Прикрытие\nвсей группой
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
+@@ -173,6 +173,7 @@
+ 	}
+ 
+ 	fprintf(fp,"FOM_SYNC %s\n",FsTrueFalseString(synchronizeTrigger));
++    if(coverTransferStage>0)fprintf(fp,"FOMXFER %d %.6f %.6f %.6f %.6f\n",coverTransferStage,coverTransferHold.x(),coverTransferHold.y(),coverTransferHold.z(),coverTransferHeight);
+     if(YSTRUE==headingOnly)fprintf(fp,"FOMLEVEL TRUE\n");
+     if(independentDeparture)fprintf(fp,"FOMDEPART %.9f %.9f %.9f %.6f\n",departureVelocity.x(),departureVelocity.y(),departureVelocity.z(),departureAltitude);
+     if(independentDeparture && departureTurnDuration>0.0)fprintf(fp,"FOMARC %.9f %.9f %.6f %.6f\n",departureTurnFrom,departureTurnTo,departureTurnElapsed,departureTurnDuration);
+@@ -227,6 +228,8 @@
+ 			{
+ 				FsGetBool(synchronizeTrigger,args[1]);
+ 			}
++            else if(0==strcmp(args[0],"FOMXFER") && args.GetN()>=6)
++            {coverTransferStage=YsBound(atoi(args[1]),0,3);coverTransferHold.Set(atof(args[2]),atof(args[3]),atof(args[4]));coverTransferHeight=atof(args[5]);}
+             else if(0==strcmp(args[0],"FOMARC") && args.GetN()>=5)
+             {departureTurnFrom=atof(args[1]);departureTurnTo=atof(args[2]);departureTurnElapsed=YsGreater(0.0,atof(args[3]));departureTurnDuration=YsBound(atof(args[4]),0.0,10.0);}
+             else if(0==strcmp(args[0],"FOMDEPART") && args.GetN()>=5)
+@@ -308,7 +311,7 @@
+         if(nullptr!=leader)
+         {
+             YsAtt3 heading=leader->GetAttitude();heading.SetP(0.0);heading.SetB(0.0);
+-            heading.Mul(goal,shouldBe);goal+=leader->GetPosition();
++            heading.Mul(goal,GetLocalGoalOffset());goal+=leader->GetPosition();
+         }
+         else goal=air.GetPosition();
+         goal.SetY(YsGreater(goal.y(),sim->GetFieldElevation(goal.x(),goal.z())+YsGreater(8.0,air.GetApproximatedCollideRadius()*0.6)));
+@@ -1413,7 +1416,7 @@
+ 
+ YsVec3 FsFormation::GetGoalPosition(void) const
+ {
+-	auto goal=shouldBe+spacing;
++	auto goal=GetLocalGoalOffset();
+     if(YSTRUE==headingOnly)
+     {
+         YsAtt3 heading=leader->GetAttitude();heading.SetP(0.0);heading.SetB(0.0);
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.h
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.h
+@@ -66,6 +66,15 @@
+ 	YsArray <int,6> afterTransFormationAirplane;
+ 	YsArray <YsVec3,6> afterTransFormationPos;
+ 
++    int coverTransferStage=0;
++    YsVec3 coverTransferHold=YsOrigin();
++    double coverTransferHeight=0.0;
++    YsVec3 GetLocalGoalOffset() const
++    {
++        auto p=coverTransferStage==1 ? coverTransferHold:shouldBe;
++        if(coverTransferStage==1 || coverTransferStage==2)p.SetY(coverTransferHeight);
++        return p+spacing;
++    }
+     bool safeGoalValid=false,recovering=false,headingTracked=false;
+     double lastLeaderHeading=0.0,formationTurnRate=0.0;
+     YsVec3 safeGoal=YsOrigin();
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -22,17 +22,20 @@
+ YsArray<YsString> FsSimExtension_Airshow::Serialize(const FsSimulation *)
+ {
+  YsArray<YsString> rows;YsString s;s.Printf("EXTENSIO %s CONFIG %d %d %d %d %.3f %.3f",Ident(),config.supply,config.synchronized,config.autoAfterburner,config.burst,config.interval,config.cameraSensitivity);rows.Append(s);
++ s.Printf("EXTENSIO %s LEVELSTART %d",Ident(),int(levelStart));rows.Append(s);
+  for(int i=0;i<FsMaxShowAircraft;++i){s.Printf("EXTENSIO %s COLOR %d %d %d %d",Ident(),i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);rows.Append(s);}
+  return rows;
+ }
+ YSRESULT FsSimExtension_Airshow::ProcessCommand(FsSimulation *,const YsConstArrayMask<YsString> &a)
+ {
++ if(a.GetN()>=4 && 0==a[2].Strcmp("LEVELSTART")){levelStart=atoi(a[3])!=0;return YSOK;}
+  if(a.GetN()>=9 && 0==a[2].Strcmp("CONFIG")){config.supply=atoi(a[3])!=0;config.synchronized=atoi(a[4])!=0;config.autoAfterburner=atoi(a[5])!=0;config.burst=YsBound(atoi(a[6]),1,64);config.interval=YsBound(atof(a[7]),0.1,2.0);config.cameraSensitivity=YsBound(atof(a[8]),0.05,2.0);return YSOK;}
+  if(a.GetN()>=7 && 0==a[2].Strcmp("COLOR")){int i=atoi(a[3]);if(i>=0 && i<FsMaxShowAircraft)for(int c=0;c<3;++c)config.rgb[i][c]=YsBound(atoi(a[4+c]),0,255);if(i>=0 && i<FsMaxShowAircraft){int p=FsNearestSmokePalette(config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);for(int c=0;c<3;++c)config.rgb[i][c]=FsSmokePalette[p].rgb[c];}return YSOK;}return YSERR;
+ }
+ void FsSimExtension_Airshow::StartSimulation(FsSimulation *sim)
+ {
+  replaying=false;sim->GetPlayerSquad();SetupAircraft(sim,true);
++ if(levelStart)if(auto a=sim->GetPlayerAirplane())if(a->GetAutopilot()==nullptr){TrimAirborneStart(*a);sim->ReadControlBackFromAirplane(a);}
+  sim->AddTimedMessage(T("show/keys",L"F10: airshow | F2: orbit camera | right drag: rotate | wheel: zoom"));
+ }
+ void FsSimExtension_Airshow::StartReplay(FsSimulation *sim){replaying=true;sim->GetPlayerSquad();SetupAircraft(sim,false);}
+--- a/YSFLIGHT/src/core/fsairshow.h
++++ b/YSFLIGHT/src/core/fsairshow.h
+@@ -7,6 +7,7 @@
+ {
+ public:
+     FsAirshowConfig config;
++    bool levelStart=true;
+     bool menuOpen=false,replaying=false,smoke[FsMaxShowAircraft]={false},orbit=true,dragging=false;
+     int selected=0,cameraUnit=0,remaining[FsMaxShowAircraft]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
+     double nextFlare=0,heading=0,pitch=0.22,distance=100;
+--- a/YSFLIGHT/src/core/fsoperation.cpp
++++ b/YSFLIGHT/src/core/fsoperation.cpp
+@@ -72,6 +72,21 @@
+     return T(keys[YsBound(t,0,9)],names[YsBound(t,0,9)]);
+ }
+ }
++void TrimAirborneStart(FsAirplane &air)
++{
++ auto &p=air.Prop();if(p.GetAircraftClass()==FSCL_HELICOPTER || p.GetVelocity()<20.0 || p.IsOnGround()==YSTRUE)return;
++ const double speed=p.GetVelocity();const double aoa=YsBound(p.ComputeAOAForRequiredG(1.0,speed),-p.GetCriticalAOA()*.2,p.GetCriticalAOA()*.7);
++ const double trim=YsBound(p.ComputeElevatorTrimForAOA(aoa),-1.0,1.0);YSBOOL ab=YSFALSE;
++ const double throttle=p.GetThrottleForRequiredThrustForVelocity(ab,p.GetDrag(aoa,speed),speed,YSFALSE);
++ YsString c;const double heading=YsRadToDeg(air.GetAttitude().h());
++ c.Printf("ATTITUDE %.9fdeg 0deg 0deg",heading);air.SendCommand(c);
++ c.Printf("INITSPED %.9fm/s",speed);air.SendCommand(c); // Horizontal velocity before setting the lift-producing pitch.
++ c.Printf("ATTITUDE %.9fdeg %.9fdeg 0deg",heading,YsRadToDeg(aoa));air.SendCommand(c);
++ c.Printf("SETCNTRL TRIM:%.9f",trim);air.SendCommand(c);
++ c.Printf("CTLTHROT %.9f",throttle);air.SendCommand(c);air.SendCommand("CTLABRNR FALSE");
++ printf("V89TRIM id=%d speed=%.3f pitch=%.3f trim=%.6f throttle=%.6f\n",air.ysfId,speed,YsRadToDeg(aoa),trim,throttle);
++}
++
+ void FsCreateSafeFollower(FsAirplane &wing,FsAirplane &leader)
+ {
+     if(wing.Prop().GetAircraftClass()!=FSCL_HELICOPTER && leader.Prop().GetAircraftClass()==FSCL_HELICOPTER && leader.Prop().GetVelocity()<wing.Prop().GetEstimatedLandingSpeed()*1.4)
+--- a/YSFLIGHT/src/core/fsoperation.h
++++ b/YSFLIGHT/src/core/fsoperation.h
+@@ -50,6 +50,7 @@
+     bool WheelChoose(FsSimulation *sim,int item);
+     void Report(const FsSimulation *sim) const;
+ };
++void TrimAirborneStart(FsAirplane &air);
+ void FsCreateSafeFollower(FsAirplane &wing,FsAirplane &leader);
+ std::shared_ptr<FsSimExtension_Operation> FsGetOperation(const FsSimulation *sim);
+ #endif
+--- a/YSFLIGHT/src/core/fssimulation.h
++++ b/YSFLIGHT/src/core/fssimulation.h
+@@ -989,6 +989,8 @@
+ 
+ public:
+     void SetPlayerSquadLayout(int pattern,double spacing);
++    void BeginPlayerFormationTransfer(const YsArray<FsAirplane *,8> &members);
++    void UpdatePlayerFormationTransfer(const YsArray<FsAirplane *,8> &members);
+     void RefreshPlayerSquadLayout(const YsArray<FsAirplane *,8> &members,bool force=false);
+     void DiscoverSquadMembers();
+     YsArray<FsAirplane *,8> GetPlayerSquad();
+--- a/YSFLIGHT/src/core/fssquadcommands.cpp
++++ b/YSFLIGHT/src/core/fssquadcommands.cpp
+@@ -43,6 +43,41 @@
+ {
+  if(FsGroupPatternAvailable(pattern)){squadPattern=pattern;squadSpacing=YsBound(spacing,10.0,5000.0);squadLayoutSignature.Clear();}
+ }
++// First separate vertically, then change horizontal places, then settle on the common level.
++// All aircraft participate concurrently; no aircraft is teleported or assigned another aircraft's control.
++void FsSimulation::BeginPlayerFormationTransfer(const YsArray<FsAirplane *,8> &members)
++{
++ auto leader=GetPlayerAirplane();if(!leader)return;
++ YsAtt3 yaw=leader->GetAttitude();yaw.SetP(0);yaw.SetB(0);
++ YsArray<FsAirplane *,8> group;double base=0.0,gap=35.0;bool continuing=false;
++ for(auto a:members)if(auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot()))if(!fm->independentDeparture && (a->squadTask==0 || a->squadTask==5))
++ {group.Append(a);base=YsGreater(base,YsGreater(fm->shouldBe.y(),a->GetPosition().y()-leader->GetPosition().y()));gap=YsGreater(gap,a->GetApproximatedCollideRadius()*3.0+12.0);if(fm->coverTransferStage>0){continuing=true;base=YsGreater(base,fm->coverTransferHeight);}}
++ for(int i=0;i<group.GetN();++i)for(int j=i+1;j<group.GetN();++j)if(group[j]->GetPosition().y()<group[i]->GetPosition().y()) {auto a=group[i];group[i]=group[j];group[j]=a;}
++ for(int i=0;i<group.GetN();++i)
++ {
++  auto a=group[i];auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot());YsVec3 local;yaw.MulInverse(local,a->GetPosition()-leader->GetPosition());
++  fm->coverTransferHold=local;
++  if(!continuing || fm->coverTransferStage==0)fm->coverTransferHeight=base+(i+1)*gap;
++  fm->coverTransferStage=1;
++  printf("V89TRANSFER id=%d stage=1 lane=%.3f hold=%.3f,%.3f goal=%.3f,%.3f\n",a->ysfId,fm->coverTransferHeight,local.x(),local.z(),fm->shouldBe.x(),fm->shouldBe.z());
++ }
++}
++void FsSimulation::UpdatePlayerFormationTransfer(const YsArray<FsAirplane *,8> &members)
++{
++ auto leader=GetPlayerAirplane();if(!leader)return;
++ YsArray<FsFormation *,8> active;bool ready=true;int phase=0;
++ YsVec3 leadVelocity;leader->Prop().GetVelocity(leadVelocity);
++ for(auto a:members)if(auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot()))if(fm->coverTransferStage>0)
++ {
++  active.Append(fm);phase=fm->coverTransferStage;auto error=fm->GetGoalPosition()-a->GetPosition();YsVec3 v;a->Prop().GetVelocity(v);auto dv=v-leadVelocity;
++  const double horizontal=sqrt(error.x()*error.x()+error.z()*error.z());
++  if(phase==1)ready=ready && YsAbs(error.y())<6.0 && YsAbs(dv.y())<4.0 && horizontal<15.0;
++  else if(phase==2)ready=ready && horizontal<5.0 && dv.GetLength()<6.0 && YsAbs(error.y())<6.0;
++  else ready=ready && error.GetLength()<8.0 && dv.GetLength()<6.0;
++ }
++ if(ready && active.GetN()>0)
++ {for(auto fm:active)fm->coverTransferStage=(phase==3 ? 0:phase+1);printf("V89PHASE time=%.3f from=%d to=%d count=%d\n",GetClock(),phase,phase==3?0:phase+1,int(active.GetN()));}
++}
+ void FsSimulation::RefreshPlayerSquadLayout(const YsArray<FsAirplane *,8> &members,bool force)
+ {
+  auto player=GetPlayerAirplane();if(!player || player->Prop().IsActive()!=YSTRUE)return;
+@@ -51,11 +86,12 @@
+  bool same=signature.GetN()==squadLayoutSignature.GetN();
+  if(same)for(int i=0;i<signature.GetN();++i)if(signature[i]!=squadLayoutSignature[i])same=false;
+  if(!force && squadLayoutInitialized && same)return;
++ bool hadCover=false;for(int i=1;i<squadLayoutSignature.GetN();i+=2)if(squadLayoutSignature[i]==5 || squadLayoutSignature[i]==6)hadCover=true;
+  const bool first=!squadLayoutInitialized;squadLayoutInitialized=true;squadLayoutSignature=signature;
+  if(squadPattern<0)squadPattern=3;
+  bool allFollowing=true;for(auto a:members)if(a->squadTask!=0)allFollowing=false;
+  // A legacy flight starts exactly as saved. Repack only on a membership/order change.
+- if(first && allFollowing && !force)return;
++ if(first && allFollowing && !force){for(auto a:members)if(auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot()))if(fm->coverTransferStage>0){BeginPlayerFormationTransfer(members);break;}return;}
+  const int count=int(members.GetN());if(count==0)return;
+  const auto homes=FsPackedMainOffsets(squadPattern,count,squadSpacing);
+  std::vector<FsGroupOffset> oldHomes(count);std::vector<int> homeAssignment(count);
+@@ -83,6 +119,8 @@
+    printf("V87PACK id=%d slot=%d role=%d x=%.3f y=%.3f z=%.3f spacing=%.3f\n",wing->ysfId,wing->squadSlot,role,p.x,p.y,p.z,squadSpacing);
+   }
+  }
++ bool hasCover=false,hasTransfer=false;for(auto a:members){if(a->squadTask==5)hasCover=true;if(auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot()))if(fm->coverTransferStage>0)hasTransfer=true;}
++ if(hasCover || hadCover)BeginPlayerFormationTransfer(members);
+ }
+ void FsSimulation::DiscoverSquadMembers()
+ {
+@@ -169,7 +207,8 @@
+     for(auto a:live)if(a->squadTask==5 || a->squadTask==6)
+     {
+         const auto &p=a->Prop();const bool armed=p.GetNumWeapon(FSWEAPON_GUN)+p.GetNumWeapon(FSWEAPON_AIM9)+p.GetNumWeapon(FSWEAPON_AIM9X)+p.GetNumWeapon(FSWEAPON_AIM120)>0;
+-        if(threat && armed)
++        auto transfer=dynamic_cast<FsFormation *>(a->GetAutopilot());
++        if(threat && armed && (!transfer || transfer->coverTransferStage==0))
+         {
+             if(a->squadTask!=6 || nullptr==dynamic_cast<FsDogfight *>(a->GetAutopilot()))
+             {RadioCommSendCoverMe(a,player);auto df=dynamic_cast<FsDogfight *>(a->GetAutopilot());df->SetTargetFlyingAircraftOnly(YSTRUE);df->SetTarget(threat);a->squadTask=6;printf("V87GUARD id=%d intercept=1\n",a->ysfId);}
+@@ -177,6 +216,7 @@
+         else if(a->squadTask==6){a->squadTask=5;printf("V87GUARD id=%d intercept=0\n",a->ysfId);}
+     }
+     RefreshPlayerSquadLayout(live,lost);
++    UpdatePlayerFormationTransfer(live);
+ }
+ YsArray<FsAirplane *,8> FsSimulation::GetPlayerSquad()
+ {
+@@ -195,7 +235,7 @@
+     auto members=GetPlayerSquad();
+     if(auto op=FsGetOperation(this))
+     {
+-        for(int i=int(members.GetN())-1;i>=0;--i)if(!op->InScope(members[i]->squadSlot))members.Delete(i);
++        for(int i=int(members.GetN())-1;i>=0;--i)if(command!=5 && !(command>=201 && command<=209) && !op->InScope(members[i]->squadSlot))members.Delete(i);
+         for(auto wing:members)if(auto unit=op->Unit(wing->squadSlot)){const bool formation=(command==1 || command==8 || command==3 || command==4 || (command>=100 && FsGroupPatternAvailable(command-100)));unit->task=(formation ? 0 : 9);unit->pending=formation;unit->landRequested=false;}
+     }
+     if(0==members.GetN()){AddTimedMessage(T("v7/noWingmen",L"No available wingmen."));return false;}
+@@ -248,7 +288,7 @@
+     if(command==5 || (command>=201 && command<=209))
+     {
+         if(command==209){for(auto a:members)if(a->squadTask==5 || a->squadTask==6)Form(*a,*leader);GetPlayerSquad();AddTimedMessage(T("v7/regroupDone",L"Returning to formation."));return true;}
+-        int wanted=command==5 ? int(members.GetN()):YsSmaller(command-200,int(members.GetN()));
++        int wanted=int(members.GetN()); // Legacy count commands also apply to the complete squad.
+         auto candidates=members;
+         for(int i=0;i<candidates.GetN();++i)for(int j=i+1;j<candidates.GetN();++j)
+         {
+@@ -381,7 +421,7 @@
+             if(item>=0 && item<FsGroupPatternCount){IssueSquadCommand(100+FsGroupPatternIds[item]);CloseSquadWheel();}
+         }
+         else if(item==0){squadWheelFormations=true;squadFormationPage=0;}
+-        else if(item==5){squadWheelCover=true;}
++        else if(item==5){IssueSquadCommand(5);CloseSquadWheel();}
+         else if(item>=1 && item<=8){IssueSquadCommand(item);CloseSquadWheel();}
+         else if(item==-2)CloseSquadWheel();
+     };
+@@ -414,7 +454,7 @@
+     const bool operationPage=op && op->wheelPage>0;
+     const int count=operationPage ? int(extra.GetN()) : squadWheelCover ? 9 : squadWheelFormations ? FsGroupPatternCount : 9;
+     int lb,mb,rb,mx,my;FsGetMouseState(lb,mb,rb,mx,my);const int hover=WheelItem(mx,my,w,h,count);
+-    const wchar_t *main[]={T("v7/shape",L"Formation"),T("v7/regroup",L"Regroup"),T("v7/scatter",L"Scatter"),T("v7/closer",L"Closer"),T("v7/farther",L"Farther"),T("v87/cover",L"Cover"),T("v7/attack",L"Attack target"),T("v7/hold",L"Hold area"),T("v7/abort",L"Abort attack")};
++    const wchar_t *main[]={T("v7/shape",L"Formation"),T("v7/regroup",L"Regroup"),T("v7/scatter",L"Scatter"),T("v7/closer",L"Closer"),T("v7/farther",L"Farther"),T("v89/cover",L"Cover / return"),T("v7/attack",L"Attack target"),T("v7/hold",L"Hold area"),T("v7/abort",L"Abort attack")};
+     const wchar_t *coverLabels[]={T("v88/cover1",L"One"),T("v88/cover2",L"Two"),T("v88/cover3",L"Three"),T("v88/cover4",L"Four"),T("v88/cover5",L"Five"),T("v88/cover6",L"Six"),T("v88/cover7",L"Seven"),T("v88/cover8",L"Eight"),T("v88/coverBack",L"Return")};
+     const wchar_t *patterns[]={T("v7/diamond",L"Diamond"),T("v7/delta",L"Delta"),T("v7/vee",L"V formation"),T("v7/trail",L"Column"),T("v7/line",L"Line abreast"),T("v7/left",L"Echelon left"),T("v7/right",L"Echelon right"),T("v84/wheel7",L"Staircase up"),T("v84/wheel8",L"Staircase left"),T("v84/wheel9",L"Staircase right"),T("v84/wheel10",L"Staggered pairs"),T("v84/wheel11",L"Reverse V")};
+     for(int item=0;item<count;++item)
+@@ -466,6 +506,7 @@
+     }
+     for(auto wing:members)if(auto fm=dynamic_cast<FsFormation *>(wing->GetAutopilot()))printf("V87GOAL id=%d slot=%d role=%d x=%.3f y=%.3f z=%.3f\n",wing->ysfId,wing->squadSlot,wing->squadTask,fm->shouldBe.x(),fm->shouldBe.y(),fm->shouldBe.z());
+     for(auto wing:members)if(auto fm=dynamic_cast<FsFormation *>(wing->GetAutopilot()))printf("V83GUIDE slot=%d rejoin=%d avoid=%d dy=%.3f targetSpeed=%.3f targetClimb=%.3f turn=%.3f\n",wing->squadSlot,int(fm->rejoining),int(fm->collisionRisk),fm->avoidanceHeight,fm->commandedSpeed,fm->commandedClimb,fm->formationTurnRate);
++    for(auto a:members)if(auto fm=dynamic_cast<FsFormation *>(a->GetAutopilot()))printf("V89XFER id=%d stage=%d lane=%.3f\n",a->ysfId,fm->coverTransferStage,fm->coverTransferHeight);
+     if(auto op=FsGetOperation(this))op->Report(this);
+     if(auto show=FsGetAirshow(this))show->Report(this);
+     fflush(stdout);
+--- a/YSFLIGHT/src/gui/fsmenu_sim.cpp
++++ b/YSFLIGHT/src/gui/fsmenu_sim.cpp
+@@ -256,7 +256,11 @@
+     {
+         largestRadius=YsGreater(largestRadius,YsGreater(a.GetRadiusFromCollision(),a.GetApproximatedCollideRadius()));
+         if(a.Prop().GetAircraftClass()!=FSCL_HELICOPTER)
+-            minimumSpeed=YsGreater(minimumSpeed,a.Prop().GetEstimatedLandingSpeed()*1.5);
++            {
++            const double lift=YsGreater(1.0,a.Prop().GetLift(a.Prop().GetCriticalAOA()*.7,100.0));
++            const double safe=100.0*sqrt(a.Prop().GetTotalWeight()*FsGravityConst*1.25/lift);
++            minimumSpeed=YsGreater(minimumSpeed,YsGreater(safe,a.Prop().GetEstimatedLandingSpeed()*1.5));
++        }
+     };
+     considerAircraft(leader);
+     for(int i=0;i<FsNewFlightDialogInfo::MaxNumWingman;++i)
+@@ -288,7 +292,7 @@
+     }
+     // Mixed aircraft cannot safely start below the fastest member's stall margin.
+     const double leaderMinimum=(leader.Prop().GetAircraftClass()==FSCL_HELICOPTER ? 0.0 : leader.Prop().GetEstimatedLandingSpeed()*1.5);
+-    speed=YsGreater(speed,leaderMinimum);attitude.SetP(0.0);attitude.SetB(0.0);
++    speed=YsGreater(speed,YsGreater(leaderMinimum,minimumSpeed));attitude.SetP(0.0);attitude.SetB(0.0);
+     const double spacing=YsGreater(YsBound(info.groupSpacing,10.0,5000.0),largestRadius*2.4+8.0);
+     const int pattern=(info.groupFormation==YSTRUE ? info.groupPattern : 2);
+     if(auto sim=world.GetSimulation())sim->SetPlayerSquadLayout(pattern,spacing);
+@@ -672,7 +676,8 @@
+ 		}
+ 	}
+ 
+-    auto show=std::make_shared<FsSimExtension_Airshow>();show->config=info.show;world->GetSimulation()->RegisterExtension(show);
++    if(auto sim=world->GetSimulation())if(auto player=sim->GetPlayerAirplane())TrimAirborneStart(*player);
++    auto show=std::make_shared<FsSimExtension_Airshow>();show->config=info.show;show->levelStart=true;world->GetSimulation()->RegisterExtension(show);
+ 	if(info.flyImmediately==YSTRUE)
+ 	{
+ 		Sim_Fly(nullptr);
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.8";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.9";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif

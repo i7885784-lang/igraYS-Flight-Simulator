@@ -1,0 +1,3878 @@
+{
+  "ysflight32_gl1.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "c690b2854d0e5359167ce4688741f8a6ef3987e9035b2ef8cf47dc679a8e9696",
+    "code_matches_build": true
+  },
+  "ysflight32_gl2.exe": {
+    "machine": "PE32/i386",
+    "subsystem": "Windows GUI",
+    "imports": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sha256": "80ab167ee76befef5f83624e7abe40f6c588d3b1b3104bf87fa5a61fe249f3ec",
+    "code_matches_build": true
+  },
+  "original_assets_preserved": true,
+  "gui-idle": {
+    "passed": true,
+    "checks": {
+      "six_wingmen": true,
+      "manual_player_no_autopilot": true,
+      "idle_altitude_stable": true,
+      "all_alive": true,
+      "all_six_cover": true,
+      "no_count_dialog": true,
+      "transition_finished": true,
+      "settled": true,
+      "clearance": true,
+      "start_maximized": true
+    },
+    "idle_height_range": 11.949682000000053,
+    "minimum_distance": 25.430879873670378,
+    "phases": [
+      "V89PHASE time=78.609 from=1 to=2 count=6",
+      "V89PHASE time=88.953 from=2 to=3 count=6",
+      "V89PHASE time=107.266 from=3 to=0 count=6"
+    ],
+    "final_errors": [
+      0.017,
+      0.017,
+      0.018,
+      0.017,
+      0.018,
+      0.017
+    ]
+  },
+  "legacy-idle-mig": {
+    "passed": true,
+    "checks": {
+      "legacy_no_levelstart_marker": true,
+      "manual_no_goto": true,
+      "balanced_after_equipment": true,
+      "idle_altitude_stable": true,
+      "player_alive": true
+    },
+    "height_range": 8.557515999999964
+  },
+  "transition-2-6-return": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 2,
+    "minimum_distance": 34.681387878654775,
+    "snapshots": [
+      {
+        "time": 60.026,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.013
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.022
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.039
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.076
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.104
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.216
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 145.032,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 0,
+            "ap": 4,
+            "error": 0.011
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 0,
+            "x": -50.0,
+            "y": 0.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 0,
+            "x": 50.0,
+            "y": 0.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 0,
+            "x": -100.0,
+            "y": 0.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 0,
+            "x": 100.0,
+            "y": 0.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 0,
+            "x": -150.0,
+            "y": 0.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 0,
+            "x": 150.0,
+            "y": 0.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.099 from=1 to=2 count=6",
+      "V89PHASE time=32.963 from=2 to=3 count=6",
+      "V89PHASE time=43.276 from=3 to=0 count=6",
+      "V89PHASE time=80.348 from=1 to=2 count=6",
+      "V89PHASE time=90.538 from=2 to=3 count=6",
+      "V89PHASE time=103.971 from=3 to=0 count=6"
+    ]
+  },
+  "transition-0-8-loss": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 0,
+    "minimum_distance": 50.00016500000694,
+    "snapshots": [
+      {
+        "time": 60.038,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.084
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.068
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.121
+          },
+          {
+            "id": 6,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.22
+          },
+          {
+            "id": 7,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.456
+          },
+          {
+            "id": 8,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.508
+          },
+          {
+            "id": 9,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.821
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 0.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 3,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 4,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 5,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 6,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      },
+      {
+        "time": 95.024,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 6,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 7,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 8,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 9,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 0.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 3,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 4,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 5,
+            "role": 5,
+            "x": 50.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 6,
+            "role": 5,
+            "x": -50.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=23.664 from=1 to=2 count=7",
+      "V89PHASE time=37.380 from=2 to=3 count=7",
+      "V89PHASE time=49.580 from=3 to=0 count=7"
+    ]
+  },
+  "transition-0-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 0,
+    "minimum_distance": 38.82543350218846,
+    "snapshots": [
+      {
+        "time": 60.025,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.017
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.042
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.071
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.088
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.127
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.036,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.014
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.133 from=1 to=2 count=6",
+      "V89PHASE time=31.136 from=2 to=3 count=6",
+      "V89PHASE time=41.062 from=3 to=0 count=6"
+    ]
+  },
+  "transition-1-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 1,
+    "minimum_distance": 38.82947462250733,
+    "snapshots": [
+      {
+        "time": 60.03,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.017
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.043
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.069
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.088
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.125
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.04,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.014
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.086 from=1 to=2 count=6",
+      "V89PHASE time=31.086 from=2 to=3 count=6",
+      "V89PHASE time=41.040 from=3 to=0 count=6"
+    ]
+  },
+  "transition-2-8": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 2,
+    "minimum_distance": 33.03067893803128,
+    "snapshots": [
+      {
+        "time": 60.027,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.026
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.045
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.09
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.164
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.261
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.392
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.63
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 0.742
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      },
+      {
+        "time": 75.033,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.02
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.021
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.024
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.031
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.037
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 0.05
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=23.576 from=1 to=2 count=8",
+      "V89PHASE time=36.070 from=2 to=3 count=8",
+      "V89PHASE time=49.090 from=3 to=0 count=8"
+    ]
+  },
+  "transition-3-8": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 3,
+    "minimum_distance": 49.615530615417775,
+    "snapshots": [
+      {
+        "time": 60.022,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.058
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.297
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.569
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 1.084
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 1.65
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 2.506
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 3.358
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 4.624
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      },
+      {
+        "time": 75.033,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.02
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.027
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.04
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.07
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.104
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.154
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.203
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 0.271
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=23.313 from=1 to=2 count=8",
+      "V89PHASE time=45.771 from=2 to=3 count=8",
+      "V89PHASE time=58.080 from=3 to=0 count=8"
+    ]
+  },
+  "transition-4-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 4,
+    "minimum_distance": 49.92636937987169,
+    "snapshots": [
+      {
+        "time": 60.047,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.038
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.052
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.111
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.338
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.531
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.892
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.024,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.013
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.024
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.035
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.057
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.109 from=1 to=2 count=6",
+      "V89PHASE time=43.670 from=2 to=3 count=6",
+      "V89PHASE time=53.529 from=3 to=0 count=6"
+    ]
+  },
+  "transition-5-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 5,
+    "minimum_distance": 49.98398700501148,
+    "snapshots": [
+      {
+        "time": 60.041,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.034
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.191
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.379
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.742
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 1.15
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 1.698
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.028,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.016
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.027
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.048
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.073
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.107
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.069 from=1 to=2 count=6",
+      "V89PHASE time=44.486 from=2 to=3 count=6",
+      "V89PHASE time=54.464 from=3 to=0 count=6"
+    ]
+  },
+  "transition-6-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 6,
+    "minimum_distance": 49.98464701752843,
+    "snapshots": [
+      {
+        "time": 60.041,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.036
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.203
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.403
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.791
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 1.23
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 1.81
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.03,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.017
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.028
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.051
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.078
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.113
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.357 from=1 to=2 count=6",
+      "V89PHASE time=44.821 from=2 to=3 count=6",
+      "V89PHASE time=54.800 from=3 to=0 count=6"
+    ]
+  },
+  "transition-7-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 7,
+    "minimum_distance": 47.73794471273115,
+    "snapshots": [
+      {
+        "time": 60.031,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.018
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.091
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.162
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.315
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.462
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.674
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.024,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.011
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.015
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.023
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.031
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.044
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=18.398 from=1 to=2 count=6",
+      "V89PHASE time=39.182 from=2 to=3 count=6",
+      "V89PHASE time=49.162 from=3 to=0 count=6"
+    ]
+  },
+  "transition-10-8": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 10,
+    "minimum_distance": 47.65150151378988,
+    "snapshots": [
+      {
+        "time": 60.04,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.581
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.062
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.184
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.189
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.194
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.375
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.643
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 0.219
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      },
+      {
+        "time": 75.036,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.041
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.02
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.022
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.023
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.023
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.03
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "ap": 4,
+            "error": 0.045
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "ap": 4,
+            "error": 0.023
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 8,
+            "slot": 6,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -200.0
+          },
+          {
+            "id": 9,
+            "slot": 7,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -200.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ],
+          "8": [
+            255,
+            60,
+            60
+          ],
+          "9": [
+            50,
+            230,
+            90
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=23.536 from=1 to=2 count=8",
+      "V89PHASE time=37.421 from=2 to=3 count=8",
+      "V89PHASE time=50.714 from=3 to=0 count=8"
+    ]
+  },
+  "transition-11-6": {
+    "passed": true,
+    "checks": {
+      "correct_survivor_ids": true,
+      "compact_numbers": true,
+      "survivors_alive": true,
+      "clearance": true,
+      "settled": true,
+      "unique_safe_goals": true,
+      "upper_group_above_player": true,
+      "balanced_upper_group": true,
+      "colours_follow_aircraft": true,
+      "whole_squad": true,
+      "transfer_finished": true
+    },
+    "pattern": 11,
+    "minimum_distance": 48.127091390065196,
+    "snapshots": [
+      {
+        "time": 60.041,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.319
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.225
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.074
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.266
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.724
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 1.236
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "time": 75.026,
+        "members": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "ap": 4,
+            "error": 0.023
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "ap": 4,
+            "error": 0.018
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "ap": 4,
+            "error": 0.012
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "ap": 4,
+            "error": 0.019
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "ap": 4,
+            "error": 0.046
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "ap": 4,
+            "error": 0.077
+          }
+        ],
+        "goals": [
+          {
+            "id": 2,
+            "slot": 0,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 3,
+            "slot": 1,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -150.0
+          },
+          {
+            "id": 4,
+            "slot": 2,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 5,
+            "slot": 3,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -100.0
+          },
+          {
+            "id": 6,
+            "slot": 4,
+            "role": 5,
+            "x": -25.0,
+            "y": 150.0,
+            "z": -50.0
+          },
+          {
+            "id": 7,
+            "slot": 5,
+            "role": 5,
+            "x": 25.0,
+            "y": 150.0,
+            "z": -50.0
+          }
+        ],
+        "colours": {
+          "1": [
+            255,
+            255,
+            255
+          ],
+          "2": [
+            255,
+            60,
+            60
+          ],
+          "3": [
+            50,
+            230,
+            90
+          ],
+          "4": [
+            70,
+            140,
+            255
+          ],
+          "5": [
+            255,
+            215,
+            0
+          ],
+          "6": [
+            255,
+            255,
+            255
+          ],
+          "7": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "phase_events": [
+      "V89PHASE time=21.069 from=1 to=2 count=6",
+      "V89PHASE time=45.255 from=2 to=3 count=6",
+      "V89PHASE time=55.094 from=3 to=0 count=6"
+    ]
+  },
+  "game_zip_sha256": "ec2587df00cde2969f75598dd0c34ee53c902b162851edafb0c419ba1309514c",
+  "game_zip_bytes": 101760416
+}
