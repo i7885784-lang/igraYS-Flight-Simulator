@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-22T17:07:52.882477+00:00",
+  "files": [
+    {
+      "file": "downloads/Airshow_LAB863_Measurements.zip",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/Airshow_LAB863_Measurements.zip",
+      "bytes": 44108937,
+      "sha256": "a242763771f1d315072a533f3713f141110ca1175dadb2e50d0eab5b7655ca3c",
+      "matches_local": true
+    },
+    {
+      "file": "downloads/Airshow_LAB863_Report_and_Video.zip",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/Airshow_LAB863_Report_and_Video.zip",
+      "bytes": 17360738,
+      "sha256": "f170868e7db90d88de49bb1c0dd7807b188f0ccaefcd7b73bbdb25100d389993",
+      "matches_local": true
+    },
+    {
+      "file": "downloads/Airshow_LAB863_Test_Sources.zip",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/Airshow_LAB863_Test_Sources.zip",
+      "bytes": 24221455,
+      "sha256": "7ec600cb0485fd3ae0b2eca3a12bd4dccb6cd20d0ddc123dfd7e25cd6a629ce4",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/clear-comparison.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/clear-comparison.mp4",
+      "bytes": 8289519,
+      "sha256": "b92167c8d7cbecd907f700927ac168c61ef0bf5f70587e123f5de35f3ba4f68c",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/before-scatter.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/before-scatter.mp4",
+      "bytes": 1106233,
+      "sha256": "b2ff56a77bf10b21019506364b3f03025a9a5442e94a0dee86a9de821a6be286",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/rejected-flight.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/rejected-flight.mp4",
+      "bytes": 206794,
+      "sha256": "78e2e2ad6630b018ff0ca2b2b17a1afdda8bdfa7b0c00ab5e87f155e0f6ef200",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/before-flight.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/before-flight.mp4",
+      "bytes": 1567957,
+      "sha256": "47186d8bf414ef5231653d5f02051e6c9585c76556dd36ba66faa3abe990baa6",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/after-flight.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/after-flight.mp4",
+      "bytes": 1573783,
+      "sha256": "a97715170e49dd4980fc785eb55a535b920cf4cc9a23319114ef393f20867123",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/after-scatter.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/after-scatter.mp4",
+      "bytes": 1106105,
+      "sha256": "2071d3ac523c2a1ff71360fba51cc467de870c8050eadf5fb69031b40a782afd",
+      "matches_local": true
+    },
+    {
+      "file": "reports/lab863/REPORT.md",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/lab863/REPORT.md",
+      "bytes": 9515,
+      "sha256": "ef724332ac8abaa80866b590e84dd39081200eb11f173f8af78429f572ae8eca",
+      "matches_local": true
+    }
+  ]
+}
