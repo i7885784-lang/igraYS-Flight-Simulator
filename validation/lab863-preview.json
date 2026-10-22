@@ -1,0 +1,39 @@
+{
+  "status": "Preview only; no installable game release",
+  "base": "v8.6.2",
+  "lab_exe_sha256": "1f97e965b29db1955b741a3ad32a184e86e9210f258ae598910b881d4d0ce01b",
+  "source_changes": [
+    "src/autopilot/fsformationsafety.cpp",
+    "src/core/fsairshow.cpp",
+    "src/main/fsmain.cpp",
+    "src/ui/fsrunloop.cpp"
+  ],
+  "production_source_sha256": {
+    "src/autopilot/fsformationsafety.cpp": "329946ef907f6bac2b0424b7abe01f256f1670cc7015a5ecfbc4f732a557c216",
+    "src/core/fsairshow.cpp": "d1b5eaf26c6c5eba2b2bccf9bc7f787d3a04ea05b59f07bd67031bf1c54396bd",
+    "src/main/fsmain.cpp": "b0fbf01468fb35bc1b8ddb8907baa551b02a4f4e513e1c2d01d32107e22bd8b4",
+    "src/ui/fsrunloop.cpp": "2456ab1d0fdb159fb05e4c31575599aa8393021a7429471c582670e963cc858b"
+  },
+  "lab_source_sha256": {
+    "src/autopilot/fsformationsafety.cpp": "75a446bff251264c5f762f44e967688e3e73007b1440f743f8af81390e26b051",
+    "src/core/fsairshow.cpp": "502f0452df58b39df8be18a77f43ed743767860e8e73b0c862e9c9ef97fc09f7",
+    "src/main/fsmain.cpp": "6be8da660e3af5a63f6f14f6859cbe973d822b6bf1d1dc906a3cb5381768d784",
+    "src/ui/fsrunloop.cpp": "60273174270c452b9ccca5d56ada27ed4f065369281163f86b28f966db264310"
+  },
+  "tests": {
+    "turns": 37,
+    "regression": 18,
+    "manual": 6,
+    "extra": 32,
+    "gui": 2,
+    "straggler": 2
+  },
+  "summaries": {
+    "sweep": true,
+    "regression": true,
+    "manual": true,
+    "gui": true,
+    "extra": true,
+    "straggler": true
+  }
+}

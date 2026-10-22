@@ -1,0 +1,128 @@
+[
+  {
+    "file": "after-flight.mp4",
+    "sha256": "a97715170e49dd4980fc785eb55a535b920cf4cc9a23319114ef393f20867123",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800,
+          "nb_frames": "1303"
+        }
+      ],
+      "format": {
+        "duration": "65.150000",
+        "size": "1573783"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "after-scatter.mp4",
+    "sha256": "2071d3ac523c2a1ff71360fba51cc467de870c8050eadf5fb69031b40a782afd",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800,
+          "nb_frames": "512"
+        }
+      ],
+      "format": {
+        "duration": "25.600000",
+        "size": "1106105"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "before-flight.mp4",
+    "sha256": "47186d8bf414ef5231653d5f02051e6c9585c76556dd36ba66faa3abe990baa6",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800,
+          "nb_frames": "1303"
+        }
+      ],
+      "format": {
+        "duration": "65.150000",
+        "size": "1567957"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "before-scatter.mp4",
+    "sha256": "b2ff56a77bf10b21019506364b3f03025a9a5442e94a0dee86a9de821a6be286",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800,
+          "nb_frames": "502"
+        }
+      ],
+      "format": {
+        "duration": "25.100000",
+        "size": "1106233"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "clear-comparison.mp4",
+    "sha256": "b92167c8d7cbecd907f700927ac168c61ef0bf5f70587e123f5de35f3ba4f68c",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1300,
+          "height": 1000,
+          "nb_frames": "601"
+        }
+      ],
+      "format": {
+        "duration": "60.100000",
+        "size": "8289519"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "rejected-flight.mp4",
+    "sha256": "78e2e2ad6630b018ff0ca2b2b17a1afdda8bdfa7b0c00ab5e87f155e0f6ef200",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800,
+          "nb_frames": "502"
+        }
+      ],
+      "format": {
+        "duration": "25.100000",
+        "size": "206794"
+      }
+    },
+    "full_decode_passed": true
+  }
+]

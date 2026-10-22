@@ -1,0 +1,72 @@
+[
+  {
+    "name": "before-scatter",
+    "record": "/workspace/ysflight-work/lab863/validation/before-scatter-p3-h100.record.yfs",
+    "duration": 20,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  },
+  {
+    "name": "after-scatter",
+    "record": "/workspace/ysflight-work/lab863/validation/final-scatter-n8-p3-h100.record.yfs",
+    "duration": 20,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  },
+  {
+    "name": "before-flight",
+    "record": "/workspace/ysflight-work/v862-validation/stable-n8-a180.record.yfs",
+    "duration": 60,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  },
+  {
+    "name": "after-flight",
+    "record": "/workspace/ysflight-work/lab863/validation/stable-n8-a180.record.yfs",
+    "duration": 60,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  },
+  {
+    "name": "rejected-flight",
+    "record": "/workspace/ysflight-work/lab863/experiments/late-warning/after-straggler.record.yfs",
+    "duration": 20,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  }
+]
