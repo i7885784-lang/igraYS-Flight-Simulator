@@ -1,0 +1,62 @@
+[
+  {
+    "file": "after-close.mp4",
+    "sha256": "ac09c9594c1f4950151cf8822566e66c096adcab09591df422c03c5acc6b062e",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 540
+        }
+      ],
+      "format": {
+        "duration": "55.150000",
+        "size": "2039936"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "before-close.mp4",
+    "sha256": "eac5ed047df4e2b6acff645872943e08e1c71ac2f2af679c36e572401a9d4cbc",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 540
+        }
+      ],
+      "format": {
+        "duration": "46.650000",
+        "size": "1850369"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "clear-comparison.mp4",
+    "sha256": "6f86cbf423b8fb3ae08aa8f9cf353711df8999437bafc747265f096ca6e6f639",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1600,
+          "height": 1000
+        }
+      ],
+      "format": {
+        "duration": "55.100000",
+        "size": "8807666"
+      }
+    },
+    "full_decode_passed": true
+  }
+]

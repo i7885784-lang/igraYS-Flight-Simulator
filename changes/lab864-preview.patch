@@ -1,0 +1,167 @@
+--- a/YSFLIGHT/src/autopilot/fsformationsafety.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationsafety.cpp
+@@ -40,7 +40,7 @@
+   }
+   const double directionError=atan2(sin(heading-air.GetAttitude().h()),cos(heading-air.GetAttitude().h()));
+   bool corridorClear=true;
+-  if(turnEscapeHeight!=0.0 && horizontal.GetLength()<40.0)
++  if(turnEscapeHeight!=0.0 && horizontal.GetLength()<120.0)
+   {
+    for(auto other=sim->FindNextAirplane(nullptr);other;other=sim->FindNextAirplane(other))
+     if(other!=&air && other->IsAlive()==YSTRUE)
+@@ -55,9 +55,9 @@
+     if((rel+rv*ahead).GetLength()<clearance){corridorClear=false;break;}
+    }
+   }
+-  const bool horizontalReady=horizontal.GetLength()<12.0 || (horizontal.GetLength()<40.0 && corridorClear);
++  const bool horizontalReady=horizontal.GetLength()<12.0 || (horizontal.GetLength()<120.0 && corridorClear);
+   const bool recaptured=sim->GetClock()>turnEscapeUntil && horizontalReady &&
+-       YsAbs(directionError)<YsDegToRad(12.0) && YsAbs(leader->GetAttitude().b())<YsDegToRad(20.0);
++       YsAbs(directionError)<YsDegToRad(25.0) && YsAbs(leader->GetAttitude().b())<YsDegToRad(20.0);
+   if(recaptured)turnEscapeHeight=0.0;
+   turnEscape=turnEscapeHeight!=0.0;
+   if(turnEscape)safeGoal.SetY(YsGreater(safeTerrain+margin,safeGoal.y()+turnEscapeHeight));
+@@ -92,11 +92,20 @@
+  if(correction.GetLength()>correctionLimit){correction.Normalize();correction*=correctionLimit;}
+  auto wantedVelocity=independentDeparture ? departureVelocity : slotVelocity+correction;wantedVelocity.SetY(0.0);
+  double configuredSeparation=shouldBe.GetLength();
++ // A narrow column can turn on its own height lanes without sweeping
++ // through an abreast neighbour. Mixed/abreast layouts retain lift reserve.
++ bool narrowColumn=!independentDeparture && YsAbs(shouldBe.x())<1.0;
++ const bool leaderSettled=!independentDeparture && YsAbs(formationTurnRate)<0.02 && YsAbs(leader->GetAttitude().b())<YsDegToRad(15.0);
++ const bool holdingPlace=leaderSettled && turnEscapeHeight==0.0 && (goal-air.GetPosition()).GetLength()<12.0 && (velocity-leadVelocity).GetLength()<6.0;
++ double closestPrediction=1.0e9,closestPhysical=0.0;
+  double avoidanceTarget=0.0,closestTime=7.0;YsVec3 avoidVelocity=YsOrigin();collisionRisk=false;
+  for(auto other=sim->FindNextAirplane(nullptr);other;other=sim->FindNextAirplane(other))if(other!=&air && other->IsAlive()==YSTRUE)
+  {
+   if(!independentDeparture && other!=leader && air.squadSlot>=0 && other->squadSlot>=0 && air.squadLeaderKey==other->squadLeaderKey)
++   {
+    configuredSeparation=YsSmaller(configuredSeparation,(air.squadOffset-other->squadOffset).GetLength());
++   if(YsAbs(other->squadOffset.x())>1.0)narrowColumn=false;
++  }
+   auto relative=other->GetPosition()-air.GetPosition();const double distance=relative.GetLength();
+   if(distance>1200.0)continue;
+   YsVec3 ov;other->Prop().GetVelocity(ov);const auto rv=ov-velocity;
+@@ -110,11 +119,17 @@
+   // keep their original physical clearance, without a permanent altitude step.
+   double predicted=(relative+rv*t).GetLength();
+   const double separation=physical+YsSmaller(45.0,closing*0.35+(closing>1.0 ? 5.0:0.0));
++  // A settled member keeps its place; the joining aircraft plans the approach.
++  // Both still escape if that approach becomes an imminent physical conflict.
++  if(holdingPlace && t>2.0 && distance>physical*2.0 && other!=leader &&
++     other->squadLeaderKey==air.squadLeaderKey)
++   if(auto otherFormation=dynamic_cast<FsFormation *>(other->GetAutopilot()))
++    if(!otherFormation->independentDeparture && otherFormation->rejoining)continue;
+   if(predicted<separation && ((t>0.05 && closing>0.5) || distance<physical))
+   {
+    if(t<closestTime)
+    {
+-    collisionRisk=true;closestTime=t;
++    collisionRisk=true;closestTime=t;closestPrediction=predicted;closestPhysical=physical;
+     const double sign=(FsExistence::GetSearchKey(&air)<FsExistence::GetSearchKey(other) ? -1.0:1.0);
+     auto away=-relative;away.SetY(0.0);
+     if(away.GetLength()<1.0)away.Set(sign,0.0,0.0);
+@@ -128,7 +143,10 @@
+  // Keep a consistent squad traffic lane throughout a close recapture.
+  // Choosing up/down anew for each nearest neighbour makes a middle aircraft
+  // reverse its escape as a different neighbour becomes the closest threat.
+- if(fighter && !independentDeparture && collisionRisk && air.squadSlot>=0)
++ const bool needsHeightEscape=!leaderSettled || !holdingPlace ||
++    (closestTime<3.5 && closestPrediction<closestPhysical+6.0);
++ if(leaderSettled && !needsHeightEscape)avoidanceTarget=0.0;
++ if(fighter && !independentDeparture && collisionRisk && needsHeightEscape && air.squadSlot>=0)
+  {
+   if(turnEscapeHeight==0.0)
+   {
+@@ -185,9 +203,12 @@
+   }
+   double bankLimit=YsSmaller(acos(1.0/(gLimit-0.3)),YsDegToRad(altitudeBank));
+   if(gLimit<3.1)bankLimit=YsSmaller(bankLimit,YsDegToRad(35.0));
+-  // Free lift for the existing vertical escape: a 75-degree, near-limit turn
+-  // leaves no manoeuvring reserve to open a predicted crossing.
+-  if(turnEscape && YsAbs(safeGoal.y()-air.GetPosition().y())>24.0)bankLimit=YsSmaller(bankLimit,YsDegToRad(45.0));
++  // Do not force a wide 45-degree turn merely because a height lane is active.
++  // Keep normal fighter turn authority in a narrow column; mixed layouts
++  // retain the existing height-escape reserve. Physical lift/G limits below
++  // and imminent-crossing bank limit still apply on every frame.
++  if(turnEscape && YsAbs(safeGoal.y()-air.GetPosition().y())>24.0)
++   bankLimit=YsSmaller(bankLimit,YsDegToRad(narrowColumn ? 75.0:45.0));
+   if(collisionRisk && closestTime<4.0)bankLimit=YsSmaller(bankLimit,YsDegToRad(closestTime<2.5 ? 45.0:60.0));
+   bankLimit=YsSmaller(bankLimit,acos(1.0/YsGreater(1.01,availableG*0.85)));
+   if(p.GetVelocity()<minSpeed*1.05)bankLimit=YsSmaller(bankLimit,YsDegToRad(20.0));
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -113,7 +113,7 @@
+   if(!order.started && sim->GetClock()>=order.start)
+   {
+    YsAtt3 yaw;yaw.Set(order.departureHeading,0,0);YsVec3 forward;yaw.Mul(forward,YsVec3(0,0,200000));auto target=wing->GetPosition()+forward;
+-   target.SetY(YsGreater(wing->GetPosition().y(),sim->GetFieldElevation(wing->GetPosition().x(),wing->GetPosition().z())+300.0));
++   target.SetY(wing->GetPosition().y()); // Terrain protection belongs to the flight controller, not a forced 300m climb.
+    auto ap=FsFormation::Create();ap->leader=leader;ap->shouldBe=wing->squadOffset;ap->headingOnly=YSTRUE;ap->synchronizeTrigger=YSFALSE;ap->independentDeparture=true;
+    forward.Normalize();ap->departureVelocity=forward*YsGreater(wing->Prop().GetVelocity(),wing->Prop().GetEstimatedLandingSpeed()*1.5);ap->departureAltitude=target.y();wing->SetAutopilot(ap);
+    wing->squadTask=1;order.started=true;printf("V82BREAK start time=%.3f slot=%d id=%d\n",sim->GetClock(),wing->squadSlot,wing->ysfId);
+@@ -268,6 +268,12 @@
+   // YsAtt3 positive heading rotates +Z towards -X: subtract the outward side.
+   o.departureHeading=yaw.h()-side*YsDegToRad(angle);
+   printf("V86PLAN slot=%d x=%.3f outward=%d heading=%.3f column=%d\n",wing->squadSlot,x,int(side),YsRadToDeg(o.departureHeading),int(column));
++  // Everyone is committed to the break now. Waiting aircraft hold their
++  // present flight line instead of filling places vacated by earlier members.
++  auto hold=FsFormation::Create();hold->leader=leader;hold->shouldBe=wing->squadOffset;
++  hold->headingOnly=YSTRUE;hold->synchronizeTrigger=YSFALSE;hold->independentDeparture=true;
++  wing->Prop().GetVelocity(hold->departureVelocity);hold->departureVelocity.SetY(0.0);
++  hold->departureAltitude=wing->GetPosition().y();wing->SetAutopilot(hold);wing->squadTask=1;
+   breaks.Append(o);
+  }
+ }
+--- a/YSFLIGHT/src/core/fssiminfo.cpp
++++ b/YSFLIGHT/src/core/fssiminfo.cpp
+@@ -1400,7 +1400,7 @@
+ 
+ void FsSimulationEventStore::SeekNextEventPointereToCurrentTime(const double currentTime)
+ {
+-	for(nextEvent=0; eventList[nextEvent].eventTime<currentTime; ++nextEvent)
++	for(nextEvent=0; nextEvent<eventList.GetN() && eventList[nextEvent].eventTime<currentTime; ++nextEvent)
+ 	{
+ 	}
+ }
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow v8.6.2";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow LAB864 preview";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif
+--- a/YSFLIGHT/src/ui/fsrunloop.cpp
++++ b/YSFLIGHT/src/ui/fsrunloop.cpp
+@@ -1,4 +1,5 @@
+ #include "fsoperation.h"
++#include "fsairshow.h"
+ #include <memory>
+ 
+ #define FSSIMPLEWINDOW_DONT_INCLUDE_OPENGL_HEADERS
+@@ -1995,6 +1996,21 @@
+ 
+ void FsRunLoop::ProcessFlightCommand(const char *cmd)
+ {
++#ifdef V861_VALIDATION
++ auto labArgs=YsString(cmd).Argv();auto labSim=world->GetSimulation();
++ if(labSim && labArgs.GetN()>=3 && 0==labArgs[0].STRCMP("LABREPLAY"))
++ {
++  world->Jump(atof(labArgs[1]));
++  labSim->SetReplayMode(atoi(labArgs[2]) ? FsSimulation::FSREPLAY_PLAY:FsSimulation::FSREPLAY_PAUSE);
++  printf("LABREPLAY time=%.3f play=%d\n",labSim->GetClock(),atoi(labArgs[2]));return;
++ }
++ if(labSim && labArgs.GetN()>=5 && 0==labArgs[0].STRCMP("LABVIEW"))
++ {
++  if(auto show=FsGetAirshow(labSim)){show->heading=YsDegToRad(atof(labArgs[1]));show->pitch=YsDegToRad(atof(labArgs[2]));show->distance=atof(labArgs[3]);show->cameraUnit=atoi(labArgs[4]);show->orbit=true;}
++  labSim->SimProcessButtonFunction(FSBTF_OUTSIDEPLAYERVIEW,FSUSC_ENABLE);return;
++ }
++#endif
++
+ 	if(YSTRUE==Flying())
+ 	{
+ 		auto sim=world->GetSimulation();

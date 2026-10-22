@@ -1,0 +1,30 @@
+[
+  {
+    "name": "before-close",
+    "record": "/workspace/ysflight-work/lab863/validation/stable-n8-a180.record.yfs",
+    "duration": 50,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  },
+  {
+    "name": "after-close",
+    "record": "/workspace/ysflight-work/lab864/validation/stable-n8-a180.record.yfs",
+    "duration": 50,
+    "window": {
+      "maximized": 1,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 0,
+      "y": 26,
+      "width": 1920,
+      "height": 1054
+    }
+  }
+]

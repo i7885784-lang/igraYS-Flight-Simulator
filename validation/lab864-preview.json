@@ -1,0 +1,28 @@
+{
+  "status": "Private laboratory preview, no installable Windows game release",
+  "base": "v8.6.2, continuing LAB863",
+  "exe_sha256": "2470b26d5a07ca804ac51ddd7a191370386bf000b07944fef2b19e436b53f2af",
+  "source_changes": [
+    "src/autopilot/fsformationsafety.cpp",
+    "src/core/fsairshow.cpp",
+    "src/core/fssiminfo.cpp",
+    "src/main/fsmain.cpp",
+    "src/ui/fsrunloop.cpp"
+  ],
+  "lab_source_sha256": {
+    "src/autopilot/fsformationsafety.cpp": "6b268a637ecbcea9bf3ca932ab7e834bd26ce14813726cd00418d16512da943a",
+    "src/core/fsairshow.cpp": "502f0452df58b39df8be18a77f43ed743767860e8e73b0c862e9c9ef97fc09f7",
+    "src/core/fssiminfo.cpp": "aa89da08103f1c1ef6a1e3138df4b52b0d4db6202a115cdcaf37342678ba1154",
+    "src/main/fsmain.cpp": "1238c801b1436856ff94c2e990a83495f654a4a2a1086ecf3441ee545ac6b8ad",
+    "src/ui/fsrunloop.cpp": "60273174270c452b9ccca5d56ada27ed4f065369281163f86b28f966db264310"
+  },
+  "stable_source_sha256": {
+    "src/autopilot/fsformationsafety.cpp": "329946ef907f6bac2b0424b7abe01f256f1670cc7015a5ecfbc4f732a557c216",
+    "src/core/fsairshow.cpp": "d1b5eaf26c6c5eba2b2bccf9bc7f787d3a04ea05b59f07bd67031bf1c54396bd",
+    "src/core/fssiminfo.cpp": "57c106055370b3789259512670a88bebe2691593bf72c8ab46f6fc625a2a12e7",
+    "src/main/fsmain.cpp": "b0fbf01468fb35bc1b8ddb8907baa551b02a4f4e513e1c2d01d32107e22bd8b4",
+    "src/ui/fsrunloop.cpp": "2456ab1d0fdb159fb05e4c31575599aa8393021a7429471c582670e963cc858b"
+  },
+  "flight_cases": 94,
+  "all_suites_passed": true
+}
