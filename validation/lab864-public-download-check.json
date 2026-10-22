@@ -1,0 +1,54 @@
+{
+  "commit": "35bb7aead5a7bc55cc477b64641053ffae57a960",
+  "checks": [
+    {
+      "path": "downloads/Airshow_LAB864_Report_and_Video.zip",
+      "bytes": 14589381,
+      "sha256": "613411210a8871e88e1f7fec85fe1d8e99a089156d227cf6ee86fbb220f0fcca",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/Airshow_LAB864_Test_Sources.zip",
+      "bytes": 24213493,
+      "sha256": "d9ce133aa9b212f074fa5bc8ae5662db4491073723c20629832c8c468f69b5bf",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/Airshow_LAB864_Measurements.zip",
+      "bytes": 41117422,
+      "sha256": "3b5df40e858167649865ea9a98b05e33d1924979fe3dce9efec32d83e1358c7d",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/SHA256SUMS_LAB864.txt",
+      "bytes": 298,
+      "sha256": "126d59a9390a45363f3688c51be10708f868c8c89a8ceb4b8d393f6e24128c49",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab864/REPORT.md",
+      "bytes": 9544,
+      "sha256": "43d234e9a6b455668c29d67fe98f5c55a12f3ab341f2f84ef3690f5791e23d9d",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab864/before-close.mp4",
+      "bytes": 1850369,
+      "sha256": "eac5ed047df4e2b6acff645872943e08e1c71ac2f2af679c36e572401a9d4cbc",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab864/after-close.mp4",
+      "bytes": 2039936,
+      "sha256": "ac09c9594c1f4950151cf8822566e66c096adcab09591df422c03c5acc6b062e",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab864/clear-comparison.mp4",
+      "bytes": 8807666,
+      "sha256": "6f86cbf423b8fb3ae08aa8f9cf353711df8999437bafc747265f096ca6e6f639",
+      "remote_matches": true
+    }
+  ],
+  "passed": true
+}
