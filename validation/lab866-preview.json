@@ -1,0 +1,43 @@
+{
+  "status": "Private laboratory preview, no installable Windows game release",
+  "base": "v8.6.2, continuing LAB865",
+  "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+  "source_changes": [
+    "src/autopilot/fsformationautopilot.cpp",
+    "src/autopilot/fsformationautopilot.h",
+    "src/autopilot/fsformationsafety.cpp",
+    "src/core/fsairshow.cpp",
+    "src/core/fssiminfo.cpp",
+    "src/main/fsmain.cpp",
+    "src/ui/fsrunloop.cpp"
+  ],
+  "lab_source_sha256": {
+    "src/autopilot/fsformationautopilot.cpp": "db507f1f31942e72166c25f293ea5a4dcdea14c511e51b888e807f7baeab0b91",
+    "src/autopilot/fsformationautopilot.h": "d11b13b1a65e2916ac7f21711c7fe42e8f0a8974902c733aa277115dc45b3639",
+    "src/autopilot/fsformationsafety.cpp": "f1d1fca6a734dfec089a41d51ec3a4d5e8d46a13f51a7d7697891496dd4f565c",
+    "src/core/fsairshow.cpp": "502f0452df58b39df8be18a77f43ed743767860e8e73b0c862e9c9ef97fc09f7",
+    "src/core/fssiminfo.cpp": "aa89da08103f1c1ef6a1e3138df4b52b0d4db6202a115cdcaf37342678ba1154",
+    "src/main/fsmain.cpp": "0533a04136f1d5a5605a0a31be9c547b8cd0646970c96ed3ebb0981bd892144d",
+    "src/ui/fsrunloop.cpp": "60273174270c452b9ccca5d56ada27ed4f065369281163f86b28f966db264310"
+  },
+  "stable_source_sha256": {
+    "src/autopilot/fsformationautopilot.cpp": "55dc630aec8a148a32f4d271c730aa0a4deb2ea1a67e7d64c9cd7b135a5e090e",
+    "src/autopilot/fsformationautopilot.h": "8dfea40877b45159a18e20a7d249add83da3d1231257fc81761c0b7e17b94c47",
+    "src/autopilot/fsformationsafety.cpp": "329946ef907f6bac2b0424b7abe01f256f1670cc7015a5ecfbc4f732a557c216",
+    "src/core/fsairshow.cpp": "d1b5eaf26c6c5eba2b2bccf9bc7f787d3a04ea05b59f07bd67031bf1c54396bd",
+    "src/core/fssiminfo.cpp": "57c106055370b3789259512670a88bebe2691593bf72c8ab46f6fc625a2a12e7",
+    "src/main/fsmain.cpp": "b0fbf01468fb35bc1b8ddb8907baa551b02a4f4e513e1c2d01d32107e22bd8b4",
+    "src/ui/fsrunloop.cpp": "2456ab1d0fdb159fb05e4c31575599aa8393021a7429471c582670e963cc858b"
+  },
+  "flight_cases": 109,
+  "all_suites_passed": true,
+  "stable_game_preserved": {
+    "passed": true,
+    "files_verified": 1008,
+    "archive_sha256": "82d7f9f94a17d57352fb260ada85321f1f9d4c75dc9871ec3661cb1508ded238",
+    "windows_x86_exe_sha256": "8d1b3a7f545eaa1d6632dc2ce4c26508cf0b19e7615da37f0b753577e35582ee",
+    "method": "Compared every file of existing v8.6.2 game ZIP with preserved package; compilation build directory is not the released package"
+  },
+  "excluded_invalid_initialization_trials": 3,
+  "excluded_reason": "OCEAN carrier intersects the initial low-altitude fixture; corrected scene retested without any game source change"
+}

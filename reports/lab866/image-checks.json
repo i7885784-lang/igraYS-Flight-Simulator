@@ -1,0 +1,65 @@
+[
+  {
+    "file": "01-time.png",
+    "width": 1820,
+    "height": 780,
+    "sha256": "dc09f68d38d99a3281adc80548fc7e8585328f6d7fcf6919a5ccd3d8c0be8055",
+    "decoded": true
+  },
+  {
+    "file": "02-wait-height.png",
+    "width": 1820,
+    "height": 780,
+    "sha256": "305475174bf74f116be3fecff42b6109de9ff1f2ecddb2f6481ed1a15a54bed0",
+    "decoded": true
+  },
+  {
+    "file": "03-scatter.png",
+    "width": 1820,
+    "height": 780,
+    "sha256": "abd04eac2e8d4aebaa3a46350e0309e1c1e3cccbe8616fbd5d257b968bac9256",
+    "decoded": true
+  },
+  {
+    "file": "04-turn.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "f1e28384d8d9d326905538237171d78ca7b352631ac869ad35bf6899630918bd",
+    "decoded": true
+  },
+  {
+    "file": "05-formed.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "f76da6696369e08a05a881de57223684f8e7afa824ebf7cc088b8cc04c9dc43e",
+    "decoded": true
+  },
+  {
+    "file": "06-scheme.png",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "244dc3f7e5be1cc6e3f84b62f041dc4b75492ca32d5016a19b62f44fd88b2c00",
+    "decoded": true
+  },
+  {
+    "file": "07-rejected.png",
+    "width": 1440,
+    "height": 720,
+    "sha256": "4214797cc08ce9a48f0b94fafc3e7860aa94610d308178e44d100d8c8d29f803",
+    "decoded": true
+  },
+  {
+    "file": "after-flight.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "5f3aa3d091cc0c543c62f7ad2abd734a682c6dfdb8f8a136077c16eec10261ba",
+    "decoded": true
+  },
+  {
+    "file": "before-flight.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "28e6a56a55025ecb26ba89d8f203211ae105f9ae65d452864d420744f583da86",
+    "decoded": true
+  }
+]
