@@ -1,0 +1,34 @@
+{
+  "status": "Private laboratory preview, no installable Windows game release",
+  "base": "v8.6.2, continuing LAB864",
+  "exe_sha256": "eff0dce7916de8b86a23fa188ec51208c4830166a8669461a812d7815fe54820",
+  "source_changes": [
+    "src/autopilot/fsformationautopilot.cpp",
+    "src/autopilot/fsformationautopilot.h",
+    "src/autopilot/fsformationsafety.cpp",
+    "src/core/fsairshow.cpp",
+    "src/core/fssiminfo.cpp",
+    "src/main/fsmain.cpp",
+    "src/ui/fsrunloop.cpp"
+  ],
+  "lab_source_sha256": {
+    "src/autopilot/fsformationautopilot.cpp": "db507f1f31942e72166c25f293ea5a4dcdea14c511e51b888e807f7baeab0b91",
+    "src/autopilot/fsformationautopilot.h": "d11b13b1a65e2916ac7f21711c7fe42e8f0a8974902c733aa277115dc45b3639",
+    "src/autopilot/fsformationsafety.cpp": "d73d6ef2197a0d90638d70650d446710efa448ef1e7561e269145fd3be3ffc7b",
+    "src/core/fsairshow.cpp": "502f0452df58b39df8be18a77f43ed743767860e8e73b0c862e9c9ef97fc09f7",
+    "src/core/fssiminfo.cpp": "aa89da08103f1c1ef6a1e3138df4b52b0d4db6202a115cdcaf37342678ba1154",
+    "src/main/fsmain.cpp": "08f28fa4a8f97a4e6d871eaa3d5f4ae1a03c0a65d12e82486d3eabb4ce667593",
+    "src/ui/fsrunloop.cpp": "60273174270c452b9ccca5d56ada27ed4f065369281163f86b28f966db264310"
+  },
+  "stable_source_sha256": {
+    "src/autopilot/fsformationautopilot.cpp": "55dc630aec8a148a32f4d271c730aa0a4deb2ea1a67e7d64c9cd7b135a5e090e",
+    "src/autopilot/fsformationautopilot.h": "8dfea40877b45159a18e20a7d249add83da3d1231257fc81761c0b7e17b94c47",
+    "src/autopilot/fsformationsafety.cpp": "329946ef907f6bac2b0424b7abe01f256f1670cc7015a5ecfbc4f732a557c216",
+    "src/core/fsairshow.cpp": "d1b5eaf26c6c5eba2b2bccf9bc7f787d3a04ea05b59f07bd67031bf1c54396bd",
+    "src/core/fssiminfo.cpp": "57c106055370b3789259512670a88bebe2691593bf72c8ab46f6fc625a2a12e7",
+    "src/main/fsmain.cpp": "b0fbf01468fb35bc1b8ddb8907baa551b02a4f4e513e1c2d01d32107e22bd8b4",
+    "src/ui/fsrunloop.cpp": "2456ab1d0fdb159fb05e4c31575599aa8393021a7429471c582670e963cc858b"
+  },
+  "flight_cases": 104,
+  "all_suites_passed": true
+}

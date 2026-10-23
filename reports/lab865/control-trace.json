@@ -1,0 +1,7750 @@
+{
+  "maximum_spoiler": 1.0,
+  "maximum_throttle": 1.0,
+  "rows": [
+    {
+      "time": 11.522,
+      "wing": 1,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.423
+    },
+    {
+      "time": 11.522,
+      "wing": 2,
+      "speed": 180.004,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.427
+    },
+    {
+      "time": 11.522,
+      "wing": 3,
+      "speed": 180.007,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.436
+    },
+    {
+      "time": 11.522,
+      "wing": 4,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.45
+    },
+    {
+      "time": 11.522,
+      "wing": 5,
+      "speed": 180.021,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.469
+    },
+    {
+      "time": 11.522,
+      "wing": 6,
+      "speed": 180.031,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.494
+    },
+    {
+      "time": 11.522,
+      "wing": 7,
+      "speed": 180.044,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.523
+    },
+    {
+      "time": 11.522,
+      "wing": 8,
+      "speed": 180.059,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.558
+    },
+    {
+      "time": 12.054,
+      "wing": 1,
+      "speed": 180.046,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.457
+    },
+    {
+      "time": 12.054,
+      "wing": 2,
+      "speed": 180.169,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.593
+    },
+    {
+      "time": 12.054,
+      "wing": 3,
+      "speed": 180.408,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.846
+    },
+    {
+      "time": 12.054,
+      "wing": 4,
+      "speed": 180.775,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 12.054,
+      "wing": 5,
+      "speed": 181.319,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.775
+    },
+    {
+      "time": 12.054,
+      "wing": 6,
+      "speed": 181.721,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.942
+    },
+    {
+      "time": 12.054,
+      "wing": 7,
+      "speed": 181.999,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 12.054,
+      "wing": 8,
+      "speed": 182.228,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 12.587,
+      "wing": 1,
+      "speed": 180.293,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.541
+    },
+    {
+      "time": 12.587,
+      "wing": 2,
+      "speed": 181.101,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.906
+    },
+    {
+      "time": 12.587,
+      "wing": 3,
+      "speed": 182.719,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 12.587,
+      "wing": 4,
+      "speed": 183.534,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 12.587,
+      "wing": 5,
+      "speed": 184.062,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 12.587,
+      "wing": 6,
+      "speed": 184.393,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.7
+    },
+    {
+      "time": 12.587,
+      "wing": 7,
+      "speed": 184.812,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 12.587,
+      "wing": 8,
+      "speed": 185.128,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 13.126,
+      "wing": 1,
+      "speed": 181.106,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.897
+    },
+    {
+      "time": 13.126,
+      "wing": 2,
+      "speed": 182.584,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 13.126,
+      "wing": 3,
+      "speed": 184.082,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.326
+    },
+    {
+      "time": 13.126,
+      "wing": 4,
+      "speed": 184.248,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.222
+    },
+    {
+      "time": 13.126,
+      "wing": 5,
+      "speed": 184.263,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.138
+    },
+    {
+      "time": 13.126,
+      "wing": 6,
+      "speed": 184.344,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.096
+    },
+    {
+      "time": 13.126,
+      "wing": 7,
+      "speed": 184.637,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.018
+    },
+    {
+      "time": 13.126,
+      "wing": 8,
+      "speed": 185.061,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 1,
+      "speed": 182.49,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.635
+    },
+    {
+      "time": 13.667,
+      "wing": 2,
+      "speed": 183.315,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.25
+    },
+    {
+      "time": 13.667,
+      "wing": 3,
+      "speed": 183.464,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 4,
+      "speed": 183.505,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 5,
+      "speed": 183.45,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 6,
+      "speed": 183.501,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 7,
+      "speed": 183.766,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 13.667,
+      "wing": 8,
+      "speed": 184.153,
+      "spoiler": 0.082,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 1,
+      "speed": 181.943,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.377
+    },
+    {
+      "time": 14.211,
+      "wing": 2,
+      "speed": 182.131,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.037
+    },
+    {
+      "time": 14.211,
+      "wing": 3,
+      "speed": 182.484,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 4,
+      "speed": 182.613,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 5,
+      "speed": 182.574,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 6,
+      "speed": 182.63,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 7,
+      "speed": 182.894,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.211,
+      "wing": 8,
+      "speed": 183.045,
+      "spoiler": 0.057,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 14.759,
+      "wing": 1,
+      "speed": 182.053,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.982
+    },
+    {
+      "time": 14.759,
+      "wing": 2,
+      "speed": 181.623,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.855
+    },
+    {
+      "time": 14.759,
+      "wing": 3,
+      "speed": 181.459,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.503
+    },
+    {
+      "time": 14.759,
+      "wing": 4,
+      "speed": 182.108,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.463
+    },
+    {
+      "time": 14.759,
+      "wing": 5,
+      "speed": 182.249,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.516
+    },
+    {
+      "time": 14.759,
+      "wing": 6,
+      "speed": 182.247,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.51
+    },
+    {
+      "time": 14.759,
+      "wing": 7,
+      "speed": 182.161,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.359
+    },
+    {
+      "time": 14.759,
+      "wing": 8,
+      "speed": 182.122,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.187
+    },
+    {
+      "time": 15.305,
+      "wing": 1,
+      "speed": 183.282,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.798
+    },
+    {
+      "time": 15.305,
+      "wing": 2,
+      "speed": 182.967,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 15.305,
+      "wing": 3,
+      "speed": 181.974,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.998
+    },
+    {
+      "time": 15.305,
+      "wing": 4,
+      "speed": 182.184,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.744
+    },
+    {
+      "time": 15.305,
+      "wing": 5,
+      "speed": 182.667,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.646
+    },
+    {
+      "time": 15.305,
+      "wing": 6,
+      "speed": 182.851,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.697
+    },
+    {
+      "time": 15.305,
+      "wing": 7,
+      "speed": 182.681,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.735
+    },
+    {
+      "time": 15.305,
+      "wing": 8,
+      "speed": 182.469,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.744
+    },
+    {
+      "time": 15.851,
+      "wing": 1,
+      "speed": 184.277,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.636
+    },
+    {
+      "time": 15.851,
+      "wing": 2,
+      "speed": 184.139,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.651
+    },
+    {
+      "time": 15.851,
+      "wing": 3,
+      "speed": 183.971,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 15.851,
+      "wing": 4,
+      "speed": 182.701,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 15.851,
+      "wing": 5,
+      "speed": 182.71,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.747
+    },
+    {
+      "time": 15.851,
+      "wing": 6,
+      "speed": 182.957,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.561
+    },
+    {
+      "time": 15.851,
+      "wing": 7,
+      "speed": 183.111,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.537
+    },
+    {
+      "time": 15.851,
+      "wing": 8,
+      "speed": 183.183,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.615
+    },
+    {
+      "time": 16.4,
+      "wing": 1,
+      "speed": 184.078,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.579
+    },
+    {
+      "time": 16.4,
+      "wing": 2,
+      "speed": 184.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.608
+    },
+    {
+      "time": 16.4,
+      "wing": 3,
+      "speed": 183.977,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.656
+    },
+    {
+      "time": 16.4,
+      "wing": 4,
+      "speed": 183.433,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 16.4,
+      "wing": 5,
+      "speed": 183.085,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.935
+    },
+    {
+      "time": 16.4,
+      "wing": 6,
+      "speed": 182.873,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.812
+    },
+    {
+      "time": 16.4,
+      "wing": 7,
+      "speed": 182.8,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.671
+    },
+    {
+      "time": 16.4,
+      "wing": 8,
+      "speed": 182.876,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.536
+    },
+    {
+      "time": 16.951,
+      "wing": 1,
+      "speed": 183.837,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.652
+    },
+    {
+      "time": 16.951,
+      "wing": 2,
+      "speed": 183.824,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.67
+    },
+    {
+      "time": 16.951,
+      "wing": 3,
+      "speed": 183.846,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.697
+    },
+    {
+      "time": 16.951,
+      "wing": 4,
+      "speed": 183.975,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.85
+    },
+    {
+      "time": 16.951,
+      "wing": 5,
+      "speed": 183.642,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.909
+    },
+    {
+      "time": 16.951,
+      "wing": 6,
+      "speed": 183.343,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.946
+    },
+    {
+      "time": 16.951,
+      "wing": 7,
+      "speed": 183.086,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.95
+    },
+    {
+      "time": 16.951,
+      "wing": 8,
+      "speed": 182.885,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.903
+    },
+    {
+      "time": 17.505,
+      "wing": 1,
+      "speed": 183.831,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.768
+    },
+    {
+      "time": 17.505,
+      "wing": 2,
+      "speed": 183.846,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.773
+    },
+    {
+      "time": 17.505,
+      "wing": 3,
+      "speed": 183.872,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.788
+    },
+    {
+      "time": 17.505,
+      "wing": 4,
+      "speed": 184.171,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.78
+    },
+    {
+      "time": 17.505,
+      "wing": 5,
+      "speed": 184.038,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.843
+    },
+    {
+      "time": 17.505,
+      "wing": 6,
+      "speed": 183.899,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.901
+    },
+    {
+      "time": 17.505,
+      "wing": 7,
+      "speed": 183.746,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.955
+    },
+    {
+      "time": 17.505,
+      "wing": 8,
+      "speed": 183.561,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 18.058,
+      "wing": 1,
+      "speed": 183.945,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.773
+    },
+    {
+      "time": 18.058,
+      "wing": 2,
+      "speed": 183.962,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.771
+    },
+    {
+      "time": 18.058,
+      "wing": 3,
+      "speed": 183.976,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.783
+    },
+    {
+      "time": 18.058,
+      "wing": 4,
+      "speed": 184.174,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.722
+    },
+    {
+      "time": 18.058,
+      "wing": 5,
+      "speed": 184.18,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.746
+    },
+    {
+      "time": 18.058,
+      "wing": 6,
+      "speed": 184.174,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.773
+    },
+    {
+      "time": 18.058,
+      "wing": 7,
+      "speed": 184.148,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.805
+    },
+    {
+      "time": 18.058,
+      "wing": 8,
+      "speed": 184.089,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.844
+    },
+    {
+      "time": 18.608,
+      "wing": 1,
+      "speed": 183.935,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.714
+    },
+    {
+      "time": 18.608,
+      "wing": 2,
+      "speed": 183.944,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.71
+    },
+    {
+      "time": 18.608,
+      "wing": 3,
+      "speed": 183.95,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.749
+    },
+    {
+      "time": 18.608,
+      "wing": 4,
+      "speed": 184.01,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.702
+    },
+    {
+      "time": 18.608,
+      "wing": 5,
+      "speed": 184.042,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.669
+    },
+    {
+      "time": 18.608,
+      "wing": 6,
+      "speed": 184.084,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.667
+    },
+    {
+      "time": 18.608,
+      "wing": 7,
+      "speed": 184.116,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.671
+    },
+    {
+      "time": 18.608,
+      "wing": 8,
+      "speed": 184.132,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.684
+    },
+    {
+      "time": 19.165,
+      "wing": 1,
+      "speed": 186.6,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 19.165,
+      "wing": 2,
+      "speed": 185.587,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.634
+    },
+    {
+      "time": 19.165,
+      "wing": 3,
+      "speed": 184.182,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.775
+    },
+    {
+      "time": 19.165,
+      "wing": 4,
+      "speed": 184.16,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.75
+    },
+    {
+      "time": 19.165,
+      "wing": 5,
+      "speed": 183.811,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.721
+    },
+    {
+      "time": 19.165,
+      "wing": 6,
+      "speed": 183.792,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.657
+    },
+    {
+      "time": 19.165,
+      "wing": 7,
+      "speed": 183.827,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.647
+    },
+    {
+      "time": 19.165,
+      "wing": 8,
+      "speed": 183.86,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.642
+    },
+    {
+      "time": 19.721,
+      "wing": 1,
+      "speed": 188.154,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.234
+    },
+    {
+      "time": 19.721,
+      "wing": 2,
+      "speed": 184.646,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 19.721,
+      "wing": 3,
+      "speed": 184.408,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.506
+    },
+    {
+      "time": 19.721,
+      "wing": 4,
+      "speed": 184.353,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.505
+    },
+    {
+      "time": 19.721,
+      "wing": 5,
+      "speed": 184.098,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.761
+    },
+    {
+      "time": 19.721,
+      "wing": 6,
+      "speed": 183.767,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.815
+    },
+    {
+      "time": 19.721,
+      "wing": 7,
+      "speed": 183.645,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.777
+    },
+    {
+      "time": 19.721,
+      "wing": 8,
+      "speed": 183.629,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.749
+    },
+    {
+      "time": 20.273,
+      "wing": 1,
+      "speed": 186.997,
+      "spoiler": 0.202,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 20.273,
+      "wing": 2,
+      "speed": 183.738,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.584
+    },
+    {
+      "time": 20.273,
+      "wing": 3,
+      "speed": 184.017,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.314
+    },
+    {
+      "time": 20.273,
+      "wing": 4,
+      "speed": 183.975,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.328
+    },
+    {
+      "time": 20.273,
+      "wing": 5,
+      "speed": 184.308,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.495
+    },
+    {
+      "time": 20.273,
+      "wing": 6,
+      "speed": 184.244,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.694
+    },
+    {
+      "time": 20.273,
+      "wing": 7,
+      "speed": 184.097,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.79
+    },
+    {
+      "time": 20.273,
+      "wing": 8,
+      "speed": 184.019,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.817
+    },
+    {
+      "time": 20.83,
+      "wing": 1,
+      "speed": 184.966,
+      "spoiler": 0.421,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 20.83,
+      "wing": 2,
+      "speed": 183.322,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.808
+    },
+    {
+      "time": 20.83,
+      "wing": 3,
+      "speed": 183.367,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 20.83,
+      "wing": 4,
+      "speed": 183.362,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.43
+    },
+    {
+      "time": 20.83,
+      "wing": 5,
+      "speed": 183.905,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.334
+    },
+    {
+      "time": 20.83,
+      "wing": 6,
+      "speed": 184.243,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 20.83,
+      "wing": 7,
+      "speed": 184.341,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.482
+    },
+    {
+      "time": 20.83,
+      "wing": 8,
+      "speed": 184.353,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.524
+    },
+    {
+      "time": 21.384,
+      "wing": 1,
+      "speed": 182.297,
+      "spoiler": 0.143,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 21.384,
+      "wing": 2,
+      "speed": 183.32,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.936
+    },
+    {
+      "time": 21.384,
+      "wing": 3,
+      "speed": 183.15,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.655
+    },
+    {
+      "time": 21.384,
+      "wing": 4,
+      "speed": 183.171,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.659
+    },
+    {
+      "time": 21.384,
+      "wing": 5,
+      "speed": 183.329,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.461
+    },
+    {
+      "time": 21.384,
+      "wing": 6,
+      "speed": 183.679,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.345
+    },
+    {
+      "time": 21.384,
+      "wing": 7,
+      "speed": 183.905,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.323
+    },
+    {
+      "time": 21.384,
+      "wing": 8,
+      "speed": 183.994,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.328
+    },
+    {
+      "time": 21.944,
+      "wing": 1,
+      "speed": 180.785,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.516
+    },
+    {
+      "time": 21.944,
+      "wing": 2,
+      "speed": 183.472,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.968
+    },
+    {
+      "time": 21.944,
+      "wing": 3,
+      "speed": 183.423,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.722
+    },
+    {
+      "time": 21.944,
+      "wing": 4,
+      "speed": 183.44,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.717
+    },
+    {
+      "time": 21.944,
+      "wing": 5,
+      "speed": 183.213,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.674
+    },
+    {
+      "time": 21.944,
+      "wing": 6,
+      "speed": 183.213,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.552
+    },
+    {
+      "time": 21.944,
+      "wing": 7,
+      "speed": 183.31,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.469
+    },
+    {
+      "time": 21.944,
+      "wing": 8,
+      "speed": 183.374,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.437
+    },
+    {
+      "time": 22.501,
+      "wing": 1,
+      "speed": 182.083,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 22.501,
+      "wing": 2,
+      "speed": 183.678,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 22.501,
+      "wing": 3,
+      "speed": 183.667,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.629
+    },
+    {
+      "time": 22.501,
+      "wing": 4,
+      "speed": 183.669,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.626
+    },
+    {
+      "time": 22.501,
+      "wing": 5,
+      "speed": 183.489,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.699
+    },
+    {
+      "time": 22.501,
+      "wing": 6,
+      "speed": 183.302,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.708
+    },
+    {
+      "time": 22.501,
+      "wing": 7,
+      "speed": 183.222,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.68
+    },
+    {
+      "time": 22.501,
+      "wing": 8,
+      "speed": 183.205,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.66
+    },
+    {
+      "time": 23.06,
+      "wing": 1,
+      "speed": 183.674,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.668
+    },
+    {
+      "time": 23.06,
+      "wing": 2,
+      "speed": 185.146,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.63
+    },
+    {
+      "time": 23.06,
+      "wing": 3,
+      "speed": 183.658,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.564
+    },
+    {
+      "time": 23.06,
+      "wing": 4,
+      "speed": 183.655,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.565
+    },
+    {
+      "time": 23.06,
+      "wing": 5,
+      "speed": 183.669,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.608
+    },
+    {
+      "time": 23.06,
+      "wing": 6,
+      "speed": 183.585,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.664
+    },
+    {
+      "time": 23.06,
+      "wing": 7,
+      "speed": 183.503,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.692
+    },
+    {
+      "time": 23.06,
+      "wing": 8,
+      "speed": 183.464,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.7
+    },
+    {
+      "time": 23.625,
+      "wing": 1,
+      "speed": 183.621,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.703
+    },
+    {
+      "time": 23.625,
+      "wing": 2,
+      "speed": 184.611,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.27
+    },
+    {
+      "time": 23.625,
+      "wing": 3,
+      "speed": 183.565,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.582
+    },
+    {
+      "time": 23.625,
+      "wing": 4,
+      "speed": 183.566,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.583
+    },
+    {
+      "time": 23.625,
+      "wing": 5,
+      "speed": 183.625,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.565
+    },
+    {
+      "time": 23.625,
+      "wing": 6,
+      "speed": 183.663,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.579
+    },
+    {
+      "time": 23.625,
+      "wing": 7,
+      "speed": 183.663,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.6
+    },
+    {
+      "time": 23.625,
+      "wing": 8,
+      "speed": 183.655,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.612
+    },
+    {
+      "time": 24.195,
+      "wing": 1,
+      "speed": 183.596,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.727
+    },
+    {
+      "time": 24.195,
+      "wing": 2,
+      "speed": 183.891,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.287
+    },
+    {
+      "time": 24.195,
+      "wing": 3,
+      "speed": 183.554,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.612
+    },
+    {
+      "time": 24.195,
+      "wing": 4,
+      "speed": 183.557,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.612
+    },
+    {
+      "time": 24.195,
+      "wing": 5,
+      "speed": 183.551,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.592
+    },
+    {
+      "time": 24.195,
+      "wing": 6,
+      "speed": 183.582,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.573
+    },
+    {
+      "time": 24.195,
+      "wing": 7,
+      "speed": 183.609,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.567
+    },
+    {
+      "time": 24.195,
+      "wing": 8,
+      "speed": 183.621,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.567
+    },
+    {
+      "time": 24.771,
+      "wing": 1,
+      "speed": 183.586,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.753
+    },
+    {
+      "time": 24.771,
+      "wing": 2,
+      "speed": 183.331,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.295
+    },
+    {
+      "time": 24.771,
+      "wing": 3,
+      "speed": 183.592,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.609
+    },
+    {
+      "time": 24.771,
+      "wing": 4,
+      "speed": 183.592,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.609
+    },
+    {
+      "time": 24.771,
+      "wing": 5,
+      "speed": 183.563,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.614
+    },
+    {
+      "time": 24.771,
+      "wing": 6,
+      "speed": 183.545,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.606
+    },
+    {
+      "time": 24.771,
+      "wing": 7,
+      "speed": 183.546,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.597
+    },
+    {
+      "time": 24.771,
+      "wing": 8,
+      "speed": 183.55,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.593
+    },
+    {
+      "time": 25.34,
+      "wing": 1,
+      "speed": 183.691,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.887
+    },
+    {
+      "time": 25.34,
+      "wing": 2,
+      "speed": 182.629,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.575
+    },
+    {
+      "time": 25.34,
+      "wing": 3,
+      "speed": 183.516,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.642
+    },
+    {
+      "time": 25.34,
+      "wing": 4,
+      "speed": 183.516,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.642
+    },
+    {
+      "time": 25.34,
+      "wing": 5,
+      "speed": 183.512,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.65
+    },
+    {
+      "time": 25.34,
+      "wing": 6,
+      "speed": 183.493,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.657
+    },
+    {
+      "time": 25.34,
+      "wing": 7,
+      "speed": 183.48,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.659
+    },
+    {
+      "time": 25.34,
+      "wing": 8,
+      "speed": 183.475,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.658
+    },
+    {
+      "time": 25.92,
+      "wing": 1,
+      "speed": 185.948,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 25.92,
+      "wing": 2,
+      "speed": 182.998,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.958
+    },
+    {
+      "time": 25.92,
+      "wing": 3,
+      "speed": 183.653,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.934
+    },
+    {
+      "time": 25.92,
+      "wing": 4,
+      "speed": 183.653,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.934
+    },
+    {
+      "time": 25.92,
+      "wing": 5,
+      "speed": 183.658,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.934
+    },
+    {
+      "time": 25.92,
+      "wing": 6,
+      "speed": 183.656,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.939
+    },
+    {
+      "time": 25.92,
+      "wing": 7,
+      "speed": 183.652,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.943
+    },
+    {
+      "time": 25.92,
+      "wing": 8,
+      "speed": 183.649,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.944
+    },
+    {
+      "time": 26.501,
+      "wing": 1,
+      "speed": 188.439,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 26.501,
+      "wing": 2,
+      "speed": 185.086,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 26.501,
+      "wing": 3,
+      "speed": 184.754,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 26.501,
+      "wing": 4,
+      "speed": 184.215,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.99
+    },
+    {
+      "time": 26.501,
+      "wing": 5,
+      "speed": 184.22,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.991
+    },
+    {
+      "time": 26.501,
+      "wing": 6,
+      "speed": 184.229,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.994
+    },
+    {
+      "time": 26.501,
+      "wing": 7,
+      "speed": 184.233,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.996
+    },
+    {
+      "time": 26.501,
+      "wing": 8,
+      "speed": 184.234,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.997
+    },
+    {
+      "time": 27.076,
+      "wing": 1,
+      "speed": 191.413,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.076,
+      "wing": 2,
+      "speed": 188.093,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.076,
+      "wing": 3,
+      "speed": 187.697,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.076,
+      "wing": 4,
+      "speed": 185.074,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.612
+    },
+    {
+      "time": 27.076,
+      "wing": 5,
+      "speed": 185.078,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.609
+    },
+    {
+      "time": 27.076,
+      "wing": 6,
+      "speed": 185.088,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.604
+    },
+    {
+      "time": 27.076,
+      "wing": 7,
+      "speed": 185.093,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.602
+    },
+    {
+      "time": 27.076,
+      "wing": 8,
+      "speed": 185.094,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.601
+    },
+    {
+      "time": 27.647,
+      "wing": 1,
+      "speed": 194.488,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.647,
+      "wing": 2,
+      "speed": 191.235,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.647,
+      "wing": 3,
+      "speed": 190.831,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 27.647,
+      "wing": 4,
+      "speed": 184.714,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.061
+    },
+    {
+      "time": 27.647,
+      "wing": 5,
+      "speed": 184.639,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.059
+    },
+    {
+      "time": 27.647,
+      "wing": 6,
+      "speed": 184.637,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.055
+    },
+    {
+      "time": 27.647,
+      "wing": 7,
+      "speed": 184.637,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.053
+    },
+    {
+      "time": 27.647,
+      "wing": 8,
+      "speed": 184.637,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.053
+    },
+    {
+      "time": 28.213,
+      "wing": 1,
+      "speed": 197.574,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.213,
+      "wing": 2,
+      "speed": 193.962,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.213,
+      "wing": 3,
+      "speed": 193.591,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.213,
+      "wing": 4,
+      "speed": 186.86,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.213,
+      "wing": 5,
+      "speed": 184.835,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.58
+    },
+    {
+      "time": 28.213,
+      "wing": 6,
+      "speed": 183.537,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.13
+    },
+    {
+      "time": 28.213,
+      "wing": 7,
+      "speed": 183.105,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.018
+    },
+    {
+      "time": 28.213,
+      "wing": 8,
+      "speed": 183.105,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.017
+    },
+    {
+      "time": 28.776,
+      "wing": 1,
+      "speed": 200.486,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 2,
+      "speed": 196.414,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 3,
+      "speed": 196.18,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 4,
+      "speed": 189.334,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 5,
+      "speed": 187.131,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 6,
+      "speed": 185.385,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 7,
+      "speed": 184.186,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 28.776,
+      "wing": 8,
+      "speed": 183.222,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.906
+    },
+    {
+      "time": 29.345,
+      "wing": 1,
+      "speed": 203.4,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 2,
+      "speed": 199.281,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 3,
+      "speed": 199.1,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 4,
+      "speed": 192.271,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 5,
+      "speed": 190.001,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 6,
+      "speed": 188.172,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 7,
+      "speed": 186.896,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.345,
+      "wing": 8,
+      "speed": 185.885,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 1,
+      "speed": 206.338,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 2,
+      "speed": 202.247,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 3,
+      "speed": 202.114,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 4,
+      "speed": 195.345,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 5,
+      "speed": 193.084,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 6,
+      "speed": 191.26,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 7,
+      "speed": 189.968,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 29.916,
+      "wing": 8,
+      "speed": 188.918,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 1,
+      "speed": 209.311,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 2,
+      "speed": 205.325,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 3,
+      "speed": 205.191,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 4,
+      "speed": 198.506,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 5,
+      "speed": 196.257,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 6,
+      "speed": 194.434,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 7,
+      "speed": 193.135,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 30.491,
+      "wing": 8,
+      "speed": 192.073,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 1,
+      "speed": 212.212,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 2,
+      "speed": 208.321,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.968
+    },
+    {
+      "time": 31.061,
+      "wing": 3,
+      "speed": 208.143,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 4,
+      "speed": 201.545,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 5,
+      "speed": 199.333,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 6,
+      "speed": 197.54,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 7,
+      "speed": 196.259,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.061,
+      "wing": 8,
+      "speed": 195.2,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 1,
+      "speed": 215.046,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 2,
+      "speed": 207.696,
+      "spoiler": 0.221,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 31.63,
+      "wing": 3,
+      "speed": 211.02,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 4,
+      "speed": 204.502,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 5,
+      "speed": 202.32,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 6,
+      "speed": 200.555,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 7,
+      "speed": 199.298,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 31.63,
+      "wing": 8,
+      "speed": 198.263,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 1,
+      "speed": 217.846,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 2,
+      "speed": 205.197,
+      "spoiler": 0.506,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 32.2,
+      "wing": 3,
+      "speed": 213.881,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 4,
+      "speed": 207.444,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 5,
+      "speed": 205.285,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 6,
+      "speed": 203.54,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 7,
+      "speed": 202.299,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.2,
+      "wing": 8,
+      "speed": 201.281,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 1,
+      "speed": 220.62,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 2,
+      "speed": 202.045,
+      "spoiler": 0.791,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 32.771,
+      "wing": 3,
+      "speed": 216.727,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 4,
+      "speed": 210.378,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 5,
+      "speed": 208.244,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 6,
+      "speed": 206.516,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 7,
+      "speed": 205.286,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 32.771,
+      "wing": 8,
+      "speed": 204.278,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 1,
+      "speed": 223.356,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 2,
+      "speed": 198.39,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 33.342,
+      "wing": 3,
+      "speed": 219.527,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 4,
+      "speed": 213.268,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 5,
+      "speed": 211.166,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 6,
+      "speed": 209.462,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 7,
+      "speed": 208.246,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.342,
+      "wing": 8,
+      "speed": 207.247,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 1,
+      "speed": 225.268,
+      "spoiler": 0.082,
+      "afterburner": 0,
+      "throttle": 0.67
+    },
+    {
+      "time": 33.913,
+      "wing": 2,
+      "speed": 194.826,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 33.913,
+      "wing": 3,
+      "speed": 222.275,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 4,
+      "speed": 216.106,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 5,
+      "speed": 214.034,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 6,
+      "speed": 212.356,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 7,
+      "speed": 211.16,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 33.913,
+      "wing": 8,
+      "speed": 210.176,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 34.486,
+      "wing": 1,
+      "speed": 223.221,
+      "spoiler": 0.369,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 34.486,
+      "wing": 2,
+      "speed": 191.357,
+      "spoiler": 0.878,
+      "afterburner": 0,
+      "throttle": 0.388
+    },
+    {
+      "time": 34.486,
+      "wing": 3,
+      "speed": 222.097,
+      "spoiler": 0.147,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 34.486,
+      "wing": 4,
+      "speed": 218.911,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 34.486,
+      "wing": 5,
+      "speed": 216.869,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 34.486,
+      "wing": 6,
+      "speed": 215.215,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 34.486,
+      "wing": 7,
+      "speed": 214.037,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 34.486,
+      "wing": 8,
+      "speed": 213.069,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.059,
+      "wing": 1,
+      "speed": 219.794,
+      "spoiler": 0.655,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 35.059,
+      "wing": 2,
+      "speed": 186.802,
+      "spoiler": 0.917,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 35.059,
+      "wing": 3,
+      "speed": 219.483,
+      "spoiler": 0.434,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 35.059,
+      "wing": 4,
+      "speed": 221.681,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.059,
+      "wing": 5,
+      "speed": 219.668,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.059,
+      "wing": 6,
+      "speed": 218.037,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.059,
+      "wing": 7,
+      "speed": 216.875,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.059,
+      "wing": 8,
+      "speed": 215.921,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.638,
+      "wing": 1,
+      "speed": 215.504,
+      "spoiler": 0.945,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 35.638,
+      "wing": 2,
+      "speed": 185.551,
+      "spoiler": 0.627,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 35.638,
+      "wing": 3,
+      "speed": 216.071,
+      "spoiler": 0.723,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 35.638,
+      "wing": 4,
+      "speed": 224.44,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.638,
+      "wing": 5,
+      "speed": 222.457,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.638,
+      "wing": 6,
+      "speed": 220.85,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.638,
+      "wing": 7,
+      "speed": 219.705,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 35.638,
+      "wing": 8,
+      "speed": 218.763,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.208,
+      "wing": 1,
+      "speed": 211.188,
+      "spoiler": 0.758,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 36.208,
+      "wing": 2,
+      "speed": 185.345,
+      "spoiler": 0.342,
+      "afterburner": 0,
+      "throttle": 0.682
+    },
+    {
+      "time": 36.208,
+      "wing": 3,
+      "speed": 212.062,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 36.208,
+      "wing": 4,
+      "speed": 227.113,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.208,
+      "wing": 5,
+      "speed": 225.16,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.208,
+      "wing": 6,
+      "speed": 223.578,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.208,
+      "wing": 7,
+      "speed": 222.45,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.208,
+      "wing": 8,
+      "speed": 221.522,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.778,
+      "wing": 1,
+      "speed": 207.859,
+      "spoiler": 0.473,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 36.778,
+      "wing": 2,
+      "speed": 185.142,
+      "spoiler": 0.057,
+      "afterburner": 0,
+      "throttle": 0.512
+    },
+    {
+      "time": 36.778,
+      "wing": 3,
+      "speed": 207.933,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 36.778,
+      "wing": 4,
+      "speed": 229.524,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.716
+    },
+    {
+      "time": 36.778,
+      "wing": 5,
+      "speed": 227.822,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.778,
+      "wing": 6,
+      "speed": 226.263,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.778,
+      "wing": 7,
+      "speed": 225.152,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 36.778,
+      "wing": 8,
+      "speed": 224.239,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.35,
+      "wing": 1,
+      "speed": 205.444,
+      "spoiler": 0.187,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.35,
+      "wing": 2,
+      "speed": 184.77,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.239
+    },
+    {
+      "time": 37.35,
+      "wing": 3,
+      "speed": 202.813,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.35,
+      "wing": 4,
+      "speed": 228.002,
+      "spoiler": 0.209,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.35,
+      "wing": 5,
+      "speed": 230.452,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.35,
+      "wing": 6,
+      "speed": 228.917,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.35,
+      "wing": 7,
+      "speed": 227.824,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.35,
+      "wing": 8,
+      "speed": 226.924,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.918,
+      "wing": 1,
+      "speed": 203.519,
+      "spoiler": 0.265,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.918,
+      "wing": 2,
+      "speed": 186.765,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.918,
+      "wing": 3,
+      "speed": 197.26,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.918,
+      "wing": 4,
+      "speed": 224.967,
+      "spoiler": 0.493,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 37.918,
+      "wing": 5,
+      "speed": 232.205,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.483
+    },
+    {
+      "time": 37.918,
+      "wing": 6,
+      "speed": 231.514,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.918,
+      "wing": 7,
+      "speed": 230.437,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 37.918,
+      "wing": 8,
+      "speed": 229.551,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 38.481,
+      "wing": 1,
+      "speed": 200.792,
+      "spoiler": 0.547,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 38.481,
+      "wing": 2,
+      "speed": 187.806,
+      "spoiler": 0.192,
+      "afterburner": 0,
+      "throttle": 0.234
+    },
+    {
+      "time": 38.481,
+      "wing": 3,
+      "speed": 192.958,
+      "spoiler": 0.984,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 38.481,
+      "wing": 4,
+      "speed": 220.62,
+      "spoiler": 0.774,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 38.481,
+      "wing": 5,
+      "speed": 230.124,
+      "spoiler": 0.282,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 38.481,
+      "wing": 6,
+      "speed": 233.379,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.534
+    },
+    {
+      "time": 38.481,
+      "wing": 7,
+      "speed": 232.987,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 38.481,
+      "wing": 8,
+      "speed": 232.115,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 39.048,
+      "wing": 1,
+      "speed": 197.424,
+      "spoiler": 0.83,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.048,
+      "wing": 2,
+      "speed": 185.75,
+      "spoiler": 0.475,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.048,
+      "wing": 3,
+      "speed": 189.808,
+      "spoiler": 0.701,
+      "afterburner": 1,
+      "throttle": 0.474
+    },
+    {
+      "time": 39.048,
+      "wing": 4,
+      "speed": 215.549,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.048,
+      "wing": 5,
+      "speed": 226.84,
+      "spoiler": 0.565,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.048,
+      "wing": 6,
+      "speed": 231.362,
+      "spoiler": 0.269,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.048,
+      "wing": 7,
+      "speed": 233.798,
+      "spoiler": 0.057,
+      "afterburner": 0,
+      "throttle": 0.224
+    },
+    {
+      "time": 39.048,
+      "wing": 8,
+      "speed": 234.638,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.861
+    },
+    {
+      "time": 39.617,
+      "wing": 1,
+      "speed": 193.83,
+      "spoiler": 0.774,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 2,
+      "speed": 183.083,
+      "spoiler": 0.759,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 3,
+      "speed": 189.6,
+      "spoiler": 0.416,
+      "afterburner": 0,
+      "throttle": 0.574
+    },
+    {
+      "time": 39.617,
+      "wing": 4,
+      "speed": 210.493,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 5,
+      "speed": 222.676,
+      "spoiler": 0.849,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 6,
+      "speed": 228.072,
+      "spoiler": 0.554,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 7,
+      "speed": 231.254,
+      "spoiler": 0.341,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 39.617,
+      "wing": 8,
+      "speed": 233.402,
+      "spoiler": 0.196,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.183,
+      "wing": 1,
+      "speed": 192.395,
+      "spoiler": 0.491,
+      "afterburner": 0,
+      "throttle": 1.0
+    },
+    {
+      "time": 40.183,
+      "wing": 2,
+      "speed": 180.1,
+      "spoiler": 0.83,
+      "afterburner": 0,
+      "throttle": 0.174
+    },
+    {
+      "time": 40.183,
+      "wing": 3,
+      "speed": 188.502,
+      "spoiler": 0.133,
+      "afterburner": 0,
+      "throttle": 0.205
+    },
+    {
+      "time": 40.183,
+      "wing": 4,
+      "speed": 205.74,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.183,
+      "wing": 5,
+      "speed": 217.877,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.183,
+      "wing": 6,
+      "speed": 223.925,
+      "spoiler": 0.836,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.183,
+      "wing": 7,
+      "speed": 227.734,
+      "spoiler": 0.624,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.183,
+      "wing": 8,
+      "speed": 230.337,
+      "spoiler": 0.479,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.757,
+      "wing": 1,
+      "speed": 191.988,
+      "spoiler": 0.204,
+      "afterburner": 0,
+      "throttle": 0.326
+    },
+    {
+      "time": 40.757,
+      "wing": 2,
+      "speed": 181.176,
+      "spoiler": 0.544,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 40.757,
+      "wing": 3,
+      "speed": 187.561,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.165
+    },
+    {
+      "time": 40.757,
+      "wing": 4,
+      "speed": 201.134,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.757,
+      "wing": 5,
+      "speed": 213.1,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.757,
+      "wing": 6,
+      "speed": 219.026,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.757,
+      "wing": 7,
+      "speed": 223.292,
+      "spoiler": 0.911,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 40.757,
+      "wing": 8,
+      "speed": 226.303,
+      "spoiler": 0.765,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.32,
+      "wing": 1,
+      "speed": 190.95,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.02
+    },
+    {
+      "time": 41.32,
+      "wing": 2,
+      "speed": 181.593,
+      "spoiler": 0.262,
+      "afterburner": 0,
+      "throttle": 0.524
+    },
+    {
+      "time": 41.32,
+      "wing": 3,
+      "speed": 186.896,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.329
+    },
+    {
+      "time": 41.32,
+      "wing": 4,
+      "speed": 196.866,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.32,
+      "wing": 5,
+      "speed": 208.608,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.32,
+      "wing": 6,
+      "speed": 214.29,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.32,
+      "wing": 7,
+      "speed": 218.411,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.32,
+      "wing": 8,
+      "speed": 221.556,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.886,
+      "wing": 1,
+      "speed": 189.429,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.17
+    },
+    {
+      "time": 41.886,
+      "wing": 2,
+      "speed": 181.524,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.258
+    },
+    {
+      "time": 41.886,
+      "wing": 3,
+      "speed": 186.761,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.438
+    },
+    {
+      "time": 41.886,
+      "wing": 4,
+      "speed": 193.074,
+      "spoiler": 0.799,
+      "afterburner": 0,
+      "throttle": 0.026
+    },
+    {
+      "time": 41.886,
+      "wing": 5,
+      "speed": 204.274,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.886,
+      "wing": 6,
+      "speed": 209.725,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.886,
+      "wing": 7,
+      "speed": 213.676,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 41.886,
+      "wing": 8,
+      "speed": 216.687,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 42.451,
+      "wing": 1,
+      "speed": 188.985,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.963
+    },
+    {
+      "time": 42.451,
+      "wing": 2,
+      "speed": 180.831,
+      "spoiler": 0.207,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 42.451,
+      "wing": 3,
+      "speed": 186.585,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.349
+    },
+    {
+      "time": 42.451,
+      "wing": 4,
+      "speed": 192.577,
+      "spoiler": 0.516,
+      "afterburner": 1,
+      "throttle": 0.776
+    },
+    {
+      "time": 42.451,
+      "wing": 5,
+      "speed": 200.121,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 42.451,
+      "wing": 6,
+      "speed": 205.352,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 42.451,
+      "wing": 7,
+      "speed": 209.144,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 42.451,
+      "wing": 8,
+      "speed": 212.031,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.02,
+      "wing": 1,
+      "speed": 188.667,
+      "spoiler": 0.183,
+      "afterburner": 0,
+      "throttle": 0.058
+    },
+    {
+      "time": 43.02,
+      "wing": 2,
+      "speed": 178.718,
+      "spoiler": 0.026,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.02,
+      "wing": 3,
+      "speed": 186.312,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.351
+    },
+    {
+      "time": 43.02,
+      "wing": 4,
+      "speed": 192.459,
+      "spoiler": 0.397,
+      "afterburner": 0,
+      "throttle": 0.22
+    },
+    {
+      "time": 43.02,
+      "wing": 5,
+      "speed": 196.128,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.02,
+      "wing": 6,
+      "speed": 201.126,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.02,
+      "wing": 7,
+      "speed": 204.763,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.02,
+      "wing": 8,
+      "speed": 207.533,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.59,
+      "wing": 1,
+      "speed": 186.341,
+      "spoiler": 0.403,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.59,
+      "wing": 2,
+      "speed": 177.748,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.78
+    },
+    {
+      "time": 43.59,
+      "wing": 3,
+      "speed": 186.042,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.36
+    },
+    {
+      "time": 43.59,
+      "wing": 4,
+      "speed": 189.545,
+      "spoiler": 0.192,
+      "afterburner": 0,
+      "throttle": 0.175
+    },
+    {
+      "time": 43.59,
+      "wing": 5,
+      "speed": 192.361,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.59,
+      "wing": 6,
+      "speed": 197.062,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.59,
+      "wing": 7,
+      "speed": 200.552,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 43.59,
+      "wing": 8,
+      "speed": 203.208,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.159,
+      "wing": 1,
+      "speed": 184.922,
+      "spoiler": 0.118,
+      "afterburner": 0,
+      "throttle": 0.551
+    },
+    {
+      "time": 44.159,
+      "wing": 2,
+      "speed": 179.785,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 44.159,
+      "wing": 3,
+      "speed": 185.32,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.159,
+      "wing": 4,
+      "speed": 188.95,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.365
+    },
+    {
+      "time": 44.159,
+      "wing": 5,
+      "speed": 188.892,
+      "spoiler": 0.967,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.159,
+      "wing": 6,
+      "speed": 193.165,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.159,
+      "wing": 7,
+      "speed": 196.517,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.159,
+      "wing": 8,
+      "speed": 199.066,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.722,
+      "wing": 1,
+      "speed": 185.042,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.777
+    },
+    {
+      "time": 44.722,
+      "wing": 2,
+      "speed": 182.772,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.98
+    },
+    {
+      "time": 44.722,
+      "wing": 3,
+      "speed": 184.164,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.722,
+      "wing": 4,
+      "speed": 187.837,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.341
+    },
+    {
+      "time": 44.722,
+      "wing": 5,
+      "speed": 186.999,
+      "spoiler": 0.686,
+      "afterburner": 1,
+      "throttle": 0.57
+    },
+    {
+      "time": 44.722,
+      "wing": 6,
+      "speed": 189.457,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.722,
+      "wing": 7,
+      "speed": 192.681,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 44.722,
+      "wing": 8,
+      "speed": 195.132,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.287,
+      "wing": 1,
+      "speed": 185.143,
+      "spoiler": 0.07,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.287,
+      "wing": 2,
+      "speed": 182.85,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.287,
+      "wing": 3,
+      "speed": 183.058,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.1
+    },
+    {
+      "time": 45.287,
+      "wing": 4,
+      "speed": 186.925,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.174
+    },
+    {
+      "time": 45.287,
+      "wing": 5,
+      "speed": 186.688,
+      "spoiler": 0.403,
+      "afterburner": 0,
+      "throttle": 0.721
+    },
+    {
+      "time": 45.287,
+      "wing": 6,
+      "speed": 186.033,
+      "spoiler": 0.881,
+      "afterburner": 0,
+      "throttle": 0.028
+    },
+    {
+      "time": 45.287,
+      "wing": 7,
+      "speed": 188.982,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.287,
+      "wing": 8,
+      "speed": 191.335,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.857,
+      "wing": 1,
+      "speed": 184.028,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.384
+    },
+    {
+      "time": 45.857,
+      "wing": 2,
+      "speed": 181.763,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.857,
+      "wing": 3,
+      "speed": 182.387,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.215
+    },
+    {
+      "time": 45.857,
+      "wing": 4,
+      "speed": 186.042,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.187
+    },
+    {
+      "time": 45.857,
+      "wing": 5,
+      "speed": 186.805,
+      "spoiler": 0.118,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 45.857,
+      "wing": 6,
+      "speed": 185.479,
+      "spoiler": 0.596,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 45.857,
+      "wing": 7,
+      "speed": 185.444,
+      "spoiler": 0.967,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 45.857,
+      "wing": 8,
+      "speed": 187.65,
+      "spoiler": 1.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 46.422,
+      "wing": 1,
+      "speed": 185.41,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.798
+    },
+    {
+      "time": 46.422,
+      "wing": 2,
+      "speed": 180.841,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 46.422,
+      "wing": 3,
+      "speed": 181.853,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.24
+    },
+    {
+      "time": 46.422,
+      "wing": 4,
+      "speed": 185.361,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.203
+    },
+    {
+      "time": 46.422,
+      "wing": 5,
+      "speed": 186.433,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.254
+    },
+    {
+      "time": 46.422,
+      "wing": 6,
+      "speed": 186.758,
+      "spoiler": 0.313,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 46.422,
+      "wing": 7,
+      "speed": 184.362,
+      "spoiler": 0.684,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 46.422,
+      "wing": 8,
+      "speed": 184.171,
+      "spoiler": 0.919,
+      "afterburner": 0,
+      "throttle": 0.074
+    },
+    {
+      "time": 46.977,
+      "wing": 1,
+      "speed": 184.911,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 46.977,
+      "wing": 2,
+      "speed": 180.133,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.119
+    },
+    {
+      "time": 46.977,
+      "wing": 3,
+      "speed": 181.408,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.271
+    },
+    {
+      "time": 46.977,
+      "wing": 4,
+      "speed": 184.866,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.21
+    },
+    {
+      "time": 46.977,
+      "wing": 5,
+      "speed": 185.386,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.201
+    },
+    {
+      "time": 46.977,
+      "wing": 6,
+      "speed": 186.113,
+      "spoiler": 0.036,
+      "afterburner": 0,
+      "throttle": 0.251
+    },
+    {
+      "time": 46.977,
+      "wing": 7,
+      "speed": 185.049,
+      "spoiler": 0.407,
+      "afterburner": 0,
+      "throttle": 0.687
+    },
+    {
+      "time": 46.977,
+      "wing": 8,
+      "speed": 184.857,
+      "spoiler": 0.642,
+      "afterburner": 1,
+      "throttle": 1.0
+    },
+    {
+      "time": 47.531,
+      "wing": 1,
+      "speed": 183.666,
+      "spoiler": 0.059,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 47.531,
+      "wing": 2,
+      "speed": 180.134,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.328
+    },
+    {
+      "time": 47.531,
+      "wing": 3,
+      "speed": 181.052,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.302
+    },
+    {
+      "time": 47.531,
+      "wing": 4,
+      "speed": 184.524,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.213
+    },
+    {
+      "time": 47.531,
+      "wing": 5,
+      "speed": 185.972,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.715
+    },
+    {
+      "time": 47.531,
+      "wing": 6,
+      "speed": 185.186,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.322
+    },
+    {
+      "time": 47.531,
+      "wing": 7,
+      "speed": 184.665,
+      "spoiler": 0.13,
+      "afterburner": 0,
+      "throttle": 0.161
+    },
+    {
+      "time": 47.531,
+      "wing": 8,
+      "speed": 185.413,
+      "spoiler": 0.365,
+      "afterburner": 0,
+      "throttle": 0.722
+    },
+    {
+      "time": 48.089,
+      "wing": 1,
+      "speed": 182.511,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 48.089,
+      "wing": 2,
+      "speed": 180.4,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.3
+    },
+    {
+      "time": 48.089,
+      "wing": 3,
+      "speed": 180.772,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.329
+    },
+    {
+      "time": 48.089,
+      "wing": 4,
+      "speed": 184.32,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.204
+    },
+    {
+      "time": 48.089,
+      "wing": 5,
+      "speed": 185.766,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 48.089,
+      "wing": 6,
+      "speed": 184.545,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.294
+    },
+    {
+      "time": 48.089,
+      "wing": 7,
+      "speed": 183.628,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.708
+    },
+    {
+      "time": 48.089,
+      "wing": 8,
+      "speed": 185.256,
+      "spoiler": 0.086,
+      "afterburner": 0,
+      "throttle": 0.434
+    },
+    {
+      "time": 48.649,
+      "wing": 1,
+      "speed": 181.912,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.322
+    },
+    {
+      "time": 48.649,
+      "wing": 2,
+      "speed": 180.831,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.619
+    },
+    {
+      "time": 48.649,
+      "wing": 3,
+      "speed": 180.558,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.351
+    },
+    {
+      "time": 48.649,
+      "wing": 4,
+      "speed": 184.083,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.12
+    },
+    {
+      "time": 48.649,
+      "wing": 5,
+      "speed": 185.346,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.656
+    },
+    {
+      "time": 48.649,
+      "wing": 6,
+      "speed": 184.011,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.29
+    },
+    {
+      "time": 48.649,
+      "wing": 7,
+      "speed": 184.397,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.536
+    },
+    {
+      "time": 48.649,
+      "wing": 8,
+      "speed": 184.419,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.012
+    },
+    {
+      "time": 49.203,
+      "wing": 1,
+      "speed": 181.566,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.278
+    },
+    {
+      "time": 49.203,
+      "wing": 2,
+      "speed": 180.46,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.039
+    },
+    {
+      "time": 49.203,
+      "wing": 3,
+      "speed": 180.4,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.369
+    },
+    {
+      "time": 49.203,
+      "wing": 4,
+      "speed": 183.682,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.11
+    },
+    {
+      "time": 49.203,
+      "wing": 5,
+      "speed": 184.846,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 49.203,
+      "wing": 6,
+      "speed": 183.615,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.284
+    },
+    {
+      "time": 49.203,
+      "wing": 7,
+      "speed": 183.688,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.25
+    },
+    {
+      "time": 49.203,
+      "wing": 8,
+      "speed": 183.403,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.089
+    },
+    {
+      "time": 49.772,
+      "wing": 1,
+      "speed": 181.183,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.29
+    },
+    {
+      "time": 49.772,
+      "wing": 2,
+      "speed": 179.951,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.261
+    },
+    {
+      "time": 49.772,
+      "wing": 3,
+      "speed": 180.281,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.383
+    },
+    {
+      "time": 49.772,
+      "wing": 4,
+      "speed": 183.333,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.158
+    },
+    {
+      "time": 49.772,
+      "wing": 5,
+      "speed": 183.698,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 49.772,
+      "wing": 6,
+      "speed": 183.337,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.277
+    },
+    {
+      "time": 49.772,
+      "wing": 7,
+      "speed": 184.44,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.7
+    },
+    {
+      "time": 49.772,
+      "wing": 8,
+      "speed": 182.603,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.166
+    },
+    {
+      "time": 50.338,
+      "wing": 1,
+      "speed": 180.87,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.32
+    },
+    {
+      "time": 50.338,
+      "wing": 2,
+      "speed": 179.855,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.389
+    },
+    {
+      "time": 50.338,
+      "wing": 3,
+      "speed": 180.196,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 50.338,
+      "wing": 4,
+      "speed": 183.097,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.178
+    },
+    {
+      "time": 50.338,
+      "wing": 5,
+      "speed": 182.784,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.159
+    },
+    {
+      "time": 50.338,
+      "wing": 6,
+      "speed": 183.187,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.269
+    },
+    {
+      "time": 50.338,
+      "wing": 7,
+      "speed": 184.156,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 50.338,
+      "wing": 8,
+      "speed": 181.977,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.216
+    },
+    {
+      "time": 50.904,
+      "wing": 1,
+      "speed": 180.629,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.345
+    },
+    {
+      "time": 50.904,
+      "wing": 2,
+      "speed": 180.062,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.743
+    },
+    {
+      "time": 50.904,
+      "wing": 3,
+      "speed": 180.155,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.427
+    },
+    {
+      "time": 50.904,
+      "wing": 4,
+      "speed": 182.85,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.129
+    },
+    {
+      "time": 50.904,
+      "wing": 5,
+      "speed": 182.151,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.206
+    },
+    {
+      "time": 50.904,
+      "wing": 6,
+      "speed": 183.083,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.191
+    },
+    {
+      "time": 50.904,
+      "wing": 7,
+      "speed": 183.045,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.0
+    },
+    {
+      "time": 50.904,
+      "wing": 8,
+      "speed": 181.477,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.258
+    },
+    {
+      "time": 51.474,
+      "wing": 1,
+      "speed": 180.448,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.364
+    },
+    {
+      "time": 51.474,
+      "wing": 2,
+      "speed": 180.274,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.283
+    },
+    {
+      "time": 51.474,
+      "wing": 3,
+      "speed": 180.086,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.361
+    },
+    {
+      "time": 51.474,
+      "wing": 4,
+      "speed": 182.453,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.121
+    },
+    {
+      "time": 51.474,
+      "wing": 5,
+      "speed": 181.628,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.245
+    },
+    {
+      "time": 51.474,
+      "wing": 6,
+      "speed": 182.7,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.083
+    },
+    {
+      "time": 51.474,
+      "wing": 7,
+      "speed": 182.059,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.19
+    },
+    {
+      "time": 51.474,
+      "wing": 8,
+      "speed": 181.084,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.295
+    },
+    {
+      "time": 52.036,
+      "wing": 1,
+      "speed": 180.318,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.379
+    },
+    {
+      "time": 52.036,
+      "wing": 2,
+      "speed": 180.04,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.347
+    },
+    {
+      "time": 52.036,
+      "wing": 3,
+      "speed": 180.075,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.462
+    },
+    {
+      "time": 52.036,
+      "wing": 4,
+      "speed": 182.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.207
+    },
+    {
+      "time": 52.036,
+      "wing": 5,
+      "speed": 181.215,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.285
+    },
+    {
+      "time": 52.036,
+      "wing": 6,
+      "speed": 182.156,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.223
+    },
+    {
+      "time": 52.036,
+      "wing": 7,
+      "speed": 181.624,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.276
+    },
+    {
+      "time": 52.036,
+      "wing": 8,
+      "speed": 180.789,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.326
+    },
+    {
+      "time": 52.601,
+      "wing": 1,
+      "speed": 180.223,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 52.601,
+      "wing": 2,
+      "speed": 179.95,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 52.601,
+      "wing": 3,
+      "speed": 180.045,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.389
+    },
+    {
+      "time": 52.601,
+      "wing": 4,
+      "speed": 181.691,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.179
+    },
+    {
+      "time": 52.601,
+      "wing": 5,
+      "speed": 180.892,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.316
+    },
+    {
+      "time": 52.601,
+      "wing": 6,
+      "speed": 181.898,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.325
+    },
+    {
+      "time": 52.601,
+      "wing": 7,
+      "speed": 181.236,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.287
+    },
+    {
+      "time": 52.601,
+      "wing": 8,
+      "speed": 180.567,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.35
+    },
+    {
+      "time": 53.162,
+      "wing": 1,
+      "speed": 180.154,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 53.162,
+      "wing": 2,
+      "speed": 179.95,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.421
+    },
+    {
+      "time": 53.162,
+      "wing": 3,
+      "speed": 180.027,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 53.162,
+      "wing": 4,
+      "speed": 181.203,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.236
+    },
+    {
+      "time": 53.162,
+      "wing": 5,
+      "speed": 180.647,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.34
+    },
+    {
+      "time": 53.162,
+      "wing": 6,
+      "speed": 181.689,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.203
+    },
+    {
+      "time": 53.162,
+      "wing": 7,
+      "speed": 180.913,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.309
+    },
+    {
+      "time": 53.162,
+      "wing": 8,
+      "speed": 180.405,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.369
+    },
+    {
+      "time": 53.731,
+      "wing": 1,
+      "speed": 180.128,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 53.731,
+      "wing": 2,
+      "speed": 180.006,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.556
+    },
+    {
+      "time": 53.731,
+      "wing": 3,
+      "speed": 180.022,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 53.731,
+      "wing": 4,
+      "speed": 180.866,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.283
+    },
+    {
+      "time": 53.731,
+      "wing": 5,
+      "speed": 180.462,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.361
+    },
+    {
+      "time": 53.731,
+      "wing": 6,
+      "speed": 181.208,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.239
+    },
+    {
+      "time": 53.731,
+      "wing": 7,
+      "speed": 180.66,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.336
+    },
+    {
+      "time": 53.731,
+      "wing": 8,
+      "speed": 180.287,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.383
+    },
+    {
+      "time": 54.308,
+      "wing": 1,
+      "speed": 180.07,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.368
+    },
+    {
+      "time": 54.308,
+      "wing": 2,
+      "speed": 180.064,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 54.308,
+      "wing": 3,
+      "speed": 180.016,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 54.308,
+      "wing": 4,
+      "speed": 180.613,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.322
+    },
+    {
+      "time": 54.308,
+      "wing": 5,
+      "speed": 180.325,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 54.308,
+      "wing": 6,
+      "speed": 180.856,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.297
+    },
+    {
+      "time": 54.308,
+      "wing": 7,
+      "speed": 180.47,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.361
+    },
+    {
+      "time": 54.308,
+      "wing": 8,
+      "speed": 180.201,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 54.866,
+      "wing": 1,
+      "speed": 180.047,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.384
+    },
+    {
+      "time": 54.866,
+      "wing": 2,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 54.866,
+      "wing": 3,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 54.866,
+      "wing": 4,
+      "speed": 180.436,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.354
+    },
+    {
+      "time": 54.866,
+      "wing": 5,
+      "speed": 180.23,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.388
+    },
+    {
+      "time": 54.866,
+      "wing": 6,
+      "speed": 180.614,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.337
+    },
+    {
+      "time": 54.866,
+      "wing": 7,
+      "speed": 180.335,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 54.866,
+      "wing": 8,
+      "speed": 180.154,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.486
+    },
+    {
+      "time": 55.422,
+      "wing": 1,
+      "speed": 180.034,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 55.422,
+      "wing": 2,
+      "speed": 179.993,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 55.422,
+      "wing": 3,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 55.422,
+      "wing": 4,
+      "speed": 180.31,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.373
+    },
+    {
+      "time": 55.422,
+      "wing": 5,
+      "speed": 180.166,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 55.422,
+      "wing": 6,
+      "speed": 180.44,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.358
+    },
+    {
+      "time": 55.422,
+      "wing": 7,
+      "speed": 180.237,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.387
+    },
+    {
+      "time": 55.422,
+      "wing": 8,
+      "speed": 180.125,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 55.983,
+      "wing": 1,
+      "speed": 180.03,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.4
+    },
+    {
+      "time": 55.983,
+      "wing": 2,
+      "speed": 179.994,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.421
+    },
+    {
+      "time": 55.983,
+      "wing": 3,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 55.983,
+      "wing": 4,
+      "speed": 180.219,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.385
+    },
+    {
+      "time": 55.983,
+      "wing": 5,
+      "speed": 180.106,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.336
+    },
+    {
+      "time": 55.983,
+      "wing": 6,
+      "speed": 180.313,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.373
+    },
+    {
+      "time": 55.983,
+      "wing": 7,
+      "speed": 180.167,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.388
+    },
+    {
+      "time": 55.983,
+      "wing": 8,
+      "speed": 180.086,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 56.541,
+      "wing": 1,
+      "speed": 180.02,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 56.541,
+      "wing": 2,
+      "speed": 180.015,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.477
+    },
+    {
+      "time": 56.541,
+      "wing": 3,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 56.541,
+      "wing": 4,
+      "speed": 180.153,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.385
+    },
+    {
+      "time": 56.541,
+      "wing": 5,
+      "speed": 180.077,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.469
+    },
+    {
+      "time": 56.541,
+      "wing": 6,
+      "speed": 180.221,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.387
+    },
+    {
+      "time": 56.541,
+      "wing": 7,
+      "speed": 180.101,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 56.541,
+      "wing": 8,
+      "speed": 180.056,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.384
+    },
+    {
+      "time": 57.09,
+      "wing": 1,
+      "speed": 180.017,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 57.09,
+      "wing": 2,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 57.09,
+      "wing": 3,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 57.09,
+      "wing": 4,
+      "speed": 180.104,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.342
+    },
+    {
+      "time": 57.09,
+      "wing": 5,
+      "speed": 180.066,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.376
+    },
+    {
+      "time": 57.09,
+      "wing": 6,
+      "speed": 180.155,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.397
+    },
+    {
+      "time": 57.09,
+      "wing": 7,
+      "speed": 180.071,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.37
+    },
+    {
+      "time": 57.09,
+      "wing": 8,
+      "speed": 180.039,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 57.644,
+      "wing": 1,
+      "speed": 180.004,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 57.644,
+      "wing": 2,
+      "speed": 180.008,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 57.644,
+      "wing": 3,
+      "speed": 179.998,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 57.644,
+      "wing": 4,
+      "speed": 180.089,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 57.644,
+      "wing": 5,
+      "speed": 180.039,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 57.644,
+      "wing": 6,
+      "speed": 180.104,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.341
+    },
+    {
+      "time": 57.644,
+      "wing": 7,
+      "speed": 180.06,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.493
+    },
+    {
+      "time": 57.644,
+      "wing": 8,
+      "speed": 180.03,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.402
+    },
+    {
+      "time": 58.197,
+      "wing": 1,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 58.197,
+      "wing": 2,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 58.197,
+      "wing": 3,
+      "speed": 180.009,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 58.197,
+      "wing": 4,
+      "speed": 180.046,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 58.197,
+      "wing": 5,
+      "speed": 180.02,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 58.197,
+      "wing": 6,
+      "speed": 180.091,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 58.197,
+      "wing": 7,
+      "speed": 180.042,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 58.197,
+      "wing": 8,
+      "speed": 180.022,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 58.749,
+      "wing": 1,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.438
+    },
+    {
+      "time": 58.749,
+      "wing": 2,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 58.749,
+      "wing": 3,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 58.749,
+      "wing": 4,
+      "speed": 180.048,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.447
+    },
+    {
+      "time": 58.749,
+      "wing": 5,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 58.749,
+      "wing": 6,
+      "speed": 180.05,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 58.749,
+      "wing": 7,
+      "speed": 180.031,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 58.749,
+      "wing": 8,
+      "speed": 180.011,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 59.299,
+      "wing": 1,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 59.299,
+      "wing": 2,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 59.299,
+      "wing": 3,
+      "speed": 180.325,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.525
+    },
+    {
+      "time": 59.299,
+      "wing": 4,
+      "speed": 180.034,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 59.299,
+      "wing": 5,
+      "speed": 180.007,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 59.299,
+      "wing": 6,
+      "speed": 180.041,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 59.299,
+      "wing": 7,
+      "speed": 180.025,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 59.299,
+      "wing": 8,
+      "speed": 180.008,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 59.852,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 59.852,
+      "wing": 2,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 59.852,
+      "wing": 3,
+      "speed": 181.745,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.303
+    },
+    {
+      "time": 59.852,
+      "wing": 4,
+      "speed": 180.027,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.427
+    },
+    {
+      "time": 59.852,
+      "wing": 5,
+      "speed": 180.008,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 59.852,
+      "wing": 6,
+      "speed": 180.025,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.4
+    },
+    {
+      "time": 59.852,
+      "wing": 7,
+      "speed": 180.02,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.463
+    },
+    {
+      "time": 59.852,
+      "wing": 8,
+      "speed": 180.006,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 60.403,
+      "wing": 1,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 60.403,
+      "wing": 2,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 60.403,
+      "wing": 3,
+      "speed": 181.356,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.3
+    },
+    {
+      "time": 60.403,
+      "wing": 4,
+      "speed": 180.012,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 60.403,
+      "wing": 5,
+      "speed": 180.009,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.448
+    },
+    {
+      "time": 60.403,
+      "wing": 6,
+      "speed": 180.017,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 60.403,
+      "wing": 7,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 60.403,
+      "wing": 8,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 60.959,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 60.959,
+      "wing": 2,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 60.959,
+      "wing": 3,
+      "speed": 181.114,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.356
+    },
+    {
+      "time": 60.959,
+      "wing": 4,
+      "speed": 180.004,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 60.959,
+      "wing": 5,
+      "speed": 180.006,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 60.959,
+      "wing": 6,
+      "speed": 180.013,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 60.959,
+      "wing": 7,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 60.959,
+      "wing": 8,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 61.509,
+      "wing": 1,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 61.509,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 61.509,
+      "wing": 3,
+      "speed": 180.973,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 61.509,
+      "wing": 4,
+      "speed": 180.006,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 61.509,
+      "wing": 5,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 61.509,
+      "wing": 6,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 61.509,
+      "wing": 7,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 61.509,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.061,
+      "wing": 1,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.061,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.061,
+      "wing": 3,
+      "speed": 180.868,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.387
+    },
+    {
+      "time": 62.061,
+      "wing": 4,
+      "speed": 180.005,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 62.061,
+      "wing": 5,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 62.061,
+      "wing": 6,
+      "speed": 180.007,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 62.061,
+      "wing": 7,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 62.061,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.612,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.612,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.612,
+      "wing": 3,
+      "speed": 180.78,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 62.612,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 62.612,
+      "wing": 5,
+      "speed": 179.998,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 62.612,
+      "wing": 6,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 62.612,
+      "wing": 7,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 62.612,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 3,
+      "speed": 180.701,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.394
+    },
+    {
+      "time": 63.166,
+      "wing": 4,
+      "speed": 179.998,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 5,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 6,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 63.166,
+      "wing": 7,
+      "speed": 179.998,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.166,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.721,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.721,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.721,
+      "wing": 3,
+      "speed": 180.631,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.397
+    },
+    {
+      "time": 63.721,
+      "wing": 4,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 63.721,
+      "wing": 5,
+      "speed": 180.003,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 63.721,
+      "wing": 6,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 63.721,
+      "wing": 7,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.432
+    },
+    {
+      "time": 63.721,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.273,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.273,
+      "wing": 2,
+      "speed": 181.769,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.567
+    },
+    {
+      "time": 64.273,
+      "wing": 3,
+      "speed": 180.568,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 64.273,
+      "wing": 4,
+      "speed": 180.004,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 64.273,
+      "wing": 5,
+      "speed": 180.017,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.419
+    },
+    {
+      "time": 64.273,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.273,
+      "wing": 7,
+      "speed": 180.004,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 64.273,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.823,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.823,
+      "wing": 2,
+      "speed": 181.468,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.275
+    },
+    {
+      "time": 64.823,
+      "wing": 3,
+      "speed": 180.512,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 64.823,
+      "wing": 4,
+      "speed": 180.002,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 64.823,
+      "wing": 5,
+      "speed": 181.798,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.346
+    },
+    {
+      "time": 64.823,
+      "wing": 6,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 64.823,
+      "wing": 7,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 64.823,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.374,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.374,
+      "wing": 2,
+      "speed": 181.175,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.343
+    },
+    {
+      "time": 65.374,
+      "wing": 3,
+      "speed": 180.462,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 65.374,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.419
+    },
+    {
+      "time": 65.374,
+      "wing": 5,
+      "speed": 181.387,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.294
+    },
+    {
+      "time": 65.374,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.374,
+      "wing": 7,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.374,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.924,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.924,
+      "wing": 2,
+      "speed": 181.012,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.373
+    },
+    {
+      "time": 65.924,
+      "wing": 3,
+      "speed": 180.416,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 65.924,
+      "wing": 4,
+      "speed": 179.999,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.924,
+      "wing": 5,
+      "speed": 181.136,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.354
+    },
+    {
+      "time": 65.924,
+      "wing": 6,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 65.924,
+      "wing": 7,
+      "speed": 181.45,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.76
+    },
+    {
+      "time": 65.924,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 66.48,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 66.48,
+      "wing": 2,
+      "speed": 180.898,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.385
+    },
+    {
+      "time": 66.48,
+      "wing": 3,
+      "speed": 180.375,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 66.48,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 66.48,
+      "wing": 5,
+      "speed": 180.989,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.377
+    },
+    {
+      "time": 66.48,
+      "wing": 6,
+      "speed": 180.001,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 66.48,
+      "wing": 7,
+      "speed": 181.577,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.261
+    },
+    {
+      "time": 66.48,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.025,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.025,
+      "wing": 2,
+      "speed": 180.806,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 67.025,
+      "wing": 3,
+      "speed": 180.339,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 67.025,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.025,
+      "wing": 5,
+      "speed": 180.883,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.386
+    },
+    {
+      "time": 67.025,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.025,
+      "wing": 7,
+      "speed": 181.239,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.329
+    },
+    {
+      "time": 67.025,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.578,
+      "wing": 1,
+      "speed": 181.758,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.616
+    },
+    {
+      "time": 67.578,
+      "wing": 2,
+      "speed": 180.725,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 67.578,
+      "wing": 3,
+      "speed": 180.306,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 67.578,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.578,
+      "wing": 5,
+      "speed": 180.792,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 67.578,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 67.578,
+      "wing": 7,
+      "speed": 181.051,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.368
+    },
+    {
+      "time": 67.578,
+      "wing": 8,
+      "speed": 180.233,
+      "spoiler": 0.0,
+      "afterburner": 1,
+      "throttle": 0.484
+    },
+    {
+      "time": 68.128,
+      "wing": 1,
+      "speed": 181.488,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.272
+    },
+    {
+      "time": 68.128,
+      "wing": 2,
+      "speed": 180.653,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 68.128,
+      "wing": 3,
+      "speed": 180.276,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 68.128,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 68.128,
+      "wing": 5,
+      "speed": 180.713,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.394
+    },
+    {
+      "time": 68.128,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 68.128,
+      "wing": 7,
+      "speed": 180.928,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.383
+    },
+    {
+      "time": 68.128,
+      "wing": 8,
+      "speed": 181.759,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.319
+    },
+    {
+      "time": 68.683,
+      "wing": 1,
+      "speed": 181.185,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.341
+    },
+    {
+      "time": 68.683,
+      "wing": 2,
+      "speed": 180.588,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 68.683,
+      "wing": 3,
+      "speed": 180.249,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 68.683,
+      "wing": 4,
+      "speed": 181.758,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.616
+    },
+    {
+      "time": 68.683,
+      "wing": 5,
+      "speed": 180.642,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 68.683,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 68.683,
+      "wing": 7,
+      "speed": 180.831,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.389
+    },
+    {
+      "time": 68.683,
+      "wing": 8,
+      "speed": 181.368,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.297
+    },
+    {
+      "time": 69.231,
+      "wing": 1,
+      "speed": 181.019,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.373
+    },
+    {
+      "time": 69.231,
+      "wing": 2,
+      "speed": 180.53,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 69.231,
+      "wing": 3,
+      "speed": 180.225,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 69.231,
+      "wing": 4,
+      "speed": 181.489,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.272
+    },
+    {
+      "time": 69.231,
+      "wing": 5,
+      "speed": 180.578,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 69.231,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 69.231,
+      "wing": 7,
+      "speed": 180.747,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.392
+    },
+    {
+      "time": 69.231,
+      "wing": 8,
+      "speed": 181.124,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.355
+    },
+    {
+      "time": 69.789,
+      "wing": 1,
+      "speed": 180.903,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.384
+    },
+    {
+      "time": 69.789,
+      "wing": 2,
+      "speed": 180.477,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 69.789,
+      "wing": 3,
+      "speed": 180.203,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 69.789,
+      "wing": 4,
+      "speed": 181.185,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.341
+    },
+    {
+      "time": 69.789,
+      "wing": 5,
+      "speed": 180.521,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 69.789,
+      "wing": 6,
+      "speed": 181.789,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.453
+    },
+    {
+      "time": 69.789,
+      "wing": 7,
+      "speed": 180.672,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.395
+    },
+    {
+      "time": 69.789,
+      "wing": 8,
+      "speed": 180.978,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.378
+    },
+    {
+      "time": 70.343,
+      "wing": 1,
+      "speed": 180.81,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 70.343,
+      "wing": 2,
+      "speed": 180.43,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 70.343,
+      "wing": 3,
+      "speed": 180.183,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 70.343,
+      "wing": 4,
+      "speed": 181.018,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.373
+    },
+    {
+      "time": 70.343,
+      "wing": 5,
+      "speed": 180.469,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 70.343,
+      "wing": 6,
+      "speed": 181.429,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.283
+    },
+    {
+      "time": 70.343,
+      "wing": 7,
+      "speed": 180.605,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.398
+    },
+    {
+      "time": 70.343,
+      "wing": 8,
+      "speed": 180.871,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.387
+    },
+    {
+      "time": 70.9,
+      "wing": 1,
+      "speed": 180.727,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 70.9,
+      "wing": 2,
+      "speed": 180.387,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 70.9,
+      "wing": 3,
+      "speed": 180.165,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 70.9,
+      "wing": 4,
+      "speed": 180.902,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.385
+    },
+    {
+      "time": 70.9,
+      "wing": 5,
+      "speed": 180.422,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 70.9,
+      "wing": 6,
+      "speed": 181.153,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.348
+    },
+    {
+      "time": 70.9,
+      "wing": 7,
+      "speed": 180.544,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.4
+    },
+    {
+      "time": 70.9,
+      "wing": 8,
+      "speed": 180.782,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.391
+    },
+    {
+      "time": 71.457,
+      "wing": 1,
+      "speed": 180.654,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 71.457,
+      "wing": 2,
+      "speed": 180.349,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.407
+    },
+    {
+      "time": 71.457,
+      "wing": 3,
+      "speed": 180.149,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 71.457,
+      "wing": 4,
+      "speed": 180.808,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 71.457,
+      "wing": 5,
+      "speed": 180.381,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 71.457,
+      "wing": 6,
+      "speed": 180.997,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.376
+    },
+    {
+      "time": 71.457,
+      "wing": 7,
+      "speed": 180.49,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.402
+    },
+    {
+      "time": 71.457,
+      "wing": 8,
+      "speed": 180.702,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.394
+    },
+    {
+      "time": 72.008,
+      "wing": 1,
+      "speed": 180.589,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 72.008,
+      "wing": 2,
+      "speed": 180.315,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 72.008,
+      "wing": 3,
+      "speed": 180.134,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 72.008,
+      "wing": 4,
+      "speed": 180.727,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.393
+    },
+    {
+      "time": 72.008,
+      "wing": 5,
+      "speed": 180.343,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 72.008,
+      "wing": 6,
+      "speed": 180.887,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.386
+    },
+    {
+      "time": 72.008,
+      "wing": 7,
+      "speed": 180.442,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 72.008,
+      "wing": 8,
+      "speed": 180.633,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.397
+    },
+    {
+      "time": 72.567,
+      "wing": 1,
+      "speed": 180.53,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 72.567,
+      "wing": 2,
+      "speed": 180.284,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 72.567,
+      "wing": 3,
+      "speed": 180.121,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 72.567,
+      "wing": 4,
+      "speed": 180.653,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 72.567,
+      "wing": 5,
+      "speed": 180.309,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 72.567,
+      "wing": 6,
+      "speed": 180.795,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.39
+    },
+    {
+      "time": 72.567,
+      "wing": 7,
+      "speed": 180.398,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 72.567,
+      "wing": 8,
+      "speed": 180.569,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 73.117,
+      "wing": 1,
+      "speed": 180.478,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 73.117,
+      "wing": 2,
+      "speed": 180.256,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 73.117,
+      "wing": 3,
+      "speed": 180.109,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 73.117,
+      "wing": 4,
+      "speed": 180.589,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 73.117,
+      "wing": 5,
+      "speed": 180.279,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 73.117,
+      "wing": 6,
+      "speed": 180.715,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.394
+    },
+    {
+      "time": 73.117,
+      "wing": 7,
+      "speed": 180.359,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.407
+    },
+    {
+      "time": 73.117,
+      "wing": 8,
+      "speed": 180.513,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 73.673,
+      "wing": 1,
+      "speed": 180.431,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 73.673,
+      "wing": 2,
+      "speed": 180.231,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 73.673,
+      "wing": 3,
+      "speed": 180.099,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 73.673,
+      "wing": 4,
+      "speed": 180.53,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 73.673,
+      "wing": 5,
+      "speed": 180.252,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 73.673,
+      "wing": 6,
+      "speed": 180.644,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.396
+    },
+    {
+      "time": 73.673,
+      "wing": 7,
+      "speed": 180.324,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 73.673,
+      "wing": 8,
+      "speed": 180.462,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 74.228,
+      "wing": 1,
+      "speed": 180.388,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 74.228,
+      "wing": 2,
+      "speed": 180.208,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 74.228,
+      "wing": 3,
+      "speed": 180.089,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 74.228,
+      "wing": 4,
+      "speed": 180.477,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 74.228,
+      "wing": 5,
+      "speed": 180.227,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 74.228,
+      "wing": 6,
+      "speed": 180.579,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.399
+    },
+    {
+      "time": 74.228,
+      "wing": 7,
+      "speed": 180.292,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 74.228,
+      "wing": 8,
+      "speed": 180.416,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 74.792,
+      "wing": 1,
+      "speed": 180.349,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.407
+    },
+    {
+      "time": 74.792,
+      "wing": 2,
+      "speed": 180.188,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 74.792,
+      "wing": 3,
+      "speed": 180.08,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 74.792,
+      "wing": 4,
+      "speed": 180.429,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.404
+    },
+    {
+      "time": 74.792,
+      "wing": 5,
+      "speed": 180.204,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 74.792,
+      "wing": 6,
+      "speed": 180.521,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.401
+    },
+    {
+      "time": 74.792,
+      "wing": 7,
+      "speed": 180.263,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 74.792,
+      "wing": 8,
+      "speed": 180.375,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 75.354,
+      "wing": 1,
+      "speed": 180.314,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 75.354,
+      "wing": 2,
+      "speed": 180.169,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 75.354,
+      "wing": 3,
+      "speed": 180.072,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.417
+    },
+    {
+      "time": 75.354,
+      "wing": 4,
+      "speed": 180.387,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 75.354,
+      "wing": 5,
+      "speed": 180.184,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 75.354,
+      "wing": 6,
+      "speed": 180.469,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.403
+    },
+    {
+      "time": 75.354,
+      "wing": 7,
+      "speed": 180.237,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 75.354,
+      "wing": 8,
+      "speed": 180.337,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 75.915,
+      "wing": 1,
+      "speed": 180.283,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 75.915,
+      "wing": 2,
+      "speed": 180.152,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 75.915,
+      "wing": 3,
+      "speed": 180.065,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 75.915,
+      "wing": 4,
+      "speed": 180.348,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.407
+    },
+    {
+      "time": 75.915,
+      "wing": 5,
+      "speed": 180.166,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 75.915,
+      "wing": 6,
+      "speed": 180.422,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.405
+    },
+    {
+      "time": 75.915,
+      "wing": 7,
+      "speed": 180.213,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 75.915,
+      "wing": 8,
+      "speed": 180.304,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 76.504,
+      "wing": 1,
+      "speed": 180.254,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 76.504,
+      "wing": 2,
+      "speed": 180.137,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 76.504,
+      "wing": 3,
+      "speed": 180.058,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 76.504,
+      "wing": 4,
+      "speed": 180.312,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 76.504,
+      "wing": 5,
+      "speed": 180.149,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 76.504,
+      "wing": 6,
+      "speed": 180.378,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.406
+    },
+    {
+      "time": 76.504,
+      "wing": 7,
+      "speed": 180.191,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 76.504,
+      "wing": 8,
+      "speed": 180.272,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 77.069,
+      "wing": 1,
+      "speed": 180.228,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 77.069,
+      "wing": 2,
+      "speed": 180.123,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 77.069,
+      "wing": 3,
+      "speed": 180.053,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 77.069,
+      "wing": 4,
+      "speed": 180.281,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 77.069,
+      "wing": 5,
+      "speed": 180.134,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 77.069,
+      "wing": 6,
+      "speed": 180.34,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.408
+    },
+    {
+      "time": 77.069,
+      "wing": 7,
+      "speed": 180.172,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 77.069,
+      "wing": 8,
+      "speed": 180.245,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 77.632,
+      "wing": 1,
+      "speed": 180.206,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 77.632,
+      "wing": 2,
+      "speed": 180.111,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 77.632,
+      "wing": 3,
+      "speed": 180.048,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 77.632,
+      "wing": 4,
+      "speed": 180.253,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.411
+    },
+    {
+      "time": 77.632,
+      "wing": 5,
+      "speed": 180.121,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 77.632,
+      "wing": 6,
+      "speed": 180.306,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.409
+    },
+    {
+      "time": 77.632,
+      "wing": 7,
+      "speed": 180.155,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.414
+    },
+    {
+      "time": 77.632,
+      "wing": 8,
+      "speed": 180.221,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 78.184,
+      "wing": 1,
+      "speed": 180.186,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 78.184,
+      "wing": 2,
+      "speed": 180.1,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 78.184,
+      "wing": 3,
+      "speed": 180.043,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.418
+    },
+    {
+      "time": 78.184,
+      "wing": 4,
+      "speed": 180.228,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.412
+    },
+    {
+      "time": 78.184,
+      "wing": 5,
+      "speed": 180.109,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.416
+    },
+    {
+      "time": 78.184,
+      "wing": 6,
+      "speed": 180.276,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.41
+    },
+    {
+      "time": 78.184,
+      "wing": 7,
+      "speed": 180.14,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.415
+    },
+    {
+      "time": 78.184,
+      "wing": 8,
+      "speed": 180.199,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.413
+    },
+    {
+      "time": 149.405,
+      "wing": 1,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 2,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 3,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 4,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 5,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 6,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 7,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    },
+    {
+      "time": 149.405,
+      "wing": 8,
+      "speed": 180.0,
+      "spoiler": 0.0,
+      "afterburner": 0,
+      "throttle": 0.42
+    }
+  ]
+}
