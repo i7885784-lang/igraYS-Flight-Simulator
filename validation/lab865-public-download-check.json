@@ -1,0 +1,54 @@
+{
+  "commit": "a00bccff838dfb45cc975d9d596c75d3fcb16c18",
+  "checks": [
+    {
+      "path": "downloads/Airshow_LAB865_Report_and_Video.zip",
+      "bytes": 15153161,
+      "sha256": "783a9626758a2f89bbac318c224c791cbe3d12b67b60e0e9c6e16a2841a036e2",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/Airshow_LAB865_Test_Sources.zip",
+      "bytes": 24285725,
+      "sha256": "935125ee6e1caa1b0a71fe2291882e35a3145e9cc236b827dc33593421b5777b",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/Airshow_LAB865_Measurements.zip",
+      "bytes": 46211037,
+      "sha256": "f31d77b841fac49f1c934370e86b66b6a1aa7fb9d50d6d393a7f1861990770f6",
+      "remote_matches": true
+    },
+    {
+      "path": "downloads/SHA256SUMS_LAB865.txt",
+      "bytes": 298,
+      "sha256": "4e957b764af66c06e21e19cd0b1dce0570ccebf5f1d22972eaec7db15c68dcb4",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab865/REPORT.md",
+      "bytes": 10506,
+      "sha256": "9d27a1399d60bf7c5f4ed24094ed7ff4f880e5609b42ca7f1cc37449a2ab9b0b",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab865/before-flight.mp4",
+      "bytes": 2216474,
+      "sha256": "9a7466e2a5325cfecb16b4acfd2ed5cffa4858aaaa8c4f15e4edeba80f7fd6c2",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab865/after-flight.mp4",
+      "bytes": 2198563,
+      "sha256": "2b924bf4609ec0269c934321edb2d464811152a49f04d130cf10af079958854c",
+      "remote_matches": true
+    },
+    {
+      "path": "reports/lab865/clear-comparison.mp4",
+      "bytes": 8824691,
+      "sha256": "4560cf1f802e93578c40edb849341cf1b12e29fb354277821e100de623120e66",
+      "remote_matches": true
+    }
+  ],
+  "passed": true
+}
