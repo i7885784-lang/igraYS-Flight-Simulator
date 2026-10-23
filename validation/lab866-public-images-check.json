@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "commit": "59dd5b62b2bd23f85a81f6071d90d1a088a1bd29",
+  "checks": [
+    {
+      "file": "reports/lab866/01-time.png",
+      "bytes": 61013,
+      "sha256": "dc09f68d38d99a3281adc80548fc7e8585328f6d7fcf6919a5ccd3d8c0be8055",
+      "remote_matches": true
+    },
+    {
+      "file": "reports/lab866/04-turn.png",
+      "bytes": 325475,
+      "sha256": "f1e28384d8d9d326905538237171d78ca7b352631ac869ad35bf6899630918bd",
+      "remote_matches": true
+    },
+    {
+      "file": "reports/lab866/OPEN_REPORT.html",
+      "bytes": 9968,
+      "sha256": "55c963972c57e7a8fe6a1c81c2dbecc1d4f42bbfc39d513986fffc42052df4bd",
+      "remote_matches": true
+    }
+  ]
+}
