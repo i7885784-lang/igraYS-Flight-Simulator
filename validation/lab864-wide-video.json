@@ -1,0 +1,11 @@
+{
+  "file": "reports/lab864/after-wide.mp4",
+  "camera_distance_m": 1100,
+  "camera_pitch_deg": 72,
+  "camera_unit": 4,
+  "record": "lab864/validation/stable-n8-a180.record.yfs",
+  "duration_flight_s": 65,
+  "sha256": "54733a528b06492bad8d3045de9d5ce45b7943bdbf3babba97cf4331953b7d50",
+  "full_decode_passed": true,
+  "game_code_changed": false
+}
