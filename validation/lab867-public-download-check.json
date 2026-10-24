@@ -1,0 +1,180 @@
+{
+  "passed": true,
+  "revision": "2677deff6cbd90c6f6098664e3dd1e0b58c67fb0",
+  "files": [
+    {
+      "file": "downloads/Airshow_LAB867_Report_and_Video.zip",
+      "bytes": 30326857,
+      "sha256": "d91e11a82428e195ea46ba08220c12ae882dab80974cad39efdaad9e564164a9",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "downloads/Airshow_LAB867_Test_Sources.zip",
+      "bytes": 47832384,
+      "sha256": "cc6a893940577338f8ab4e505d75ccfeec9e26e102de7ee3e6ee4494e68c2da7",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "downloads/Airshow_LAB867_Measurements.zip",
+      "bytes": 74553239,
+      "sha256": "7b5f741819afeb214c6fd284a8e18f68f6a3a7285f4f574346c798c08b39de46",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "downloads/LAB867_SHA256SUMS.txt",
+      "bytes": 298,
+      "sha256": "b7ab3f268a9b1be591969c58fd246cb8ba527472244eb495fbddabbc58f0faa4",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/REPORT.md",
+      "bytes": 9548,
+      "sha256": "91692be73265f5221f0d166f5440b24ed17096cc2b2ba7d1f999c71d298a0c67",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/OPEN_REPORT.html",
+      "bytes": 11005,
+      "sha256": "d067fdec3eccfe7528c24f356bcf64a155a7092f2a7efcc375d8936d9865790c",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/after-flight.mp4",
+      "bytes": 2812742,
+      "sha256": "2f81ba4532d5cc60266e904029e25125d0643f9d3977b6d359eabbef5bd0e5f7",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/before-flight.mp4",
+      "bytes": 3097009,
+      "sha256": "7b334f01f1732ba9cf7364232014504394f2b57b7a13b693319de4897f4742e0",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/clear-comparison.mp4",
+      "bytes": 19328964,
+      "sha256": "4120a9cb24cbcd0fa1606ce183aa4281ebd973fc44b81fa4451c01999ae79030",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/detail-column.mp4",
+      "bytes": 2050507,
+      "sha256": "93a2123c65cf750710c1339d385914b014d2802464b906f6b45c5841002e9de2",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/01-exact-places.png",
+      "bytes": 89177,
+      "sha256": "658fcddcae1c52091d78e3f620bfff842ea939cdabae0e0b8682529e8277a620",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/09-four-native-views.png",
+      "bytes": 677678,
+      "sha256": "1919eecaca449c97e40a590474be46a86271d5c284822693dead61e8b65968d9",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/05-game-turn.png",
+      "bytes": 705900,
+      "sha256": "04fe807807a56f61ced6de129eab65cad8d1166bf917ddb06f791b44132d90d7",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/detail-column.png",
+      "bytes": 775918,
+      "sha256": "86b459b73ba081c5c50fc65d51f0e23e8f4532e987f05919ff12c5b70db46ba9",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/before-p10.png",
+      "bytes": 6281,
+      "sha256": "1acaaa77690a3ca876005ddac21d6502901af7411f15f37d572adbf25f240178",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/after-p3.png",
+      "bytes": 6353,
+      "sha256": "b0932799f7fcf333c3a64cf054e0a667a28bbf63b24e6651b4bcc02a8345a652",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/02-wait.png",
+      "bytes": 84419,
+      "sha256": "15960f07a70fa1408ba787254db66782eb500522e04cce74dbf41b72285e879b",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/03-height.png",
+      "bytes": 76910,
+      "sha256": "b4485fcfb386cce203e11d71dc1e0b8604f43fc816043f4c2b1552919239f24c",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/04-layouts.png",
+      "bytes": 65426,
+      "sha256": "dc6a3db77ded6384e1fb60679464491ccd19b004fb680de81c40597b469f9fa7",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/06-game-formed.png",
+      "bytes": 237932,
+      "sha256": "9f5248bc6d7dcb154f16e529553b93d631e1fda6a3bf89b86c129a8e023b7641",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/after-p2.png",
+      "bytes": 6344,
+      "sha256": "797bb812fb50b9bf341652dd5a03da220b2d7511d60f7ba0c128877e2dd2dadc",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/before-p2.png",
+      "bytes": 6325,
+      "sha256": "52cc60977e064a3481f705ba7ebbbecd96ef11ebd89108b4614fb50984b41734",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/before-p3.png",
+      "bytes": 6353,
+      "sha256": "8759045df6c6205f6f6b1c88a208715709ba0b127e027796f4993ec4e02a7d97",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/08-scheme.png",
+      "bytes": 204546,
+      "sha256": "9b213c122dff0290b82381c2ec8aa55da5cee5b9eddee9ad1bdecd207edca7bf",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/10-transition-check.png",
+      "bytes": 56664,
+      "sha256": "77a3f1ed1940df2d72ba1f9d28e0432cadcb811325450077f00eb1d054174156",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/after-p10.png",
+      "bytes": 6276,
+      "sha256": "f234fe3ac569ad46a17f3198767ff8b44932faf7bb96389463fef737425db58a",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/after-p0.png",
+      "bytes": 6277,
+      "sha256": "b82251fc6d32e7e540bf290a11b662831218934124ddf243477e41d1a788676b",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/before-p0.png",
+      "bytes": 6273,
+      "sha256": "246deb2e7946624243ab55861e2f84e54b7f53e47ae338c3519729c9d761222d",
+      "downloaded_and_verified": true
+    },
+    {
+      "file": "reports/lab867/07-close.png",
+      "bytes": 300172,
+      "sha256": "75ca80d5ee85476e937a06879106243837b69b11a179c7cc6a300246c91d0fae",
+      "downloaded_and_verified": true
+    }
+  ]
+}
