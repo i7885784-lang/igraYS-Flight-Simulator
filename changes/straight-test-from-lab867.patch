@@ -1,0 +1,204 @@
+--- a/YSFLIGHT/src/core/fssimulation.cpp
++++ b/YSFLIGHT/src/core/fssimulation.cpp
+@@ -4657,6 +4657,12 @@
+ 
+     int showLB,showMB,showRB;FsGetMouseState(showLB,showMB,showRB,mx,my);lb=(YSBOOL)showLB;mb=(YSBOOL)showMB;rb=(YSBOOL)showRB;
+     if(auto show=FsGetAirshow(this))if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE){show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);}
++    if(mainWindowViewmode==FSCOCKPITVIEW && GetPlayerAirplane() && 0==GetPlayerAirplane()->name.Strcmp("STRAIGHT_TEST_PLAYER"))
++     if(auto show=FsGetAirshow(this)){
++      show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);
++      if(mb==YSTRUE){show->heading=0;show->pitch=0;}
++     }
++
+ 	auto inFltDlg=GetCurrentInFlightDialog();
+ 
+ 	if(NULL!=inFltDlg)
+@@ -10278,6 +10284,11 @@
+ 
+ 			actualViewMode.viewAttitude.YawLeft(userInput.viewHdg);
+ 			actualViewMode.viewAttitude.NoseUp(userInput.viewPch);
++            if(0==playerPlane->name.Strcmp("STRAIGHT_TEST_PLAYER"))if(auto show=FsGetAirshow(this)){
++                actualViewMode.viewAttitude.YawLeft(show->heading);
++                actualViewMode.viewAttitude.NoseUp(-show->pitch);
++            }
++
+ 		}
+ 		else
+ 		{
+--- a/YSFLIGHT/src/gui/fsmenu.cpp
++++ b/YSFLIGHT/src/gui/fsmenu.cpp
+@@ -325,7 +325,7 @@
+         (languageOption.languageType==FsOption::AUTOMATIC && 0==strcmp(FsOption::GetLanguageString(),"ru"));
+     languageChoice->Select(russian ? 1 : 0);
+ 
+-	missionsBtn=nullptr;
++	missionsBtn=AddTextButton(MkId("straightTest"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Тест",YSTRUE);
+ 	controlsBtn=AddTextButton(MkId("controls"),FSKEY_NULL,FSGUI_PUSHBUTTON,FsGetTextResource("v4/controls",L"Controls / Change keys"),YSTRUE);
+ 
+ 	if(FsGetDate()<=20100315)
+--- a/YSFLIGHT/src/gui/fsmissionmenu.cpp
++++ b/YSFLIGHT/src/gui/fsmissionmenu.cpp
+@@ -3,100 +3,71 @@
+ #include <fsgui.h>
+ #include "fs.h"
+ #include "fsguimaincanvas.h"
+-#include "fsmissiongoal.h"
+-#include "fsoperation.h"
+-namespace
+-{
+-const wchar_t *T(const char *k,const wchar_t *s){return FsGetTextResource(k,s);}
+-class MissionList : public FsGuiDialog
+-{
++#include "fsautopilot.h"
++#include "fsairshow.h"
++#include "fsgrouplayout.h"
++namespace {
++class StraightSetup : public FsGuiDialog {
+ public:
+-    FsGuiButton *prepare,*cancel;
+-    void Make()
+-    {
+-        SetIdent("missionsDlg");SetTextMessage(T("v8/missions",L"Missions"));
+-        AddStaticText(0,FSKEY_NULL,T("v8/missionTitle",L"GUARDED LANDING ZONE"),YSTRUE);
+-        AddStaticText(0,FSKEY_NULL,T("v8/missionDescription",L"Clear the defence. Deliver the transport helicopter to the marked zone.\nKeep it on the ground for 8 seconds. Losing it or your aircraft means defeat."),YSTRUE);
+-        AddStaticText(0,FSKEY_NULL,T("v8/missionDifficulty",L"Easy operation | 1 defended landing zone | configure aircraft, groups and routes"),YSTRUE);
+-        prepare=AddTextButton(MkId("prepare"),FSKEY_NULL,FSGUI_PUSHBUTTON,T("v8/prepare",L"Prepare operation"),YSTRUE);
+-        cancel=AddTextButton(MkId("cancel"),FSKEY_ESC,FSGUI_PUSHBUTTON,FSGUI_COMMON_CANCEL,YSFALSE);
+-        SetTransparency(YSFALSE);Fit();
+-    }
+-    virtual void OnButtonClick(FsGuiButton *b){if(b==prepare)CloseModalDialog(1);if(b==cancel)CloseModalDialog(0);}
++ FsGuiDropList *aircraft,*pattern;
++ FsGuiNumberBox *count,*height,*gap,*spacing;
++ FsGuiButton *fly,*cancel;
++ YsArray<YsString> names;
++ void Make(FsWorld *world){
++ SetIdent("straightDlg");SetTextMessage(L"Тест: свободный полёт рядом с группой");
++ for(int i=0;auto name=world->GetAirplaneTemplateName(i);++i)
++  if(auto t=world->GetAirplaneTemplate(name))if(t->GetProperty()->GetAircraftClass()!=FSCL_HELICOPTER)names.Append(YsString(name));
++ AddStaticText(0,FSKEY_NULL,L"Самолёт (одинаковый у всех)",YSTRUE);
++ YsArray<const char *> choices;for(const auto &n:names)choices.Append(n.Txt());
++ aircraft=AddDropList(MkId("aircraft"),FSKEY_NULL,"",choices.GetN(),choices,12,32,32,YSTRUE);
++ for(int i=0;i<names.GetN();++i)if(0==names[i].Strcmp("MIG-29_FULCRUM"))aircraft->Select(i);
++ count=AddNumberBox(MkId("count"),FSKEY_NULL,L"Ведомых",12,4,0,4,1,YSTRUE);
++ height=AddNumberBox(MkId("height"),FSKEY_NULL,L"Твоя высота, м",16,1000,100,10000,100,YSTRUE);
++ gap=AddNumberBox(MkId("gap"),FSKEY_NULL,L"Ведомые выше тебя, м",22,50,0,500,10,YSTRUE);
++ spacing=AddNumberBox(MkId("spacing"),FSKEY_NULL,L"Интервал, м",16,50,30,500,10,YSTRUE);
++ const wchar_t *p[]={L"Обратный клин",L"Клин",L"Колонна",L"Ромб",L"Фронт пар"};
++ pattern=AddDropList(MkId("pattern"),FSKEY_NULL,L"Начальный строй",5,p,5,24,24,YSTRUE);pattern->Select(0);
++ AddStaticText(0,FSKEY_NULL,L"Группа держит прямой курс и свою скорость.\nНа тебя и команды не реагирует. Можно пристроиться рядом.\nКарта: ровная зелёная земля без зданий.",YSTRUE);
++ fly=AddTextButton(MkId("fly"),FSKEY_ENTER,FSGUI_PUSHBUTTON,L"Полететь",YSTRUE);
++ cancel=AddTextButton(MkId("cancel"),FSKEY_ESC,FSGUI_PUSHBUTTON,L"Отмена",YSFALSE);Fit();
++ }
++ YSRESULT VirtualSelect(const YsString &id,int n)override{
++ if(0==id.Strcmp("count")){count->SetNumber(YsBound(n,0,4));return YSOK;}
++ if(0==id.Strcmp("height")){height->SetNumber(YsBound(n,100,10000));return YSOK;}
++ if(0==id.Strcmp("gap")){gap->SetNumber(YsBound(n,0,500));return YSOK;}
++ if(0==id.Strcmp("spacing")){spacing->SetNumber(YsBound(n,30,500));return YSOK;}
++ return FsGuiDialog::VirtualSelect(id,n);
++ }
++ void OnButtonClick(FsGuiButton *b)override{if(b==fly)CloseModalDialog(YSOK);else if(b==cancel)CloseModalDialog(YSERR);}
+ };
+-void AircraftDefaults(FsWorld &world,FsNewFlightAirplaneData &data,const char *name)
+-{
+-    data.typeName=name;data.fuel=75;
+-    if(auto tmpl=world.GetAirplaneTemplate(name))tmpl->GetProperty()->GetWeaponConfig(data.weaponConfig);
+ }
+-YsVec3 LandingSite(FsWorld &world)
+-{
+-    FsStartPosInfo pos;YsVec3 result(45000,0,-14000);YsAtt3 att;
+-    if(world.GetStartPositionInfo(pos,"AOMORI","MISAWA_RW28")==YSOK)pos.InterpretPosition(result,att);
+-    result.SetY(world.GetFieldElevation(result.x(),result.z()));return result;
++void FsGuiMainCanvas::OpenMissions(FsGuiPopUpMenuItem *){
++ if(!runLoop->SavePendingFlightHistory())return;
++ auto d=FsGuiDialog::CreateSelfDestructiveDialog<StraightSetup>();d->Make(runLoop->GetWorld());d->BindCloseModalCallBack(&THISCLASS::MissionSetupSelected,this);AttachModalDialog(d);
+ }
++void FsGuiMainCanvas::MissionChosen(FsGuiDialog *,int){}
++void FsGuiMainCanvas::MissionSetupSelected(FsGuiDialog *closed,int code){
++ auto d=dynamic_cast<StraightSetup *>(closed);if(!d || code!=YSOK)return;
++ auto world=runLoop->GetWorld();int sel=d->aircraft->GetSelection();if(sel<0 || sel>=d->names.GetN())return;
++ FsFlightConfig cfg;cfg.Load(FsGetConfigFile());FsNewFlightDialogInfo info;info.SetFromConfig(world,cfg);
++ info.fieldName="STRAIGHT_TEST";info.playerAirInfo.typeName=d->names[sel];info.playerAirInfo.fuel=100;
++ world->GetAirplaneTemplate(d->names[sel])->GetProperty()->GetWeaponConfig(info.playerAirInfo.weaponConfig);
++ for(auto &w:info.wingman)w=YSFALSE;
++ info.addComputerAircraft=YSFALSE;info.customStart=YSTRUE;info.customStartPosition=YsOrigin();info.customStartHeight=d->height->GetNumber();info.customStartHeading=0;
++ info.groupAirStart=YSFALSE;info.groupFormation=YSFALSE;info.groupMission=YSFALSE;info.flyImmediately=YSFALSE;
++ Sim_CreateFlight_Create(info);auto sim=world->GetSimulation();if(!sim)return;auto player=sim->GetPlayerAirplane();if(!player)return;
++ const int ids[]={11,2,3,0,10};int pattern=ids[YsBound(d->pattern->GetSelection(),0,4)];double speed=player->Prop().GetVelocity();
++ const double safeSpacing=YsGreater(double(d->spacing->GetNumber()),2.4*YsGreater(player->GetRadiusFromCollision(),player->GetApproximatedCollideRadius())+8.0);
++ for(int i=0;i<YsBound(d->count->GetNumber(),0,4);++i){
++ auto wing=world->AddAirplane(d->names[sel],YSFALSE);if(!wing)continue;wing->iff=FS_IFF0;
++ wing->AutoSendCommand(info.playerAirInfo.weaponConfig.GetN(),info.playerAirInfo.weaponConfig,100);
++ auto off=FsGetGroupOffset(pattern,i,safeSpacing);YsVec3 pos=player->GetPosition()+YsVec3(off.x,off.y+d->gap->GetNumber(),off.z);
++ YsString c;c.Printf("POSITION %.6fm %.6fm %.6fm",pos.x(),pos.y(),pos.z());wing->SendCommand(c);
++ wing->SendCommand("ATTITUDE 0deg 0deg 0deg");c.Printf("INITSPED %.6fm/s",speed);wing->SendCommand(c);wing->SendCommand("CTLLDGEA FALSE");wing->SendCommand("CTLTHROT 0.65");wing->Prop().SetFlightState(FSFLYING,FSDIEDOF_NULL);
++ auto ap=FsGotoPosition::Create();ap->straightFlightMode=YSTRUE;ap->SetSingleDestination(pos.x(),pos.y(),pos.z()+1e12);ap->SetSpeed(speed);ap->SetUseAfterburner(YSFALSE);wing->SetAutopilot(ap);
++ }
++ player->name="STRAIGHT_TEST_PLAYER";
++ if(auto show=FsGetAirshow(sim)){show->heading=0;show->pitch=0;show->dragging=false;}
++ sim->SimProcessButtonFunction(FSBTF_COCKPITVIEW,FSUSC_ENABLE);
++ Sim_Fly(nullptr);
+ }
+-void FsGuiMainCanvas::OpenMissions(FsGuiPopUpMenuItem *)
+-{
+-    if(!runLoop->SavePendingFlightHistory())return;
+-    auto dlg=FsGuiDialog::CreateSelfDestructiveDialog<MissionList>();dlg->Make();
+-    dlg->BindCloseModalCallBack(&THISCLASS::MissionChosen,this);AttachModalDialog(dlg);
+-}
+-void FsGuiMainCanvas::MissionChosen(FsGuiDialog *,int code)
+-{
+-    if(code!=1)return;
+-    auto world=runLoop->GetWorld();FsNewFlightDialogOption option;
+-    option.operationSetup=true;option.canSelectField=YSFALSE;option.canSelectStartPosition=YSFALSE;
+-    option.canSelectWingmen=YSTRUE;option.canChooseFomType=YSTRUE;option.flyNowButton=YSTRUE;
+-    option.fieldName="AOMORI";option.aircraftName="UH-60_BLACKHAWK";option.startPosName="MISAWA_RW10";
+-    auto dlg=FsGuiDialog::CreateSelfDestructiveDialog<FsGuiNewFlightDialogClass>();dlg->InitialSetUp(option);dlg->Make(world);
+-    FsFlightConfig cfg;cfg.Load(FsGetConfigFile());FsNewFlightDialogInfo info;info.SetFromConfig(world,cfg);info.SetFromOption(option);
+-    info.addComputerAircraft=YSFALSE;info.separateWingmanStarts=YSFALSE;
+-    info.groupAirStart=YSTRUE;info.groupHeight=180;info.groupHeading=0;info.groupSpeed=0;info.groupSpacing=90;
+-    AircraftDefaults(*world,info.playerAirInfo,"UH-60_BLACKHAWK");
+-    for(int i=0;i<2;++i){info.wingman[i]=YSTRUE;AircraftDefaults(*world,info.wingmanInfo[i],"AH-64_APACHE");}
+-    dlg->InitializeDialog(world,info);dlg->customStartAllowed=true;
+-    dlg->groupStartCheck->SetCheck(YSTRUE);dlg->groupHeightBox->SetInteger(180);dlg->groupSpacingBox->SetInteger(90);
+-    dlg->separateStartsCheck->Disable();dlg->addComputerAircraft->SetCheck(YSFALSE);dlg->addComputerAircraft->Disable();
+-    dlg->operationLanding=LandingSite(*world);dlg->UpdateStartControls();dlg->UpdateGroupControls();dlg->UpdateWingmanControls();
+-    dlg->SetTextMessage(T("v8/prepareTitle",L"Operation preparation: guarded landing zone"));
+-    dlg->BindCloseModalCallBack(&THISCLASS::MissionSetupSelected,this);AttachModalDialog(dlg);
+-}
+-void FsGuiMainCanvas::MissionSetupSelected(FsGuiDialog *closed,int code)
+-{
+-    auto dlg=dynamic_cast<FsGuiNewFlightDialogClass *>(closed);if(dlg==nullptr || code!=YSOK)return;
+-    dlg->CaptureOperationControls();auto world=runLoop->GetWorld();auto &info=dlg->info;
+-    const int transportSlot=dlg->operationTransport;
+-    const auto &data=(transportSlot<0 ? info.playerAirInfo : info.wingmanInfo[YsBound(transportSlot,0,FsNewFlightDialogInfo::MaxNumWingman-1)]);
+-    auto tmpl=world->GetAirplaneTemplate(data.typeName);
+-    if((transportSlot>=0 && info.wingman[transportSlot]!=YSTRUE) || tmpl==nullptr || (0!=data.typeName.Strcmp("UH-60_BLACKHAWK") && 0!=data.typeName.Strcmp("UH-60J_BLACKHAWK") && 0!=data.typeName.Strcmp("V-107")))
+-    {StartMessageBox(FSGUI_COMMON_ERROR,T("v8/transportError",L"Choose an enabled helicopter as transport in Orders, then prepare the mission again."),FSGUI_COMMON_OK,nullptr,0,0);return;}
+-    // Create the starting world first; do not launch before attaching mission state.
+-    const bool fly=info.flyImmediately==YSTRUE;info.flyImmediately=YSFALSE;
+-    info.fieldName="AOMORI";info.addComputerAircraft=YSFALSE;info.separateWingmanStarts=YSFALSE;
+-    info.groupAirStart=YSTRUE;info.groupHeight=YsBound(info.groupHeight,80.0,1000.0);
+-    Sim_CreateFlight_Create(info);auto sim=world->GetSimulation();if(sim==nullptr || sim->GetPlayerAirplane()==nullptr)return;
+-    auto op=std::make_shared<FsSimExtension_Operation>();op->landing=LandingSite(*world);op->rally=sim->GetPlayerAirplane()->GetPosition();
+-    op->rally.SetY(world->GetFieldElevation(op->rally.x(),op->rally.z()));op->transportSlot=transportSlot;
+-    for(int i=0;i<4;++i)op->groupName[i]=dlg->operationGroups[i];
+-    for(const auto &unit:dlg->operationUnits)if(unit.slot<0 || info.wingman[unit.slot]==YSTRUE)op->units.Append(unit);
+-    auto transport=op->Aircraft(sim,transportSlot);if(transport!=nullptr)transport->name="OP_TRANSPORT";
+-    // Stock scenery contains unrelated combat vehicles. They are scenery here;
+-    // only authored operation defenders are active enemies.
+-    for(auto g=sim->FindNextGround(nullptr);g!=nullptr;g=sim->FindNextGround(g))
+-    {g->iff=FS_IFF0;g->SendCommand("INITIGUN 0");g->SendCommand("INITISAM 0");}
+-    // An actual native anti-aircraft gun, with a short engagement range for the first mission.
+-    auto guard=world->AddGround("AAA",YSFALSE);
+-    if(guard==nullptr){StartMessageBox(FSGUI_COMMON_ERROR,L"Cannot load AAA defence.",FSGUI_COMMON_OK,nullptr,0,0);return;}
+-    guard->iff=FS_IFF1;guard->name="OP_AAA_1";
+-    YsVec3 position=op->landing+YsVec3(320,0,220);position.SetY(world->GetFieldElevation(position.x(),position.z()));
+-    world->SettleGround(*guard,position);guard->SendCommand("GUNRANGE 900m");guard->SendCommand("INITIGUN 1200");guard->SendCommand("INITISAM 0");
+-    op->defenders.Append(guard->name);
+-    sim->RegisterExtension(op);sim->SetSimulationTitle("Guarded Landing Zone");
+-    FsMissionGoal goal;goal.SendCommand("MSSNGOAL SURVIVE",L"");goal.SendCommand("MSSNGOAL DESTROYGND OP_AAA_1",L"");
+-    goal.SendCommand("MSSNGOAL MUSTLAND OP_TRANSPORT",L"");goal.SendCommand("MSSNGOAL DEFAIR OP_TRANSPORT",L"");
+-    goal.SendCommand("MSSNGOAL ITEXT en \"Destroy the anti-aircraft defence, then land the transport in the green zone for 8 seconds. Enter: commands; F11: tactical map.\"",L"");
+-    goal.SendCommand("MSSNGOAL ITEXT ru \"Уничтожьте зенитную охрану. Посадите транспорт в зелёной зоне на 8 секунд. Enter: круг команд; F11: карта операции.\"",L"");
+-    sim->SetMissionGoal(goal);readiness=SIMULATION_INITIAL;
+-    if(fly)Sim_Fly(nullptr);
+-}

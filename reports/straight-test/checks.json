@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "flight_cases": 10,
+  "test_architecture": "Win64 under Wine, same source tree",
+  "delivery_architecture": "Win32 i386 GUI",
+  "windows10_x86_runtime_verified": false,
+  "exe_sha256": "a58808483a5ebb12f8f42b096bc4eb4593377f11d71e3181be722bf40d254f12",
+  "test_exe_sha256": "fde2553ea3cb31e18e58f71bd1a612c6843ef359f89d525af60328eb1743e750",
+  "speed_independence": [
+    {
+      "case": 6,
+      "player_speed": 169.19369761268896,
+      "group_speed": 183.60000234991824
+    },
+    {
+      "case": 7,
+      "player_speed": 169.16117624024827,
+      "group_speed": 183.59920560672265
+    },
+    {
+      "case": 8,
+      "player_speed": 169.2106360025078,
+      "group_speed": 183.60017164419077
+    },
+    {
+      "case": 9,
+      "player_speed": 169.12857153409226,
+      "group_speed": 183.59922458328015
+    },
+    {
+      "case": 10,
+      "player_speed": 165.03626628094975,
+      "group_speed": 183.6012868795776
+    }
+  ],
+  "maximum_height_error": 0.7659009999999853
+}

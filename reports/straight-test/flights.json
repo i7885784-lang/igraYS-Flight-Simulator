@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "cases": 10,
+  "results": [
+    {
+      "name": "case-1",
+      "count": 0,
+      "gap": 50,
+      "pattern": 0,
+      "passed": true,
+      "stats": []
+    },
+    {
+      "name": "case-2",
+      "count": 1,
+      "gap": 10,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.741284999999948,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-3",
+      "count": 2,
+      "gap": 50,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7455919999999878,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7455919999999878,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-4",
+      "count": 3,
+      "gap": 100,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7507370000000719,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7507370000000719,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7507370000000719,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-5",
+      "count": 4,
+      "gap": 50,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7446469999999863,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7446469999999863,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7446469999999863,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7446469999999863,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-6",
+      "count": 4,
+      "gap": 0,
+      "pattern": 1,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7386830000000373,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7386830000000373,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7386830000000373,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7386830000000373,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-7",
+      "count": 4,
+      "gap": 200,
+      "pattern": 2,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7659009999999853,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7659009999999853,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7659009999999853,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7659009999999853,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-8",
+      "count": 4,
+      "gap": 50,
+      "pattern": 3,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7450799999999163,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7450799999999163,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7450799999999163,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7450799999999163,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-9",
+      "count": 4,
+      "gap": 50,
+      "pattern": 4,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7447199999999157,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7447199999999157,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7447199999999157,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7447199999999157,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-10",
+      "count": 2,
+      "gap": 500,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7643929999999273,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7643929999999273,
+          "heading_error": 0.0
+        }
+      ]
+    }
+  ]
+}
