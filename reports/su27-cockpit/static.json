@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "su27.dnm_valid_packs_faces": true,
+    "su27coarse.dnm_valid_packs_faces": true,
+    "su27cockpit.dnm_valid_packs_faces": true,
+    "collision_mesh_unchanged": true,
+    "PE32_i386": true,
+    "Windows_GUI_subsystem": true,
+    "no_external_cpp_runtime": true,
+    "production_no_lab_commands": true
+  },
+  "polygon_counts": {
+    "su27.dnm": 7816,
+    "su27coarse.dnm": 2219,
+    "su27cockpit.dnm": 4491
+  },
+  "imports": [
+    "COMDLG32.DLL",
+    "GDI32.dll",
+    "GLU32.DLL",
+    "IMM32.DLL",
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "OPENGL32.DLL",
+    "SHELL32.dll",
+    "USER32.dll",
+    "WINMM.DLL",
+    "WSOCK32.DLL"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checks": {
+    "physical_alt_click": true,
+    "look_at_parking": true,
+    "look_survives_F2_F1": true,
+    "middle_resets_look": true
+  },
+  "samples": [
+    {
+      "time": 9.714,
+      "battery": 1.0,
+      "pumps": 0.0,
+      "L": 0.0,
+      "R": 0.0,
+      "factor": 0.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 1.0,
+      "brake": 1.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": 0.0,
+      "lookP": 0.16
+    },
+    {
+      "time": 17.291,
+      "battery": 1.0,
+      "pumps": 0.0,
+      "L": 0.0,
+      "R": 0.0,
+      "factor": 0.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 1.0,
+      "brake": 1.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": -0.342085,
+      "lookP": 0.428781
+    },
+    {
+      "time": 18.01,
+      "battery": 1.0,
+      "pumps": 0.0,
+      "L": 0.0,
+      "R": 0.0,
+      "factor": 0.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 1.0,
+      "brake": 1.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": -0.342085,
+      "lookP": 0.428781
+    },
+    {
+      "time": 25.588,
+      "battery": 1.0,
+      "pumps": 0.0,
+      "L": 0.0,
+      "R": 0.0,
+      "factor": 0.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 1.0,
+      "brake": 1.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": 0.0,
+      "lookP": 0.16
+    }
+  ]
+}

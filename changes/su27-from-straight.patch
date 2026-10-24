@@ -1,0 +1,542 @@
+--- a/YSFLIGHT/src/core/fsairshow.cpp
++++ b/YSFLIGHT/src/core/fsairshow.cpp
+@@ -19,15 +19,18 @@
+  for(auto a=sim->FindNextAirplane(nullptr);a;a=sim->FindNextAirplane(a))if(a!=player && a->Prop().IsActive()==YSTRUE && a->squadSlot==i-1 && a->squadLeaderKey==FsExistence::GetSearchKey(player))return a;
+  return nullptr;
+ }
+-YsArray<YsString> FsSimExtension_Airshow::Serialize(const FsSimulation *)
++YsArray<YsString> FsSimExtension_Airshow::Serialize(const FsSimulation *sim)
+ {
+  YsArray<YsString> rows;YsString s;s.Printf("EXTENSIO %s CONFIG %d %d %d %d %.3f %.3f",Ident(),config.supply,config.synchronized,config.autoAfterburner,config.burst,config.interval,config.cameraSensitivity);rows.Append(s);
+  s.Printf("EXTENSIO %s COVERHEIGHT %.0f",Ident(),config.coverHeight);rows.Append(s);
+  for(int i=0;i<FsMaxShowAircraft;++i){s.Printf("EXTENSIO %s COLOR %d %d %d %d",Ident(),i,config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);rows.Append(s);}
++ for(const auto &e:su27Events){int id=e.id;if(e.key!=YSNULLHASHKEY)if(auto a=sim->FindAirplane(e.key))id=a->ysfId;s.Printf("EXTENSIO %s SU27EVENT %.6f %d %d %d %d %d %d %.8f %.8f %.8f %.8f",Ident(),e.time,id,int(e.battery),int(e.pumps),int(e.left),int(e.right),int(e.parking),e.sl,e.sr,e.canopy,e.target);rows.Append(s);}
+  return rows;
+ }
+ YSRESULT FsSimExtension_Airshow::ProcessCommand(FsSimulation *,const YsConstArrayMask<YsString> &a)
+ {
++ if(a.GetN()>=14 && 0==a[2].Strcmp("SU27EVENT")){Su27Event e;e.time=YsGreater(0.0,atof(a[3]));e.id=atoi(a[4]);e.battery=atoi(a[5])!=0;e.pumps=atoi(a[6])!=0;e.left=atoi(a[7])!=0;e.right=atoi(a[8])!=0;e.parking=atoi(a[9])!=0;e.sl=YsBound(atof(a[10]),0.0,1.0);e.sr=YsBound(atof(a[11]),0.0,1.0);e.canopy=YsBound(atof(a[12]),0.0,1.0);e.target=YsBound(atof(a[13]),0.0,1.0);su27Events.Append(e);return YSOK;}
++
+  if(a.GetN()>=4 && 0==a[2].Strcmp("COVERHEIGHT")){config.coverHeight=YsBound(atof(a[3]),10.0,100.0);return YSOK;}
+  if(a.GetN()>=9 && 0==a[2].Strcmp("CONFIG")){config.supply=atoi(a[3])!=0;config.synchronized=atoi(a[4])!=0;config.autoAfterburner=atoi(a[5])!=0;config.burst=YsBound(atoi(a[6]),1,64);config.interval=YsBound(atof(a[7]),0.1,2.0);config.cameraSensitivity=YsBound(atof(a[8]),0.05,2.0);return YSOK;}
+  if(a.GetN()>=7 && 0==a[2].Strcmp("COLOR")){int i=atoi(a[3]);if(i>=0 && i<FsMaxShowAircraft)for(int c=0;c<3;++c)config.rgb[i][c]=YsBound(atoi(a[4+c]),0,255);if(i>=0 && i<FsMaxShowAircraft){int p=FsNearestSmokePalette(config.rgb[i][0],config.rgb[i][1],config.rgb[i][2]);for(int c=0;c<3;++c)config.rgb[i][c]=FsSmokePalette[p].rgb[c];}return YSOK;}return YSERR;
+@@ -71,11 +74,11 @@
+ }
+ void FsSimExtension_Airshow::StartSimulation(FsSimulation *sim)
+ {
+- replaying=false;sim->SetCoverHeight(config.coverHeight);sim->GetPlayerSquad();SetupAircraft(sim,true);
++ replaying=false;su27Events.CleanUp();sim->SetCoverHeight(config.coverHeight);sim->GetPlayerSquad();SetupAircraft(sim,true);
+  if(auto player=sim->GetPlayerAirplane())if(player->GetAutopilot()==nullptr && BalanceLevelAirborneStart(*player))sim->ReadControlBackFromAirplane(player);
+  sim->AddTimedMessage(T("show/keys",L"F10: airshow | F2: orbit camera | right drag: rotate | wheel: zoom"));
+ }
+-void FsSimExtension_Airshow::StartReplay(FsSimulation *sim){replaying=true;sim->GetPlayerSquad();SetupAircraft(sim,false);}
++void FsSimExtension_Airshow::StartReplay(FsSimulation *sim){replaying=true;sim->GetPlayerSquad();SetupAircraft(sim,false);ReplaySu27(sim);}
+ void FsSimExtension_Airshow::SetupAircraft(FsSimulation *sim,bool resupply)
+ {
+  for(int i=0;i<FsMaxShowAircraft;++i)if(auto a=Aircraft(sim,i))
+@@ -99,7 +102,8 @@
+ }
+ void FsSimExtension_Airshow::OnInterval(FsSimulation *sim,double dt)
+ {
+- if(replaying || dt<=0)return;
++ if(replaying){ReplaySu27(sim);return;}
++ if(dt<=0)return;
+  sim->DiscoverSquadMembers();
+  if(!Aircraft(sim,selected))selected=0;
+  if(!Aircraft(sim,cameraUnit))cameraUnit=0;
+@@ -289,3 +293,24 @@
+   ++index;
+  }
+ }
++
++void FsSimExtension_Airshow::RecordSu27(const FsSimulation *sim,const FsAirplane &air)
++{
++ const auto &p=air.Prop();Su27Event e;e.time=sim->GetClock();e.key=FsExistence::GetSearchKey(&air);e.id=air.ysfId;
++ e.battery=p.su27Battery;e.pumps=p.su27Pumps;e.left=p.su27Left;e.right=p.su27Right;e.parking=p.su27Parking;
++ e.sl=p.su27SpoolLeft;e.sr=p.su27SpoolRight;e.canopy=p.su27Canopy;e.target=p.su27CanopyTarget;su27Events.Append(e);
++}
++void FsSimExtension_Airshow::ReplaySu27(FsSimulation *sim)
++{
++ const double now=sim->GetClock();
++ for(auto air=sim->FindNextAirplane(nullptr);air;air=sim->FindNextAirplane(air))if(0==strcmp(air->Prop().GetIdentifier(),"SU-27_FLANKER")){
++  const Su27Event *event=nullptr;
++  for(const auto &e:su27Events)if(e.id==air->ysfId && e.time<=now+.00001 && (!event || e.time>=event->time))event=&e;
++  if(!event)for(const auto &e:su27Events)if(e.id==air->ysfId && (!event || e.time<event->time))event=&e;
++  if(!event)continue;const auto &e=*event;auto &p=air->Prop();const double elapsed=YsGreater(0.0,now-e.time);
++  auto slew=[&](double v,double target,double rate){return v<target?YsSmaller(target,v+elapsed*rate):YsGreater(target,v-elapsed*rate);};
++  p.su27Managed=true;p.su27Battery=e.battery;p.su27Pumps=e.pumps;p.su27Left=e.left;p.su27Right=e.right;p.su27Parking=e.parking;
++  p.su27SpoolLeft=slew(e.sl,e.left?1.0:0.0,e.left?.125:.35);p.su27SpoolRight=slew(e.sr,e.right?1.0:0.0,e.right?.125:.35);
++  p.su27CanopyTarget=e.target;p.su27Canopy=slew(e.canopy,e.target,.4);p.su27ThrustFactor=(p.su27SpoolLeft*p.su27SpoolLeft+p.su27SpoolRight*p.su27SpoolRight)*.5;
++ }
++}
+--- a/YSFLIGHT/src/core/fsairshow.h
++++ b/YSFLIGHT/src/core/fsairshow.h
+@@ -6,6 +6,10 @@
+ class FsSimExtension_Airshow : public FsSimExtensionBase
+ {
+ public:
++    struct Su27Event {double time=0,sl=0,sr=0,canopy=0,target=0;int id=0;unsigned int key=YSNULLHASHKEY;bool battery=false,pumps=false,left=false,right=false,parking=false;};
++    YsArray<Su27Event> su27Events;
++    void RecordSu27(const FsSimulation *,const FsAirplane &);
++    void ReplaySu27(FsSimulation *);
+     FsAirshowConfig config;
+     bool menuOpen=false,replaying=false,smoke[FsMaxShowAircraft]={false},orbit=true,dragging=false;
+     int selected=0,cameraUnit=0,remaining[FsMaxShowAircraft]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
+--- a/YSFLIGHT/src/core/fsinstpanel.cpp
++++ b/YSFLIGHT/src/core/fsinstpanel.cpp
+@@ -1534,16 +1534,16 @@
+ 			triVtxBuf.Add(YsVec3(panelPlg[0],0));
+ 			triVtxBuf.Add(YsVec3(panelPlg[i],0));
+ 			triVtxBuf.Add(YsVec3(panelPlg[i+1],0));
+-			triColBuf.Add(YsBlack());
+-			triColBuf.Add(YsBlack());
+-			triColBuf.Add(YsBlack());
++			{YsColor c=YsBlack();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))c.SetIntRGB(35,76,78);triColBuf.Add(c);}
++			{YsColor c=YsBlack();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))c.SetIntRGB(35,76,78);triColBuf.Add(c);}
++			{YsColor c=YsBlack();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))c.SetIntRGB(35,76,78);triColBuf.Add(c);}
+ 		}
+ 		for(int i=0; i<panelPlg.GetN(); ++i)
+ 		{
+ 			lineVtxBuf.Add(YsVec3(panelPlg[i],0));
+ 			lineVtxBuf.Add(YsVec3(panelPlg.GetCyclic(i+1),0));
+-			lineColBuf.Add(YsWhite());
+-			lineColBuf.Add(YsWhite());
++			{YsColor c=YsWhite();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))c.SetIntRGB(24,36,38);lineColBuf.Add(c);}
++			{YsColor c=YsWhite();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))c.SetIntRGB(24,36,38);lineColBuf.Add(c);}
+ 		}
+ 	}
+ }
+@@ -3102,6 +3102,8 @@
+ 
+ void FsInstrumentPanel::DrawAttitude3d(const double &p,const double &b)
+ {
++ YsColor suSky=YsCyan();if(airPropCache && 0==strcmp(airPropCache->GetIdentifier(),"SU-27_FLANKER"))suSky.SetIntRGB(65,126,163);
++
+ 	AddCircularInstrumentFrameVertexArray(attPos,attRad);
+ 	YsMatrix4x4 mat;
+ 	mat.Translate(YsVec3(attPos,0));
+@@ -3249,12 +3251,12 @@
+ 				triVtxBuf.Add(bankMat*YsVec3(prevX2,prevY2,0));
+ 				triVtxBuf.Add(bankMat*YsVec3(prevX1,prevY1,0));
+ 				triVtxBuf.Add(bankMat*YsVec3(x1,y1,0));
+-				triColBuf.Add(YsCyan());
+-				triColBuf.Add(YsCyan());
+-				triColBuf.Add(YsCyan());
+-				triColBuf.Add(YsCyan());
+-				triColBuf.Add(YsCyan());
+-				triColBuf.Add(YsCyan());
++				triColBuf.Add(suSky);
++				triColBuf.Add(suSky);
++				triColBuf.Add(suSky);
++				triColBuf.Add(suSky);
++				triColBuf.Add(suSky);
++				triColBuf.Add(suSky);
+ 				triVtxBuf.Add(bankMat*YsVec3(x2,-y2,0));
+ 				triVtxBuf.Add(bankMat*YsVec3(x1,-y1,0));
+ 				triVtxBuf.Add(bankMat*YsVec3(prevX1,-prevY1,0));
+--- a/YSFLIGHT/src/core/fssimulation.cpp
++++ b/YSFLIGHT/src/core/fssimulation.cpp
+@@ -32,6 +32,8 @@
+ #include "fsinstreading.h"
+ 
+ #include "fsrefuelandtakeoff.h"
++#include "fssu27.h"
++
+ 
+ #ifndef _WIN32  // Assuming UNIX
+ 
+@@ -1665,6 +1667,7 @@
+ 		seeker->refTime1=targetTime;
+ 		seeker->refTime2=targetTime;
+ 	}
++ if(auto show=FsGetAirshow(this))show->ReplaySu27(this);
+ }
+ 
+ void FsSimulation::DeleteFlightRecord(const double &t1,const double &t2)
+@@ -2077,6 +2080,8 @@
+ 					replayMode=FSREPLAY_PAUSE;
+ 				}
+ 
++                if(auto show=FsGetAirshow(this))show->ReplaySu27(this);
++
+ 				if(replayMode==FSREPLAY_PAUSE)
+ 				{
+ 					FsSleep(20);
+@@ -2178,7 +2183,7 @@
+ 			for(YSSIZE_T evtIdx=0; evtIdx<simEvent->eventList.GetN(); ++evtIdx)
+ 			{
+ 				if(playerTime<=simEvent->eventList[evtIdx].eventTime &&
+-				   simEvent->eventList[evtIdx].eventTime<T0 &&
++				   simEvent->eventList[evtIdx].eventTime<=t0+YsTolerance &&
+ 				   FSEVENT_PLAYEROBJCHANGE==simEvent->eventList[evtIdx].eventType)
+ 				{
+ 					playerTime=simEvent->eventList[evtIdx].eventTime;
+@@ -3664,6 +3669,7 @@
+ #ifdef CRASHINVESTIGATION_S1_LEVEL2
+ 		printf("S1-3\n");
+ #endif
++			if(airplane==GetPlayerAirplane())Su27Tick(*airplane,this,dt);
+ 			airplane->Prop().Move(dt,aircraftCarrierList,*weather);  // Elevation must be set in Prop() before this function.
+ 
+ #ifdef CRASHINVESTIGATION_S1_LEVEL2
+@@ -4656,12 +4662,14 @@
+ 	}
+ 
+     int showLB,showMB,showRB;FsGetMouseState(showLB,showMB,showRB,mx,my);lb=(YSBOOL)showLB;mb=(YSBOOL)showMB;rb=(YSBOOL)showRB;
++    const auto su27Dialog=GetCurrentInFlightDialog();
++    const bool su27MouseAllowed=(su27Dialog==nullptr || (su27Dialog==stationaryDlg && su27Dialog->IsMouseOnDialog(mx,my)!=YSTRUE)) && (!FsGetAirshow(this) || !FsGetAirshow(this)->menuOpen);
++    if(mainWindowViewmode==FSCOCKPITVIEW && su27MouseAllowed)Su27Mouse(this,lb==YSTRUE,mx,my);
+     if(auto show=FsGetAirshow(this))if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE){show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);}
+-    if(mainWindowViewmode==FSCOCKPITVIEW && GetPlayerAirplane() && 0==GetPlayerAirplane()->name.Strcmp("STRAIGHT_TEST_PLAYER"))
+-     if(auto show=FsGetAirshow(this)){
+-      show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);
+-      if(mb==YSTRUE){show->heading=0;show->pitch=0;}
+-     }
++    if(mainWindowViewmode==FSCOCKPITVIEW && Su27Aircraft(GetPlayerAirplane()) && su27MouseAllowed)Su27Look(*GetPlayerAirplane(),rb==YSTRUE,mb==YSTRUE,mx,my);
++    else if(mainWindowViewmode==FSCOCKPITVIEW && GetPlayerAirplane() && 0==GetPlayerAirplane()->name.Strcmp("STRAIGHT_TEST_PLAYER"))
++     if(auto show=FsGetAirshow(this)){show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);if(mb==YSTRUE){show->heading=0;show->pitch=0;}}
++    if(mainWindowViewmode!=FSCOCKPITVIEW || !su27MouseAllowed){su27Ui.dragging=false;su27Ui.click=(lb==YSTRUE && FsGetKeyState(FSKEY_ALT)==YSTRUE);}
+ 
+ 	auto inFltDlg=GetCurrentInFlightDialog();
+ 
+@@ -4783,6 +4791,8 @@
+ 					continue;
+ 				}
+ 				YSBOOL keyTaken=YSFALSE;
++                if(Su27Aircraft(GetPlayerAirplane()) && FsGetKeyState(FSKEY_ALT)==YSTRUE && rawKey>=FSKEY_1 && rawKey<=FSKEY_6){Su27Action(this,rawKey-FSKEY_1);SetIgnoreThisKeyHolding(rawKey);continue;}
++
+ 				for(auto idx : addOnList.ReverseIndex())
+ 				{
+ 					auto addOnPtr=addOnList[idx];
+@@ -4846,10 +4856,12 @@
+ 		}                                                  // 2005/03/31
+ 		ctlAssign.CheckIgnoredKeyRelease();
+ 		const double orbitAileron=userInput.ctlAileron,orbitElevator=userInput.ctlElevator;
++        const bool suMouseLook=Su27Aircraft(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW && rb==YSTRUE && ctlAssign.primaryInputMode==FsControlAssignment::PRIMARYINPUT_MOUSE;
++
+         userInput.ReadControl(ctlAssign,pJoy,joy);
+-        if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE && rb==YSTRUE && FsGetAirshow(this)){userInput.ctlAileron=orbitAileron;userInput.ctlElevator=orbitElevator;}
++        if(suMouseLook || (mainWindowViewmode==FSOUTSIDEPLAYERPLANE && rb==YSTRUE && FsGetAirshow(this))){userInput.ctlAileron=orbitAileron;userInput.ctlElevator=orbitElevator;}
+ 		userInput.Move(ctlAssign,joy,dt);
+-        if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE && rb==YSTRUE && FsGetAirshow(this)){userInput.ctlAileron=orbitAileron;userInput.ctlElevator=orbitElevator;userInput.ctlFireWeaponButton=YSFALSE;userInput.ctlFireGunButton=YSFALSE;userInput.ctlFireAAMButton=YSFALSE;userInput.ctlFireAGMButton=YSFALSE;userInput.ctlFireRocketButton=YSFALSE;userInput.ctlDropBombButton=YSFALSE;userInput.ctlCycleWeaponButton=YSFALSE;userInput.ctlDispenseFlareButton=YSFALSE;}
++        if(suMouseLook || (mainWindowViewmode==FSOUTSIDEPLAYERPLANE && rb==YSTRUE && FsGetAirshow(this))){userInput.ctlAileron=orbitAileron;userInput.ctlElevator=orbitElevator;userInput.ctlFireWeaponButton=YSFALSE;userInput.ctlFireGunButton=YSFALSE;userInput.ctlFireAAMButton=YSFALSE;userInput.ctlFireAGMButton=YSFALSE;userInput.ctlFireRocketButton=YSFALSE;userInput.ctlDropBombButton=YSFALSE;userInput.ctlCycleWeaponButton=YSFALSE;userInput.ctlDispenseFlareButton=YSFALSE;}
+ 		ctlAssign.checkKeyHolding=YSTRUE;                  // 2005/03/31
+ 
+ #ifdef CRASHINVESTIGATION_SIMCONTROLBYUSER
+@@ -4932,7 +4944,10 @@
+ 		}
+ 		else if(NULL!=playerObj)
+ 		{
++            if(Su27Aircraft(GetPlayerAirplane()) && GetPlayerAirplane()->Prop().su27ParkingRelease){userInput.ctlBrake=YSFALSE;GetPlayerAirplane()->Prop().su27ParkingRelease=false;}
+ 			playerObj->ApplyControlAndGetFeedback(userInput,userControl,cfgPtr->autoCoordination);
++            if(Su27Aircraft(GetPlayerAirplane()) && FsGetKeyState(FSKEY_ALT)==YSTRUE){auto &p=GetPlayerAirplane()->Prop();p.SetFireWeaponButton(YSFALSE);p.SetFireGunButton(YSFALSE);p.SetFireAAMButton(YSFALSE);p.SetFireAGMButton(YSFALSE);p.SetFireRocketButton(YSFALSE);p.SetDropBombButton(YSFALSE);}
++
+ 		}
+ 
+ #ifdef CRASHINVESTIGATION_SIMCONTROLBYUSER
+@@ -5282,6 +5297,9 @@
+ void FsSimulation::SimProcessRawKey(int rawKey)
+ {
+ 
++    if(Su27Aircraft(GetPlayerAirplane()) && FsGetKeyState(FSKEY_CTRL)==YSTRUE && (rawKey==FSKEY_WHEELUP || rawKey==FSKEY_WHEELDOWN)){
++      SimProcessButtonFunction(rawKey==FSKEY_WHEELUP?FSBTF_VIEWZOOM:FSBTF_VIEWMOOZ,FSUSC_ENABLE);return;
++    }
+     if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE)if(auto show=FsGetAirshow(this))if(rawKey==FSKEY_WHEELUP || rawKey==FSKEY_WHEELDOWN){show->CameraInput(rawKey,false,0,0);return;}
+ 	// Here, replayMode is updated. But, it is not refered
+ 	// unless the simulation is running by RunReplaySimulation()
+@@ -7197,6 +7215,7 @@
+ 		{
+ 			if(seeker->cockpit!=nullptr)
+ 			{
++				if(Su27Aircraft(seeker)){seeker->cockpit.SetState(100,0,1,seeker->Prop().su27Canopy);seeker->cockpit.SetState(120,0,1,seeker->Prop().GetThrottle());seeker->cockpit.SetPitch(122,seeker->Prop().GetElevator()*YsDegToRad(12.0));seeker->cockpit.SetRotation(123,-seeker->Prop().GetAileron()*YsDegToRad(12.0));}
+ 				seeker->cockpit.Draw(actualViewMode.viewMat,proj.GetMatrix(),seeker->GetPosition(),seeker->GetAttitude(),drawFlag);
+ 			}
+ 			else if(cockpit!=nullptr)
+@@ -7471,6 +7490,7 @@
+ 
+ void FsSimulation::SimDrawJoystick(const ActualViewMode &actualViewMode) const
+ {
++ if(Su27Aircraft(GetPlayerAirplane()))return;
+ 	if(actualViewMode.actualViewMode==FSCOCKPITVIEW)
+ 	{
+ 		YsVec3 jsPos,jsUv,jsEv;
+@@ -7525,6 +7545,7 @@
+ 	instViewMat.Translate(-fakeViewPos);
+ 
+ 	FsSetCameraPosition(fakeViewPos,instViewAtt,YSFALSE); // BiStartBuffer(&eye);
++    Su27Draw(*air,this,actualViewMode.viewMat,proj);
+ 
+ 	if(YSTRUE==NeedToDrawInstrument(actualViewMode))
+ 	{
+@@ -7596,6 +7617,8 @@
+ 	}
+ 
+ 	FsFlushScene(); // Added 2003/05/14
++
++
+ }
+ 
+ void FsSimulation::SimDrawGroundInterior(const ActualViewMode &actualViewMode,const class FsProjection &proj,const FsGround *gnd,const FsCockpitIndicationSet &cockpitIndicationSet) const
+@@ -8049,6 +8072,12 @@
+ #endif
+ 
+ 	FsFlushScene();
++
++ if(Su27Aircraft(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW){
++  FsSet2DDrawing();int w,h;FsGetWindowSize(w,h);const auto &p=GetPlayerAirplane()->Prop();
++  FsDrawString(12,h-42,L"Alt+1 АКБ | Alt+2 Насосы | Alt+3/4 Двигатели | Alt+5 Фонарь | Alt+6 Тормоз",YsWhite());
++  wchar_t status[240];swprintf(status,240,L"Пуск Л: %d%%   П: %d%% | Alt+ЛКМ — кнопка | ПКМ — осмотр | СКМ — вперёд",int(p.su27SpoolLeft*100),int(p.su27SpoolRight*100));FsDrawString(12,h-20,status,YsWhite());
++ }
+ }
+ 
+ void FsSimulation::SimDrawRadar(const ActualViewMode &actualViewMode) const
+@@ -8124,7 +8153,9 @@
+ 		FsInstrumentPanel *instPanel=playerPlane->instPanel;
+ 
+ 		instPanel->BeginDraw3d(fakeViewPos,localViewPos,playerPlane->Prop());
+-		instPanel->Draw3d(playerPlane->Prop(),cockpitIndicationSet);
++		auto active=cockpitIndicationSet;
++        if(Su27Aircraft(playerPlane) && playerPlane->Prop().su27Managed && !playerPlane->Prop().su27Battery){active.inst.pitch=0;active.inst.bank=0;active.inst.heading=0;}
++        instPanel->Draw3d(playerPlane->Prop(),active);
+ 
+ 		const FsInstrumentIndication &inst=cockpitIndicationSet.inst;
+ 
+@@ -10284,10 +10315,9 @@
+ 
+ 			actualViewMode.viewAttitude.YawLeft(userInput.viewHdg);
+ 			actualViewMode.viewAttitude.NoseUp(userInput.viewPch);
+-            if(0==playerPlane->name.Strcmp("STRAIGHT_TEST_PLAYER"))if(auto show=FsGetAirshow(this)){
+-                actualViewMode.viewAttitude.YawLeft(show->heading);
+-                actualViewMode.viewAttitude.NoseUp(-show->pitch);
+-            }
++            if(Su27Aircraft(playerPlane)){actualViewMode.viewAttitude.YawLeft(playerPlane->Prop().su27LookH);actualViewMode.viewAttitude.NoseUp(-playerPlane->Prop().su27LookP);}
++            else if(0==playerPlane->name.Strcmp("STRAIGHT_TEST_PLAYER"))if(auto show=FsGetAirshow(this)){actualViewMode.viewAttitude.YawLeft(show->heading);actualViewMode.viewAttitude.NoseUp(-show->pitch);}
++
+ 
+ 		}
+ 		else
+--- a/YSFLIGHT/src/core/fssu27.h
++++ b/YSFLIGHT/src/core/fssu27.h
+@@ -0,0 +1,101 @@
++#ifndef FS_SU27_DETAIL_INCLUDED
++#define FS_SU27_DETAIL_INCLUDED
++// Local, intentionally simplified cockpit systems. Not a real Su-27 checklist.
++namespace {
++struct Su27ClickCache {const FsAirplane *air=nullptr;double clock=-100;YsVec2 center[6];double radius[6]={0};bool click=false,dragging=false;int lastX=0,lastY=0,restoreX=0,restoreY=0;} su27Ui;
++bool Su27Aircraft(const FsAirplane *a){return a && 0==strcmp(a->Prop().GetIdentifier(),"SU-27_FLANKER");}
++YsVec3 Su27Button(int i){return YsVec3(-.535,1.466-i*.105,5.838);}
++void Su27Action(FsSimulation *sim,int id)
++{
++ auto a=sim->GetPlayerAirplane();if(!Su27Aircraft(a) || a->isPlayingRecord==YSTRUE)return;auto &p=a->Prop();
++ switch(id){
++ case 0:p.su27Battery=!p.su27Battery;break;
++ case 1:p.su27Pumps=!p.su27Pumps;if(!p.su27Pumps)p.su27Left=p.su27Right=false;break;
++ case 2:case 3:
++  if(!p.su27Battery || !p.su27Pumps || p.GetFuelLeft()<=0){sim->AddTimedMessage(L"Для запуска включи АКБ и насосы. Проверь топливо.");return;}
++  if(id==2)p.su27Left=!p.su27Left;else p.su27Right=!p.su27Right;break;
++ case 4:if(p.GetVelocity()>35.0 && p.su27CanopyTarget<.5){sim->AddTimedMessage(L"Открывай фонарь на стоянке или при медленном рулении.");return;}p.su27CanopyTarget=p.su27CanopyTarget>.5 ? 0.0:1.0;break;
++ case 5:p.su27Parking=!p.su27Parking;if(!p.su27Parking){p.SetBrake(YSFALSE);p.su27ParkingRelease=true;}break;
++ }
++ const wchar_t *name[]={L"АКБ",L"Топливные насосы",L"Левый двигатель",L"Правый двигатель",L"Фонарь",L"Стояночный тормоз"};
++ sim->AddTimedMessage(name[YsBound(id,0,5)]);
++ if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,*a);
++ printf("SU27ACTION id=%d battery=%d pumps=%d left=%d right=%d canopy=%.2f parking=%d\n",id,int(p.su27Battery),int(p.su27Pumps),int(p.su27Left),int(p.su27Right),p.su27CanopyTarget,int(p.su27Parking));
++}
++void Su27Tick(FsAirplane &a,FsSimulation *sim,double dt)
++{
++ if(!Su27Aircraft(&a) || dt<=0 || a.isPlayingRecord==YSTRUE)return;
++ auto &p=a.Prop();
++ if(!p.su27Managed){
++  p.su27Managed=true;const bool hot=a.GetAGL()>10;
++  p.su27Battery=p.su27Pumps=p.su27Left=p.su27Right=hot;p.su27SpoolLeft=p.su27SpoolRight=hot?1.0:0.0;p.su27Parking=!hot;
++  p.su27LookH=0;p.su27LookP=.16;su27Ui.dragging=false;
++  if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);
++ }
++ bool autoChanged=false;
++ if((!p.su27Pumps || p.GetFuelLeft()<=0) && (p.su27Left || p.su27Right)){p.su27Left=p.su27Right=false;autoChanged=true;}
++ if(p.GetVelocity()>40 && p.su27CanopyTarget!=0){p.su27CanopyTarget=0;autoChanged=true;}
++ if(autoChanged)if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);
++ auto slew=[&](double v,double target,double rate){return v<target ? YsSmaller(target,v+dt*rate):YsGreater(target,v-dt*rate);};
++ p.su27SpoolLeft=slew(p.su27SpoolLeft,p.su27Left?1.0:0.0,p.su27Left?.125:.35);
++ p.su27SpoolRight=slew(p.su27SpoolRight,p.su27Right?1.0:0.0,p.su27Right?.125:.35);
++ p.su27ThrustFactor=(p.su27SpoolLeft*p.su27SpoolLeft+p.su27SpoolRight*p.su27SpoolRight)*.5;
++ if(p.su27ThrustFactor<.01){p.SetThrottle(0.0);p.SetAfterburner(YSFALSE);}
++
++ p.su27Canopy=slew(p.su27Canopy,p.su27CanopyTarget,.4);
++ if(p.su27Parking && p.IsOnGround()==YSTRUE)p.SetBrake(YSTRUE);
++ static double lastReport=-100;static const FsAirplane *lastAir=nullptr;
++ if(lastAir!=&a || sim->GetClock()<lastReport || sim->GetClock()-lastReport>=1.0){lastAir=&a;lastReport=sim->GetClock();printf("SU27STATE time=%.3f battery=%d pumps=%d L=%.3f R=%.3f factor=%.3f canopy=%.3f brake=%.3f thrust=%.2f speed=%.3f\n",sim->GetClock(),int(p.su27Battery),int(p.su27Pumps),p.su27SpoolLeft,p.su27SpoolRight,p.su27ThrustFactor,p.su27Canopy,double(p.GetBrake()),p.GetCurrentThrust(),p.GetVelocity());}
++
++}
++void Su27Look(FsAirplane &a,bool right,bool middle,int x,int y)
++{
++ auto &p=a.Prop();
++ if(right && !su27Ui.dragging){su27Ui.restoreX=x;su27Ui.restoreY=y;}
++ if(right && su27Ui.dragging){p.su27LookH+=(x-su27Ui.lastX)*YsDegToRad(.28);p.su27LookP=YsBound(p.su27LookP+(y-su27Ui.lastY)*YsDegToRad(.28),-YsPi*.47,YsPi*.47);}
++ if(!right && su27Ui.dragging){FsSetMousePosition(su27Ui.restoreX,su27Ui.restoreY);x=su27Ui.restoreX;y=su27Ui.restoreY;}
++ if(middle){p.su27LookH=0;p.su27LookP=.16;}
++ su27Ui.dragging=right;su27Ui.lastX=x;su27Ui.lastY=y;
++}
++void Su27Mouse(FsSimulation *sim,bool lb,int mx,int my)
++{
++ auto a=sim->GetPlayerAirplane();bool down=lb && FsGetKeyState(FSKEY_ALT)==YSTRUE;
++ if(down && !su27Ui.click && a==su27Ui.air && fabs(sim->GetClock()-su27Ui.clock)<.5){
++  for(int i=0;i<6;++i)if((su27Ui.center[i]-YsVec2(mx,my)).GetLength()<su27Ui.radius[i]){Su27Action(sim,i);break;}
++ }
++ su27Ui.click=down;
++}
++void Su27Draw(const FsAirplane &a,const FsSimulation *sim,const YsMatrix4x4 &view,const FsProjection &proj)
++{
++ if(!Su27Aircraft(&a))return;const auto &p=a.Prop();
++ YsMatrix4x4 model;model.Translate(a.GetPosition());model.Rotate(a.GetAttitude());auto transform=proj.GetMatrix()*view*model;
++ int viewport[]={0,0,proj.viewportDim.x(),proj.viewportDim.y()};int ww,hh;FsGetWindowSize(ww,hh);
++ const bool main=ww==viewport[2] && hh==viewport[3];
++ if(main){su27Ui.air=&a;su27Ui.clock=sim->GetClock();}
++
++ if(p.su27Battery){YsVec3 a1,a2;auto hudLine=[&](YsVec3 x,YsVec3 y){a.GetAttitude().Mul(a1,x);a.GetAttitude().Mul(a2,y);YsColor c;c.SetIntRGB(80,230,112);FsDrawLine3d(a1,a2,c);};hudLine(YsVec3(-.10,1.79,6.21),YsVec3(.10,1.79,6.21));hudLine(YsVec3(0,1.74,6.21),YsVec3(0,1.84,6.21));}
++
++ if(p.su27Battery){
++  auto line=[&](YsVec3 x,YsVec3 y,YsColor color){YsVec3 xx,yy;a.GetAttitude().Mul(xx,x);a.GetAttitude().Mul(yy,y);FsDrawLine3d(xx,yy,color);};
++  YsColor green;green.SetIntRGB(90,218,124);
++  for(int e=0;e<2;++e){double x=e==0?-.24:.04;double level=e==0?p.su27SpoolLeft:p.su27SpoolRight;double angle=YsDegToRad(-130+260*level);line(YsVec3(x,.76,5.972),YsVec3(x+.057*sin(angle),.76+.057*cos(angle),5.972),YsWhite());}
++  for(int k=0;k<32;++k){double x=.40+.090*cos(k*YsPi/16),y=.76+.090*sin(k*YsPi/16);double xx=.40+.090*cos((k+1)*YsPi/16),yy=.76+.090*sin((k+1)*YsPi/16);line(YsVec3(x,y,5.972),YsVec3(xx,yy,5.972),green);}
++  line(YsVec3(.31,.76,5.972),YsVec3(.49,.76,5.972),green);line(YsVec3(.40,.67,5.972),YsVec3(.40,.85,5.972),green);
++  for(auto other=sim->FindNextAirplane(nullptr);other;other=sim->FindNextAirplane(other))if(other!=&a && other->iff==a.iff && other->Prop().IsActive()==YSTRUE){
++   auto rel=other->GetPosition()-a.GetPosition();YsAtt3 yaw=a.GetAttitude();yaw.SetP(0);yaw.SetB(0);yaw.MulInverse(rel,rel);
++   if(rel.x()*rel.x()+rel.z()*rel.z()<1000000){double x=.40+rel.x()*.00009,y=.76+rel.z()*.00009;line(YsVec3(x-.003,y,5.97),YsVec3(x+.003,y,5.97),green);line(YsVec3(x,y-.003,5.97),YsVec3(x,y+.003,5.97),green);}
++  }
++ }
++ bool state[]={p.su27Battery,p.su27Pumps,p.su27Left,p.su27Right,p.su27CanopyTarget>.5,p.su27Parking};
++ for(int i=0;i<6;++i){
++  auto c=Su27Button(i);YsVec3 camera;view.Mul(camera,model*c,1.0);
++  if(main){if(camera.z()>.05){su27Ui.center[i].Set(proj.cx+camera.x()*proj.prjPlnDist/camera.z(),proj.cy-camera.y()*proj.prjPlnDist/camera.z());su27Ui.radius[i]=YsBound(.055*proj.prjPlnDist/camera.z(),10.0,65.0);}else su27Ui.radius[i]=0;}
++  auto line=[&](YsVec3 x,YsVec3 y,YsColor color){YsVec3 xx,yy;a.GetAttitude().Mul(xx,x);a.GetAttitude().Mul(yy,y);FsDrawLine3d(xx,yy,color);};
++  YsColor color;double ready=i==2?p.su27SpoolLeft:(i==3?p.su27SpoolRight:1.0);
++  color.SetIntRGB(state[i]? (ready>.95?66:235):90,state[i]?(ready>.95?223:171):53,state[i]?88:48);
++  for(int k=-2;k<=2;++k)line(c+YsVec3(.043-.008,k*.002,0),c+YsVec3(.043+.008,k*.002,0),color);
++  line(c+YsVec3(-.02,-.012,0),c+YsVec3(-.02,state[i]?.012:-.025,-.035),YsWhite());
++ }
++}
++}
++#endif
+--- a/YSFLIGHT/src/gui/fsmenu.cpp
++++ b/YSFLIGHT/src/gui/fsmenu.cpp
+@@ -326,6 +326,7 @@
+     languageChoice->Select(russian ? 1 : 0);
+ 
+ 	missionsBtn=AddTextButton(MkId("straightTest"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Тест",YSTRUE);
++    AddTextButton(MkId("su27Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-27: кабина и запуск",YSTRUE);
+ 	controlsBtn=AddTextButton(MkId("controls"),FSKEY_NULL,FSGUI_PUSHBUTTON,FsGetTextResource("v4/controls",L"Controls / Change keys"),YSTRUE);
+ 
+ 	if(FsGetDate()<=20100315)
+@@ -343,6 +344,17 @@
+ 
+ void FsGuiMainDialog::OnButtonClick(FsGuiButton *btn)
+ {
++ if(btn->GetIdent()==FindIdent("su27Preview")){
++  if(!runLoop->SavePendingFlightHistory())return;
++  auto world=runLoop->GetWorld();FsFlightConfig cfg;cfg.Load(FsGetConfigFile());FsNewFlightDialogInfo info;info.SetFromConfig(world,cfg);
++  info.fieldName="AOMORI";info.playerAirInfo.typeName="SU-27_FLANKER";info.playerAirInfo.fuel=50;
++  if(auto tmpl=world->GetAirplaneTemplate("SU-27_FLANKER"))tmpl->GetProperty()->GetWeaponConfig(info.playerAirInfo.weaponConfig);
++  for(auto &w:info.wingman)w=YSFALSE;info.addComputerAircraft=YSFALSE;
++  info.customStart=YSFALSE;info.playerAirInfo.startPos="MISAWA_RW28";
++  info.groupAirStart=info.groupFormation=info.groupMission=info.flyImmediately=YSFALSE;
++  canvas->Sim_CreateFlight_Create(info);canvas->Sim_Fly(nullptr);return;
++ }
++
+ 	if(btn==missionsBtn){canvas->OpenMissions(nullptr);}
+     else if(btn==controlsBtn)
+     {
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,9 +66,9 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow LAB867 preview";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su27 Detail 1";  // Different names for screen saver programs
+ #else
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su27 Detail 1";  // Different names for screen saver programs
+ #endif
+ 
+ 
+--- a/YSFLIGHT/src/ui/fsrunloop.cpp
++++ b/YSFLIGHT/src/ui/fsrunloop.cpp
+@@ -1998,6 +1998,10 @@
+ {
+ #ifdef V861_VALIDATION
+  auto labArgs=YsString(cmd).Argv();auto labSim=world->GetSimulation();
++ if(labSim && labArgs.GetN()>=1 && 0==labArgs[0].STRCMP("SU27CHECK")){
++  if(auto a=labSim->GetPlayerAirplane()){auto &p=a->Prop();printf("SU27CHECK time=%.3f battery=%d pumps=%d L=%.6f R=%.6f factor=%.6f canopy=%.6f target=%.6f parking=%d brake=%d thrust=%.2f speed=%.4f lookH=%.6f lookP=%.6f\n",labSim->GetClock(),int(p.su27Battery),int(p.su27Pumps),p.su27SpoolLeft,p.su27SpoolRight,p.su27ThrustFactor,p.su27Canopy,p.su27CanopyTarget,int(p.su27Parking),int(p.GetBrake()),p.GetCurrentThrust(),p.GetVelocity(),p.su27LookH,p.su27LookP);}
++  return;
++ }
+  if(labSim && labArgs.GetN()>=3 && 0==labArgs[0].STRCMP("LABREPLAY"))
+  {
+   world->Jump(atof(labArgs[1]));
+--- a/YSFLIGHT/src/ui/fsscript.cpp
++++ b/YSFLIGHT/src/ui/fsscript.cpp
+@@ -36,6 +36,9 @@
+ 		auto argv=testCmd.Argv();
+ 
+ 		printf("Script>>%s\n",testCmd.c_str());
++#ifdef V861_VALIDATION
++        fflush(stdout); // Let native input tests synchronize with actual script steps.
++#endif
+ 		if(0==argv.size())
+ 		{
+ 			++programCounter;
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -105,6 +105,9 @@
+ 
+ void FsAirplaneProperty::InitializeState(void)
+ {
++ su27Managed=false;su27Battery=su27Pumps=su27Left=su27Right=true;su27Parking=su27ParkingRelease=false;
++ su27SpoolLeft=su27SpoolRight=su27ThrustFactor=1.0;su27Canopy=su27CanopyTarget=su27LookH=0.0;su27LookP=.16;
++
+ 	FsVehicleProperty::InitializeState();
+ 
+ 	// State
+@@ -1463,6 +1466,7 @@
+ 	}
+ 
+ 
++	dFuel*=su27ThrustFactor;
+ 	int i;
+ 	for(i=0; i<staWeaponSlot.GetN(); i++)
+ 	{
+@@ -1746,6 +1750,7 @@
+ 
+ 
+ 	YsVec3 vDrag,vLift;
++	thrust*=su27ThrustFactor;
+ 	vThrust*=thrust;
+ 	vDrag.Set(0.0, drag*sin(staAOA),-drag*cos(staAOA));  // 2003/05/04
+ 	vLift.Set(-lift*cos(staAOA)*sin(staSSA),
+@@ -4272,6 +4277,13 @@
+ 
+ void FsAirplaneProperty::SetupVisual(FsVisualDnm &vis) const
+ {
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
++  vis.SetState(120,0,1,GetThrottle());vis.SetPitch(122,GetElevator()*YsDegToRad(12.0));vis.SetRotation(123,-GetAileron()*YsDegToRad(12.0));
++  vis.SetState(100,0,1,su27Canopy);vis.SetState(101,0,1,staGear);
++  vis.SetState(110,(su27SpoolLeft>.95 && staAb==YSTRUE && staThrottle>.9)?1:0);
++  vis.SetState(111,(su27SpoolRight>.95 && staAb==YSTRUE && staThrottle>.9)?1:0);
++ }
++
+ 	// Test Concorde Gear Door 20030901
+ 	//vis.SetState(0,0,1,staGear);
+ 	if(staGear<0.2)
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.h
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.h
+@@ -61,6 +61,9 @@
+ class FsAirplaneProperty : public FsVehicleProperty
+ {
+ public:
++ bool su27Managed=false,su27Battery=true,su27Pumps=true,su27Left=true,su27Right=true,su27Parking=false,su27ParkingRelease=false;
++ double su27SpoolLeft=1.0,su27SpoolRight=1.0,su27ThrustFactor=1.0,su27Canopy=0.0,su27CanopyTarget=0.0,su27LookH=0.0,su27LookP=.16;
++
+ 	enum
+ 	{
+ 		MaxNumGun=8,

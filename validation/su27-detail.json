@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "test_runtime": "Win64 / Wine, same production functionality; lab-only measurement commands",
+  "delivery": "PE32 i386 Windows GUI, static C++ runtime",
+  "windows10_x86_runtime_verified": false,
+  "exe_sha256": "e52c7d0511435eb0668889c773adfd1dbc10df565cd8a005e71c69f1101ad55c",
+  "test_exe_sha256": "8fee246e32867f65bacd60e5e2f77e3e27e2a124c465ffc3e34199ba98b1a379",
+  "polygons": {
+    "su27.dnm": 7816,
+    "su27coarse.dnm": 2219,
+    "su27cockpit.dnm": 4491
+  },
+  "flight_seconds": 30,
+  "flight_cases": 2,
+  "existing_releases_unchanged": true,
+  "archives": [
+    {
+      "name": "YSFlight_Su27_32bit.zip",
+      "bytes": 13016342,
+      "sha256": "6b34f5164f1a4de202a15a41b664962b198146062ae3146162dc2bfda37d658f"
+    },
+    {
+      "name": "YSFlight_Su27_Sources.zip",
+      "bytes": 26311029,
+      "sha256": "3d8ff36ef3753e6d33a98a1de2f59c7e1646b53e1cf41ed24ea28a69f1de8792"
+    }
+  ]
+}

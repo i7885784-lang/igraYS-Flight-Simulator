@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "cases": 2,
+  "results": [
+    {
+      "name": "case-1",
+      "count": 4,
+      "gap": 50,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7312289999999848,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7312289999999848,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7312289999999848,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7312289999999848,
+          "heading_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "case-2",
+      "count": 2,
+      "gap": 50,
+      "pattern": 0,
+      "passed": true,
+      "stats": [
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7209170000000995,
+          "heading_error": 0.0
+        },
+        {
+          "drift": 0.0,
+          "altitude_error": 0.7209170000000995,
+          "heading_error": 0.0
+        }
+      ]
+    }
+  ]
+}
