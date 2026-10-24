@@ -1,0 +1,32 @@
+[
+  {
+    "file": "downloads/YSFlight_Su27_32bit.zip",
+    "http": 200,
+    "bytes": 13016342,
+    "sha256": "6b34f5164f1a4de202a15a41b664962b198146062ae3146162dc2bfda37d658f"
+  },
+  {
+    "file": "downloads/YSFlight_Su27_Sources.zip",
+    "http": 200,
+    "bytes": 26311029,
+    "sha256": "3d8ff36ef3753e6d33a98a1de2f59c7e1646b53e1cf41ed24ea28a69f1de8792"
+  },
+  {
+    "file": "reports/su27-cockpit/REPORT.md",
+    "http": 200,
+    "bytes": 5273,
+    "sha256": "c5ef007029dfc05f0e84335949538f980323a49ede36f816e02f78628ba3df82"
+  },
+  {
+    "file": "reports/su27-cockpit/final-cockpit-live.png",
+    "http": 200,
+    "bytes": 221266,
+    "sha256": "cf563e8dabaa0539211a96e61d2e8b5c4042d47f1f97cf0248178dea647b0968"
+  },
+  {
+    "file": "reports/su27-cockpit/Su27_Gameplay.mp4",
+    "http": 200,
+    "bytes": 2936933,
+    "sha256": "784ec835e3ce151d1e93f2cc3d8365e0bf60d5fc2ff6de8c9275962f5aa314c6"
+  }
+]
