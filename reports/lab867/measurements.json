@@ -1,0 +1,4187 @@
+{
+  "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+  "baseline_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+  "flight_cases": 147,
+  "pairs": {
+    "3": [
+      {
+        "valid": true,
+        "player_turn_s": 15.375,
+        "settled_15_s": 30.599999999999998,
+        "settled_5_s": 36.224999999999994,
+        "wait_after_turn_s": 15.224999999999998,
+        "max_height_error_m": 144.94405800000004,
+        "wings_15_s": [
+          28.425,
+          23.624999999999996,
+          29.099999999999998,
+          30.599999999999998,
+          28.2,
+          26.7,
+          27.150000000000002,
+          28.8
+        ]
+      },
+      {
+        "valid": true,
+        "player_turn_s": 15.450000000000001,
+        "settled_15_s": 19.575000000000003,
+        "settled_5_s": 24.9,
+        "wait_after_turn_s": 4.125000000000002,
+        "max_height_error_m": 7.212520999999924,
+        "wings_15_s": [
+          13.575000000000001,
+          13.874999999999998,
+          17.025,
+          18.0,
+          19.125,
+          18.525,
+          19.125,
+          19.575000000000003
+        ]
+      }
+    ],
+    "0": [
+      {
+        "valid": true,
+        "player_turn_s": 15.450000000000001,
+        "settled_15_s": 84.60000000000001,
+        "settled_5_s": 89.60000000000001,
+        "wait_after_turn_s": 69.15,
+        "max_height_error_m": 170.26531799999987,
+        "wings_15_s": [
+          52.35,
+          29.924999999999997,
+          54.49999999999999,
+          73.95,
+          23.924999999999997,
+          84.60000000000001,
+          37.5,
+          37.125
+        ]
+      },
+      {
+        "valid": true,
+        "player_turn_s": 15.450000000000001,
+        "settled_15_s": 61.85000000000001,
+        "settled_5_s": 66.3,
+        "wait_after_turn_s": 46.400000000000006,
+        "max_height_error_m": 149.66822500000012,
+        "wings_15_s": [
+          58.0,
+          34.125,
+          60.55,
+          36.375,
+          55.8,
+          61.85000000000001,
+          58.150000000000006,
+          61.650000000000006
+        ]
+      }
+    ],
+    "2": [
+      {
+        "valid": true,
+        "player_turn_s": 15.375,
+        "settled_15_s": 93.425,
+        "settled_5_s": 98.175,
+        "wait_after_turn_s": 78.05,
+        "max_height_error_m": 211.21720100000016,
+        "wings_15_s": [
+          34.349999999999994,
+          29.7,
+          31.275000000000002,
+          76.675,
+          58.825,
+          89.525,
+          64.825,
+          93.425
+        ]
+      },
+      {
+        "valid": true,
+        "player_turn_s": 15.45,
+        "settled_15_s": 59.075,
+        "settled_5_s": 64.325,
+        "wait_after_turn_s": 43.625,
+        "max_height_error_m": 148.66459900000007,
+        "wings_15_s": [
+          31.724999999999998,
+          24.900000000000002,
+          30.150000000000002,
+          54.72500000000001,
+          39.375,
+          59.075,
+          41.325,
+          37.05
+        ]
+      }
+    ],
+    "10": [
+      {
+        "valid": true,
+        "player_turn_s": 15.375,
+        "settled_15_s": 85.92500000000001,
+        "settled_5_s": 90.42500000000001,
+        "wait_after_turn_s": 70.55000000000001,
+        "max_height_error_m": 201.35426799999993,
+        "wings_15_s": [
+          56.975,
+          73.07499999999999,
+          60.574999999999996,
+          75.875,
+          63.37499999999999,
+          85.92500000000001,
+          35.4,
+          85.475
+        ]
+      },
+      {
+        "valid": true,
+        "player_turn_s": 15.45,
+        "settled_15_s": 33.3,
+        "settled_5_s": 38.475,
+        "wait_after_turn_s": 17.849999999999998,
+        "max_height_error_m": 173.2134000000001,
+        "wings_15_s": [
+          33.3,
+          9.225000000000001,
+          13.875,
+          13.875,
+          8.850000000000001,
+          33.0,
+          30.299999999999997,
+          32.625
+        ]
+      }
+    ]
+  },
+  "turn90": [
+    {
+      "valid": true,
+      "player_turn_s": 8.25,
+      "settled_15_s": 20.175,
+      "settled_5_s": 27.749999999999996,
+      "wait_after_turn_s": 11.925,
+      "max_height_error_m": 19.997836000000007,
+      "wings_15_s": [
+        15.675,
+        16.425,
+        15.149999999999999,
+        15.224999999999998,
+        20.175,
+        18.825,
+        13.575,
+        20.025
+      ]
+    },
+    {
+      "valid": true,
+      "player_turn_s": 8.249999999999998,
+      "settled_15_s": 19.950000000000003,
+      "settled_5_s": 24.074999999999996,
+      "wait_after_turn_s": 11.700000000000005,
+      "max_height_error_m": 46.87874700000009,
+      "wings_15_s": [
+        10.424999999999999,
+        11.174999999999999,
+        13.424999999999999,
+        13.65,
+        15.975,
+        19.950000000000003,
+        14.325000000000001,
+        15.15
+      ]
+    }
+  ],
+  "recall": [
+    {
+      "valid": true,
+      "player_turn_s": 0.0,
+      "settled_15_s": 48.25,
+      "settled_5_s": 55.3,
+      "wait_after_turn_s": 48.25,
+      "max_height_error_m": 317.606214,
+      "wings_15_s": [
+        35.775,
+        44.099999999999994,
+        36.0,
+        46.349999999999994,
+        43.8,
+        45.2,
+        46.3,
+        48.25
+      ]
+    },
+    {
+      "valid": true,
+      "player_turn_s": 0.0,
+      "settled_15_s": 41.300000000000004,
+      "settled_5_s": 42.800000000000004,
+      "wait_after_turn_s": 41.300000000000004,
+      "max_height_error_m": 247.55845699999998,
+      "wings_15_s": [
+        36.0,
+        35.4,
+        33.074999999999996,
+        34.275,
+        41.300000000000004,
+        30.9,
+        40.99999999999999,
+        31.725
+      ]
+    }
+  ],
+  "summaries": {
+    "sweep": {
+      "passed": true,
+      "cases": 37,
+      "failed_cases": [],
+      "minimum_distance": 27.437080621983696,
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "regression": {
+      "passed": true,
+      "flight_cases": 18,
+      "geometry": {
+        "passed": true,
+        "cases": 1400
+      },
+      "minimum_distance": 37.86483423714011,
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "extra": {
+      "passed": true,
+      "cases": 32,
+      "failed": [],
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n1-p3-h1000",
+          "count": 1,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.94602337203071,
+          "final_error": [
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 2,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108745,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036396422025108,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.4847120000000587,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n2-p3-h100",
+          "count": 2,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.06372818857822,
+          "final_error": [
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092458,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41011459538771633,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.252278000000004,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n3-p3-h1000",
+          "count": 3,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 45.97630540793716,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 4,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108742,
+            "min_height": 999.305861,
+            "max_height": 1000.108852,
+            "final_pitch": 0.5036396422025108,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.5199210000000676,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n4-p3-h100",
+          "count": 4,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 43.45528112459888,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092457,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.4101094387675601,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.25172000000000594,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n5-p3-h1000",
+          "count": 5,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 46.15708658524189,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 6,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108746,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036430799492816,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.5183570000000373,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n6-p3-h100",
+          "count": 6,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 43.589207084905674,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 7,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092459,
+            "min_height": 99.410542,
+            "max_height": 100.092583,
+            "final_pitch": 0.4101071469363796,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.2518079999999969,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n7-p3-h1000",
+          "count": 7,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 46.33617430692843,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 8,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108741,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036442258648719,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.516079999999988,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n8-p3-h100",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 43.32384296589381,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092454,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41010256327401856,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.25230600000000436,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n1-p7-h1000",
+          "count": 1,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 53.61948030496445,
+          "final_error": [
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 2,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108744,
+            "min_height": 999.305861,
+            "max_height": 1000.10885,
+            "final_pitch": 0.5036545391051842,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.4870819999999867,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n2-p7-h100",
+          "count": 2,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 53.69330862239677,
+          "final_error": [
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092458,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.4101111576409455,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.6065360000000055,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n3-p7-h1000",
+          "count": 3,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 50.132728335825604,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 4,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108742,
+            "min_height": 999.305861,
+            "max_height": 1000.108852,
+            "final_pitch": 0.5036522472740037,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.5182619999998224,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n4-p7-h100",
+          "count": 4,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 52.667369391006595,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092459,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41010485510519906,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 0.6087150000000179,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n5-p7-h1000",
+          "count": 5,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 50.15235583381366,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 6,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108744,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.503648809527233,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.522215999999844,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n6-p7-h100",
+          "count": 6,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 51.09904624779162,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 7,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092457,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41010485510519906,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.7236640000000136,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n7-p7-h1000",
+          "count": 7,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 50.031740098115634,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 8,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108741,
+            "min_height": 999.305861,
+            "max_height": 1000.108852,
+            "final_pitch": 0.5036430799492816,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.5188479999999345,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-n8-p7-h100",
+          "count": 8,
+          "pattern": 7,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.16306653798641,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 7,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092456,
+            "min_height": 99.410542,
+            "max_height": 100.092581,
+            "final_pitch": 0.4101037091896088,
+            "final_state": 0
+          },
+          "ordered": true,
+          "maximum_extra_climb": 1.7245810000000006,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p0",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 61.242902488871394,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108734,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036041188192127,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p1",
+          "count": 8,
+          "pattern": 1,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 57.28309343023149,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 1,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108735,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036109943127542,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p2",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 46.551020149170924,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5035972433256712,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p4",
+          "count": 8,
+          "pattern": 4,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 39.57199940098478,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 4,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5035932326211052,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p5",
+          "count": 8,
+          "pattern": 5,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 42.761110688769996,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 5,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036041188192127,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p6",
+          "count": 8,
+          "pattern": 6,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 42.9784116967941,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 6,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5036075565659835,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p10",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 35.27108039697187,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5035909407899247,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:REPORT\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "final-scatter-p11",
+          "count": 8,
+          "pattern": 11,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 44.65551323066214,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 11,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5035989621990566,
+            "final_state": 0
+          },
+          "simultaneous": true,
+          "passed": true
+        },
+        {
+          "passed": true,
+          "checks": {
+            "expected_members": true,
+            "compact_numbers": true,
+            "alive": true,
+            "clearance": true,
+            "all_cover": true,
+            "height_setting": true,
+            "settled": true,
+            "ascent_completed": true,
+            "symmetric_cover": true,
+            "distinct_places": true,
+            "exact_compact_places": true,
+            "safe_route_found": true
+          },
+          "count": 2,
+          "height": 40,
+          "pattern": 2,
+          "mode": "cover",
+          "minimum_distance": 39.4578352761516,
+          "snapshots": [
+            {
+              "time": 74.085,
+              "members": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "error": 0.014
+                }
+              ],
+              "goals": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                }
+              ]
+            }
+          ],
+          "yields": [],
+          "name": "cover-n2-h40"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "expected_members": true,
+            "compact_numbers": true,
+            "alive": true,
+            "clearance": true,
+            "all_cover": true,
+            "height_setting": true,
+            "settled": true,
+            "ascent_completed": true,
+            "symmetric_cover": true,
+            "distinct_places": true,
+            "exact_compact_places": true,
+            "safe_route_found": true
+          },
+          "count": 3,
+          "height": 40,
+          "pattern": 2,
+          "mode": "cover",
+          "minimum_distance": 50.000410003388026,
+          "snapshots": [
+            {
+              "time": 73.97,
+              "members": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "error": 0.014
+                }
+              ],
+              "goals": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "x": 0.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                }
+              ]
+            }
+          ],
+          "yields": [],
+          "name": "cover-n3-h40"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "expected_members": true,
+            "compact_numbers": true,
+            "alive": true,
+            "clearance": true,
+            "all_cover": true,
+            "height_setting": true,
+            "settled": true,
+            "ascent_completed": true,
+            "symmetric_cover": true,
+            "distinct_places": true,
+            "exact_compact_places": true,
+            "safe_route_found": true
+          },
+          "count": 5,
+          "height": 40,
+          "pattern": 2,
+          "mode": "cover",
+          "minimum_distance": 46.81616362444647,
+          "snapshots": [
+            {
+              "time": 74.226,
+              "members": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "error": 0.015
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "error": 0.016
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "error": 0.017
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "error": 0.014
+                }
+              ],
+              "goals": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "x": 0.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                }
+              ]
+            }
+          ],
+          "yields": [],
+          "name": "cover-n5-h40"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "expected_members": true,
+            "compact_numbers": true,
+            "alive": true,
+            "clearance": true,
+            "all_cover": true,
+            "height_setting": true,
+            "settled": true,
+            "ascent_completed": true,
+            "symmetric_cover": true,
+            "distinct_places": true,
+            "exact_compact_places": true,
+            "safe_route_found": true
+          },
+          "count": 6,
+          "height": 40,
+          "pattern": 2,
+          "mode": "cover",
+          "minimum_distance": 39.45719898467084,
+          "snapshots": [
+            {
+              "time": 74.256,
+              "members": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 7,
+                  "slot": 5,
+                  "role": 5,
+                  "error": 0.015
+                }
+              ],
+              "goals": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 7,
+                  "slot": 5,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                }
+              ]
+            }
+          ],
+          "yields": [],
+          "name": "cover-n6-h40"
+        },
+        {
+          "passed": true,
+          "checks": {
+            "expected_members": true,
+            "compact_numbers": true,
+            "alive": true,
+            "clearance": true,
+            "all_cover": true,
+            "height_setting": true,
+            "settled": true,
+            "ascent_completed": true,
+            "symmetric_cover": true,
+            "distinct_places": true,
+            "exact_compact_places": true,
+            "safe_route_found": true
+          },
+          "count": 7,
+          "height": 40,
+          "pattern": 2,
+          "mode": "cover",
+          "minimum_distance": 42.95170977116955,
+          "snapshots": [
+            {
+              "time": 74.348,
+              "members": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "error": 0.015
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "error": 0.016
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "error": 0.017
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "error": 0.014
+                },
+                {
+                  "id": 7,
+                  "slot": 5,
+                  "role": 5,
+                  "error": 0.053
+                },
+                {
+                  "id": 8,
+                  "slot": 6,
+                  "role": 5,
+                  "error": 0.016
+                }
+              ],
+              "goals": [
+                {
+                  "id": 2,
+                  "slot": 0,
+                  "role": 5,
+                  "x": 0.0,
+                  "y": 40.0,
+                  "z": -50.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 3,
+                  "slot": 1,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 4,
+                  "slot": 2,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -100.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 5,
+                  "slot": 3,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 6,
+                  "slot": 4,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -150.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 7,
+                  "slot": 5,
+                  "role": 5,
+                  "x": 25.0,
+                  "y": 40.0,
+                  "z": -200.0,
+                  "ascent": 0,
+                  "independent": 0
+                },
+                {
+                  "id": 8,
+                  "slot": 6,
+                  "role": 5,
+                  "x": -25.0,
+                  "y": 40.0,
+                  "z": -200.0,
+                  "ascent": 0,
+                  "independent": 0
+                }
+              ]
+            }
+          ],
+          "yields": [],
+          "name": "cover-n7-h40"
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 110",
+          "name": "final-straggler-slot0",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 35.9082399650653,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108813,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5040768090001957,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 110",
+          "name": "final-straggler-slot3",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 41.985816424474216,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108813,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5040768090001957,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 110",
+          "name": "final-straggler-slot6",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 42.11110206223192,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108812,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5040773819579908,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ],
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "special": {
+      "passed": true,
+      "cases": 4,
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 110",
+          "name": "special-straggler-slot1",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 41.28633448534756,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108812,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5040756630846054,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL -100000 1000 1800 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "left-turn",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.2408030332954,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108724,
+            "min_height": 983.701746,
+            "max_height": 1000.108727,
+            "final_pitch": 0.503635631497945,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1500 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "climb-turn",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 41.58112868564698,
+          "final_error": [
+            0.015,
+            0.015,
+            0.015,
+            0.015,
+            0.015,
+            0.015,
+            0.015,
+            0.015
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1500.117441,
+            "min_height": 999.305861,
+            "max_height": 1500.117441,
+            "final_pitch": 0.5618979908114129,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 300 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "descent-turn",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 32.05034137398868,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 300.097852,
+            "min_height": 300.097852,
+            "max_height": 1000.0,
+            "final_pitch": 0.42991888157641317,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ]
+    },
+    "energy": {
+      "passed": true,
+      "cases": 9,
+      "failed": [],
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 100000 230\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 140\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 180\nFLIGHTCMD:TESTADVANCE 100",
+          "name": "energy-speed-step-n2",
+          "count": 2,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.0704159114703,
+          "final_error": [
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.106819,
+            "min_height": 999.153783,
+            "max_height": 1000.909897,
+            "final_pitch": 0.49208079164354157,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 16\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 220\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 160\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "energy-speed-during-rejoin-n2",
+          "count": 2,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.682939613002006,
+          "final_error": [
+            0.02,
+            0.02
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.150895,
+            "min_height": 983.703268,
+            "max_height": 1001.030437,
+            "final_pitch": 0.8260177833796394,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 100000 230\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 140\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 180\nFLIGHTCMD:TESTADVANCE 100",
+          "name": "energy-speed-step-n4",
+          "count": 4,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.076863341149604,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.106817,
+            "min_height": 999.153606,
+            "max_height": 1000.908804,
+            "final_pitch": 0.49207219727661466,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 16\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 220\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 160\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "energy-speed-during-rejoin-n4",
+          "count": 4,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.679587098769886,
+          "final_error": [
+            0.02,
+            0.02,
+            0.02,
+            0.02
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.150895,
+            "min_height": 983.705351,
+            "max_height": 1001.030182,
+            "final_pitch": 0.8260200752108199,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 100000 230\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 140\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 100000 180\nFLIGHTCMD:TESTADVANCE 100",
+          "name": "energy-speed-step-n8",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.072496114708336,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.106814,
+            "min_height": 999.15348,
+            "max_height": 1000.910749,
+            "final_pitch": 0.49205959220512174,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 16\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 220\nFLIGHTCMD:TESTADVANCE 20\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 160\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "energy-speed-during-rejoin-n8",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.74273965036451,
+          "final_error": [
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02,
+            0.02
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.150894,
+            "min_height": 983.703482,
+            "max_height": 1001.027829,
+            "final_pitch": 0.8260097619705075,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 140",
+          "name": "energy-mixed-aircraft",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 41.89016156945235,
+          "final_error": [
+            0.023,
+            0.014,
+            0.023,
+            0.014,
+            0.023,
+            0.014,
+            0.023,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108669,
+            "min_height": 983.704387,
+            "max_height": 1000.575642,
+            "final_pitch": 0.5031990376580553,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "WAITFOR:SIMTIME 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nWAITFOR:SIMTIME 70",
+          "name": "energy-realtime-turn",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.88820870215204,
+          "final_error": [
+            0.014,
+            0.014,
+            0.015,
+            0.015,
+            0.015,
+            0.015,
+            0.016,
+            0.016
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.114281,
+            "min_height": 982.883017,
+            "max_height": 1000.468676,
+            "final_pitch": 0.5045575205903104,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 0.5\nFLIGHTCMD:REPORT\nFLIGHTCMD:TESTADVANCE 70",
+          "name": "energy-control-trace",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.223877124556,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108687,
+            "min_height": 983.660206,
+            "max_height": 1000.57393,
+            "final_pitch": 0.503298732314408,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ],
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "state": {
+      "passed": true,
+      "cases": 4,
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 2",
+          "name": "state-save-long-intercept",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.94602337203071,
+          "final_error": [
+            0.087,
+            876.892,
+            0.087,
+            0.087,
+            0.087,
+            0.087,
+            0.087,
+            0.087
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 999.431795,
+            "min_height": 999.305861,
+            "max_height": 1000.0,
+            "final_pitch": 0.5220350251729811,
+            "final_state": 0
+          }
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 2",
+          "name": "state-reload-long-intercept",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.94602337203071,
+          "final_error": [
+            0.089,
+            377.243,
+            0.089,
+            0.089,
+            0.089,
+            0.089,
+            0.089,
+            0.089
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 999.431795,
+            "min_height": 999.305861,
+            "max_height": 1000.0,
+            "final_pitch": 0.5220350251729811,
+            "final_state": 0
+          }
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 0.1",
+          "name": "state-save-slot-blend",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 49.94602337203071,
+          "final_error": [
+            50.0,
+            70.701,
+            111.797,
+            141.407,
+            180.266,
+            212.113,
+            249.983,
+            282.817
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 999.626157,
+            "min_height": 999.305861,
+            "max_height": 1000.0,
+            "final_pitch": 0.5224853699999539,
+            "final_state": 0
+          }
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 0.1",
+          "name": "state-reload-slot-blend",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 48.94665954765748,
+          "final_error": [
+            0.11,
+            1.178,
+            0.11,
+            0.11,
+            0.11,
+            0.11,
+            0.11,
+            0.11
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 999.381713,
+            "min_height": 999.381713,
+            "max_height": 1000.0,
+            "final_pitch": 0.5279003941217353,
+            "final_state": 0
+          }
+        }
+      ]
+    },
+    "low": {
+      "passed": true,
+      "cases": 3,
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 40\nFLIGHTCMD:LEADERGOAL 20000 100 100000 180\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "low-recall-h10",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 10,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 37.94986310626342,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 10.0,
+            "final_height": 100.093143,
+            "min_height": 9.835587,
+            "max_height": 594.589401,
+            "final_pitch": 0.4057245927614239,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "low-recall-h40",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 40,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 47.90332491334533,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 40.0,
+            "final_height": 40.091417,
+            "min_height": 39.417238,
+            "max_height": 40.091539,
+            "final_pitch": 0.4043695475759395,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "low-recall-h200",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 200,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.33672432464972,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 200.0,
+            "final_height": 200.094206,
+            "min_height": 199.399324,
+            "max_height": 200.094329,
+            "final_pitch": 0.41980674945014934,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ]
+    },
+    "switch": {
+      "passed": true,
+      "cases": 6,
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-p3-to-p2",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.21419164801889,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108708,
+            "min_height": 983.702604,
+            "max_height": 1000.575115,
+            "final_pitch": 0.503421345282566,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 103\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-p2-to-p3",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 27.685970122571376,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108707,
+            "min_height": 983.702221,
+            "max_height": 1000.575139,
+            "final_pitch": 0.5034156157046147,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-p0-to-p10",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.521216710734887,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108708,
+            "min_height": 983.700775,
+            "max_height": 1000.574602,
+            "final_pitch": 0.5034201993669758,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-p10-to-p0",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 22.419048098908505,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108709,
+            "min_height": 983.703477,
+            "max_height": 1000.575164,
+            "final_pitch": 0.5034219182403611,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 5\nFLIGHTCMD:TESTADVANCE 25\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:SQUAD 103\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-cover-recall",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 38.20716156829837,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108687,
+            "min_height": 999.305861,
+            "max_height": 1000.108852,
+            "final_pitch": 0.5033216506262133,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-scatter-recall",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.046078846768758,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108711,
+            "min_height": 999.305861,
+            "max_height": 1000.108851,
+            "final_pitch": 0.5034505661301177,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ],
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "switchstress": {
+      "passed": true,
+      "cases": 3,
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-stress-0",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 22.262524811075313,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108707,
+            "min_height": 983.701726,
+            "max_height": 1000.574948,
+            "final_pitch": 0.5034161886624099,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-stress-1",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 22.34568732572623,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108708,
+            "min_height": 983.701899,
+            "max_height": 1000.574842,
+            "final_pitch": 0.5034207723247709,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 8\nFLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "switch-stress-2",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 22.30420095923435,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108708,
+            "min_height": 983.702704,
+            "max_height": 1000.575242,
+            "final_pitch": 0.5034179075357952,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ],
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "profiles": {
+      "passed": true,
+      "cases": 21,
+      "results": [
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n1",
+          "count": 1,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 70.67288369827301,
+          "final_error": [
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 2,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.70203,
+            "max_height": 1000.574846,
+            "final_pitch": 0.5035754709294562,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n2",
+          "count": 2,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 52.537868591397356,
+          "final_error": [
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.704609,
+            "max_height": 1000.575737,
+            "final_pitch": 0.5035783357184318,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n3",
+          "count": 3,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 32.97725484470295,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 4,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.704817,
+            "max_height": 1000.575831,
+            "final_pitch": 0.5035794816340221,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n4",
+          "count": 4,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.253408312701254,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.700596,
+            "max_height": 1000.574593,
+            "final_pitch": 0.5035794816340221,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n5",
+          "count": 5,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 33.23493886901824,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 6,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.705903,
+            "max_height": 1000.575949,
+            "final_pitch": 0.5035766168450464,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n6",
+          "count": 6,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.242747288408808,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 7,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.706602,
+            "max_height": 1000.57607,
+            "final_pitch": 0.5035680224781195,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 100\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p0-n7",
+          "count": 7,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.40149320695543,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 8,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.703839,
+            "max_height": 1000.575345,
+            "final_pitch": 0.5035640117735536,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n1",
+          "count": 1,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 70.67148474153367,
+          "final_error": [
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 2,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.704928,
+            "max_height": 1000.575684,
+            "final_pitch": 0.5035800545918172,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n2",
+          "count": 2,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 53.408757367705114,
+          "final_error": [
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.70051,
+            "max_height": 1000.574483,
+            "final_pitch": 0.5035766168450464,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n3",
+          "count": 3,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.824590246454395,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 4,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.701813,
+            "max_height": 1000.574924,
+            "final_pitch": 0.5035771898028415,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n4",
+          "count": 4,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.702551163660228,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.701267,
+            "max_height": 1000.57479,
+            "final_pitch": 0.503574897971661,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n5",
+          "count": 5,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.926623399021057,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 6,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.705678,
+            "max_height": 1000.575802,
+            "final_pitch": 0.5035789086762269,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n6",
+          "count": 6,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.838336588545165,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 7,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.704498,
+            "max_height": 1000.575397,
+            "final_pitch": 0.5035697413515049,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 102\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p2-n7",
+          "count": 7,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.759377606566435,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 8,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108735,
+            "min_height": 983.701676,
+            "max_height": 1000.574679,
+            "final_pitch": 0.5035634388157584,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n1",
+          "count": 1,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 38.76223835791881,
+          "final_error": [
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 2,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.704158,
+            "max_height": 1000.575716,
+            "final_pitch": 0.5035817734652027,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n2",
+          "count": 2,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 37.770283034179045,
+          "final_error": [
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 3,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108739,
+            "min_height": 983.705572,
+            "max_height": 1000.575789,
+            "final_pitch": 0.5035823464229978,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n3",
+          "count": 3,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 36.691585461820594,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 4,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.704573,
+            "max_height": 1000.57579,
+            "final_pitch": 0.5035754709294562,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n4",
+          "count": 4,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 36.60816877448235,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 5,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.702903,
+            "max_height": 1000.574937,
+            "final_pitch": 0.5035726061404805,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n5",
+          "count": 5,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.68801174537221,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 6,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.704659,
+            "max_height": 1000.575807,
+            "final_pitch": 0.5035783357184318,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n6",
+          "count": 6,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.95237050398684,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 7,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.700467,
+            "max_height": 1000.574546,
+            "final_pitch": 0.5035726061404805,
+            "final_state": 0
+          },
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:SQUAD 110\nFLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "profile-p10-n7",
+          "count": 7,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.885030997796747,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 8,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.704351,
+            "max_height": 1000.575376,
+            "final_pitch": 0.503574897971661,
+            "final_state": 0
+          },
+          "passed": true
+        }
+      ],
+      "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f"
+    },
+    "repeat": {
+      "passed": true,
+      "cases": 20,
+      "candidate_cases": 10,
+      "baseline_cases": 10,
+      "results": [
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-1-p3",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 38.27686149877549,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.701677,
+            "max_height": 1000.574701,
+            "final_pitch": 0.5035726061404805,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 30.675,
+          "settled_5_s": 36.224999999999994,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-1-p3",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.22542421577072,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.701356,
+            "max_height": 1000.574863,
+            "final_pitch": 0.503574897971661,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 19.575,
+          "settled_5_s": 24.9,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-1-p0",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 24.437972164887213,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.019,
+            0.011,
+            0.026
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.701356,
+            "max_height": 1000.574846,
+            "final_pitch": 0.5035720331826854,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 88.65,
+          "settled_5_s": 93.25,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-1-p0",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.271213446675752,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.70256,
+            "max_height": 1000.575226,
+            "final_pitch": 0.5035697413515049,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 61.8,
+          "settled_5_s": 66.25,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-1-p2",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 24.955811780925774,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.031,
+            0.011,
+            0.058
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.705117,
+            "max_height": 1000.57576,
+            "final_pitch": 0.5035680224781195,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 93.375,
+          "settled_5_s": 98.125,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-1-p2",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.680168517634883,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.70301,
+            "max_height": 1000.575198,
+            "final_pitch": 0.5035640117735536,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 60.175,
+          "settled_5_s": 65.475,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-1-p10",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.993087409727558,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.018,
+            0.011,
+            0.016
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.701171,
+            "max_height": 1000.574596,
+            "final_pitch": 0.5035720331826854,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 86.0,
+          "settled_5_s": 90.5,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-1-p10",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 27.24096472240967,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.701408,
+            "max_height": 1000.574742,
+            "final_pitch": 0.5035737520560708,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 33.15,
+          "settled_5_s": 38.25,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-2-p3",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 38.2490237687385,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.70139,
+            "max_height": 1000.574634,
+            "final_pitch": 0.5035720331826854,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 30.6,
+          "settled_5_s": 36.225,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-2-p3",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 34.22834618772358,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.703263,
+            "max_height": 1000.575115,
+            "final_pitch": 0.5035708872670952,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 19.575,
+          "settled_5_s": 24.900000000000002,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-2-p0",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 24.108812059897613,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.018,
+            0.011,
+            0.023
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108735,
+            "min_height": 983.703902,
+            "max_height": 1000.575448,
+            "final_pitch": 0.5035594281111925,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 88.47500000000001,
+          "settled_5_s": 93.075,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-2-p0",
+          "count": 8,
+          "pattern": 0,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 31.713867227620323,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 0,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.70317,
+            "max_height": 1000.574979,
+            "final_pitch": 0.5035680224781195,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 61.775000000000006,
+          "settled_5_s": 66.22500000000001,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-2-p2",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 25.538257460425008,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.032,
+            0.011,
+            0.058
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.702817,
+            "max_height": 1000.57492,
+            "final_pitch": 0.5035714602248903,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 93.375,
+          "settled_5_s": 98.125,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-2-p2",
+          "count": 8,
+          "pattern": 2,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.79934252384271,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 2,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108736,
+            "min_height": 983.701318,
+            "max_height": 1000.57469,
+            "final_pitch": 0.5035680224781195,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 60.300000000000004,
+          "settled_5_s": 65.6,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-before-2-p10",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 32.02740584088232,
+          "final_error": [
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.011,
+            0.013,
+            0.011,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108738,
+            "min_height": 983.700263,
+            "max_height": 1000.574577,
+            "final_pitch": 0.5035737520560708,
+            "final_state": 0
+          },
+          "version": "before",
+          "settled_15_s": 83.05,
+          "settled_5_s": 87.55,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 10\nFLIGHTCMD:LEADERGOAL 0 1000 -100000 180\nFLIGHTCMD:TESTADVANCE 120",
+          "name": "repeat-after-2-p10",
+          "count": 8,
+          "pattern": 10,
+          "model": "MIG-29_FULCRUM",
+          "height": 1000,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 28.265465392421802,
+          "final_error": [
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014,
+            0.014
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 10,
+          "player": {
+            "start_height": 1000.0,
+            "final_height": 1000.108737,
+            "min_height": 983.701809,
+            "max_height": 1000.574724,
+            "final_pitch": 0.5035708872670952,
+            "final_state": 0
+          },
+          "version": "after",
+          "settled_15_s": 33.974999999999994,
+          "settled_5_s": 39.075,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "recall-before-1",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 45.31063314569638,
+          "final_error": [
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092459,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41010313623181366,
+            "final_state": 0
+          },
+          "version": "before",
+          "recall": true,
+          "settled_15_s": 48.15299999999999,
+          "settled_5_s": 55.40299999999999,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "recall-after-1",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 45.039701501512404,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092459,
+            "min_height": 99.410542,
+            "max_height": 100.092582,
+            "final_pitch": 0.41010600102078937,
+            "final_state": 0
+          },
+          "version": "after",
+          "recall": true,
+          "settled_15_s": 41.161,
+          "settled_5_s": 42.661,
+          "passed": true
+        },
+        {
+          "exe_sha256": "96775547b3f9f483d71165bb0fb335b00b24d3357841ff88a368b4da7d69f7db",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "recall-before-2",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 44.605421105015374,
+          "final_error": [
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009,
+            0.009
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": null,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092455,
+            "min_height": 99.410542,
+            "max_height": 100.092583,
+            "final_pitch": 0.41010657397858447,
+            "final_state": 0
+          },
+          "version": "before",
+          "recall": true,
+          "settled_15_s": 47.88499999999999,
+          "settled_5_s": 55.13499999999999,
+          "passed": true
+        },
+        {
+          "exe_sha256": "3689f75529675f9983ae60f285d0dae2f8ec51dcd4861050704c05971446be8f",
+          "commands": "FLIGHTCMD:TESTADVANCE 5\nFLIGHTCMD:SQUAD 2\nFLIGHTCMD:TESTADVANCE 18\nFLIGHTCMD:SQUAD 1\nFLIGHTCMD:TESTADVANCE 110",
+          "name": "recall-after-2",
+          "count": 8,
+          "pattern": 3,
+          "model": "MIG-29_FULCRUM",
+          "height": 100,
+          "spacing": 50,
+          "alive": true,
+          "minimum_distance": 45.37983286574791,
+          "final_error": [
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012,
+            0.012
+          ],
+          "maximized": true,
+          "record_alignment": true,
+          "record_aircraft": 9,
+          "native_pattern": 3,
+          "player": {
+            "start_height": 100.0,
+            "final_height": 100.092457,
+            "min_height": 99.410542,
+            "max_height": 100.092583,
+            "final_pitch": 0.4101111576409455,
+            "final_state": 0
+          },
+          "version": "after",
+          "recall": true,
+          "settled_15_s": 41.2,
+          "settled_5_s": 42.7,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

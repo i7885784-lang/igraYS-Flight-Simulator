@@ -1,0 +1,135 @@
+[
+  {
+    "file": "05-game-turn.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "04fe807807a56f61ced6de129eab65cad8d1166bf917ddb06f791b44132d90d7",
+    "decoded": true
+  },
+  {
+    "file": "detail-column.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "86b459b73ba081c5c50fc65d51f0e23e8f4532e987f05919ff12c5b70db46ba9",
+    "decoded": true
+  },
+  {
+    "file": "before-p10.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "1acaaa77690a3ca876005ddac21d6502901af7411f15f37d572adbf25f240178",
+    "decoded": true
+  },
+  {
+    "file": "after-p3.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "b0932799f7fcf333c3a64cf054e0a667a28bbf63b24e6651b4bcc02a8345a652",
+    "decoded": true
+  },
+  {
+    "file": "02-wait.png",
+    "width": 1750,
+    "height": 1125,
+    "sha256": "15960f07a70fa1408ba787254db66782eb500522e04cce74dbf41b72285e879b",
+    "decoded": true
+  },
+  {
+    "file": "03-height.png",
+    "width": 1750,
+    "height": 1125,
+    "sha256": "b4485fcfb386cce203e11d71dc1e0b8604f43fc816043f4c2b1552919239f24c",
+    "decoded": true
+  },
+  {
+    "file": "04-layouts.png",
+    "width": 1440,
+    "height": 1200,
+    "sha256": "dc6a3db77ded6384e1fb60679464491ccd19b004fb680de81c40597b469f9fa7",
+    "decoded": true
+  },
+  {
+    "file": "01-exact-places.png",
+    "width": 1750,
+    "height": 1125,
+    "sha256": "658fcddcae1c52091d78e3f620bfff842ea939cdabae0e0b8682529e8277a620",
+    "decoded": true
+  },
+  {
+    "file": "06-game-formed.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "9f5248bc6d7dcb154f16e529553b93d631e1fda6a3bf89b86c129a8e023b7641",
+    "decoded": true
+  },
+  {
+    "file": "after-p2.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "797bb812fb50b9bf341652dd5a03da220b2d7511d60f7ba0c128877e2dd2dadc",
+    "decoded": true
+  },
+  {
+    "file": "09-four-native-views.png",
+    "width": 1920,
+    "height": 1160,
+    "sha256": "1919eecaca449c97e40a590474be46a86271d5c284822693dead61e8b65968d9",
+    "decoded": true
+  },
+  {
+    "file": "before-p2.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "52cc60977e064a3481f705ba7ebbbecd96ef11ebd89108b4614fb50984b41734",
+    "decoded": true
+  },
+  {
+    "file": "before-p3.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "8759045df6c6205f6f6b1c88a208715709ba0b127e027796f4993ec4e02a7d97",
+    "decoded": true
+  },
+  {
+    "file": "08-scheme.png",
+    "width": 1600,
+    "height": 1000,
+    "sha256": "9b213c122dff0290b82381c2ec8aa55da5cee5b9eddee9ad1bdecd207edca7bf",
+    "decoded": true
+  },
+  {
+    "file": "10-transition-check.png",
+    "width": 1690,
+    "height": 585,
+    "sha256": "77a3f1ed1940df2d72ba1f9d28e0432cadcb811325450077f00eb1d054174156",
+    "decoded": true
+  },
+  {
+    "file": "after-p10.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "f234fe3ac569ad46a17f3198767ff8b44932faf7bb96389463fef737425db58a",
+    "decoded": true
+  },
+  {
+    "file": "after-p0.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "b82251fc6d32e7e540bf290a11b662831218934124ddf243477e41d1a788676b",
+    "decoded": true
+  },
+  {
+    "file": "before-p0.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "246deb2e7946624243ab55861e2f84e54b7f53e47ae338c3519729c9d761222d",
+    "decoded": true
+  },
+  {
+    "file": "07-close.png",
+    "width": 1280,
+    "height": 800,
+    "sha256": "75ca80d5ee85476e937a06879106243837b69b11a179c7cc6a300246c91d0fae",
+    "decoded": true
+  }
+]

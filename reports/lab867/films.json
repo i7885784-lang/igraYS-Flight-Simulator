@@ -1,0 +1,155 @@
+[
+  {
+    "name": "before-p3",
+    "record": "/workspace/ysflight-work/lab866/validation/stable-n8-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "before-p0",
+    "record": "/workspace/ysflight-work/lab866/validation/stable-pattern0-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "before-p2",
+    "record": "/workspace/ysflight-work/lab866/validation/stable-pattern2-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "before-p10",
+    "record": "/workspace/ysflight-work/lab866/validation/stable-pattern10-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "after-p3",
+    "record": "/workspace/ysflight-work/lab867/validation/stable-n8-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "after-p0",
+    "record": "/workspace/ysflight-work/lab867/validation/stable-pattern0-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "after-p2",
+    "record": "/workspace/ysflight-work/lab867/validation/stable-pattern2-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "after-p10",
+    "record": "/workspace/ysflight-work/lab867/validation/stable-pattern10-a180.record.yfs",
+    "rate": 4,
+    "simulated_duration": 115,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 1980,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  },
+  {
+    "name": "detail-column",
+    "record": "/workspace/ysflight-work/lab867/validation/stable-n8-a180.record.yfs",
+    "rate": 1,
+    "simulated_duration": 45,
+    "window": {
+      "maximized": 0,
+      "minimized": 0,
+      "foreground": 1,
+      "x": 4,
+      "y": 30,
+      "width": 1280,
+      "height": 800
+    },
+    "minimum_camera_m": 700,
+    "camera": "fit all nine aircraft every rendered frame, radius multiplier 3.8"
+  }
+]

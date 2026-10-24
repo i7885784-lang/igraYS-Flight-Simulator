@@ -1,0 +1,82 @@
+[
+  {
+    "file": "clear-comparison.mp4",
+    "sha256": "4120a9cb24cbcd0fa1606ce183aa4281ebd973fc44b81fa4451c01999ae79030",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1600,
+          "height": 1000
+        }
+      ],
+      "format": {
+        "duration": "200.500000",
+        "size": "19328964"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "detail-column.mp4",
+    "sha256": "93a2123c65cf750710c1339d385914b014d2802464b906f6b45c5841002e9de2",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "format": {
+        "duration": "50.100000",
+        "size": "2050507"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "before-flight.mp4",
+    "sha256": "7b334f01f1732ba9cf7364232014504394f2b57b7a13b693319de4897f4742e0",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "format": {
+        "duration": "133.400000",
+        "size": "3097009"
+      }
+    },
+    "full_decode_passed": true
+  },
+  {
+    "file": "after-flight.mp4",
+    "sha256": "2f81ba4532d5cc60266e904029e25125d0643f9d3977b6d359eabbef5bd0e5f7",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "format": {
+        "duration": "134.400000",
+        "size": "2812742"
+      }
+    },
+    "full_decode_passed": true
+  }
+]

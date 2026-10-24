@@ -1,0 +1,253 @@
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.cpp
+@@ -175,6 +175,7 @@
+ 	fprintf(fp,"FOM_SYNC %s\n",FsTrueFalseString(synchronizeTrigger));
+     if(YSTRUE==headingOnly)fprintf(fp,"FOMLEVEL TRUE\n");
+     if(longRangeIntercept)fprintf(fp,"FOMLONG TRUE\n");
++    if(slotBlendActive)fprintf(fp,"FOMBLEND %.9f %.9f %.9f\n",spacing.x(),spacing.y(),spacing.z());
+     if(coverAscent || coverLateral)fprintf(fp,"FOMCOVER %.6f %.6f %.6f %d %d\n",coverHold.x(),coverHold.y(),coverHold.z(),coverAscent ? 1:2,int(coverAlong));
+     if(yieldDeparture)fprintf(fp,"FOMYIELD %.6f %.6f %.6f %.6f\n",yieldStraightAt,yieldStraightVelocity.x(),yieldStraightVelocity.y(),yieldStraightVelocity.z());
+     if(independentDeparture)fprintf(fp,"FOMDEPART %.9f %.9f %.9f %.6f\n",departureVelocity.x(),departureVelocity.y(),departureVelocity.z(),departureAltitude);
+@@ -231,6 +232,8 @@
+ 			}
+             else if(0==strcmp(args[0],"FOMLONG") && args.GetN()>=2)
+             {longRangeIntercept=(YsStrToBool(args[1])==YSTRUE);}
++            else if(0==strcmp(args[0],"FOMBLEND") && args.GetN()>=4)
++            {spacing.Set(atof(args[1]),atof(args[2]),atof(args[3]));slotBlendActive=spacing.GetLength()>0.02;}
+             else if(0==strcmp(args[0],"FOMDEPART") && args.GetN()>=5)
+             {independentDeparture=true;headingOnly=YSTRUE;departureVelocity.Set(atof(args[1]),atof(args[2]),atof(args[3]));departureAltitude=atof(args[4]);}
+             else if(0==args[0].STRCMP("FOMCOVER") && args.GetN()>=4){coverAscent=args.GetN()<5 || atoi(args[4])==1;coverLateral=args.GetN()>=5 && atoi(args[4])==2;coverAlong=args.GetN()<6 || atoi(args[5])!=0;coverHold.Set(atof(args[1]),atof(args[2]),atof(args[3]));}
+--- a/YSFLIGHT/src/autopilot/fsformationautopilot.h
++++ b/YSFLIGHT/src/autopilot/fsformationautopilot.h
+@@ -71,7 +71,7 @@
+     double turnEscapeUntil=0.0,turnEscapeHeight=0.0;
+     YsVec3 safeGoal=YsOrigin();
+     double safeTerrain=0.0;
+-    bool rejoining=true,collisionRisk=false,longRangeIntercept=false;
++    bool rejoining=true,collisionRisk=false,longRangeIntercept=false,slotBlendActive=false;
+     double joinStableSeconds=0.0,avoidanceHeight=0.0,commandedSpeed=0.0,commandedClimb=0.0;
+     YsVec3 previousLeaderVelocity=YsOrigin(),leaderAcceleration=YsOrigin();
+     // Independent departure retains the same terrain and traffic protection.
+--- a/YSFLIGHT/src/autopilot/fsformationsafety.cpp
++++ b/YSFLIGHT/src/autopilot/fsformationsafety.cpp
+@@ -3,8 +3,17 @@
+ 
+ YSRESULT FsFormation::SafeFormationControl(FsAirplane &air,FsSimulation *sim,double dt)
+ {
++ if(slotBlendActive && !independentDeparture)
++ {
++  // Slew the assigned waypoint after a formation command. Aircraft position
++  // and velocity remain entirely under the native physical simulation.
++  spacing*=exp(-YsGreater(0.0,dt)/1.5);
++  if(spacing.GetLength()<0.02){spacing=YsOrigin();slotBlendActive=false;}
++  goal=GetGoalPosition();
++ }
+  auto &p=air.Prop();YsVec3 velocity,leadVelocity;p.GetVelocity(velocity);if(independentDeparture)leadVelocity=departureVelocity;else leader->Prop().GetVelocity(leadVelocity);
+  const bool fighter=p.GetAirplaneCategory()==FSAC_FIGHTER;
++ const int pattern=(!independentDeparture && leader==sim->GetPlayerAirplane() && air.squadTask==0 ? sim->GetSquadFormationPattern():-1);
+  const double margin=YsGreater(18.0,air.GetApproximatedCollideRadius()*0.8);
+  safeTerrain=sim->GetFieldElevation(air.GetPosition().x(),air.GetPosition().z());
+  for(int i=1;i<=8;++i){auto sample=air.GetPosition()+velocity*(i*0.5);safeTerrain=YsGreater(safeTerrain,sim->GetFieldElevation(sample.x(),sample.z()));}
+@@ -232,7 +241,7 @@
+  const double down=YsGreater(0.0,-velocity.y()),bank=air.GetAttitude().b();
+  // Extra authority is safe only in a narrow column. Wide layouts retain
+  // their proven authority: an inside neighbour can cross a tighter turn.
+- const bool agileFighter=fighter && narrowColumn && !independentDeparture;
++ const bool agileFighter=fighter && (narrowColumn || pattern==10) && !independentDeparture;
+  const double gLimit=YsBound(agileFighter ? 7.0:GetDefaultGLimit(air),2.0,7.0);
+  const double rollRateLimit=(fighter ? YsSmaller(p.GetMaxRollRate(),YsDegToRad(240.0)):YsDegToRad(90.0));
+  const double rollTime=YsAbs(bank)/YsDegToRad(90.0);
+@@ -274,7 +283,7 @@
+   // retain the existing height-escape reserve. Physical lift/G limits below
+   // and imminent-crossing bank limit still apply on every frame.
+   if(turnEscape && YsAbs(safeGoal.y()-air.GetPosition().y())>24.0)
+-   bankLimit=YsSmaller(bankLimit,YsDegToRad(narrowColumn ? 80.0:45.0));
++   bankLimit=YsSmaller(bankLimit,YsDegToRad(narrowColumn || pattern==10 ? 80.0:(pattern==0 || pattern==2 ? 75.0:65.0)));
+   if(collisionRisk && closestTime<4.0)bankLimit=YsSmaller(bankLimit,YsDegToRad(closestTime<2.5 ? 45.0:60.0));
+   bankLimit=YsSmaller(bankLimit,acos(1.0/YsGreater(1.01,availableG*0.85)));
+   if(p.GetVelocity()<minSpeed*1.05)bankLimit=YsSmaller(bankLimit,YsDegToRad(20.0));
+@@ -285,17 +294,55 @@
+    feedforward=feedforward*0.35+leader->GetAttitude().b()*0.65;
+   if(YsAbs(formationTurnRate)<0.015 && horizontalError.GetLength()<120.0)
+    bankLimit=YsSmaller(bankLimit,YsDegToRad(25.0+horizontalError.GetLength()*0.25));
+-  p.BankController(YsBound(bearing*2.4+feedforward,-bankLimit,bankLimit),rollRateLimit);
++  double requestedBank=YsBound(bearing*2.4+feedforward,-bankLimit,bankLimit);
+   const double targetHeight=YsGreater(safeGoal.y()+avoidanceHeight,safeTerrain+margin);
+   const double descent=YsBound((clearance-margin)/4.0,2.0,50.0);
+   commandedClimb=YsBound(leadVelocity.y()+(targetHeight-air.GetPosition().y())/2.0+leaderAcceleration.y()*0.3,-descent,45.0);
++  // Brake vertical closure before reaching the assigned height. The old
++  // position-only climb demand could still ask for 45 m/s near a height lane,
++  // leaving insufficient distance to stop the climb through the native physics.
++  if(fighter && !independentDeparture)
++  {
++   const double heightError=targetHeight-air.GetPosition().y();
++   const double relativeClimb=velocity.y()-leadVelocity.y();
++   const double closingHeight=(heightError>=0.0 ? relativeClimb:-relativeClimb);
++   const double stopAccel=(heightError>=0.0 ? 4.0:YsBound((YsSmaller(gLimit,availableG*0.85)*cos(bank)-1.0)*FsGravityConst*0.7,1.0,6.0));
++   const double heightRemaining=YsGreater(0.0,YsAbs(heightError)-YsGreater(0.0,closingHeight));
++   const double heightSpeed=sqrt(2.0*stopAccel*heightRemaining)+YsSmaller(1.0,YsAbs(heightError)*0.15);
++   commandedClimb=leadVelocity.y()+YsBound(commandedClimb-leadVelocity.y(),-heightSpeed,heightSpeed);
++  }
+   // With the leader level, finish a height escape without a dive that
+   // consumes forward speed and repeatedly projects a new crossing.
+   if(fighter && !independentDeparture && YsAbs(leadVelocity.y())<3.0 &&
+      YsAbs(courseError)<YsDegToRad(12.0) && YsAbs(leader->GetAttitude().b())<YsDegToRad(20.0))
+    commandedClimb=YsBound(commandedClimb,-15.0,15.0);
+-  const double requestedG=(1.0+(commandedClimb-velocity.y())*0.20+YsBound(leaderAcceleration.y()/FsGravityConst,-0.4,0.8)*0.4)/YsGreater(0.25,cos(bank));
+-  const double minimumG=(clearance>200.0 ? 0.15:0.6);
++  double requestedG=(1.0+(commandedClimb-velocity.y())*0.20+YsBound(leaderAcceleration.y()/FsGravityConst,-0.4,0.8)*0.4)/YsGreater(0.25,cos(bank));
++  if(fighter && !independentDeparture)
++  {
++   // Allocate one physical acceleration vector to bank and lift together.
++   // Separate altitude and heading loops could unload the wing while turning.
++   YsVec3 currentLocal;yaw.MulInverse(currentLocal,velocity);
++   const double verticalAccel=YsBound((commandedClimb-velocity.y())*1.5,-FsGravityConst*0.5,FsGravityConst*1.5);
++   const double liftBudget=YsGreater(0.15,YsSmaller(gLimit,availableG*0.9))*FsGravityConst;
++   const double verticalLift=YsSmaller(liftBudget,YsGreater(FsGravityConst*0.4,FsGravityConst+verticalAccel));
++   const double lateralBudget=YsSmaller(verticalLift*tan(bankLimit),sqrt(YsGreater(0.0,liftBudget*liftBudget-verticalLift*verticalLift)));
++   const double lateralAccel=YsBound((local.x()-currentLocal.x())/2.0-FsGravityConst*tan(feedforward),-lateralBudget,lateralBudget);
++   const double coordinatedBank=YsBound(atan2(-lateralAccel,verticalLift),-bankLimit,bankLimit);
++   const double coordinatedG=(verticalLift*cos(bank)-lateralAccel*sin(bank))/FsGravityConst;
++   // Wide formations retain their proven initial-turn guidance. Blend in
++   // coordinated capture only after heading and the assigned height lane settle.
++   const double captureWeight=(narrowColumn || pattern==0 || pattern==10 ? 1.0:
++     YsBound((YsDegToRad(20.0)-YsAbs(courseError))/YsDegToRad(10.0),0.0,1.0)*
++     YsBound((0.03-YsAbs(formationTurnRate))/0.02,0.0,1.0)*
++     YsBound((35.0-YsAbs(error.y()))/20.0,0.0,1.0));
++   requestedBank+=(coordinatedBank-requestedBank)*captureWeight;
++   requestedG+=(coordinatedG-requestedG)*captureWeight;
++  }
++  p.BankController(requestedBank,rollRateLimit);
++  double minimumG=(clearance>200.0 ? 0.15:0.6);
++  if(fighter && (pattern==0 || pattern==2) && clearance>200.0 && YsAbs(bank)>YsDegToRad(25.0) &&
++     (YsAbs(courseError)>YsDegToRad(20.0) || YsAbs(formationTurnRate)>0.06))
++   minimumG=YsGreater(minimumG,YsSmaller(0.35/YsGreater(0.25,cos(bank)),YsSmaller(gLimit,availableG*0.85)));
+   p.GController(YsBound(requestedG,minimumG,YsGreater(minimumG,YsSmaller(gLimit,availableG*0.9))));
+   // Acceleration is available during capture, not disabled at 45 degrees.
+   // Slow only when the desired track is actually behind the aircraft.
+--- a/YSFLIGHT/src/core/fsairshow.h
++++ b/YSFLIGHT/src/core/fsairshow.h
+@@ -10,6 +10,7 @@
+     bool menuOpen=false,replaying=false,smoke[FsMaxShowAircraft]={false},orbit=true,dragging=false;
+     int selected=0,cameraUnit=0,remaining[FsMaxShowAircraft]={0},lastX=0,lastY=0,restoreX=0,restoreY=0;
+     double nextFlare=0,heading=0,pitch=0.22,distance=100;
++    double validationFitMinimum=0.0; // Set only by laboratory camera commands.
+     struct BreakOrder { unsigned int key=YSNULLHASHKEY; double start=0,finish=0; bool started=false; double departureHeading=0.0; };
+     YsArray<BreakOrder> breaks;
+     void ReleaseFlares(FsSimulation *,bool all);
+--- a/YSFLIGHT/src/core/fsoperation.cpp
++++ b/YSFLIGHT/src/core/fsoperation.cpp
+@@ -83,6 +83,29 @@
+     }
+     auto ap=FsFormation::Create();ap->leader=&leader;ap->shouldBe=(wing.squadOffset.GetSquareLength()>1.0 ? wing.squadOffset : YsVec3(100,0,-150));
+     ap->headingOnly=YSTRUE;ap->synchronizeTrigger=YSFALSE;ap->minAlt=0.0;
++    // Changing a formation must not erase the manoeuvre already in progress.
++    // Keep measured leader motion and active safety lanes for the same leader.
++    // Independent departures and other autopilot types still start a fresh join.
++    if(auto previous=dynamic_cast<FsFormation *>(wing.GetAutopilot()))
++     if(previous->leader==&leader && !previous->independentDeparture && previous->headingOnly==YSTRUE)
++    {
++        ap->headingTracked=previous->headingTracked;
++        ap->lastLeaderHeading=previous->lastLeaderHeading;
++        ap->formationTurnRate=previous->formationTurnRate;
++        ap->previousLeaderVelocity=previous->previousLeaderVelocity;
++        ap->leaderAcceleration=previous->leaderAcceleration;
++        ap->recovering=previous->recovering;
++        ap->turnEscapeHeight=previous->turnEscapeHeight;
++        ap->turnEscapeUntil=previous->turnEscapeUntil;
++        ap->avoidanceHeight=previous->avoidanceHeight;
++        ap->longRangeIntercept=previous->longRangeIntercept;
++        if(wing.squadTask==0)
++        {
++            ap->spacing=previous->CoverOffset()+previous->spacing-ap->shouldBe;
++            ap->slotBlendActive=ap->spacing.GetLength()>0.02;
++            if(!ap->slotBlendActive)ap->spacing=YsOrigin();
++        }
++    }
+     if(wing.Prop().IsOnGround()!=YSTRUE)ap->mode=FSFOMMODE_LOSTPOSITION;
+     wing.SetAutopilot(ap);wing.squadTask=0;
+ }
+--- a/YSFLIGHT/src/core/fssimulation.cpp
++++ b/YSFLIGHT/src/core/fssimulation.cpp
+@@ -10323,10 +10323,29 @@
+             if(auto show=FsGetAirshow(this))if(show->orbit)
+             {
+                 auto target=show->Aircraft(this,show->cameraUnit);if(target==nullptr)target=const_cast<FsAirplane *>(playerPlane);
+-                const double d=YsGreater(show->distance,target->GetApproximatedCollideRadius()*1.7);
++                YsVec3 cameraTarget=target->GetPosition();
++                double d=YsGreater(show->distance,target->GetApproximatedCollideRadius()*1.7);
++                if(show->validationFitMinimum>0.0)
++                {
++                    bool first=true;YsVec3 low,high;
++                    for(auto member=FindNextAirplane(nullptr);member;member=FindNextAirplane(member))
++                    {
++                        auto pos=member->GetPosition();
++                        if(first){low=high=pos;first=false;}
++                        else{low.Set(YsSmaller(low.x(),pos.x()),YsSmaller(low.y(),pos.y()),YsSmaller(low.z(),pos.z()));high.Set(YsGreater(high.x(),pos.x()),YsGreater(high.y(),pos.y()),YsGreater(high.z(),pos.z()));}
++                    }
++                    if(!first)cameraTarget=(low+high)*0.5;
++                    double radius=0.0;
++                    // Replay aircraft retain pending squad IDs because squad
++                    // commands are disabled during replay. Fit the actual
++                    // aircraft objects rather than live-only squad lookups.
++                    for(auto member=FindNextAirplane(nullptr);member;member=FindNextAirplane(member))
++                        radius=YsGreater(radius,(member->GetPosition()-cameraTarget).GetLength()+member->GetApproximatedCollideRadius());
++                    d=YsGreater(show->validationFitMinimum,radius*3.8);
++                }
+                 YsVec3 offset(sin(show->heading)*cos(show->pitch)*d,sin(show->pitch)*d,-cos(show->heading)*cos(show->pitch)*d);
+-                actualViewMode.viewPoint=target->GetPosition()+offset;actualViewMode.viewPoint.SetY(YsGreater(actualViewMode.viewPoint.y(),GetFieldElevation(actualViewMode.viewPoint.x(),actualViewMode.viewPoint.z())+2.0));
+-                actualViewMode.viewAttitude.SetForwardVector(target->GetPosition()-actualViewMode.viewPoint);actualViewMode.viewTargetDist=d;break;
++                actualViewMode.viewPoint=cameraTarget+offset;actualViewMode.viewPoint.SetY(YsGreater(actualViewMode.viewPoint.y(),GetFieldElevation(actualViewMode.viewPoint.x(),actualViewMode.viewPoint.z())+2.0));
++                actualViewMode.viewAttitude.SetForwardVector(cameraTarget-actualViewMode.viewPoint);actualViewMode.viewTargetDist=d;break;
+             }
+ 			actualViewMode.viewPoint=playerPlane->GetPosition();
+ 
+--- a/YSFLIGHT/src/core/fssimulation.h
++++ b/YSFLIGHT/src/core/fssimulation.h
+@@ -82,6 +82,8 @@
+ 
+ class FsSimulation : public FsHasInFlightDialog
+ {
++public:
++    int GetSquadFormationPattern() const{return squadPattern;}
+ private:
+     bool squadWheelOpen=false,squadWheelFormations=false,squadInputRelease=false;
+     int squadFormationPage=0;
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,7 +66,7 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow LAB866 preview";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Airshow LAB867 preview";  // Different names for screen saver programs
+ #else
+ const char *FsProgramTitle="YS FLIGHT SIMULATOR - Untested";  // Different names for screen saver programs
+ #endif
+--- a/YSFLIGHT/src/ui/fsrunloop.cpp
++++ b/YSFLIGHT/src/ui/fsrunloop.cpp
+@@ -2001,8 +2001,13 @@
+  if(labSim && labArgs.GetN()>=3 && 0==labArgs[0].STRCMP("LABREPLAY"))
+  {
+   world->Jump(atof(labArgs[1]));
+-  labSim->SetReplayMode(atoi(labArgs[2]) ? FsSimulation::FSREPLAY_PLAY:FsSimulation::FSREPLAY_PAUSE);
++  labSim->SetReplayMode(atoi(labArgs[2])==2 ? FsSimulation::FSREPLAY_FASTFORWARD : atoi(labArgs[2]) ? FsSimulation::FSREPLAY_PLAY:FsSimulation::FSREPLAY_PAUSE);
+   printf("LABREPLAY time=%.3f play=%d\n",labSim->GetClock(),atoi(labArgs[2]));return;
++ }
++ if(labSim && labArgs.GetN()>=2 && 0==labArgs[0].STRCMP("LABFIT"))
++ {
++  if(auto show=FsGetAirshow(labSim))show->validationFitMinimum=YsBound(atof(labArgs[1]),0.0,50000.0);
++  printf("LABFIT minimum=%.1f\n",atof(labArgs[1]));return;
+  }
+  if(labSim && labArgs.GetN()>=5 && 0==labArgs[0].STRCMP("LABVIEW"))
+  {
+@@ -2021,6 +2026,9 @@
+             if(0==argv[0].STRCMP("REPORT"))
+             {
+                 sim->PrintSquadAndLockReport();
++#ifdef V861_VALIDATION
++                printf("V867PROFILE pattern=%d\n",sim->GetSquadFormationPattern());
++#endif
+             }
+ #ifdef V861_VALIDATION
+             else if(0==argv[0].STRCMP("TESTLEVEL"))
