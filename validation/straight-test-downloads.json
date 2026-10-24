@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "downloads/YSFlight_Straight_Test_32bit.zip",
+      "bytes": 12737818,
+      "sha256": "7dfff0e7ad9d56d06117c75571691fb08d94928ff6d4568376944d2d2ce8254b"
+    },
+    {
+      "file": "downloads/YSFlight_Straight_Test_Sources.zip",
+      "bytes": 24608624,
+      "sha256": "88cb7dfcbb0f3cada1f88403a1ed5f870df2673844c8620c70aceb313e28a32f"
+    },
+    {
+      "file": "reports/straight-test/REPORT.md",
+      "bytes": 3011,
+      "sha256": "145734910b63e3448b3c52109a0f1f6277e77c90893ac63403394452806c706c"
+    },
+    {
+      "file": "reports/straight-test/cockpit-look.png",
+      "bytes": 319323,
+      "sha256": "92a374ecee6fc57b688c9872ac7ff1d47abecbcb462154db028dfad3928657e3"
+    }
+  ]
+}
