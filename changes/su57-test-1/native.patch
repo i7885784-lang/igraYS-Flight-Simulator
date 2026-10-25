@@ -1,0 +1,104 @@
+--- a/src/core/fsairshow.cpp
++++ b/src/core/fsairshow.cpp
+@@ -303,7 +303,7 @@
+ void FsSimExtension_Airshow::ReplaySu27(FsSimulation *sim)
+ {
+  const double now=sim->GetClock();
+- for(auto air=sim->FindNextAirplane(nullptr);air;air=sim->FindNextAirplane(air))if(0==strcmp(air->Prop().GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(air->Prop().GetIdentifier(),"MIG-29_FULCRUM")){
++ for(auto air=sim->FindNextAirplane(nullptr);air;air=sim->FindNextAirplane(air))if(0==strcmp(air->Prop().GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(air->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(air->Prop().GetIdentifier(),"SU-57_FELON"))){
+   const Su27Event *event=nullptr;
+   for(const auto &e:su27Events)if(e.id==air->ysfId && e.time<=now+.00001 && (!event || e.time>=event->time))event=&e;
+   if(!event)for(const auto &e:su27Events)if(e.id==air->ysfId && (!event || e.time<event->time))event=&e;
+--- a/src/core/fssu27.h
++++ b/src/core/fssu27.h
+@@ -5,7 +5,7 @@
+ struct Su27ClickCache {const FsAirplane *air=nullptr;double clock=-100;YsVec2 center[6];double radius[6]={0};bool click=false,dragging=false;int lastX=0,lastY=0,restoreX=0,restoreY=0;} su27Ui;
+ bool Su27Aircraft(const FsAirplane *a){return a && 0==strcmp(a->Prop().GetIdentifier(),"SU-27_FLANKER");}
+ bool Su27Cockpit(const FsAirplane *){return false;} // Test6: native open cockpit, no custom start panel.
+-bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && 0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM"));}
++bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && (0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(a->Prop().GetIdentifier(),"SU-57_FELON")));}
+ YsVec3 Su27Button(int i){return YsVec3(-.535,1.466-i*.105,5.838);}
+ void Su27Action(FsSimulation *sim,int id)
+ {
+--- a/src/gui/fsmenu.cpp
++++ b/src/gui/fsmenu.cpp
+@@ -327,6 +327,7 @@
+ 
+ 	missionsBtn=AddTextButton(MkId("straightTest"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Тест",YSTRUE);
+     AddTextButton(MkId("su27Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-27: быстрый полёт",YSTRUE);
++    AddTextButton(MkId("su57Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-57: тест модели",YSTRUE);
+ 	controlsBtn=AddTextButton(MkId("controls"),FSKEY_NULL,FSGUI_PUSHBUTTON,FsGetTextResource("v4/controls",L"Controls / Change keys"),YSTRUE);
+ 
+ 	if(FsGetDate()<=20100315)
+@@ -344,11 +345,11 @@
+ 
+ void FsGuiMainDialog::OnButtonClick(FsGuiButton *btn)
+ {
+- if(btn->GetIdent()==FindIdent("su27Preview")){
++ if(btn->GetIdent()==FindIdent("su27Preview") || btn->GetIdent()==FindIdent("su57Preview")){
+   if(!runLoop->SavePendingFlightHistory())return;
+   auto world=runLoop->GetWorld();FsFlightConfig cfg;cfg.Load(FsGetConfigFile());FsNewFlightDialogInfo info;info.SetFromConfig(world,cfg);
+-  info.fieldName="AOMORI";info.playerAirInfo.typeName="SU-27_FLANKER";info.playerAirInfo.fuel=50;
+-  if(auto tmpl=world->GetAirplaneTemplate("SU-27_FLANKER"))tmpl->GetProperty()->GetWeaponConfig(info.playerAirInfo.weaponConfig);
++  info.fieldName="AOMORI";info.playerAirInfo.typeName=btn->GetIdent()==FindIdent("su57Preview")?"SU-57_FELON":"SU-27_FLANKER";info.playerAirInfo.fuel=50;
++  if(auto tmpl=world->GetAirplaneTemplate(info.playerAirInfo.typeName))tmpl->GetProperty()->GetWeaponConfig(info.playerAirInfo.weaponConfig);
+   for(auto &w:info.wingman)w=YSFALSE;info.addComputerAircraft=YSFALSE;
+   info.customStart=YSFALSE;info.playerAirInfo.startPos="MISAWA_RW28";
+   info.groupAirStart=info.groupFormation=info.groupMission=info.flyImmediately=YSFALSE;
+--- a/src/main/fsmain.cpp
++++ b/src/main/fsmain.cpp
+@@ -66,9 +66,9 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su27 Detail 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-57 Test 1";  // Different names for screen saver programs
+ #else
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su27 Detail 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-57 Test 1";  // Different names for screen saver programs
+ #endif
+ 
+ 
+--- a/src/vehicle/fsairplaneproperty.cpp
++++ b/src/vehicle/fsairplaneproperty.cpp
+@@ -4278,7 +4278,7 @@
+ 
+ void FsAirplaneProperty::SetupVisual(FsVisualDnm &vis) const
+ {
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON"))){
+   vis.SetState(120,0,1,GetThrottle());vis.SetPitch(122,GetElevator()*YsDegToRad(12.0));vis.SetRotation(123,-GetAileron()*YsDegToRad(12.0));
+   vis.SetState(100,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);vis.SetState(101,0,1,staGear);
+   vis.SetState(110,(su27SpoolLeft>.95 && staAb==YSTRUE && staThrottle>.9 && staFuelLoad>0 && IsActive()==YSTRUE)?1:0);
+@@ -4396,7 +4396,7 @@
+ 	vis.SetRotation(YSDNM_CLASSID_ROTOR_CUSTOM_AXIS,staRotorAngle);
+ 	vis.SetPitch(YSDNM_CLASSID_TIRE,staWheelAngle);
+  // Shared external animation rig for the two detailed fighters. Physics unchanged.
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON"))){
+   // Brake cylinder and piston follow a sampled articulated mechanism, not a floating prop.
+   if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
+    const double step=YsBound(staSpoiler,0.0,1.0)*20.0;const int idx=YsSmaller(19,int(step));
+@@ -4417,6 +4417,22 @@
+   if(modelRudderPose>=-1)bipolar(8,modelRudderPose);
+   const double e=modelElevatorPose>=-1?modelElevatorPose:elvPlusTrim,a=modelAileronPose>=-1?modelAileronPose:ctlAileron;
+   bipolar(148,YsBound(e+.35*a,-1.0,1.0));bipolar(149,YsBound(e-.35*a,-1.0,1.0));
++  if(0==strcmp(GetIdentifier(),"SU-57_FELON")){
++   // Su-57 has all-moving canted fins, flaperons, leading-edge surfaces,
++   // stabilators and vectoring nozzles. No fictitious dorsal brake panel.
++   const double f=modelFlapPose>=0?modelFlapPose:staFlap;
++   const double r=modelRudderPose>=-1?modelRudderPose:GetRudder();
++   auto move=[&](int c,double q){bipolar(c,YsBound(q,-1.0,1.0));};
++   move(180,.72*f-.50*a+.20*staSpoiler);move(181,.72*f+.50*a+.20*staSpoiler);
++   move(182,.90*f+.20*staSpoiler);move(183,.90*f+.20*staSpoiler);
++   move(184,-.60*f);move(185,-.60*f);
++   move(186,-.45*f-.20*YsGreater(0.0,e));move(187,-.45*f-.20*YsGreater(0.0,e));
++   move(188,-.70*r-.80*staSpoiler);move(189,-.70*r+.80*staSpoiler);
++   move(190,-.90*e-.24*a);move(191,-.90*e+.24*a);
++   vis.SetPitch(192,YsDegToRad(-10.0*e-3.0*a));vis.SetPitch(193,YsDegToRad(-10.0*e+3.0*a));
++   vis.SetHeading(192,YsDegToRad(-6.0*r));vis.SetHeading(193,YsDegToRad(-6.0*r));
++  }
++
+  }
+ 
+ 

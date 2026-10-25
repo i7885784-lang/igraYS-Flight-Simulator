@@ -1,5 +1,7 @@
 # YSFlight Airshow v8.6.2 — быстрее повороты, ровнее старт
 
+**[Су-57 — новая отдельная тестовая сборка, фото и видео](reports/su57-test-1/REPORT.md)** · [Скачать Windows 32-бит](downloads/YSFlight_Su57_Test_1_32bit.zip?raw=true)
+
 **[Новый отдельный режим «Тест»: полёт рядом с прямолинейной группой, вид из кабины](reports/straight-test/REPORT.md)** · [Скачать игру для Windows 10 x86](downloads/YSFlight_Straight_Test_32bit.zip?raw=true)
 
 **[LAB867 — быстрее занимать места: четыре строя, фото и видео](reports/lab867/REPORT.md)**. Частная тестовая копия; рабочая игра v8.6.2 и предыдущая LAB866 сохранены. 147 полётных проверок пройдены.

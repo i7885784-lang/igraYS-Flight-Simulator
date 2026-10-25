@@ -1,0 +1,110 @@
+{
+  "target_length_m": 20.1,
+  "target_span_m": 14.1,
+  "target_height_gear_down_m": 4.6,
+  "gear": [
+    {
+      "title": "Nose",
+      "pivot": [
+        0,
+        -0.1,
+        4.95
+      ],
+      "wheel_center": [
+        0,
+        -1.72,
+        4.95
+      ],
+      "radius": 0.28,
+      "rect": [
+        -0.43,
+        0.43,
+        4.65,
+        7.05
+      ],
+      "cut_faces": 290,
+      "exterior_door_faces": 114,
+      "contact_y": -2.0
+    },
+    {
+      "title": "Left",
+      "pivot": [
+        -1.76,
+        -0.36,
+        -2.55
+      ],
+      "wheel_center": [
+        -2.0,
+        -1.55,
+        -2.3
+      ],
+      "radius": 0.45,
+      "rect": [
+        -2.52,
+        -1.13,
+        -2.85,
+        -0.15
+      ],
+      "cut_faces": 36,
+      "exterior_door_faces": 19,
+      "contact_y": -2.0
+    },
+    {
+      "title": "Right",
+      "pivot": [
+        1.76,
+        -0.36,
+        -2.55
+      ],
+      "wheel_center": [
+        2.0,
+        -1.55,
+        -2.3
+      ],
+      "radius": 0.45,
+      "rect": [
+        1.13,
+        2.52,
+        -2.85,
+        -0.15
+      ],
+      "cut_faces": 36,
+      "exterior_door_faces": 19,
+      "contact_y": -2.0
+    }
+  ],
+  "nodes": 38,
+  "faces": 13123,
+  "animation_classes": [
+    0,
+    30,
+    99,
+    100,
+    110,
+    111,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    151,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193
+  ],
+  "identifier": "SU-57_FELON"
+}

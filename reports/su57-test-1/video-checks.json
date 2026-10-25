@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "native_end_states": {
+    "gear": {
+      "t": 27.946,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 180.0816
+    },
+    "canopy": {
+      "t": 27.344,
+      "gear": 1.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 0.0
+    },
+    "controls": {
+      "t": 27.357,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": -0.07167,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 185.2753
+    }
+  }
+}
