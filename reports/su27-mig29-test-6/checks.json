@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "checks": {
+    "serializer_retains_sunlight": true,
+    "su27_node_graph": true,
+    "su27_surface_validity": true,
+    "su27_lit_skin": true,
+    "su27_LOD_matches": true,
+    "su27_two_nose_leaves": true,
+    "su27_Nose_sealed_cavity_lip_and_back": true,
+    "su27_Left_sealed_cavity_lip_and_back": true,
+    "su27_Right_sealed_cavity_lip_and_back": true,
+    "su27_real_gear": true,
+    "su27_real_canopy": true,
+    "su27_ground_ready_engines": true,
+    "su27_two_emissive_AB_plumes": true,
+    "su27_nose_joint": true,
+    "su27_compact_nose": true,
+    "su27_single_canopy_shell": true,
+    "su27_articulated_brake_cylinder_and_piston": true,
+    "su27_actuator_overlap_all_sampled_states": true,
+    "mig29_node_graph": true,
+    "mig29_surface_validity": true,
+    "mig29_lit_skin": true,
+    "mig29_LOD_matches": true,
+    "mig29_two_nose_leaves": true,
+    "mig29_Nose_sealed_cavity_lip_and_back": true,
+    "mig29_Left_sealed_cavity_lip_and_back": true,
+    "mig29_Right_sealed_cavity_lip_and_back": true,
+    "mig29_real_gear": true,
+    "mig29_real_canopy": true,
+    "mig29_ground_ready_engines": true,
+    "mig29_two_emissive_AB_plumes": true,
+    "su27_real_brake": true,
+    "su27_empty_first_person_shell": true,
+    "mig29_seven_stores_one_center": true,
+    "mig29_AIM9_no_store_overlap": true,
+    "mig29_AIM9X_no_store_overlap": true,
+    "mig29_AIM120_no_store_overlap": true,
+    "production_win32_GUI": true,
+    "new_hotstart_executable": true,
+    "no_lab_instrumentation_in_production": true
+  },
+  "details": {
+    "su27_nose_wheel_diameter_m": 0.6,
+    "su27_wheel_contact_y_m": [
+      -1.9000000000000001,
+      -1.9,
+      -1.9
+    ],
+    "su27_hot_start": {
+      "time": 0.925,
+      "battery": 1.0,
+      "pumps": 1.0,
+      "L": 1.0,
+      "R": 1.0,
+      "factor": 1.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 0.0,
+      "brake": 0.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": 0.0,
+      "lookP": 0.16
+    },
+    "nose_joint_max_gap_m": 1.0963979106350139e-07,
+    "brake_actuator_anchor_distances_m": [
+      1.2519584657647393,
+      1.759102997156758
+    ],
+    "mig29_nose_wheel_diameter_m": 0.48,
+    "mig29_wheel_contact_y_m": [
+      -1.7,
+      -1.7000000000000002,
+      -1.7000000000000002
+    ],
+    "mig29_hot_start": {
+      "time": 0.921,
+      "battery": 1.0,
+      "pumps": 1.0,
+      "L": 1.0,
+      "R": 1.0,
+      "factor": 1.0,
+      "canopy": 0.0,
+      "target": 0.0,
+      "parking": 0.0,
+      "brake": 0.0,
+      "thrust": 0.0,
+      "speed": 0.0,
+      "lookH": 0.0,
+      "lookP": 0.16
+    }
+  },
+  "model_sha256": {
+    "su27": "9f5df76a5017f088d42f43e78b12e02695353e2951f546a3adb90625a87a66d5",
+    "mig29": "48dc4ea710fe932c8c4a951268b661cd519a4b1cbf0371d948ae86960c665f12"
+  },
+  "exe_sha256": "5fba7a6963c8b8a5f7c06e4379a4f87b539e8bc686c6c966a954b3d2b5818612"
+}

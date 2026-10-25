@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "native_end_states": {
+    "su27-gear": {
+      "t": 25.294,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 179.2738
+    },
+    "mig29-gear": {
+      "t": 25.381,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 179.1251
+    },
+    "su27-brake": {
+      "t": 25.401,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "spoiler": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 177.8311
+    }
+  }
+}

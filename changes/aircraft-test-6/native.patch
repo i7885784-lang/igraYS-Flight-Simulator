@@ -1,0 +1,174 @@
+--- a/src/core/fssu27.h
++++ b/src/core/fssu27.h
+@@ -4,12 +4,13 @@
+ namespace {
+ struct Su27ClickCache {const FsAirplane *air=nullptr;double clock=-100;YsVec2 center[6];double radius[6]={0};bool click=false,dragging=false;int lastX=0,lastY=0,restoreX=0,restoreY=0;} su27Ui;
+ bool Su27Aircraft(const FsAirplane *a){return a && 0==strcmp(a->Prop().GetIdentifier(),"SU-27_FLANKER");}
++bool Su27Cockpit(const FsAirplane *){return false;} // Test6: native open cockpit, no custom start panel.
+ bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && 0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM"));}
+ YsVec3 Su27Button(int i){return YsVec3(-.535,1.466-i*.105,5.838);}
+ void Su27Action(FsSimulation *sim,int id)
+ {
+  auto a=sim->GetPlayerAirplane();if(!DetailedAircraft(a) || a->isPlayingRecord==YSTRUE)return;auto &p=a->Prop();
+- if(!Su27Aircraft(a) && id!=4)return;
++ if(id!=4)return;
+  switch(id){
+  case 0:p.su27Battery=!p.su27Battery;break;
+  case 1:p.su27Pumps=!p.su27Pumps;if(!p.su27Pumps)p.su27Left=p.su27Right=false;break;
+@@ -28,34 +29,11 @@
+ {
+  if(!DetailedAircraft(&a) || dt<=0 || a.isPlayingRecord==YSTRUE)return;
+  auto &p=a.Prop();
+- // The MiG keeps the original engine/start behaviour. Only its exterior canopy is new.
+- if(!Su27Aircraft(&a)){
+-  if(!p.su27Managed){p.su27Managed=true;p.su27Battery=p.su27Pumps=p.su27Left=p.su27Right=true;p.su27Parking=false;p.su27SpoolLeft=p.su27SpoolRight=p.su27ThrustFactor=1.0;if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);}
+-  p.su27ThrustFactor=1.0;
+-  if(p.GetVelocity()>40 && p.su27CanopyTarget!=0){p.su27CanopyTarget=0;if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);}
+-  const double amount=dt*.4;p.su27Canopy=p.su27Canopy<p.su27CanopyTarget?YsSmaller(p.su27CanopyTarget,p.su27Canopy+amount):YsGreater(p.su27CanopyTarget,p.su27Canopy-amount);
+-  return;
+- }
+- if(!p.su27Managed){
+-  p.su27Managed=true;const bool hot=a.GetAGL()>10;
+-  p.su27Battery=p.su27Pumps=p.su27Left=p.su27Right=hot;p.su27SpoolLeft=p.su27SpoolRight=hot?1.0:0.0;p.su27Parking=!hot;
+-  p.su27LookH=0;p.su27LookP=.16;su27Ui.dragging=false;
+-  if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);
+- }
+- bool autoChanged=false;
+- if((!p.su27Pumps || p.GetFuelLeft()<=0) && (p.su27Left || p.su27Right)){p.su27Left=p.su27Right=false;autoChanged=true;}
+- if(p.GetVelocity()>40 && p.su27CanopyTarget!=0){p.su27CanopyTarget=0;autoChanged=true;}
+- if(autoChanged)if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);
+- auto slew=[&](double v,double target,double rate){return v<target ? YsSmaller(target,v+dt*rate):YsGreater(target,v-dt*rate);};
+- p.su27SpoolLeft=slew(p.su27SpoolLeft,p.su27Left?1.0:0.0,p.su27Left?.125:.35);
+- p.su27SpoolRight=slew(p.su27SpoolRight,p.su27Right?1.0:0.0,p.su27Right?.125:.35);
+- p.su27ThrustFactor=(p.su27SpoolLeft*p.su27SpoolLeft+p.su27SpoolRight*p.su27SpoolRight)*.5;
+- if(p.su27ThrustFactor<.01){p.SetThrottle(0.0);p.SetAfterburner(YSFALSE);}
+-
+- p.su27Canopy=slew(p.su27Canopy,p.su27CanopyTarget,.4);
+- if(p.su27Parking && p.IsOnGround()==YSTRUE)p.SetBrake(YSTRUE);
+- static double lastReport=-100;static const FsAirplane *lastAir=nullptr;
+- if(lastAir!=&a || sim->GetClock()<lastReport || sim->GetClock()-lastReport>=1.0){lastAir=&a;lastReport=sim->GetClock();printf("SU27STATE time=%.3f battery=%d pumps=%d L=%.3f R=%.3f factor=%.3f canopy=%.3f brake=%.3f thrust=%.2f speed=%.3f\n",sim->GetClock(),int(p.su27Battery),int(p.su27Pumps),p.su27SpoolLeft,p.su27SpoolRight,p.su27ThrustFactor,p.su27Canopy,double(p.GetBrake()),p.GetCurrentThrust(),p.GetVelocity());}
++ // Both aircraft start ready. Preserve native engine/fuel/throttle behaviour.
++ if(!p.su27Managed){p.su27Managed=true;p.su27Battery=p.su27Pumps=p.su27Left=p.su27Right=true;p.su27Parking=false;p.su27SpoolLeft=p.su27SpoolRight=1.0;if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);}
++ p.su27ThrustFactor=1.0;
++ if(p.GetVelocity()>40 && p.su27CanopyTarget!=0){p.su27CanopyTarget=0;if(auto show=FsGetAirshow(sim))show->RecordSu27(sim,a);}
++ const double amount=dt*.4;p.su27Canopy=p.su27Canopy<p.su27CanopyTarget?YsSmaller(p.su27CanopyTarget,p.su27Canopy+amount):YsGreater(p.su27CanopyTarget,p.su27Canopy-amount);
+ 
+ }
+ void Su27Look(FsAirplane &a,bool right,bool middle,int x,int y)
+@@ -70,7 +48,7 @@
+ void Su27Mouse(FsSimulation *sim,bool lb,int mx,int my)
+ {
+  auto a=sim->GetPlayerAirplane();bool down=lb && FsGetKeyState(FSKEY_ALT)==YSTRUE;
+- if(!Su27Aircraft(a)){su27Ui.click=down;return;}
++ if(!Su27Cockpit(a)){su27Ui.click=down;return;}
+  if(down && !su27Ui.click && a==su27Ui.air && fabs(sim->GetClock()-su27Ui.clock)<.5){
+   for(int i=0;i<6;++i)if((su27Ui.center[i]-YsVec2(mx,my)).GetLength()<su27Ui.radius[i]){Su27Action(sim,i);break;}
+  }
+@@ -78,7 +56,7 @@
+ }
+ void Su27Draw(const FsAirplane &a,const FsSimulation *sim,const YsMatrix4x4 &view,const FsProjection &proj)
+ {
+- if(!Su27Aircraft(&a))return;const auto &p=a.Prop();
++ if(!Su27Cockpit(&a))return;const auto &p=a.Prop();
+  YsMatrix4x4 model;model.Translate(a.GetPosition());model.Rotate(a.GetAttitude());auto transform=proj.GetMatrix()*view*model;
+  int viewport[]={0,0,proj.viewportDim.x(),proj.viewportDim.y()};int ww,hh;FsGetWindowSize(ww,hh);
+  const bool main=ww==viewport[2] && hh==viewport[3];
+--- a/src/core/fssimulation.cpp
++++ b/src/core/fssimulation.cpp
+@@ -4669,7 +4669,7 @@
+     const bool su27MouseAllowed=(su27Dialog==nullptr || (su27Dialog==stationaryDlg && su27Dialog->IsMouseOnDialog(mx,my)!=YSTRUE)) && (!FsGetAirshow(this) || !FsGetAirshow(this)->menuOpen);
+     if(mainWindowViewmode==FSCOCKPITVIEW && su27MouseAllowed)Su27Mouse(this,lb==YSTRUE,mx,my);
+     if(auto show=FsGetAirshow(this))if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE){show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);}
+-    if(mainWindowViewmode==FSCOCKPITVIEW && Su27Aircraft(GetPlayerAirplane()) && su27MouseAllowed)Su27Look(*GetPlayerAirplane(),rb==YSTRUE,mb==YSTRUE,mx,my);
++    if(mainWindowViewmode==FSCOCKPITVIEW && Su27Cockpit(GetPlayerAirplane()) && su27MouseAllowed)Su27Look(*GetPlayerAirplane(),rb==YSTRUE,mb==YSTRUE,mx,my);
+     else if(mainWindowViewmode==FSCOCKPITVIEW && GetPlayerAirplane() && 0==GetPlayerAirplane()->name.Strcmp("STRAIGHT_TEST_PLAYER"))
+      if(auto show=FsGetAirshow(this)){show->CameraInput(FSKEY_NULL,rb==YSTRUE,mx,my);if(mb==YSTRUE){show->heading=0;show->pitch=0;}}
+     if(mainWindowViewmode!=FSCOCKPITVIEW || !su27MouseAllowed){su27Ui.dragging=false;su27Ui.click=(lb==YSTRUE && FsGetKeyState(FSKEY_ALT)==YSTRUE);}
+@@ -4859,7 +4859,7 @@
+ 		}                                                  // 2005/03/31
+ 		ctlAssign.CheckIgnoredKeyRelease();
+ 		const double orbitAileron=userInput.ctlAileron,orbitElevator=userInput.ctlElevator;
+-        const bool suMouseLook=Su27Aircraft(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW && rb==YSTRUE && ctlAssign.primaryInputMode==FsControlAssignment::PRIMARYINPUT_MOUSE;
++        const bool suMouseLook=Su27Cockpit(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW && rb==YSTRUE && ctlAssign.primaryInputMode==FsControlAssignment::PRIMARYINPUT_MOUSE;
+ 
+         userInput.ReadControl(ctlAssign,pJoy,joy);
+         if(suMouseLook || (mainWindowViewmode==FSOUTSIDEPLAYERPLANE && rb==YSTRUE && FsGetAirshow(this))){userInput.ctlAileron=orbitAileron;userInput.ctlElevator=orbitElevator;}
+@@ -5300,7 +5300,7 @@
+ void FsSimulation::SimProcessRawKey(int rawKey)
+ {
+ 
+-    if(Su27Aircraft(GetPlayerAirplane()) && FsGetKeyState(FSKEY_CTRL)==YSTRUE && (rawKey==FSKEY_WHEELUP || rawKey==FSKEY_WHEELDOWN)){
++    if(Su27Cockpit(GetPlayerAirplane()) && FsGetKeyState(FSKEY_CTRL)==YSTRUE && (rawKey==FSKEY_WHEELUP || rawKey==FSKEY_WHEELDOWN)){
+       SimProcessButtonFunction(rawKey==FSKEY_WHEELUP?FSBTF_VIEWZOOM:FSBTF_VIEWMOOZ,FSUSC_ENABLE);return;
+     }
+     if(mainWindowViewmode==FSOUTSIDEPLAYERPLANE)if(auto show=FsGetAirshow(this))if(rawKey==FSKEY_WHEELUP || rawKey==FSKEY_WHEELDOWN){show->CameraInput(rawKey,false,0,0);return;}
+@@ -7218,7 +7218,7 @@
+ 		{
+ 			if(seeker->cockpit!=nullptr)
+ 			{
+-				if(Su27Aircraft(seeker)){seeker->cockpit.SetState(100,0,1,seeker->Prop().su27Canopy);seeker->cockpit.SetState(120,0,1,seeker->Prop().GetThrottle());seeker->cockpit.SetPitch(122,seeker->Prop().GetElevator()*YsDegToRad(12.0));seeker->cockpit.SetRotation(123,-seeker->Prop().GetAileron()*YsDegToRad(12.0));}
++				if(Su27Cockpit(seeker)){seeker->cockpit.SetState(100,0,1,seeker->Prop().su27Canopy);seeker->cockpit.SetState(120,0,1,seeker->Prop().GetThrottle());seeker->cockpit.SetPitch(122,seeker->Prop().GetElevator()*YsDegToRad(12.0));seeker->cockpit.SetRotation(123,-seeker->Prop().GetAileron()*YsDegToRad(12.0));}
+ 				seeker->cockpit.Draw(actualViewMode.viewMat,proj.GetMatrix(),seeker->GetPosition(),seeker->GetAttitude(),drawFlag);
+ 			}
+ 			else if(cockpit!=nullptr)
+@@ -7493,7 +7493,7 @@
+ 
+ void FsSimulation::SimDrawJoystick(const ActualViewMode &actualViewMode) const
+ {
+- if(Su27Aircraft(GetPlayerAirplane()))return;
++ if(Su27Cockpit(GetPlayerAirplane()))return;
+ 	if(actualViewMode.actualViewMode==FSCOCKPITVIEW)
+ 	{
+ 		YsVec3 jsPos,jsUv,jsEv;
+@@ -8076,7 +8076,7 @@
+ 
+ 	FsFlushScene();
+ 
+- if(Su27Aircraft(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW){
++ if(Su27Cockpit(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW){
+   FsSet2DDrawing();int w,h;FsGetWindowSize(w,h);const auto &p=GetPlayerAirplane()->Prop();
+   FsDrawString(12,h-42,L"Alt+1 АКБ | Alt+2 Насосы | Alt+3/4 Двигатели | Alt+5 Фонарь | Alt+6 Тормоз",YsWhite());
+   wchar_t status[240];swprintf(status,240,L"Пуск Л: %d%%   П: %d%% | Alt+ЛКМ — кнопка | ПКМ — осмотр | СКМ — вперёд",int(p.su27SpoolLeft*100),int(p.su27SpoolRight*100));FsDrawString(12,h-20,status,YsWhite());
+@@ -8157,7 +8157,7 @@
+ 
+ 		instPanel->BeginDraw3d(fakeViewPos,localViewPos,playerPlane->Prop());
+ 		auto active=cockpitIndicationSet;
+-        if(Su27Aircraft(playerPlane) && playerPlane->Prop().su27Managed && !playerPlane->Prop().su27Battery){active.inst.pitch=0;active.inst.bank=0;active.inst.heading=0;}
++        if(Su27Cockpit(playerPlane) && playerPlane->Prop().su27Managed && !playerPlane->Prop().su27Battery){active.inst.pitch=0;active.inst.bank=0;active.inst.heading=0;}
+         instPanel->Draw3d(playerPlane->Prop(),active);
+ 
+ 		const FsInstrumentIndication &inst=cockpitIndicationSet.inst;
+@@ -10318,7 +10318,7 @@
+ 
+ 			actualViewMode.viewAttitude.YawLeft(userInput.viewHdg);
+ 			actualViewMode.viewAttitude.NoseUp(userInput.viewPch);
+-            if(Su27Aircraft(playerPlane)){actualViewMode.viewAttitude.YawLeft(playerPlane->Prop().su27LookH);actualViewMode.viewAttitude.NoseUp(-playerPlane->Prop().su27LookP);}
++            if(Su27Cockpit(playerPlane)){actualViewMode.viewAttitude.YawLeft(playerPlane->Prop().su27LookH);actualViewMode.viewAttitude.NoseUp(-playerPlane->Prop().su27LookP);}
+             else if(0==playerPlane->name.Strcmp("STRAIGHT_TEST_PLAYER"))if(auto show=FsGetAirshow(this)){actualViewMode.viewAttitude.YawLeft(show->heading);actualViewMode.viewAttitude.NoseUp(-show->pitch);}
+ 
+ 
+--- a/src/gui/fsmenu.cpp
++++ b/src/gui/fsmenu.cpp
+@@ -326,7 +326,7 @@
+     languageChoice->Select(russian ? 1 : 0);
+ 
+ 	missionsBtn=AddTextButton(MkId("straightTest"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Тест",YSTRUE);
+-    AddTextButton(MkId("su27Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-27: кабина и запуск",YSTRUE);
++    AddTextButton(MkId("su27Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-27: быстрый полёт",YSTRUE);
+ 	controlsBtn=AddTextButton(MkId("controls"),FSKEY_NULL,FSGUI_PUSHBUTTON,FsGetTextResource("v4/controls",L"Controls / Change keys"),YSTRUE);
+ 
+ 	if(FsGetDate()<=20100315)
+--- a/src/vehicle/fsairplaneproperty.cpp
++++ b/src/vehicle/fsairplaneproperty.cpp
+@@ -4397,6 +4397,11 @@
+ 	vis.SetPitch(YSDNM_CLASSID_TIRE,staWheelAngle);
+  // Shared external animation rig for the two detailed fighters. Physics unchanged.
+  if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
++  // Brake cylinder and piston follow a sampled articulated mechanism, not a floating prop.
++  if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
++   const double step=YsBound(staSpoiler,0.0,1.0)*20.0;const int idx=YsSmaller(19,int(step));
++   for(int c=160;c<=161;++c){vis.SetState(c,idx,idx+1,step-idx);vis.SetShow(c,staSpoiler>.025?YSTRUE:YSFALSE);}
++  }
+   const double gear=YsBound(modelGearPose>=0?modelGearPose:staGear,0.0,1.0);
+   const double leg=YsBound((gear-.12)/.88,0.0,1.0),door=YsBound(gear/.12,0.0,1.0);
+   for(int c=140;c<=142;++c){vis.SetState(c,0,1,leg);vis.SetShow(c,leg>.001?YSTRUE:YSFALSE);}
