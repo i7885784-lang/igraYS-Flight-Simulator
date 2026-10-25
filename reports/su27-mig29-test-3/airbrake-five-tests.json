@@ -1,0 +1,497 @@
+{
+  "cycle-180": {
+    "checks": {
+      "active": true,
+      "native_states": true,
+      "cycle": true,
+      "gear_unchanged": true
+    },
+    "samples": [
+      {
+        "t": 1.046,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.0
+      },
+      {
+        "t": 1.546,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.25,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 179.5322
+      },
+      {
+        "t": 2.046,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.5,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 178.1628
+      },
+      {
+        "t": 2.546,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.75,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 175.9506
+      },
+      {
+        "t": 3.046,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 172.9808
+      },
+      {
+        "t": 5.046,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 167.4174
+      }
+    ]
+  },
+  "cycle-110": {
+    "checks": {
+      "active": true,
+      "native_states": true,
+      "cycle": true,
+      "gear_unchanged": true
+    },
+    "samples": [
+      {
+        "t": 0.913,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 110.0
+      },
+      {
+        "t": 1.413,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.25,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 109.9278
+      },
+      {
+        "t": 1.913,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.5,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 109.3791
+      },
+      {
+        "t": 2.413,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.75,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 108.4281
+      },
+      {
+        "t": 2.913,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 107.1682
+      },
+      {
+        "t": 4.913,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 104.834
+      }
+    ]
+  },
+  "cycle-250": {
+    "checks": {
+      "active": true,
+      "native_states": true,
+      "cycle": true,
+      "gear_unchanged": true
+    },
+    "samples": [
+      {
+        "t": 0.837,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 250.0
+      },
+      {
+        "t": 1.337,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.25,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 249.065
+      },
+      {
+        "t": 1.837,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.5,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 246.4265
+      },
+      {
+        "t": 2.337,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.75,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 242.2443
+      },
+      {
+        "t": 2.837,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 236.7215
+      },
+      {
+        "t": 4.837,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 226.8909
+      }
+    ]
+  },
+  "drag-baseline": {
+    "checks": {
+      "active": true,
+      "native_states": true
+    },
+    "samples": [
+      {
+        "t": 0.842,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.0
+      },
+      {
+        "t": 2.842,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.0595
+      },
+      {
+        "t": 4.842,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.1076
+      },
+      {
+        "t": 6.842,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.1494
+      },
+      {
+        "t": 8.842,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.1848
+      }
+    ]
+  },
+  "drag-brake": {
+    "checks": {
+      "active": true,
+      "native_states": true
+    },
+    "samples": [
+      {
+        "t": 0.83,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.0
+      },
+      {
+        "t": 2.83,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 172.9812
+      },
+      {
+        "t": 4.83,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 161.2839
+      },
+      {
+        "t": 6.83,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 152.158
+      },
+      {
+        "t": 8.83,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 145.1424
+      }
+    ]
+  },
+  "gear-independent": {
+    "checks": {
+      "active": true,
+      "native_states": true,
+      "independent": true
+    },
+    "samples": [
+      {
+        "t": 0.825,
+        "gear": 0.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 180.0
+      },
+      {
+        "t": 4.825,
+        "gear": 1.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 1.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 156.965
+      },
+      {
+        "t": 6.825,
+        "gear": 1.0,
+        "flap": 0.0,
+        "elevator": 0.0,
+        "aileron": 0.0,
+        "rudder": 0.0,
+        "canopy": 0.0,
+        "spoiler": 0.0,
+        "renderGear": -1.0,
+        "renderCanopy": -1.0,
+        "active": 1.0,
+        "speed": 148.9443
+      }
+    ]
+  },
+  "drag_effect": {
+    "baseline_final_mps": 180.1848,
+    "brake_final_mps": 145.1424,
+    "additional_speed_loss_mps": 35.04239999999999
+  },
+  "passed": true
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": {
+    "su27_graph": true,
+    "su27_whole_contour_normals": true,
+    "su27_door_leaf_width": true,
+    "su27_open_doors_clear_ground": true,
+    "su27_flight_parameters_unchanged": true,
+    "su27_real_bay_cuts": true,
+    "su27_nose_leg_vertical": true,
+    "su27_wheel_contact": true,
+    "su27_well_hidden_when_closed": true,
+    "su27_matching_distance_model": true,
+    "su27_nose_left_right_symmetry": true,
+    "su27_probe_axis_straight": true,
+    "su27_hook_removed": true,
+    "su27_airbrake_closed_visible": true,
+    "mig29_graph": true,
+    "mig29_whole_contour_normals": true,
+    "mig29_door_leaf_width": true,
+    "mig29_open_doors_clear_ground": true,
+    "mig29_flight_parameters_unchanged": true,
+    "mig29_real_bay_cuts": true,
+    "mig29_nose_leg_vertical": true,
+    "mig29_wheel_contact": true,
+    "mig29_well_hidden_when_closed": true,
+    "mig29_matching_distance_model": true,
+    "mig29_uniform_pylon_height": true
+  },
+  "details": {
+    "su27_faces_checked": 4098,
+    "su27_minimum_door_ground_clearance_m": 0.5348323741329184,
+    "mig29_faces_checked": 3572,
+    "mig29_minimum_door_ground_clearance_m": 0.13278940325635835,
+    "mig29_mount_drop_m": [
+      0.23000000000000004,
+      0.23000000000000004,
+      0.22999999999999998,
+      0.23,
+      0.23,
+      0.23,
+      0.22999999999999998,
+      0.22999999999999998
+    ]
+  }
+}

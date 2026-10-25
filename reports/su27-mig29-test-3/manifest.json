@@ -1,0 +1,12 @@
+{
+  "report_only": true,
+  "pdf_pages": 24,
+  "pdf_sha256": "6c113942bfe408bab62426c0b7788ee8f585dd64ff46f679df38a12ed38cdc2b",
+  "models": {
+    "su27": "de05a9a0afbe2c5c3f754c50ef5310f40a71301919d3acdd914bd537d1e54eda",
+    "mig29": "0df6135082c3d6478acb2cb20b44a539df80aeab65c6fb3ac310aa41c6dc9a3c"
+  },
+  "win32_gui_sha256": "6294fc2a80d103c563c61f9706715bfed739a663c100dfe83c34ef3acef74cda",
+  "five_brake_scenarios_passed": true,
+  "additional_speed_loss_kmh": 126.15264000000002
+}
