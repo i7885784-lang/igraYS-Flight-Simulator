@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": {
+    "only_mig_visuals_changed": true,
+    "matching_distance_model": true,
+    "all_child_links_valid": true,
+    "no_obsolete_inner_doors": true,
+    "two_main_doors": true,
+    "finite_valid_geometry": true,
+    "real-gear": true,
+    "interrupted-gear": true,
+    "continuous_video_native_controls": true
+  },
+  "changed_files": [
+    "aircraft/mig29.dnm",
+    "aircraft/mig29_coarse.dnm"
+  ],
+  "game_exe_sha256": "6294fc2a80d103c563c61f9706715bfed739a663c100dfe83c34ef3acef74cda",
+  "mig29_sha256": "09a4722c3b351124bc43bbe1ea1bf93348b83e1dd1ebe9935e80dad9a156fc10"
+}
