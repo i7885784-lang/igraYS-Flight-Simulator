@@ -1,0 +1,12 @@
+{
+  "report_only": true,
+  "pdf_pages": 29,
+  "pngs": 79,
+  "pdf_sha256": "3c3bdec2ad8f17ac20a6473ad8a6ec07e462053e1e9eea990543e2e529846567",
+  "models": {
+    "su27": "43cbc9fedbd84d0e2bf26c80132eb1ba8eb5e19c1ff82057b594593a4571eca9",
+    "mig29": "0620f629bef154eb36e7a685ab0a0115c33c9d53a8ab3df275cd7e5859ca6ddb"
+  },
+  "test_binary_sha256": "17858dae2eb243faec3461bd5d2dffeec57113796db2f845d0bd46edf26a9e12",
+  "Win32_binary_sha256": "51906a142e6ad74f2d2bd91b1c713961c34531c0d488c4e7eb14694c6540bc90"
+}

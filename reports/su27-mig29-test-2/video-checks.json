@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "end_states": {
+    "su27-gear": {
+      "t": 14.29,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 173.153
+    },
+    "su27-canopy": {
+      "t": 13.437,
+      "gear": 1.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 0.0
+    },
+    "mig29-gear": {
+      "t": 13.457,
+      "gear": 0.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 176.426
+    },
+    "mig29-canopy": {
+      "t": 13.413,
+      "gear": 1.0,
+      "flap": 0.0,
+      "elevator": 0.0,
+      "aileron": 0.0,
+      "rudder": 0.0,
+      "canopy": 0.0,
+      "renderGear": -1.0,
+      "renderCanopy": -1.0,
+      "active": 1.0,
+      "speed": 0.0
+    }
+  }
+}

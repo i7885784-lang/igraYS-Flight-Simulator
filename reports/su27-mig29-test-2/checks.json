@@ -1,0 +1,868 @@
+{
+  "passed": true,
+  "checks": {
+    "su27_geometry_and_animation_graph": true,
+    "su27_gear_hidden_in_preview": true,
+    "su27_LOD_same_shape": true,
+    "su27_mass_thrust_aerodynamics_unchanged": true,
+    "su27_wheels_match_ground_contacts": true,
+    "su27_hardpoints_symmetric": true,
+    "su27_pylon_centres_under_airframe": true,
+    "su27_all_control_poses_visibly_change": true,
+    "su27_native_gear_cycle": true,
+    "su27_native_canopy_cycle": true,
+    "mig29_geometry_and_animation_graph": true,
+    "mig29_gear_hidden_in_preview": true,
+    "mig29_LOD_same_shape": true,
+    "mig29_mass_thrust_aerodynamics_unchanged": true,
+    "mig29_wheels_match_ground_contacts": true,
+    "mig29_hardpoints_symmetric": true,
+    "mig29_pylon_centres_under_airframe": true,
+    "mig29_all_control_poses_visibly_change": true,
+    "mig29_native_gear_cycle": true,
+    "mig29_native_canopy_cycle": true,
+    "Win32_GUI_compiles": true,
+    "Win32_no_test_commands": true,
+    "previous_public_game_unchanged": true
+  },
+  "models": {
+    "su27": {
+      "render_faces_deployed": 4478,
+      "control_pixel_changes": {
+        "pitch-up": 7472,
+        "pitch-down": 12598,
+        "roll-left": 6000,
+        "roll-right": 5845,
+        "rudder-left": 2009,
+        "rudder-right": 1920,
+        "flaps-down": 3365
+      },
+      "classes": [
+        0,
+        4,
+        5,
+        7,
+        8,
+        16,
+        30,
+        99,
+        100,
+        110,
+        111,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "gear_contacts": [
+        {
+          "leg": "Nose",
+          "contact_y": -1.9000000000000001,
+          "radius": 0.3,
+          "pivot": [
+            0,
+            -0.25,
+            3.6
+          ]
+        },
+        {
+          "leg": "Left",
+          "contact_y": -1.9,
+          "radius": 0.38,
+          "pivot": [
+            -1.9,
+            -0.3,
+            -3.4
+          ]
+        },
+        {
+          "leg": "Right",
+          "contact_y": -1.9,
+          "radius": 0.38,
+          "pivot": [
+            1.9,
+            -0.3,
+            -3.4
+          ]
+        }
+      ],
+      "hardpoints": [
+        {
+          "x": 7.37,
+          "y": 0.38,
+          "z": -5.31,
+          "wing_y": 0.51
+        },
+        {
+          "x": -7.37,
+          "y": 0.38,
+          "z": -5.31,
+          "wing_y": 0.51
+        },
+        {
+          "x": 6.36,
+          "y": 0.08,
+          "z": -4.56,
+          "wing_y": 0.382111413092435
+        },
+        {
+          "x": -6.36,
+          "y": 0.08,
+          "z": -4.56,
+          "wing_y": 0.38211141309243496
+        },
+        {
+          "x": 4.14,
+          "y": 0.08,
+          "z": -3.27,
+          "wing_y": 0.36941193643403836
+        },
+        {
+          "x": -4.14,
+          "y": 0.08,
+          "z": -3.27,
+          "wing_y": 0.36941193643403836
+        },
+        {
+          "x": 0.43,
+          "y": -0.4,
+          "z": 0.0,
+          "wing_y": 0.31559322033898307
+        },
+        {
+          "x": -0.43,
+          "y": -0.4,
+          "z": 0.0,
+          "wing_y": 0.3152689176564794
+        },
+        {
+          "x": 0.43,
+          "y": -0.4,
+          "z": -3.8,
+          "wing_y": 0.31478412640088194
+        },
+        {
+          "x": -0.43,
+          "y": -0.4,
+          "z": -3.8,
+          "wing_y": 0.3145
+        }
+      ],
+      "gear_cycle": {
+        "passed": true,
+        "checks": {
+          "aircraft_active": true,
+          "nine_states": true,
+          "real_states_no_render_override": true,
+          "smooth_out_and_back": true,
+          "flap_input_moves_flaps": true
+        },
+        "values": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          0.75,
+          0.5,
+          0.25,
+          0.0
+        ],
+        "samples": [
+          {
+            "t": 0.903,
+            "gear": 0.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 180.0271
+          },
+          {
+            "t": 1.403,
+            "gear": 0.25,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 179.8929
+          },
+          {
+            "t": 1.903,
+            "gear": 0.5,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 179.5096
+          },
+          {
+            "t": 2.403,
+            "gear": 0.75,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 178.886
+          },
+          {
+            "t": 2.903,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 178.033
+          },
+          {
+            "t": 3.403,
+            "gear": 0.75,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 177.2217
+          },
+          {
+            "t": 3.903,
+            "gear": 0.5,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 176.6821
+          },
+          {
+            "t": 4.403,
+            "gear": 0.25,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 176.4038
+          },
+          {
+            "t": 4.903,
+            "gear": 0.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 176.3787
+          },
+          {
+            "t": 7.903,
+            "gear": 0.0,
+            "flap": 1.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 175.399
+          }
+        ]
+      },
+      "canopy_cycle": {
+        "passed": true,
+        "checks": {
+          "aircraft_active": true,
+          "nine_states": true,
+          "real_states_no_render_override": true,
+          "smooth_out_and_back": true
+        },
+        "values": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          0.75,
+          0.5,
+          0.25,
+          0.0
+        ],
+        "samples": [
+          {
+            "t": 0.914,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 1.539,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.25,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 2.164,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.5,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 2.789,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.75,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 3.414,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 1.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 4.039,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.75,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 4.664,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.5,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 5.289,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.25,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 5.914,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          }
+        ]
+      }
+    },
+    "mig29": {
+      "render_faces_deployed": 4205,
+      "control_pixel_changes": {
+        "pitch-up": 4293,
+        "pitch-down": 8045,
+        "roll-left": 4325,
+        "roll-right": 3168,
+        "rudder-left": 975,
+        "rudder-right": 860,
+        "flaps-down": 1585
+      },
+      "classes": [
+        0,
+        4,
+        5,
+        7,
+        8,
+        30,
+        33,
+        99,
+        100,
+        110,
+        111,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "gear_contacts": [
+        {
+          "leg": "Nose",
+          "contact_y": -1.7,
+          "radius": 0.24,
+          "pivot": [
+            0,
+            -0.25,
+            2.9
+          ]
+        },
+        {
+          "leg": "Left",
+          "contact_y": -1.7000000000000002,
+          "radius": 0.34,
+          "pivot": [
+            -1.45,
+            -0.3,
+            -0.9
+          ]
+        },
+        {
+          "leg": "Right",
+          "contact_y": -1.7000000000000002,
+          "radius": 0.34,
+          "pivot": [
+            1.45,
+            -0.3,
+            -0.9
+          ]
+        }
+      ],
+      "hardpoints": [
+        {
+          "x": 4.2,
+          "y": -0.4713538,
+          "z": -3.25,
+          "wing_y": 0.054291212298414646
+        },
+        {
+          "x": -4.2,
+          "y": -0.4713538,
+          "z": -3.25,
+          "wing_y": 0.054291212298414646
+        },
+        {
+          "x": 3.05,
+          "y": -0.2020088,
+          "z": -2.4,
+          "wing_y": 0.06633012107150656
+        },
+        {
+          "x": -3.05,
+          "y": -0.2020088,
+          "z": -2.4,
+          "wing_y": 0.06633012107150656
+        },
+        {
+          "x": 1.95,
+          "y": -0.2020088,
+          "z": -1.5,
+          "wing_y": 0.0772021170604189
+        },
+        {
+          "x": -1.95,
+          "y": -0.2020088,
+          "z": -1.5,
+          "wing_y": 0.0772021170604189
+        },
+        {
+          "x": 0.0,
+          "y": -0.6060264,
+          "z": 0.0,
+          "wing_y": -0.202009
+        },
+        {
+          "x": 0.0,
+          "y": -0.6060264,
+          "z": -1.918238,
+          "wing_y": -0.13949998343470993
+        }
+      ],
+      "gear_cycle": {
+        "passed": true,
+        "checks": {
+          "aircraft_active": true,
+          "nine_states": true,
+          "real_states_no_render_override": true,
+          "smooth_out_and_back": true,
+          "flap_input_moves_flaps": true
+        },
+        "values": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          0.75,
+          0.5,
+          0.25,
+          0.0
+        ],
+        "samples": [
+          {
+            "t": 0.892,
+            "gear": 0.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 180.0161
+          },
+          {
+            "t": 1.392,
+            "gear": 0.25,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 179.9392
+          },
+          {
+            "t": 1.892,
+            "gear": 0.5,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 179.7184
+          },
+          {
+            "t": 2.392,
+            "gear": 0.75,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 179.3566
+          },
+          {
+            "t": 2.892,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 178.8575
+          },
+          {
+            "t": 3.392,
+            "gear": 0.75,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 178.376
+          },
+          {
+            "t": 3.892,
+            "gear": 0.5,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 178.0467
+          },
+          {
+            "t": 4.392,
+            "gear": 0.25,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 177.8663
+          },
+          {
+            "t": 4.892,
+            "gear": 0.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 177.8323
+          },
+          {
+            "t": 7.892,
+            "gear": 0.0,
+            "flap": 1.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 177.1189
+          }
+        ]
+      },
+      "canopy_cycle": {
+        "passed": true,
+        "checks": {
+          "aircraft_active": true,
+          "nine_states": true,
+          "real_states_no_render_override": true,
+          "smooth_out_and_back": true
+        },
+        "values": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          0.75,
+          0.5,
+          0.25,
+          0.0
+        ],
+        "samples": [
+          {
+            "t": 0.917,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 1.542,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.25,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 2.167,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.5,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 2.792,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.75,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 3.417,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 1.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 4.042,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.75,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 4.667,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.5,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 5.292,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.25,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          },
+          {
+            "t": 5.917,
+            "gear": 1.0,
+            "flap": 0.0,
+            "elevator": 0.0,
+            "aileron": 0.0,
+            "rudder": 0.0,
+            "canopy": 0.0,
+            "renderGear": -1.0,
+            "renderCanopy": -1.0,
+            "active": 1.0,
+            "speed": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "reference_dimensions": [
+    0.9158824826026671,
+    0.9619465989473194,
+    0.9591189927212725
+  ],
+  "test_runtime": "Native Win64/Wine gameplay and rendering; independent Win32/i386 GUI compilation",
+  "Windows10_x86_runtime_verified": false,
+  "new_game_download_published": false
+}
