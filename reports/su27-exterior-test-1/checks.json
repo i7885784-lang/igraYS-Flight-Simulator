@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "su27.dnm_loads_structure": true,
+    "su27coarse.dnm_loads_structure": true,
+    "su27cockpit.dnm_loads_structure": true,
+    "flight_data_unchanged": true,
+    "collision_mesh_unchanged": true,
+    "game_code_binary_unchanged": true,
+    "exterior_cockpit_inside_canopy": true,
+    "nozzle_outer_normals_outward": true,
+    "no_full_interior_mesh_in_exterior": true,
+    "no_extra_duplicate_gear": true,
+    "published_games_unchanged": true
+  },
+  "polygon_counts": {
+    "su27.dnm": 2570,
+    "su27coarse.dnm": 2570,
+    "su27cockpit.dnm": 4499
+  },
+  "exterior_cockpit_points_outside": [],
+  "new_game_build_published": false,
+  "native_captures": "Win64 / Wine / original game renderer; paused live flight",
+  "model_summary": {
+    "replaced_original_faces": {
+      "glass": 18,
+      "nozzles": 18,
+      "radome": 16
+    },
+    "total_replaced_faces": 52,
+    "paint_polygons": 124,
+    "extra_polygons": 1131,
+    "cockpit_polygons": 3767,
+    "canopy_polygons": 624,
+    "gear_detail_polygons": 0
+  }
+}
