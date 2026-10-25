@@ -2,6 +2,6 @@
 
 Предыдущие картинки отклонены.
 
-[**Открыть новые листы с настоящими фотографиями и источниками**](../su34-su57-references-v2/README.md)
+[**Открыть новые листы с настоящими фотографиями и источниками**](../su34-su57-references-v3/README.md)
 
-[Скачать новые референсы ZIP](../../downloads/Su34_Su57_References_v2.zip?raw=true)
+[Скачать новые референсы ZIP](../../downloads/Su34_Su57_References_v3.zip?raw=true)

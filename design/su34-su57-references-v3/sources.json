@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Su34",
+    "index": 12,
+    "path": "/workspace/aircraft-real-references/photos/Su34-12.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su34/8af0c67f361db5c81e08c03a57770001_0.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su34/8af0c67f361db5c81e08c03a57770001_0.jpg",
+    "local_filename": "Su34_photo_12.jpg"
+  },
+  {
+    "model": "Su34",
+    "index": 13,
+    "path": "/workspace/aircraft-real-references/photos/Su34-13.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su34/978c08810d56da4b6805498bd2e4b5bf_0.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su34/978c08810d56da4b6805498bd2e4b5bf_0.jpg",
+    "local_filename": "Su34_photo_13.jpg"
+  },
+  {
+    "model": "Su34",
+    "index": 21,
+    "path": "/workspace/aircraft-real-references/photos/Su34-21.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su34/eec0cdea36a8b39c60a581b6bbf5c519_0.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su34/eec0cdea36a8b39c60a581b6bbf5c519_0.jpg",
+    "local_filename": "Su34_photo_21.jpg"
+  },
+  {
+    "model": "Su57",
+    "index": 8,
+    "path": "/workspace/aircraft-real-references/photos/Su57-08.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su57/5a57dcdc3c5ad5756f0526ff9e1286ef_0.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su57/5a57dcdc3c5ad5756f0526ff9e1286ef_0.jpg",
+    "local_filename": "Su57_photo_08.jpg"
+  },
+  {
+    "model": "Su57",
+    "index": 18,
+    "path": "/workspace/aircraft-real-references/photos/Su57-18.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su57/cc4171f0fccdeca9445b86827b9f7903_0.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su57/cc4171f0fccdeca9445b86827b9f7903_0.jpg",
+    "local_filename": "Su57_photo_18.jpg"
+  },
+  {
+    "model": "Su57",
+    "index": 19,
+    "path": "/workspace/aircraft-real-references/photos/Su57-19.jpg",
+    "url": "https://raw.githubusercontent.com/Naseeruddeen634/ML-FLIGHT-DETECTION-UG-PROJECT-2023-/3699d6fcb973cd2658a1f05151a1f262c2305e99/ITPDL05-FINAL%20CODING/datasets/test/Su57/d0752ccd35ea873480ec6c263ca07fc8_2.jpg",
+    "repository_path": "ITPDL05-FINAL CODING/datasets/test/Su57/d0752ccd35ea873480ec6c263ca07fc8_2.jpg",
+    "local_filename": "Su57_photo_19.jpg"
+  }
+]
