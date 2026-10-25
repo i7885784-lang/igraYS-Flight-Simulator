@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "checks": {
+    "mesh_serialization_preserves_emission_flags": true,
+    "su27_graph": true,
+    "su27_sunlight_materials": true,
+    "su27_two_nose_door_leaves": true,
+    "su27_two_main_side_doors": true,
+    "su27_matching_LOD": true,
+    "su27_valid_meshes": true,
+    "su27_native_gear_cycle": true,
+    "su27_smaller_radome": true,
+    "su27_radome_joint_fitted": true,
+    "su27_brake_clear_of_canopy": true,
+    "su27_underside_lighting_changes_with_roll": true,
+    "mig29_graph": true,
+    "mig29_sunlight_materials": true,
+    "mig29_two_nose_door_leaves": true,
+    "mig29_two_main_side_doors": true,
+    "mig29_matching_LOD": true,
+    "mig29_valid_meshes": true,
+    "mig29_native_gear_cycle": true,
+    "mig29_underside_lighting_changes_with_roll": true,
+    "mig29_seven_stations_one_central": true,
+    "mig29_AIM9_no_overlapping_stores": true,
+    "mig29_AIM9X_no_overlapping_stores": true,
+    "mig29_AIM120_no_overlapping_stores": true,
+    "actual_sequential_launches": true,
+    "su27_interrupted_gear": true,
+    "su27_real_brake_cycle": true,
+    "su27_collision_nose_matches_reduced_length": true,
+    "production_EXE_unchanged": true
+  },
+  "details": {
+    "su27_radome_max_root_gap_m": 5.509673598938718e-07,
+    "su27_brake_to_rear_canopy_m": 1.57,
+    "su27_underside_shadow_and_sun_luminance": [
+      47.26409310929003,
+      118.92480086190918
+    ],
+    "mig29_underside_shadow_and_sun_luminance": [
+      46.31341279755779,
+      114.16775954834505
+    ],
+    "AIM9_static_mesh_size_m": [
+      0.597354,
+      0.597354,
+      2.9
+    ],
+    "AIM9X_static_mesh_size_m": [
+      0.32278,
+      0.32278,
+      2.9
+    ],
+    "AIM120_static_mesh_size_m": [
+      0.609488,
+      0.609488,
+      3.6486899999999998
+    ]
+  },
+  "model_sha256": {
+    "su27": "0fba3fe74271b3d93a37a31bee0533b19c7ef5b1134103c30349c8dcae517ade",
+    "mig29": "f1808a8a4b07635c51162d573381ed951ba69acfb445b2457a7499d2f8eff318"
+  }
+}

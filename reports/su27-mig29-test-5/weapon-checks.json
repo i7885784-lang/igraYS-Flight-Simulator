@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "checks": {
+    "max_load_is_seven": true,
+    "locked_launch_only": true,
+    "one_missile_per_press": true,
+    "aircraft_active": true
+  },
+  "samples": [
+    {
+      "time": 0.914,
+      "aim9": 7.0,
+      "aim9x": 0.0,
+      "aim120": 0.0,
+      "choice": 1.0,
+      "ready": 0.0,
+      "active": 1.0
+    },
+    {
+      "time": 1.828,
+      "aim9": 7.0,
+      "aim9x": 0.0,
+      "aim120": 0.0,
+      "choice": 1.0,
+      "ready": 0.0,
+      "active": 1.0
+    },
+    {
+      "time": 5.42,
+      "aim9": 7.0,
+      "aim9x": 0.0,
+      "aim120": 0.0,
+      "choice": 1.0,
+      "ready": 1.0,
+      "active": 1.0
+    },
+    {
+      "time": 6.38,
+      "aim9": 6.0,
+      "aim9x": 0.0,
+      "aim120": 0.0,
+      "choice": 1.0,
+      "ready": 1.0,
+      "active": 1.0
+    },
+    {
+      "time": 7.33,
+      "aim9": 5.0,
+      "aim9x": 0.0,
+      "aim120": 0.0,
+      "choice": 1.0,
+      "ready": 1.0,
+      "active": 1.0
+    }
+  ]
+}

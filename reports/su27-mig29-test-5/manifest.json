@@ -1,0 +1,20 @@
+{
+  "report_only": false,
+  "pdf_pages": 15,
+  "model_sha256": {
+    "su27": "0fba3fe74271b3d93a37a31bee0533b19c7ef5b1134103c30349c8dcae517ade",
+    "mig29": "f1808a8a4b07635c51162d573381ed951ba69acfb445b2457a7499d2f8eff318"
+  },
+  "zip": {
+    "archive": "YSFlight_Su27_MiG29_Test_5_32bit.zip",
+    "bytes": 13801651,
+    "sha256": "040bcb4a73a6fb361845bdbb4c074e95558831dc1b58cd7f0e3fdd666848cb9e",
+    "single_win32_GUI_exe": true,
+    "CRC_passed": true,
+    "model_sha256": {
+      "su27": "0fba3fe74271b3d93a37a31bee0533b19c7ef5b1134103c30349c8dcae517ade",
+      "mig29": "f1808a8a4b07635c51162d573381ed951ba69acfb445b2457a7499d2f8eff318"
+    }
+  },
+  "pdf_sha256": "31e57385af619f6810ce355490fd29f8ff697c60027b89ea8f8cc0a850e34999"
+}
