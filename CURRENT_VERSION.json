@@ -1,0 +1,13 @@
+{
+  "current_baseline": "su57-test-2",
+  "pinned_date": "2026-10-26",
+  "baseline_commit": "0e30991",
+  "archive": "downloads/YSFlight_Su57_Test_2_32bit.zip",
+  "archive_sha256": "ad8fa53419f06532e25d65669d83b785d6d4c5568ee6fbf0d530d00bab038697",
+  "report": "reports/su57-test-2/REPORT.md",
+  "model_changes": "changes/su57-test-2",
+  "model_source": "changes/su57-test-2/model-source",
+  "engine_patch": "changes/su57-test-1/native.patch",
+  "target": "Windows 32-bit",
+  "status": "current development baseline; user liked photos, in-game user review pending"
+}

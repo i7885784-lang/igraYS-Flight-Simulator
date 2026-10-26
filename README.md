@@ -1,5 +1,7 @@
 # YSFlight Airshow v8.6.2 — быстрее повороты, ровнее старт
 
+> **Текущая основа для всех следующих правок: [Су-57, тест №2](CURRENT_VERSION.md).** [Скачать игру](downloads/YSFlight_Su57_Test_2_32bit.zip?raw=true). Новый помощник: начни с этого раздела.
+
 **[Су-57 — переделанная модель №2: сравнение сверху/спереди, осмотр 360°](reports/su57-test-2/REPORT.md)** · [Скачать Windows 32-бит](downloads/YSFlight_Su57_Test_2_32bit.zip?raw=true)
 
 **[Су-57 — предыдущий тест №1, фото и видео](reports/su57-test-1/REPORT.md)** · [Скачать Windows 32-бит](downloads/YSFlight_Su57_Test_1_32bit.zip?raw=true)
