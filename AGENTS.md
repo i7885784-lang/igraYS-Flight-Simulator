@@ -1,6 +1,7 @@
 # Project context for coding assistants
 
-Read [CURRENT_VERSION.md](CURRENT_VERSION.md) before changing the game.
+Read [CURRENT_VERSION.md](CURRENT_VERSION.md) and
+[PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) before changing the game.
 The user explicitly selected **Su-57 test 2** as the current development
 baseline. Start future work from the complete archive linked there, with
 its existing Su-27, MiG-29 and Su-57. Consult CURRENT_VERSION.json for exact
@@ -11,3 +12,7 @@ and aircraft changes in a separate test version. Provide real in-game
 pictures/videos and a downloadable Windows 32-bit ZIP. Distinguish ideas,
 automated checks and user acceptance. Keep upstream model attribution and
 licenses. User instructions take precedence over this file.
+
+The handoff distinguishes historical experiments from the still evolving
+sandbox goal. Do not treat old mechanics as a fixed final design. The engine
+source snapshot linked there is separate from the playable baseline ZIP.
