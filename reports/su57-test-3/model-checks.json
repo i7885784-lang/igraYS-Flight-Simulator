@@ -1,0 +1,21 @@
+{
+  "finite_geometry": true,
+  "unique_nodes": true,
+  "new_surfaces_receive_lighting": true,
+  "registered_external_stations": 4,
+  "sha256": {
+    "su57.dat": "becf15daf98bba6b12740dcb97407f7f7d4a11c07c8efac8aefe030866d466c7",
+    "su57_coarse.dnm": "faab6586881f2afbe81f293cb2e50c3dd5336bafef93b5fb53e62047732698f9",
+    "su57cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+    "su57.dnm": "faab6586881f2afbe81f293cb2e50c3dd5336bafef93b5fb53e62047732698f9",
+    "su57coll.srf": "638fbcb3e06357ba6470cdd007e39093d57b922f3f75103a9fda393ad9a1fd2a"
+  },
+  "changed_baseline_files": [
+    "aircraft/su57.dat",
+    "aircraft/su57_coarse.dnm",
+    "aircraft/su57.dnm",
+    "aircraft/su57coll.srf"
+  ],
+  "su27_mig29_preserved": true,
+  "engine_exe_preserved": true
+}
