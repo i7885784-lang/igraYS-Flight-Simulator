@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "upper_views": 36,
+  "lower_views": 12,
+  "heading_step_deg": 10,
+  "source": "native paused game camera frames, not image generation"
+}
