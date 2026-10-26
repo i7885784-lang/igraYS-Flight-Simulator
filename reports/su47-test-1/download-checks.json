@@ -1,0 +1,75 @@
+{
+  "verified_commit": "426e041820aaf5acea11b05bdc46ba920c96a171",
+  "checks": [
+    {
+      "path": "reports/su47-test-1/REPORT.md",
+      "http": 200,
+      "bytes": 16089,
+      "sha256": "36c955afc055963c45128228f9bfb83843c3b6eba9f56958a79bf9b301fa3ecf",
+      "matches_local": true
+    },
+    {
+      "path": "downloads/YSFlight_Su47_Test_1_32bit.zip",
+      "http": 200,
+      "bytes": 16400253,
+      "sha256": "4fb928d479971fdf9ba9248eef5bc76800f960b816aa24c5f0f172bf1de84528",
+      "matches_local": true
+    },
+    {
+      "path": "downloads/YSFlight_Su47_Test_1_Sources.zip",
+      "http": 200,
+      "bytes": 8477659,
+      "sha256": "fcd53e5c8413cd6e51e202390dae374e47db3352a484850ca4cd1e97b2b7be9d",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/top.png",
+      "http": 200,
+      "bytes": 28278,
+      "sha256": "677da6c2f88f207cd5e93e48b14f5b36bd2fde8c76941e023b6509da75659eb5",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/front.png",
+      "http": 200,
+      "bytes": 16922,
+      "sha256": "5ace802329d8e187a1a908c496b45ddeaa7ffe49c061feb8a21439ce9adc294c",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/side.png",
+      "http": 200,
+      "bytes": 18797,
+      "sha256": "c9c021f5434f8e03fec0358aef7afdbb2195cffda3f3ca4d41fa766164cd8db1",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/gear.mp4",
+      "http": 200,
+      "bytes": 259370,
+      "sha256": "ba6d35c15b92cf0a07dea2b93dd43b74bee4d132d8ee2dd8512c228cf810b066",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/canopy.mp4",
+      "http": 200,
+      "bytes": 187851,
+      "sha256": "6beb87eba0906ad61d37422d636c6a65d2497a5305b572b3f845b5fb35054f94",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/controls.mp4",
+      "http": 200,
+      "bytes": 950283,
+      "sha256": "1620fd15ab9006c5eb4913b6466c7f306b0fa54a7c7b4f183cdc2e62f1711407",
+      "matches_local": true
+    },
+    {
+      "path": "reports/su47-test-1/engine.mp4",
+      "http": 200,
+      "bytes": 361720,
+      "sha256": "fd2db208424ff35367eaceeb23565011e3fe6652435281a165998720fcd17fb0",
+      "matches_local": true
+    }
+  ]
+}
