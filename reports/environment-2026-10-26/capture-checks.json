@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "frames": [
+    "quarter",
+    "front",
+    "top",
+    "side"
+  ],
+  "states": [
+    {
+      "t": "1.2150",
+      "gear": "0.000000",
+      "flap": "0.000000",
+      "elevator": "0.000000",
+      "aileron": "0.000000",
+      "rudder": "0.000000",
+      "canopy": "0.000000",
+      "spoiler": "0.000000",
+      "renderGear": "-1.000000",
+      "renderCanopy": "-1.000000",
+      "active": "1",
+      "speed": "180.0206"
+    },
+    {
+      "t": "1.2150",
+      "gear": "0.000000",
+      "flap": "0.000000",
+      "elevator": "0.000000",
+      "aileron": "0.000000",
+      "rudder": "0.000000",
+      "canopy": "0.000000",
+      "spoiler": "0.000000",
+      "renderGear": "-1.000000",
+      "renderCanopy": "-1.000000",
+      "active": "1",
+      "speed": "180.0206"
+    },
+    {
+      "t": "1.2150",
+      "gear": "0.000000",
+      "flap": "0.000000",
+      "elevator": "0.000000",
+      "aileron": "0.000000",
+      "rudder": "0.000000",
+      "canopy": "0.000000",
+      "spoiler": "0.000000",
+      "renderGear": "-1.000000",
+      "renderCanopy": "-1.000000",
+      "active": "1",
+      "speed": "180.0206"
+    },
+    {
+      "t": "1.2150",
+      "gear": "0.000000",
+      "flap": "0.000000",
+      "elevator": "0.000000",
+      "aileron": "0.000000",
+      "rudder": "0.000000",
+      "canopy": "0.000000",
+      "spoiler": "0.000000",
+      "renderGear": "-1.000000",
+      "renderCanopy": "-1.000000",
+      "active": "1",
+      "speed": "180.0206"
+    },
+    {
+      "t": "11.4260",
+      "gear": "1.000000",
+      "flap": "0.000000",
+      "elevator": "0.000000",
+      "aileron": "0.000000",
+      "rudder": "0.000000",
+      "canopy": "0.000000",
+      "spoiler": "0.000000",
+      "renderGear": "-1.000000",
+      "renderCanopy": "-1.000000",
+      "active": "1",
+      "speed": "169.2009"
+    }
+  ],
+  "video": "live-flight.mp4",
+  "renderer": "Win64 validation build, Wine 10, Xvfb; actual game rendering"
+}

@@ -1,0 +1,11 @@
+{
+  "source_manifest_entries_unchanged": 1576,
+  "source_code_changes": false,
+  "baseline_zip_sha256": "ad8fa53419f06532e25d65669d83b785d6d4c5568ee6fbf0d530d00bab038697",
+  "tool_versions": {
+    "cmake": "3.31.6",
+    "mingw_gcc": "14-posix",
+    "wine": "10.0"
+  },
+  "install_script_rerun_passed": true
+}

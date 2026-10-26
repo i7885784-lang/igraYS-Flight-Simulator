@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "archive_sha256": "938292de6657570cf477137613e728650b343e46655a26de3ed79da7a22ee60c",
+  "bytes": 15141771,
+  "unchanged_baseline_entries": 1020,
+  "replaced_files": {
+    "ysflight32_gl1.exe": "b5fcf7d2a799d9d6a21a58a1eaaaa85afe588f40673c4897bf48951e3003db51",
+    "plugin/sndYsflight32.dll": "9275ae345daf16999c9cbdb0cecb13e9004bf54fd95ec73a7d87c3838235ae82",
+    "plugin/voiceYsflight32.dll": "4c3f95639d7347ce16d145478e5f2e2bed2435c1bc5ee605eff6334fac14b782"
+  },
+  "imports": {
+    "ysflight32_gl1.exe": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "plugin/sndYsflight32.dll": [
+      "dsound.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "plugin/voiceYsflight32.dll": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ]
+  },
+  "target": "PE32 i386 GUI, no diagnostic commands",
+  "native_windows_10_x86_run": false
+}

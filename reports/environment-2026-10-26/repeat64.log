@@ -1,0 +1,540 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysclass/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysclass]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysclass11/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysclass11]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysport/src/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysport]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgl/src/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysgl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/nownd/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/yssimplesound/sample_fssimplewindow/CMakeLists.txt:70 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[yssimplesound_sample_fssimplewindow]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/src/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fslazywindow]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/template/CMakeLists.txt:54 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fslazywindow_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/samples/sample00-bouncingBall/CMakeLists.txt:55 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[sample00_bouncingBall]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fssimplefiledialog/src/CMakeLists.txt:68 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fssimplefiledialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fssimplefiledialog/sample/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fssimplefiledialog_sample]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysfontrenderer/src/CMakeLists.txt:42 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysfontrenderer]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/gl/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager_gl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/null/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/nownd/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguifiledialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/template/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/template_with_filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_template_with_filedialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template_with_filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template_with_filedialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template-easy/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template_easy]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/kernel/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblkernel]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/kernelutil/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblutil]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/nownd/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/gui_foundation/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgui_foundation]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/gui/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgui]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/main/CMakeLists.txt:75 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysgebl64]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/cmdlib/CMakeLists.txt:49 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblcmdlib]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/cmdmain/CMakeLists.txt:49 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblcmd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/samples/YsShellExt/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysshellext_sample]
+YS_USE_OPENCV is OFF.  Skipping OpenCV
+CMake Deprecation Warning at platform/common/CMakeLists.txt:51 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_common]
+CMake Warning (dev) at CMakeLists.txt:44 (set):
+  Cannot set "ysflight_filename_INCLUDE_DIR": current scope has no parent.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at platform/win32/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_win32]
+[ysflight_platform_win32_gl]
+CMake Deprecation Warning at sounddll/win32/CMakeLists.txt:46 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[sndYsflight64]
+CMake Deprecation Warning at voicedll/generic/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[voiceYsflight64]
+CMake Deprecation Warning at platform/nownd/CMakeLists.txt:40 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_nownd]
+CMake Deprecation Warning at main/CMakeLists.txt:121 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight64_gl2]
+[ysflight64_gl1]
+CMake Deprecation Warning at main_consvr/CMakeLists.txt:94 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight64_nownd]
+CMake Deprecation Warning at main_demoOnly/CMakeLists.txt:118 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight64_gl2demo]
+[ysflight64_gl1demo]
+-- Configuring done (0.1s)
+-- Generating done (0.4s)
+-- Build files have been written to: /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/build64
+ninja: no work to do.

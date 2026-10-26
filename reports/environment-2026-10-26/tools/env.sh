@@ -1,0 +1,10 @@
+export PATH=/workspace/ysflight-dev/tools/usr/bin:$PATH
+export LD_LIBRARY_PATH=/workspace/ysflight-dev/tools/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+export WINEDEBUG=-all
+export LIBGL_ALWAYS_SOFTWARE=1
+export WINELOADER=/workspace/ysflight-dev/tools/usr/lib/wine/wine64
+export WINESERVER=/workspace/ysflight-dev/tools/usr/lib/wine/wineserver64
+export WINEDLLPATH=/workspace/ysflight-dev/tools/usr/lib/x86_64-linux-gnu/wine
+export DISPLAY=:99
+export WINEPREFIX=/workspace/ysflight-dev/wine-clean
+export XDG_CACHE_HOME=/workspace/ysflight-dev/cache
