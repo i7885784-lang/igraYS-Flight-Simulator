@@ -17,7 +17,7 @@ The handoff distinguishes historical experiments from the still evolving
 sandbox goal. Do not treat old mechanics as a fixed final design. The engine
 source snapshot linked there is separate from the playable baseline ZIP.
 
-Before aircraft replacements, read docs/aircraft-model-upgrade/README.md
-and TASK_PROMPT.md. Preserve the already published Su-47 work. Read
+The current aircraft task is docs/aircraft-model-upgrade/TASK_PROMPT.md.
+Read it first; README.md and TASK_DETAILS.md in that directory are reference. Preserve the already published Su-47 work. Read
 docs/THIRD_PARTY_LICENSE_PLAN.md: defer license UI placement; preserve
 required notices and source materials now. Do not add a main-menu screen.
