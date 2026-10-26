@@ -1,0 +1,12 @@
+Su-47 Berkut YSFlight adaptation, test 1, 2026-10-26.
+Original repository: https://github.com/Nobatgeldi/Su_47_Berkut
+Commit: 70e2a7296ae211e3c1b0b95ff7b4dd3aef622260
+Author named by original config: Nobatgeldi Geldimammedov.
+Original license: GNU GPL version 3; see LICENSE and upstream/license.
+Source geometry and memory/selection data: upstream/Su_47_Berkut.p3d (MLOD).
+Adaptation: MLOD reader, YSFlight DNM hierarchy, scale, polygon colors, closed internal liners, animation states, collider and DAT.
+No Arma game assets, PAA textures, shaders, sounds, pilot or third-party missile proxies are used in the runtime conversion.
+Shared Python mesh utilities originate in this project changes/su57-test-2/model-source. No Su-57 aircraft geometry is used for Su-47.
+Rebuild: Python 3 with NumPy, SciPy and Pillow; run python3 build_model.py here. Outputs runtime/aircraft/*.
+Engine integration is in ../native.patch; original Arma animations are not runtime dependencies.
+Nozzle adaptation: 20 overlapping leaves per engine, throttle-driven opening, fixed thrust axis.

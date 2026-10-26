@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/Nobatgeldi/Su_47_Berkut",
+  "commit": "70e2a7296ae211e3c1b0b95ff7b4dd3aef622260",
+  "declared_license": "GPL-3.0",
+  "author_from_CfgVehicles": "Nobatgeldi Geldimammedov",
+  "included_upstream_resources": [
+    "Su_47_Berkut.p3d",
+    "Su_47_Berkut.cfg",
+    "license"
+  ],
+  "not_used": [
+    "All PAA/TGA/PNG textures",
+    "Arma 3 pilot proxy and game resources",
+    "SU_33_Flanker_D/R73 proxies",
+    "Arma sounds/material shaders",
+    "Cockpit LCD/example textures"
+  ],
+  "provenance_limit": "Repository history and declaration checked; no claim of independent verification of every upstream author contribution. External asset references excluded from conversion.",
+  "sha256": {
+    "Su_47_Berkut.p3d": "0fadc5d21fcdb9253e7eb332618d13c8ff0928d5c8e23ff040ff726bebe0f455",
+    "Su_47_Berkut.cfg": "6bd453f979d3442a1b9a8c8499dc2aa3ec273f0e21505623b925cf450fd9e812",
+    "license": "efd4b0031f2c5f0e73fa7575cce67650ef7857474a11738c4be120396f11b77d"
+  }
+}

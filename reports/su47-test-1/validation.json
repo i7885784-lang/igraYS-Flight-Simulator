@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "checks": {
+    "finite_valid_faces": true,
+    "unique_nodes": true,
+    "all_twelve_control_classes": true,
+    "gear_doors_canopy_present": true,
+    "no_assumed_nozzle_vectoring": true,
+    "only_flames_emissive": true,
+    "forty_throttle_driven_nozzle_petals": true,
+    "serialized_nozzle_aperture_opens": true,
+    "coarse_model_matches": true,
+    "collider_covers_wings_fins_nose_tail": true,
+    "old_three_aircraft_preserved": true,
+    "native_engine_throttle_0_to_1": true,
+    "native_gear_out_back": true,
+    "native_canopy_out_back": true,
+    "native_six_control_directions": true,
+    "native_flap_full_travel": true,
+    "underside_responds_to_sun": true,
+    "native_afterburner_visible_and_off": true,
+    "smoke_SU-27_FLANKER": true,
+    "smoke_MIG-29_FULCRUM": true,
+    "smoke_SU-57_FELON": true
+  },
+  "native_ranges": {
+    "gear": {
+      "gear": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "canopy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "elevator": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aileron": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rudder": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flap": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "canopy": {
+      "gear": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "canopy": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "elevator": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aileron": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rudder": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flap": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "controls": {
+      "gear": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "canopy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "elevator": [
+        -1.0,
+        1.0,
+        0.0
+      ],
+      "aileron": [
+        -1.0,
+        1.0,
+        0.0
+      ],
+      "rudder": [
+        -1.0,
+        1.0,
+        0.198868
+      ],
+      "flap": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "engine": {
+      "gear": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "canopy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "elevator": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aileron": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rudder": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flap": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "underside_mask_luminance": {
+    "bottom": 19.236798422628002,
+    "inverted": 47.713556634975795
+  },
+  "afterburner_pixels": {
+    "4": 5855,
+    "7": 5806,
+    "11": 0,
+    "14": 0
+  },
+  "nozzle_exit_radii_m_idle_full": [
+    0.4209999593231516,
+    0.5952909259743406
+  ],
+  "collision_faces": 528,
+  "model_sha256": {
+    "su47.dnm": "86b8eedb03600d54ab867a354930f075c0215cc5b5c3a9d4ba54739af7ef9c75",
+    "su47.dat": "1f5d5069cb10376018ad7b7eb5f8152e4a31ee3aadab1da534aa7396d471f06f",
+    "su47cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+    "su47coll.srf": "0694a7f037a0bcadf3eccb844474b77ccc454d8f0fdc0151e74dfefffd1a524d",
+    "su47_coarse.dnm": "86b8eedb03600d54ab867a354930f075c0215cc5b5c3a9d4ba54739af7ef9c75"
+  },
+  "limits": [
+    "Win64/Wine functional verification; no native Windows 10 x86 run",
+    "Visual mechanism clearance checks are not an exhaustive collision proof",
+    "Simplified flight parameters; no claim of real Su-47 performance"
+  ]
+}

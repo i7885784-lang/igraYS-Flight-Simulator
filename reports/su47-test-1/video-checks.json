@@ -1,0 +1,26 @@
+{
+  "gear": {
+    "width": 1280,
+    "height": 960,
+    "duration": "16.000000",
+    "nb_read_frames": "192"
+  },
+  "canopy": {
+    "width": 1280,
+    "height": 960,
+    "duration": "16.000000",
+    "nb_read_frames": "192"
+  },
+  "controls": {
+    "width": 1280,
+    "height": 960,
+    "duration": "26.000000",
+    "nb_read_frames": "312"
+  },
+  "engine": {
+    "width": 1280,
+    "height": 960,
+    "duration": "16.000000",
+    "nb_read_frames": "192"
+  }
+}

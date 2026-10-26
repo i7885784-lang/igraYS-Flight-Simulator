@@ -1,0 +1,366 @@
+YSFLIGHT
+VERSION 20181124
+YFSVERSION 20180930
+NETVERSION 20180930
+Depth Bits:   24
+Stencil Bits: 8
+Bit Depth=24
+Loading Sound Plug-In.
+Sound Plug-In Loaded.
+Failed to create secure directory (/home/agent/.config/pulse): Read-only file system
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+Loading Voice Plug-In.
+Voice Plug-In Loaded.
+All functions from Voice Dll are ready.
+[VOICEDLL] This is a skeleton for the future voice extension.
+[VOICEDLL] This DLL does not actually function at this time.
+FsVoiceDllInitialize (Line 19)
+FsVoiceDllSetMasterSwitch (Line 38)
+Localization File: ru.uitxt
+Initialization Counter 0
+Initialization Counter 1
+Initialization Counter 2
+Free 453
+Free 459
+Free 465
+Free 471
+Free 477
+Free 483
+Free 489
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 3
+Initialization Counter 4
+Date 20261026
+Initialization Counter 5
+Common YSFLIGHT Dir=
+Common YSFLIGHT Dir=.
+Detected ./20181124
+Date 20261026
+Initialization Counter 6
+Initialization Counter 7
+Initialization Counter 8
+Script>>WAITFOR:GUI
+Script>>SLEEP:500
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>SLEEP:8000
+Script>>FILE:OPEN Z:/workspace/ysflight-dev/su47-test-1/checks/gear/start.yfs
+Waiting for thread #0 gets ready.
+Thread 0 ready.
+Waiting for thread #1 gets ready.
+Thread 1 ready.
+Waiting for thread #2 gets ready.
+Thread 2 ready.
+Waiting for thread #3 gets ready.
+Thread 3 ready.
+0 same-plane map groups.
+FsLattice
+ -20000.000000 -20000.000000 to 20000.000000 20000.000000
+ NX=41, NY=41
+Read 10000 Vertices
+Read 10000 Vertices
+Script>>GUI:CLICK mainDlg flyNow
+>> CLICK mainDlg flyNow
+Script>>WAITFOR:FLYING
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+V862BALANCE id=1 speed=180.0000 pitch=0.5561 trim=0.024178 throttle=0.418710
+Script>>FLIGHTCMD:TESTADVANCE .1
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABVIEW 40 -14 110 0
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>REM CAPTURE_READY
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.4640 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=180.0173 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.8070 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=180.0170 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.0520 gear=0.110000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.9964 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.3600 gear=0.264000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.9052 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.7340 gear=0.451000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.6987 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.0090 gear=0.588500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.4809 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.2620 gear=0.715000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.2322 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.5250 gear=0.846500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=178.9253 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.7940 gear=0.981000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=178.5616 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.0800 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=178.1463 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.3160 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=177.8082 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.5790 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=177.4368 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.8600 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=177.0460 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.2140 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=176.5629 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.5330 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=176.1362 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.7370 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=175.8677 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.0340 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=175.4829 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.3190 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=175.1204 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.5610 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.8179 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.8170 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.5031 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.0390 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.2346 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.2810 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.9464 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.5200 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.6667 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.7390 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.4145 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.9800 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.1415 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.1970 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.8999 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.4270 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.6481 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.6420 gear=1.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.4167 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.9210 gear=0.959000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.1250 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.1290 gear=0.855000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.9382 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.3520 gear=0.743500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.7751 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.6340 gear=0.602500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.6236 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.8620 gear=0.488500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.5447 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.0850 gear=0.377000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.5050 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.3410 gear=0.249000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.5047 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.5710 gear=0.134000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.5456 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.8040 gear=0.017500 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.6263 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.1180 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.7676 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.3490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.8729 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.5940 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=171.9858 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.8040 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.0833 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.0650 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.2056 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.2960 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.3149 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.6100 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.4647 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=16.3460 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=172.8215 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.0400 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.1644 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.6160 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.4530 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=18.5950 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=173.9502 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.0080 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.1620 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.4360 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.3823 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.7750 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.5574 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.1200 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.7360 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.6230 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=174.9967 throttle=0.418710 ab=0
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.9150 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=175.1482 throttle=0.418710 ab=0
+Script>>SLEEP:200

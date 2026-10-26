@@ -1,0 +1,72 @@
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -4278,7 +4278,7 @@
+ 
+ void FsAirplaneProperty::SetupVisual(FsVisualDnm &vis) const
+ {
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON"))){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT"))){
+   vis.SetState(120,0,1,GetThrottle());vis.SetPitch(122,GetElevator()*YsDegToRad(12.0));vis.SetRotation(123,-GetAileron()*YsDegToRad(12.0));
+   vis.SetState(100,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);vis.SetState(101,0,1,staGear);
+   vis.SetState(110,(su27SpoolLeft>.95 && staAb==YSTRUE && staThrottle>.9 && staFuelLoad>0 && IsActive()==YSTRUE)?1:0);
+@@ -4396,7 +4396,7 @@
+ 	vis.SetRotation(YSDNM_CLASSID_ROTOR_CUSTOM_AXIS,staRotorAngle);
+ 	vis.SetPitch(YSDNM_CLASSID_TIRE,staWheelAngle);
+  // Shared external animation rig for the two detailed fighters. Physics unchanged.
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON"))){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT"))){
+   // Brake cylinder and piston follow a sampled articulated mechanism, not a floating prop.
+   if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
+    const double step=YsBound(staSpoiler,0.0,1.0)*20.0;const int idx=YsSmaller(19,int(step));
+@@ -4417,6 +4417,15 @@
+   if(modelRudderPose>=-1)bipolar(8,modelRudderPose);
+   const double e=modelElevatorPose>=-1?modelElevatorPose:elvPlusTrim,a=modelAileronPose>=-1?modelAileronPose:ctlAileron;
+   bipolar(148,YsBound(e+.35*a,-1.0,1.0));bipolar(149,YsBound(e-.35*a,-1.0,1.0));
++  if(0==strcmp(GetIdentifier(),"SU-47_BERKUT")){
++   const double f=modelFlapPose>=0?modelFlapPose:staFlap;
++   const double r=modelRudderPose>=-1?modelRudderPose:GetRudder();
++   auto move=[&](int c,double q){bipolar(c,YsBound(q,-1.0,1.0));};
++   move(180,-a);move(181,-a);move(182,f);move(183,f);
++   move(184,f);move(185,f);move(186,-e);move(187,-e);
++   move(188,r);move(189,r);move(190,e);move(191,e);
++   // Su-47 demonstrator: fixed nozzles, no assumed thrust vectoring.
++  }
+   if(0==strcmp(GetIdentifier(),"SU-57_FELON")){
+    // Su-57 has all-moving canted fins, flaperons, leading-edge surfaces,
+    // stabilators and vectoring nozzles. No fictitious dorsal brake panel.
+--- a/YSFLIGHT/src/core/fssu27.h
++++ b/YSFLIGHT/src/core/fssu27.h
+@@ -5,7 +5,7 @@
+ struct Su27ClickCache {const FsAirplane *air=nullptr;double clock=-100;YsVec2 center[6];double radius[6]={0};bool click=false,dragging=false;int lastX=0,lastY=0,restoreX=0,restoreY=0;} su27Ui;
+ bool Su27Aircraft(const FsAirplane *a){return a && 0==strcmp(a->Prop().GetIdentifier(),"SU-27_FLANKER");}
+ bool Su27Cockpit(const FsAirplane *){return false;} // Test6: native open cockpit, no custom start panel.
+-bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && (0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(a->Prop().GetIdentifier(),"SU-57_FELON")));}
++bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && (0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(a->Prop().GetIdentifier(),"SU-57_FELON") || 0==strcmp(a->Prop().GetIdentifier(),"SU-47_BERKUT")));}
+ YsVec3 Su27Button(int i){return YsVec3(-.535,1.466-i*.105,5.838);}
+ void Su27Action(FsSimulation *sim,int id)
+ {
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,9 +66,9 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-57 Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-47 Berkut Test 1";  // Different names for screen saver programs
+ #else
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-57 Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-47 Berkut Test 1";  // Different names for screen saver programs
+ #endif
+ 
+ 
+--- a/YSFLIGHT/src/ui/fsrunloop.cpp
++++ b/YSFLIGHT/src/ui/fsrunloop.cpp
+@@ -2007,7 +2007,7 @@
+   if(auto a=labSim->GetPlayerAirplane()){auto &p=a->Prop();p.modelGearPose=atof(labArgs[1]);p.modelCanopyPose=atof(labArgs[2]);p.modelFlapPose=atof(labArgs[3]);p.modelElevatorPose=atof(labArgs[4]);p.modelAileronPose=atof(labArgs[5]);p.modelRudderPose=atof(labArgs[6]);}return;
+  }
+  if(labSim && labArgs.GetN()>=1 && 0==labArgs[0].STRCMP("MODELCHECK")){
+-  if(auto a=labSim->GetPlayerAirplane()){const auto &p=a->Prop();printf("MODELCHECK t=%.4f gear=%.6f flap=%.6f elevator=%.6f aileron=%.6f rudder=%.6f canopy=%.6f spoiler=%.6f renderGear=%.6f renderCanopy=%.6f active=%d speed=%.4f\n",labSim->GetClock(),p.GetLandingGear(),p.GetFlap(),p.GetElevator(),p.GetAileron(),p.GetRudder(),p.su27Canopy,p.GetSpoiler(),p.modelGearPose,p.modelCanopyPose,int(p.IsActive()),p.GetVelocity());fflush(stdout);}return;
++  if(auto a=labSim->GetPlayerAirplane()){const auto &p=a->Prop();printf("MODELCHECK t=%.4f gear=%.6f flap=%.6f elevator=%.6f aileron=%.6f rudder=%.6f canopy=%.6f spoiler=%.6f renderGear=%.6f renderCanopy=%.6f active=%d speed=%.4f throttle=%.6f ab=%d\n",labSim->GetClock(),p.GetLandingGear(),p.GetFlap(),p.GetElevator(),p.GetAileron(),p.GetRudder(),p.su27Canopy,p.GetSpoiler(),p.modelGearPose,p.modelCanopyPose,int(p.IsActive()),p.GetVelocity(),p.GetThrottle(),int(p.GetAfterBurner()));fflush(stdout);}return;
+  }
+  if(labSim && labArgs.GetN()>=1 && 0==labArgs[0].STRCMP("SU27CHECK")){
+   if(auto a=labSim->GetPlayerAirplane()){auto &p=a->Prop();printf("SU27CHECK time=%.3f battery=%d pumps=%d L=%.6f R=%.6f factor=%.6f canopy=%.6f target=%.6f parking=%d brake=%d thrust=%.2f speed=%.4f lookH=%.6f lookP=%.6f\n",labSim->GetClock(),int(p.su27Battery),int(p.su27Pumps),p.su27SpoolLeft,p.su27SpoolRight,p.su27ThrustFactor,p.su27Canopy,p.su27CanopyTarget,int(p.su27Parking),int(p.GetBrake()),p.GetCurrentThrust(),p.GetVelocity(),p.su27LookH,p.su27LookP);}

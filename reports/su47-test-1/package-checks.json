@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "zip": "YSFlight_Su47_Test_1_32bit.zip",
+  "sha256": "4fb928d479971fdf9ba9248eef5bc76800f960b816aa24c5f0f172bf1de84528",
+  "bytes": 16400253,
+  "files": 1042,
+  "imports": {
+    "ysflight32_gl1.exe": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sndYsflight32.dll": [
+      "dsound.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "voiceYsflight32.dll": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ]
+  },
+  "CRC": true,
+  "independent_extraction": true,
+  "old_three_preserved": true,
+  "native_Windows10_x86_run": false
+}

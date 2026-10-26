@@ -1,0 +1,18 @@
+{
+  "YSFLIGHT/src/vehicle/fsairplaneproperty.cpp": {
+    "original": "1b450edc902478f202468cde7eeb967e7cbd2955415563c01f015b701c173057",
+    "modified": "10df7051e79a0fb97410bd2760bbd9abb51c4f45ba65dce9a28d5518480245b6"
+  },
+  "YSFLIGHT/src/core/fssu27.h": {
+    "original": "f8c43201ad29ea861b869bec3ae07ce802020a8094d9b4db6ea61fb5d7528a54",
+    "modified": "6e15d8a36d17234f1850f8ed6b8e164585605ff2f97b42d3a6e25bacea68195a"
+  },
+  "YSFLIGHT/src/main/fsmain.cpp": {
+    "original": "e82f0287043016fbce09c463336f180bdf80e2ea66c1ce6e4c6f171ced50efac",
+    "modified": "f06ad870c4174dab230eb365c34ec6ebaab25fc8a2527232d9d7e3738aa10edc"
+  },
+  "YSFLIGHT/src/ui/fsrunloop.cpp": {
+    "original": "61ee0d76c2684ece73c46e3b1f8e99233f970e213bc53f8bc6a373210f068428",
+    "modified": "ce8e266c61e64ce45434d3ca2d3778f12b0cad62181c2d7c97e7f015fe67d08d"
+  }
+}
