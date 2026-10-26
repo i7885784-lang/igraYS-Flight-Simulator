@@ -1,0 +1,30 @@
+[
+  {
+    "path": "reports/environment-2026-10-26/REPORT.md",
+    "http_status": 200,
+    "bytes": 9121,
+    "sha256": "a04504177d01bd6ad48fa10d9ca69a9be73ab33bf83293158c9b78edfbfeb54c",
+    "matches_local": true
+  },
+  {
+    "path": "reports/environment-2026-10-26/quarter.png",
+    "http_status": 200,
+    "bytes": 44121,
+    "sha256": "bab3e5392a209b1f145798da974b8f1adb9b8087fac99f36b3d185703cbf558c",
+    "matches_local": true
+  },
+  {
+    "path": "reports/environment-2026-10-26/live-flight.mp4",
+    "http_status": 200,
+    "bytes": 472723,
+    "sha256": "8f844796af15df6923ab75ab044fdf9b387f6829dc55a0e814cdb239806a22a6",
+    "matches_local": true
+  },
+  {
+    "path": "downloads/YSFlight_Su57_Test_2_Environment_Check_32bit.zip",
+    "http_status": 200,
+    "bytes": 15141771,
+    "sha256": "938292de6657570cf477137613e728650b343e46655a26de3ed79da7a22ee60c",
+    "matches_local": true
+  }
+]
