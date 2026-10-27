@@ -1,0 +1,17 @@
+{
+  "YSFlight_Playtest_4_32bit.zip": {
+    "sha256": "7c765a847666249189920fb03bdea2fdb40b28754c7aa18f9cfbe0be1f754381",
+    "bytes": 35595779,
+    "crc": true,
+    "machine": "PE32 i386 GUI",
+    "su47_su57_files_preserved": 41,
+    "contains_su34": false,
+    "native_windows_10_x86_tested": false
+  },
+  "YSFlight_Playtest_4_Sources.zip": {
+    "sha256": "06b75d7fcbaadd8259d00984d80eda47fd0332ee51f1b6695c3c3a010e2abb88",
+    "bytes": 36665059,
+    "crc": true,
+    "contains_su34_geometry": false
+  }
+}
