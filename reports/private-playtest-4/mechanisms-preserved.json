@@ -1,0 +1,21 @@
+{
+  "current_model_sha256": "249b91607922255a9038fc4aeee48dbc2c5609829ab822bbbbb76b1d10c8e1e1",
+  "previous_live_test_model": "/workspace/ysflight-dev/su34-private-test-1/evidence/mechanisms-validated-model.dnm",
+  "unchanged_nodes": [
+    "Source_rudder",
+    "Source_rudder_2",
+    "Source_elevator_l",
+    "Source_elevator_r",
+    "Source_gear_door_rl2",
+    "Source_airbrake_l",
+    "Source_gear_door_rr2",
+    "Source_airbrake_r",
+    "Source_aileron_l",
+    "Source_aileron_r",
+    "OuterAileron240",
+    "OuterAileron241",
+    "Afterburner0",
+    "Afterburner1"
+  ],
+  "verified_byte_identical_geometry_and_states": true
+}

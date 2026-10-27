@@ -1,0 +1,18 @@
+{
+  "private_only": true,
+  "files": [
+    {
+      "name": "YSFlight_Playtest_4_Private_Su34_32bit.zip",
+      "bytes": 50535519,
+      "sha256": "b777576353595b6e2b4dbecc46e4b8987c814ad97bead1fbd6306263d3615835",
+      "crc_verified": true
+    },
+    {
+      "name": "YSFlight_Playtest_4_Private_Su34_Sources.zip",
+      "bytes": 38832128,
+      "sha256": "240bb478d76ca96c8bd4735fb8da95cfe3a67921f35aab485301015df4bac546",
+      "crc_verified": true
+    }
+  ],
+  "preserved_aircraft_files": 74
+}
