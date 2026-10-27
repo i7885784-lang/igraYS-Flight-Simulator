@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "aircraft": {
+    "su27": {
+      "unchanged_positions_and_animation": true,
+      "exterior_triangles_face_down": 3464
+    },
+    "mig29": {
+      "unchanged_positions_and_animation": true,
+      "exterior_triangles_face_down": 3469
+    }
+  }
+}

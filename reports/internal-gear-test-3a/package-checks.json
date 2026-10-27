@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "Su47_and_Su57_unchanged": true,
+  "public_Win32_EXE_unchanged": true,
+  "no_Su34_resources": true,
+  "downloads": {
+    "YSFlight_Internal_Gear_Test_3a_32bit.zip": {
+      "bytes": 21724537,
+      "sha256": "72d36ed66419faeefbe672c54d1517084cebf493f96260ede7c5a40c1abbe579",
+      "CRC": true
+    },
+    "YSFlight_Internal_Gear_Test_3a_Sources.zip": {
+      "bytes": 12039540,
+      "sha256": "97ae1771291383c91a433a161f466f6eff4bed3128e84ae5445cf5d644a8e989",
+      "CRC": true
+    }
+  }
+}
