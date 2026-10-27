@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "verified_publication_commit": "0ea4ebda226182016050fe38f205795d4e61960b",
+  "downloads": [
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/REPORT.md",
+      "HTTP": 200,
+      "bytes": 4068,
+      "sha256": "8b59d42aca69aae44b9db8771069d07c960addbd99cd9a4473a6e8e0912097e8",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Aircraft_Fixes_Test_2_32bit.zip",
+      "HTTP": 200,
+      "bytes": 17546088,
+      "sha256": "4117ce8a0a3ae6c2da82d6f5a67deae296dc20353ba5a055c394f92e5e5850e2",
+      "identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Aircraft_Fixes_Test_2_Sources.zip",
+      "HTTP": 200,
+      "bytes": 8891702,
+      "sha256": "35806f8bc8d9c01095b6699e0e188fa6553c522675f0d66fae1bb44dc76d48eb",
+      "identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su27/gear.mp4",
+      "HTTP": 200,
+      "bytes": 396370,
+      "sha256": "2ed5e651011104f143756f527260e467a9804d9aa06f5e469e998fff439401f2",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/mig29/gear.mp4",
+      "HTTP": 200,
+      "bytes": 672328,
+      "sha256": "778edbca67b69bb77b5ea240cafdc2dc12e8ef5b409740224ab5bf1909a656a8",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su27/brake.mp4",
+      "HTTP": 200,
+      "bytes": 583093,
+      "sha256": "95f9e82f5e067a8c77004cff744282b288dafe51f77437c434f5fb9cf724e3a8",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su57/canopy.mp4",
+      "HTTP": 200,
+      "bytes": 124113,
+      "sha256": "598347705002f96b1d374087cc285724af05f9fa778016f2109bb457d68725c3",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su27/gear-140.png",
+      "HTTP": 200,
+      "bytes": 134996,
+      "sha256": "56d626e3a795956d278f724a4334dc0dd7bdfb1c581aa666094add38fbca766c",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/mig29/gear-140.png",
+      "HTTP": 200,
+      "bytes": 378037,
+      "sha256": "81acbfd75bfd9afb92ca5dd2d40e01edf6b9af882c6af283354b91f4bb512f9a",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su27/brake-040.png",
+      "HTTP": 200,
+      "bytes": 53665,
+      "sha256": "44b1112047e66b1795157503a6df0b839a6ec8d3d2a49a2f7a0e8454caf14c66",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su27/tip-rail.png",
+      "HTTP": 200,
+      "bytes": 16460,
+      "sha256": "47c44f92a1f02874f64b650ca7ca90ec7f850d79386c77652497686f607dd528",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/mig29/intake.png",
+      "HTTP": 200,
+      "bytes": 226756,
+      "sha256": "a7e37abdb83e5825ff45630650a81891ef22797fcd8efb1d411a9845f3d28d79",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su57/cockpit-front.png",
+      "HTTP": 200,
+      "bytes": 61199,
+      "sha256": "a00826375510536dbe3028e4c5ef1b89a9932480fa3629a72e9f9e399a1d9f5f",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/aircraft-fixes-test-2/su57/pylons.png",
+      "HTTP": 200,
+      "bytes": 124717,
+      "sha256": "ba1968af6c701ddc51e8e1aeaf7de47db36f27cf56ee10816690df420a803a24",
+      "identical": true,
+      "ZIP_CRC": null
+    }
+  ]
+}
