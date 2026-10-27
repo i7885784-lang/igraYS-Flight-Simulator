@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "final_targeted_checks": {
+    "su27-release-gear": {
+      "passed": true,
+      "min_max_last": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intermediate_positions": true,
+      "native_keys": [
+        [
+          0.2,
+          "g",
+          "tap"
+        ],
+        [
+          7.3,
+          "g",
+          "tap"
+        ]
+      ],
+      "video_decoded": true
+    },
+    "mig29-release-gear": {
+      "passed": true,
+      "min_max_last": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intermediate_positions": true,
+      "native_keys": [
+        [
+          0.2,
+          "g",
+          "tap"
+        ],
+        [
+          7.3,
+          "g",
+          "tap"
+        ]
+      ],
+      "video_decoded": true
+    },
+    "su27-final-brake": {
+      "passed": true,
+      "min_max_last": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intermediate_positions": true,
+      "native_keys": [
+        [
+          0.8,
+          "b",
+          "tap"
+        ],
+        [
+          8.3,
+          "b",
+          "tap"
+        ]
+      ],
+      "video_decoded": true
+    },
+    "su57-canopy": {
+      "passed": true,
+      "min_max_last": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "intermediate_positions": true,
+      "native_keys": [
+        [
+          0.8,
+          "Alt_L+5",
+          "tap"
+        ],
+        [
+          8.3,
+          "Alt_L+5",
+          "tap"
+        ]
+      ],
+      "video_decoded": true
+    }
+  },
+  "runtime": "Win64 diagnostic executable under Wine/Xvfb",
+  "common_views": "one final shared overview per revised aircraft; separate Su47 loading check"
+}

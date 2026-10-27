@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/Sukhoi_Su-27?oldformat=true",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Sukhoi_Su-27?action=raw",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://en.wikipedia.org/w/index.php?title=Sukhoi_Su-27&printable=yes",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://www.airvectors.net/avsu27.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://www.f-16.net/aircraft-database/articles/su-27/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FGMEMBERS/Su-27/a9c4863886a5835dfa4406698dd4557fbf72a3aa/Models/SU-27.xml",
+    "status": 200,
+    "bytes": 61701
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FGMEMBERS/MiG-29/646e9f9d6b958773e69cbde74602642c91fcfcaf/README.txt",
+    "status": 200,
+    "bytes": 12370
+  }
+]

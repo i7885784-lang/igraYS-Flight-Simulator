@@ -1,0 +1,574 @@
+{
+  "su27": {
+    "objects": {
+      "GLS_Canopy_Rear.001": {
+        "class": 211,
+        "faces": 648,
+        "states": 2
+      },
+      "EngineBlocks": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "WNG_Left_Flaperon": {
+        "class": 220,
+        "faces": 40,
+        "states": 3
+      },
+      "WNG_Right_Flaperon": {
+        "class": 221,
+        "faces": 40,
+        "states": 3
+      },
+      "object.001": {
+        "class": 99,
+        "faces": 78,
+        "states": 1
+      },
+      "TF_Right_Rudder": {
+        "class": 226,
+        "faces": 60,
+        "states": 3
+      },
+      "TF_Left_Rudder": {
+        "class": 226,
+        "faces": 60,
+        "states": 3
+      },
+      "ELV_Elevon_Right": {
+        "class": 229,
+        "faces": 86,
+        "states": 3
+      },
+      "ELV_Elevon_Left": {
+        "class": 228,
+        "faces": 86,
+        "states": 3
+      },
+      "GLS_Canopy_Rear": {
+        "class": 211,
+        "faces": 228,
+        "states": 2
+      },
+      "object": {
+        "class": 99,
+        "faces": 152,
+        "states": 1
+      }
+    },
+    "duplicate_static_faces_removed": 227,
+    "nodes": 57,
+    "faces": 11982,
+    "collider_faces": 530,
+    "coordinate_translation": [
+      0.0,
+      0.0,
+      10.0
+    ],
+    "imported_source": "Su-27.ac",
+    "gear_rig": {
+      "N": {
+        "root": [
+          0.0,
+          0.15,
+          2.34
+        ],
+        "axle_down": [
+          0.0,
+          -1.98,
+          2.2
+        ],
+        "axle_stowed": [
+          0.0,
+          0.0,
+          4.469319140006965
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": false,
+        "rect": [
+          -0.36,
+          0.36,
+          1.88,
+          5.1
+        ],
+        "door_y": -0.43,
+        "roof_y": 0.52
+      },
+      "L": {
+        "root": [
+          1.63,
+          -0.06,
+          -3.37
+        ],
+        "axle_down": [
+          2.185,
+          -1.995,
+          -3.62
+        ],
+        "axle_stowed": [
+          1.5,
+          -0.1,
+          -1.34608053519909
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": true,
+        "rect": [
+          0.83,
+          2.42,
+          -4.05,
+          -0.55
+        ],
+        "door_y": -0.58,
+        "roof_y": 0.4
+      },
+      "R": {
+        "root": [
+          -1.63,
+          -0.06,
+          -3.37
+        ],
+        "axle_down": [
+          -2.185,
+          -1.995,
+          -3.62
+        ],
+        "axle_stowed": [
+          -1.5,
+          -0.1,
+          -1.34608053519909
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": true,
+        "rect": [
+          -2.42,
+          -0.83,
+          -4.05,
+          -0.55
+        ],
+        "door_y": -0.58,
+        "roof_y": 0.4
+      }
+    },
+    "bays": {
+      "N": {
+        "rect": [
+          -0.36,
+          0.36,
+          1.88,
+          5.1
+        ],
+        "closed_door_y": -0.43,
+        "roof_y": 0.52,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      },
+      "L": {
+        "rect": [
+          0.83,
+          2.42,
+          -4.05,
+          -0.55
+        ],
+        "closed_door_y": -0.58,
+        "roof_y": 0.4,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      },
+      "R": {
+        "rect": [
+          -2.42,
+          -0.83,
+          -4.05,
+          -0.55
+        ],
+        "closed_door_y": -0.58,
+        "roof_y": 0.4,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      }
+    },
+    "brake_correction": {
+      "panel_length": 2.2481510999999994,
+      "panel_width": 1.0422999,
+      "cylinder_segment": 1.0085106413022893,
+      "anchor_distance_range": [
+        1.0878122607325857,
+        1.939443540965941
+      ],
+      "base": [
+        0.0,
+        0.25,
+        -0.85
+      ],
+      "moving_attachment": [
+        0.0,
+        1.056495824291818,
+        -0.12
+      ]
+    },
+    "tip_stations": [
+      [
+        8.04,
+        0.34,
+        -6.35
+      ],
+      [
+        -8.04,
+        0.34,
+        -6.35
+      ]
+    ],
+    "output_sha256": {
+      "su27cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+      "su27.dnm": "3337620e1bb64a7cd4954ac6df901346f38157368e100c414093d0fc2c66665d",
+      "su27.dat": "6a2597243209014cae241a7ac259fd15dd789ab64848b64efc86509ca3bd24f5",
+      "su27coll.srf": "365762dc8c0b13a0d07a6226d06cf61a4147a21e6cc9194b368d6cbb1946e424",
+      "su27_coarse.dnm": "3337620e1bb64a7cd4954ac6df901346f38157368e100c414093d0fc2c66665d"
+    }
+  },
+  "mig29": {
+    "objects": {
+      "AileronL": {
+        "class": 220,
+        "faces": 16,
+        "states": 3
+      },
+      "AileronR": {
+        "class": 221,
+        "faces": 16,
+        "states": 3
+      },
+      "AirBrakeB": {
+        "class": 212,
+        "faces": 152,
+        "states": 2
+      },
+      "AirBrakeU": {
+        "class": 212,
+        "faces": 156,
+        "states": 2
+      },
+      "Canopy": {
+        "class": 211,
+        "faces": 112,
+        "states": 2
+      },
+      "CanopyFrame": {
+        "class": 211,
+        "faces": 312,
+        "states": 2
+      },
+      "ChuteCap": {
+        "class": 99,
+        "faces": 120,
+        "states": 1
+      },
+      "ChuteCase": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "CombustionChamberL": {
+        "class": 99,
+        "faces": 144,
+        "states": 1
+      },
+      "CombustionChamberR": {
+        "class": 99,
+        "faces": 144,
+        "states": 1
+      },
+      "EngineL": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "EngineR": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "FlameholderL": {
+        "class": 99,
+        "faces": 168,
+        "states": 1
+      },
+      "FlameholderR": {
+        "class": 99,
+        "faces": 168,
+        "states": 1
+      },
+      "FlapsL": {
+        "class": 222,
+        "faces": 16,
+        "states": 3
+      },
+      "FlapsR": {
+        "class": 223,
+        "faces": 16,
+        "states": 3
+      },
+      "IRglass": {
+        "class": 99,
+        "faces": 96,
+        "states": 1
+      },
+      "LouverDuctL": {
+        "class": 99,
+        "faces": 32,
+        "states": 1
+      },
+      "LouverDuctR": {
+        "class": 99,
+        "faces": 32,
+        "states": 1
+      },
+      "LouverFrameL": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "LouverFrameR": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "LouversL1": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversL2": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversL3": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversL4": {
+        "class": 217,
+        "faces": 10,
+        "states": 2
+      },
+      "LouversL5": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversR1": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversR2": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversR3": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "LouversR4": {
+        "class": 217,
+        "faces": 10,
+        "states": 2
+      },
+      "LouversR5": {
+        "class": 217,
+        "faces": 8,
+        "states": 2
+      },
+      "Probe": {
+        "class": 99,
+        "faces": 96,
+        "states": 1
+      },
+      "RudderL": {
+        "class": 226,
+        "faces": 24,
+        "states": 3
+      },
+      "RudderR": {
+        "class": 227,
+        "faces": 24,
+        "states": 3
+      },
+      "SlatsL": {
+        "class": 224,
+        "faces": 44,
+        "states": 3
+      },
+      "SlatsR": {
+        "class": 225,
+        "faces": 44,
+        "states": 3
+      },
+      "StabilizerL": {
+        "class": 228,
+        "faces": 92,
+        "states": 3
+      },
+      "StabilizerR": {
+        "class": 229,
+        "faces": 92,
+        "states": 3
+      },
+      "Vstabs": {
+        "class": 99,
+        "faces": 648,
+        "states": 1
+      },
+      "Windscreen": {
+        "class": 99,
+        "faces": 40,
+        "states": 1
+      }
+    },
+    "duplicate_static_faces_removed": 0,
+    "nodes": 75,
+    "faces": 10416,
+    "collider_faces": 1846,
+    "coordinate_translation": [
+      0.0,
+      0.0,
+      8.05
+    ],
+    "imported_source": "mesh_airframe.ac",
+    "gear_rig": {
+      "N": {
+        "root": [
+          0.0,
+          0.029,
+          2.135
+        ],
+        "axle_down": [
+          0.0,
+          -1.425,
+          1.74
+        ],
+        "axle_stowed": [
+          0.0,
+          0.05,
+          0.6284476444543987
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": false,
+        "rect": [
+          -0.35,
+          0.35,
+          0.04,
+          3.36
+        ],
+        "door_y": -0.34,
+        "roof_y": 0.42
+      },
+      "L": {
+        "root": [
+          1.348,
+          0.07,
+          -2.09
+        ],
+        "axle_down": [
+          1.61,
+          -1.3,
+          -1.8
+        ],
+        "axle_stowed": [
+          1.32,
+          -0.12,
+          -0.6783484849297965
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": true,
+        "rect": [
+          0.73,
+          1.98,
+          -2.52,
+          0.16
+        ],
+        "door_y": -0.4,
+        "roof_y": 0.4
+      },
+      "R": {
+        "root": [
+          -1.348,
+          0.07,
+          -2.09
+        ],
+        "axle_down": [
+          -1.61,
+          -1.3,
+          -1.8
+        ],
+        "axle_stowed": [
+          -1.32,
+          -0.12,
+          -0.6783484849297965
+        ],
+        "fixed_hinge": true,
+        "wheel_swivel": true,
+        "rect": [
+          -1.98,
+          -0.73,
+          -2.52,
+          0.16
+        ],
+        "door_y": -0.4,
+        "roof_y": 0.4
+      }
+    },
+    "bays": {
+      "N": {
+        "rect": [
+          -0.35,
+          0.35,
+          0.04,
+          3.36
+        ],
+        "closed_door_y": -0.34,
+        "roof_y": 0.42,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      },
+      "L": {
+        "rect": [
+          0.73,
+          1.98,
+          -2.52,
+          0.16
+        ],
+        "closed_door_y": -0.4,
+        "roof_y": 0.4,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      },
+      "R": {
+        "rect": [
+          -1.98,
+          -0.73,
+          -2.52,
+          0.16
+        ],
+        "closed_door_y": -0.4,
+        "roof_y": 0.4,
+        "release_order": "doors 0-.20; legs .24-1",
+        "no_visibility_hiding": true
+      }
+    },
+    "brake_correction": null,
+    "tip_stations": null,
+    "output_sha256": {
+      "mig29.dnm": "3933bc5ac4b2c54e52d1ed915b634690ccb3b92c9635c339ba3f7ba0340353ae",
+      "mig29.dat": "ad576478df6f476f8ebc5da99328851acace803f533129fd4435743781bc040d",
+      "mig29cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+      "mig29_coarse.dnm": "3933bc5ac4b2c54e52d1ed915b634690ccb3b92c9635c339ba3f7ba0340353ae",
+      "mig29coll.srf": "f8ea6727119ba2c1891fb9aae5161b5872c79ec885e942838fa60c3c12882052"
+    }
+  }
+}

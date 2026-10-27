@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "aircraft": "SU-57_FELON",
+  "active": true,
+  "frames": [
+    "front",
+    "top",
+    "side",
+    "bottom",
+    "quarter-45",
+    "quarter-135",
+    "quarter-225",
+    "quarter-315",
+    "cockpit-rear",
+    "cockpit-front",
+    "pylons"
+  ]
+}

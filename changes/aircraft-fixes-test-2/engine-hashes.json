@@ -1,0 +1,10 @@
+{
+  "vehicle/fsairplaneproperty.cpp": {
+    "fix_test_1": "38eca8b6935c9dd296e44ec2a14174c83a928c27c312caa417680e3f6cece39c",
+    "fix_test_2": "52f9791e6a9b251d834383f97dcb42c4d837b878f42ce90fe6d25fa0e7ef903c"
+  },
+  "main/fsmain.cpp": {
+    "fix_test_1": "6de24bd06590c1efbae032ed12fc46e9d075063f0556620b6774dcf5eaf57582",
+    "fix_test_2": "e06e5b47182012e26f577069776ba17cdd75ec169fadb642dc05650c47e9c835"
+  }
+}
