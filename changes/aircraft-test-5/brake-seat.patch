@@ -1,0 +1,13 @@
+--- a/model-source/corrections.py
++++ b/model-source/corrections.py
+@@ -180,8 +180,8 @@
+  return report
+ 
+ def add_brake(m,add,double,sta):
+- # Keep the source contour but shorten its rear reach and broaden it slightly.
+- q=np.array(m.v);pivot=np.array([0.,1.176,1.05]);q[:,2]=pivot[2]+(q[:,2]-pivot[2])*.71;q[:,0]*=1.18;m.v=[tuple(p) for p in q]
++ # Retain the authored panel footprint: resizing it left the old recess uncovered.
++ q=np.array(m.v);pivot=np.array([0.,1.176,1.05])
+  R=Rotation.from_rotvec([math.radians(45),0,0]).as_matrix();double(m);add('DorsalBrake',m,212,[sta(),sta(R,pivot-R@pivot)])
+  topz=-.12;top_y=sample(m,0,topz);top0=np.array([0.,(top_y if top_y is not None else 1.05)-.018,topz]);base=np.array([0.,.25,-.85]);maxd=0;mind=99;poses=[[],[]]
+  distances=[]

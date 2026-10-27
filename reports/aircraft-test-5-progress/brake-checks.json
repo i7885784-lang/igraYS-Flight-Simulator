@@ -1,0 +1,103 @@
+{
+  "source_panel_preserved": true,
+  "old_length_factor": 0.71,
+  "old_width_factor": 1.18,
+  "new_dimensions_m": [
+    0.883305,
+    0.524499,
+    3.166409999999999
+  ],
+  "all_other_nodes_byte_preserved": [
+    "GLS_Canopy_Rear_001",
+    "EngineBlocks",
+    "WNG_Left_Flaperon",
+    "WNG_Right_Flaperon",
+    "object_001",
+    "TF_Right_Rudder",
+    "TF_Left_Rudder",
+    "ELV_Elevon_Right",
+    "ELV_Elevon_Left",
+    "GLS_Canopy_Rear",
+    "object",
+    "CanopyMovingFrame",
+    "FlushGearDoorN0",
+    "FlushGearDoorN1",
+    "InternalGearBayN",
+    "FlushGearDoorL0",
+    "InternalGearBayL",
+    "FlushGearDoorR0",
+    "InternalGearBayR",
+    "Hull",
+    "Gear_UC_Main_Right_Hub_leg",
+    "Gear_UC_Main_Right_Hub_wheel",
+    "Gear_UC_Main_Right_Lower_D_leg",
+    "Gear_UC_Main_Right_Tyre_wheel",
+    "Gear_UC_Main_Right_Upper_D_leg",
+    "Gear_UC_Main_Right_Upper_S_leg",
+    "Gear_UC_Main_Left_Hub_leg",
+    "Gear_UC_Main_Left_Hub_wheel",
+    "Gear_UC_Main_Left_Lower_DA_leg",
+    "Gear_UC_Main_Left_Tyre_wheel",
+    "Gear_UC_Main_Left_Upper_DA_leg",
+    "Gear_UC_Main_Left_Upper_St_leg",
+    "Gear_UC_Nose_Hubs_leg",
+    "Gear_UC_Nose_LLights_leg",
+    "Gear_UC_Nose_Lower_Strut_leg",
+    "Gear_UC_Nose_Tyres_wheel",
+    "Gear_UC_Nose_Upper_Strut_leg",
+    "Gear_UC_Nose_WGuard_leg",
+    "UpperHingeLinkL",
+    "UpperHingeLinkR",
+    "FixedGearTrunnions",
+    "NoseDragBrace0",
+    "NoseDragBrace1",
+    "NoseTorqueLink0",
+    "NoseTorqueLink1",
+    "AxleForkL",
+    "AxleForkR",
+    "WingtipSideLaunchers",
+    "CockpitLiner",
+    "Exhaust0",
+    "Afterburner0",
+    "Exhaust1",
+    "Afterburner1",
+    "OwnStars"
+  ],
+  "drive": {
+    "panel_length": 3.166409999999999,
+    "panel_width": 0.883305,
+    "cylinder_segment": 1.0374017224795917,
+    "anchor_distance_range": [
+      1.1309490247564142,
+      1.9950033124607531
+    ],
+    "base": [
+      0.0,
+      0.25,
+      -0.85
+    ],
+    "moving_attachment": [
+      0.0,
+      1.1137972543354628,
+      -0.12
+    ]
+  },
+  "model_sha256": "cea26da4254331e896079695929ae6d79874818642cbf6c5aa23037313004adf",
+  "native_B_cycle": {
+    "passed": true,
+    "events": [
+      [
+        0.8,
+        "b"
+      ],
+      [
+        8.3,
+        "b"
+      ]
+    ],
+    "state_samples": 61,
+    "minimum": 0.0,
+    "maximum": 1.0,
+    "last": 0.0
+  }
+}
