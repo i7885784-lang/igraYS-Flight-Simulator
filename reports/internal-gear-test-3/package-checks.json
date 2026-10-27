@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "zip": "YSFlight_Internal_Gear_Test_3_32bit.zip",
+  "sha256": "ce7909c64596d705b8cc3e05715a7c84bebcdd27040f75f2a30b1215afc52b71",
+  "bytes": 21752418,
+  "files": 1084,
+  "imports": {
+    "ysflight32_gl1.exe": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sndYsflight32.dll": [
+      "dsound.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "voiceYsflight32.dll": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ]
+  },
+  "CRC": true,
+  "independent_extraction": true,
+  "Su47_preserved": true,
+  "Su57_latest_revision_included": true,
+  "native_Windows10_x86_run": false
+}

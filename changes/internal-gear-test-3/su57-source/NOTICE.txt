@@ -1,0 +1,23 @@
+Su-57 cockpit/pylon revision, integrated in Aircraft Corrections Test 2, 2026-10-27.
+Based on Su-57 test 2 and local test 3; rear deck widened, external pylon feet refined.
+
+Original geometry: ShFsn/Su-57 contributors (FlightGear Su-57 project).
+https://github.com/ShFsn/Su-57
+Commit: e7015f490233e78c59331f01cfbab7c5edf584b3
+File: Models/Su-57.ac, distributed under GNU GPL version 3.
+Original file retained in reference/Su-57.ac; full license in LICENSE.
+
+Adaptation: coordinate conversion, normalized dimensions, blue-white polygon
+camouflage, YSFlight DNM control/animation hierarchy, gear bays and mechanisms,
+cockpit interior, intake liners, nozzle seals, markings and collider.
+This adapted Su-57 mesh and corresponding conversion sources are supplied
+under GPL-3.0. No warranty. Other aircraft and YSFlight retain their licenses.
+No FlightGear executable or FlightGear flight systems are included.
+
+Rebuild model data (Python 3 with numpy and scipy):
+  python build_model.py
+Outputs: runtime/aircraft/su57.dnm, su57_coarse.dnm, su57.dat,
+su57coll.srf and su57cockpit.srf relative to this source directory.
+The converter requires no Blender or AC3D editor.
+YSFlight engine changes from test 1 are published at:
+https://github.com/i7885784-lang/igraYS-Flight-Simulator/tree/ysflight-center-download/changes/su57-test-1

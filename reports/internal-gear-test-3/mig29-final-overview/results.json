@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "aircraft": "MIG-29_FULCRUM",
+  "active": true,
+  "frames": [
+    "front",
+    "top",
+    "side",
+    "bottom",
+    "quarter-45",
+    "quarter-135",
+    "quarter-225",
+    "quarter-315",
+    "intake"
+  ]
+}

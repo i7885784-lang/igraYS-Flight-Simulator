@@ -1,0 +1,44 @@
+{
+  "su27-final-cycle": {
+    "actual_G_key": [
+      [
+        0.2,
+        "g",
+        "tap"
+      ],
+      [
+        7.3,
+        "g",
+        "tap"
+      ]
+    ],
+    "no_render_override": true,
+    "min_max_last": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "video_decode": true
+  },
+  "mig29-internal-cycle": {
+    "actual_G_key": [
+      [
+        0.2,
+        "g",
+        "tap"
+      ],
+      [
+        7.3,
+        "g",
+        "tap"
+      ]
+    ],
+    "no_render_override": true,
+    "min_max_last": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "video_decode": true
+  }
+}

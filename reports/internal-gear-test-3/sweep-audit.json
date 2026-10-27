@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "assemblies": {
+    "su27:Gear_UC_Main_Right_Hub_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Right_Hub_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Right_Lower_D_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Right_Tyre_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Right_Upper_D_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Right_Upper_S_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Hub_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Hub_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Lower_DA_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Tyre_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Upper_DA_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Main_Left_Upper_St_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_Hubs_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_LLights_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_Lower_Strut_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_Tyres_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_Upper_Strut_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:Gear_UC_Nose_WGuard_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:UpperHingeLinkL": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:UpperHingeLinkR": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:NoseDragBrace0": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:NoseDragBrace1": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:NoseTorqueLink0": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:NoseTorqueLink1": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:AxleForkL": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "su27:AxleForkR": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_WheelGuard_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_gear1_L_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_gear1_R_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_gear2_L_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_gear2_R_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_nosegear1_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_nosegear2_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_nosewheels_leg": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_wheel_L_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:Gear_wheel_R_wheel": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:AxleForkL": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    },
+    "mig29:AxleForkR": {
+      "poses": 21,
+      "skin_crossing_outside_aperture": 0,
+      "stowed_roof_error_m": 0.0
+    }
+  }
+}

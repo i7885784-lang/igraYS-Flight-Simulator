@@ -1,0 +1,470 @@
+{
+  "su27": [
+    {
+      "node": "FlushGearDoorN0",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorN1",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayN",
+      "vertices": 4864,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorL0",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorL1",
+      "vertices": 3864,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.01111,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayL",
+      "vertices": 5144,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0109,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorR0",
+      "vertices": 3864,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.01142,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorR1",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayR",
+      "vertices": 5144,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.01111,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Hub_leg",
+      "vertices": 100,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Hub_wheel",
+      "vertices": 1528,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Lower_D_leg",
+      "vertices": 112,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Tyre_wheel",
+      "vertices": 896,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Upper_D_leg",
+      "vertices": 112,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Right_Upper_S_leg",
+      "vertices": 136,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Hub_leg",
+      "vertices": 100,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Hub_wheel",
+      "vertices": 1528,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Lower_DA_leg",
+      "vertices": 112,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Tyre_wheel",
+      "vertices": 896,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Upper_DA_leg",
+      "vertices": 112,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Main_Left_Upper_St_leg",
+      "vertices": 136,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_Hubs_leg",
+      "vertices": 2368,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_LLights_leg",
+      "vertices": 636,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_Lower_Strut_leg",
+      "vertices": 176,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_Tyres_wheel",
+      "vertices": 1792,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_Upper_Strut_leg",
+      "vertices": 876,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_UC_Nose_WGuard_leg",
+      "vertices": 1032,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "UpperHingeLinkL",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "UpperHingeLinkR",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FixedGearTrunnions",
+      "vertices": 240,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "NoseDragBrace0",
+      "vertices": 100,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "NoseDragBrace1",
+      "vertices": 100,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "NoseTorqueLink0",
+      "vertices": 80,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "NoseTorqueLink1",
+      "vertices": 80,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "AxleForkL",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "AxleForkR",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    }
+  ],
+  "mig29": [
+    {
+      "node": "FlushGearDoorN0",
+      "vertices": 3786,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.012,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorN1",
+      "vertices": 3678,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.012,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayN",
+      "vertices": 5032,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.012,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorL0",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 1e-05,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorL1",
+      "vertices": 3714,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.00021,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayL",
+      "vertices": 4998,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorR0",
+      "vertices": 3684,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FlushGearDoorR1",
+      "vertices": 3648,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 1e-05,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "InternalGearBayR",
+      "vertices": 4968,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_WheelGuard_leg",
+      "vertices": 1672,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_gear1_L_leg",
+      "vertices": 432,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_gear1_R_leg",
+      "vertices": 432,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_gear2_L_leg",
+      "vertices": 552,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_gear2_R_leg",
+      "vertices": 552,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_nosegear1_leg",
+      "vertices": 96,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_nosegear2_leg",
+      "vertices": 576,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_nosewheels_leg",
+      "vertices": 2848,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_wheel_L_wheel",
+      "vertices": 1800,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "Gear_wheel_R_wheel",
+      "vertices": 1800,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "FixedGearTrunnions",
+      "vertices": 240,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "AxleForkL",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    },
+    {
+      "node": "AxleForkR",
+      "vertices": 120,
+      "outside_over_15mm": 0,
+      "max_y_error_m": 0.0,
+      "outside_footprint": 0,
+      "all_states_visible": true
+    }
+  ]
+}

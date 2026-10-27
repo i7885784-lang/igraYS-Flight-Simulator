@@ -1,0 +1,29 @@
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -4423,6 +4423,12 @@
+    vis.SetState(210,idx,idx+1,step-idx);
+    vis.SetState(211,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);
+    vis.SetState(212,0,1,staSpoiler);
++   if(0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
++    const double protection=IsOnGround()==YSTRUE?YsBound((60.0-GetVelocity())/15.0,0.0,1.0):0.0;
++    vis.SetState(216,protection>.01?1:0);
++    vis.SetState(217,0,1,protection);
++   }
++
+    const double brakeStep=YsBound(staSpoiler,0.0,1.0)*20.0;const int bi=YsSmaller(19,int(brakeStep));
+    vis.SetState(214,bi,bi+1,brakeStep-bi);
+    const double f=modelFlapPose>=0?modelFlapPose:staFlap;
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,9 +66,9 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-27 MiG-29 FG Geometry Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Aircraft Corrections Test 2";  // Different names for screen saver programs
+ #else
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-27 MiG-29 FG Geometry Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Aircraft Corrections Test 2";  // Different names for screen saver programs
+ #endif
+ 
+ 

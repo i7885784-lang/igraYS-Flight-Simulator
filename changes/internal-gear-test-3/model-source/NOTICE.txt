@@ -1,0 +1,31 @@
+Su-27 / MiG-29 FlightGear geometry adaptation, gear/intake/launcher internal-gear correction test 3 (2026-10-27).
+SU-27 source: FGMEMBERS/Su-27 commit a9c4863886a5835dfa4406698dd4557fbf72a3aa.
+Authors credited by SU-27-set.xml: Lee Elliott, StuartC, VooDoo.
+MiG-29 9-12A source: FGMEMBERS/MiG-29 commit 646e9f9d6b958773e69cbde74602642c91fcfcaf.
+Authors: Detlef Faber; Gary R. Neely (Buckaroo), see upstream/mig29/README.txt.
+Both original source distributions include GNU GPL version 2. Preserve their
+GPL-2.0 notices and editable AC3D source; no upgrade to GPL-3.0 is assumed.
+These adapted geometries remain GPL-2.0. Other aircraft retain their own licenses.
+Changes: geometry-only conversion to YSFlight, own polygon colors and stars,
+separated moving parts, corrected duplicates/gear storage, canopy and bay rig,
+opaque inner liners, native animation bindings and collision hulls.
+No foreign textures, sound, aircraft systems, instruments or Nasal code are used.
+The XML files here are reduced to geometry axes/interpolation only, extracted
+from the pinned original files; property strings label reference motion only.
+No FlightGear runtime is included or required. Original texture path strings in
+AC3D are retained in editable source, but are ignored by the converter.
+Own support geometry and colors, YSFlight adaptation tooling: this project.
+Reused geometry-writing helpers from previous tests do not contain Su-57 geometry.
+Build: Python 3; pip install -r requirements.txt; python build_model.py.
+Outputs: runtime/aircraft/{su27,mig29}*. No pre-existing game files are removed.
+Upstream author declarations and source history are evidence of provenance;
+independent forensic verification of every source vertex was not performed.
+
+Test 2: fixed root hinges and independent wheel swivels, closed-bay containment,
+new real apertures/doors and recessed walls, compact dorsal brake and actuator,
+wingtip lateral brackets; MiG intake protection linked to native ground/speed.
+These are game adaptations, not certified manufacturer dimensions or hydraulic kinematics.
+
+Test 3: removed external bay housings; fitted source gear inside the original
+airframe envelope with sampled wheel swivels and nose oleo compression;
+curved flush doors, recessed interiors and connected shortened drag/torque links.
