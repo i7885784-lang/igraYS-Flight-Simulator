@@ -33,3 +33,5 @@
 **Авторство и GPL-2.0:** Су-27 — Lee Elliott, StuartC, VooDoo; МиГ-29 — Detlef Faber, Gary R. Neely. Лицензии, редактируемые оригиналы и конвертер включены в `aircraft/fighters-fg-source/` и [GitHub](../../changes/fighters-fg-test-1/model-source/NOTICE.txt). Неопределённый CC-пилот Су-27 исключён. Проверка происхождения опирается на опубликованные сведения авторов, без независимой экспертизы каждого элемента. Су-47/Су-57 сохраняют свои лицензии.
 
 [Проверки геометрии](validation.json) · [Клавиши и видео](evidence-checks.json) · [ZIP](package-checks.json) · [Пересборка](source-rebuild-checks.json) · [Исходники движка](sources-checks.json) · [Как повторить](../../changes/fighters-fg-test-1/README.md)
+
+После публикации проверены 22 прямых скачивания: отчёт, галерея, восемь снимков, десять видео и оба ZIP — HTTP 200 и побайтное совпадение. Скачанные ZIP повторно прошли CRC. [Подтверждение](download-checks.json) относится к публикации `6221deb`.

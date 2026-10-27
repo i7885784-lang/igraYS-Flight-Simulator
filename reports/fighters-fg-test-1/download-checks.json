@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "verified_publication_commit": "6221deb95b1c1c499af435d0374a74e24e4e2ff1",
+  "downloads": [
+    {
+      "path": "reports/fighters-fg-test-1/REPORT.md",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/REPORT.md",
+      "HTTP": 200,
+      "bytes": 7082,
+      "sha256": "4dfb69d7285c47b8d993a165d4a128e424f48365b98aa0c408d60ea882b72e41",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/INSPECTION.md",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/INSPECTION.md",
+      "HTTP": 200,
+      "bytes": 4221,
+      "sha256": "560b59b3a91859de8fb19b3bcd05b386dee67f8130e55c8fea474b7499fbbbdb",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "downloads/YSFlight_Fighters_FG_Test_1_32bit.zip",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Fighters_FG_Test_1_32bit.zip",
+      "HTTP": 200,
+      "bytes": 17638624,
+      "sha256": "bdf2e89c7e8eb9869448962529607458eec200307bff3e8ba0de95b555b8e23f",
+      "byte_identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "path": "downloads/YSFlight_Fighters_FG_Test_1_Sources.zip",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Fighters_FG_Test_1_Sources.zip",
+      "HTTP": 200,
+      "bytes": 8887177,
+      "sha256": "9540e9262ecc509968233b7dab3d70c09313b56ab0172ccace720cad2801afcb",
+      "byte_identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/front.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/front.png",
+      "HTTP": 200,
+      "bytes": 17394,
+      "sha256": "af5ee7f231a932c76c90f7edddf5b685c599e3b45887a5bc5957b0438e7b8aaa",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/top.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/top.png",
+      "HTTP": 200,
+      "bytes": 29584,
+      "sha256": "3fd02f5b2da4badb2b7bb61059407b5dac00f3a2e28d42ceb691f743a36dc875",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/side.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/side.png",
+      "HTTP": 200,
+      "bytes": 20556,
+      "sha256": "206afd3fb873f41e7188d6e3d951aa0a9cf4f5497574ab30dba22bdc9dd55e1b",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/orbit-135.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/orbit-135.png",
+      "HTTP": 200,
+      "bytes": 40625,
+      "sha256": "30d6fbb5690c2db32acc13992cfa33a92a6d7621954bcea06a84515e4e5416df",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/gear.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/gear.mp4",
+      "HTTP": 200,
+      "bytes": 313759,
+      "sha256": "b4be3201874516b57c017bc62b177ed5b72a4a4d22d2b1bd1d91b7e2edf4a0e4",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/canopy.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/canopy.mp4",
+      "HTTP": 200,
+      "bytes": 224071,
+      "sha256": "3dcf56f05bf9b4af1d4525443ce60c602ca102a7ca589f3efb8d78a136ed0ff8",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/controls.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/controls.mp4",
+      "HTTP": 200,
+      "bytes": 1404698,
+      "sha256": "a5f1e510c8191aa46ba4f710114ce2243fd0a8cb9744fc531581804239c190c5",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/brake.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/brake.mp4",
+      "HTTP": 200,
+      "bytes": 518573,
+      "sha256": "4f70b5a6c2d5c486588513e3f7fed397d4486e07664c46baebf1a27fa05393d5",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/su27/engine.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/su27/engine.mp4",
+      "HTTP": 200,
+      "bytes": 456204,
+      "sha256": "6b1e9c82ea0be6132cc4ba96334b9a07d4bdaffdf9f1df517a67058577cc2cc6",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/front.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/front.png",
+      "HTTP": 200,
+      "bytes": 16248,
+      "sha256": "70d2e9295e710bfc63df6f32e3089fab04e5da1ea1c25a329e7654587a89929d",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/top.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/top.png",
+      "HTTP": 200,
+      "bytes": 23380,
+      "sha256": "3f562030c9fad7aa1a2ba22f4a536719c96456666ce1ebdd7a1a47c60706b92d",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/side.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/side.png",
+      "HTTP": 200,
+      "bytes": 16305,
+      "sha256": "8b0883ab99d60e559506af53f2cfb8a33e49bf965ec1968cbfd9bf82f25270fc",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/orbit-135.png",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/orbit-135.png",
+      "HTTP": 200,
+      "bytes": 29280,
+      "sha256": "86a5d3b97415d42030bf2e9a6803b9bd2959f48c3ed88e7f1dade7b6173636ae",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/gear.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/gear.mp4",
+      "HTTP": 200,
+      "bytes": 189112,
+      "sha256": "4e8179d172f27bd61d448eef4317415b06f8680990bab29c9124cea2ad66c7be",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/canopy.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/canopy.mp4",
+      "HTTP": 200,
+      "bytes": 123272,
+      "sha256": "f7378149d62875a73dc8fe2bed90c3edf1750bf93f1add14daf7824a297df431",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/controls.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/controls.mp4",
+      "HTTP": 200,
+      "bytes": 998712,
+      "sha256": "08bf91e1821c6ad5b30ec7e38ccb8016ce699f0b68ecf334e049e754654f3fee",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/brake.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/brake.mp4",
+      "HTTP": 200,
+      "bytes": 337545,
+      "sha256": "3a317d928680b26027c27100acbaf096e912e730fd58e4d64241c9f7532d8cd7",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "path": "reports/fighters-fg-test-1/mig29/engine.mp4",
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/fighters-fg-test-1/mig29/engine.mp4",
+      "HTTP": 200,
+      "bytes": 326910,
+      "sha256": "a2076e44f57c9b6c057c681f7dc201f9a601d621a6e436f99efcebd705fd66cd",
+      "byte_identical": true,
+      "ZIP_CRC": null
+    }
+  ]
+}
