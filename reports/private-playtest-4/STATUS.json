@@ -1,0 +1,26 @@
+{
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-5bb1fabfb0a1bd0487b1",
+  "source_commit": "7b362d2ff66f74dc8c0b6ee6f751879bc784c8bc",
+  "geometry_digest": "f25aeb7dca514cb350219f3806bf0e7dc7aceb2dc04731755798695d822498d2",
+  "assets": [
+    {
+      "name": "YSFlight_Playtest_4_Private_Su34_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5bb1fabfb0a1bd0487b1/YSFlight_Playtest_4_Private_Su34_32bit.zip",
+      "bytes": 50535404,
+      "sha256": "28c3d38ef685858527e0918216b95d5cefa9d60172dd7ee08d1ab4994a493fd0",
+      "authenticated_download_verified": true,
+      "unauthenticated_http_status": 404,
+      "unauthenticated_browser_download_status": 404
+    },
+    {
+      "name": "YSFlight_Playtest_4_Private_Su34_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5bb1fabfb0a1bd0487b1/YSFlight_Playtest_4_Private_Su34_Sources.zip",
+      "bytes": 38835999,
+      "sha256": "c08e087d0cfd2faeba68eae9cad230447c3b9ec4328296b9187acb2518c63d46",
+      "authenticated_download_verified": true,
+      "unauthenticated_http_status": 404,
+      "unauthenticated_browser_download_status": 404
+    }
+  ]
+}
