@@ -1,0 +1,576 @@
+{
+  "su27": {
+    "objects": {
+      "GLS_Canopy_Rear.001": {
+        "class": 211,
+        "faces": 648,
+        "states": 2
+      },
+      "EngineBlocks": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "WNG_Left_Flaperon": {
+        "class": 220,
+        "faces": 40,
+        "states": 3
+      },
+      "WNG_Right_Flaperon": {
+        "class": 221,
+        "faces": 40,
+        "states": 3
+      },
+      "UC_Main_Right_Hub": {
+        "class": 210,
+        "faces": 430,
+        "states": 21
+      },
+      "UC_Main_Right_Lower_D": {
+        "class": 210,
+        "faces": 28,
+        "states": 21
+      },
+      "UC_Main_Right_Tyre": {
+        "class": 210,
+        "faces": 224,
+        "states": 21
+      },
+      "UC_Main_Right_Upper_D": {
+        "class": 210,
+        "faces": 28,
+        "states": 21
+      },
+      "UC_Main_Right_Upper_S": {
+        "class": 210,
+        "faces": 40,
+        "states": 21
+      },
+      "object.001": {
+        "class": 99,
+        "faces": 78,
+        "states": 1
+      },
+      "HULL_Speedbrake_Outer": {
+        "class": 212,
+        "faces": 200,
+        "states": 2
+      },
+      "TF_Right_Rudder": {
+        "class": 226,
+        "faces": 60,
+        "states": 3
+      },
+      "TF_Left_Rudder": {
+        "class": 226,
+        "faces": 60,
+        "states": 3
+      },
+      "ELV_Elevon_Right": {
+        "class": 229,
+        "faces": 86,
+        "states": 3
+      },
+      "ELV_Elevon_Left": {
+        "class": 228,
+        "faces": 86,
+        "states": 3
+      },
+      "GLS_Canopy_Rear": {
+        "class": 211,
+        "faces": 228,
+        "states": 2
+      },
+      "UC_Main_Left_Hub": {
+        "class": 210,
+        "faces": 430,
+        "states": 21
+      },
+      "UC_Main_Left_Lower_DA": {
+        "class": 210,
+        "faces": 28,
+        "states": 21
+      },
+      "UC_Main_Left_Tyre": {
+        "class": 210,
+        "faces": 224,
+        "states": 21
+      },
+      "UC_Main_Left_Upper_DA": {
+        "class": 210,
+        "faces": 28,
+        "states": 21
+      },
+      "UC_Main_Left_Upper_St": {
+        "class": 210,
+        "faces": 40,
+        "states": 21
+      },
+      "UC_Nose_BSArm": {
+        "class": 210,
+        "faces": 20,
+        "states": 21
+      },
+      "UC_Nose_Hubs": {
+        "class": 210,
+        "faces": 608,
+        "states": 21
+      },
+      "UC_Nose_LLights": {
+        "class": 210,
+        "faces": 180,
+        "states": 21
+      },
+      "UC_Nose_Lower_Strut": {
+        "class": 210,
+        "faces": 48,
+        "states": 21
+      },
+      "UC_Nose_Rear_Post": {
+        "class": 210,
+        "faces": 40,
+        "states": 21
+      },
+      "UC_Nose_Tyres": {
+        "class": 210,
+        "faces": 448,
+        "states": 21
+      },
+      "UC_Nose_Upper_Strut": {
+        "class": 210,
+        "faces": 232,
+        "states": 21
+      },
+      "UC_Nose_Upright_Brace": {
+        "class": 210,
+        "faces": 64,
+        "states": 21
+      },
+      "UC_Nose_WGuard": {
+        "class": 210,
+        "faces": 272,
+        "states": 21
+      },
+      "object": {
+        "class": 99,
+        "faces": 152,
+        "states": 1
+      },
+      "BayN": {
+        "cut_faces": 89,
+        "door_faces": 89
+      },
+      "BayL": {
+        "cut_faces": 108,
+        "door_faces": 216
+      },
+      "BayR": {
+        "cut_faces": 109,
+        "door_faces": 218
+      }
+    },
+    "duplicate_static_faces_removed": 227,
+    "nodes": 48,
+    "faces": 13704,
+    "collider_faces": 530,
+    "coordinate_translation": [
+      0.0,
+      0.0,
+      10.0
+    ],
+    "imported_source": "Su-27.ac",
+    "gear_parts": [
+      "UC_Main_Right_Hub",
+      "UC_Main_Right_Lower_D",
+      "UC_Main_Right_Tyre",
+      "UC_Main_Right_Upper_D",
+      "UC_Main_Right_Upper_S",
+      "UC_Main_Left_Hub",
+      "UC_Main_Left_Lower_DA",
+      "UC_Main_Left_Tyre",
+      "UC_Main_Left_Upper_DA",
+      "UC_Main_Left_Upper_St",
+      "UC_Nose_BSArm",
+      "UC_Nose_Hubs",
+      "UC_Nose_LLights",
+      "UC_Nose_Lower_Strut",
+      "UC_Nose_Rear_Post",
+      "UC_Nose_Tyres",
+      "UC_Nose_Upper_Strut",
+      "UC_Nose_Upright_Brace",
+      "UC_Nose_WGuard"
+    ],
+    "output_sha256": {
+      "su27cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+      "su27.dnm": "6c9d7acad0edc0719b7573780dbaa5d88dbd5327e640f104c858d26a2f887d43",
+      "su27_coarse.dnm": "6c9d7acad0edc0719b7573780dbaa5d88dbd5327e640f104c858d26a2f887d43",
+      "su27coll.srf": "365762dc8c0b13a0d07a6226d06cf61a4147a21e6cc9194b368d6cbb1946e424",
+      "su27.dat": "62fa366a140726c4a716528a6179ed5dbd36e674b97ac5d9ceb30a0db8b1eebd"
+    }
+  },
+  "mig29": {
+    "objects": {
+      "AileronL": {
+        "class": 220,
+        "faces": 16,
+        "states": 3
+      },
+      "AileronR": {
+        "class": 221,
+        "faces": 16,
+        "states": 3
+      },
+      "AirBrakeB": {
+        "class": 212,
+        "faces": 152,
+        "states": 2
+      },
+      "AirBrakeU": {
+        "class": 212,
+        "faces": 156,
+        "states": 2
+      },
+      "Canopy": {
+        "class": 211,
+        "faces": 112,
+        "states": 2
+      },
+      "CanopyFrame": {
+        "class": 211,
+        "faces": 312,
+        "states": 2
+      },
+      "ChuteCap": {
+        "class": 99,
+        "faces": 120,
+        "states": 1
+      },
+      "ChuteCase": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "CombustionChamberL": {
+        "class": 99,
+        "faces": 144,
+        "states": 1
+      },
+      "CombustionChamberR": {
+        "class": 99,
+        "faces": 144,
+        "states": 1
+      },
+      "EngineL": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "EngineR": {
+        "class": 99,
+        "faces": 64,
+        "states": 1
+      },
+      "FlameholderL": {
+        "class": 99,
+        "faces": 168,
+        "states": 1
+      },
+      "FlameholderR": {
+        "class": 99,
+        "faces": 168,
+        "states": 1
+      },
+      "FlapsL": {
+        "class": 222,
+        "faces": 16,
+        "states": 3
+      },
+      "FlapsR": {
+        "class": 223,
+        "faces": 16,
+        "states": 3
+      },
+      "GearWellL": {
+        "class": 99,
+        "faces": 40,
+        "states": 1
+      },
+      "GearWellR": {
+        "class": 99,
+        "faces": 40,
+        "states": 1
+      },
+      "IRglass": {
+        "class": 99,
+        "faces": 96,
+        "states": 1
+      },
+      "IntakeScreenL": {
+        "class": 99,
+        "faces": 2,
+        "states": 1
+      },
+      "IntakeScreenR": {
+        "class": 99,
+        "faces": 2,
+        "states": 1
+      },
+      "LouverDuctL": {
+        "class": 99,
+        "faces": 32,
+        "states": 1
+      },
+      "LouverDuctR": {
+        "class": 99,
+        "faces": 32,
+        "states": 1
+      },
+      "LouverFrameL": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "LouverFrameR": {
+        "class": 99,
+        "faces": 84,
+        "states": 1
+      },
+      "LouversL1": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversL2": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversL3": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversL4": {
+        "class": 99,
+        "faces": 10,
+        "states": 1
+      },
+      "LouversL5": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversR1": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversR2": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversR3": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "LouversR4": {
+        "class": 99,
+        "faces": 10,
+        "states": 1
+      },
+      "LouversR5": {
+        "class": 99,
+        "faces": 8,
+        "states": 1
+      },
+      "Probe": {
+        "class": 99,
+        "faces": 96,
+        "states": 1
+      },
+      "RudderL": {
+        "class": 226,
+        "faces": 24,
+        "states": 3
+      },
+      "RudderR": {
+        "class": 227,
+        "faces": 24,
+        "states": 3
+      },
+      "SlatsL": {
+        "class": 224,
+        "faces": 44,
+        "states": 3
+      },
+      "SlatsR": {
+        "class": 225,
+        "faces": 44,
+        "states": 3
+      },
+      "StabilizerL": {
+        "class": 228,
+        "faces": 92,
+        "states": 3
+      },
+      "StabilizerR": {
+        "class": 229,
+        "faces": 92,
+        "states": 3
+      },
+      "Vstabs": {
+        "class": 99,
+        "faces": 648,
+        "states": 1
+      },
+      "WheelGuard": {
+        "class": 210,
+        "faces": 420,
+        "states": 21
+      },
+      "Windscreen": {
+        "class": 99,
+        "faces": 40,
+        "states": 1
+      },
+      "WingL": {
+        "class": 99,
+        "faces": 180,
+        "states": 1
+      },
+      "WingR": {
+        "class": 99,
+        "faces": 180,
+        "states": 1
+      },
+      "fuselage": {
+        "class": 99,
+        "faces": 1934,
+        "states": 1
+      },
+      "fwdgeardoor.L": {
+        "class": 210,
+        "faces": 64,
+        "states": 21
+      },
+      "fwdgeardoor.R": {
+        "class": 210,
+        "faces": 64,
+        "states": 21
+      },
+      "fwdnosegeardoor": {
+        "class": 210,
+        "faces": 24,
+        "states": 21
+      },
+      "gear1.L": {
+        "class": 210,
+        "faces": 120,
+        "states": 21
+      },
+      "gear1.R": {
+        "class": 210,
+        "faces": 120,
+        "states": 21
+      },
+      "gear2.L": {
+        "class": 210,
+        "faces": 144,
+        "states": 21
+      },
+      "gear2.R": {
+        "class": 210,
+        "faces": 144,
+        "states": 21
+      },
+      "nosegeaerwell": {
+        "class": 99,
+        "faces": 42,
+        "states": 1
+      },
+      "nosegear1": {
+        "class": 210,
+        "faces": 24,
+        "states": 21
+      },
+      "nosegear2": {
+        "class": 210,
+        "faces": 144,
+        "states": 21
+      },
+      "nosegeardoor.L": {
+        "class": 210,
+        "faces": 22,
+        "states": 21
+      },
+      "nosegeardoor.R": {
+        "class": 210,
+        "faces": 22,
+        "states": 21
+      },
+      "nosewheels": {
+        "class": 210,
+        "faces": 712,
+        "states": 21
+      },
+      "reargeardoor.L": {
+        "class": 210,
+        "faces": 64,
+        "states": 21
+      },
+      "reargeardoor.R": {
+        "class": 210,
+        "faces": 64,
+        "states": 21
+      },
+      "wheel.L": {
+        "class": 210,
+        "faces": 468,
+        "states": 21
+      },
+      "wheel.R": {
+        "class": 210,
+        "faces": 468,
+        "states": 21
+      }
+    },
+    "duplicate_static_faces_removed": 0,
+    "nodes": 73,
+    "faces": 10698,
+    "collider_faces": 1846,
+    "coordinate_translation": [
+      0.0,
+      0.0,
+      8.05
+    ],
+    "imported_source": "mesh_airframe.ac",
+    "gear_parts": [
+      "WheelGuard",
+      "fwdgeardoor.L",
+      "fwdgeardoor.R",
+      "fwdnosegeardoor",
+      "gear1.L",
+      "gear1.R",
+      "gear2.L",
+      "gear2.R",
+      "nosegear1",
+      "nosegear2",
+      "nosegeardoor.L",
+      "nosegeardoor.R",
+      "nosewheels",
+      "reargeardoor.L",
+      "reargeardoor.R",
+      "wheel.L",
+      "wheel.R"
+    ],
+    "output_sha256": {
+      "mig29.dnm": "fe5718709a97ec1b4d0ce386607def0a342fa93004478ea80ad0e25427b42b41",
+      "mig29cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+      "mig29_coarse.dnm": "fe5718709a97ec1b4d0ce386607def0a342fa93004478ea80ad0e25427b42b41",
+      "mig29.dat": "ad576478df6f476f8ebc5da99328851acace803f533129fd4435743781bc040d",
+      "mig29coll.srf": "f8ea6727119ba2c1891fb9aae5161b5872c79ec885e942838fa60c3c12882052"
+    }
+  }
+}

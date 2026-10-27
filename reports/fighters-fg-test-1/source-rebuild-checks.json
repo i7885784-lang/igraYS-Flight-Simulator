@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "byte_identical": {
+    "mig29.dnm": "fe5718709a97ec1b4d0ce386607def0a342fa93004478ea80ad0e25427b42b41",
+    "su27cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+    "su27.dnm": "6c9d7acad0edc0719b7573780dbaa5d88dbd5327e640f104c858d26a2f887d43",
+    "su27_coarse.dnm": "6c9d7acad0edc0719b7573780dbaa5d88dbd5327e640f104c858d26a2f887d43",
+    "mig29cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912",
+    "mig29_coarse.dnm": "fe5718709a97ec1b4d0ce386607def0a342fa93004478ea80ad0e25427b42b41",
+    "mig29.dat": "ad576478df6f476f8ebc5da99328851acace803f533129fd4435743781bc040d",
+    "mig29coll.srf": "f8ea6727119ba2c1891fb9aae5161b5872c79ec885e942838fa60c3c12882052",
+    "su27coll.srf": "365762dc8c0b13a0d07a6226d06cf61a4147a21e6cc9194b368d6cbb1946e424",
+    "su27.dat": "62fa366a140726c4a716528a6179ed5dbd36e674b97ac5d9ceb30a0db8b1eebd"
+  },
+  "independent_source_directory": true
+}

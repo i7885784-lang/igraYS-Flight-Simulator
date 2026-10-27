@@ -1,0 +1,41 @@
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -4417,6 +4417,24 @@
+   if(modelRudderPose>=-1)bipolar(8,modelRudderPose);
+   const double e=modelElevatorPose>=-1?modelElevatorPose:elvPlusTrim,a=modelAileronPose>=-1?modelAileronPose:ctlAileron;
+   bipolar(148,YsBound(e+.35*a,-1.0,1.0));bipolar(149,YsBound(e-.35*a,-1.0,1.0));
++  // FG geometry test: sampled source gear transforms and independent native inputs.
++  if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
++   const double step=gear*20.0;const int idx=YsSmaller(19,int(step));
++   vis.SetState(210,idx,idx+1,step-idx);
++   vis.SetState(211,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);
++   vis.SetState(212,0,1,staSpoiler);
++   const double brakeStep=YsBound(staSpoiler,0.0,1.0)*20.0;const int bi=YsSmaller(19,int(brakeStep));
++   vis.SetState(214,bi,bi+1,brakeStep-bi);
++   const double f=modelFlapPose>=0?modelFlapPose:staFlap;
++   const double r=modelRudderPose>=-1?modelRudderPose:GetRudder();
++   auto move=[&](int c,double q){bipolar(c,YsBound(q,-1.0,1.0));};
++   if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
++    move(220,f-.65*a);move(221,f+.65*a);
++   }else{
++    move(220,-a);move(221,-a);move(222,f);move(223,f);move(224,f);move(225,f);
++   }
++   move(226,r);move(227,r);move(228,-e-.30*a);move(229,-e+.30*a);
++  }
+   if(0==strcmp(GetIdentifier(),"SU-47_BERKUT")){
+    const double f=modelFlapPose>=0?modelFlapPose:staFlap;
+    const double r=modelRudderPose>=-1?modelRudderPose:GetRudder();
+--- a/YSFLIGHT/src/main/fsmain.cpp
++++ b/YSFLIGHT/src/main/fsmain.cpp
+@@ -66,9 +66,9 @@
+ const wchar_t *FsProgramName=L"YSFLIGHT";  // Different names for screen saver programs
+ 
+ #ifndef YSFS_TESTVERSION
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-47 Berkut Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-27 MiG-29 FG Geometry Test 1";  // Different names for screen saver programs
+ #else
+-const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-47 Berkut Test 1";  // Different names for screen saver programs
++const char *FsProgramTitle="YS FLIGHT SIMULATOR - Su-27 MiG-29 FG Geometry Test 1";  // Different names for screen saver programs
+ #endif
+ 
+ 

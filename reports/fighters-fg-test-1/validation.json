@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "su47 preserved byte for byte",
+      "passed": true,
+      "detail": [
+        "su47.dat",
+        "su47.dnm",
+        "su47_coarse.dnm",
+        "su47coll.srf",
+        "su47cockpit.srf"
+      ]
+    },
+    {
+      "check": "su57 preserved byte for byte",
+      "passed": true,
+      "detail": [
+        "su57.dat",
+        "su57.dnm",
+        "su57_coarse.dnm",
+        "su57coll.srf",
+        "su57cockpit.srf"
+      ]
+    },
+    {
+      "check": "su27 unique nodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "su27 finite valid geometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "su27 moving systems present",
+      "passed": true,
+      "detail": [
+        99,
+        110,
+        111,
+        210,
+        211,
+        212,
+        214,
+        220,
+        221,
+        226,
+        228,
+        229
+      ]
+    },
+    {
+      "check": "su27 no emissive underside",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "su27 sampled gear all 21 states",
+      "passed": true,
+      "detail": 23
+    },
+    {
+      "check": "su27 far LOD registration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "su27 datum and registration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "su27 main wheels inside upper bay envelope",
+      "passed": true,
+      "detail": {
+        "UC_Main_Right_Tyre": {
+          "stowed_min": [
+            -2.3329444097442233,
+            -0.13123589205518105,
+            -1.8862781067553418
+          ],
+          "stowed_max": [
+            -1.2447357085560182,
+            0.2966250838186224,
+            -0.8198745774239415
+          ]
+        },
+        "UC_Main_Left_Tyre": {
+          "stowed_min": [
+            1.2447357085560182,
+            -0.13123589205518105,
+            -1.8862781067553418
+          ],
+          "stowed_max": [
+            2.3329444097442233,
+            0.2966250838186224,
+            -0.8198745774239415
+          ]
+        }
+      }
+    },
+    {
+      "check": "su27 roll and pitch surface direction",
+      "passed": true,
+      "detail": {
+        "220": 0.3342229258967001,
+        "221": -0.35987867728740175,
+        "228": 1.1537748191316886,
+        "229": 1.1537748191316886
+      }
+    },
+    {
+      "check": "su27 nonempty collider",
+      "passed": true,
+      "detail": 530
+    },
+    {
+      "check": "mig29 unique nodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mig29 finite valid geometry",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mig29 moving systems present",
+      "passed": true,
+      "detail": [
+        99,
+        110,
+        111,
+        210,
+        211,
+        212,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229
+      ]
+    },
+    {
+      "check": "mig29 no emissive underside",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mig29 sampled gear all 21 states",
+      "passed": true,
+      "detail": 17
+    },
+    {
+      "check": "mig29 far LOD registration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mig29 datum and registration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "mig29 main wheels inside upper bay envelope",
+      "passed": true,
+      "detail": {
+        "wheel_L": {
+          "stowed_min": [
+            0.7347695264987384,
+            -0.07778705060446311,
+            -1.124122063191686
+          ],
+          "stowed_max": [
+            1.5914655662604003,
+            0.42545540368714985,
+            -0.24346726819854814
+          ]
+        },
+        "wheel_R": {
+          "stowed_min": [
+            -1.5914575016486099,
+            -0.07779990929102054,
+            -1.1241236427553758
+          ],
+          "stowed_max": [
+            -0.7347690831187659,
+            0.42544194940307123,
+            -0.2434700137954886
+          ]
+        }
+      }
+    },
+    {
+      "check": "mig29 roll and pitch surface direction",
+      "passed": true,
+      "detail": {
+        "220": 0.1486114963454255,
+        "221": -0.14575153382161074,
+        "228": 1.3498158062503016,
+        "229": 1.3498158062503016
+      }
+    },
+    {
+      "check": "mig29 nonempty collider",
+      "passed": true,
+      "detail": 1846
+    },
+    {
+      "check": "geometry-only upstream files",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limitations": [
+    "No native Windows 10 x86 runtime test",
+    "Visual review is not exhaustive mathematical intersection proof",
+    "Native flight dynamics retained as game approximation"
+  ]
+}

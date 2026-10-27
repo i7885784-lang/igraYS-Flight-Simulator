@@ -1,0 +1,10 @@
+{
+  "vehicle/fsairplaneproperty.cpp": {
+    "su47_test_1": "10df7051e79a0fb97410bd2760bbd9abb51c4f45ba65dce9a28d5518480245b6",
+    "fighters_fg_test_1": "38eca8b6935c9dd296e44ec2a14174c83a928c27c312caa417680e3f6cece39c"
+  },
+  "main/fsmain.cpp": {
+    "su47_test_1": "f06ad870c4174dab230eb365c34ec6ebaab25fc8a2527232d9d7e3738aa10edc",
+    "fighters_fg_test_1": "6de24bd06590c1efbae032ed12fc46e9d075063f0556620b6774dcf5eaf57582"
+  }
+}

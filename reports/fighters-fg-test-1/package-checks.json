@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "zip": "YSFlight_Fighters_FG_Test_1_32bit.zip",
+  "sha256": "bdf2e89c7e8eb9869448962529607458eec200307bff3e8ba0de95b555b8e23f",
+  "bytes": 17638624,
+  "files": 1063,
+  "imports": {
+    "ysflight32_gl1.exe": [
+      "COMDLG32.DLL",
+      "GDI32.dll",
+      "GLU32.DLL",
+      "IMM32.DLL",
+      "KERNEL32.dll",
+      "msvcrt.dll",
+      "OPENGL32.DLL",
+      "SHELL32.dll",
+      "USER32.dll",
+      "WINMM.DLL",
+      "WSOCK32.DLL"
+    ],
+    "sndYsflight32.dll": [
+      "dsound.dll",
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ],
+    "voiceYsflight32.dll": [
+      "KERNEL32.dll",
+      "msvcrt.dll"
+    ]
+  },
+  "CRC": true,
+  "independent_extraction": true,
+  "Su47_Su57_preserved": true,
+  "native_Windows10_x86_run": false
+}

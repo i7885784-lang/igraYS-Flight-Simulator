@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "outputs": {
+    "ysflight32_gl1.exe": "d036aa5aaab40a52d6ecc679c52d6f2bc2f9cc0bc08b25282bbb994bf3045cfb",
+    "ysflight64_gl1.exe": "408d510f0736a170574ded4610daf81cb3802a6959b16303d779d070891433c6"
+  },
+  "production": 32,
+  "game_validation": 64
+}

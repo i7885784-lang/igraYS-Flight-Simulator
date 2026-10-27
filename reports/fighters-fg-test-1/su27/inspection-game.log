@@ -1,0 +1,316 @@
+YSFLIGHT
+VERSION 20181124
+YFSVERSION 20180930
+NETVERSION 20180930
+Depth Bits:   24
+Stencil Bits: 8
+Bit Depth=24
+Loading Sound Plug-In.
+Sound Plug-In Loaded.
+Failed to create secure directory (/home/agent/.config/pulse): Read-only file system
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+Loading Voice Plug-In.
+Voice Plug-In Loaded.
+All functions from Voice Dll are ready.
+[VOICEDLL] This is a skeleton for the future voice extension.
+[VOICEDLL] This DLL does not actually function at this time.
+FsVoiceDllInitialize (Line 19)
+FsVoiceDllSetMasterSwitch (Line 38)
+Localization File: ru.uitxt
+Initialization Counter 0
+Initialization Counter 1
+Initialization Counter 2
+Free 453
+Free 459
+Free 465
+Free 471
+Free 477
+Free 483
+Free 489
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 3
+Initialization Counter 4
+Date 20261027
+Initialization Counter 5
+Common YSFLIGHT Dir=
+Common YSFLIGHT Dir=.
+Detected ./20181124
+Date 20261027
+Initialization Counter 6
+Initialization Counter 7
+Initialization Counter 8
+Script>>WAITFOR:GUI
+Script>>SLEEP:500
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>SLEEP:8000
+Script>>FILE:OPEN Z:/workspace/ysflight-dev/fighters-fg-test-1/checks/su27-inspect-release/start.yfs
+Waiting for thread #0 gets ready.
+Thread 0 ready.
+Waiting for thread #1 gets ready.
+Thread 1 ready.
+Waiting for thread #2 gets ready.
+Thread 2 ready.
+Waiting for thread #3 gets ready.
+Thread 3 ready.
+0 same-plane map groups.
+FsLattice
+ -20000.000000 -20000.000000 to 20000.000000 20000.000000
+ NX=41, NY=41
+Read 10000 Vertices
+Read 10000 Vertices
+Script>>GUI:CLICK mainDlg flyNow
+>> CLICK mainDlg flyNow
+Script>>WAITFOR:FLYING
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+V862BALANCE id=1 speed=180.0000 pitch=0.2981 trim=0.012959 throttle=0.418036
+Script>>FLIGHTCMD:TESTADVANCE .1
+Script>>BTNFUNC:COCKPITVIEW
+Script>>BTNFUNC:PAUSESIMULATION
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 180 0 110 0
+Script>>REM SHOT_front
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 180 89 175 0
+Script>>REM SHOT_top
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 90 0 130 0
+Script>>REM SHOT_side
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 180 -89 175 0
+Script>>REM SHOT_bottom
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 .6 4.5
+Script>>FLIGHTCMD:LABVIEW 130 20 48 0
+Script>>REM SHOT_cockpit
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 0 25 120 0
+Script>>REM SHOT_orbit-0
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 45 25 120 0
+Script>>REM SHOT_orbit-45
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 90 25 120 0
+Script>>REM SHOT_orbit-90
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 135 25 120 0
+Script>>REM SHOT_orbit-135
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 180 25 120 0
+Script>>REM SHOT_orbit-180
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 225 25 120 0
+Script>>REM SHOT_orbit-225
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 270 25 120 0
+Script>>REM SHOT_orbit-270
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 315 25 120 0
+Script>>REM SHOT_orbit-315
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 0 -25 120 0
+Script>>REM SHOT_lower-0
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 45 -25 120 0
+Script>>REM SHOT_lower-45
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 90 -25 120 0
+Script>>REM SHOT_lower-90
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 135 -25 120 0
+Script>>REM SHOT_lower-135
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 180 -25 120 0
+Script>>REM SHOT_lower-180
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 225 -25 120 0
+Script>>REM SHOT_lower-225
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 270 -25 120 0
+Script>>REM SHOT_lower-270
+Script>>SLEEP:1400
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 0 0
+Script>>FLIGHTCMD:LABVIEW 315 -25 120 0
+Script>>REM SHOT_lower-315
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:AIRCOMMAND $PLAYER ATTITUDE 0deg 0deg 180deg
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABVIEW 180 89 175 0
+Script>>REM SHOT_inverted
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=1.1160 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=180.0268 throttle=0.418036 ab=0
+Script>>SLEEP:60000

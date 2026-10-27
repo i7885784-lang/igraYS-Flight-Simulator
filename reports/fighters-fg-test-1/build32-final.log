@@ -1,0 +1,1594 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysclass/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysclass]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysclass11/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysclass11]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysport/src/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysport]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgl/src/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysgl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysglcpp/src/nownd/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysglcpp_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/yssimplesound/sample_fssimplewindow/CMakeLists.txt:70 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[yssimplesound_sample_fssimplewindow]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/src/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fslazywindow]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/template/CMakeLists.txt:54 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fslazywindow_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fslazywindow/samples/sample00-bouncingBall/CMakeLists.txt:55 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[sample00_bouncingBall]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fssimplefiledialog/src/CMakeLists.txt:68 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fssimplefiledialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fssimplefiledialog/sample/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fssimplefiledialog_sample]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysfontrenderer/src/CMakeLists.txt:42 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysfontrenderer]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/gl/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager_gl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ystexturemanager/src/null/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ystexturemanager_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/src/nownd/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguifiledialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/template/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsguilib/template_with_filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsguilib_template_with_filedialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/src/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template_with_filedialog/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template_with_filedialog]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/fsgui3d/template-easy/CMakeLists.txt:38 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[fsgui3d_template_easy]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/kernel/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblkernel]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/kernelutil/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblutil]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/gl2/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_gl2]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/gl1/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_gl1]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/shellrender/nownd/CMakeLists.txt:52 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgl_nownd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/gui_foundation/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgui_foundation]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/gui/CMakeLists.txt:39 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblgui]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/main/CMakeLists.txt:75 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysgebl32]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/cmdlib/CMakeLists.txt:49 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblcmdlib]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/cmdmain/CMakeLists.txt:49 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[geblcmd]
+CMake Deprecation Warning at /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/ysgebl/src/samples/YsShellExt/CMakeLists.txt:50 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysshellext_sample]
+YS_USE_OPENCV is OFF.  Skipping OpenCV
+CMake Deprecation Warning at platform/common/CMakeLists.txt:51 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_common]
+CMake Warning (dev) at CMakeLists.txt:44 (set):
+  Cannot set "ysflight_filename_INCLUDE_DIR": current scope has no parent.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at platform/win32/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_win32]
+[ysflight_platform_win32_gl]
+CMake Deprecation Warning at sounddll/win32/CMakeLists.txt:46 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[sndYsflight32]
+CMake Deprecation Warning at voicedll/generic/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[voiceYsflight32]
+CMake Deprecation Warning at platform/nownd/CMakeLists.txt:40 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight_platform_nownd]
+CMake Deprecation Warning at main/CMakeLists.txt:121 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight32_gl2]
+[ysflight32_gl1]
+CMake Deprecation Warning at main_consvr/CMakeLists.txt:94 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight32_nownd]
+CMake Deprecation Warning at main_demoOnly/CMakeLists.txt:118 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+[ysflight32_gl2demo]
+[ysflight32_gl1demo]
+-- Configuring done (0.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/build32
+[1/3] Building CXX object vehicle/CMakeFiles/ysflight_vehicle.dir/fsairplaneproperty.cpp.obj
+In file included from /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/public/src/yssocket/src/yssocket.h:94,
+                 from /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/YSFLIGHT/src/core/fsnetwork.h:8,
+                 from /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp:29:
+/workspace/ysflight-dev/tools/usr/share/mingw-w64/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+   15 | #warning Please include winsock2.h before windows.h
+      |  ^~~~~~~
+[2/3] Linking CXX static library vehicle/libysflight_vehicle.a
+[3/3] Linking CXX executable main/ysflight32_gl1.exe
+aircraft 1793024749.6633053
+su24.dat 1793024749.6093261
+p51coarse.dnm 1793024749.6028697
+f16.dnm 1793024749.5646486
+ah64cockpit.srf 1793024749.464584
+cessna172_collision.srf 1793024749.5293753
+e2ccoll.srf 1793024749.547825
+av8b_cockpit.srf 1793024749.4844067
+u125a.dnm 1793024749.6608555
+cessna172r.dat 1793024749.530179
+mig15_coll.srf 1793024749.5895286
+ah64.dnm 1793024749.4638517
+f1t2coll.srf 1793024749.568025
+cessna172_cockpit.srf 1793024749.5289338
+g4m_coarse.dnm 1793024749.5770555
+fw190_coll.srf 1793024749.575128
+kfir.dat 1793024749.5833864
+t2blue.dat 1793024749.6564612
+ea6bcoarse.dnm 1793024749.5482225
+ea6bcockpit.srf 1793024749.5483208
+f15cockpit.srf 1793024749.5547495
+eclipse_cockpit.srf 1793024749.5491636
+mig15.dat 1793024749.5876276
+a10coarse.dnm 1793024749.451648
+kfircoll.srf 1793024749.5838647
+archer_coll.srf 1793024749.4797823
+f22_coarse.dnm 1793024749.5704243
+a6m5_cockpit.srf 1793024749.462404
+b777cockpit.srf 1793024749.523047
+f15jcoarse.dnm 1793024749.5643132
+s3coll.srf 1793024749.6063025
+amx_coll.srf 1793024749.4687018
+ah64coll.srf 1793024749.4648848
+hurricane.ist 1793024749.5826526
+hurricane.dat 1793024749.5805268
+f4cockpit.srf 1793024749.5715857
+redarrows.dat 1793024749.6044693
+c130.dat 1793024749.5232046
+c130cockpit.srf 1793024749.5278847
+mig29.dnm 1793024749.5911975
+thunder_coarse.dnm 1793024749.659346
+gripen.dat 1793024749.5776927
+mig15_coarse.dnm 1793024749.588871
+g4m_cockpit.srf 1793024749.5774307
+a6.dnm 1793024749.4576442
+f2.dnm 1793024749.568298
+viggencockpit.srf 1793024749.6625705
+b52_coarse.dnm 1793024749.493825
+a320.dnm 1793024749.4547038
+f104.dnm 1793024749.552802
+f22_fueltank.srf 1793024749.5705807
+b29.dnm 1793024749.4856691
+f15dj.dnm 1793024749.5558386
+b777.dat 1793024749.521065
+uh60coll.srf 1793024749.661452
+e2c.dat 1793024749.5473351
+f15dj_kuro.dat 1793024749.5571885
+eclipse.dnm 1793024749.5486226
+tu160.dat 1793024749.6600134
+su27cockpit.srf 1793024749.628037
+su22.dnm 1793024749.608888
+t4blue.dat 1793024749.6575487
+angels_coarse.dnm 1793024749.4737704
+b767cockpit.srf 1793024749.52079
+f117a.dnm 1793024749.5532541
+su25coarse.dnm 1793024749.6107473
+su27cockpit.dnm 1793024749.6248102
+f4e.dat 1793024749.571687
+a4fcoarse.dnm 1793024749.4571457
+p51cockpit.srf 1793024749.603112
+rafale_coarse.dnm 1793024749.6038268
+s3cockpit.srf 1793024749.6062527
+f15djchairocoarse.dnm 1793024749.5623977
+f100d_coll.srf 1793024749.5525823
+a6.dat 1793024749.4572308
+mrg2000coll.srf 1793024749.6005385
+ys11.ist 1793024749.663241
+f4.ist 1793024749.5712824
+v107.dat 1793024749.6618288
+a320coll.srf 1793024749.4562762
+b747.dat 1793024749.497262
+b2cockpit.srf 1793024749.4910777
+gripen.dnm 1793024749.5779257
+a6coll.srf 1793024749.457909
+su24coll.srf 1793024749.6101766
+su27_panel.isp 1793024749.6179976
+draken_cockpit.srf 1793024749.5472362
+f22cockpit.srf 1793024749.5706377
+f104.dat 1793024749.5526326
+tornado.dnm 1793024749.6597342
+f15dcockpit.srf 1793024749.5555906
+ah1.dnm 1793024749.462824
+f15d.dat 1793024749.5548468
+f15dj_sotoao.dat 1793024749.5608177
+concordecockpitold.srf 1793024749.5462615
+f15d_rear.ist 1793024749.5553932
+a10cockpit.srf 1793024749.4517357
+redarrows.dnm 1793024749.6046925
+cessna172r.ist 1793024749.5384574
+mig21cockpit.srf 1793024749.5905187
+angels.dat 1793024749.46877
+rafale.dat 1793024749.6032531
+b29_cockpit.srf 1793024749.4894598
+lancaster_coll.srf 1793024749.5875373
+uh60.dat 1793024749.661168
+b52.dat 1793024749.4915152
+mig23.dat 1793024749.5906353
+c130coll.srf 1793024749.5288632
+mu2cockpit.srf 1793024749.6009269
+g4m.dat 1793024749.5751886
+mig21.dnm 1793024749.5898182
+archer.ist 1793024749.4791658
+ah1coll.srf 1793024749.4629874
+f15dj_nakaao.dnm 1793024749.56034
+t2cockpit.srf 1793024749.6570947
+u125cockpit.srf 1793024749.6610649
+v107coll.srf 1793024749.662232
+mig21coll.srf 1793024749.5905764
+eclipse.ist 1793024749.5491066
+f16coll.srf 1793024749.5650647
+su57.dat 1793024749.6312976
+e2ccockpit.srf 1793024749.5477796
+f4_coarse.dnm 1793024749.5714114
+a300.dnm 1793024749.4525976
+a10.dat 1793024749.4504132
+mrg2000.dat 1793024749.5992951
+b2.dnm 1793024749.4847965
+ys11.dnm 1793024749.6628723
+angels.dnm 1793024749.4690437
+f16cockpit.srf 1793024749.5650177
+concordecockpit.srf 1793024749.543955
+f15.dnm 1793024749.554298
+f22coll.srf 1793024749.570689
+concordecoll.srf 1793024749.546381
+lancaster.dnm 1793024749.5842268
+viggen.dat 1793024749.6622818
+f15dj_madara.dat 1793024749.5582402
+aircraft.lst 1793024749.4649913
+b747.ist 1793024749.5048735
+su27.dnm 1793024749.6112103
+concorde_coarse.dnm 1793024749.543616
+mig15.dnm 1793024749.587852
+f15dcoarse.dnm 1793024749.5554895
+s3.dnm 1793024749.6060934
+tu160cockpit.srf 1793024749.6603608
+mrg2000.dnm 1793024749.5996015
+c130.ist 1793024749.5259333
+f15j.dnm 1793024749.5638545
+b747cockpit.srf 1793024749.505649
+a4f.dnm 1793024749.4567096
+gripen_coll.srf 1793024749.5792236
+f15dj_kuro.dnm 1793024749.557505
+t2bluecoarse.dnm 1793024749.6569474
+hurricane.dnm 1793024749.5807564
+f18e_coarse.dnm 1793024749.567685
+alphajet_coarse.dnm 1793024749.4666436
+su25coll.srf 1793024749.6109812
+u125a.dat 1793024749.660724
+a6cockpit.srf 1793024749.457855
+f14.dnm 1793024749.5537868
+su57_coarse.dnm 1793024749.6508086
+f18e.dnm 1793024749.5665023
+rafalecoll.srf 1793024749.6044204
+cockpit1.srf 1793024749.538522
+f18.dnm 1793024749.5653548
+a4cockpit.srf 1793024749.456427
+t4cockpit.srf 1793024749.6583688
+draken.dnm 1793024749.5467286
+su25.dnm 1793024749.6104321
+f15j.dat 1793024749.5636504
+mig23.dnm 1793024749.5907688
+b29_coarse.dnm 1793024749.4887316
+t400cockpit.srf 1793024749.6574469
+a300cockpit.srf 1793024749.4542348
+f104cockpit.srf 1793024749.5530076
+mig29cockpit.srf 1793024749.5991766
+archer_cockpit.srf 1793024749.479546
+concorde.ist 1793024749.5434432
+eurofighter_coll.srf 1793024749.5507674
+b737.dnm 1793024749.4952195
+b2_coarse.dnm 1793024749.4905906
+av8b_coarse.dnm 1793024749.483523
+concorde.dnm 1793024749.538851
+uh60j.dat 1793024749.6614985
+c130_coarse.dnm 1793024749.5266783
+v107cockpit.srf 1793024749.6621826
+b737cockpit.srf 1793024749.497058
+a300coll.srf 1793024749.4544342
+eurofighter.dat 1793024749.5492637
+su27coarse.dnm 1793024749.6188092
+f18cockpit.srf 1793024749.5660174
+spitfire.dnm 1793024749.6065526
+spitfire_cockpit.srf 1793024749.6086087
+f100d.dnm 1793024749.5513763
+f22.dat 1793024749.5686111
+b747coarse.dnm 1793024749.5052223
+f15djnakaaocoarse.dnm 1793024749.5631824
+f15dj_sotomidori.dat 1793024749.5615134
+tornadocoll.srf 1793024749.659926
+hurricane_coarse.dnm 1793024749.5828662
+a6m5_coll.srf 1793024749.4626
+su22.dat 1793024749.6087115
+mu2.dat 1793024749.6005902
+b737.dat 1793024749.494704
+a10coll.srf 1793024749.4519517
+concorde.dat 1793024749.5385866
+mig29_coarse.dnm 1793024749.5953178
+b747coll.srf 1793024749.5059826
+hawk_coarse.dnm 1793024749.580192
+redarrows_coarse.dnm 1793024749.6057317
+b737coll.srf 1793024749.497161
+ah1cockpit.srf 1793024749.4629054
+t2blue.dnm 1793024749.6566288
+f15dj_midori.dnm 1793024749.5594113
+gripen_cockpit.srf 1793024749.5791621
+f15dj.dat 1793024749.5556417
+ah64.dat 1793024749.4632635
+f86cockpit.srf 1793024749.573479
+b767.dat 1793024749.5062172
+hawk.dat 1793024749.5792925
+gripen_coarse.dnm 1793024749.578938
+ea6bcoll.srf 1793024749.548363
+cessna172r.dnm 1793024749.5348113
+uh60cockpit.srf 1793024749.6614056
+b2.dat 1793024749.4845827
+b52cockpit.srf 1793024749.4941788
+su25cockpit.srf 1793024749.6108696
+hawk_cockpit.srf 1793024749.5803936
+f15dj_sotoao.dnm 1793024749.561057
+mu2.ist 1793024749.6008828
+ys11coll.srf 1793024749.663352
+alphajet_cockpit.srf 1793024749.4670951
+b52.dnm 1793024749.49269
+f15djkurocoarse.dnm 1793024749.562572
+f5.dat 1793024749.5727208
+e2c.dnm 1793024749.5475478
+tu160.dnm 1793024749.660157
+f117cockpit.srf 1793024749.5535994
+f4ej.dat 1793024749.5717373
+f100d.dat 1793024749.5511436
+amx.dat 1793024749.4676423
+mrg2000_coarse.dnm 1793024749.6003644
+su57cockpit.srf 1793024749.654893
+b767.dnm 1793024749.5148115
+f5cockpit.srf 1793024749.5729935
+f18e_cockpit.srf 1793024749.5679011
+fw190.dnm 1793024749.5737827
+s3.dat 1793024749.6059065
+fw190.ist 1793024749.574715
+su25.dat 1793024749.6102314
+p51.dnm 1793024749.601254
+f15dj_nakaao.dat 1793024749.560128
+rafale.dnm 1793024749.603474
+f86blue.dnm 1793024749.5732865
+g4m.dnm 1793024749.575411
+ah1.dat 1793024749.4626656
+f14coll.srf 1793024749.5539901
+f18coll.srf 1793024749.566207
+mig29.dat 1793024749.5910456
+f117a.dat 1793024749.5531447
+f4.dnm 1793024749.5710282
+f1.dnm 1793024749.5509582
+f15dj_midori.dat 1793024749.5591757
+t4blue_coarse.dnm 1793024749.6582131
+draken_coll.srf 1793024749.547286
+su24cockpit.srf 1793024749.6101274
+a4coll.srf 1793024749.4564748
+eurofighter_coarse.dnm 1793024749.5504997
+eurofighter.dnm 1793024749.5494926
+f15djsotomidoricoarse.dnm 1793024749.563523
+mig23coll.srf 1793024749.5909877
+su22coarse.dnm 1793024749.6091273
+f86blue.dat 1793024749.5731802
+f117acoll.srf 1793024749.5535543
+tornado.dat 1793024749.6596088
+rafalecockpit.srf 1793024749.6043677
+f4ej_coarse.dnm 1793024749.5725152
+a300.dat 1793024749.4520671
+mig15_cockpit.srf 1793024749.589423
+a6coarse.dnm 1793024749.457792
+lancaster.dat 1793024749.583937
+f2coll.srf 1793024749.5707932
+archer.dnm 1793024749.475225
+hawk.dnm 1793024749.5795264
+lancaster_cockpit.srf 1793024749.5874054
+f15djmadaracoarse.dnm 1793024749.562815
+f14cockpit.srf 1793024749.5539224
+kfircockpit.srf 1793024749.583798
+f18e_coll.srf 1793024749.5679564
+f15djsotoaocoarse.dnm 1793024749.5633535
+f14.dat 1793024749.5536487
+lancaster_coarse.dnm 1793024749.5870922
+mig29coll.srf 1793024749.5992415
+b2coll.srf 1793024749.4911747
+hawk_coll.srf 1793024749.5804596
+f15coarse.dnm 1793024749.5546286
+u125.dnm 1793024749.6605844
+f4ej.dnm 1793024749.571942
+t400.dnm 1793024749.657288
+mig21.dat 1793024749.5895932
+uh60.dnm 1793024749.6612775
+su22cockpit.srf 1793024749.6092281
+mig21_coarse.dnm 1793024749.5903916
+mrg2000cockpit.srf 1793024749.6004887
+f104coll.srf 1793024749.5530615
+eclipse.dat 1793024749.5484107
+eclipse_coll.srf 1793024749.549211
+f16_coarse.dnm 1793024749.564901
+p51.dat 1793024749.6010633
+a4.dat 1793024749.456367
+su24.dnm 1793024749.6095495
+ea6b.dat 1793024749.5478785
+f5coll.srf 1793024749.5730448
+a320.dat 1793024749.454512
+amx_cockpit.srf 1793024749.468649
+uh60j.dnm 1793024749.6616492
+alphajet.dnm 1793024749.4653106
+u125.dat 1793024749.660469
+alphajet.dat 1793024749.4650989
+mu2coll.srf 1793024749.6009948
+av8b.dat 1793024749.479946
+a6m5_coarse.dnm 1793024749.4622517
+fw190.dat 1793024749.5735724
+g4m_coll.srf 1793024749.5776336
+a10.dnm 1793024749.450999
+b747.dnm 1793024749.498812
+f15djmidoricoarse.dnm 1793024749.5630124
+hurricane_cockpit.srf 1793024749.5831084
+su27coll.srf 1793024749.6281035
+f18.dat 1793024749.5651128
+su57.dnm 1793024749.638809
+viggencoll.srf 1793024749.6626136
+f15dj_chairo.dnm 1793024749.55649
+b767_coarse.dnm 1793024749.5205882
+f18e.dat 1793024749.566271
+u125coll.srf 1793024749.6611164
+mig23cockpit.srf 1793024749.5909185
+t400.dat 1793024749.6571531
+kfir.dnm 1793024749.5835812
+f15coll.srf 1793024749.5547981
+viggen.dnm 1793024749.662401
+f15dj_sotomidori.dnm 1793024749.5617242
+thunder.dat 1793024749.6584632
+f2cockpit.srf 1793024749.5707302
+b29.dat 1793024749.4849548
+b777coarse.dnm 1793024749.5229108
+f2.dat 1793024749.5680766
+t4coll.srf 1793024749.6584122
+draken_coarse.srf 1793024749.5471513
+ys11.dat 1793024749.6626725
+p51.ist 1793024749.6026807
+fw190_cockpit.srf 1793024749.5750773
+thunder.dnm 1793024749.6586845
+f86coll.srf 1793024749.5735211
+a6m5.dnm 1793024749.460342
+spitfire.ist 1793024749.608131
+av8b.dnm 1793024749.4806345
+t4blue.dnm 1793024749.6577563
+ys11cockpit.srf 1793024749.6633053
+fw190_coarse.dnm 1793024749.5748827
+tornadocockpit.srf 1793024749.659884
+f22.dnm 1793024749.5688403
+f15dj_madara.dnm 1793024749.5584798
+amx_coarse.dnm 1793024749.4685423
+f4coll.srf 1793024749.5716345
+f15d.dnm 1793024749.5550716
+b29_coll.srf 1793024749.4902346
+f18_coarse.dnm 1793024749.565858
+f5.dnm 1793024749.5728304
+f117acoarse.dnm 1793024749.5534468
+f16.dat 1793024749.5644445
+spitfire_coarse.dnm 1793024749.6084101
+mu2.dnm 1793024749.600719
+a6m5.dat 1793024749.4584165
+spitfire.dat 1793024749.6063519
+ah64.ist 1793024749.464184
+spitfire_coll.srf 1793024749.6086597
+b767coll.srf 1793024749.5208852
+su57coll.srf 1793024749.655099
+p51coll.srf 1793024749.6032
+f15dj_chairo.dat 1793024749.5562336
+amx.dnm 1793024749.4681795
+ea6b.dnm 1793024749.548037
+archer.dat 1793024749.4743626
+f100d_coarse.dnm 1793024749.5522625
+hurricane_coll.srf 1793024749.5833116
+tu160coll.srf 1793024749.660417
+eurofighter_cockpit.srf 1793024749.5507138
+v107.dnm 1793024749.661997
+a320cockpit.srf 1793024749.4561949
+b52coll.srf 1793024749.4946108
+b777coll.srf 1793024749.5231283
+a6m5.ist 1793024749.4612925
+su57-source 1793024749.6292896
+reference 1793024749.6290934
+Su-57.ac 1793024749.6292896
+helpers.py 1793024749.629048
+gear_v3.py 1793024749.6289904
+dnm.py 1793024749.6289015
+build_model.py 1793024749.6287742
+rig.py 1793024749.6312315
+baseline_su57.dat 1793024749.628599
+ac_reference.py 1793024749.6285496
+NOTICE.txt 1793024749.6284971
+mesh.py 1793024749.6290934
+collision_su57.py 1793024749.6288605
+LICENSE 1793024749.6283493
+t400coll.srf 1793024749.6574981
+su24coarse.dnm 1793024749.6099129
+f15.dat 1793024749.5540764
+f1.dat 1793024749.5508173
+av8b_coll.srf 1793024749.4845114
+alphajet_coll.srf 1793024749.4673333
+su22coll.srf 1793024749.609274
+b777.dnm 1793024749.521851
+draken_coarse.dnm 1793024749.5470433
+f100d_cockpit.srf 1793024749.5525277
+su27.dat 1793024749.6110525
+draken.dat 1793024749.5465202
+c130.dnm 1793024749.5234535
+plugin 1793024749.7176344
+sndYsflight32.dll 1793024749.7176344
+voiceYsflight32.dll 1793024749.7202806
+placeHolder.txt 1793024749.7172682
+scenery 1793024749.749564
+tohoku.stp 1793024749.7488198
+straight_test.fld 1793024749.7452977
+ocean.stp 1793024749.7413876
+naha.stp 1793024749.739936
+aomori.fld 1793024749.7224257
+sce_small.lst 1793024749.743879
+slapstick.fld 1793024749.7443116
+crescent.fld 1793024749.7270083
+sce_straight_test.lst 1793024749.7439137
+atoll.fld 1793024749.7247772
+atoll.stp 1793024749.7253015
+crescent.stp 1793024749.7277408
+tohoku.fld 1793024749.746011
+airstrike.fld 1793024749.7216287
+atsugi.fld 1793024749.7258441
+sce_race_desert.lst 1793024749.743831
+scenery.lst 1793024749.7440288
+race_desert.stp 1793024749.7427151
+gourd.yfs 1793024749.7283754
+small.stp 1793024749.7447367
+n-kyusyu.stp 1793024749.7388527
+race_desert.fld 1793024749.7419105
+small.fld 1793024749.744634
+hawaii.fld 1793024749.7285924
+heathrow.stp 1793024749.7363603
+atsugi.stp 1793024749.726439
+straight_test.stp 1793024749.7453623
+heathrow.fld 1793024749.7339985
+yamoto.stp 1793024749.7500114
+n-kyusyu.fld 1793024749.736696
+gourd.stp 1793024749.7283092
+newta.fld 1793024749.7406158
+aomori.stp 1793024749.7245214
+race_valley.stp 1793024749.7437286
+sce_atoll.lst 1793024749.7437756
+slapstick.stp 1793024749.7444725
+ocean.fld 1793024749.7413356
+race_valley.fld 1793024749.7433448
+naha.fld 1793024749.7393143
+newta.stp 1793024749.7412581
+airstrike.stp 1793024749.7221134
+small.yfs 1793024749.744776
+hawaii.stp 1793024749.733659
+yamoto.fld 1793024749.749564
+gourd.fld 1793024749.7280853
+misc 1793024749.713654
+stick.dnm 1793024749.7093015
+bomb500hd_coarse.srf 1793024749.7059858
+fueltank.srf 1793024749.7074893
+bomb_coarse.srf 1793024749.7062023
+flash01.png 1793024749.7073467
+bomb250_coarse.srf 1793024749.705844
+simflymsg.png 1793024749.7092226
+title06.png 1793024749.7123208
+bomb.srf 1793024749.7057495
+explosion05.png 1793024749.7071557
+rwlight.png 1793024749.7091923
+title10.png 1793024749.713654
+newfltmsg.png 1793024749.707589
+desktopicon.png 1793024749.7065368
+title11.png 1793024749.7142177
+particle_tile.png 1793024749.7080388
+explosion04.png 1793024749.707015
+rudder.dnm 1793024749.7091596
+title04.png 1793024749.7114697
+cloud01.png 1793024749.7062538
+aim9s.srf 1793024749.7054822
+particle01.png 1793024749.7076998
+aim_coarse.srf 1793024749.7056515
+rocket_coarse.srf 1793024749.709039
+explosion03.png 1793024749.7068505
+title00.png 1793024749.7095897
+explosion01.png 1793024749.7065816
+rocket.srf 1793024749.7088938
+cloud02.png 1793024749.7063994
+title07.png 1793024749.7126844
+flarepod.srf 1793024749.7072926
+aim9.srf 1793024749.7054143
+throttle.dnm 1793024749.7093475
+aim120_coarse.srf 1793024749.7052314
+groundtile.png 1793024749.7075558
+agm65s.srf 1793024749.7050073
+simrepmsg.png 1793024749.7092512
+rockets.srf 1793024749.7091134
+banner.PNG 1793024749.705684
+agm65.srf 1793024749.7049246
+bomb500hds.srf 1793024749.706122
+aim9xs.srf 1793024749.7056162
+title01.png 1793024749.709929
+aim.srf 1793024749.7051048
+title05.png 1793024749.7117527
+bomb500hd.srf 1793024749.7058961
+aim120s.srf 1793024749.7052815
+title09.png 1793024749.7132556
+title03.png 1793024749.711022
+explosion02.png 1793024749.7067182
+aim120.srf 1793024749.7051563
+aim9x.srf 1793024749.705533
+title08.png 1793024749.7129424
+agm_coarse.srf 1793024749.705056
+aim9x_coarse.srf 1793024749.7055717
+title02.png 1793024749.7107148
+bomb250.srf 1793024749.7058098
+20181124 1793024749.4499032
+ground 1793024749.7019825
+cave_base.dat 1793024749.6844952
+invincible.dat 1793024749.68957
+groundtarget1.dat 1793024749.6877081
+fueltruck_white.dat 1793024749.686389
+truck_coarse.srf 1793024749.6990929
+trees_400m_20m_80_coll.srf 1793024749.698143
+tunnel5.dat 1793024749.6995392
+fueltruck_white.srf 1793024749.6864605
+tracker_coll.srf 1793024749.6967032
+bridge1_deck.srf 1793024749.6819024
+shopping1.srf 1793024749.6949544
+tracker.dat 1793024749.6964889
+plant.srf 1793024749.692826
+build11.srf 1793024749.6826932
+carrier_visual.dnm 1793024749.6841676
+floatingbase1.dat 1793024749.6856914
+ndb.srf 1793024749.6922152
+tree1.srf 1793024749.6967711
+radarbase.dat 1793024749.6932983
+vasi_coarse.dnm 1793024749.7011511
+udaloy.acp 1793024749.7000086
+elvrw1000x60.srf 1793024749.6853278
+box1000x1000x1000.srf 1793024749.6817145
+sfc.dat 1793024749.6939566
+m1a1coll.srf 1793024749.691694
+hg07_coarse.srf 1793024749.689282
+tunnel5.srf 1793024749.6997964
+box1000x1000x1000.dat 1793024749.6816835
+build60.srf 1793024749.682998
+castle.dat 1793024749.6843715
+t64.dnm 1793024749.6953287
+trees_400m_20m_80_vis.srf 1793024749.6985247
+fueltruck_cockpit.srf 1793024749.6863017
+wall1.dat 1793024749.7018242
+pwrplant.srf 1793024749.6929483
+sfc_o2.dat 1793024749.6945734
+radar_coll.srf 1793024749.6932673
+plant.dat 1793024749.6927876
+burke_deck.srf 1793024749.683644
+groundtarget2.srf 1793024749.6878135
+t80coll.srf 1793024749.6959164
+hg05.dat 1793024749.6889453
+bus_1.srf 1793024749.683736
+build30.srf 1793024749.6829076
+floatingbase1_deck.srf 1793024749.685799
+tree2.dat 1793024749.6968167
+radar_coarse.srf 1793024749.6932304
+terminal.dat 1793024749.696006
+hg04_coarse.srf 1793024749.688917
+radarbase_coarse.srf 1793024749.6933627
+fueltruck_coll.srf 1793024749.6863513
+build90.srf 1793024749.683064
+aaa.dat 1793024749.681126
+sfc.srf 1793024749.6940558
+bigben.srf 1793024749.6816506
+sfc_o1.srf 1793024749.6945398
+elvrw1000x60.dat 1793024749.6852338
+hg04.srf 1793024749.6888843
+build90.dat 1793024749.6830337
+carrier_deck.srf 1793024749.6841006
+m1a1_coarse.dnm 1793024749.6915746
+radar.dat 1793024749.6930957
+vasi_coll.srf 1793024749.7011874
+tunnel3.srf 1793024749.699437
+palace.dat 1793024749.6923685
+elephant.dat 1793024749.6850207
+sfc_sigma.srf 1793024749.694758
+build30.dat 1793024749.6828644
+pirate.srf 1793024749.6927552
+bridge2_deck.srf 1793024749.6822014
+reactor.dat 1793024749.6934094
+hangar2.dat 1793024749.6879394
+cave_base.acp 1793024749.6844614
+tower1.dat 1793024749.6962736
+plant_coll.srf 1793024749.692862
+tunnel2.srf 1793024749.699306
+hangar3.srf 1793024749.6880813
+jeep_coll.srf 1793024749.6911738
+tree2.srf 1793024749.6969333
+terminal.srf 1793024749.6960475
+sfc_o2.srf 1793024749.694609
+tower1.srf 1793024749.696306
+shopping2.srf 1793024749.6950648
+atsugi_tower.srf 1793024749.6815696
+gateguard_concorde_coll.srf 1793024749.6870162
+shop.srf 1793024749.6948905
+null.srf 1793024749.6922479
+sfc_gamma_coarse.srf 1793024749.6943247
+wall1.srf 1793024749.7018583
+truck.dat 1793024749.6988964
+gepard.dat 1793024749.6870644
+ils.dat 1793024749.6893404
+hg01.srf 1793024749.6885746
+bridge3.srf 1793024749.682294
+invincible.acp 1793024749.6895373
+hangar1.srf 1793024749.6878774
+build01.dat 1793024749.6824508
+test.srf 1793024749.6961799
+hanger1.dat 1793024749.6883006
+tower.dat 1793024749.6962104
+ils.acp 1793024749.68931
+t80.dnm 1793024749.695693
+vordme.dat 1793024749.7017894
+invincible_coll.srf 1793024749.6900976
+hg01_coarse.srf 1793024749.6886082
+jeep.dnm 1793024749.6906087
+tunnel1.dat 1793024749.6991315
+udaloy_coarse.srf 1793024749.7007174
+floatingbase2.dat 1793024749.6859446
+palace.srf 1793024749.6924138
+bridge1.srf 1793024749.6818047
+hangar3_coarse.srf 1793024749.6881135
+londontower.dat 1793024749.69121
+elephant_coarse.srf 1793024749.6851695
+m60coll.srf 1793024749.692093
+sfc_tau.srf 1793024749.6948256
+hg02.dat 1793024749.688635
+vasi.dnm 1793024749.7011135
+hangar3.dat 1793024749.6880445
+hg06_coarse.srf 1793024749.689161
+pwrplant_coll.srf 1793024749.6930578
+elephant.srf 1793024749.6850867
+hg01.dat 1793024749.688539
+papi_left.dat 1793024749.6924875
+sfc_omega.dat 1793024749.6946394
+gateguard_concorde.srf 1793024749.6867862
+tracker.dnm 1793024749.6966286
+bridge1_coll.srf 1793024749.6818717
+burke_coarse.srf 1793024749.683457
+tree1.dat 1793024749.696739
+bridge3_coarse.srf 1793024749.6823244
+vor.srf 1793024749.701431
+windmillbase.dat 1793024749.7018914
+cieling1.dat 1793024749.6848178
+trees_200m_10m_80_vis.srf 1793024749.69751
+island_base_deck.srf 1793024749.6903968
+build15.srf 1793024749.682798
+sam_coarse.dnm 1793024749.6937149
+trees_400m_20m.dat 1793024749.697881
+hangar2.srf 1793024749.6880052
+station.srf 1793024749.6952293
+cieling1.srf 1793024749.6848726
+londontower.srf 1793024749.6912735
+alert.dat 1793024749.6814013
+terminal_short.srf 1793024749.6961167
+elvrw1000x60.acp 1793024749.6852028
+vasi.dat 1793024749.7010734
+papi_right.dat 1793024749.692597
+vor.dat 1793024749.7013085
+carrier.acp 1793024749.6838646
+bridge2.acp 1793024749.68193
+alert.srf 1793024749.6814425
+bridge1.dat 1793024749.681771
+windmillbase.srf 1793024749.7019265
+pirate.dat 1793024749.6927106
+floatingbase2.srf 1793024749.6860473
+t64.dat 1793024749.6952624
+containership-l.dat 1793024749.684905
+m60_coarse.dnm 1793024749.6919854
+fueltruck_white_coll.srf 1793024749.6865804
+tower.srf 1793024749.696243
+aaa.srf 1793024749.6812103
+sfc_media.dat 1793024749.69442
+sambase.srf 1793024749.6938736
+build11_coarse.srf 1793024749.6827245
+sfc_club.dat 1793024749.694169
+t64_coarse.dnm 1793024749.6954243
+floatingbase2.acp 1793024749.6858265
+hanger1.srf 1793024749.6883748
+truck.srf 1793024749.699002
+windmillblade.dat 1793024749.7019825
+hg04.dat 1793024749.688846
+bus_1_coarse.srf 1793024749.683814
+burke.dnm 1793024749.683262
+fixed_checkpoint_500ft.srf 1793024749.6856334
+containership-l.srf 1793024749.6849542
+m1a1.dnm 1793024749.691471
+station.dat 1793024749.695182
+hangar1_coarse.srf 1793024749.6879098
+hangar1.dat 1793024749.6878438
+sfc_alpha.srf 1793024749.6941395
+build15.dat 1793024749.6827528
+hg02_coarse.srf 1793024749.6886976
+radar.srf 1793024749.693156
+sfc_lambda.dat 1793024749.6943555
+gateguard_concorde.dat 1793024749.686621
+sfc_o1.dat 1793024749.694484
+shopping2.dat 1793024749.6950254
+udaloy.dnm 1793024749.7002516
+ils_coll.srf 1793024749.6894643
+cave_base_deck.srf 1793024749.6847858
+build10w.dat 1793024749.6825933
+trees_200m_10m_80_coll.srf 1793024749.6971836
+tunnel2.dat 1793024749.6992073
+sam.dat 1793024749.6934943
+papi_coll.srf 1793024749.6924555
+t80.dat 1793024749.6956055
+bridge3.acp 1793024749.6822312
+trees_200m_10m.dat 1793024749.6970224
+island_base.dat 1793024749.690291
+tunnel4.dat 1793024749.6994705
+vor_coarse.srf 1793024749.7017157
+bigben.dat 1793024749.6816032
+gepard_coarse.dnm 1793024749.6875207
+bridge3_deck.srf 1793024749.682422
+sfc_tau.dat 1793024749.694788
+hg07.srf 1793024749.6892507
+tunnel1.srf 1793024749.6991723
+fixed_checkpoint_500ft.dnm 1793024749.685596
+hg05_coarse.srf 1793024749.6890426
+radarbase.srf 1793024749.6933315
+bridge2_coll.srf 1793024749.682144
+cave_base_coll.dat 1793024749.6846423
+reactor.srf 1793024749.6934595
+fueltruck.srf 1793024749.686206
+bridge3_coll.srf 1793024749.6823876
+invincible.srf 1793024749.6897135
+sfc_club.srf 1793024749.694218
+papi_left_coarse.dnm 1793024749.6925654
+aaacoll.srf 1793024749.681283
+sfc_gamma.srf 1793024749.6942914
+sfc_omega.srf 1793024749.69469
+carrier_catapult.srf 1793024749.6839986
+aaa_coarse.dnm 1793024749.6812477
+hg05.srf 1793024749.6890054
+aspam.dat 1793024749.681475
+atsugi_tower.dat 1793024749.6815383
+hg03.srf 1793024749.6887634
+bridge2_coarse.srf 1793024749.6821082
+hanger_coarse.srf 1793024749.688498
+tunnel4.srf 1793024749.6995056
+cave_base_coll.srf 1793024749.6847181
+tower2.srf 1793024749.6963868
+floatingbase2_deck.srf 1793024749.686089
+gepard_coll.srf 1793024749.6876037
+cave_base.srf 1793024749.6845748
+hg06.srf 1793024749.6891105
+build11.dat 1793024749.6826608
+aspam.srf 1793024749.6815069
+sfc_alpha.dat 1793024749.6941004
+ils_visual.srf 1793024749.6895056
+t80_coarse.dnm 1793024749.695812
+build15_coarse.srf 1793024749.6828325
+tower2.dat 1793024749.6963549
+jeep_coarse.dnm 1793024749.6910648
+sfc_gamma.dat 1793024749.6942532
+hg07.dat 1793024749.6892126
+build01.srf 1793024749.6824806
+papi_left.dnm 1793024749.6925263
+hg03_coarse.srf 1793024749.6887946
+tower3.srf 1793024749.6964571
+bridge2.dat 1793024749.6819856
+floatingbase1.acp 1793024749.685661
+terminal_short.dat 1793024749.6960802
+hanger4.srf 1793024749.688463
+tunnel3.dat 1793024749.699397
+shopping1.dat 1793024749.69492
+hanger.srf 1793024749.6882691
+invincible_deck.srf 1793024749.690216
+aaa.dnm 1793024749.6811738
+jeep_cabin.srf 1793024749.6909049
+sam.srf 1793024749.6936495
+build10w.srf 1793024749.6826315
+udaloy_coll.srf 1793024749.7008462
+test.dat 1793024749.6961474
+elvrw1000x60_coll.srf 1793024749.685459
+papi_right.dnm 1793024749.692635
+shop.dat 1793024749.694855
+castle.srf 1793024749.6844127
+udaloy.dat 1793024749.7000594
+sfc_lambda.srf 1793024749.6943905
+bridge1_coarse.srf 1793024749.6818373
+m60.dnm 1793024749.6918485
+pwrplant.dat 1793024749.6928923
+build60.dat 1793024749.6829379
+floatingbase1_coll.srf 1793024749.6857717
+ndb.dat 1793024749.6921625
+island_base.srf 1793024749.6903574
+ground.lst 1793024749.6876695
+hanger.dat 1793024749.6882293
+groundtarget2.dat 1793024749.6877756
+elvrw1000x60_deck.srf 1793024749.6854947
+jeep.dat 1793024749.6904325
+hg03.dat 1793024749.6887274
+floatingbase1.srf 1793024749.685736
+windmillblade.srf 1793024749.7020502
+gepard.dnm 1793024749.687255
+m1a1.dat 1793024749.691384
+burke_coll.srf 1793024749.6835697
+burke.acp 1793024749.6830914
+carrier_coll.srf 1793024749.6840644
+bus_1.dat 1793024749.6836767
+tower3.dat 1793024749.6964197
+fixed_checkpoint_500ft.dat 1793024749.6855514
+groundtarget1.srf 1793024749.687745
+fueltruck.dat 1793024749.6861331
+hanger4.dat 1793024749.6884267
+island_base.acp 1793024749.6902544
+carrier_bridge.srf 1793024749.683942
+sam.dnm 1793024749.6935806
+sfc_sigma.dat 1793024749.6947255
+hg06.dat 1793024749.689073
+invincible_coarse.srf 1793024749.6898906
+t64coll.srf 1793024749.695536
+bridge1.acp 1793024749.6817424
+papi_right_coarse.dnm 1793024749.6926746
+burke.dat 1793024749.6831222
+carrier.dat 1793024749.683904
+bridge3.dat 1793024749.682261
+udaloy_deck.srf 1793024749.701036
+bridge2.srf 1793024749.6820688
+m60.dat 1793024749.6917617
+sfc_media.srf 1793024749.6944566
+hg02.srf 1793024749.6886663
+carrier_wire.srf 1793024749.6843336
+READ_ME_RU.txt 1793024749.8753293
+config 1793024749.663746
+netinterceptmission.cfg 1793024749.6636767
+network.cfg 1793024749.663746
+default.cfg 1793024749.663588
+ctlassign.cfg 1793024749.6635444
+netwelcomemsg.txt 1793024749.6637118
+flight.cfg 1793024749.6636252
+option.cfg 1793024749.663779
+licenses 1793024749.7043672
+gcc-mingw-w64-i686-posix-runtime.txt 1793024749.7040052
+PUBLIC_LIBRARY.txt 1793024749.7033403
+YSFLIGHT.txt 1793024749.7034035
+mingw-w64-common.txt 1793024749.7043672
+mingw-w64-i686-dev.txt 1793024749.7047164
+gcc-mingw-w64-base.txt 1793024749.7036
+ys_timestamp.txt 1793067648.7666063
+readme.txt 1793024749.7212062
+language 1793024749.7027452
+en.uitxt 1793024749.7023525
+ja.uitxt 1793024749.7027452
+ru.uitxt 1793024749.703105
+ereadme.txt 1793024749.6810513
+mission 1793024749.7169118
+fleetbattle3.yfs 1793024749.71667
+IFR_Short_Misawa_to_Hachinohe.yfs 1793024749.715487
+tbdiamond.yfs 1793024749.7169454
+t2diamond.yfs 1793024749.7168758
+badiamond.yfs 1793024749.7160847
+f16vsmig21.yfs 1793024749.7162657
+SpitfireVsFw190.yfs 1793024749.716042
+fleetbattle1.yfs 1793024749.716346
+Honolulu-Scenic.yfs 1793024749.715151
+bidelta.yfs 1793024749.716137
+bidiamond.yfs 1793024749.7161882
+A6M5vsP51.yfs 1793024749.7145889
+tbdelta.yfs 1793024749.7169118
+gunfight.yfs 1793024749.7168355
+fleetbattle2.yfs 1793024749.7165036
+Fw190VsSpitfire.yfs 1793024749.7150896
+fly_f22.yfs 1793024749.716787
+concorde_in_hawaii.yfs 1793024749.7162266
+P51vsA6M5.yfs 1793024749.715611
+IFR_Flight_from_Akita_to_Aomori.yfs 1793024749.715309
+PiratesAttack.yfs 1793024749.7158742
+A6M5vsB29.yfs 1793024749.7145278
+EscortMission.yfs 1793024749.714852
+P51vsG4M.yfs 1793024749.715655
+document 1793024749.6807406
+radar_bomb.png 1793024749.6725755
+serverdlgj.png 1793024749.6743984
+startpositionlistbox.png 1793024749.6744492
+netconfig_clij.png 1793024749.6692772
+opengl_typhoon.png 1793024749.6720698
+configdlg4.png 1793024749.6661553
+netconfig_svr1j.png 1793024749.6694875
+takeoff.png 1793024749.6747868
+hud.png 1793024749.6679358
+FlyNowButton.png 1793024749.6646247
+peephole2.png 1793024749.6724422
+netconfig_svr2.png 1793024749.6695876
+opengl_harrier.png 1793024749.6718397
+yfsutildlg.png 1793024749.6810012
+selectair_loadtabj.png 1793024749.6740007
+optiondlg.png 1793024749.672178
+netconfig_svr3j.png 1793024749.6699243
+configdlg3j.png 1793024749.6659439
+opengl_f18e.png 1793024749.6714578
+selectair_cattabe.png 1793024749.6732712
+concorde_cockpit.png 1793024749.665294
+configdlg4j.png 1793024749.6662135
+v862 1793024749.6774929
+04-formation.png 1793024749.677147
+ОТКРЫТЬ_ОТЧЁТ.html 1793024749.6774929
+03-real-flight.png 1793024749.6768591
+02-level-start.png 1793024749.6763659
+measurements.json 1793024749.6771986
+ПРОВЕРКИ.md 1793024749.6801333
+01-turn.png 1793024749.675249
+serverdlge.png 1793024749.6743355
+netconfig_svr3.png 1793024749.6698735
+netconfig_gen.png 1793024749.669324
+ctlassignj.png 1793024749.6668718
+clientdlgj.png 1793024749.6651776
+xpsp2e.html 1793024749.6803849
+newflightdlg-tab1.png 1793024749.6700778
+selectair_airtabj.png 1793024749.6730275
+newflightdlg-tab4.png 1793024749.6705542
+xpsp2.png 1793024749.6802979
+tojapanese.png 1793024749.6749306
+configfiles.txt 1793024749.6662948
+versionconflict.png 1793024749.6801915
+airfieldlistbox.png 1793024749.6650422
+nav1.png 1793024749.6691475
+newflightdlgj-tab3.png 1793024749.6710231
+controlj.html 1793024749.6666174
+newflightdlgj-tab4.png 1793024749.6711752
+netconfig_genj.png 1793024749.6693687
+hostname.png 1793024749.6677902
+configdlg1.png 1793024749.6654801
+peephole1.png 1793024749.6723258
+configdlg2j.png 1793024749.6657114
+3dhud.png 1793024749.6642787
+manual.html 1793024749.6691175
+selectair_airtabe.png 1793024749.6727724
+readme.txt 1793024749.6726105
+aircombatdlg.png 1793024749.664937
+opengl_concorde.png 1793024749.6713257
+newflightdlgj-tab1.png 1793024749.670703
+xpsp2j.html 1793024749.6805527
+newflightdlgj-tab2.png 1793024749.6708586
+english.html 1793024749.6671736
+selectair_loadtabe.png 1793024749.6737418
+serverclient.png 1793024749.6742544
+newflightdlg-tab2.png 1793024749.67025
+configdlg2.png 1793024749.6656086
+radar_aam.png 1793024749.6725144
+supplydlg.png 1793024749.67459
+email.png 1793024749.6669335
+fly_f22.png 1793024749.667706
+joystick.png 1793024749.6689315
+japanese.html 1793024749.6684673
+netconfig_cli.png 1793024749.6692278
+vor.png 1793024749.680229
+optiondlgj.png 1793024749.6722405
+xpsp2firewall.png 1793024749.6804564
+newflightdlg-tab3.png 1793024749.6704056
+ereadme.txt 1793024749.6676388
+configdlg1j.png 1793024749.665542
+netconfig_svr1.png 1793024749.669428
+control.html 1793024749.6664488
+ctlassign.png 1793024749.6667755
+radar_agm.png 1793024749.6725442
+opengl_f22.png 1793024749.671597
+selectair_cattabj.png 1793024749.6735005
+jreadme.txt 1793024749.6690784
+120kt.png 1793024749.6639526
+FlyNowButtonJ.png 1793024749.6647112
+ils.png 1793024749.6681082
+configdlg3.png 1793024749.6658778
+instpanel.png 1793024749.6681848
+nav2.png 1793024749.6691792
+airplanelistbox.png 1793024749.665092
+xpsp2security.png 1793024749.6807406
+Simulation_CreateNewFlight.png 1793024749.6647854
+adf.png 1793024749.664863
+clientdlge.png 1793024749.6651347
+netconfig_svr2j.png 1793024749.669792
+jreadme.txt 1793024749.7021136
+bundle 1793024749.663352
+placeHolder.txt 1793024749.6634657
+sound 1793024749.7642798
+prop1.wav 1793024749.7582483
+missile.wav 1793024749.7555373
+prop2.wav 1793024749.7590606
+prop8.wav 1793024749.7626038
+damage.wav 1793024749.7507243
+blast.wav 1793024749.7503421
+gun.wav 1793024749.755267
+prop5.wav 1793024749.760846
+notice.wav 1793024749.756154
+retractldg.wav 1793024749.7636015
+hit.wav 1793024749.75531
+bang.wav 1793024749.750159
+prop4.wav 1793024749.7604048
+prop7.wav 1793024749.761934
+engine5.wav 1793024749.7542403
+prop0.wav 1793024749.757092
+engine8.wav 1793024749.7547565
+engine.wav 1793024749.7510288
+burner.wav 1793024749.750667
+rocket.wav 1793024749.7636847
+stallhorn.wav 1793024749.7640493
+warning.wav 1793024749.7644486
+engine6.wav 1793024749.7545905
+engine9.wav 1793024749.7548966
+prop6.wav 1793024749.761449
+blast2.wav 1793024749.7504778
+engine2.wav 1793024749.7534037
+touchdwn.wav 1793024749.7642798
+prop9.wav 1793024749.7631047
+engine4.wav 1793024749.75409
+gearhorn.wav 1793024749.7551842
+bombsaway.wav 1793024749.7505486
+silence.wav 1793024749.763741
+engine0.wav 1793024749.751287
+prop3.wav 1793024749.7595818
+extendldg.wav 1793024749.755079
+engine3.wav 1793024749.753604
+engine7.wav 1793024749.7546916
+engine1.wav 1793024749.7529507
+ysinstaller.def 1793024749.8752584
+Newest=1793067648.7666063
+For: ysflight32_gl1
+Copy
+From: /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/YSFLIGHT/src/main/../../runtime
+To: /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/build32/main
+For ysflight32_gl1
+DLL /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/build32/sounddll/win32/libsndYsflight32.dll
+For ysflight32_gl1
+DLL /workspace/ysflight-dev/YSFlight_Su57_Test_2_Engine_Source/build32/voicedll/generic/libvoiceYsflight32.dll

@@ -1,0 +1,57 @@
+{
+  "su27": {
+    "repo": "https://github.com/FGMEMBERS/Su-27",
+    "commit": "a9c4863886a5835dfa4406698dd4557fbf72a3aa",
+    "license": "GPL-2.0 (upstream Version 2; not assumed GPL-3.0)",
+    "authors": [
+      "Lee Elliott",
+      "StuartC",
+      "VooDoo"
+    ],
+    "xml_reference_only": {
+      "original": "Models/SU-27.xml",
+      "original_sha256": "f121f776f3383e592e16c92be7f179b5d455f510955de121a85ac3dce4da15e1",
+      "extracted_axes_sha256": "1bb98cc488ee2545c8519236b68a54d4b03595c890fb715030748cd11cd05dbc"
+    },
+    "included_files": {
+      "Su-27.ac": "8e32522b01cc6235fa4e344be868e66dad0b19aba8f161b603db6c8a9e2f3008",
+      "COPYING": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa",
+      "SU-27.xml": "1bb98cc488ee2545c8519236b68a54d4b03595c890fb715030748cd11cd05dbc"
+    },
+    "excluded": [
+      "all source textures and liveries",
+      "all sounds",
+      "all FlightGear flight models and Nasal systems",
+      "instrument models and instrument code",
+      "external weapons and effects"
+    ]
+  },
+  "mig29": {
+    "repo": "https://github.com/FGMEMBERS/MiG-29",
+    "commit": "646e9f9d6b958773e69cbde74602642c91fcfcaf",
+    "license": "GPL-2.0 (upstream Version 2; not assumed GPL-3.0)",
+    "authors": [
+      "Detlef Faber",
+      "Gary R. Neely (Buckaroo)"
+    ],
+    "xml_reference_only": {
+      "original": "Models/Mig-29.xml",
+      "original_sha256": "0ad77964ddfed2fff814de309451af1a11e845d9fcdd078ae1cc35c77518e813",
+      "extracted_axes_sha256": "57ca40209eaa088a45e28700def6582e644d11585e1fb4806b22666bd038589c"
+    },
+    "included_files": {
+      "README.txt": "01a59ba7fe7edcf792d864a2949ec4daf8b4cd673018b98562e7a35294a013d0",
+      "COPYING.txt": "b15f41248f0957edfd2d91202ee810a6ef2d92c0256d330585d806677306a706",
+      "mesh_airframe.ac": "fa1535f5d0feed49de771dd34a58bc82b032b71643ead203a8a1f25e066c4b48",
+      "mesh_nozzleseg.ac": "4f4e03161f6f2b83012bd59615e27ea9b4f7c376ed2e5ccda9c172da3d199a38",
+      "Mig-29.xml": "57ca40209eaa088a45e28700def6582e644d11585e1fb4806b22666bd038589c"
+    },
+    "excluded": [
+      "all source textures and liveries",
+      "all sounds",
+      "all FlightGear flight models and Nasal systems",
+      "instrument models and instrument code",
+      "external weapons and effects"
+    ]
+  }
+}
