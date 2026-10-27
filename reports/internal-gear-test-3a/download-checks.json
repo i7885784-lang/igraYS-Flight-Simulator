@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "verified_publication_commit": "90d2fc48d7e910647ba9c080e9390a6fb922802c",
+  "downloads": [
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/internal-gear-test-3a/REPORT.md",
+      "HTTP": 200,
+      "bytes": 1652,
+      "sha256": "04be574b0ea9a42ec8812c46fc8eb231eea13d49b6533be2fd850541360e43a7",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Internal_Gear_Test_3a_32bit.zip",
+      "HTTP": 200,
+      "bytes": 21724537,
+      "sha256": "72d36ed66419faeefbe672c54d1517084cebf493f96260ede7c5a40c1abbe579",
+      "identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/downloads/YSFlight_Internal_Gear_Test_3a_Sources.zip",
+      "HTTP": 200,
+      "bytes": 12039540,
+      "sha256": "97ae1771291383c91a433a161f466f6eff4bed3128e84ae5445cf5d644a8e989",
+      "identical": true,
+      "ZIP_CRC": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/internal-gear-test-3a/su27/inverted.png",
+      "HTTP": 200,
+      "bytes": 29566,
+      "sha256": "eb22ee760c6be56eb9c6890e985bcb4c1af1e037d650c2f2d5aa6841c0e25804",
+      "identical": true,
+      "ZIP_CRC": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/ysflight-center-download/reports/internal-gear-test-3a/mig29/inverted.png",
+      "HTTP": 200,
+      "bytes": 22814,
+      "sha256": "a841be2dacbcadadb8377a2a58f89dad6eb8c7f8a4af68d0bb4c72dbb203d640",
+      "identical": true,
+      "ZIP_CRC": null
+    }
+  ]
+}
