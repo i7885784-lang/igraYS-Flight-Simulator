@@ -1,0 +1,7 @@
+upstream
+model-source/runtime/
+model-source/__pycache__/
+model-source/.panel-cache/
+model-source/envelope-reference.json
+model-source/model-stats.json
+**/__pycache__/

@@ -1,0 +1,9 @@
+{
+  "geometry_digest": "f25aeb7dca514cb350219f3806bf0e7dc7aceb2dc04731755798695d822498d2",
+  "local_model_sha256": "249b91607922255a9038fc4aeee48dbc2c5609829ab822bbbbb76b1d10c8e1e1",
+  "other_output_sha256": {
+    "su34.dat": "0bfde250987d4ddf4a1fdac12dbf6f290f49cf454da536cc206af0d6700242c0",
+    "su34coll.srf": "47b4166ab50b687ffc5e3761598d1a859c220a0f09281b9becf9f60ad5f2523d",
+    "su34cockpit.srf": "7e48641bb4e6ab1ddbf6ec1be2628d88ec04a55f89a7d0e92a22dc684f7b2912"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "repo": "DEVBenSon/FiveM-Plane-Pack",
+  "commit": "db0191619fb3d1cefc225eb5b216a91267ad7740",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7958,
+      "sha256": "8871ac14fbadb0fd09b590836a5ac0a5d391d41782b15b34f77f16fbee547158"
+    },
+    {
+      "path": "LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "LICENSE.md",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "LICENSE.txt",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "Plane-Pack/stream/su34.yft",
+      "bytes": 1067247,
+      "sha256": "65d6fda19354a046bcbaee79dbf0fb8a4de678ac59b3ff7c69d49517080c5c92"
+    },
+    {
+      "path": "Plane-Pack/stream/su34_hi.yft",
+      "bytes": 1068638,
+      "sha256": "83e31ef412b924b65a25aa4b5a49d3363b38fd2dd01c5b89292065130d10af5c"
+    },
+    {
+      "path": "Plane-Pack/stream/su34.ytd",
+      "bytes": 15275280,
+      "sha256": "51473253c27e8a55f01deac9b40593d09178400f425128c2d88fd5a9ec808cfb"
+    }
+  ],
+  "publication_permitted": false,
+  "tree_audit": {
+    "commit": "db0191619fb3d1cefc225eb5b216a91267ad7740",
+    "whole_tree_scanned_for_license_names": true,
+    "license_files_found": [],
+    "resource_manifest": "Plane-Pack/__resource.lua: only GTA metadata registrations; no usage permission",
+    "author_credit": "README.md line 142: SU-34 by fantazer_rnd (su34)",
+    "model_original_authorship_independently_verified": false
+  }
+}

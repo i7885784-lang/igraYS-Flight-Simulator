@@ -1,0 +1,37 @@
+name: Personal Su-34 test (draft only)
+on:
+  push:
+    branches: [ysflight-center-download]
+    paths:
+      - changes/su34-private-converter/**
+      - .github/workflows/private-su34-playtest.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: private-su34-playtest
+  cancel-in-progress: false
+jobs:
+  private-draft:
+    if: github.repository == 'i7885784-lang/igraYS-Flight-Simulator'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r changes/su34-private-converter/model-source/requirements.txt
+      - name: Build from pinned geometry and create a private draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENBLAS_NUM_THREADS: '1'
+        run: python changes/su34-private-converter/build_private_draft.py
+      - name: Record verified private download links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/private-playtest-4/STATUS.json
+          git commit -m 'Record verified owner-only playtest download links'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download

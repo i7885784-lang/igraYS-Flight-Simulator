@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/5e5aa0a/downloads/YSFlight_Playtest_4_32bit.zip",
+    "http": 200,
+    "bytes": 35595779,
+    "sha256": "7c765a847666249189920fb03bdea2fdb40b28754c7aa18f9cfbe0be1f754381",
+    "byte_identical": true,
+    "crc": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/5e5aa0a/downloads/YSFlight_Playtest_4_Sources.zip",
+    "http": 200,
+    "bytes": 36665059,
+    "sha256": "06b75d7fcbaadd8259d00984d80eda47fd0332ee51f1b6695c3c3a010e2abb88",
+    "byte_identical": true,
+    "crc": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/i7885784-lang/igraYS-Flight-Simulator/5e5aa0a/reports/playtest-4/su27/gear.mp4",
+    "http": 200,
+    "bytes": 522259,
+    "sha256": "78e82709540e68fd72f4a56bff4184bf0da1b1856cf7ce9e0691364a77c9d8fd",
+    "byte_identical": true,
+    "crc": null
+  }
+]

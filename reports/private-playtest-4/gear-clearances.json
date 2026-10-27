@@ -1,0 +1,12 @@
+{
+  "library": "python-fcl 0.7.0.11",
+  "aircraft": {
+    "su34": {
+      "passed": true,
+      "poses": 101,
+      "tyre_nodes": 3,
+      "obstacles": 8,
+      "hits": []
+    }
+  }
+}
