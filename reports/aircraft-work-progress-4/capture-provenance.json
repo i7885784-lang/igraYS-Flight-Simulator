@@ -1,0 +1,20 @@
+{
+  "su27": {
+    "capture": "actual YSFlight Win64 diagnostic build under Wine, paused camera views",
+    "model_sha256": "56447feccd4453c7a8f4cae7307011ec810caed92b7681f24fbf599d84ca9488",
+    "image_sha256": {
+      "side.png": "8a29c5526a8f5c7d487422812af0c08fb6884a46d5cb92b961809d9d9a3e43a2",
+      "quarter-135.png": "0b05572098f7328f500d0a03340f8c4aa2fc3cf2dc3dac25c95c745a5ccebf17",
+      "bottom.png": "2ed5e28b199d3e356c5efab9b7903491bdd434e39cd4baa2336c57abd30840e8"
+    }
+  },
+  "su34": {
+    "capture": "actual YSFlight Win64 diagnostic build under Wine, paused camera views",
+    "model_sha256": "38aa0dedcbdba27339eaaeadc13eef00bf532cdca680a6302972a0c382657a6f",
+    "image_sha256": {
+      "side.png": "7b585986d128a1af2ee4ca968f096aa3537866259a202e0b190bca6469df3698",
+      "quarter-135.png": "980ca1142a1cd5691072a02a3fcc11d90554ccaed0d00af26a8a036587e281cb",
+      "bottom.png": "11b6a7a38776818f46b8e1a4c469b426b5c3f0b2bac207d10aa6974adab5938e"
+    }
+  }
+}
