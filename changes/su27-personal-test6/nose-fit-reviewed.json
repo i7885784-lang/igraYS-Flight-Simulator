@@ -1,0 +1,20 @@
+{
+  "cost": 0.0007075524794814719,
+  "max_violation": 0.010548090401278465,
+  "violating_vertices": 0,
+  "target": [
+    0.0,
+    0.294255358319128,
+    4.144894844640456
+  ],
+  "roll": 0.0,
+  "source_skin_only": true,
+  "roof_cap": 0.78,
+  "compression": 0.5948100915587966,
+  "evaluations": 1209,
+  "clearance_adjusted_target": [
+    0.0,
+    0.3,
+    4.145285881826241
+  ]
+}

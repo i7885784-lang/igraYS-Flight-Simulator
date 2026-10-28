@@ -23,6 +23,12 @@ jobs:
           RELEASE_ID: '427025255'
           OPENBLAS_NUM_THREADS: '1'
         run: python changes/su27-personal-test6/build_draft.py
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: su27-reproduction-diagnostic
+          path: test6-repro-diagnostic
+          if-no-files-found: ignore
       - name: Save verification and owner download links
         run: |
           git config user.name 'github-actions[bot]'

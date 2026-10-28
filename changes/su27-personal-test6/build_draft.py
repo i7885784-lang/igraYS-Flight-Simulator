@@ -35,7 +35,9 @@ with tempfile.TemporaryDirectory(prefix='personal-test6-') as tmp:
   result=subprocess.run([sys.executable,str(work/script)],capture_output=True,text=True)
   assert result.returncode==0,script+': '+result.stderr[-1500:]
  for name,digest in expected['models_sha256'].items():
-  assert sha((work/'runtime/aircraft'/name).read_bytes())==digest,'Model differs from reviewed bytes: '+name
+  if sha((work/'runtime/aircraft'/name).read_bytes())!=digest:
+   debug=REPO/'test6-repro-diagnostic';debug.mkdir(exist_ok=True);shutil.copy2(work/'runtime/aircraft'/name,debug/name);shutil.copy2(work/'repair-su27.json',debug/'repair-su27.json')
+   raise AssertionError('Model differs from reviewed bytes: '+name)
   shutil.copy2(work/'runtime/aircraft'/name,game/'aircraft'/name)
  preserved={}
  with zipfile.ZipFile(tmp/'base-game.zip') as old:

@@ -178,7 +178,7 @@ p[dnm.fil(lookup['InternalGearBayN'])]=double(well).srf()
 from fit_internal import fit
 from corrections import axis_rotation
 objects={o['name']:o for o in ac.objects};names=[k for k in objects if k.startswith('UC_Nose_') and k not in ['UC_Nose_Rear_Post','UC_Nose_Upright_Brace','UC_Nose_BSArm']]
-P=np.array([0.,.42,2.34]);axle=np.array([0.,-1.98,2.20]);up,_,target,fitinfo=fit('su27','N',P,axle,names,objects,env);C=(P-axle)/np.linalg.norm(P-axle)*fitinfo['compression'];target[1]=.300;short=axle+C-P;target[2]=P[2]+math.sqrt(short@short-(target[1]-P[1])**2);from fit_internal import align;up=align(short,target-P);rv=Rotation.from_matrix(up).as_rotvec();fitinfo['clearance_adjusted_target']=target.tolist();matrices=[]
+P=np.array([0.,.42,2.34]);axle=np.array([0.,-1.98,2.20]);fitinfo=json.loads((root/'nose-fit-reviewed.json').read_text());target=np.array(fitinfo['target']);C=(P-axle)/np.linalg.norm(P-axle)*fitinfo['compression'];target[1]=.300;short=axle+C-P;target[2]=P[2]+math.sqrt(short@short-(target[1]-P[1])**2);from fit_internal import align;up=align(short,target-P);rv=Rotation.from_matrix(up).as_rotvec();fitinfo['clearance_adjusted_target']=target.tolist();matrices=[]
 for g in np.linspace(0,1,101):
  fold=1-np.clip((g-.24)/.76,0,1);R=Rotation.from_rotvec(rv*fold).as_matrix();t=P-R@P;u=t+R@(C*fold);matrices.append((R,t,u))
 for name,n in lookup.items():
