@@ -15,19 +15,19 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
-            changes/su27-personal-test7
+            changes/su34-personal-test7
             changes/su34-private-converter
             reports/personal-playtest-7
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -r changes/su27-personal-test7/requirements.txt
+      - run: python -m pip install -r changes/su34-personal-test7/requirements.txt
       - name: Reproduce reviewed Su-34 and verify private ZIP downloads
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_ID: '427079833'
           OPENBLAS_NUM_THREADS: '1'
-        run: python changes/su27-personal-test7/build_draft.py
+        run: python changes/su34-personal-test7/build_draft.py
       - name: Save verification and owner download links
         run: |
           git config user.name 'github-actions[bot]'
