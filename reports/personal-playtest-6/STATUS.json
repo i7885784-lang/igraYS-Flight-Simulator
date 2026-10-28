@@ -1,0 +1,44 @@
+{
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-f36cf4fc549741c4e8a5",
+  "assets": [
+    {
+      "name": "YSFlight_Personal_Test_6_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-f36cf4fc549741c4e8a5/YSFlight_Personal_Test_6_32bit.zip",
+      "bytes": 40001941,
+      "sha256": "e6bf8006ed61d4f494164f4ed3ff4aa13f7e019e9e1b37eb0bf9afa604e82059",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    },
+    {
+      "name": "YSFlight_Personal_Test_6_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-f36cf4fc549741c4e8a5/YSFlight_Personal_Test_6_Sources.zip",
+      "bytes": 51806317,
+      "sha256": "eb78299435caefc1cd0f22a224b7557f80ee35d9ef4718ae730fb6079d8aae5b",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    }
+  ],
+  "manifest": {
+    "test": 6,
+    "updated_aircraft": [
+      "su27"
+    ],
+    "su34_new_rig_included": false,
+    "unchanged_aircraft": {
+      "su34": 5,
+      "mig29": 5,
+      "su47": 18,
+      "su57": 23
+    },
+    "win32_exe_unchanged": true,
+    "locally_reviewed_models_reproduced_byte_for_byte": true,
+    "models_sha256": {
+      "su27.dnm": "795aa2ad0eda13922084c8623af7849775b9b7e5a1d820bb2b00c165e392a1a8",
+      "su27_coarse.dnm": "795aa2ad0eda13922084c8623af7849775b9b7e5a1d820bb2b00c165e392a1a8"
+    },
+    "native_windows_10_x86_tested": false,
+    "validated": "Win64/Wine; native G down/up, engine states, eight overall views; geometry sweep and original contour comparison",
+    "private_only_due_to_su34_rights": true
+  }
+}
