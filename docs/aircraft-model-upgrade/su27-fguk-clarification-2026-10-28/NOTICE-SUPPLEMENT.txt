@@ -1,0 +1,17 @@
+Su-27 attribution supplement — 2026-10-28
+
+Selected source: FGMEMBERS/Su-27, Models/Su-27.ac
+Commit: a9c4863886a5835dfa4406698dd4557fbf72a3aa
+Original publishing/development group: FGUK (FlightGear UK).
+Authors listed in the selected SU-27-set.xml: Lee Elliott, StuartC, VooDoo.
+FGMEMBERS is the source mirror; preserve the original author credits.
+
+FGMEMBERS maintainer IAHM-COL stated that this content was released by FGUK
+under GPL and recommended contacting FGUK for further clarification:
+https://github.com/FGMEMBERS/SU-27/issues/1#issuecomment-6451929933
+
+The selected source includes COPYING (GNU GPL version 2). Preserve that file,
+original copyright notices, editable geometry, adaptation sources and converter.
+This supplement does not relicense the model or confirm rights to every part.
+Exact authorship, applicable GPL version and possible exceptions remain open.
+No HDpilot geometry is included. Other aircraft retain their own licence status.

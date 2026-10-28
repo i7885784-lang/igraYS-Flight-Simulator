@@ -1,0 +1,26 @@
+Subject: Su-27 aircraft geometry — GPL coverage and original author credits
+
+Hello FGUK team,
+
+The maintainer of FGMEMBERS/SU-27 recommended contacting you:
+https://github.com/FGMEMBERS/SU-27/issues/1#issuecomment-6451929933
+
+We are adapting only Models/Su-27.ac from commit
+a9c4863886a5835dfa4406698dd4557fbf72a3aa into YSFlight's model format:
+https://github.com/FGMEMBERS/SU-27/blob/a9c4863886a5835dfa4406698dd4557fbf72a3aa/Models/Su-27.ac
+
+Could you please clarify:
+1. Does the published GPL cover all aircraft geometry in this file, and
+   which GPL version(s) apply?
+2. Which original modellers/copyright holders should we credit, in addition
+   to FGUK, Lee Elliott, StuartC and VooDoo listed by the package?
+3. Are there any third-party geometry parts or other licence exceptions?
+
+We use our own colours and sounds and do not import HDpilot.ac, foreign
+textures, sounds or FlightGear systems. We intend to distribute free tests
+and a paid game, preserving the applicable GPL, copyright notices, editable
+model sources, converter and a record of our adaptations.
+
+Thank you!
+
+DRAFT ONLY — NOT SENT. Recipient/contact has not yet been verified.
