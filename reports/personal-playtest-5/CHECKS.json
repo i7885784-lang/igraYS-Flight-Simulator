@@ -1,0 +1,62 @@
+{
+  "geometry": {
+    "poses_including_native_interpolation": 401,
+    "collision_hits": 0,
+    "passed": true,
+    "shared_knee_max_error_m": 0.0006984746416527441
+  },
+  "native_keyboard": {
+    "passed": true,
+    "events": [
+      [
+        0.2,
+        "g",
+        "tap"
+      ],
+      [
+        7.3,
+        "g",
+        "tap"
+      ]
+    ],
+    "gear_min": 0.0,
+    "gear_max": 1.0,
+    "gear_final": 0.0,
+    "environment": "Win64/Wine",
+    "forced_gear_rendering": false
+  },
+  "visual_review": "Movement frames from both directions, front/side/bottom and eight actual paused views around the aircraft reviewed. No new gross gear defect observed; this is not a guarantee of every aircraft system.",
+  "public_media_downloads": [
+    {
+      "name": "Su27_Gear_Up.png",
+      "http": 200,
+      "bytes": 28842,
+      "download_matches_local": true
+    },
+    {
+      "name": "Su27_Gear_Down.png",
+      "http": 200,
+      "bytes": 38821,
+      "download_matches_local": true
+    },
+    {
+      "name": "Su27_Front_Gear_Up.png",
+      "http": 200,
+      "bytes": 17371,
+      "download_matches_local": true
+    },
+    {
+      "name": "Su27_Gear_Cycle_360.mp4",
+      "http": 200,
+      "bytes": 794963,
+      "download_matches_local": true
+    }
+  ],
+  "full_360_view_coverage": "Eight actual game snapshots at 45-degree increments, paused; shown after the live gear cycle in the one delivered video.",
+  "known_limitations": [
+    "Su-34 still uses the previous personal-test-4 model; its new gear rig is unfinished and excluded.",
+    "Gear kinematics are an adaptation, not factory-verified mechanics.",
+    "Native Windows 10 x86 was not run."
+  ],
+  "rebuild_workflow": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/actions/runs/40714782497"
+}

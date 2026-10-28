@@ -8,6 +8,10 @@
 
 - [Шасси убраны](Su27_Gear_Up.png) · [выпущены](Su27_Gear_Down.png) · [спереди, убраны](Su27_Front_Gear_Up.png).
 - [Одно короткое видео: выпуск, уборка, затем восемь игровых ракурсов по кругу](Su27_Gear_Cycle_360.mp4). Механизм показан вживую; обзор в конце снят на паузе.
-- [Личный черновик с игрой и исходниками](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-61707121b8090dc60715) — требуется вход владельца в GitHub. Загрузка готовых ZIP ещё проверяется.
+- [Скачать игру Windows 32-bit](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-61707121b8090dc60715/YSFlight_Personal_Test_5_32bit.zip) — 40,8 МБ. Полностью распаковать в новую папку, **Play_Su27.bat**, шасси **G**.
+- [Исходники и лицензии](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-61707121b8090dc60715/YSFlight_Personal_Test_5_Sources.zip).
+- [Личный черновик с игрой и исходниками](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-61707121b8090dc60715) — требуется вход владельца в GitHub. ZIP игры и исходников повторно скачаны, SHA-256 и CRC проверены; анонимный доступ к ним возвращает 404.
 
 Игра проверялась в **Win64/Wine**; поставка — самостоятельный **Win32 GUI EXE**. Настоящая Windows 10 x86 здесь не запускалась. Кинематика остаётся игровой адаптацией. Геометрия Су-34 не размещается в публичной сборке: права не подтверждены.
+
+[Результаты проверки файлов](STATUS.json) · [Краткие проверки механизма](CHECKS.json) · [Пересборка и закрытая загрузка в GitHub Actions](https://github.com/i7885784-lang/igraYS-Flight-Simulator/actions/runs/40714782497).
