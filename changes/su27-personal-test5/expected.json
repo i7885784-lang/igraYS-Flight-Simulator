@@ -1,0 +1,11 @@
+{
+  "models_sha256": {
+    "su27.dnm": "4b7de75d6007d9f32be506c34383dd91c9519a8d9f252c5f092f35e32bea7a7b",
+    "su27_coarse.dnm": "4b7de75d6007d9f32be506c34383dd91c9519a8d9f252c5f092f35e32bea7a7b",
+    "su34.dnm": "249b91607922255a9038fc4aeee48dbc2c5609829ab822bbbbb76b1d10c8e1e1"
+  },
+  "working_base_sha256": {
+    "su27.dnm": "cea26da4254331e896079695929ae6d79874818642cbf6c5aa23037313004adf",
+    "su27_coarse.dnm": "cea26da4254331e896079695929ae6d79874818642cbf6c5aa23037313004adf"
+  }
+}

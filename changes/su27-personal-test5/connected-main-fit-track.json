@@ -1,0 +1,32 @@
+{
+  "parameters": [
+    -90.52061181436589,
+    -20.762331489091125,
+    -4.396649114177613,
+    -82.80096106429282,
+    0.29422565306750376
+  ],
+  "swivel_knots": [
+    0.026088582601526578,
+    0.09383023828530185,
+    0.200104014751464
+  ],
+  "pivot": [
+    1.9258162500000002,
+    0.07378,
+    -3.792475
+  ],
+  "fork_joint": [
+    1.92581375,
+    -0.7161400000000001,
+    -3.7924624999999996
+  ],
+  "fork_axis": [
+    -0.0,
+    0.9999999999999998,
+    -3.3306690738754617e-16
+  ],
+  "source_strut_joint_continuous": true,
+  "main_track_adjustment_m": 0.0178,
+  "note": "Pose parameters; prior optimizer residuals superseded by final actual-geometry 401-pose audit."
+}
