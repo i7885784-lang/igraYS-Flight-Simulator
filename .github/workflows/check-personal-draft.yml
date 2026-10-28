@@ -1,0 +1,39 @@
+name: Check personal draft privacy
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        description: Owner-only draft release ID
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check authenticated draft and anonymous access from GitHub runner
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}
+        run: |
+          python - <<'PYCODE'
+          import os,json,urllib.request,urllib.error
+          repo=os.environ['GITHUB_REPOSITORY'];ident=os.environ['RELEASE_ID'];assert ident.isdecimal()
+          root='https://api.github.com/repos/'+repo+'/releases/'+ident
+          def get(url,auth=False):
+              headers={'User-Agent':'personal-draft-privacy-check','Accept':'application/vnd.github+json','Cache-Control':'no-cache'}
+              if auth:headers['Authorization']='Bearer '+os.environ['GH_TOKEN']
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=30) as r:return r.status,r.read()
+              except urllib.error.HTTPError as e:return e.code,b''
+          code,raw=get(root,True);assert code==200,('Authenticated metadata',code)
+          release=json.loads(raw);assert release['draft'] is True,'Release is not a draft'
+          code,_=get(root+'?anonymous_check='+os.environ['GITHUB_RUN_ID']);assert code==404,('Anonymous metadata',code)
+          for a in release['assets']:
+              for url in [a['url'],a['browser_download_url']]:
+                  code,_=get(url+('?anonymous_check=' if '?' not in url else '&anonymous_check=')+os.environ['GITHUB_RUN_ID'])
+                  assert code==404,('Anonymous asset',a['name'],code)
+          print('PASS: draft confirmed; anonymous metadata and '+str(len(release['assets']))+' assets return HTTP 404 from GitHub-hosted runner.')
+          PYCODE
