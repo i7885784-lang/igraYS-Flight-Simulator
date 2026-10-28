@@ -1,0 +1,33 @@
+name: Build personal Su-27 test 6
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: personal-test6
+  cancel-in-progress: false
+jobs:
+  private-test:
+    if: github.repository == 'i7885784-lang/igraYS-Flight-Simulator'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r changes/su27-personal-test6/requirements.txt
+      - name: Reproduce reviewed Su-27 and verify private ZIP downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: '427025255'
+          OPENBLAS_NUM_THREADS: '1'
+        run: python changes/su27-personal-test6/build_draft.py
+      - name: Save verification and owner download links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/personal-playtest-6/STATUS.json
+          git commit -m 'Record verified personal Su-27 test 6 downloads'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download
