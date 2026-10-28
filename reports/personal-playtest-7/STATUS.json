@@ -1,0 +1,48 @@
+{
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-47828a88991652e71793",
+  "assets": [
+    {
+      "name": "YSFlight_Personal_Test_7_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-47828a88991652e71793/YSFlight_Personal_Test_7_32bit.zip",
+      "bytes": 30154871,
+      "sha256": "4a4f044811aa54e0b43d5fa55f610a6b3f435c01b7535478f01a462f79d82695",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    },
+    {
+      "name": "YSFlight_Personal_Test_7_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-47828a88991652e71793/YSFlight_Personal_Test_7_Sources.zip",
+      "bytes": 60286083,
+      "sha256": "fc4321f8c798176d701a7397f188fe92c38a8e0d875399f30bc0634df32dafdf",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    }
+  ],
+  "manifest": {
+    "test": 7,
+    "updated_aircraft": [
+      "su34"
+    ],
+    "su27_from_reviewed_test6": true,
+    "unchanged_aircraft": {
+      "su27": 8,
+      "mig29": 5,
+      "su47": 18,
+      "su57": 23
+    },
+    "win32_exe_unchanged": true,
+    "exe_machine": "PE i386 GUI",
+    "reviewed_models_reproduced_byte_for_byte": true,
+    "models_sha256": {
+      "su34_coarse.dnm": "04a8db83bfffe8abf1782a6fd22742203b845cbbbf09983bbad118d51f4bf4fb",
+      "su34.dnm": "04a8db83bfffe8abf1782a6fd22742203b845cbbbf09983bbad118d51f4bf4fb"
+    },
+    "reviewed_geometry_digest": "5747b46928444b3eef1394f570a2333ff30ff7996c848ac2b05d32e3d9dae6ce",
+    "geometry_position_comparison_m": 1e-05,
+    "native_windows_10_x86_tested": false,
+    "game_validation": "Win64/Wine; native G down/up, full control endpoints, B airbrake and AB; reviewed video and 360 camera; 401 geometry poses including interpolation",
+    "kinematics": "game approximation, not factory verified",
+    "private_only_due_to_su34_rights": true
+  }
+}
