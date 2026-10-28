@@ -1,0 +1,18 @@
+{
+  "both_zip_downloads_verified": true,
+  "CRC": true,
+  "reviewed_model_hashes_match": true,
+  "shipping_i386_exe": true,
+  "diagnostic_win64_copy_is_not_in_zip": true,
+  "downloaded_data_native_smoke": {
+    "passed": true,
+    "aircraft": "SU-34_FULLBACK",
+    "active": true,
+    "frames": [
+      "ground-intake",
+      "ground-top"
+    ]
+  },
+  "shipping_win32_exe_executed": false,
+  "actual_smoke_exe": "Win64 diagnostic EXE temporarily copied into extracted game, never included in shipping ZIP"
+}
