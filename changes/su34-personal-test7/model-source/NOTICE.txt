@@ -1,0 +1,39 @@
+PRIVATE PROTOTYPE — NO PUBLIC AIRCRAFT DISTRIBUTION OR SALES APPROVAL.
+
+Aircraft geometry source: DEVBenSon/FiveM-Plane-Pack,
+commit db0191619fb3d1cefc225eb5b216a91267ad7740.
+Original files: Plane-Pack/stream/su34.yft and su34_hi.yft.
+README line 142 credits: "SU-34 by fantazer_rnd (su34)".
+Root LICENSE, LICENSE.md and LICENSE.txt return 404. README has no express
+adaptation/distribution or commercial permission. The badge called licenseImg
+actually says Version 1.4. A public download is not a commercial license.
+Original authorship beyond this credit has not been independently verified.
+Do not label this aircraft GPL, MIT or cleared for sale without actual evidence.
+No permission request has been sent to the author.
+
+Only vertex/index/bone geometry is parsed. No YTD textures, sounds, GTA flight
+systems, shader effects or GTA code are imported. YTD is not required to build
+and is excluded from the prototype game/source deliverables.
+
+Adaptation by this project: YFT reader, normalization to the Su-34 envelope,
+own polygon colors/insignia, separated surfaces, fixed armored glazing,
+source tyre recovery from fragment children, mirrored/reused source tyre for
+right/tandem main wheels, sampled gear and control mechanisms, true internal
+apertures and closed curved doors, own support links and fixed-axis AB visuals.
+Baked GTA weapons are omitted; native game weapons use adapted source pylons
+and own tip launch brackets. Other existing aircraft/assets retain their notices.
+Kinematics and flight dynamics are game approximations, not factory drawings.
+Small source fork corner adjustments, axial tyre adaptation and oleo stroke
+are recorded in model-stats.json. Entrance hatch/ladder are not part of this test.
+
+read_yft.py is an independently written Python compatibility reader for this
+legacy RSC7 version 162 layout. Layout references were CodeWalker sources
+by dexyfex/Neodymium, commit 485d56bec00262ed7fa472261cce7bbc6202b96e:
+CodeWalker.Core/GameFiles/Resources/Frag.cs and Drawable.cs.
+No CodeWalker executable or C# implementation is bundled. Do not infer that
+all of CodeWalker or the aircraft has the license in Frag.cs's notice.
+The Neodymium notice attached to Frag.cs is retained in CODEWALKER_LAYOUT_NOTICE.txt.
+
+Build locally: install requirements.txt, place the two pinned YFT files in
+../upstream, run python build_model.py. Outputs runtime/aircraft/su34*.
+Do not publish those outputs until geometry rights are resolved.

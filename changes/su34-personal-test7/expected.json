@@ -1,0 +1,9 @@
+{
+  "reviewed_models_sha256": {
+    "su34_coarse.dnm": "04a8db83bfffe8abf1782a6fd22742203b845cbbbf09983bbad118d51f4bf4fb",
+    "su34.dnm": "04a8db83bfffe8abf1782a6fd22742203b845cbbbf09983bbad118d51f4bf4fb"
+  },
+  "reviewed_geometry_digest": "5747b46928444b3eef1394f570a2333ff30ff7996c848ac2b05d32e3d9dae6ce",
+  "geometry_quantization_m": 1e-05,
+  "baseline_su34_sha256": "249b91607922255a9038fc4aeee48dbc2c5609829ab822bbbbb76b1d10c8e1e1"
+}
