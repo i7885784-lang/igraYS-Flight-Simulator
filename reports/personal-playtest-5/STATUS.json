@@ -1,0 +1,42 @@
+{
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-61707121b8090dc60715",
+  "assets": [
+    {
+      "name": "YSFlight_Personal_Test_5_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-61707121b8090dc60715/YSFlight_Personal_Test_5_32bit.zip",
+      "bytes": 40800156,
+      "sha256": "c4a76c33c862a7e58a4d3008d0e4a1dfaab26ad21ae8300f03a7f2e0e7179755",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    },
+    {
+      "name": "YSFlight_Personal_Test_5_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-61707121b8090dc60715/YSFlight_Personal_Test_5_Sources.zip",
+      "bytes": 50681721,
+      "sha256": "670c91f969565b65c5ee028c43b542b8c04ba5024197a117d579d0d0f4e08623",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    }
+  ],
+  "manifest": {
+    "test": 5,
+    "new_su34_rig_included": false,
+    "preserved_aircraft": {
+      "su34": 5,
+      "mig29": 5,
+      "su47": 18,
+      "su57": 23
+    },
+    "win32_exe_unchanged": true,
+    "locally_reviewed_models_reproduced_byte_for_byte": true,
+    "models_sha256": {
+      "su27.dnm": "4b7de75d6007d9f32be506c34383dd91c9519a8d9f252c5f092f35e32bea7a7b",
+      "su27_coarse.dnm": "4b7de75d6007d9f32be506c34383dd91c9519a8d9f252c5f092f35e32bea7a7b",
+      "su34.dnm": "249b91607922255a9038fc4aeee48dbc2c5609829ab822bbbbb76b1d10c8e1e1"
+    },
+    "native_windows_10_x86_tested": false,
+    "game_validation": "Win64/Wine, native G both directions, 401 geometric poses including interpolation; reviewed movement frames",
+    "source": "GPL notices and original resources retained in corresponding source ZIP"
+  }
+}
