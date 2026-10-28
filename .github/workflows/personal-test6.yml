@@ -13,6 +13,11 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su27-personal-test6
+            changes/su34-private-converter
+            reports/personal-playtest-6
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
