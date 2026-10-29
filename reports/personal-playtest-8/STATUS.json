@@ -1,22 +1,22 @@
 {
   "draft": true,
-  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-710285c4910315463e00",
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-2d84fa72d1ac2a157974",
   "assets": [
     {
       "name": "YSFlight_Personal_Test_8_32bit.zip",
-      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-710285c4910315463e00/YSFlight_Personal_Test_8_32bit.zip",
-      "asset_id": 689226998,
-      "bytes": 31335931,
-      "sha256": "eafb85a11e6952a7c477e6ea563edd9bd8c1614bdb372d3ad8eeefe39a25455c",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2d84fa72d1ac2a157974/YSFlight_Personal_Test_8_32bit.zip",
+      "asset_id": 689248362,
+      "bytes": 31332402,
+      "sha256": "574b630f4ad63a88a1019c3f854f54fbb1c008b688cd74544b17a9ad526bd753",
       "authenticated_download_verified": true,
       "anonymous_http_status": 404
     },
     {
       "name": "YSFlight_Personal_Test_8_Sources.zip",
-      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-710285c4910315463e00/YSFlight_Personal_Test_8_Sources.zip",
-      "asset_id": 689227221,
-      "bytes": 66286793,
-      "sha256": "d8816a66942078d1b10a4ccee44a48c72c684eb2c76b6038b5aa3e08804e7fda",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2d84fa72d1ac2a157974/YSFlight_Personal_Test_8_Sources.zip",
+      "asset_id": 689248573,
+      "bytes": 66286815,
+      "sha256": "eb5d30cb9d2cbb96919c081f4a3f5e9678d78bd7156f6f22a8e5ff785ba50ae5",
       "authenticated_download_verified": true,
       "anonymous_http_status": 404
     }
@@ -26,11 +26,11 @@
     "models_sha256": {
       "su34_coarse.dnm": "3935873af951fd6e12a4da403a5ebdc1ffae2cac3c018f12555022e483123020",
       "su57.dnm": "4597c9805611b74ee966ba90842bd6c5e4e47e9af1ea4ac3f9f907f526ea1fd8",
-      "mig29.dnm": "f7f1124bcce20778691b2cddb0101e1cf87258d9c3c2a25b4835657d49ade72f",
+      "mig29.dnm": "9a56e64d3bba53e9c37e49497231ccf2bb528f1b0c36a049e1c37c6bb64bcd2d",
       "su27.dnm": "d759ad4756f958c90a8f325f6cbb852c7288b9d34f0fcae3b16557b98352349e",
       "su47_coarse.dnm": "80ace1c38d82addb4887a51246a71db4c5e8ebb0f1af885d57c428095ad964fd",
       "su57_coarse.dnm": "4597c9805611b74ee966ba90842bd6c5e4e47e9af1ea4ac3f9f907f526ea1fd8",
-      "mig29_coarse.dnm": "f7f1124bcce20778691b2cddb0101e1cf87258d9c3c2a25b4835657d49ade72f",
+      "mig29_coarse.dnm": "9a56e64d3bba53e9c37e49497231ccf2bb528f1b0c36a049e1c37c6bb64bcd2d",
       "su27_coarse.dnm": "d759ad4756f958c90a8f325f6cbb852c7288b9d34f0fcae3b16557b98352349e",
       "su47.dnm": "80ace1c38d82addb4887a51246a71db4c5e8ebb0f1af885d57c428095ad964fd",
       "su34.dnm": "3935873af951fd6e12a4da403a5ebdc1ffae2cac3c018f12555022e483123020"
