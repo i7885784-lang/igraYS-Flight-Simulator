@@ -1,0 +1,299 @@
+--- a/YSFLIGHT/src/ui/fsrunloop.cpp
++++ b/YSFLIGHT/src/ui/fsrunloop.cpp
+@@ -2007,7 +2007,7 @@
+   if(auto a=labSim->GetPlayerAirplane()){auto &p=a->Prop();p.modelGearPose=atof(labArgs[1]);p.modelCanopyPose=atof(labArgs[2]);p.modelFlapPose=atof(labArgs[3]);p.modelElevatorPose=atof(labArgs[4]);p.modelAileronPose=atof(labArgs[5]);p.modelRudderPose=atof(labArgs[6]);}return;
+  }
+  if(labSim && labArgs.GetN()>=1 && 0==labArgs[0].STRCMP("MODELCHECK")){
+-  if(auto a=labSim->GetPlayerAirplane()){const auto &p=a->Prop();printf("MODELCHECK t=%.4f gear=%.6f flap=%.6f elevator=%.6f aileron=%.6f rudder=%.6f canopy=%.6f spoiler=%.6f renderGear=%.6f renderCanopy=%.6f active=%d speed=%.4f throttle=%.6f ab=%d\n",labSim->GetClock(),p.GetLandingGear(),p.GetFlap(),p.GetElevator(),p.GetAileron(),p.GetRudder(),p.su27Canopy,p.GetSpoiler(),p.modelGearPose,p.modelCanopyPose,int(p.IsActive()),p.GetVelocity(),p.GetThrottle(),int(p.GetAfterBurner()));fflush(stdout);}return;
++  if(auto a=labSim->GetPlayerAirplane()){const auto &p=a->Prop();printf("MODELCHECK t=%.4f gear=%.6f flap=%.6f elevator=%.6f aileron=%.6f rudder=%.6f canopy=%.6f spoiler=%.6f renderGear=%.6f renderCanopy=%.6f active=%d speed=%.4f throttle=%.6f ab=%d nozzle=%.6f intake=%.6f louvers=%.6f diagnostic=%d\n",labSim->GetClock(),p.GetLandingGear(),p.GetFlap(),p.GetElevator(),p.GetAileron(),p.GetRudder(),p.su27Canopy,p.GetSpoiler(),p.modelGearPose,p.modelCanopyPose,int(p.IsActive()),p.GetVelocity(),p.GetThrottle(),int(p.GetAfterBurner()),p.GetNozzleOpening(),p.GetIntakeProtection(),p.GetAuxIntakeOpening(),int(a->vis.GetComponentDiagnostic()));fflush(stdout);}return;
+  }
+  if(labSim && labArgs.GetN()>=1 && 0==labArgs[0].STRCMP("SU27CHECK")){
+   if(auto a=labSim->GetPlayerAirplane()){auto &p=a->Prop();printf("SU27CHECK time=%.3f battery=%d pumps=%d L=%.6f R=%.6f factor=%.6f canopy=%.6f target=%.6f parking=%d brake=%d thrust=%.2f speed=%.4f lookH=%.6f lookP=%.6f\n",labSim->GetClock(),int(p.su27Battery),int(p.su27Pumps),p.su27SpoolLeft,p.su27SpoolRight,p.su27ThrustFactor,p.su27Canopy,p.su27CanopyTarget,int(p.su27Parking),int(p.GetBrake()),p.GetCurrentThrust(),p.GetVelocity(),p.su27LookH,p.su27LookP);}
+--- a/YSFLIGHT/src/core/fssimulation.cpp
++++ b/YSFLIGHT/src/core/fssimulation.cpp
+@@ -4654,6 +4654,7 @@
+ 
+ void FsSimulation::SimControlByUser(const double &dt,FSUSERCONTROL userControl)
+ {
++    if(YSTRUE!=FsGetKeyState(FSKEY_F9)) componentDiagnosticKeyHeld=false;
+     if(ProcessSquadWheelInput())return;
+     DiscoverSquadMembers();
+ 	int mx,my;
+@@ -4794,6 +4795,23 @@
+ 					continue;
+ 				}
+ 				YSBOOL keyTaken=YSFALSE;
++                if(rawKey==FSKEY_F9 && FsGetKeyState(FSKEY_CTRL)==YSTRUE && FsGetKeyState(FSKEY_SHIFT)==YSTRUE)
++                {
++                    // Bare Ctrl opens the legacy graphics submenu before F9 arrives.
++                    if(subMenu.GetSubMenu()==FSSUBMENU_INFLTCONFIG) subMenu.SetSubMenu(this,FSSUBMENU_NONE);
++                    if(!componentDiagnosticKeyHeld && DetailedAircraft(GetPlayerAirplane()))
++                    {
++                        auto air=GetPlayerAirplane();
++                        const bool enabled=!air->vis.GetComponentDiagnostic();
++                        air->vis.SetComponentDiagnostic(enabled);
++                        air->lod.SetComponentDiagnostic(enabled);
++                        AddTimedMessage(enabled?"Component colors: ON (Ctrl+Shift+F9)":"Component colors: OFF");
++                        printf("COMPONENT_DIAGNOSTIC enabled=%d aircraft=%s\n",enabled?1:0,air->Prop().GetIdentifier());
++                    }
++                    componentDiagnosticKeyHeld=true;
++                    SetIgnoreThisKeyHolding(rawKey);
++                    continue;
++                }
+                 if(DetailedAircraft(GetPlayerAirplane()) && FsGetKeyState(FSKEY_ALT)==YSTRUE && rawKey>=FSKEY_1 && rawKey<=FSKEY_6){Su27Action(this,rawKey-FSKEY_1);SetIgnoreThisKeyHolding(rawKey);continue;}
+ 
+ 				for(auto idx : addOnList.ReverseIndex())
+--- a/YSFLIGHT/src/core/fssimulation.h
++++ b/YSFLIGHT/src/core/fssimulation.h
+@@ -88,6 +88,7 @@
+     bool squadWheelOpen=false,squadWheelFormations=false,squadInputRelease=false;
+     int squadFormationPage=0;
+     bool menuPausePending=false,menuSuspended=false;
++    bool componentDiagnosticKeyHeld=false;
+     YSBOOL squadWasPaused=YSFALSE;
+     int squadMouseX=0,squadMouseY=0;
+     double squadSpacing=50.0,squadCoverHeight=40.0;
+--- a/YSFLIGHT/src/core/fsexistence.cpp
++++ b/YSFLIGHT/src/core/fsexistence.cpp
+@@ -737,6 +737,7 @@
+ 
+ void FsAirplane::Initialize(void)
+ {
++    vis.SetComponentDiagnostic(false);lod.SetComponentDiagnostic(false);
+     squadLeaderKey=YSNULLHASHKEY;pendingSquadLeaderId=-1;squadSlot=-1;squadTask=0;
+     squadOffset=YsOrigin();squadAttackTargetKey=YSNULLHASHKEY;
+ 	FsExistence::Initialize();
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.h
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.h
+@@ -61,6 +61,9 @@
+ class FsAirplaneProperty : public FsVehicleProperty
+ {
+ public:
++ double GetNozzleOpening() const { return staNozzleOpening; }
++ double GetIntakeProtection() const { return staIntakeProtection; }
++ double GetAuxIntakeOpening() const { return staAuxIntakeOpening; }
+  double modelGearPose=-1,modelCanopyPose=-1,modelFlapPose=-2,modelElevatorPose=-2,modelAileronPose=-2,modelRudderPose=-2;
+  bool su27Managed=false,su27Battery=true,su27Pumps=true,su27Left=true,su27Right=true,su27Parking=false,su27ParkingRelease=false;
+  double su27SpoolLeft=1.0,su27SpoolRight=1.0,su27ThrustFactor=1.0,su27Canopy=0.0,su27CanopyTarget=0.0,su27LookH=0.0,su27LookP=.16;
+@@ -123,6 +126,9 @@
+ 
+ 	YSBOOL staAb;            //Afterburner On/Off?(*)
+ 	double staThrottle;      //Throttle 0.0-1.0(*)
++    double staNozzleOpening=1.0,staIntakeProtection=0.0,staAuxIntakeOpening=0.0;
++    bool intakeProtectionCommand=false;
++    void UpdateExternalMechanisms(double dt);
+ 	YsArray <double> staPropLever;  // Propeller lever 0.0 low RPM   1.0 high RPM
+ 
+ 	double staSpoiler;       //Spoiler 0.0-1.0(*)
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -105,6 +105,7 @@
+ 
+ void FsAirplaneProperty::InitializeState(void)
+ {
++ staNozzleOpening=1.0;staIntakeProtection=staAuxIntakeOpening=0.0;intakeProtectionCommand=false;
+  modelGearPose=modelCanopyPose=-1;modelFlapPose=modelElevatorPose=modelAileronPose=modelRudderPose=-2;
+  su27Managed=false;su27Battery=su27Pumps=su27Left=su27Right=true;su27Parking=su27ParkingRelease=false;
+  su27SpoolLeft=su27SpoolRight=su27ThrustFactor=1.0;su27Canopy=su27CanopyTarget=su27LookH=0.0;su27LookP=.16;
+@@ -1041,6 +1042,7 @@
+ 		staStateTimer=0.0;
+ 	}
+ 
++	UpdateExternalMechanisms(dt);
+ 	staHobbsTime+=dt;
+ 
+ 	if(YSTRUE==staHUDFlicker)
+@@ -1056,7 +1058,30 @@
+ 
+ void FsAirplaneProperty::MoveTimer(const double &dt)
+ {
++	UpdateExternalMechanisms(dt);
+ 	staHobbsTime+=dt;
++}
++
++void FsAirplaneProperty::UpdateExternalMechanisms(double dt)
++{
++    if(dt<=0.0) return;
++    auto approach=[dt](double &value,double target,double rate)
++    { value+=YsBound(target-value,-rate*dt,rate*dt); };
++    // Visual approximation of variable-area exhaust: open at idle, narrower
++    // at maximum dry thrust, open again on afterburner. This is not an EEC model.
++    const double dry=YsBound((staThrottle-.08)/.92,0.0,1.0);
++    const double target=(YSTRUE==staAb ? .88+.12*staThrottle : 1.0-.83*dry);
++    approach(staNozzleOpening,target,.9);
++    if(0==strcmp(GetIdentifier(),"MIG-29_FULCRUM"))
++    {
++        const bool running=(GetFuelLeft()>0.0 && IsActive()==YSTRUE && (!su27Managed || YsGreater(su27SpoolLeft,su27SpoolRight)>.08));
++        if(YSTRUE!=IsOnGround() || !running || GetVelocity()>57.0) intakeProtectionCommand=false;
++        else if(GetVelocity()<54.0) intakeProtectionCommand=true;
++        // Around 200 km/h, with hysteresis to prevent switch chatter.
++        approach(staIntakeProtection,intakeProtectionCommand?1.0:0.0,.85);
++        const double demand=running ? staIntakeProtection*(.55+.40*staThrottle) : 0.0;
++        approach(staAuxIntakeOpening,demand,1.2);
++    }
+ }
+ 
+ void FsAirplaneProperty::PressVirtualButton(VIRTUALBUTTON btn)
+@@ -4403,6 +4428,10 @@
+    for(int c=160;c<=161;++c){vis.SetState(c,idx,idx+1,step-idx);vis.SetShow(c,staSpoiler>.025?YSTRUE:YSFALSE);}
+   }
+   const double gear=YsBound(modelGearPose>=0?modelGearPose:staGear,0.0,1.0);
++  const double nozzleStep=YsBound(staNozzleOpening,0.0,1.0)*20.0;
++  const int nozzleIndex=YsSmaller(19,int(nozzleStep));
++  vis.SetState(270,nozzleIndex,nozzleIndex+1,nozzleStep-nozzleIndex);
++  vis.SetState(120,0,1,staNozzleOpening);
+   const double leg=YsBound((gear-.12)/.88,0.0,1.0),door=YsBound(gear/.12,0.0,1.0);
+   for(int c=140;c<=142;++c){vis.SetState(c,0,1,leg);vis.SetShow(c,leg>.001?YSTRUE:YSFALSE);}
+   for(int c=143;c<=145;++c)vis.SetState(c,0,1,door);
+@@ -4424,9 +4453,14 @@
+    vis.SetState(211,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);
+    vis.SetState(212,0,1,staSpoiler);
+    if(0==strcmp(GetIdentifier(),"MIG-29_FULCRUM")){
+-    const double protection=IsOnGround()==YSTRUE?YsBound((60.0-GetVelocity())/15.0,0.0,1.0):0.0;
+-    vis.SetState(216,protection>.01?1:0);
+-    vis.SetState(217,0,1,protection);
++    const double intakeStep=YsBound(staIntakeProtection,0.0,1.0)*40.0;
++    const double auxiliaryStep=YsBound(staAuxIntakeOpening,0.0,1.0)*40.0;
++    const int ii=YsSmaller(39,int(intakeStep)),ai=YsSmaller(39,int(auxiliaryStep));
++    vis.SetState(216,ii,ii+1,intakeStep-ii);
++    vis.SetState(217,ai,ai+1,auxiliaryStep-ai);
++    const double migBrakeStep=YsBound(staSpoiler,0.0,1.0)*40.0;
++    const int mi=YsSmaller(39,int(migBrakeStep));
++    vis.SetState(212,mi,mi+1,migBrakeStep-mi);
+    }
+ 
+    const double brakeStep=YsBound(staSpoiler,0.0,1.0)*20.0;const int bi=YsSmaller(19,int(brakeStep));
+--- a/public/src/ysgebl/src/shellrender/ysvisual.h
++++ b/public/src/ysgebl/src/shellrender/ysvisual.h
+@@ -33,6 +33,7 @@
+ 
+ #include <memory>
+ #include <cstddef>
++#include <map>
+ 
+ #include "ysshellextgl.h"
+ #include <ysshelldnmtemplate.h>
+@@ -123,8 +124,14 @@
+ 	std::shared_ptr <Dnm> dnmPtr;
+ 	DnmState dnmState;
+     double afterburnerLengthScale=1.0;
+-
+-public:
++    bool componentDiagnostic=false;
++    // Separate render shells: never recolor the model shared by other airplanes.
++    mutable std::map<const Dnm::Node *,std::shared_ptr<Shell>> diagnosticShells;
++    Shell &RenderShell(Dnm::Node *node) const;
++
++public:
++    void SetComponentDiagnostic(bool enabled) { componentDiagnostic=enabled; }
++    bool GetComponentDiagnostic() const { return componentDiagnostic; }
+     void SetAfterburnerLengthScale(double scale) { afterburnerLengthScale=YsBound(scale,0.1,1.8); }
+ private:
+     YsMatrix4x4 AfterburnerTransform(const YsMatrix4x4 &tfm,Dnm::Node *node) const;
+--- a/public/src/ysgebl/src/shellrender/ysvisual.cpp
++++ b/public/src/ysgebl/src/shellrender/ysvisual.cpp
+@@ -203,6 +203,8 @@
+ }
+ YSRESULT YsVisualDnm::Load(YsTextInputStream &inStream,const char fn[])
+ {
++	diagnosticShells.clear();
++	componentDiagnostic=false;
+ 	std::shared_ptr <Dnm> dnm(new Dnm);
+ 
+ 	auto res=dnm->LoadDnm(inStream,nullptr,fn);
+@@ -230,6 +232,8 @@
+ 
+ void YsVisualDnm::CleanUp(void)
+ {
++	diagnosticShells.clear();
++	componentDiagnostic=false;
+ 	if(dnmPtr)
+ 	{
+ 		dnmPtr->CleanUp();
+@@ -459,6 +463,30 @@
+     return renderTfm;
+ }
+ 
++YsVisualDnm::Shell &YsVisualDnm::RenderShell(Dnm::Node *node) const
++{
++    if(!componentDiagnostic) return *node;
++    auto &cached=diagnosticShells[node];
++    if(!cached)
++    {
++        cached=std::make_shared<Shell>();
++        static_cast<YsShellExt &>(*cached)=static_cast<const YsShellExt &>(*node);
++        unsigned int hash=2166136261u;
++        for(const char *p=node->nodeName.Txt();*p;++p) hash=(hash^static_cast<unsigned char>(*p))*16777619u;
++        // Stable hue per named mechanism. Preserve opacity, normal and lighting.
++        const double hue=(hash%360)*YsPi/180.0;
++        for(auto plHd : cached->AllPolygon())
++        {
++            auto col=cached->GetColor(plHd);
++            const double alpha=col.Ad();
++            col.SetDoubleRGB(.57+.36*cos(hue),.57+.36*cos(hue-2.0*YsPi/3.0),.57+.36*cos(hue+2.0*YsPi/3.0));
++            col.SetAd(alpha);
++            cached->SetPolygonColor(plHd,col);
++        }
++    }
++    return *cached;
++}
++
+ void YsVisualDnm::Draw(const YsMatrix4x4 &tfm,Dnm::Node *nodePtr,unsigned int drawFlag) const
+ {
+ 	auto &dnm=*dnmPtr;
+@@ -467,10 +495,11 @@
+ 
+ 	if(YSTRUE==nodeState.GetShow())
+ 	{
+-		if(YSTRUE!=nodePtr->IsPolygonVboPrepared())
+-		{
+-			nodePtr->GetDrawingBuffer().RemakePolygonBuffer(*nodePtr,0.8);
+-			nodePtr->RemakePolygonVbo(nodePtr->GetVboSet(),nodePtr->GetDrawingBuffer());
++		auto &renderShell=RenderShell(nodePtr);
++		if(YSTRUE!=renderShell.IsPolygonVboPrepared())
++		{
++			renderShell.GetDrawingBuffer().RemakePolygonBuffer(renderShell,0.8);
++			renderShell.RemakePolygonVbo(renderShell.GetVboSet(),renderShell.GetDrawingBuffer());
+ 		}
+ 
+ 		YsHasShellExtVboSet::RenderingOption opt;
+@@ -479,7 +508,7 @@
+ 			opt.solidPolygon=YSTRUE;
+ 			opt.transparentPolygon=YSFALSE;
+ 			opt.light=YSFALSE;
+-			nodePtr->Render(AfterburnerTransform(newTfm,nodePtr),opt);
++			renderShell.Render(AfterburnerTransform(newTfm,nodePtr),opt);
+ 		}
+ 
+ 		if(0!=(YsVisual::DRAWTRANSPARENT&drawFlag))
+@@ -487,7 +516,7 @@
+ 			opt.solidPolygon=YSFALSE;
+ 			opt.transparentPolygon=YSTRUE;
+ 			opt.light=YSTRUE;
+-			nodePtr->Render(AfterburnerTransform(newTfm,nodePtr),opt);
++			renderShell.Render(AfterburnerTransform(newTfm,nodePtr),opt);
+ 		}
+ 	}
+ 
+@@ -546,13 +575,14 @@
+ 				opt.light=YSTRUE;
+ 			}
+ 
+-			if(YSTRUE!=nodePtr->IsPolygonVboPrepared())
+-			{
+-				nodePtr->GetDrawingBuffer().RemakePolygonBuffer(*nodePtr,0.8);
+-				nodePtr->RemakePolygonVbo(nodePtr->GetVboSet(),nodePtr->GetDrawingBuffer());
+-			}
+-
+-			nodePtr->Render(viewModelTfm,opt);
++			auto &renderShell=RenderShell(nodePtr);
++			if(YSTRUE!=renderShell.IsPolygonVboPrepared())
++			{
++				renderShell.GetDrawingBuffer().RemakePolygonBuffer(renderShell,0.8);
++				renderShell.RemakePolygonVbo(renderShell.GetVboSet(),renderShell.GetDrawingBuffer());
++			}
++
++			renderShell.Render(viewModelTfm,opt);
+ 		}
+ 	}
+ 

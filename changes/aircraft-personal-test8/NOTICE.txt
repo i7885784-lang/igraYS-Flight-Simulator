@@ -1,0 +1,19 @@
+Personal test 8: geometry and render changes, 2026-10-29.
+MiG-29 geometry: FGMEMBERS/MiG-29, commit 646e9f9d6b958773e69cbde74602642c91fcfcaf.
+https://github.com/FGMEMBERS/MiG-29
+Original author credits and GPL terms: upstream/mig29/README.txt and COPYING.txt.
+Only the editable geometry and hinge reference XML are included; no donor textures or sounds are used.
+Our changes: door and skin fitting, sampled connected motion, rounded tires and separate hubs,
+fixed-pivot inlet louvers and FOD ramps, own untextured exhaust pieces and understated panel tones.
+Original notices, editable sources and corresponding earlier converters remain in the full source ZIP.
+
+Su-34 geometry remains credited to fantazer_rnd / DEVBenSon/FiveM-Plane-Pack,
+commit db0191619fb3d1cefc225eb5b216a91267ad7740.
+No YTD, GTA sounds or GTA systems are included. Its commercial and redistribution rights
+are unconfirmed: do not publish a playable package containing it. Model provenance is not
+covered by a license on this converter. The test game and complete source data stay in an
+owner-only GitHub draft, while the report, our code and the engine-only binary are public.
+Su-27, Su-47 and Su-57 retain their respective upstream notices in the base game/source archive.
+Engine modifications retain CaptainYS and dependency notices. See native.patch, and the
+complete patched engine/ tree in the source archive. The engine-only binary contains no
+bundled aircraft geometry.
