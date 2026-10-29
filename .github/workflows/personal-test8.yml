@@ -25,7 +25,7 @@ jobs:
       - name: Reproduce models, patch complete engine and verify private downloads
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_ID: '428117266'
+          RELEASE_ID: '428148213'
           OPENBLAS_NUM_THREADS: '1'
         run: python changes/aircraft-personal-test8/build_draft.py
       - name: Record verified owner download links

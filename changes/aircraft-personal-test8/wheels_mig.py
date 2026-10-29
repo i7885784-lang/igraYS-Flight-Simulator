@@ -2,7 +2,7 @@ from pathlib import Path
 import sys,numpy as np,math,json
 root=Path(__file__).resolve().parent;sys.path.insert(0,str(root/'model-source'))
 from common import *
-p,ns=dnm.read(root/'runtime/aircraft/mig29.dnm');ns=[n for n in ns if not dnm.name(n).startswith(('WheelHub','NoseTire','NoseWheelHub'))];original,original_nodes=dnm.read(root/'baseline/mig29.dnm');original_lu={dnm.name(n):n for n in original_nodes};lu={dnm.name(n):n for n in ns}
+p,ns=dnm.read(root/'runtime/aircraft/mig29.dnm');ns=[n for n in ns if not dnm.name(n).startswith(('WheelHub','NoseTire','NoseWheelHub')) and dnm.name(n) not in ['AxleForkL','AxleForkR']];original,original_nodes=dnm.read(root/'baseline/mig29.dnm');original_lu={dnm.name(n):n for n in original_nodes};lu={dnm.name(n):n for n in ns}
 def wheel(center,radius,width):
  x,y,z=center;tire=Mesh();hub=Mesh();N=32
  profile=[(-.5,.57),(-.46,.74),(-.36,.92),(-.20,1.0),(.20,1.0),(.36,.92),(.46,.74),(.5,.57)]
