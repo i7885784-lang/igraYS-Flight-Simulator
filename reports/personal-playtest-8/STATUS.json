@@ -1,0 +1,47 @@
+{
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-710285c4910315463e00",
+  "assets": [
+    {
+      "name": "YSFlight_Personal_Test_8_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-710285c4910315463e00/YSFlight_Personal_Test_8_32bit.zip",
+      "asset_id": 689226998,
+      "bytes": 31335931,
+      "sha256": "eafb85a11e6952a7c477e6ea563edd9bd8c1614bdb372d3ad8eeefe39a25455c",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    },
+    {
+      "name": "YSFlight_Personal_Test_8_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-710285c4910315463e00/YSFlight_Personal_Test_8_Sources.zip",
+      "asset_id": 689227221,
+      "bytes": 66286793,
+      "sha256": "d8816a66942078d1b10a4ccee44a48c72c684eb2c76b6038b5aa3e08804e7fda",
+      "authenticated_download_verified": true,
+      "anonymous_http_status": 404
+    }
+  ],
+  "manifest": {
+    "test": 8,
+    "models_sha256": {
+      "su34_coarse.dnm": "3935873af951fd6e12a4da403a5ebdc1ffae2cac3c018f12555022e483123020",
+      "su57.dnm": "4597c9805611b74ee966ba90842bd6c5e4e47e9af1ea4ac3f9f907f526ea1fd8",
+      "mig29.dnm": "f7f1124bcce20778691b2cddb0101e1cf87258d9c3c2a25b4835657d49ade72f",
+      "su27.dnm": "d759ad4756f958c90a8f325f6cbb852c7288b9d34f0fcae3b16557b98352349e",
+      "su47_coarse.dnm": "80ace1c38d82addb4887a51246a71db4c5e8ebb0f1af885d57c428095ad964fd",
+      "su57_coarse.dnm": "4597c9805611b74ee966ba90842bd6c5e4e47e9af1ea4ac3f9f907f526ea1fd8",
+      "mig29_coarse.dnm": "f7f1124bcce20778691b2cddb0101e1cf87258d9c3c2a25b4835657d49ade72f",
+      "su27_coarse.dnm": "d759ad4756f958c90a8f325f6cbb852c7288b9d34f0fcae3b16557b98352349e",
+      "su47.dnm": "80ace1c38d82addb4887a51246a71db4c5e8ebb0f1af885d57c428095ad964fd",
+      "su34.dnm": "3935873af951fd6e12a4da403a5ebdc1ffae2cac3c018f12555022e483123020"
+    },
+    "win32_exe_sha256": "4dbbcbde06c8fa83fb22fb4228f010d39c529575421188787c055d3a34f6aacb",
+    "engine": "new Win32 PE i386 GUI, no validation-only model-pose commands",
+    "baseline": 7,
+    "unrelated_aircraft_files_preserved": 463,
+    "geometry_and_animations": "game approximation; not factory-certified",
+    "validation_platform": "Win64/Wine; native Windows 10 x86 not executed",
+    "private_only_due_to_su34_rights": true,
+    "diagnostic_toggle": "Ctrl+Shift+F9; default OFF; press again to restore; hold does not repeat"
+  }
+}
