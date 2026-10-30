@@ -1,0 +1,23 @@
+name: Separate personal test 10 downloads
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Split verified bundle and verify private downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/aircraft-personal-test10/split_downloads.py
+      - name: Record download links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/personal-playtest-10/SPLIT_DOWNLOADS.json
+          git commit -m 'Record separate game and report downloads for test 10'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download
