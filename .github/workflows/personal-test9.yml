@@ -1,0 +1,38 @@
+name: Build private personal aircraft test 9
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: personal-test9
+  cancel-in-progress: false
+jobs:
+  private-test:
+    if: github.repository == 'i7885784-lang/igraYS-Flight-Simulator'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-personal-test9
+            changes/su34-private-converter
+            reports/personal-playtest-9
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r changes/aircraft-personal-test9/requirements.txt
+      - name: Reproduce models, patch complete engine and verify private downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: '428645456'
+          OPENBLAS_NUM_THREADS: '1'
+        run: python changes/aircraft-personal-test9/build_draft.py
+      - name: Record verified owner download links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/personal-playtest-9/STATUS.json
+          git commit -m 'Record verified private aircraft test 9 assets'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download

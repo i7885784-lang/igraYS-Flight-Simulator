@@ -1,0 +1,238 @@
+{
+  "test": 9,
+  "validation_platform": "Win64/Wine, software OpenGL 1; Windows 10 x86 not directly tested",
+  "models_sha256": {
+    "su27.dnm": "5c0084545150d712eff990fcd4d55419046216013427961314d544ef2e36ec1a",
+    "su27_coarse.dnm": "5c0084545150d712eff990fcd4d55419046216013427961314d544ef2e36ec1a",
+    "su34.dnm": "8572168c6da872c0c844683f85b9372dde6248898f4f2b03b45b7539c80a3578",
+    "su34_coarse.dnm": "8572168c6da872c0c844683f85b9372dde6248898f4f2b03b45b7539c80a3578",
+    "mig29.dnm": "8a919355fd5522dc6b0ded0f99562197945a4db5085cf6030048b784be7ca67f",
+    "mig29_coarse.dnm": "8a919355fd5522dc6b0ded0f99562197945a4db5085cf6030048b784be7ca67f",
+    "su47.dnm": "8d6854abd305c25d4b206c6d7b6dc4e1115b8c4fe2298e7aa3e116419b950033",
+    "su47_coarse.dnm": "8d6854abd305c25d4b206c6d7b6dc4e1115b8c4fe2298e7aa3e116419b950033",
+    "su57.dnm": "1772bf745f94aae97192110b2781e9e618d245c7d8fa755d6ea0e8fe2f88ad9a",
+    "su57_coarse.dnm": "1772bf745f94aae97192110b2781e9e618d245c7d8fa755d6ea0e8fe2f88ad9a"
+  },
+  "win32_exe_sha256": "fdb0c74d3b54467b2c4e9c4fb82a0df3231ba4c0e051f33b4ba7fc2c2c1fb6c3",
+  "gear": {
+    "su34": {
+      "passed": true,
+      "checked": "main gear vs source airframe and both moving cover types; native between-state interpolation",
+      "poses": 401,
+      "hits": [],
+      "nose_included": true
+    },
+    "mig29": {
+      "passed": true,
+      "poses": 401,
+      "hits": []
+    }
+  },
+  "nozzles": {
+    "passed": true,
+    "aircraft": {
+      "su27": {
+        "petals": 48,
+        "liner_nodes": 2,
+        "triangle_pair_checks": 2016
+      },
+      "mig29": {
+        "petals": 48,
+        "liner_nodes": 2,
+        "triangle_pair_checks": 2016
+      },
+      "su34": {
+        "petals": 48,
+        "liner_nodes": 4,
+        "triangle_pair_checks": 4032
+      },
+      "su57": {
+        "petals": 48,
+        "liner_nodes": 2,
+        "triangle_pair_checks": 1008
+      },
+      "su47": {
+        "petals": 40,
+        "liner_nodes": 2,
+        "triangle_pair_checks": 1680
+      }
+    },
+    "hits": []
+  },
+  "original_forward_exterior": {
+    "passed": true,
+    "forward_airframe_Z_above_m": -1.4,
+    "geometry": {
+      "test8": {
+        "forward_surface_area": 199.51567213526576,
+        "bounds": [
+          [
+            -3.4997439563523614,
+            -1.238345,
+            -1.4000000000000012
+          ],
+          [
+            3.533522,
+            1.788511,
+            11.399814
+          ]
+        ]
+      },
+      "test9": {
+        "forward_surface_area": 199.5156713782393,
+        "bounds": [
+          [
+            -3.4997439563523614,
+            -1.238345,
+            -1.4000000000000012
+          ],
+          [
+            3.533522,
+            1.788511,
+            11.399814
+          ]
+        ]
+      }
+    },
+    "original_compressor_geometry_and_placement_unchanged": true,
+    "new_lining_recessed_behind_original_entrance": {
+      "L": {
+        "bounds": [
+          [
+            0.65355,
+            -0.94,
+            -3.49
+          ],
+          [
+            1.51355,
+            -0.25999999999999995,
+            -0.35
+          ]
+        ],
+        "original_inlet_lip_unchanged": true,
+        "first_new_surface_z": -0.35,
+        "original_compressors_retained": true
+      },
+      "R": {
+        "bounds": [
+          [
+            -1.48,
+            -0.94,
+            -3.49
+          ],
+          [
+            -0.62,
+            -0.25999999999999995,
+            -0.35
+          ]
+        ],
+        "original_inlet_lip_unchanged": true,
+        "first_new_surface_z": -0.35,
+        "original_compressors_retained": true
+      }
+    }
+  },
+  "rounded_tyres": [
+    {
+      "node": "TandemTruckL",
+      "wheel": 0,
+      "old_rubber_width": 0.12941899999999995,
+      "width": 0.3,
+      "diameter": 0.9821599999999999,
+      "fore_aft_diameter": 0.9592780000000003,
+      "center": [
+        2.023016,
+        -2.0416239999999997,
+        -2.851601
+      ]
+    },
+    {
+      "node": "TandemTruckL",
+      "wheel": 1,
+      "old_rubber_width": 0.12941899999999995,
+      "width": 0.3,
+      "diameter": 0.9821599999999999,
+      "fore_aft_diameter": 0.9592779999999999,
+      "center": [
+        2.023016,
+        -2.0416239999999997,
+        -1.873785
+      ]
+    },
+    {
+      "node": "TandemTruckR",
+      "wheel": 0,
+      "old_rubber_width": 0.12941899999999995,
+      "width": 0.3,
+      "diameter": 0.9821599999999999,
+      "fore_aft_diameter": 0.9592780000000003,
+      "center": [
+        -2.023016,
+        -2.0416239999999997,
+        -2.851601
+      ]
+    },
+    {
+      "node": "TandemTruckR",
+      "wheel": 1,
+      "old_rubber_width": 0.12941899999999995,
+      "width": 0.3,
+      "diameter": 0.9821599999999999,
+      "fore_aft_diameter": 0.9592779999999999,
+      "center": [
+        -2.023016,
+        -2.0416239999999997,
+        -1.873785
+      ]
+    }
+  ],
+  "screen_comparisons": "same heading, pitch, aim, distance and zoom; actual game screenshots, no retouching; label panels only",
+  "tandem_tread_gap_m": 0.018537999999999943,
+  "native_engine_checks": {
+    "su27": {
+      "passed": true,
+      "active_in_all_samples": true,
+      "aperture_min": 0.17,
+      "aperture_max": 1.0,
+      "afterburner_aperture_max": 0.84,
+      "inputs": "real XTest keyboard Q/Tab/A; no forced model pose"
+    },
+    "mig29": {
+      "passed": true,
+      "active_in_all_samples": true,
+      "aperture_min": 0.17,
+      "aperture_max": 1.0,
+      "afterburner_aperture_max": 0.84,
+      "inputs": "real XTest keyboard Q/Tab/A; no forced model pose"
+    },
+    "su34": {
+      "passed": true,
+      "active_in_all_samples": true,
+      "aperture_min": 0.17,
+      "aperture_max": 1.0,
+      "afterburner_aperture_max": 0.84,
+      "inputs": "real XTest keyboard Q/Tab/A; no forced model pose"
+    },
+    "su47": {
+      "passed": true,
+      "active_in_all_samples": true,
+      "aperture_min": 0.17,
+      "aperture_max": 1.0,
+      "afterburner_aperture_max": 0.84,
+      "inputs": "real XTest keyboard Q/Tab/A; no forced model pose"
+    },
+    "su57": {
+      "passed": true,
+      "active_in_all_samples": true,
+      "aperture_min": 0.17,
+      "aperture_max": 1.0,
+      "afterburner_aperture_max": 0.84,
+      "inputs": "real XTest keyboard Q/Tab/A; no forced model pose"
+    }
+  },
+  "quick_launch": {
+    "mig29": true,
+    "su34": true,
+    "su47": true
+  }
+}

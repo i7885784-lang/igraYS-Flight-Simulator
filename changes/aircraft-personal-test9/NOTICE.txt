@@ -1,0 +1,5 @@
+Personal aircraft test 9 — adaptation changes, 30 October 2026.
+Base: preserved complete personal test 8. Earlier source converters, original geometry and license notices remain in the full private sources archive.
+Su-34 geometry: fantazer_rnd, DEVBenSon/FiveM-Plane-Pack; original source, commit and YFT files retained in the inherited source folders. Commercial/distribution permission is not confirmed. Keep the full game and geometry in an owner-only DRAFT; do not publish. No donor textures, audio or GTA systems have been imported.
+Su-27/MiG-29, Su-47 and Su-57 original authors and GPL notices remain in the inherited licenses and model-source folders. Conversion does not remove license requirements. See the original notices for the complete terms and attribution.
+Changes: own rounded tyre profile with donor outer hubs; rear well corner and articulated stow path; recessed inside-only intake lining; enclosed MiG compartments; own untextured translucent exhaust and recessed nozzle hardware; engine rendering and main-menu changes. Game approximation, not factory-certified geometry or kinematics.

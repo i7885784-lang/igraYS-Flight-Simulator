@@ -1,0 +1,40 @@
+--- a/YSFLIGHT/src/gui/fsmenu.cpp
++++ b/YSFLIGHT/src/gui/fsmenu.cpp
+@@ -330,0 +331,3 @@
++    AddTextButton(MkId("su34Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-34: быстрый тест",YSTRUE);
++    AddTextButton(MkId("su47Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"Су-47: быстрый тест",YSTRUE);
++    AddTextButton(MkId("mig29Preview"),FSKEY_NULL,FSGUI_PUSHBUTTON,L"МиГ-29: быстрый тест",YSTRUE);
+@@ -348 +351,3 @@
+- if(btn->GetIdent()==FindIdent("su27Preview") || btn->GetIdent()==FindIdent("su57Preview")){
++ if(btn->GetIdent()==FindIdent("su27Preview") || btn->GetIdent()==FindIdent("su57Preview") ||
++    btn->GetIdent()==FindIdent("su34Preview") || btn->GetIdent()==FindIdent("su47Preview") ||
++    btn->GetIdent()==FindIdent("mig29Preview")){
+@@ -351 +356,7 @@
+-  info.fieldName="AOMORI";info.playerAirInfo.typeName=btn->GetIdent()==FindIdent("su57Preview")?"SU-57_FELON":"SU-27_FLANKER";info.playerAirInfo.fuel=50;
++  info.fieldName="AOMORI";
++  const char *previewType="SU-27_FLANKER";
++  if(btn->GetIdent()==FindIdent("su57Preview"))previewType="SU-57_FELON";
++  else if(btn->GetIdent()==FindIdent("su34Preview"))previewType="SU-34_FULLBACK";
++  else if(btn->GetIdent()==FindIdent("su47Preview"))previewType="SU-47_BERKUT";
++  else if(btn->GetIdent()==FindIdent("mig29Preview"))previewType="MIG-29_FULCRUM";
++  info.playerAirInfo.typeName=previewType;info.playerAirInfo.fuel=50;
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -1073,2 +1073,2 @@
+-    const double target=(YSTRUE==staAb ? .88+.12*staThrottle : 1.0-.83*dry);
+-    approach(staNozzleOpening,target,.9);
++    const double target=(YSTRUE==staAb ? .72+.12*staThrottle : 1.0-.83*dry);
++    approach(staNozzleOpening,target,.45);
+--- a/public/src/ysgebl/src/shellrender/gl1/ysshellextgl_gl1.cpp
++++ b/public/src/ysgebl/src/shellrender/gl1/ysshellextgl_gl1.cpp
+@@ -85,0 +86,5 @@
++        // Transparent surfaces must test against opaque depth without
++        // occluding the transparent layers rendered after them.
++        GLboolean depthWrite;
++        glGetBooleanv(GL_DEPTH_WRITEMASK,&depthWrite);
++        glDepthMask(GL_FALSE);
+@@ -96 +101 @@
+-			unitPtr->GetActualBuffer()->DrawPrimitiveVtxNomCol(GL_TRIANGLES);
++			unitPtr->GetActualBuffer()->DrawPrimitiveVtxCol(GL_TRIANGLES);
+@@ -97,0 +103 @@
++        glDepthMask(depthWrite);
