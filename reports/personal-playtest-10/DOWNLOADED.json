@@ -1,0 +1,21 @@
+{
+  "hosted_workflow": 41047289638,
+  "authenticated_downloads_verified_locally": [
+    {
+      "name": "YSFlight_Test_10_All_In_One.zip",
+      "sha256": "aa901aaf4fb159ce5b0c2a0babf8a3e21156489218ad952d28327339c12cf4a4",
+      "bytes": 39030208,
+      "crc_pass": true,
+      "contents_pass": true
+    },
+    {
+      "name": "YSFlight_Personal_Test_10_Sources.zip",
+      "sha256": "3b1a7e3eab48999ab9fb68597514cc9b437d1687174584c3aed571a9bf5e8c8e",
+      "bytes": 81246484,
+      "crc_pass": true,
+      "contents_pass": true
+    }
+  ],
+  "gameplay_validation": "Win64/Wine; Win32 package binary built, native Windows x86 not directly executed",
+  "private_draft": true
+}
