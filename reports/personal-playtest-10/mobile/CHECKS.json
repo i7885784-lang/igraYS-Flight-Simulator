@@ -1,0 +1,170 @@
+{
+  "geometry": {
+    "passed": true,
+    "actual_compiled_cpp_coefficients_used": true,
+    "aircraft": {
+      "su27": {
+        "all_non_plume_surfaces_and_all_animation_nodes_unchanged": true,
+        "engines": [
+          {
+            "engine": 0,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 0.0002458411198595911,
+            "minimum_lip_clearance_m": 0.02571661610294579,
+            "scale_min": 0.731166132,
+            "scale_max": 1.0
+          },
+          {
+            "engine": 1,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 0.0002458411198595911,
+            "minimum_lip_clearance_m": 0.02571661610294579,
+            "scale_min": 0.731166132,
+            "scale_max": 1.0
+          }
+        ]
+      },
+      "mig29": {
+        "all_non_plume_surfaces_and_all_animation_nodes_unchanged": true,
+        "engines": [
+          {
+            "engine": 0,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 7.441050116518966e-05,
+            "minimum_lip_clearance_m": 0.021184110974966662,
+            "scale_min": 0.7223309435,
+            "scale_max": 1.0
+          },
+          {
+            "engine": 1,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 7.441050116518966e-05,
+            "minimum_lip_clearance_m": 0.021184110974966662,
+            "scale_min": 0.7223309435,
+            "scale_max": 1.0
+          }
+        ]
+      },
+      "su34": {
+        "all_non_plume_surfaces_and_all_animation_nodes_unchanged": true,
+        "engines": [
+          {
+            "engine": 0,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 0.00019283896033428505,
+            "minimum_lip_clearance_m": 0.02122417216655219,
+            "scale_min": 0.7330865607,
+            "scale_max": 1.0
+          },
+          {
+            "engine": 1,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 0.00019207470182536213,
+            "minimum_lip_clearance_m": 0.021223695034657736,
+            "scale_min": 0.7330893486,
+            "scale_max": 1.0
+          }
+        ]
+      },
+      "su47": {
+        "all_non_plume_surfaces_and_all_animation_nodes_unchanged": true,
+        "engines": [
+          {
+            "engine": 0,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 8.03500737589502e-06,
+            "minimum_lip_clearance_m": 0.028186561040154934,
+            "scale_min": 0.7152722222,
+            "scale_max": 1.0
+          },
+          {
+            "engine": 1,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 8.03500737589502e-06,
+            "minimum_lip_clearance_m": 0.028186644634900174,
+            "scale_min": 0.7152722222,
+            "scale_max": 1.0
+          }
+        ]
+      },
+      "su57": {
+        "all_non_plume_surfaces_and_all_animation_nodes_unchanged": true,
+        "engines": [
+          {
+            "engine": 0,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 2.0198698369888746e-05,
+            "minimum_lip_clearance_m": 0.021445633080035106,
+            "scale_min": 0.7216005311,
+            "scale_max": 1.0
+          },
+          {
+            "engine": 1,
+            "positions_checked": 201,
+            "max_mouth_alignment_error_m": 2.0198698369888746e-05,
+            "minimum_lip_clearance_m": 0.021445633080035106,
+            "scale_min": 0.7216005311,
+            "scale_max": 1.0
+          }
+        ]
+      }
+    },
+    "maximum_alignment_error_m": 0.0002458411198595911,
+    "minimum_clearance_m": 0.021184110974966662,
+    "physical_scope": "visual shape coupling, not CFD"
+  },
+  "native": {
+    "su27": {
+      "passed": true,
+      "left_scale_min": 0.789653,
+      "left_scale_max": 0.955914,
+      "right_scale_min": 0.789653,
+      "right_scale_max": 0.955914,
+      "aperture_width_correlation": 0.9999084382462867,
+      "all_active": true
+    },
+    "mig29": {
+      "passed": true,
+      "left_scale_min": 0.789901,
+      "left_scale_max": 0.954546,
+      "right_scale_min": 0.789901,
+      "right_scale_max": 0.954546,
+      "aperture_width_correlation": 0.9999898394045456,
+      "all_active": true
+    },
+    "su34": {
+      "passed": true,
+      "left_scale_min": 0.778663,
+      "left_scale_max": 0.954573,
+      "right_scale_min": 0.778667,
+      "right_scale_max": 0.954577,
+      "aperture_width_correlation": 0.9999701230489798,
+      "all_active": true
+    },
+    "su47": {
+      "passed": true,
+      "left_scale_min": 0.775707,
+      "left_scale_max": 0.954054,
+      "right_scale_min": 0.775707,
+      "right_scale_max": 0.954054,
+      "aperture_width_correlation": 0.9999977809625468,
+      "all_active": true
+    },
+    "su57": {
+      "passed": true,
+      "left_scale_min": 0.781507,
+      "left_scale_max": 0.954894,
+      "right_scale_min": 0.781507,
+      "right_scale_max": 0.954894,
+      "aperture_width_correlation": 0.9999958113383056,
+      "all_active": true
+    }
+  },
+  "tvc": {
+    "passed": true,
+    "AB_on": true,
+    "body_paused": true,
+    "real_keyboard_controls": true
+  },
+  "validation_platform": "Win64/Wine; Windows 10 x86 not directly run"
+}
