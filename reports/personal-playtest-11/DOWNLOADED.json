@@ -1,0 +1,21 @@
+{
+  "hosted_workflow": 41089660611,
+  "private_draft": true,
+  "verified_local_downloads": [
+    {
+      "name": "YSFlight_Test_11_Game_32bit.zip",
+      "sha256": "13d2357ecfe184ccbaebe9ea3f0b360bcf8574c00be0868d7753f03c24acee82",
+      "crc_and_contents_pass": true
+    },
+    {
+      "name": "YSFlight_Test_11_Report.zip",
+      "sha256": "86b0a078a7010ee71420a403b8fa38f3607e1fc238a8d99415f8a1232daec0e5",
+      "crc_and_contents_pass": true
+    },
+    {
+      "name": "YSFlight_Personal_Test_11_Sources.zip",
+      "sha256": "25a19ef1ee89701dffaec574d13baba0e5f825b103482b1dedd65edf01b5aca3",
+      "crc_and_contents_pass": true
+    }
+  ]
+}

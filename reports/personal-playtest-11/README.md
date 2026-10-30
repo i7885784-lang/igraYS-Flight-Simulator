@@ -1,5 +1,11 @@
 # Личный тест №11 — Су-34 и свечение струи
 
+- [Игра Windows 32-bit — 34,7 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-52ab2f27ba02f856cddb/YSFlight_Test_11_Game_32bit.zip).
+- [Отчёт, фото и видео — 2,1 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-52ab2f27ba02f856cddb/YSFlight_Test_11_Report.zip).
+- [Полные исходники — 84,7 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-52ab2f27ba02f856cddb/YSFlight_Personal_Test_11_Sources.zip).
+
+Для закрытых архивов требуется вход в GitHub владельца. Игру распаковать и запустить `ysflight32_gl1.exe`.
+
 Основа — полная №10. Игра остаётся в закрытом черновике: права геометрии Су-34 не выяснены. Автор fantazer_rnd / DEVBenSon/FiveM-Plane-Pack сохранён. Новых чужих текстур/звуков нет.
 
 Су-34: внутренняя облицовка воздухозаборников утоплена в обшивку, устранён выступ на обеих сторонах. Подогнаны внутренние опорные кромки стыков ниш и передних створок. Нижняя кромка передней ниши поднята над закрытой створкой, чтобы не торчала сквозь неё. Наружная исходная обшивка и анимация сохранены.
@@ -34,4 +40,4 @@
 
 [Выпуск и уборка Су-34](Video/Su34_Gear.mp4) · [Струя на фоне земли](Video/Exhaust_Ground.mp4).
 
-Ссылки на отдельные ZIP игры, отчёта и полных исходников будут в STATUS.json после проверки скачивания.
+[Архивы и SHA-256](STATUS.json). [Проверки скачанных файлов](DOWNLOADED.json). Hosted-пересборка 41089660611 и локальная проверка всех трёх скачанных архивов прошли.
