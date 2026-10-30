@@ -1,5 +1,12 @@
 # Личный тест №10 — струя следует за соплом
 
+Отдельные скачивания для телефона:
+
+- [Только отчёт, фото и видео — 4,4 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-82304e90ed8acb5e8e10/YSFlight_Test_10_Report_Photos_Video.zip).
+- [Только игра Windows 32-bit — 34,6 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-82304e90ed8acb5e8e10/YSFlight_Test_10_Game_32bit.zip). После распаковки запустить `ysflight32_gl1.exe`.
+
+Для закрытых файлов нужен вход в GitHub владельца. [Проверки отдельных архивов](SPLIT_DOWNLOADS.json).
+
 **[Скачать всё одним ZIP — игра, PDF, фотографии и видео, 39 МБ](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-82304e90ed8acb5e8e10/YSFlight_Test_10_All_In_One.zip).** Для скачивания нужен вход в GitHub владельца: сборка остаётся в закрытом черновике.
 
 Распакуйте архив. На телефоне откройте `REPORT.pdf`, фотографии из `Photos` и видео из `Video`. На компьютере запустите `Play.bat` или `Game/ysflight32_gl1.exe`. Материалы работают без интернета и без страницы GitHub.
