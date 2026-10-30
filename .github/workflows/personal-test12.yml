@@ -1,0 +1,31 @@
+name: Personal aircraft test 12
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-personal-test12
+            reports/personal-playtest-12
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and verify private archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENBLAS_NUM_THREADS: '1'
+        run: python changes/aircraft-personal-test12/build_draft.py
+      - name: Record verified links
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/personal-playtest-12/STATUS.json
+          git commit -m 'Record verified test 12 downloads'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download

@@ -1,0 +1,88 @@
+{
+  "su27": {
+    "rear-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 15424,
+      "unchanged_black_shadow_pixels": 328902
+    },
+    "top": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 13530,
+      "unchanged_black_shadow_pixels": 297171
+    },
+    "side-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 16429,
+      "unchanged_black_shadow_pixels": 262049
+    }
+  },
+  "mig29": {
+    "rear-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 8975,
+      "unchanged_black_shadow_pixels": 150445
+    },
+    "top": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 2664,
+      "unchanged_black_shadow_pixels": 15947
+    },
+    "side-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 6078,
+      "unchanged_black_shadow_pixels": 158220
+    }
+  },
+  "su34": {
+    "rear-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 6908,
+      "unchanged_black_shadow_pixels": 169070
+    },
+    "top": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 0,
+      "unchanged_black_shadow_pixels": 50025
+    },
+    "side-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 4219,
+      "unchanged_black_shadow_pixels": 139998
+    }
+  },
+  "su47": {
+    "rear-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 10708,
+      "unchanged_black_shadow_pixels": 123353
+    },
+    "top": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 7140,
+      "unchanged_black_shadow_pixels": 44286
+    },
+    "side-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 12583,
+      "unchanged_black_shadow_pixels": 175307
+    }
+  },
+  "su57": {
+    "rear-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 6513,
+      "unchanged_black_shadow_pixels": 135054
+    },
+    "top": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 0,
+      "unchanged_black_shadow_pixels": 2820
+    },
+    "side-high": {
+      "opaque_blue_skin_changed_pixels": 0,
+      "formerly_black_now_blue_pixels": 5730,
+      "unchanged_black_shadow_pixels": 133869
+    }
+  },
+  "legacy_early_transparency_setting": "matches corrected default"
+}

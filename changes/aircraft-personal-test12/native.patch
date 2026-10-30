@@ -1,0 +1,14 @@
+--- a/YSFLIGHT/src/core/fssimulation.cpp
++++ b/YSFLIGHT/src/core/fssimulation.cpp
+@@ -6852 +6852 @@
+-	if(cfgPtr->drawTransparency!=YSTRUE || cfgPtr->drawTransparentLater!=YSTRUE)
++	if(cfgPtr->drawTransparency!=YSTRUE)
+@@ -6903 +6903,5 @@
+-	if(cfgPtr->drawTransparency==YSTRUE && cfgPtr->drawTransparentLater==YSTRUE)
++	// Composite projected ground shadows before transparent aircraft/effects.
++	// Otherwise a late opaque shadow erases an already blended exhaust plume.
++	SimDrawShadow(actualViewMode,proj);
++
++	if(cfgPtr->drawTransparency==YSTRUE)
+@@ -6917 +6920,0 @@
+-	SimDrawShadow(actualViewMode,proj);
