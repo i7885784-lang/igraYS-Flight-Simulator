@@ -1,0 +1,38 @@
+--- a/public/src/ysgebl/src/shellrender/ysvisual.cpp
++++ b/public/src/ysgebl/src/shellrender/ysvisual.cpp
+@@ -534,0 +535 @@
++			opt.emissiveAdditive=(2==nodePtr->dnmClassType || 110==nodePtr->dnmClassType || 111==nodePtr->dnmClassType ? YSTRUE : YSFALSE);
+@@ -591,0 +593 @@
++				opt.emissiveAdditive=(2==nodePtr->dnmClassType || 110==nodePtr->dnmClassType || 111==nodePtr->dnmClassType ? YSTRUE : YSFALSE);
+@@ -639,0 +642,7 @@
++	// Exhaust is emissive gas, not an opaque solid. Skip the whole flame
++	// subtree in the ground-shadow pass (legacy and separate-engine nodes).
++	if(2==nodePtr->dnmClassType || 110==nodePtr->dnmClassType || 111==nodePtr->dnmClassType)
++	{
++		return;
++	}
++
+--- a/public/src/ysgebl/src/shellrender/ysshellextgl.h
++++ b/public/src/ysgebl/src/shellrender/ysshellextgl.h
+@@ -120,0 +121 @@
++		YSBOOL emissiveAdditive=YSFALSE;
+@@ -134,0 +136 @@
++			emissiveAdditive=YSFALSE;
+--- a/public/src/ysgebl/src/shellrender/gl1/ysshellextgl_gl1.cpp
++++ b/public/src/ysgebl/src/shellrender/gl1/ysshellextgl_gl1.cpp
+@@ -87,0 +88,9 @@
++        GLint blendSrc,blendDst;
++        const GLboolean blendEnabled=glIsEnabled(GL_BLEND);
++        if(YSTRUE==opt.emissiveAdditive)
++        {
++            glGetIntegerv(GL_BLEND_SRC,&blendSrc);
++            glGetIntegerv(GL_BLEND_DST,&blendDst);
++            glEnable(GL_BLEND);
++            glBlendFunc(GL_SRC_ALPHA,GL_ONE);
++        }
+@@ -103,0 +113,5 @@
++        if(YSTRUE==opt.emissiveAdditive)
++        {
++            glBlendFunc(blendSrc,blendDst);
++            if(!blendEnabled)glDisable(GL_BLEND);
++        }

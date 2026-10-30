@@ -1,0 +1,16 @@
+--- a/public/src/ysgebl/src/shellrender/ysvisual.cpp
++++ b/public/src/ysgebl/src/shellrender/ysvisual.cpp
+@@ -637,6 +637,13 @@
+     const YsMatrix4x4 &curTfm,Dnm::Node *nodePtr,
+     const YsMatrix4x4 &viewTfm,const YsMatrix4x4 &projTfm) const
+ {
++	// Exhaust is emissive gas, not an opaque solid. Skip the whole flame
++	// subtree in the ground-shadow pass (legacy and separate-engine nodes).
++	if(2==nodePtr->dnmClassType || 110==nodePtr->dnmClassType || 111==nodePtr->dnmClassType)
++	{
++		return;
++	}
++
+ 	auto &dnm=*dnmPtr;
+ 	auto &nodeState=dnmState.GetState(nodePtr);
+ 	const YsMatrix4x4 newTfm=curTfm*nodeState.tfmCache;

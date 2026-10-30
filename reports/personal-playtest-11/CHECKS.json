@@ -1,0 +1,51 @@
+{
+  "native": {
+    "su27": {
+      "native_gear_cycle_pass": true,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "native_nozzle_coupling_pass": true
+    },
+    "mig29": {
+      "native_gear_cycle_pass": true,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "native_nozzle_coupling_pass": true
+    },
+    "su34": {
+      "native_gear_cycle_pass": true,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "native_nozzle_coupling_pass": true
+    },
+    "su47": {
+      "native_gear_cycle_pass": true,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "native_nozzle_coupling_pass": true
+    },
+    "su57": {
+      "native_gear_cycle_pass": true,
+      "gear_min": 0.0,
+      "gear_max": 1.0,
+      "native_nozzle_coupling_pass": true
+    }
+  },
+  "su34_collision_sweep": {
+    "passed": true,
+    "checked": "main gear vs source airframe and both moving cover types; native between-state interpolation",
+    "poses": 401,
+    "hits": [],
+    "nose_included": true
+  },
+  "preservation": {
+    "su27_model_unchanged": true,
+    "mig29_model_unchanged": true,
+    "su47_model_unchanged": true,
+    "su57_model_unchanged": true,
+    "all_original_su34_animation_nodes_unchanged": true,
+    "su34_original_exterior_unchanged": true,
+    "production_x86_no_modelpose": true
+  },
+  "platform": "Win64/Wine; Win32 built, native Windows x86 not directly run"
+}
