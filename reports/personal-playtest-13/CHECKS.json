@@ -1,0 +1,52 @@
+{
+  "gap_pixels": {
+    "right-side": {
+      "roi": [
+        660,
+        443,
+        713,
+        474
+      ],
+      "gray_background_before_pixels": 471,
+      "gray_background_after_pixels": 0
+    },
+    "left-side": {
+      "roi": [
+        565,
+        438,
+        620,
+        477
+      ],
+      "gray_background_before_pixels": 477,
+      "gray_background_after_pixels": 0
+    }
+  },
+  "collisions": {
+    "passed": true,
+    "poses": 401,
+    "moving_nodes": 28,
+    "hits": []
+  },
+  "preservation": {
+    "checks": {
+      "original_mesh_packs_unchanged": true,
+      "original_nodes_states_unchanged": true
+    },
+    "sampled_internal_bounds": {
+      "ConformalMainBayLinerL": {
+        "below_original_envelope_m": 0.0,
+        "above_original_envelope_m": 0.0
+      },
+      "ConformalMainBayLinerR": {
+        "below_original_envelope_m": 0.0,
+        "above_original_envelope_m": 0.0
+      }
+    }
+  },
+  "native_cycle_pass": true,
+  "native_cycle_gear_range": [
+    0.0,
+    1.0
+  ],
+  "platform": "Win64/Wine; production Win32 EXE exactly test12"
+}
