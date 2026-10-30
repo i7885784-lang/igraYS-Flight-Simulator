@@ -1,0 +1,22 @@
+{
+  "hosted_workflow": 41101247106,
+  "private_draft": true,
+  "engine_and_all_other_aircraft_files_unchanged_from_12": true,
+  "verified_local_downloads": [
+    {
+      "name": "YSFlight_Test_13_Game_32bit.zip",
+      "sha256": "d511ae8eb7ab0b20e5995dde43d36c0e2e1c092d7f734c390d4652015e644958",
+      "crc_and_contents_pass": true
+    },
+    {
+      "name": "YSFlight_Test_13_Report.zip",
+      "sha256": "35d4dd52e3389258cd0051ac1000f38b5ecc22bcd77a6738f1efe9724be3e76a",
+      "crc_and_contents_pass": true
+    },
+    {
+      "name": "YSFlight_Personal_Test_13_Sources.zip",
+      "sha256": "41193f742e5184307bfeda3be9bc3ddebf9a2e29c19a52c726a97d5fd1d2b4e7",
+      "crc_and_contents_pass": true
+    }
+  ]
+}
