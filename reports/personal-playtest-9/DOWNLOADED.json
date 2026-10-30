@@ -1,0 +1,21 @@
+{
+  "authenticated_downloads": {
+    "YSFlight_Personal_Test_9_32bit.zip": {
+      "sha256_verified": true,
+      "zip_crc_verified": true,
+      "bytes": 34584347
+    },
+    "YSFlight_Personal_Test_9_Sources.zip": {
+      "sha256_verified": true,
+      "zip_crc_verified": true,
+      "bytes": 73156878
+    }
+  },
+  "full_game_models_match_reviewed_hashes": true,
+  "win32_pe_i386": true,
+  "no_validation_MODELPOSE_command": true,
+  "no_win64_exe_in_game": true,
+  "sources_contain_original_geometry_and_complete_converter": true,
+  "no_GTA_YTD": true,
+  "native_windows_x86_executed": false
+}
