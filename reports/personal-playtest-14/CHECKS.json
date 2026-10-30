@@ -1,0 +1,40 @@
+{
+  "new_wall_collision_sweep": {
+    "passed": true,
+    "poses": 401,
+    "moving_nodes": 17,
+    "hits": []
+  },
+  "preservation": {
+    "all_original_mesh_packs_unchanged": true,
+    "all_original_nodes_states_unchanged": true,
+    "airduct_and_compressor_intersections": []
+  },
+  "gap_control_regions": {
+    "45": {
+      "roi": [
+        676,
+        501,
+        692,
+        508
+      ],
+      "visible_bright_backside_before": 96,
+      "visible_bright_backside_after": 0
+    },
+    "300": {
+      "roi": [
+        654,
+        502,
+        676,
+        507
+      ],
+      "visible_bright_backside_before": 70,
+      "visible_bright_backside_after": 0
+    }
+  },
+  "native_gear_cycle": true,
+  "native_gear_range": [
+    0.0,
+    1.0
+  ]
+}

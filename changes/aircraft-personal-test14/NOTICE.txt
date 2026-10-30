@@ -1,0 +1,4 @@
+Personal test 14 — exhaust aperture coupling, 30 October 2026.
+Base: complete personal test 9. All prior aircraft attribution, licenses and corresponding source material are preserved in the full source archive. Only the own plume surfaces and the engine visual coupling are changed; original airframe, gear, controls, intake surfaces and animation nodes remain unchanged. Existing nozzle exit geometry is measured to fit the own jet, including Su-47 source petals; retain the original GPL notices in the inherited source folders.
+Su-34 original geometry: fantazer_rnd / DEVBenSon/FiveM-Plane-Pack. Distribution/commercial permission is unresolved: keep the complete game and its geometry in an owner-only draft; do not publish. No donor textures, sounds or GTA systems were introduced.
+The offline report uses actual game screenshots and native keyboard-input video. This is a visual geometric adaptation, not CFD or factory-certified engine simulation.
