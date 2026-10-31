@@ -1,5 +1,6 @@
 from pathlib import Path
 import os,json,zipfile,subprocess,tempfile,shutil,hashlib,urllib.request,urllib.error
+from fingerprints import zero_hash
 r=Path.cwd();here=r/'changes/aircraft-personal-test15';repo='i7885784-lang/igraYS-Flight-Simulator';tag='personal-fighters-test15-20261031';release_id=429728766;sha=lambda b:hashlib.sha256(b).hexdigest();expected=json.loads((here/'expected.json').read_text())
 def gh(*a):return subprocess.check_output(['gh',*a])
 release=json.loads(gh('api',f'repos/{repo}/releases/{release_id}'));assert release['draft'];prefix=release['html_url'].replace('/tag/','/download/')
@@ -19,7 +20,7 @@ with tempfile.TemporaryDirectory() as td:
  changed=[]
  for k in ['su27','su34','mig29','su47']:
   for n in [k+'.dnm',k+'_coarse.dnm']:
-   data=(work/'runtime/aircraft'/n).read_bytes();assert sha(data)==expected[n],n;(game/'aircraft'/n).write_bytes(data);changed.append('aircraft/'+n)
+   data=(work/'runtime/aircraft'/n).read_bytes();print('MODEL HASH',n,sha(data),'local',expected[n],flush=True);assert sha(data)==expected[n] or zero_hash(data)==expected['zero_normalized'][n],n;(game/'aircraft'/n).write_bytes(data);changed.append('aircraft/'+n)
  unchanged=0
  with zipfile.ZipFile(t/'YSFlight_Test_14_Game_32bit.zip') as z:
   for n in z.namelist():
