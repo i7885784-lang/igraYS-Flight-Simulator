@@ -1,0 +1,7 @@
+Personal aircraft test15, based on the complete personal test14.
+Original Su-27 and MiG-29 geometry and attribution: FGUK / FGMEMBERS; preserve the inherited GPL/source notices and original AC/XML chain.
+Original Su-47 geometry: Nobatgeldi/Su_47_Berkut; inherited attribution and license status retained.
+Original Su-57 geometry: ShFsn/Su-57, GPL-3.0; inherited sources and notices retained.
+Original Su-34 geometry: fantazer_rnd / DEVBenSon/FiveM-Plane-Pack; the inherited YFT provenance and unresolved permission status are unchanged. No YTD, third-party textures, audio or GTA systems added. Full geometry/build remains a personal draft download.
+Own changes: local control pivots, fitted internal seams and cover hinges, recessed Su-47 backing, MiG-29 bay edges and internal guided segmented return cover. The internal cover is a game-model mechanism adaptation, not a claim of an exact factory MiG-29 door reconstruction.
+Original exterior skin geometry and all earlier source archives are retained. Complete corresponding source archive accompanies the game. No license UI is added.
