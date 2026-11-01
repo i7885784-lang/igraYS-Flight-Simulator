@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "aircraft": "SU-27_FLANKER",
+  "active": true,
+  "frames": [
+    "overview",
+    "low-city",
+    "airport"
+  ]
+}

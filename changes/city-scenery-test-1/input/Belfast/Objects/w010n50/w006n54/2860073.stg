@@ -1,0 +1,23 @@
+# osm2city_Belfast
+# do not edit below this line
+# Last Written 01/14/16 15:29:20
+#
+OBJECT_STATIC Belfastcity1814.xml -5.72662 54.65016 65.50 0
+OBJECT_STATIC lightmap-switch.xml -5.72662 54.65016 65.50 0
+OBJECT_STATIC Belfastcity1914.xml -5.69567 54.65016 51.16 0
+OBJECT_STATIC Belfastcity2013.xml -5.66471 54.63220 46.26 0
+OBJECT_STATIC Belfastcity2014.xml -5.66471 54.65016 34.17 0
+OBJECT_STATIC Belfastcity2015.xml -5.66471 54.66813 -0.01 0
+# END osm2city_Belfast
+# osm2roads_Belfast
+# do not edit below this line
+# Last Written 01/14/16 15:34:38
+#
+OBJECT_STATIC Belfastroads1705.xml -5.72749 54.64066 63.88 0
+OBJECT_STATIC Belfastroads1706.xml -5.72749 54.65862 58.02 0
+OBJECT_STATIC Belfastroads1707.xml -5.72749 54.67659 -0.29 0
+OBJECT_STATIC Belfastroads1805.xml -5.69653 54.64066 59.22 0
+OBJECT_STATIC Belfastroads1806.xml -5.69653 54.65862 45.28 0
+OBJECT_STATIC Belfastroads1905.xml -5.66558 54.64066 44.75 0
+OBJECT_STATIC Belfastroads1906.xml -5.66558 54.65862 22.25 0
+# END osm2roads_Belfast

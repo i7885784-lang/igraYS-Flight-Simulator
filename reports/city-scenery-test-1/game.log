@@ -1,0 +1,2189 @@
+YSFLIGHT
+VERSION 20181124
+YFSVERSION 20180930
+NETVERSION 20180930
+Depth Bits:   24
+Stencil Bits: 8
+Bit Depth=24
+Loading Sound Plug-In.
+Sound Plug-In Loaded.
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+Loading Voice Plug-In.
+Voice Plug-In Loaded.
+All functions from Voice Dll are ready.
+[VOICEDLL] This is a skeleton for the future voice extension.
+[VOICEDLL] This DLL does not actually function at this time.
+FsVoiceDllInitialize (Line 19)
+FsVoiceDllSetMasterSwitch (Line 38)
+Localization File: ru.uitxt
+Initialization Counter 0
+Initialization Counter 1
+Initialization Counter 2
+Free 453
+Free 459
+Free 465
+Free 471
+Free 477
+Free 483
+Free 489
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 3
+Initialization Counter 4
+Date 20261101
+Initialization Counter 5
+Common YSFLIGHT Dir=
+Common YSFLIGHT Dir=.
+Detected ./20181124
+Date 20261101
+Initialization Counter 6
+Initialization Counter 7
+Initialization Counter 8
+Script>>WAITFOR:GUI
+Script>>SLEEP:500
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>SLEEP:8000
+Script>>FILE:OPEN Z:/workspace/ysflight-dev/city-scenery-test-1/checks/first-native/start.yfs
+Waiting for thread #0 gets ready.
+Thread 0 ready.
+Waiting for thread #1 gets ready.
+Thread 1 ready.
+Waiting for thread #2 gets ready.
+Thread 2 ready.
+Waiting for thread #3 gets ready.
+Thread 3 ready.
+Set Vertices
+RegisterShell 58170/70
+Done!
+Setting Polygons
+18/18
+Done!
+Re-creating with increased lattice size.
+Set Vertices
+RegisterShell 58170/70
+Done!
+Setting Polygons
+18/18
+Done!
+Set Vertices
+RegisterShell 581200/200
+Done!
+Setting Polygons
+48/48
+Done!
+Set Vertices
+RegisterShell 581176/176
+Done!
+Setting Polygons
+44/44
+Done!
+Set Vertices
+RegisterShell 581280/280
+Done!
+Setting Polygons
+70/70
+Done!
+Set Vertices
+RegisterShell 581192/192
+Done!
+Setting Polygons
+48/48
+Done!
+Set Vertices
+RegisterShell 581152/152
+Done!
+Setting Polygons
+38/38
+Done!
+Set Vertices
+RegisterShell 5818/8
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 58148/48
+Done!
+Setting Polygons
+12/12
+Done!
+Set Vertices
+RegisterShell 58132/32
+Done!
+Setting Polygons
+8/8
+Done!
+Re-creating with increased lattice size.
+Set Vertices
+RegisterShell 58132/32
+Done!
+Setting Polygons
+8/8
+Done!
+Set Vertices
+RegisterShell 5818/8
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 581268/268
+Done!
+Setting Polygons
+66/66
+Done!
+Set Vertices
+RegisterShell 5811354/1354
+Done!
+Setting Polygons
+334/334
+Done!
+Set Vertices
+RegisterShell 581776/776
+Done!
+Setting Polygons
+194/194
+Done!
+Set Vertices
+RegisterShell 581524/524
+Done!
+Setting Polygons
+124/124
+Done!
+Set Vertices
+RegisterShell 581574/574
+Done!
+Setting Polygons
+140/140
+Done!
+Set Vertices
+RegisterShell 581652/652
+Done!
+Setting Polygons
+162/162
+Done!
+Set Vertices
+RegisterShell 581576/576
+Done!
+Setting Polygons
+144/144
+Done!
+Set Vertices
+RegisterShell 581360/360
+Done!
+Setting Polygons
+90/90
+Done!
+Set Vertices
+RegisterShell 58116/16
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 581118/118
+Done!
+Setting Polygons
+28/28
+Done!
+Set Vertices
+RegisterShell 581304/304
+Done!
+Setting Polygons
+76/76
+Done!
+Set Vertices
+RegisterShell 58148/48
+Done!
+Setting Polygons
+12/12
+Done!
+Set Vertices
+RegisterShell 58116/16
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 581234/234
+Done!
+Setting Polygons
+56/56
+Done!
+Set Vertices
+RegisterShell 581598/598
+Done!
+Setting Polygons
+146/146
+Done!
+Set Vertices
+RegisterShell 581584/584
+Done!
+Setting Polygons
+146/146
+Done!
+Set Vertices
+RegisterShell 581152/152
+Done!
+Setting Polygons
+38/38
+Done!
+Set Vertices
+RegisterShell 58196/96
+Done!
+Setting Polygons
+24/24
+Done!
+Set Vertices
+RegisterShell 58124/24
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 5818/8
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 581272/272
+Done!
+Setting Polygons
+68/68
+Done!
+Set Vertices
+RegisterShell 581428/428
+Done!
+Setting Polygons
+104/104
+Done!
+Set Vertices
+RegisterShell 581272/272
+Done!
+Setting Polygons
+68/68
+Done!
+Set Vertices
+RegisterShell 581200/200
+Done!
+Setting Polygons
+50/50
+Done!
+Set Vertices
+RegisterShell 581244/244
+Done!
+Setting Polygons
+60/60
+Done!
+Set Vertices
+RegisterShell 58112/12
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 58118/18
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58156/56
+Done!
+Setting Polygons
+14/14
+Done!
+Set Vertices
+RegisterShell 58124/24
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58140/40
+Done!
+Setting Polygons
+10/10
+Done!
+Set Vertices
+RegisterShell 581342/342
+Done!
+Setting Polygons
+86/86
+Done!
+Set Vertices
+RegisterShell 581152/152
+Done!
+Setting Polygons
+38/38
+Done!
+Set Vertices
+RegisterShell 581376/376
+Done!
+Setting Polygons
+94/94
+Done!
+Set Vertices
+RegisterShell 581298/298
+Done!
+Setting Polygons
+72/72
+Done!
+Set Vertices
+RegisterShell 581420/420
+Done!
+Setting Polygons
+102/102
+Done!
+Set Vertices
+RegisterShell 58112/12
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 5816/6
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 58112/12
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 5816/6
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 581110/110
+Done!
+Setting Polygons
+28/28
+Done!
+Set Vertices
+RegisterShell 581248/248
+Done!
+Setting Polygons
+62/62
+Done!
+Set Vertices
+RegisterShell 581264/264
+Done!
+Setting Polygons
+66/66
+Done!
+Set Vertices
+RegisterShell 581168/168
+Done!
+Setting Polygons
+42/42
+Done!
+Set Vertices
+RegisterShell 5816/6
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 58118/18
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58118/18
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58118/18
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58120/20
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 58130/30
+Done!
+Setting Polygons
+8/8
+Done!
+Set Vertices
+RegisterShell 58116/16
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 581280/280
+Done!
+Setting Polygons
+70/70
+Done!
+Set Vertices
+RegisterShell 581168/168
+Done!
+Setting Polygons
+42/42
+Done!
+Set Vertices
+RegisterShell 5816/6
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 5811516/1516
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+476/476
+Done!
+Set Vertices
+RegisterShell 5811208/1208
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+382/382
+Done!
+Set Vertices
+RegisterShell 581790/790
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+254/254
+Done!
+Set Vertices
+RegisterShell 581142/142
+Done!
+Setting Polygons
+38/38
+Done!
+Set Vertices
+RegisterShell 58152/52
+Done!
+Setting Polygons
+14/14
+Done!
+Set Vertices
+RegisterShell 58130/30
+Done!
+Setting Polygons
+8/8
+Done!
+Set Vertices
+RegisterShell 581728/728
+Done!
+Setting Polygons
+182/182
+Done!
+Set Vertices
+RegisterShell 5818/8
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 58124/24
+Done!
+Setting Polygons
+6/6
+Done!
+Set Vertices
+RegisterShell 581626/626
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+170/170
+Done!
+Set Vertices
+RegisterShell 5812744/2744
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+812/812
+Done!
+Set Vertices
+RegisterShell 581852/852
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+270/270
+Done!
+Set Vertices
+RegisterShell 5811066/1066
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+346/346
+Done!
+Set Vertices
+RegisterShell 581264/264
+Done!
+Setting Polygons
+88/88
+Done!
+Set Vertices
+RegisterShell 58118/18
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+6/6
+Done!
+Set Vertices
+RegisterShell 581216/216
+Done!
+Setting Polygons
+54/54
+Done!
+Set Vertices
+RegisterShell 581428/428
+Done!
+Setting Polygons
+98/98
+Done!
+Set Vertices
+RegisterShell 581184/184
+Done!
+Setting Polygons
+46/46
+Done!
+Set Vertices
+RegisterShell 581314/314
+Done!
+Setting Polygons
+70/70
+Done!
+Set Vertices
+RegisterShell 581204/204
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+36/36
+Done!
+Set Vertices
+RegisterShell 581538/538
+Done!
+Setting Polygons
+172/172
+Done!
+Set Vertices
+RegisterShell 581310/310
+Done!
+Setting Polygons
+102/102
+Done!
+Set Vertices
+RegisterShell 5811606/1606
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+526/526
+Done!
+Set Vertices
+RegisterShell 5811270/1270
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+420/420
+Done!
+Set Vertices
+RegisterShell 58130/30
+Done!
+Setting Polygons
+10/10
+Done!
+Set Vertices
+RegisterShell 581272/272
+Done!
+Setting Polygons
+68/68
+Done!
+Set Vertices
+RegisterShell 581388/388
+Done!
+Setting Polygons
+94/94
+Done!
+Set Vertices
+RegisterShell 581382/382
+Done!
+Setting Polygons
+94/94
+Done!
+Set Vertices
+RegisterShell 581120/120
+Done!
+Setting Polygons
+30/30
+Done!
+Set Vertices
+RegisterShell 58172/72
+Done!
+Setting Polygons
+18/18
+Done!
+Set Vertices
+RegisterShell 581160/160
+Done!
+Setting Polygons
+36/36
+Done!
+Set Vertices
+RegisterShell 581126/126
+Done!
+Setting Polygons
+40/40
+Done!
+Set Vertices
+RegisterShell 581150/150
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+50/50
+Done!
+Set Vertices
+RegisterShell 581504/504
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+168/168
+Done!
+Set Vertices
+RegisterShell 581152/152
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+50/50
+Done!
+Set Vertices
+RegisterShell 5818/8
+Done!
+Setting Polygons
+2/2
+Done!
+Set Vertices
+RegisterShell 581112/112
+Done!
+Setting Polygons
+28/28
+Done!
+Set Vertices
+RegisterShell 581460/460
+Done!
+Setting Polygons
+108/108
+Done!
+Set Vertices
+RegisterShell 581288/288
+Done!
+Setting Polygons
+72/72
+Done!
+Set Vertices
+RegisterShell 58162/62
+Done!
+Setting Polygons
+16/16
+Done!
+Set Vertices
+RegisterShell 58148/48
+Done!
+Setting Polygons
+12/12
+Done!
+Set Vertices
+RegisterShell 58112/12
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 58116/16
+Done!
+Setting Polygons
+4/4
+Done!
+Set Vertices
+RegisterShell 581358/358
+Done!
+Setting Polygons
+86/86
+Done!
+Set Vertices
+RegisterShell 581624/624
+Done!
+Setting Polygons
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+YsCollisionOfPolygon::PrecomputeProjectionOfPolygon1()
+  Normal of polygon1 is not set.
+204/204
+Done!
+Set Vertices
+RegisterShell 581152/152
+Done!
+Setting Polygons
+38/38
+Done!
+Set Vertices
+RegisterShell 58148/48
+Done!
+Setting Polygons
+12/12
+Done!
+Re-creating with increased lattice size.
+Set Vertices
+RegisterShell 58148/48
+Done!
+Setting Polygons
+12/12
+Done!
+Set Vertices
+RegisterShell 58140/40
+Done!
+Setting Polygons
+10/10
+Done!
+Set Vertices
+RegisterShell 581256/256
+Done!
+Setting Polygons
+64/64
+Done!
+Set Vertices
+RegisterShell 581144/144
+Done!
+Setting Polygons
+36/36
+Done!
+Set Vertices
+RegisterShell 581118/118
+Done!
+Setting Polygons
+28/28
+Done!
+Re-creating with increased lattice size.
+Set Vertices
+RegisterShell 581118/118
+Done!
+Setting Polygons
+28/28
+Done!
+Set Vertices
+RegisterShell 58196/96
+Done!
+Setting Polygons
+24/24
+Done!
+Set Vertices
+RegisterShell 58156/56
+Done!
+Setting Polygons
+14/14
+Done!
+0 same-plane map groups.
+FsLattice
+ -21300.000000 -21300.000000 to 21300.000000 21300.000000
+ NX=43, NY=43
+Read 10000 Vertices
+Read 20000 Vertices
+Read 10000 Vertices
+Read 10000 Vertices
+Read 10000 Vertices
+Read 20000 Vertices
+Read 10000 Vertices
+Read 10000 Vertices
+Script>>GUI:CLICK mainDlg flyNow
+>> CLICK mainDlg flyNow
+Script>>WAITFOR:FLYING
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Script>>FLIGHTCMD:TESTADVANCE .1
+Script>>BTNFUNC:COCKPITVIEW
+Script>>BTNFUNC:PAUSESIMULATION
+Script>>REM DIAG_READY
+Script>>SLEEP:3000
+Script>>FLIGHTCMD:MODELPOSE 0 0 0 0 0 0
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 -175 0
+Script>>FLIGHTCMD:LABVIEW 130 30 2300 0
+Script>>REM SHOT_overview
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:MODELPOSE 0 0 0 0 0 0
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM -500 -175 -500
+Script>>FLIGHTCMD:LABVIEW 130 12 650 0
+Script>>REM SHOT_low-city
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:MODELPOSE 0 0 0 0 0 0
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 300 -175 400
+Script>>FLIGHTCMD:LABVIEW 310 20 1600 0
+Script>>REM SHOT_airport
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:AIRCOMMAND $PLAYER ATTITUDE 0deg 0deg 180deg
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABVIEW 180 89 175 0
+Script>>REM SHOT_inverted
+Script>>SLEEP:1400
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=1.6960 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=0.000000 renderCanopy=0.000000 active=1 speed=18.9409 throttle=0.550000 ab=0 nozzle=0.575978 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.883224 jetLY=0.882239 jetLZ=0.022405 jetRX=0.883224 jetRY=0.882239 jetRZ=0.022405
+Script>>SLEEP:60000

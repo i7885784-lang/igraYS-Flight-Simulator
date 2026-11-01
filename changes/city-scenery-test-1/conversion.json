@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "airport_triangles": 1967,
+    "building_faces": 1116,
+    "road_faces": 1531,
+    "spatial_chunks": 116,
+    "terrain_grid_vertices": 11025,
+    "elevation_samples": 17594,
+    "btg_vertices": 1683
+  },
+  "bounds_m": [
+    -1300,
+    1300
+  ],
+  "terrain_range_m": [
+    -0.020371496405697503,
+    107.32236818519999
+  ],
+  "terrain_fallback": "TIN from imported road/building base heights outside airport BTG",
+  "textures": "own flat colours; no foreign atlas copied",
+  "origin_lon_lat": [
+    -5.88141,
+    54.61423
+  ]
+}
