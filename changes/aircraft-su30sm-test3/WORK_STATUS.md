@@ -1,4 +1,4 @@
-# Су-30СМ №3 — готовая модель, доставка в процессе
+# Су-30СМ №3 — завершено и проверено скачивание
 
 Продолжение отдельного теста2 от dd8fbd9; CURRENT_VERSION не меняется. Пользователь разрешил брать найденную инструкцию Звезда7314 при отсутствии размерных чертежей, сохранять пропорции и исходный нос. Источник/границы в DRAWING_COMPARISON.md. Носовый меш Fuselage_0_5 побайтно совпадает с2.
 
@@ -13,3 +13,10 @@
 Движок запрещает боевое weaponloading по просьбе пользователя во всей игре; дым/топливобаки/ловушки сохранены. NativeARMAMENTCHECK0 ракет, стрельба пушки не заряжается. Собраны32/64, бинарники вengine-binaries.zip. Полный engine3 независимый. Историческийengine1 source восстановлен изпроверенногоSources1 после использованиякэша; engine2 не тронут. Последний64 имеет GLASSALPHA diagnostic только подV861_VALIDATION, это соответствует приложенномуsource.
 
 CHECKS.json/reportmedia содержат финальныецеленаправленные проверки. Не использовать старые review/corrected/final-photos gear-down как финальныйщиток: онидо convexclosure. Отчёт берёт последнююfinal-gear/gear-070 иfinal-ground. Общие виды/фонарь/сопла не менялись после этихсъёмок. Старые archives untouched. Длязавершения: commit/push, отдельныйdraft personal-su30sm-test3-20261103 с реальнымGitref; workflow su30sm-test3.yml input release_id (не lookupdraftbytagREST). Actions восстановитмодели и сверитхэши, загрузитZIPs; Windows32 job проверит настоящуюигру и добавитevidenceвReportZIP/STATUS. Затемскачатьвсе3ZIP, проверитьSHA/CRC, записатьfinalSTATUS вrepo иhandoff. Ссылки даватьизфактическогоSTATUS, draftнуженownerlogin.
+
+
+## Финальная доставка
+
+Коммит кода bbf986c. Draft release433034614 / personal-su30sm-test3-20261103, оставить DRAFT. Workflow41688279878: package иwindows32 SUCCESS. Windows загрузил реальный PE32i386, выполнил два G, открыл кабину после26внешних zoom, оставался жив41.1с; скрин просмотрен. Windows32 доказательства вReportZIP. Полноценную физическую Windows32OS не заявлять: запуск32EXE на Windowsrunner.
+
+Все3финальныхZIP скачаны обратно, SHA256/CRC каждого проверены, SOURCE_DOWNLOADS вGame совпал сSTATUS. Game44345012байт, Sources202868084, Report2481179. Авторитетные ссылки/хэши reports/su30sm-test-3/STATUS.json; локальныефайлы /workspace/ysflight-dev/su30sm-test-3/final-downloads/. СнапшотSourcesZIP сделан перед этим дополнениемстатуса, итоговыйSTATUS хранитсяотдельно. Пользовательскаяприёмка впереди; всеобщегоаудита внутреннихконтактов/заводскойкинематики нет. Старыеархивы иCURRENT_VERSION не изменялись.
