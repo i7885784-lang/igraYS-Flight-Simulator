@@ -1,5 +1,5 @@
-numpy
-scipy
-shapely
-Pillow
-python-fcl
+numpy==2.3.5
+scipy==1.17.0
+shapely==2.2.0
+Pillow==12.3.0
+python-fcl==0.7.0.8
