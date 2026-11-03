@@ -1,0 +1,44 @@
+name: Su-30SM test 2 delivery
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-su30sm-test2
+            reports/su30sm-test-1
+            reports/su30sm-test-2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r changes/aircraft-su30sm-test2/requirements.txt
+      - run: python changes/aircraft-su30sm-test2/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: su30sm-test2-status
+          path: reports/su30sm-test-2/STATUS.json
+  windows32:
+    needs: package
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-su30sm-test2
+      - run: python changes/aircraft-su30sm-test2/windows_check.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: su30sm-test2-windows32
+          path: windows-evidence
