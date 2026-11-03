@@ -81,6 +81,7 @@ with tempfile.TemporaryDirectory() as td:
     code = Path('changes/aircraft-su30sm-test1').resolve()
     shutil.copy2(code / 'model-source/convert.py', source_root / 'su30sm-test1/model-source/convert.py')
     shutil.copy2(code / 'compact_collision.py', source_root / 'su30sm-test1/compact_collision.py')
+    shutil.copy2(code / 'README_RU.md', source_root / 'su30sm-test1/README_RU.md')
     shutil.copy2(registration, template / 'aircraft/air_su30sm.lst')
     shutil.copy2(game / 'Play_Su30SM.bat', template / 'Play_Su30SM.bat')
     shutil.copytree(game / 'config-su30', template / 'config-su30', dirs_exist_ok=True)
