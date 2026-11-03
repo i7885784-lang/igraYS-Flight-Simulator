@@ -3,7 +3,7 @@ from pathlib import Path
 import os,json,hashlib,subprocess,zipfile,tempfile,urllib.request,urllib.error,time,base64,shutil,sys
 repo='i7885784-lang/igraYS-Flight-Simulator';tag='personal-su30sm-test1-20261103';rid=432469264
 api=f'https://api.github.com/repos/{repo}/releases/{rid}'
-headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'su30sm-transfer'}
+headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'su30sm-transfer','Content-Type':'application/json'}
 args=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())['inputs'];total=int(args['bundle_chunks']);assert 0<total<600
 ack_info=None;reuse=args.get('reuse_bundle') in ['true',True]
 def graphql(query,variables):
