@@ -1,26 +1,26 @@
 {
   "draft": true,
-  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-5253ffcb744c405d292f",
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-5822aa895db4c29b4d42",
   "assets": [
     {
       "name": "YSFlight_Su30SM_Test_1_Game_32bit.zip",
-      "bytes": 63894180,
-      "sha256": "a45df2406397558ec4259bea2a86dae0d3cbaafa1e095bd0a85deeb57b26d0ef",
-      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5253ffcb744c405d292f/YSFlight_Su30SM_Test_1_Game_32bit.zip",
+      "bytes": 63894250,
+      "sha256": "0505453d25cb0cf48b69f57ecbc08011e88564da6120b22dd5e0aae7ed511bc2",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5822aa895db4c29b4d42/YSFlight_Su30SM_Test_1_Game_32bit.zip",
       "download_verified": true
     },
     {
       "name": "YSFlight_Su30SM_Test_1_Sources.zip",
-      "bytes": 125482993,
-      "sha256": "0871468c7c443961ecfd32819da1ee01be8c9c877ea3dead49e3a8773d498a80",
-      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5253ffcb744c405d292f/YSFlight_Su30SM_Test_1_Sources.zip",
+      "bytes": 125483008,
+      "sha256": "049301e68a5df83a2fbe0eb7e803c9b86736e13de97bfa67ac0b0aa7e940490b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5822aa895db4c29b4d42/YSFlight_Su30SM_Test_1_Sources.zip",
       "download_verified": true
     },
     {
       "name": "YSFlight_Su30SM_Test_1_Report.zip",
-      "bytes": 4430630,
-      "sha256": "2b5b23994aebce118772f540c07d466a7d6afaf88c9c2800641f72c2d90f84a2",
-      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5253ffcb744c405d292f/YSFlight_Su30SM_Test_1_Report.zip",
+      "bytes": 4379780,
+      "sha256": "3c0275fec274bcedf868ae8597122b790123cf40fcf1917d3b395a17b1e65895",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-5822aa895db4c29b4d42/YSFlight_Su30SM_Test_1_Report.zip",
       "download_verified": true
     }
   ],
@@ -66,13 +66,13 @@
     "platform": "native Windows runner",
     "architecture": "PE32 i386",
     "collision_memory": {
-      "before_vertices": 788210,
+      "before_vertices": 138,
       "after_vertices": 138,
       "physical_faces": 272,
       "identical_physical_triangles": true
     },
     "full_visual_model_instances": 1,
-    "elapsed_seconds": 37.61,
+    "elapsed_seconds": 51.84,
     "scope": "Su-30SM flight loaded; two native landing gear commands; process remained running"
   }
 }
