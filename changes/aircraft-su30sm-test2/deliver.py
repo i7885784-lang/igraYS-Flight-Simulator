@@ -40,10 +40,8 @@ with tempfile.TemporaryDirectory() as td:
  commit=os.environ['GITHUB_SHA']
  try:gh('api','repos/'+repo+'/git/ref/tags/'+tag)
  except subprocess.CalledProcessError:gh('api','repos/'+repo+'/git/refs','-f','ref=refs/tags/'+tag,'-f','sha='+commit)
- try:release=json.loads(gh('api','repos/'+repo+'/releases/tags/'+tag))
- except subprocess.CalledProcessError:
-  gh('release','create',tag,'--repo',repo,'--draft','--title','Су-30СМ: тест 2, Windows 32 и 64 бит','--notes-file',str(report/'RELEASE.md'))
-  release=json.loads(gh('api','repos/'+repo+'/releases/tags/'+tag))
+ release=json.loads(gh('api','repos/'+repo+'/releases/432779163'))
+ assert release['tag_name']==tag
  assert release['draft'];prefix=release['html_url'].replace('/tag/','/download/')
  source_url=prefix+'/YSFlight_Su30SM_Test_2_Sources.zip'
  (game/'SOURCE_DOWNLOADS.txt').write_text('Complete corresponding source:\n'+source_url+'\n\nhttps://github.com/'+repo+'/tree/ysflight-center-download/reports/su30sm-test-2\n')
