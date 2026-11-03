@@ -1,0 +1,11 @@
+--- a/public/src/ysgebl/src/kernel/ysshellext.h
++++ b/public/src/ysgebl/src/kernel/ysshellext.h
+@@ -462,6 +462,8 @@
+ 		};
+ 
+ 		VTFLAG flags;
++        bool hasImportedNormal=false;
++        YsVec3 importedNormal=YsOrigin();
+ 		double thickness;
+ 		int oPlId;     // Mapping from vertex index to a polygon of another shell
+ 		int oVtId[2];  // Mapping from vertex index to an edge or vertex of another shell

@@ -1,0 +1,10 @@
+--- a/public/src/ysgebl/src/kernel/ysshellextio.cpp
++++ b/public/src/ysgebl/src/kernel/ysshellextio.cpp
+@@ -248,6 +248,7 @@
+ 				const YSBOOL round=((5<=args.GetN() && (args[4][0]=='R' || args[4][0]=='r')) ? YSTRUE : YSFALSE);
+ 				const YsShellVertexHandle vtHd=shl.AddVertex(newVtPos);
+ 				shl.SetVertexRoundFlag(vtHd,round);
++                if(8<=args.GetN() && YSTRUE==round){YsVec3 nom(args[5],args[6],args[7]);if(YSOK==nom.Normalize()){auto attr=const_cast<YsShellExt::VertexAttrib *>(static_cast<const YsShellExt &>(shl).GetVertexAttrib(vtHd));attr->hasImportedNormal=true;attr->importedNormal=nom;}}
+ 
+ 				readEntity.vtHdArray.Append(vtHd);
+ 				if(0==(readEntity.vtHdArray.GetN()%10000))

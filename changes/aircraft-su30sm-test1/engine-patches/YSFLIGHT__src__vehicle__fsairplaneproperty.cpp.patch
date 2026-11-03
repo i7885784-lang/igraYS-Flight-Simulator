@@ -1,0 +1,45 @@
+--- a/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
++++ b/YSFLIGHT/src/vehicle/fsairplaneproperty.cpp
+@@ -4304,7 +4304,7 @@
+ 
+ void FsAirplaneProperty::SetupVisual(FsVisualDnm &vis) const
+ {
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK"))){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK")) || 0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM")){
+   vis.SetState(120,0,1,GetThrottle());vis.SetPitch(122,GetElevator()*YsDegToRad(12.0));vis.SetRotation(123,-GetAileron()*YsDegToRad(12.0));
+   vis.SetState(100,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);vis.SetState(101,0,1,staGear);
+   vis.SetState(110,(su27SpoolLeft>.95 && staAb==YSTRUE && staThrottle>.9 && staFuelLoad>0 && IsActive()==YSTRUE)?1:0);
+@@ -4422,7 +4422,7 @@
+ 	vis.SetRotation(YSDNM_CLASSID_ROTOR_CUSTOM_AXIS,staRotorAngle);
+ 	vis.SetPitch(YSDNM_CLASSID_TIRE,staWheelAngle);
+  // Shared external animation rig for the two detailed fighters. Physics unchanged.
+- if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK"))){
++ if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || (0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-57_FELON") || 0==strcmp(GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK")) || 0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM")){
+   // Brake cylinder and piston follow a sampled articulated mechanism, not a floating prop.
+   if(0==strcmp(GetIdentifier(),"SU-27_FLANKER")){
+    const double step=YsBound(staSpoiler,0.0,1.0)*20.0;const int idx=YsSmaller(19,int(step));
+@@ -4438,6 +4438,7 @@
+   else if(0==strcmp(GetIdentifier(),"SU-34_FULLBACK"))exhaustModel=2;
+   else if(0==strcmp(GetIdentifier(),"SU-47_BERKUT"))exhaustModel=3;
+   else if(0==strcmp(GetIdentifier(),"SU-57_FELON"))exhaustModel=4;
++  else if(0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM"))exhaustModel=5;
+   for(int engine=0;engine<2;++engine)
+   {
+       const auto jet=FsExhaustProfile::Get(exhaustModel,engine,staNozzleOpening);
+@@ -4449,6 +4450,7 @@
+   vis.SetShow(151,door>.02?YSTRUE:YSFALSE);
+   vis.SetState(153,0,1,door);vis.SetState(154,0,1,door);
+   vis.SetPitch(146,staWheelAngle);vis.SetShow(146,leg>.001?YSTRUE:YSFALSE);
++  if(0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM")){vis.SetShow(146,YSTRUE);for(int c=112;c<=113;++c){vis.SetState(c,plume?1:0);vis.SetShow(c,plume?YSTRUE:YSFALSE);}}
+   vis.SetHeading(147,IsOnGround()==YSTRUE?GetRudder()*YsDegToRad(12):0.0);
+   auto bipolar=[&](int c,double a){vis.SetState(c,0,a<0?2:1,YsAbs(a));};
+   if(modelFlapPose>=0)vis.SetState(5,0,1,modelFlapPose);
+@@ -4458,7 +4460,7 @@
+   const double e=modelElevatorPose>=-1?modelElevatorPose:elvPlusTrim,a=modelAileronPose>=-1?modelAileronPose:ctlAileron;
+   bipolar(148,YsBound(e+.35*a,-1.0,1.0));bipolar(149,YsBound(e-.35*a,-1.0,1.0));
+   // FG geometry test: sampled source gear transforms and independent native inputs.
+-  if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK")){
++  if(0==strcmp(GetIdentifier(),"SU-27_FLANKER") || 0==strcmp(GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(GetIdentifier(),"SU-34_FULLBACK") || 0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM")){
+    const double step=gear*100.0;const int idx=YsSmaller(99,int(step));
+    vis.SetState(210,idx,idx+1,step-idx);
+    vis.SetState(211,0,1,modelCanopyPose>=0?modelCanopyPose:su27Canopy);

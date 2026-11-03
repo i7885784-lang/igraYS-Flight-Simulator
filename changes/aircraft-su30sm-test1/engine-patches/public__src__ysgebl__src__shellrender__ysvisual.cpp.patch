@@ -1,0 +1,23 @@
+--- a/public/src/ysgebl/src/shellrender/ysvisual.cpp
++++ b/public/src/ysgebl/src/shellrender/ysvisual.cpp
+@@ -453,9 +453,9 @@
+ YsMatrix4x4 YsVisualDnm::AfterburnerTransform(const YsMatrix4x4 &tfm,Dnm::Node *node) const
+ {
+     YsMatrix4x4 renderTfm=tfm;
+-    if(110==node->dnmClassType || 111==node->dnmClassType)
++    if(110==node->dnmClassType || 111==node->dnmClassType || 112==node->dnmClassType || 113==node->dnmClassType)
+     {
+-        const auto &p=exhaustAperture[node->dnmClassType-110];
++        const auto &p=exhaustAperture[(node->dnmClassType-110)%2];
+         YsVec3 bounds[2];node->GetBoundingBox(bounds);
+         const double cx=(bounds[0].x()+bounds[1].x())*.5;
+         const double cy=(bounds[0].y()+bounds[1].y())*.5;
+@@ -468,7 +468,7 @@
+         renderTfm.Scale(p.sx,p.sy,1.0);
+         renderTfm.Translate(-cx,-cy,-z);
+     }
+-    if(2==node->dnmClassType && 1.0!=afterburnerLengthScale)
++    if((2==node->dnmClassType || 112==node->dnmClassType || 113==node->dnmClassType) && 1.0!=afterburnerLengthScale)
+     {
+         YsVec3 bounds[2];node->GetBoundingBox(bounds);
+         // Model +Z points forward. Keep the nozzle end fixed; stretch only the plume.

@@ -1,0 +1,18 @@
+--- a/YSFLIGHT/src/vehicle/fsexhaustprofile.h
++++ b/YSFLIGHT/src/vehicle/fsexhaustprofile.h
+@@ -1,6 +1,7 @@
+ // Generated from the actual moving inner exit lips. Own exhaust adaptation.
+ #ifndef FSEXHAUSTPROFILE_IS_INCLUDED
+ #define FSEXHAUSTPROFILE_IS_INCLUDED
++#include "su30_exhaust_profile.h"
+ namespace FsExhaustProfile {
+ struct Sample { double sx,sy,dx,dy,dz; };
+ static const Sample profile[5][2][21]={
+@@ -26,6 +27,7 @@
+ },
+ };
+ inline Sample Get(int aircraft,int engine,double opening) {
++ if(aircraft==5){const auto p=Su30ExhaustProfile(engine,opening);return {p[0],p[1],p[2],p[3],p[4]};}
+  const double u=(opening<0?0:opening>1?1:opening)*20.;
+  const int i=(int(u)<20?int(u):19);const double f=u-i;
+  const auto &a=profile[aircraft][engine][i];const auto &b=profile[aircraft][engine][i+1];

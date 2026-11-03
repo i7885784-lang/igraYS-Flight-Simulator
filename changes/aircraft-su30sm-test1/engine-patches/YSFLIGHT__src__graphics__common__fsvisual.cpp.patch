@@ -1,0 +1,11 @@
+--- a/YSFLIGHT/src/graphics/common/fsvisual.cpp
++++ b/YSFLIGHT/src/graphics/common/fsvisual.cpp
+@@ -67,7 +67,7 @@
+     if(afterburnerGeometryCache<0)
+     {
+         afterburnerGeometryCache=0;
+-        for(auto node : dnmPtr->GetNodePointerAll()) if(2==node->dnmClassType) { afterburnerGeometryCache=1;break; }
++        for(auto node : dnmPtr->GetNodePointerAll()) if(2==node->dnmClassType || 112==node->dnmClassType || 113==node->dnmClassType) { afterburnerGeometryCache=1;break; }
+     }
+     return 0<afterburnerGeometryCache;
+ }

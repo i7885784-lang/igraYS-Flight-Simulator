@@ -1,0 +1,11 @@
+--- a/YSFLIGHT/src/core/fssu27.h
++++ b/YSFLIGHT/src/core/fssu27.h
+@@ -5,7 +5,7 @@
+ struct Su27ClickCache {const FsAirplane *air=nullptr;double clock=-100;YsVec2 center[6];double radius[6]={0};bool click=false,dragging=false;int lastX=0,lastY=0,restoreX=0,restoreY=0;} su27Ui;
+ bool Su27Aircraft(const FsAirplane *a){return a && 0==strcmp(a->Prop().GetIdentifier(),"SU-27_FLANKER");}
+ bool Su27Cockpit(const FsAirplane *){return false;} // Test6: native open cockpit, no custom start panel.
+-bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && (0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(a->Prop().GetIdentifier(),"SU-57_FELON") || 0==strcmp(a->Prop().GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(a->Prop().GetIdentifier(),"SU-34_FULLBACK")));}
++bool DetailedAircraft(const FsAirplane *a){return Su27Aircraft(a) || (a && (0==strcmp(a->Prop().GetIdentifier(),"MIG-29_FULCRUM") || 0==strcmp(a->Prop().GetIdentifier(),"SU-57_FELON") || 0==strcmp(a->Prop().GetIdentifier(),"SU-47_BERKUT") || 0==strcmp(a->Prop().GetIdentifier(),"SU-34_FULLBACK") || 0==strcmp(a->Prop().GetIdentifier(),"SU-30SM_CUSTOM")));}
+ YsVec3 Su27Button(int i){return YsVec3(-.535,1.466-i*.105,5.838);}
+ void Su27Action(FsSimulation *sim,int id)
+ {

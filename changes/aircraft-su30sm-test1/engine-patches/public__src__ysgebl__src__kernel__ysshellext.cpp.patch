@@ -1,0 +1,18 @@
+--- a/public/src/ysgebl/src/kernel/ysshellext.cpp
++++ b/public/src/ysgebl/src/kernel/ysshellext.cpp
+@@ -259,6 +259,7 @@
+ 
+ void YsShellExt::VertexAttrib::Initialize(void)
+ {
++    hasImportedNormal=false;importedNormal=YsOrigin();
+ 	flags=ZEROFLAG;
+ 	refCount=0;
+ 	refCountFromFrozenEntity=0;
+@@ -321,6 +322,7 @@
+ 
+ void YsShellExt::VertexAttrib::CopyFrom(const VertexAttrib &incoming)
+ {
++    hasImportedNormal=incoming.hasImportedNormal;importedNormal=incoming.importedNormal;
+ 	flags=incoming.flags;
+ 	thickness=incoming.thickness;
+ 	oPlId=incoming.oPlId;

@@ -1,0 +1,10 @@
+--- a/public/src/ysgebl/src/kernel/ysshellextdrawbuffer.cpp
++++ b/public/src/ysgebl/src/kernel/ysshellextdrawbuffer.cpp
+@@ -449,6 +449,7 @@
+ 		triNom[i]=YsOrigin();
+ 
+ 		shl.GetVertexPosition(triVtPos[i],triVtHd[i]);
++        if(vtAttr->hasImportedNormal){triNom[i]=vtAttr->importedNormal;if(triNom[i]*defNom<0.0)triNom[i]=-triNom[i];continue;}
+ 		// 2015/04/07 Support crease const edge >>
+ 		if(YSTRUE==shl.IsOnCreaseConstEdge(triVtHd[i]))
+ 		{

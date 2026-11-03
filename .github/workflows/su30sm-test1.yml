@@ -1,0 +1,50 @@
+name: Su-30SM private test 1
+on:
+  workflow_dispatch:
+    inputs:
+      bundle_sha256:
+        required: true
+        type: string
+      bundle_chunks:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Transfer prepared archives and verify downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/aircraft-su30sm-test1/transfer_draft.py
+  windows32:
+    needs: upload
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch actual Windows x86 build and cycle landing gear
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/aircraft-su30sm-test1/windows_smoke.py
+      - name: Preserve Windows evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: su30sm-windows-x86-evidence
+          path: windows-evidence
+      - name: Record verified release links
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/su30sm-test-1/STATUS.json
+          git commit -m 'Record Su-30SM draft downloads and Windows x86 check'
+          git pull --rebase origin ysflight-center-download
+          git push origin HEAD:ysflight-center-download
