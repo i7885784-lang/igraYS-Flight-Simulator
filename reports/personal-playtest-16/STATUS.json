@@ -1,0 +1,26 @@
+{
+  "draft": true,
+  "assets": [
+    {
+      "name": "YSFlight_Test_16_Game_32bit.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-bc9294b1fed8fd086a57/YSFlight_Test_16_Game_32bit.zip",
+      "bytes": 35333848,
+      "sha256": "e963fcae8f1a07f41c70c51c9a26138ebe05340734f70c9af9f3d6141695a1b8",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Test_16_Sources.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-bc9294b1fed8fd086a57/YSFlight_Test_16_Sources.zip",
+      "bytes": 101198954,
+      "sha256": "fa37404f9ad8a2fa7ff321c4be64f4e9cc8bb05ab85caa21bc8008ec72daf148",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Test_16_Report.zip",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-bc9294b1fed8fd086a57/YSFlight_Test_16_Report.zip",
+      "bytes": 901054,
+      "sha256": "7c55324473ee0679d41ad3d083a54f30ffa7ca03a570fe250002d3d14e6fcdb9",
+      "download_verified": true
+    }
+  ]
+}
