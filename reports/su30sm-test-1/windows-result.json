@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "platform": "native Windows runner",
+  "architecture": "PE32 i386",
+  "collision_memory": {
+    "before_vertices": 138,
+    "after_vertices": 138,
+    "physical_faces": 272,
+    "identical_physical_triangles": true
+  },
+  "full_visual_model_instances": 1,
+  "elapsed_seconds": 51.84,
+  "scope": "Su-30SM flight loaded; two native landing gear commands; process remained running"
+}
