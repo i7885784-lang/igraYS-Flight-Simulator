@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "active": true,
+  "frames": [
+    "overall",
+    "canopy-closed",
+    "canopy-open",
+    "gear-down",
+    "underside-closed",
+    "intakes"
+  ]
+}

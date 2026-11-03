@@ -1,0 +1,51 @@
+{
+  "Fuselage_0_7_cap_faces_removed": 43384,
+  "Fuselage_0_13_cap_faces_removed": 44286,
+  "intake_obstruction_nodes_removed": [
+    "Fuselage_0_8",
+    "Fuselage_0_9",
+    "Fuselage_0_10",
+    "Fuselage_0_11",
+    "Fuselage_0_12",
+    "Fuselage_0_14",
+    "Fuselage_0_15",
+    "Fuselage_0_16",
+    "Fuselage_0_17",
+    "Fuselage_0_18"
+  ],
+  "nose_probe": {
+    "changed": false,
+    "reason": "No verified dimensioned Su-30SM drawing: retain original geometry"
+  },
+  "nose_well_max_y": 0.43,
+  "nose_gear_closed_center": [
+    0.0,
+    0.08000000000000002,
+    6.25
+  ],
+  "airbrake_actuator_lengths": [
+    1.6302332792435574,
+    1.638299901637721,
+    1.6467293912512655,
+    1.6554932804452813,
+    1.6645624590996568,
+    1.6739073119504375,
+    1.6834978504441864,
+    1.6933038383875663,
+    1.703294910845778,
+    1.713440685907339,
+    1.7237108690822227,
+    1.7340753502338697,
+    1.7445042930621446,
+    1.7549682172535916,
+    1.765438073497869,
+    1.7758853116356372,
+    1.7862819422547211,
+    1.7966005920893442,
+    1.806814553603163,
+    1.8168978291522764,
+    1.8268251701308387
+  ],
+  "nozzle_radius_ratio": 1.1950674513790154,
+  "petal_tangent_width_factor": 1.24
+}

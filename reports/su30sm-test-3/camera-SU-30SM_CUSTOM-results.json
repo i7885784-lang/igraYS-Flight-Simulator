@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "left_mouse_drag": [
+    "-0.78540",
+    "-0.13090"
+  ],
+  "double_space_reset": true,
+  "from_external_zoom_26": true,
+  "cockpit_position": "0 1.18 5.55"
+}

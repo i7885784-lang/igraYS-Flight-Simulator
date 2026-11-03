@@ -1,0 +1,343 @@
+{
+  "scope": "Targeted visual/mechanism test; user acceptance pending",
+  "nose_original_mesh_unchanged": true,
+  "flat_shading": true,
+  "nose_well_roof_below_cockpit_floor": true,
+  "source_original_triangles": 418250,
+  "no_global_decimation": true,
+  "localized_geometry_repairs": true,
+  "drawings": "Zvezda Su-30SM 7314 assembly instruction; not factory dimensioned aircraft drawings",
+  "kinematics": "game approximation, not factory certification",
+  "nozzle_radius_ratio_is_visual_limit_not_factory_spec": 1.1950674513790154,
+  "targeted_contacts": {
+    "gear_samples": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "pairs": "Wheel shields against own wheel/upper/piston/fixed skin; nose tyre against nose well/interior",
+    "unintended_found": 0,
+    "closed_seam_contacts": 4
+  },
+  "expected_models": {
+    "su30sm.dnm": "7c63d4bc3c4688e350588346921c8b37a06236452933c5ec4dbddebce3226d44",
+    "su30sm.dat": "af8234cde7ae6a7d1809d8cc7d746afe06ceb33d105eaab634d79cfb48cc0e33",
+    "su30smcockpit.dnm": "1273ddb963b3bb37639c9575b041c6379aaae61c6a2f03f381f3e95ff5a22e80",
+    "su30smcoll.srf": "b8ea55c09b2b9e8cad25eccc717f4b5fb25838a4f22cd6739decc1b2f13c8dbe",
+    "air_su30sm.lst": "03648e5583b523492b0841c1365df843d1291ca43cfad67d27eb363b325dbc17"
+  },
+  "native_linux_wine64": {
+    "final-photos": {
+      "passed": true,
+      "aircraft": "SU-30SM_CUSTOM",
+      "active": true,
+      "frames": [
+        "overall",
+        "canopy-closed",
+        "canopy-open",
+        "gear-down",
+        "underside-closed",
+        "intakes"
+      ]
+    },
+    "final-ground": {
+      "passed": true,
+      "aircraft": "SU-30SM_CUSTOM",
+      "active": true,
+      "frames": [
+        "ground-side",
+        "ground-front",
+        "ground-canopy"
+      ]
+    },
+    "final-gear": {
+      "passed": true,
+      "state_samples": 58,
+      "native_XTest_keyboard_events": [
+        [
+          0.2,
+          "g",
+          "tap"
+        ],
+        [
+          7.3,
+          "g",
+          "tap"
+        ]
+      ]
+    },
+    "final-engine": {
+      "passed": true,
+      "state_samples": 59,
+      "native_XTest_keyboard_events": [
+        [
+          0.2,
+          "q",
+          "tap"
+        ],
+        [
+          0.34,
+          "q",
+          "tap"
+        ],
+        [
+          0.48000000000000004,
+          "q",
+          "tap"
+        ],
+        [
+          0.6200000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          0.76,
+          "q",
+          "tap"
+        ],
+        [
+          0.9000000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          1.04,
+          "q",
+          "tap"
+        ],
+        [
+          1.1800000000000002,
+          "q",
+          "tap"
+        ],
+        [
+          1.32,
+          "q",
+          "tap"
+        ],
+        [
+          1.4600000000000002,
+          "q",
+          "tap"
+        ],
+        [
+          1.6,
+          "q",
+          "tap"
+        ],
+        [
+          1.74,
+          "q",
+          "tap"
+        ],
+        [
+          1.8800000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          2.0200000000000005,
+          "q",
+          "tap"
+        ],
+        [
+          2.16,
+          "q",
+          "tap"
+        ],
+        [
+          2.3000000000000003,
+          "q",
+          "tap"
+        ],
+        [
+          2.4400000000000004,
+          "q",
+          "tap"
+        ],
+        [
+          2.5800000000000005,
+          "q",
+          "tap"
+        ],
+        [
+          2.7200000000000006,
+          "q",
+          "tap"
+        ],
+        [
+          2.8600000000000003,
+          "q",
+          "tap"
+        ],
+        [
+          3.3,
+          "Tab",
+          "tap"
+        ],
+        [
+          7,
+          "Tab",
+          "tap"
+        ],
+        [
+          7.6,
+          "Tab",
+          "tap"
+        ],
+        [
+          10.5,
+          "Tab",
+          "tap"
+        ],
+        [
+          10.0,
+          "a",
+          "tap"
+        ],
+        [
+          10.14,
+          "a",
+          "tap"
+        ],
+        [
+          10.28,
+          "a",
+          "tap"
+        ],
+        [
+          10.42,
+          "a",
+          "tap"
+        ],
+        [
+          10.56,
+          "a",
+          "tap"
+        ],
+        [
+          10.7,
+          "a",
+          "tap"
+        ],
+        [
+          10.84,
+          "a",
+          "tap"
+        ],
+        [
+          10.98,
+          "a",
+          "tap"
+        ],
+        [
+          11.120000000000001,
+          "a",
+          "tap"
+        ],
+        [
+          11.26,
+          "a",
+          "tap"
+        ],
+        [
+          11.4,
+          "a",
+          "tap"
+        ],
+        [
+          11.54,
+          "a",
+          "tap"
+        ],
+        [
+          11.68,
+          "a",
+          "tap"
+        ],
+        [
+          11.82,
+          "a",
+          "tap"
+        ],
+        [
+          11.96,
+          "a",
+          "tap"
+        ],
+        [
+          12.1,
+          "a",
+          "tap"
+        ],
+        [
+          12.24,
+          "a",
+          "tap"
+        ],
+        [
+          12.38,
+          "a",
+          "tap"
+        ],
+        [
+          12.52,
+          "a",
+          "tap"
+        ],
+        [
+          12.66,
+          "a",
+          "tap"
+        ]
+      ]
+    },
+    "final-brake": {
+      "passed": true,
+      "state_samples": 56,
+      "native_XTest_keyboard_events": [
+        [
+          0.8,
+          "b",
+          "tap"
+        ],
+        [
+          8.3,
+          "b",
+          "tap"
+        ]
+      ]
+    },
+    "final-canopy": {
+      "passed": true,
+      "state_samples": 46,
+      "native_XTest_keyboard_events": [
+        [
+          0.8,
+          "Alt_L+5",
+          "tap"
+        ],
+        [
+          8.3,
+          "Alt_L+5",
+          "tap"
+        ]
+      ]
+    },
+    "camera-SU-30SM_CUSTOM": {
+      "passed": true,
+      "aircraft": "SU-30SM_CUSTOM",
+      "left_mouse_drag": [
+        "-0.78540",
+        "-0.13090"
+      ],
+      "double_space_reset": true,
+      "from_external_zoom_26": true,
+      "cockpit_position": "0 1.18 5.55"
+    }
+  },
+  "combat_weapon_loading_disabled": true
+}

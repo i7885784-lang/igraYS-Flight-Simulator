@@ -1,0 +1,42 @@
+[
+  {
+    "g": 0,
+    "a": "GearDoor_Left_WheelShield",
+    "b": "MainBayFixedSkin_Left",
+    "point": [
+      -1.5520379734235337,
+      -0.7441805647256524,
+      -2.1000002
+    ]
+  },
+  {
+    "g": 0,
+    "a": "GearDoor_Right_WheelShield",
+    "b": "MainBayFixedSkin_Right",
+    "point": [
+      1.5520379734235337,
+      -0.7441805647256524,
+      -2.1000002
+    ]
+  },
+  {
+    "g": 0.1,
+    "a": "GearDoor_Left_WheelShield",
+    "b": "MainBayFixedSkin_Left",
+    "point": [
+      -1.5520379734235337,
+      -0.7441805647256524,
+      -2.1000002
+    ]
+  },
+  {
+    "g": 0.1,
+    "a": "GearDoor_Right_WheelShield",
+    "b": "MainBayFixedSkin_Right",
+    "point": [
+      1.5520379734235337,
+      -0.7441805647256524,
+      -2.1000002
+    ]
+  }
+]
