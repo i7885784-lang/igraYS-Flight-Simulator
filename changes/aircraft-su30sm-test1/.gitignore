@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
-runtime/
-source/
+/runtime/
+/source/
 source-stage.dnm
 geometry-cache/

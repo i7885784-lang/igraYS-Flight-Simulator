@@ -5,7 +5,19 @@ repo='i7885784-lang/igraYS-Flight-Simulator';tag='personal-su30sm-test1-20261103
 api=f'https://api.github.com/repos/{repo}/releases/{rid}'
 headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'su30sm-transfer'}
 args=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())['inputs'];total=int(args['bundle_chunks']);assert 0<total<600
+ack_info=None;reuse=args.get('reuse_bundle') in ['true',True]
+def graphql(query,variables):
+ req=urllib.request.Request('https://api.github.com/graphql',data=json.dumps({'query':query,'variables':variables}).encode(),headers=headers,method='POST')
+ with urllib.request.urlopen(req,timeout=45) as res:d=json.load(res)
+ assert 'errors' not in d,d.get('errors')
+ return d['data']
 def request(method='GET',body=None,etag=None):
+ if method=='GET':
+  node=graphql('query($id:ID!){node(id:$id){...on Release{description isDraft}}}',{'id':'RE_kwDOVMEAJs4ZxvUQ'})['node']
+  return {'body':node['description'],'draft':node['isDraft']},None
+ if isinstance(body,dict) and body.get('phase')=='ack':
+  graphql('mutation($id:ID!,$oid:GitObjectID!){updateRef(input:{refId:$id,oid:$oid,force:true}){ref{id}}}',{'id':ack_info['ref_id'],'oid':ack_info['oids'][body['i']%2]})
+  return body,None
  h=dict(headers)
  if etag:h['If-None-Match']=etag
  data=None if body is None else json.dumps({'body':json.dumps(body) if isinstance(body,dict) else body}).encode()
@@ -16,12 +28,15 @@ def request(method='GET',body=None,etag=None):
   raise
 def gh(*a):return subprocess.check_output(['gh',*a])
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-release,_=request();assert release['draft'];begin=json.loads(release['body'])
-assert begin['transfer']=='su30sm-private-stage-v1' and begin['phase']=='begin' and begin['sha256']==args['bundle_sha256'] and begin['chunks']==total
-request('PATCH',{'phase':'ready'})
+release,_=request();assert release['draft']
+if not reuse:
+ begin=json.loads(release['body'])
+ assert begin['transfer']=='su30sm-private-stage-v1' and begin['phase']=='begin' and begin['sha256']==args['bundle_sha256'] and begin['chunks']==total
+ ack_info=begin['ack'];request('PATCH',{'phase':'ready'})
 with tempfile.TemporaryDirectory() as td:
  t=Path(td);packet=t/'packet.zip';index=0;etag=None;deadline=time.monotonic()+900
- with packet.open('wb') as f:
+ if reuse:gh('release','download',tag,'--repo',repo,'--pattern','packet.zip','--dir',str(t));index=total
+ with packet.open('ab' if reuse else 'wb') as f:
   while index<total:
    assert time.monotonic()<deadline,'Transfer timeout'
    cur,etag=request(etag=etag)
@@ -32,6 +47,7 @@ with tempfile.TemporaryDirectory() as td:
    request('PATCH',{'phase':'ack','i':index});index+=1
    if index%25==0 or index==total:print('Private transfer',index,'/',total,flush=True)
  assert sha(packet)==args['bundle_sha256'];time.sleep(2)
+ if not reuse:gh('release','upload',tag,str(packet),'--repo',repo,'--clobber')
  request('PATCH','Су-30СМ — личная проверка №1. HappyMexicano7, CC BY 4.0. Материалы получены; сборка и проверка Windows выполняются в Actions. Полная поставка остаётся черновиком.')
  b=t/'bundle'
  with zipfile.ZipFile(packet) as z:assert z.testzip() is None;z.extractall(b)

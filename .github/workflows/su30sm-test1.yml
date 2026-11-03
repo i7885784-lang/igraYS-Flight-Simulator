@@ -2,6 +2,10 @@ name: Su-30SM private test 1
 on:
   workflow_dispatch:
     inputs:
+      reuse_bundle:
+        required: false
+        type: boolean
+        default: false
       bundle_sha256:
         required: true
         type: string
