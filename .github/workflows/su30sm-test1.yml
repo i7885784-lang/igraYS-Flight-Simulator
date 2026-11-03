@@ -16,6 +16,11 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-su30sm-test1
+            reports/su30sm-test-1
+            reports/personal-playtest-17
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -29,6 +34,11 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/aircraft-su30sm-test1
+            reports/su30sm-test-1
+            reports/personal-playtest-17
       - name: Launch actual Windows x86 build and cycle landing gear
         env:
           GH_TOKEN: ${{ github.token }}
