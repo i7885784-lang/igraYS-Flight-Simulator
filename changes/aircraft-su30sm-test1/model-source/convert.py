@@ -45,6 +45,6 @@ for side in ['0','1']:
 assert metadata['source_triangles']==418250
 for name in ['su30sm.dnm','su30sm_coarse.dnm']:dnm.write(out/name,packs,nodes)
 # Separate collision envelope does not replace or simplify visible source meshes.
-hull=ConvexHull(cv(vv));coll=Mesh();coll.v=[tuple(v) for v in cv(vv)];coll.f=[(list(q),(90,100,120),False) for q in hull.simplices];(out/'su30smcoll.srf').write_text('\n'.join(coll.srf())+'\n');(out/'su30smcockpit.srf').write_text('SURF\nE\n')
+hull=ConvexHull(cv(vv));used=np.unique(hull.simplices);remap={int(old):new for new,old in enumerate(used)};coll=Mesh();coll.v=[tuple(v) for v in cv(vv)[used]];coll.f=[([remap[int(i)] for i in q],(90,100,120),False) for q in hull.simplices];(out/'su30smcoll.srf').write_text('\n'.join(coll.srf())+'\n');(out/'su30smcockpit.srf').write_text('SURF\nE\n')
 dnm.write(r/'source-stage.dnm',packs,nodes)
 (r/'conversion.json').write_text(json.dumps(metadata,indent=2));np.savez_compressed(r/'source_geometry.npz',vertices=cv(vv));print('CONVERTED',metadata['source_triangles'],'triangles','bounds',metadata['bounds_m'],flush=True)

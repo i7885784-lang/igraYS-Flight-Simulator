@@ -1,5 +1,6 @@
 from pathlib import Path
 import subprocess, tempfile, zipfile, time, json, hashlib, shutil
+from compact_collision import compact_collision
 
 repo = 'i7885784-lang/igraYS-Flight-Simulator'
 tag = 'personal-su30sm-test1-20261103'
@@ -19,6 +20,11 @@ with tempfile.TemporaryDirectory() as td:
     with zipfile.ZipFile(archive) as z:
         z.extractall(temp)
     game = temp / 'YSFlight_Su30SM_Test_1_Game'
+    # A second full DNM consumes memory without adding any visible detail.
+    registration = game / 'aircraft/air_su30sm.lst'
+    registration.write_text(' '.join(registration.read_text().split()[:4]) + '\n')
+    (game / 'aircraft/su30sm_coarse.dnm').unlink(missing_ok=True)
+    collision_memory = compact_collision(game / 'aircraft/su30smcoll.srf')
     # A clean Windows account otherwise opens the automatic demo before WAITFOR:GUI.
     shutil.copytree(game / 'config', game / 'config-su30', dirs_exist_ok=True)
     (game / 'config-su30/option.cfg').write_text('OPENDEMO FALSE\nFONTHEIGHT 18\nLANGUAGE "FILE:ru.uitxt"\n')
@@ -54,6 +60,7 @@ with tempfile.TemporaryDirectory() as td:
                   '$i.Save("' + str(evidence / 'windows-x86.png') + '"); $g.Dispose(); $i.Dispose()')
             subprocess.run(['powershell', '-NoProfile', '-Command', ps], check=True)
             result = {'passed': True, 'platform': 'native Windows runner', 'architecture': 'PE32 i386',
+                      'collision_memory': collision_memory, 'full_visual_model_instances': 1,
                       'elapsed_seconds': round(time.monotonic() - began, 2),
                       'scope': 'Su-30SM flight loaded; two native landing gear commands; process remained running'}
             (evidence / 'result.json').write_text(json.dumps(result, indent=2))
@@ -71,6 +78,10 @@ with tempfile.TemporaryDirectory() as td:
         z.extractall(source_dir)
     source_root = source_dir / 'sources'
     template = source_root / 'su30sm-test1/runtime-template'
+    code = Path('changes/aircraft-su30sm-test1').resolve()
+    shutil.copy2(code / 'model-source/convert.py', source_root / 'su30sm-test1/model-source/convert.py')
+    shutil.copy2(code / 'compact_collision.py', source_root / 'su30sm-test1/compact_collision.py')
+    shutil.copy2(registration, template / 'aircraft/air_su30sm.lst')
     shutil.copy2(game / 'Play_Su30SM.bat', template / 'Play_Su30SM.bat')
     shutil.copytree(game / 'config-su30', template / 'config-su30', dirs_exist_ok=True)
     for output, root in [(archive, game), (sources_zip, source_root)]:
@@ -96,6 +107,9 @@ with tempfile.TemporaryDirectory() as td:
     text = text.replace('Проверка запуска Windows x86 выполняется при загрузке архивов; актуальный отдельный протокол — STATUS.json в черновике GitHub.',
                         'Запуск на настоящем Windows x86: пройден. Загружен полёт на Су-30СМ, выполнены две команды шасси, приложение продолжило работать. Это проверка запуска и команд; подробная геометрия проверена отдельно в 101 положении.')
     text = text.replace('<div id="windows-evidence"></div>', '<figure><a href="windows-x86.png"><img src="windows-x86.png" alt="Windows x86"></a><figcaption>Реальный запуск 32-битной игры на Windows. <a href="windows-result.json">Протокол</a></figcaption></figure>')
+    text = text.replace('дальний DNM содержит ту же полную модель', 'на всех дистанциях используется одна полная модель без дублирующего DNM')
+    text = text.replace('облегчённые варианты не создавались:', 'облегчённые варианты не создавались:')
+    text = text.replace('<h2>Практические ограничения</h2>', '<h2>Память 32-битной версии</h2><p>Удалена повторная загрузка идентичного дальнего DNM. Полная видимая геометрия сохранена и используется на всех дистанциях. Из невидимой оболочки столкновений удалены только неиспользуемые вершины; все её физические треугольники проверены на точное совпадение.</p><h2>Практические ограничения</h2>')
     (report_root / 'index.html').write_text(text, encoding='utf-8')
     shutil.copy2(evidence / 'windows-x86.png', report_root / 'windows-x86.png')
     shutil.copy2(evidence / 'result.json', report_root / 'windows-result.json')
