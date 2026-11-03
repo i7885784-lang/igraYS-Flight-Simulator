@@ -21,3 +21,7 @@ The current aircraft task is docs/aircraft-model-upgrade/TASK_PROMPT.md.
 Read it first; README.md and TASK_DETAILS.md in that directory are reference. Preserve the already published Su-47 work. Read
 docs/THIRD_PARTY_LICENSE_PLAN.md: defer license UI placement; preserve
 required notices and source materials now. Do not add a main-menu screen.
+
+## Су-30СМ №2 завершён
+
+Последний отдельный тест Су30: reports/su30sm-test-2/STATUS.json, код changes/aircraft-su30sm-test2, подробное продолжение в WORK_STATUS.md. Release432779163 оставить DRAFT. Один архив32/64, прозрачный фонарь/камера/общий обзор ЛКМ и двойнойПробел; исходники и остальные самолёты сохранены. Полные данные в начале PROJECT_HANDOFF.md. Не откатывать эти изменения ктесту1, если задача продолжает Су30.
