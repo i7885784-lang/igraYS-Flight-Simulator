@@ -14,12 +14,24 @@ with tempfile.TemporaryDirectory() as td:
     temp = Path(td)
     gh('release', 'download', tag, '--repo', repo, '--pattern', 'YSFlight_Su30SM_Test_1_Game_32bit.zip', '--pattern', 'YSFlight_Su30SM_Test_1_Sources.zip', '--pattern', 'YSFlight_Su30SM_Test_1_Report.zip', '--pattern', 'STATUS.json', '--dir', str(temp))
     status = json.loads((temp / 'STATUS.json').read_text())
+    release = json.loads(gh('api', 'repos/' + repo + '/releases/432469264'))
+    assert release['draft']
+    prefix = release['html_url'].replace('/tag/', '/download/')
+    status['release_url'] = release['html_url']
+    for item in status['assets']:
+        item['url'] = prefix + '/' + item['name']
     archive = temp / 'YSFlight_Su30SM_Test_1_Game_32bit.zip'
     expected = next(a['sha256'] for a in status['assets'] if a['name'] == archive.name)
     assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected
     with zipfile.ZipFile(archive) as z:
         z.extractall(temp)
     game = temp / 'YSFlight_Su30SM_Test_1_Game'
+    source_url = next(a['url'] for a in status['assets'] if a['name'] == 'YSFlight_Su30SM_Test_1_Sources.zip')
+    (game / 'SOURCE_DOWNLOADS.txt').write_text('Complete corresponding sources:\n' + source_url + '\n\nVerified download directory:\nhttps://github.com/' + repo + '/tree/ysflight-center-download/reports/su30sm-test-1\n')
+    starter = game / 'Start_Su30SM.script'
+    start_text = starter.read_text()
+    if 'BTNFUNC:VIEWZOOM' not in start_text:
+        starter.write_text(start_text + 'BTNFUNC:VIEWZOOM\n' * 26)
     # A second full DNM consumes memory without adding any visible detail.
     registration = game / 'aircraft/air_su30sm.lst'
     registration.write_text(' '.join(registration.read_text().split()[:4]) + '\n')
@@ -34,7 +46,7 @@ with tempfile.TemporaryDirectory() as td:
     profile.mkdir(exist_ok=True)
     script = ('WAITFOR:GUI\nSLEEP:500\n' + 'GUI:CLOSEMODAL\n' * 4 +
               'SLEEP:1500\nFILE:OPEN Su30SM_Play.yfs\nGUI:CLICK mainDlg flyNow\n'
-              'WAITFOR:FLYING\nBTNFUNC:OUTSIDEPLAYERVIEW\nBTNFUNC:LANDINGGEAR\n'
+              'WAITFOR:FLYING\nBTNFUNC:OUTSIDEPLAYERVIEW\n' + 'BTNFUNC:VIEWZOOM\n' * 26 + 'BTNFUNC:LANDINGGEAR\n'
               'SLEEP:9000\nBTNFUNC:LANDINGGEAR\nSLEEP:9000\nREM SU30_X86_FLIGHT_AND_GEAR_COMPLETE\nSLEEP:60000\n')
     (game / 'WindowsSmoke.script').write_text(script)
     log = evidence / 'windows-x86.log'
@@ -84,6 +96,7 @@ with tempfile.TemporaryDirectory() as td:
     shutil.copy2(code / 'README_RU.md', source_root / 'su30sm-test1/README_RU.md')
     shutil.copy2(registration, template / 'aircraft/air_su30sm.lst')
     shutil.copy2(game / 'Play_Su30SM.bat', template / 'Play_Su30SM.bat')
+    shutil.copy2(starter, template / 'Start_Su30SM.script')
     shutil.copytree(game / 'config-su30', template / 'config-su30', dirs_exist_ok=True)
     for output, root in [(archive, game), (sources_zip, source_root)]:
         with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, 6) as z:
