@@ -1,5 +1,5 @@
 from pathlib import Path
-import subprocess, tempfile, zipfile, time, json, hashlib
+import subprocess, tempfile, zipfile, time, json, hashlib, shutil
 
 repo = 'i7885784-lang/igraYS-Flight-Simulator'
 tag = 'personal-su30sm-test1-20261103'
@@ -11,7 +11,7 @@ def gh(*args):
 
 with tempfile.TemporaryDirectory() as td:
     temp = Path(td)
-    gh('release', 'download', tag, '--repo', repo, '--pattern', 'YSFlight_Su30SM_Test_1_Game_32bit.zip', '--pattern', 'YSFlight_Su30SM_Test_1_Report.zip', '--pattern', 'STATUS.json', '--dir', str(temp))
+    gh('release', 'download', tag, '--repo', repo, '--pattern', 'YSFlight_Su30SM_Test_1_Game_32bit.zip', '--pattern', 'YSFlight_Su30SM_Test_1_Sources.zip', '--pattern', 'YSFlight_Su30SM_Test_1_Report.zip', '--pattern', 'STATUS.json', '--dir', str(temp))
     status = json.loads((temp / 'STATUS.json').read_text())
     archive = temp / 'YSFlight_Su30SM_Test_1_Game_32bit.zip'
     expected = next(a['sha256'] for a in status['assets'] if a['name'] == archive.name)
@@ -19,6 +19,13 @@ with tempfile.TemporaryDirectory() as td:
     with zipfile.ZipFile(archive) as z:
         z.extractall(temp)
     game = temp / 'YSFlight_Su30SM_Test_1_Game'
+    # A clean Windows account otherwise opens the automatic demo before WAITFOR:GUI.
+    shutil.copytree(game / 'config', game / 'config-su30', dirs_exist_ok=True)
+    (game / 'config-su30/option.cfg').write_text('OPENDEMO FALSE\nFONTHEIGHT 18\nLANGUAGE "FILE:ru.uitxt"\n')
+    launcher = '@echo off\r\ncd /d "%~dp0"\r\nif not exist "user-su30" mkdir "user-su30"\r\nstart "" ysflight32_gl1.exe -userdir "%~dp0user-su30" -configdir "%~dp0config-su30" -script Start_Su30SM.script\r\n'
+    (game / 'Play_Su30SM.bat').write_bytes(launcher.encode('ascii'))
+    profile = game / 'user-su30'
+    profile.mkdir(exist_ok=True)
     script = ('WAITFOR:GUI\nSLEEP:500\n' + 'GUI:CLOSEMODAL\n' * 4 +
               'SLEEP:1500\nFILE:OPEN Su30SM_Play.yfs\nGUI:CLICK mainDlg flyNow\n'
               'WAITFOR:FLYING\nBTNFUNC:OUTSIDEPLAYERVIEW\nBTNFUNC:LANDINGGEAR\n'
@@ -27,7 +34,7 @@ with tempfile.TemporaryDirectory() as td:
     log = evidence / 'windows-x86.log'
     began = time.monotonic()
     with log.open('w') as f:
-        app = subprocess.Popen([str(game / 'ysflight32_gl1.exe'), '-script', 'WindowsSmoke.script'], cwd=game, stdout=f, stderr=f)
+        app = subprocess.Popen([str(game / 'ysflight32_gl1.exe'), '-userdir', str(profile), '-configdir', str(game / 'config-su30'), '-script', 'WindowsSmoke.script'], cwd=game, stdout=f, stderr=f)
         try:
             while time.monotonic() - began < 180:
                 text = log.read_text(errors='replace')
@@ -57,6 +64,29 @@ with tempfile.TemporaryDirectory() as td:
                 app.wait(timeout=10)
             except subprocess.TimeoutExpired:
                 app.kill()
+    # Preserve the working launcher and its configuration in both deliverables.
+    sources_zip = temp / 'YSFlight_Su30SM_Test_1_Sources.zip'
+    source_dir = temp / 'source-final'
+    with zipfile.ZipFile(sources_zip) as z:
+        z.extractall(source_dir)
+    source_root = source_dir / 'sources'
+    template = source_root / 'su30sm-test1/runtime-template'
+    shutil.copy2(game / 'Play_Su30SM.bat', template / 'Play_Su30SM.bat')
+    shutil.copytree(game / 'config-su30', template / 'config-su30', dirs_exist_ok=True)
+    for output, root in [(archive, game), (sources_zip, source_root)]:
+        with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, 6) as z:
+            for p in sorted(root.rglob('*')):
+                if p.is_file() and 'user-su30' not in p.parts and p.name != 'WindowsSmoke.script':
+                    z.write(p, root.name + '/' + str(p.relative_to(root)))
+        with zipfile.ZipFile(output) as z:
+            assert z.testzip() is None
+        digest = hashlib.sha256(output.read_bytes()).hexdigest()
+        gh('release', 'upload', tag, str(output), '--repo', repo, '--clobber')
+        verify = temp / ('verify-' + root.name)
+        verify.mkdir()
+        gh('release', 'download', tag, '--repo', repo, '--pattern', output.name, '--dir', str(verify))
+        assert hashlib.sha256((verify / output.name).read_bytes()).hexdigest() == digest
+        next(a for a in status['assets'] if a['name'] == output.name).update(sha256=digest, bytes=output.stat().st_size, download_verified=True)
     report_zip = temp / 'YSFlight_Su30SM_Test_1_Report.zip'
     report_dir = temp / 'report-final'
     with zipfile.ZipFile(report_zip) as z:
@@ -67,7 +97,6 @@ with tempfile.TemporaryDirectory() as td:
                         'Запуск на настоящем Windows x86: пройден. Загружен полёт на Су-30СМ, выполнены две команды шасси, приложение продолжило работать. Это проверка запуска и команд; подробная геометрия проверена отдельно в 101 положении.')
     text = text.replace('<div id="windows-evidence"></div>', '<figure><a href="windows-x86.png"><img src="windows-x86.png" alt="Windows x86"></a><figcaption>Реальный запуск 32-битной игры на Windows. <a href="windows-result.json">Протокол</a></figcaption></figure>')
     (report_root / 'index.html').write_text(text, encoding='utf-8')
-    import shutil
     shutil.copy2(evidence / 'windows-x86.png', report_root / 'windows-x86.png')
     shutil.copy2(evidence / 'result.json', report_root / 'windows-result.json')
     shutil.copy2(log, report_root / 'windows-x86.log')

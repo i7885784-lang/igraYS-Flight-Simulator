@@ -2,6 +2,10 @@ name: Su-30SM private test 1
 on:
   workflow_dispatch:
     inputs:
+      windows_only:
+        required: false
+        type: boolean
+        default: false
       reuse_bundle:
         required: false
         type: boolean
@@ -16,6 +20,7 @@ permissions:
   contents: write
 jobs:
   upload:
+    if: ${{ !inputs.windows_only }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -34,6 +39,7 @@ jobs:
         run: python changes/aircraft-su30sm-test1/transfer_draft.py
   windows32:
     needs: upload
+    if: ${{ always() && (needs.upload.result == 'success' || inputs.windows_only) }}
     runs-on: windows-latest
     timeout-minutes: 15
     steps:
