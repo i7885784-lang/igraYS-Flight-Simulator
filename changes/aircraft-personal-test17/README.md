@@ -1,0 +1,5 @@
+# Personal test17 — MiG-29 aft bay closure
+
+Adds paired guided extensions between the existing engine-side contour and rear source gear door. Existing test16 meshes, materials and all existing moving states are exact. This is an own game-model mechanism adaptation, not a factory reconstruction. The closed appearance is unchanged by clearance offsets; small relative motion during the initial13% of the cycle avoids other parts. clearance-fit.json records the verified path. fit_motion.py is the development search, not part of the build pipeline.
+
+Complete private source archive includes test17/baseline/mig29.dnm (test16), model-source and all inherited upstream/source/attribution. Install requirements and run build_models.py. Check new closure against fixed/forward/return parts with check_rear.py, gear with audit_mig.py, paired door interiors with check_parent.py. The paired common edge is intentionally excluded by a1% per-facet inset in the latter check. Closed wheel occlusion remains protected by preserving every existing pack/node and adding opaque surfaces.

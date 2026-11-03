@@ -1,0 +1,15 @@
+{
+  "test": 17,
+  "base": 16,
+  "changed_files": [
+    "aircraft/mig29.dnm",
+    "aircraft/mig29_coarse.dnm"
+  ],
+  "new_packs": [
+    "MainBayRearClosureL.srf",
+    "MainBayRearClosureR.srf"
+  ],
+  "all_existing_packs_and_nodes_unchanged": true,
+  "engine_unchanged": true,
+  "mig_sha256": "e60049c915cdd0908cbfe66b347e4d78d96eed5270fc9e3e7edbcf1e793d3d9e"
+}
