@@ -1,0 +1,5 @@
+numpy
+scipy
+shapely
+Pillow
+python-fcl

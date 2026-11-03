@@ -1,0 +1,127 @@
+{
+  "[0, -1, 0]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(1.0), np.float64(-0.0), np.float64(0.0)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.955336489125606), np.float64(-0.29552020666133955), np.float64(0.0)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.6967067093471654), np.float64(-0.7173560908995228), np.float64(0.0)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.7071067811865476), np.float64(-0.0), np.float64(0.7071067811865475)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.6755249097756645), np.float64(-0.29552020666133955), np.float64(0.6755249097756644)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.4926460386775457), np.float64(-0.7173560908995228), np.float64(0.4926460386775456)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(6.123233995736766e-17), np.float64(-0.0), np.float64(1.0)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(5.849748867581718e-17), np.float64(-0.29552020666133955), np.float64(0.955336489125606)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(4.266098207732457e-17), np.float64(-0.7173560908995228), np.float64(0.6967067093471654)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.7071067811865475), np.float64(-0.0), np.float64(0.7071067811865476)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.6755249097756644), np.float64(-0.29552020666133955), np.float64(0.6755249097756645)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.4926460386775456), np.float64(-0.7173560908995228), np.float64(0.4926460386775457)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-1.0), np.float64(-0.0), np.float64(1.2246467991473532e-16)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.955336489125606), np.float64(-0.29552020666133955), np.float64(1.1699497735163436e-16)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.6967067093471654), np.float64(-0.7173560908995228), np.float64(8.532196415464914e-17)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.7071067811865477), np.float64(-0.0), np.float64(-0.7071067811865475)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.6755249097756646), np.float64(-0.29552020666133955), np.float64(-0.6755249097756644)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-0.49264603867754575), np.float64(-0.7173560908995228), np.float64(-0.4926460386775456)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-1.8369701987210297e-16), np.float64(-0.0), np.float64(-1.0)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-1.7549246602745153e-16), np.float64(-0.29552020666133955), np.float64(-0.955336489125606)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(-1.2798294623197371e-16), np.float64(-0.7173560908995228), np.float64(-0.6967067093471654)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.7071067811865474), np.float64(-0.0), np.float64(-0.7071067811865477)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.6755249097756643), np.float64(-0.29552020666133955), np.float64(-0.6755249097756646)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  },
+  "[np.float64(0.49264603867754553), np.float64(-0.7173560908995228), np.float64(-0.49264603867754575)]": {
+    "visible_samples": 0,
+    "total": 2816,
+    "points": []
+  }
+}

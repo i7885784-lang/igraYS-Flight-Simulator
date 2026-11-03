@@ -1,0 +1,17 @@
+{
+  "test": 16,
+  "base": 15,
+  "changed_files": [
+    "aircraft/mig29.dnm",
+    "aircraft/mig29_coarse.dnm"
+  ],
+  "changed_packs": [
+    "MainBayAftCap-1.srf",
+    "MainBayAftCap1.srf",
+    "MainBayOuterWalls.srf"
+  ],
+  "moving_nodes_unchanged": true,
+  "su57_preview_excluded": true,
+  "engine_unchanged": true,
+  "mig_sha256": "f1c5599dcc1704540922fbc4b8a8f0ddd4a035d669f4037cd09ef4d7b4e7da3c"
+}

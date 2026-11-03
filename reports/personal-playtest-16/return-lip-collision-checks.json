@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "poses": 401,
+  "hits": [],
+  "closed_mating_contacts": [
+    {
+      "g": 0.0,
+      "part": "MainBayReturnStripL11",
+      "other": "Source_fwdgeardoor_L",
+      "point": [
+        1.41609,
+        0.01082,
+        -1.22449
+      ]
+    },
+    {
+      "g": 0.0,
+      "part": "MainBayReturnStripL12",
+      "other": "Source_fwdgeardoor_L",
+      "point": [
+        1.41609,
+        0.01082,
+        -1.22449
+      ]
+    },
+    {
+      "g": 0.0,
+      "part": "MainBayReturnStripR11",
+      "other": "Source_fwdgeardoor_R",
+      "point": [
+        -1.40692,
+        0.02335,
+        -1.22803
+      ]
+    },
+    {
+      "g": 0.0,
+      "part": "MainBayReturnStripR12",
+      "other": "Source_fwdgeardoor_R",
+      "point": [
+        -1.40692,
+        0.02335,
+        -1.22803
+      ]
+    }
+  ]
+}
