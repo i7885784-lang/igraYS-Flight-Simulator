@@ -12,15 +12,12 @@ def graphql(query,variables):
  assert 'errors' not in d,d.get('errors')
  return d['data']
 def request(method='GET',body=None,etag=None):
- if method=='GET':
-  node=graphql('query($id:ID!){node(id:$id){...on Release{description isDraft}}}',{'id':'RE_kwDOVMEAJs4ZxvUQ'})['node']
-  return {'body':node['description'],'draft':node['isDraft']},None
  if isinstance(body,dict) and body.get('phase')=='ack':
   graphql('mutation($id:ID!,$oid:GitObjectID!){updateRef(input:{refId:$id,oid:$oid,force:true}){ref{id}}}',{'id':ack_info['ref_id'],'oid':ack_info['oids'][body['i']%2]})
   return body,None
  h=dict(headers)
  if etag:h['If-None-Match']=etag
- data=None if body is None else json.dumps({'body':json.dumps(body) if isinstance(body,dict) else body}).encode()
+ data=None if body is None else json.dumps({'tag_name':tag,'draft':True,'body':json.dumps(body) if isinstance(body,dict) else body}).encode()
  try:
   with urllib.request.urlopen(urllib.request.Request(api,data=data,headers=h,method=method),timeout=45) as res:return json.load(res),res.headers.get('ETag')
  except urllib.error.HTTPError as e:
