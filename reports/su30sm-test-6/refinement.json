@@ -1,0 +1,123 @@
+{
+  "Fuselage_0_4": {
+    "modified_vertices": 2516,
+    "max_transverse_factor_above_root": 0.44,
+    "side_silhouette_yz_unchanged": true
+  },
+  "Fuselage_0_5": {
+    "modified_vertices": 2232,
+    "max_transverse_factor_above_root": 0.44,
+    "side_silhouette_yz_unchanged": true
+  },
+  "Rudder_Right_3_24": {
+    "modified_vertices": 720,
+    "max_transverse_factor_above_root": 0.44,
+    "side_silhouette_yz_unchanged": true
+  },
+  "Rudder_Left_7_33": {
+    "modified_vertices": 1056,
+    "max_transverse_factor_above_root": 0.44,
+    "side_silhouette_yz_unchanged": true
+  },
+  "Cockpit_cover_6_30": {
+    "old_open_degrees": 55,
+    "open_degrees": 43,
+    "closed_mesh_unchanged": true
+  },
+  "Cockpit_cover_6_31": {
+    "old_open_degrees": 55,
+    "open_degrees": 43,
+    "closed_mesh_unchanged": true
+  },
+  "airbrake": {
+    "hinge_degrees": 65,
+    "visible_rear_edge_inclination_approx_degrees": 52,
+    "actuator_base": [
+      0.0,
+      0.9639402958682808,
+      1.075515102302432
+    ],
+    "leaf_attachment_local": [
+      0.0,
+      -0.47692300000000004,
+      -1.72
+    ],
+    "actuator_lengths": [
+      1.3251450592025766,
+      1.3337405093936128,
+      1.3442347200037008,
+      1.3565503078038366,
+      1.3705991463936833,
+      1.3862840939649066,
+      1.4035007486568358,
+      1.4221391663326628,
+      1.442085487473362,
+      1.4632234332644822,
+      1.485435644360488,
+      1.508604848120547,
+      1.5326148505851411,
+      1.5573513577475016,
+      1.5827026367182928,
+      1.6085600313552473,
+      1.6348183491317603,
+      1.661376136806586,
+      1.6881358621899474,
+      1.715004018305659,
+      1.7418911647992725
+    ]
+  },
+  "lower_Left": {
+    "shared_sections_x": [
+      0.58,
+      0.78,
+      1.03,
+      1.2,
+      1.4,
+      1.5,
+      1.62,
+      1.74,
+      1.87,
+      2.4
+    ],
+    "sections_z": [
+      -3.38,
+      -2.2,
+      -1.3,
+      -0.41
+    ],
+    "shutter_opening_z": [
+      -1.85,
+      -0.66
+    ],
+    "paint": "original test4/5 colour rule and palette retained on replacement panels"
+  },
+  "lower_Right": {
+    "shared_sections_x": [
+      0.58,
+      0.78,
+      1.03,
+      1.2,
+      1.4,
+      1.5,
+      1.62,
+      1.74,
+      1.87,
+      2.4
+    ],
+    "sections_z": [
+      -3.38,
+      -2.2,
+      -1.3,
+      -0.41
+    ],
+    "shutter_opening_z": [
+      -1.85,
+      -0.66
+    ],
+    "paint": "original test4/5 colour rule and palette retained on replacement panels"
+  },
+  "nose_aft_split": [
+    "GearDoor_Nose_Aft_Left",
+    "GearDoor_Nose_Aft_Right"
+  ]
+}
