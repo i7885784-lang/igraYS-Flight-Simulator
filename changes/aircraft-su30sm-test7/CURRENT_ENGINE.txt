@@ -1,0 +1,1 @@
+Corresponding engine unchanged from test3: ../su30sm-test3/engine. Original GLB and prior converter: ../su30sm-test4/source and model-source. Test6 refinement input: baseline/su30sm.dnm from verified Game5. Previous test5 sources preserved. All engine/source licenses retained.

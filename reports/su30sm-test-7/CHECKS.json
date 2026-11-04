@@ -1,0 +1,52 @@
+{
+  "scope": "Visual repair after user rejection of test6; acceptance pending",
+  "expected_models": {
+    "su30sm.dnm": "b841b607cff450508f196ec3ae2bc06602c6825b9a15549ae505c8efdf984c90",
+    "su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+    "su30smcockpit.dnm": "ff507e7e9459c77b5f38385bb5be5e3172fd42b41370610b6429a45445d8e7b7",
+    "su30smcoll.srf": "a0c30f3d0b2207406267d8dc89f67353c6ae5d7c2e6e1859d34dfdf14a068b94",
+    "air_su30sm.lst": "03648e5583b523492b0841c1365df843d1291ca43cfad67d27eb363b325dbc17"
+  },
+  "engine_unchanged": true,
+  "no_smoothing": true,
+  "assembly_checks": {
+    "model_sha256": "b841b607cff450508f196ec3ae2bc06602c6825b9a15549ae505c8efdf984c90",
+    "poses": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.7,
+      0.8,
+      0.9,
+      1
+    ],
+    "rigid_attachment_error": 0.0,
+    "contacts": []
+  },
+  "native": {
+    "gear": {
+      "passed": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "canopy": {
+      "passed": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "spoiler": {
+      "passed": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "source_reference": "references.json; photos supplied by user; original shape and dimensions retained"
+}

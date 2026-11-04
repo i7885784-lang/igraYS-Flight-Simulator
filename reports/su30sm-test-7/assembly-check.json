@@ -1,0 +1,16 @@
+{
+  "model_sha256": "b841b607cff450508f196ec3ae2bc06602c6825b9a15549ae505c8efdf984c90",
+  "poses": [
+    0,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9,
+    1
+  ],
+  "rigid_attachment_error": 0.0,
+  "contacts": []
+}
