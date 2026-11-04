@@ -5,6 +5,9 @@ on:
       release_id:
         required: true
         type: string
+      resume:
+        type: boolean
+        default: false
 permissions:
   contents: write
 jobs:
@@ -22,7 +25,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r changes/su30sm-test5-shutter-fix/requirements.txt
-      - run: python changes/su30sm-test5-shutter-fix/deliver.py
+      - if: ${{ ! inputs.resume }}
+        run: python changes/su30sm-test5-shutter-fix/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}
+      - if: ${{ inputs.resume }}
+        run: python changes/su30sm-test5-shutter-fix/finish_delivery.py
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_ID: ${{ inputs.release_id }}
