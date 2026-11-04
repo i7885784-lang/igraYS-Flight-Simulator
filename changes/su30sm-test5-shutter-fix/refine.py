@@ -14,7 +14,14 @@ for side in ['Left','Right']:
    if old is None or q[:,1].mean()<old[0][:,1].mean()-1e-8:paints[key]=(q,c)
  support=dnm.mesh((r/'baseline'/('support-'+side+'.srf')).read_text().splitlines());v=np.array(support.v);v,idx=np.unique(np.round(v,6),axis=0,return_inverse=True);tri=np.array([idx[ids] for ids,c,b in support.f]);unique={}
  for ids in tri:unique[tuple(sorted(ids))]=ids
- tri=np.array(list(unique.values()));v,tri,colors,meta=build_surface(v,tri,side,list(paints.values()));edge=collections.Counter(tuple(sorted((int(a),int(b)))) for ids in tri for a,b in zip(ids,np.roll(ids,-1)));directed={tuple(sorted((int(a),int(b)))):(int(a),int(b)) for ids in tri for a,b in zip(ids,np.roll(ids,-1))};boundary=[directed[e] for e,c in edge.items() if c==1];m=Mesh();offset=np.array([0,-.008,0]);color=(142,169,181)
+ tri=np.array(list(unique.values()));
+ if '--retriangulate' in sys.argv:
+  v,tri,colors,meta=build_surface(v,tri,side,list(paints.values()))
+ else:
+  expected={'su30sm.dnm':'17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504',**json.loads((r/'source-data/layout-input-hashes.json').read_text())}
+  for filename,digest in expected.items():assert hashlib.sha256((r/'baseline'/filename).read_bytes()).hexdigest()==digest, 'Changed input: use --retriangulate and repeat geometry/game verification'
+  layout=json.loads((r/'source-data'/('validated-layout-'+side+'.json')).read_text());v=np.array(layout['vertices']);tri=np.array(layout['triangles']);colors=[tuple(c) for c in layout['colors']];meta=layout['metadata']
+ edge=collections.Counter(tuple(sorted((int(a),int(b)))) for ids in tri for a,b in zip(ids,np.roll(ids,-1)));directed={tuple(sorted((int(a),int(b)))):(int(a),int(b)) for ids in tri for a,b in zip(ids,np.roll(ids,-1))};boundary=[directed[e] for e,c in edge.items() if c==1];m=Mesh();offset=np.array([0,-.008,0]);color=(142,169,181)
  for ids,color in zip(tri,colors):
   q=v[ids];m.face((q+offset-t)@R,color);m.face((q[::-1]-t)@R,(98,113,121))
  for a,b in boundary:

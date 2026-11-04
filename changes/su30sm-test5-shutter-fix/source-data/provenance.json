@@ -1,6 +1,6 @@
 {
   "input_model_sha256": "ecd8890a53cc5a11dc5392ceaa50898eb966199f8b0e8ad3fecc821e235fc4df",
-  "input_description": "Original pre-refinement4 skin in sources/su30sm-test4/baseline/su30sm.dnm; no test6/7 geometry",
+  "input_description": "Original pre-refinement4 intermediate from lab su30sm-test-4/baseline/su30sm.dnm, before convex-hull interpolation; intermediate not separately shipped; clipped editable support SRFs shipped with original GLB/converter history. No test6/7 geometry.",
   "exterior_face_color_before_repaint": [
     57,
     50,
