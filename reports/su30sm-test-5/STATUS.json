@@ -1,0 +1,171 @@
+{
+  "draft": true,
+  "baseline": "su30sm-test-4",
+  "engine_unchanged": true,
+  "release_id": 433727284,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-26ac02ddaaa01c0273af",
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test_5_Game_Win32_Win64.zip",
+      "bytes": 45752620,
+      "sha256": "31d22516a2a8a62661681618585519c8a7ac33f4dc4211bf46aa58d83cd9bc67",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Game_Win32_Win64.zip",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Su30SM_Test_5_Sources.zip",
+      "bytes": 216917547,
+      "sha256": "75d6370b044b858c5c4c159e6746973074a7684ecb4343d3ead846c0e23671eb",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Sources.zip",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Su30SM_Test_5_Report.zip",
+      "bytes": 2679193,
+      "sha256": "9c3d744eac32ea1d850ac1a3d60bcce1bc14f3f51ba74aa81b51e4ba610db74c",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Report.zip",
+      "download_verified": true
+    }
+  ],
+  "checks": {
+    "scope": "Targeted rudder hinge and deployed landing-gear visual repair; user acceptance pending",
+    "expected_models": {
+      "su30sm.dnm": "7f3853718373cb38146d5cb95abee7c6531ff4ffd263819e2e2a78c1323ab15e",
+      "su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+      "su30smcockpit.dnm": "8ee95599fca588e739fd430f6b58ef278a32d41f7217d6cfb504347fc92f0395",
+      "su30smcoll.srf": "a0c30f3d0b2207406267d8dc89f67353c6ae5d7c2e6e1859d34dfdf14a068b94",
+      "air_su30sm.lst": "03648e5583b523492b0841c1365df843d1291ca43cfad67d27eb363b325dbc17"
+    },
+    "neutral_fin_outline_unchanged": true,
+    "no_smoothing": true,
+    "engine_unchanged_from_test4": true,
+    "other_aircraft_unchanged": true,
+    "assembly_checks": {
+      "model_sha256": "7f3853718373cb38146d5cb95abee7c6531ff4ffd263819e2e2a78c1323ab15e",
+      "poses": [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.8,
+        0.9,
+        1
+      ],
+      "rigid_attachment_error": 0.0,
+      "contacts": []
+    },
+    "dimensions": {
+      "actual": {
+        "length_m": 21.935000000000002,
+        "wingspan_m": 14.7,
+        "height_m": 6.360315,
+        "wheelbase_m": 5.57,
+        "main_track_m": 4.1
+      },
+      "reference": {
+        "reference": "User-supplied Su-30SM general arrangement sheet, title bottom right",
+        "length_m": 21.9,
+        "wingspan_m": 14.7,
+        "height_m": 6.36,
+        "wheelbase_m": 5.57,
+        "main_track_m": 4.1,
+        "note": "Explicit dimension arrows take precedence over contradictory/illegible table entries. No factory provenance claimed."
+      },
+      "difference_m": {
+        "length_m": 0.035000000000003695,
+        "wingspan_m": 0.0,
+        "height_m": 0.00031499999999962114,
+        "wheelbase_m": 0.0,
+        "main_track_m": 0.0
+      },
+      "main_centres": [
+        [
+          -2.05,
+          -2.06,
+          -2.8
+        ],
+        [
+          2.05,
+          -2.06,
+          -2.8
+        ]
+      ],
+      "nose_centre": [
+        0.0,
+        -2.22,
+        2.77
+      ],
+      "no_smoothing_normals": true
+    },
+    "references": {
+      "drawing": "User-supplied Su-30SM general arrangement and HobbyMaster HA9506",
+      "assembly": "https://zvezda.org.ru/upload/iblock/cc6/7314_ins_web.pdf",
+      "qualification": "Model assembly instructions and supplied scheme, not verified factory engineering drawings"
+    },
+    "native_checks": {
+      "gear": {
+        "passed": true,
+        "min": 0.0,
+        "max": 1.0,
+        "events": [
+          [
+            0.2,
+            "g",
+            "tap"
+          ],
+          [
+            7.3,
+            "g",
+            "tap"
+          ]
+        ]
+      },
+      "rudder": {
+        "passed": true,
+        "min": -1.0,
+        "max": 1.0,
+        "events": [
+          [
+            0.8,
+            "z",
+            "down"
+          ],
+          [
+            3.0,
+            "z",
+            "up"
+          ],
+          [
+            3.2,
+            "x",
+            "tap"
+          ],
+          [
+            5.8,
+            "c",
+            "down"
+          ],
+          [
+            8.0,
+            "c",
+            "up"
+          ],
+          [
+            8.2,
+            "x",
+            "tap"
+          ]
+        ]
+      }
+    }
+  },
+  "windows_x86": {
+    "passed": true,
+    "platform": "native Windows runner",
+    "architecture": "PE32 i386",
+    "scope": "Su30SM flight loaded, two native gear commands, cockpit view after zoomed quick start, process alive",
+    "elapsed_seconds": 42.2
+  }
+}
