@@ -37,3 +37,7 @@ required notices and source materials now. Do not add a main-menu screen.
 ## Су-30СМ №5 завершён
 
 Продолжать отдельный Су30 от reports/su30sm-test-5/STATUS.json, код changes/aircraft-su30sm-test5. Наклонные оси рулей, жёсткие щитки WheelCarrier, отдельные MainWheelBayShutter, семь замкнутых створок. Контуры килей сохранены по схеме/инструкции7314. Не возвращать независимый сдвиг щитков0,75м/телескопы4. Draft433727284 оставить DRAFT. Actions41823849278 успешен, модель строго воспроизведена, Windows32 фактически проверен,3ZIP скачаны/SHA/CRCпрошли. Детали в PROJECT_HANDOFF и WORK_STATUS5; CURRENT_VERSION неизменён.
+
+## Су-30СМ №6 завершён
+
+Продолжать отдельный Су30 от reports/su30sm-test-6/STATUS.json и changes/aircraft-su30sm-test6. Пользовательские3фото: тоньше кили(44%выше корня), фонарь43°, тормоз65°вокругоси/новаяопора, общие нижние сечения/стенкиниш/парные задние передние створки. Окраска/сглаживание0/остальные самолёты сохранены. Draft433962216 оставитьDRAFT. Actions41838636093 успешен,WindowsPE32фактически43,3с;3ZIPскачаны/SHA/CRCпрошли. ПодробнееPROJECT_HANDOFF. CURRENT_VERSION неизменён.

@@ -1,0 +1,133 @@
+{
+  "draft": true,
+  "baseline": "su30sm-test-5",
+  "engine_unchanged": true,
+  "release_id": 433962216,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-dca2d628bdf17a54d3a8",
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test_6_Game_Win32_Win64.zip",
+      "bytes": 45547496,
+      "sha256": "521770fb1d84c4da3d1fa44b8f02829a922da9b6b78b9801f7f9ee1ff754e43c",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-dca2d628bdf17a54d3a8/YSFlight_Su30SM_Test_6_Game_Win32_Win64.zip",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Su30SM_Test_6_Sources.zip",
+      "bytes": 221360928,
+      "sha256": "db0d00bb8ec3a2fdd4cab61769ab400ef4f8f6c9d30fff1ad67535d8701b53c3",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-dca2d628bdf17a54d3a8/YSFlight_Su30SM_Test_6_Sources.zip",
+      "download_verified": true
+    },
+    {
+      "name": "YSFlight_Su30SM_Test_6_Report.zip",
+      "bytes": 1939945,
+      "sha256": "164ccbd1aedbedf37a0d95359cfe8335465cf37ea79f315de18c71ec66fe6e0f",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-dca2d628bdf17a54d3a8/YSFlight_Su30SM_Test_6_Report.zip",
+      "download_verified": true
+    }
+  ],
+  "checks": {
+    "scope": "Photo-based canopy/brake/fin thickness and lower-airframe repair; user acceptance pending",
+    "expected_models": {
+      "su30sm.dnm": "91936d3849bbf0000583c946fdf11dfe6311363a05274bbc38a0f283e738e139",
+      "su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+      "su30smcockpit.dnm": "9e39b7b7e767efb9f92b72e4c633f8d7811ebb137a579e07e185f2499fda5bbc",
+      "su30smcoll.srf": "a0c30f3d0b2207406267d8dc89f67353c6ae5d7c2e6e1859d34dfdf14a068b94",
+      "air_su30sm.lst": "03648e5583b523492b0841c1365df843d1291ca43cfad67d27eb363b325dbc17"
+    },
+    "fin_yz_outline_preserved": true,
+    "fin_thickness_factor_above_root": 0.44,
+    "canopy_open_degrees": 43,
+    "brake_hinge_degrees": 65,
+    "brake_visible_edge_inclination_approx": 52,
+    "current_palette_and_body_paint_preserved": true,
+    "no_smoothing": true,
+    "engine_unchanged_from_test5": true,
+    "other_aircraft_unchanged": true,
+    "assembly_checks": {
+      "model_sha256": "91936d3849bbf0000583c946fdf11dfe6311363a05274bbc38a0f283e738e139",
+      "poses": [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.8,
+        0.9,
+        1
+      ],
+      "rigid_attachment_error": 0.0,
+      "contacts": []
+    },
+    "references": {
+      "primary": "Three Su-30 photographs supplied by the user in current request; side brake, open canopy/front gear, lower quarter deployed gear",
+      "secondary": "Prior supplied Su-30SM general arrangement and Zvezda7314 model assembly instruction",
+      "qualification": "Photo-based visual adaptation, not surveyed factory geometry; source photos not redistributed"
+    },
+    "native_checks": {
+      "canopy": {
+        "passed": true,
+        "min": 0.0,
+        "max": 1.0,
+        "events": [
+          [
+            0.8,
+            "Alt_L+5",
+            "tap"
+          ],
+          [
+            8.3,
+            "Alt_L+5",
+            "tap"
+          ]
+        ]
+      },
+      "spoiler": {
+        "passed": true,
+        "min": 0.0,
+        "max": 1.0,
+        "events": [
+          [
+            0.8,
+            "b",
+            "tap"
+          ],
+          [
+            8.3,
+            "b",
+            "tap"
+          ]
+        ]
+      },
+      "gear": {
+        "passed": true,
+        "min": 0.0,
+        "max": 1.0,
+        "events": [
+          [
+            0.2,
+            "g",
+            "tap"
+          ],
+          [
+            7.3,
+            "g",
+            "tap"
+          ]
+        ]
+      }
+    },
+    "body_fin_canopy_face_colours_exactly_preserved": true,
+    "closed_canopy_mesh_exactly_preserved": true,
+    "static_brake_comparison_fully_deployed": true
+  },
+  "windows_x86": {
+    "passed": true,
+    "platform": "native Windows runner",
+    "architecture": "PE32 i386",
+    "scope": "Su30SM flight loaded, two native gear commands, cockpit view after zoomed quick start, process alive",
+    "elapsed_seconds": 43.3
+  }
+}
