@@ -1,0 +1,2 @@
+Exact corresponding engine: ../su30sm-test3/engine/
+Engine and binaries are unchanged from tests3/4. Full raw GLB and preceding converter: ../su30sm-test4/source and model-source. This version applies model-source/refine.py to the verified test4 model in baseline/.
