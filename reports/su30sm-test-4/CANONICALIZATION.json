@@ -1,0 +1,11 @@
+{
+  "changed_packs": [
+    "GearDoor_Nose_Aft.srf",
+    "DoorSeat_GearDoor_Nose_Aft.srf"
+  ],
+  "only_internal_triangulation_and_edge_order_changed": true,
+  "all_node_states_unchanged": true,
+  "coplanar_colored_surface_symmetric_difference_m2": 0,
+  "clean_glb_rebuild_matches_all_model_hashes": true,
+  "native_media": "Captured before canonical serialization; surfaces/colors/motion unchanged."
+}

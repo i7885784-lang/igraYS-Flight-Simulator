@@ -58,7 +58,7 @@
   "contact_scope": "Main wheel shields vs own tyre/struts/fixed skin; all three nose doors vs nose tyre/struts; nose tyre vs well/interior. Not a full internal airframe audit.",
   "nose_change_authorized": true,
   "expected_models": {
-    "su30sm.dnm": "191fb296ba96cee9ca51150179086e5261f48269779e68c5d79b00ed4d0c867c",
+    "su30sm.dnm": "6efba02912bcf2b3f8a354009bca2907ccc2e377e89a7250c8d5c0a72ad4daf5",
     "su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
     "su30smcockpit.dnm": "8ee95599fca588e739fd430f6b58ef278a32d41f7217d6cfb504347fc92f0395",
     "su30smcoll.srf": "a0c30f3d0b2207406267d8dc89f67353c6ae5d7c2e6e1859d34dfdf14a068b94",
@@ -359,5 +359,16 @@
       "states": 0,
       "events": []
     }
+  },
+  "serialization_canonicalization": {
+    "changed_packs": [
+      "GearDoor_Nose_Aft.srf",
+      "DoorSeat_GearDoor_Nose_Aft.srf"
+    ],
+    "only_internal_triangulation_and_edge_order_changed": true,
+    "all_node_states_unchanged": true,
+    "coplanar_colored_surface_symmetric_difference_m2": 0,
+    "clean_glb_rebuild_matches_all_model_hashes": true,
+    "native_media": "Captured before canonical serialization; surfaces/colors/motion unchanged."
   }
 }

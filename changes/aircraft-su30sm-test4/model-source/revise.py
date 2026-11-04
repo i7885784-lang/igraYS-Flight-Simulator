@@ -159,7 +159,17 @@ for n in list(ns):
  flange=Mesh();R0,t0=transform(n,0);pos=position(n)
  for reg in regions:
   outline=Polygon(reg.exterior)
-  for tri in triangulate(outline):
+  # GEOS may start an equivalent ring at a different vertex. Canonicalise the
+  # new symmetric aft panel so a cocircular quad cannot flip its diagonal
+  # between a cached conversion and a clean GLB conversion.
+  if name=='GearDoor_Nose_Aft':
+   coords=list(outline.exterior.coords)[:-1]
+   signed=sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(coords,coords[1:]+coords[:1]))
+   if signed<0:coords.reverse()
+   first=min(range(len(coords)),key=lambda i:coords[i]);outline=Polygon(coords[first:]+coords[:first])
+  tris=triangulate(outline)
+  if name=='GearDoor_Nose_Aft':tris=sorted(tris,key=lambda t:tuple(sorted(t.exterior.coords[:-1])))
+  for tri in tris:
    if not outline.buffer(1e-8).covers(tri):continue
    q=np.array(tri.exterior.coords)[:3];RR,_=transform(n,0);h=height(q)+(.004 if RR[1,1]>=0 else -.004);m.face(np.c_[q[:,0],h,q[:,1]],(47,47,79));m.f.append((m.f[-1][0][::-1],(47,47,79),False))
   coords=np.array(outline.exterior.coords);cen=np.array(outline.centroid.coords[0])
