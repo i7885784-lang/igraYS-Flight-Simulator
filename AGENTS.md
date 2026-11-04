@@ -41,3 +41,7 @@ required notices and source materials now. Do not add a main-menu screen.
 ## Су-30СМ №6 завершён
 
 Продолжать отдельный Су30 от reports/su30sm-test-6/STATUS.json и changes/aircraft-su30sm-test6. Пользовательские3фото: тоньше кили(44%выше корня), фонарь43°, тормоз65°вокругоси/новаяопора, общие нижние сечения/стенкиниш/парные задние передние створки. Окраска/сглаживание0/остальные самолёты сохранены. Draft433962216 оставитьDRAFT. Actions41838636093 успешен,WindowsPE32фактически43,3с;3ZIPскачаны/SHA/CRCпрошли. ПодробнееPROJECT_HANDOFF. CURRENT_VERSION неизменён.
+
+## Су-30СМ №7 завершён
+
+Последний отдельныйСу30 — reports/su30sm-test-7/STATUS.json, код changes/aircraft-su30sm-test7. Исправленвырезверха крыла внишах, фонарь/каналывоздухозаборников/раздельныестворки/подвижнаячастьтормоза. Draft434030950 оставитьDRAFT. Actions41847602521 SUCCESS,WindowsPE32фактически49,2с,3ZIPскачаны/SHA/CRCпрошли. CURRENT_VERSIONсохранён. ПодробнееPROJECT_HANDOFF; пользовательскаяприёмкаожидается.

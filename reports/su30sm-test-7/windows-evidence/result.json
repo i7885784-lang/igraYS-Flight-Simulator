@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "platform": "native Windows runner",
+  "architecture": "PE32 i386",
+  "scope": "Su30SM flight loaded, two native gear commands, cockpit view after zoomed quick start, process alive",
+  "elapsed_seconds": 49.2
+}
