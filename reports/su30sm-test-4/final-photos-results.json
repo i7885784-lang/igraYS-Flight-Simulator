@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "active": true,
+  "frames": [
+    "side",
+    "top",
+    "front",
+    "rear",
+    "bottom",
+    "quarter",
+    "nose"
+  ]
+}

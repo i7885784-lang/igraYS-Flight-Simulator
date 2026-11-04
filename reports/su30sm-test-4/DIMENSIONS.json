@@ -1,0 +1,43 @@
+{
+  "actual": {
+    "length_m": 21.935000000000002,
+    "wingspan_m": 14.7,
+    "height_m": 6.360315,
+    "wheelbase_m": 5.57,
+    "main_track_m": 4.1
+  },
+  "reference": {
+    "reference": "User-supplied Su-30SM general arrangement sheet, title bottom right",
+    "length_m": 21.9,
+    "wingspan_m": 14.7,
+    "height_m": 6.36,
+    "wheelbase_m": 5.57,
+    "main_track_m": 4.1,
+    "note": "Explicit dimension arrows take precedence over contradictory/illegible table entries. No factory provenance claimed."
+  },
+  "difference_m": {
+    "length_m": 0.035000000000003695,
+    "wingspan_m": 0.0,
+    "height_m": 0.00031499999999962114,
+    "wheelbase_m": 0.0,
+    "main_track_m": 0.0
+  },
+  "main_centres": [
+    [
+      -2.05,
+      -2.06,
+      -2.8
+    ],
+    [
+      2.05,
+      -2.06,
+      -2.8
+    ]
+  ],
+  "nose_centre": [
+    0.0,
+    -2.22,
+    2.77
+  ],
+  "no_smoothing_normals": true
+}

@@ -1,0 +1,2 @@
+Current exact corresponding engine: ../su30sm-test3/engine/
+Engine and binaries are unchanged from test3. Full source is preserved in this Sources ZIP. Original model: ../su30sm-test3/source/su-30sm.glb (also copied to this version/source).

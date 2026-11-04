@@ -1,0 +1,363 @@
+{
+  "scope": "Targeted geometry/drawing comparison and native mechanisms; user acceptance pending",
+  "dimensions": {
+    "actual": {
+      "length_m": 21.935000000000002,
+      "wingspan_m": 14.7,
+      "height_m": 6.360315,
+      "wheelbase_m": 5.57,
+      "main_track_m": 4.1
+    },
+    "reference": {
+      "reference": "User-supplied Su-30SM general arrangement sheet, title bottom right",
+      "length_m": 21.9,
+      "wingspan_m": 14.7,
+      "height_m": 6.36,
+      "wheelbase_m": 5.57,
+      "main_track_m": 4.1,
+      "note": "Explicit dimension arrows take precedence over contradictory/illegible table entries. No factory provenance claimed."
+    },
+    "difference_m": {
+      "length_m": 0.035000000000003695,
+      "wingspan_m": 0.0,
+      "height_m": 0.00031499999999962114,
+      "wheelbase_m": 0.0,
+      "main_track_m": 0.0
+    },
+    "main_centres": [
+      [
+        -2.05,
+        -2.06,
+        -2.8
+      ],
+      [
+        2.05,
+        -2.06,
+        -2.8
+      ]
+    ],
+    "nose_centre": [
+      0.0,
+      -2.22,
+      2.77
+    ],
+    "no_smoothing_normals": true
+  },
+  "no_smoothing": true,
+  "engine_unchanged_from_test3": true,
+  "nozzle_calibration_unchanged": true,
+  "unintended_contacts_in_selected_pairs": 0,
+  "contact_poses": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "contact_scope": "Main wheel shields vs own tyre/struts/fixed skin; all three nose doors vs nose tyre/struts; nose tyre vs well/interior. Not a full internal airframe audit.",
+  "nose_change_authorized": true,
+  "expected_models": {
+    "su30sm.dnm": "191fb296ba96cee9ca51150179086e5261f48269779e68c5d79b00ed4d0c867c",
+    "su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+    "su30smcockpit.dnm": "8ee95599fca588e739fd430f6b58ef278a32d41f7217d6cfb504347fc92f0395",
+    "su30smcoll.srf": "a0c30f3d0b2207406267d8dc89f67353c6ae5d7c2e6e1859d34dfdf14a068b94",
+    "air_su30sm.lst": "03648e5583b523492b0841c1365df843d1291ca43cfad67d27eb363b325dbc17"
+  },
+  "native_linux_wine64": {
+    "final-photos": {
+      "passed": true,
+      "states": 0,
+      "events": []
+    },
+    "final-ground": {
+      "passed": true,
+      "states": 0,
+      "events": []
+    },
+    "final-gear": {
+      "passed": true,
+      "states": 55,
+      "events": [
+        [
+          0.2,
+          "g",
+          "tap"
+        ],
+        [
+          7.3,
+          "g",
+          "tap"
+        ]
+      ]
+    },
+    "final-canopy": {
+      "passed": true,
+      "states": 44,
+      "events": [
+        [
+          0.8,
+          "Alt_L+5",
+          "tap"
+        ],
+        [
+          8.3,
+          "Alt_L+5",
+          "tap"
+        ]
+      ]
+    },
+    "final-brake": {
+      "passed": true,
+      "states": 57,
+      "events": [
+        [
+          0.8,
+          "b",
+          "tap"
+        ],
+        [
+          8.3,
+          "b",
+          "tap"
+        ]
+      ]
+    },
+    "final-engine": {
+      "passed": true,
+      "states": 59,
+      "events": [
+        [
+          0.2,
+          "q",
+          "tap"
+        ],
+        [
+          0.34,
+          "q",
+          "tap"
+        ],
+        [
+          0.48000000000000004,
+          "q",
+          "tap"
+        ],
+        [
+          0.6200000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          0.76,
+          "q",
+          "tap"
+        ],
+        [
+          0.9000000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          1.04,
+          "q",
+          "tap"
+        ],
+        [
+          1.1800000000000002,
+          "q",
+          "tap"
+        ],
+        [
+          1.32,
+          "q",
+          "tap"
+        ],
+        [
+          1.4600000000000002,
+          "q",
+          "tap"
+        ],
+        [
+          1.6,
+          "q",
+          "tap"
+        ],
+        [
+          1.74,
+          "q",
+          "tap"
+        ],
+        [
+          1.8800000000000001,
+          "q",
+          "tap"
+        ],
+        [
+          2.0200000000000005,
+          "q",
+          "tap"
+        ],
+        [
+          2.16,
+          "q",
+          "tap"
+        ],
+        [
+          2.3000000000000003,
+          "q",
+          "tap"
+        ],
+        [
+          2.4400000000000004,
+          "q",
+          "tap"
+        ],
+        [
+          2.5800000000000005,
+          "q",
+          "tap"
+        ],
+        [
+          2.7200000000000006,
+          "q",
+          "tap"
+        ],
+        [
+          2.8600000000000003,
+          "q",
+          "tap"
+        ],
+        [
+          3.3,
+          "Tab",
+          "tap"
+        ],
+        [
+          7,
+          "Tab",
+          "tap"
+        ],
+        [
+          7.6,
+          "Tab",
+          "tap"
+        ],
+        [
+          10.5,
+          "Tab",
+          "tap"
+        ],
+        [
+          10.0,
+          "a",
+          "tap"
+        ],
+        [
+          10.14,
+          "a",
+          "tap"
+        ],
+        [
+          10.28,
+          "a",
+          "tap"
+        ],
+        [
+          10.42,
+          "a",
+          "tap"
+        ],
+        [
+          10.56,
+          "a",
+          "tap"
+        ],
+        [
+          10.7,
+          "a",
+          "tap"
+        ],
+        [
+          10.84,
+          "a",
+          "tap"
+        ],
+        [
+          10.98,
+          "a",
+          "tap"
+        ],
+        [
+          11.120000000000001,
+          "a",
+          "tap"
+        ],
+        [
+          11.26,
+          "a",
+          "tap"
+        ],
+        [
+          11.4,
+          "a",
+          "tap"
+        ],
+        [
+          11.54,
+          "a",
+          "tap"
+        ],
+        [
+          11.68,
+          "a",
+          "tap"
+        ],
+        [
+          11.82,
+          "a",
+          "tap"
+        ],
+        [
+          11.96,
+          "a",
+          "tap"
+        ],
+        [
+          12.1,
+          "a",
+          "tap"
+        ],
+        [
+          12.24,
+          "a",
+          "tap"
+        ],
+        [
+          12.38,
+          "a",
+          "tap"
+        ],
+        [
+          12.52,
+          "a",
+          "tap"
+        ],
+        [
+          12.66,
+          "a",
+          "tap"
+        ]
+      ]
+    },
+    "final-orbit": {
+      "passed": true,
+      "states": 37,
+      "events": []
+    },
+    "camera-SU-30SM_CUSTOM": {
+      "passed": true,
+      "states": 0,
+      "events": []
+    }
+  }
+}
