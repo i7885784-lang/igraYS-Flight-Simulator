@@ -1,0 +1,18 @@
+[
+  {
+    "name": "MainWheelBayShutter_Left",
+    "triangles": 2188,
+    "fcl_contacts": 43308,
+    "candidate_pairs": 13506,
+    "self_crossing": [],
+    "coplanar_overlap": []
+  },
+  {
+    "name": "MainWheelBayShutter_Right",
+    "triangles": 2608,
+    "fcl_contacts": 51873,
+    "candidate_pairs": 16174,
+    "self_crossing": [],
+    "coplanar_overlap": []
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "name_input4": "GearDoor_Nose_Inner",
+    "grid": [
+      9,
+      13
+    ],
+    "missing_grid_samples_using_nearest_vertex": 0,
+    "examples_missing": [],
+    "max_y_range_of_overlapping_source_surfaces": 0.026958951585542346,
+    "max_neighbor_height_jump_x": 0.023256848003139985,
+    "max_neighbor_height_jump_z": 0.005982309105407313
+  },
+  {
+    "name_input4": "GearDoor_Nose_Outer",
+    "grid": [
+      9,
+      13
+    ],
+    "missing_grid_samples_using_nearest_vertex": 0,
+    "examples_missing": [],
+    "max_y_range_of_overlapping_source_surfaces": 0.026958732337017066,
+    "max_neighbor_height_jump_x": 0.023256848003139985,
+    "max_neighbor_height_jump_z": 0.005982378455078541
+  },
+  {
+    "name_input4": "GearDoor_Nose_Aft",
+    "grid": [
+      9,
+      15
+    ],
+    "missing_grid_samples_using_nearest_vertex": 0,
+    "examples_missing": [],
+    "max_y_range_of_overlapping_source_surfaces": 0.1852484356967663,
+    "max_neighbor_height_jump_x": 0.06447636973655432,
+    "max_neighbor_height_jump_z": 0.00950189751851499
+  },
+  {
+    "name_input4": "GearDoor_Left_Inner",
+    "grid": [
+      9,
+      38
+    ],
+    "missing_grid_samples_using_nearest_vertex": 0,
+    "examples_missing": [],
+    "max_y_range_of_overlapping_source_surfaces": 0.26541224355545057,
+    "max_neighbor_height_jump_x": 0.19575676452988106,
+    "max_neighbor_height_jump_z": 0.1232726659925851
+  },
+  {
+    "name_input4": "GearDoor_Right_Outer",
+    "grid": [
+      9,
+      38
+    ],
+    "missing_grid_samples_using_nearest_vertex": 0,
+    "examples_missing": [],
+    "max_y_range_of_overlapping_source_surfaces": 0.26541253332858017,
+    "max_neighbor_height_jump_x": 0.19575660238961906,
+    "max_neighbor_height_jump_z": 0.12327266599258507
+  },
+  {
+    "name_input4": "GearDoor_Left_WheelShield",
+    "grid": [
+      9,
+      15
+    ],
+    "missing_grid_samples_using_nearest_vertex": 29,
+    "examples_missing": [
+      [
+        -1.870000402912831,
+        -1.8580002
+      ],
+      [
+        -1.870000402912831,
+        -1.7725716285714286
+      ],
+      [
+        -1.870000402912831,
+        -1.6871430571428572
+      ],
+      [
+        -1.870000402912831,
+        -1.6017144857142858
+      ],
+      [
+        -1.870000402912831,
+        -1.5162859142857144
+      ]
+    ],
+    "max_y_range_of_overlapping_source_surfaces": 0.00600448097758044,
+    "max_neighbor_height_jump_x": 0.6470702081966057,
+    "max_neighbor_height_jump_z": 0.32301813765590814
+  },
+  {
+    "name_input4": "GearDoor_Right_WheelShield",
+    "grid": [
+      9,
+      15
+    ],
+    "missing_grid_samples_using_nearest_vertex": 30,
+    "examples_missing": [
+      [
+        1.0299995686305627,
+        -1.8580002
+      ],
+      [
+        1.0299995686305627,
+        -1.7725716285714286
+      ],
+      [
+        1.0299995686305627,
+        -1.6871430571428572
+      ],
+      [
+        1.0299995686305627,
+        -1.6017144857142858
+      ],
+      [
+        1.0299995686305627,
+        -1.5162859142857144
+      ]
+    ],
+    "max_y_range_of_overlapping_source_surfaces": 0.006004480877105145,
+    "max_neighbor_height_jump_x": 0.38727940360490865,
+    "max_neighbor_height_jump_z": 0.3230181758545738
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "model_sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+  "scope": "Only two MainWheelBayShutter SRF packs; every node/state/parent and other pack identical",
+  "source_support_pass": true,
+  "body_Fuselage_0_4_contacts_in_201_poses": 0,
+  "new_contact_pair_pose_vs_baseline": 0,
+  "degenerate_triangles": 0,
+  "self_intersections": 0,
+  "all_neighbor_contact_free": false,
+  "residual_pair_pose_records": 54,
+  "native_game_cycle_pass": true,
+  "native_backend": "Unmodified Windows OpenGL64 executable under Wine/Xvfb",
+  "native_cycle_render_override": -1,
+  "visual_review": "Matched ground main-close, inverted up/down/mid and native gear frames opened; full video recorded but not watched in full",
+  "continuous_collision_proof": false,
+  "windows32_rerun": false,
+  "unchanged_executables": true
+}

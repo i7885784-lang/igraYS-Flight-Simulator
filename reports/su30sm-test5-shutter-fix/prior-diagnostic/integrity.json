@@ -1,0 +1,16 @@
+{
+  "before": {
+    "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dnm": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504",
+    "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+    "git_head": "e4214f0211b826b5255e5084ff9b894f6cda1811"
+  },
+  "after": {
+    "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dnm": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504",
+    "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dat": "af34f7a362396eb033d72d60962333833ee8a877d0988a93bba584e715a26f0a",
+    "git_head": "e4214f0211b826b5255e5084ff9b894f6cda1811"
+  },
+  "git_status_clean": true,
+  "active_game_files_equal_to_verified_archive": 1157,
+  "original_glb_unchanged": true,
+  "diagnostic_artifacts_only_outside_repository": "/workspace/ysflight-dev/diagnostics-su30sm-gear"
+}

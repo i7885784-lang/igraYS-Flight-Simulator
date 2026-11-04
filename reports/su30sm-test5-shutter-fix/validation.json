@@ -1,0 +1,791 @@
+{
+  "model_sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+  "changed_packs": [
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "all_nodes_states_parents_unchanged": true,
+  "all_other_packs_unchanged": true,
+  "geometry": {
+    "Left": {
+      "vertices": 1114,
+      "triangles_unique": 2188,
+      "degenerate_triangles": 0,
+      "minimum_triangle_area_m2": 1.2141023432969807e-09,
+      "nonmanifold_edges": 0,
+      "consistent_shell_orientation": true,
+      "signed_volume_m3": 0.007340368905007864,
+      "unsupported_vertices": 0,
+      "unsupported_triangles": 0,
+      "outside_projected_area_m2": 0.0,
+      "source_precision_tolerance_m": 2e-06,
+      "nearest_height_fallbacks": 0
+    },
+    "Right": {
+      "vertices": 1314,
+      "triangles_unique": 2608,
+      "degenerate_triangles": 0,
+      "minimum_triangle_area_m2": 1.2141023432966467e-09,
+      "nonmanifold_edges": 0,
+      "consistent_shell_orientation": true,
+      "signed_volume_m3": 0.0076952079999999465,
+      "unsupported_vertices": 0,
+      "unsupported_triangles": 0,
+      "outside_projected_area_m2": 0.0,
+      "source_precision_tolerance_m": 2e-06,
+      "nearest_height_fallbacks": 0
+    }
+  },
+  "animation": {
+    "samples": [
+      0.0,
+      0.005,
+      0.01,
+      0.015,
+      0.02,
+      0.025,
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05,
+      0.055,
+      0.06,
+      0.065,
+      0.07,
+      0.075,
+      0.08,
+      0.085,
+      0.09,
+      0.095,
+      0.1,
+      0.105,
+      0.11,
+      0.115,
+      0.12,
+      0.125,
+      0.13,
+      0.135,
+      0.14,
+      0.145,
+      0.15,
+      0.155,
+      0.16,
+      0.165,
+      0.17,
+      0.17500000000000002,
+      0.18,
+      0.185,
+      0.19,
+      0.195,
+      0.2,
+      0.20500000000000002,
+      0.21,
+      0.215,
+      0.22,
+      0.225,
+      0.23,
+      0.23500000000000001,
+      0.24,
+      0.245,
+      0.25,
+      0.255,
+      0.26,
+      0.265,
+      0.27,
+      0.275,
+      0.28,
+      0.28500000000000003,
+      0.29,
+      0.295,
+      0.3,
+      0.305,
+      0.31,
+      0.315,
+      0.32,
+      0.325,
+      0.33,
+      0.335,
+      0.34,
+      0.34500000000000003,
+      0.35000000000000003,
+      0.355,
+      0.36,
+      0.365,
+      0.37,
+      0.375,
+      0.38,
+      0.385,
+      0.39,
+      0.395,
+      0.4,
+      0.405,
+      0.41000000000000003,
+      0.41500000000000004,
+      0.42,
+      0.425,
+      0.43,
+      0.435,
+      0.44,
+      0.445,
+      0.45,
+      0.455,
+      0.46,
+      0.465,
+      0.47000000000000003,
+      0.47500000000000003,
+      0.48,
+      0.485,
+      0.49,
+      0.495,
+      0.5,
+      0.505,
+      0.51,
+      0.515,
+      0.52,
+      0.525,
+      0.53,
+      0.535,
+      0.54,
+      0.545,
+      0.55,
+      0.555,
+      0.56,
+      0.5650000000000001,
+      0.5700000000000001,
+      0.5750000000000001,
+      0.58,
+      0.585,
+      0.59,
+      0.595,
+      0.6,
+      0.605,
+      0.61,
+      0.615,
+      0.62,
+      0.625,
+      0.63,
+      0.635,
+      0.64,
+      0.645,
+      0.65,
+      0.655,
+      0.66,
+      0.665,
+      0.67,
+      0.675,
+      0.68,
+      0.685,
+      0.6900000000000001,
+      0.6950000000000001,
+      0.7000000000000001,
+      0.705,
+      0.71,
+      0.715,
+      0.72,
+      0.725,
+      0.73,
+      0.735,
+      0.74,
+      0.745,
+      0.75,
+      0.755,
+      0.76,
+      0.765,
+      0.77,
+      0.775,
+      0.78,
+      0.785,
+      0.79,
+      0.795,
+      0.8,
+      0.805,
+      0.81,
+      0.8150000000000001,
+      0.8200000000000001,
+      0.8250000000000001,
+      0.8300000000000001,
+      0.835,
+      0.84,
+      0.845,
+      0.85,
+      0.855,
+      0.86,
+      0.865,
+      0.87,
+      0.875,
+      0.88,
+      0.885,
+      0.89,
+      0.895,
+      0.9,
+      0.905,
+      0.91,
+      0.915,
+      0.92,
+      0.925,
+      0.93,
+      0.935,
+      0.9400000000000001,
+      0.9450000000000001,
+      0.9500000000000001,
+      0.9550000000000001,
+      0.96,
+      0.965,
+      0.97,
+      0.975,
+      0.98,
+      0.985,
+      0.99,
+      0.995,
+      1.0
+    ],
+    "all_101_keys_and_100_midpoints": true,
+    "pairs_evaluated": 26504,
+    "identical_pairs_reused": 28972,
+    "other_meshes": 138,
+    "contacts": [
+      {
+        "g": 0.0,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5356903,
+          -0.7632526,
+          -1.8529996999999998
+        ]
+      },
+      {
+        "g": 0.0,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4973663,
+          -0.8337717,
+          -1.1238427
+        ]
+      },
+      {
+        "g": 0.005,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5356903,
+          -0.7632526,
+          -1.8529996999999998
+        ]
+      },
+      {
+        "g": 0.005,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4973663,
+          -0.8337717,
+          -1.1238427
+        ]
+      },
+      {
+        "g": 0.01,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5356903,
+          -0.7632526,
+          -1.8529996999999998
+        ]
+      },
+      {
+        "g": 0.01,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4973663,
+          -0.8337717,
+          -1.1238427
+        ]
+      },
+      {
+        "g": 0.015,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5366397876816982,
+          -0.7645132112446815,
+          -1.8530239652691636
+        ]
+      },
+      {
+        "g": 0.015,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4981752490356326,
+          -0.8349366007850036,
+          -1.1238651213158577
+        ]
+      },
+      {
+        "g": 0.02,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5375861288126222,
+          -0.7657762571121258,
+          -1.8530483226472136
+        ]
+      },
+      {
+        "g": 0.02,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4989812907350117,
+          -0.8361034978119737,
+          -1.1238876195904202
+        ]
+      },
+      {
+        "g": 0.025,
+        "a": "MainWheelBayShutter_Left",
+        "b": "GearDoor_Left_Inner",
+        "point": [
+          -1.8833057639312578,
+          -0.35213890496825917,
+          -1.7215772657401942
+        ]
+      },
+      {
+        "g": 0.025,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5446280924186375,
+          -0.7755232038672839,
+          -1.853320234287175
+        ]
+      },
+      {
+        "g": 0.025,
+        "a": "MainWheelBayShutter_Right",
+        "b": "GearDoor_Right_Outer",
+        "point": [
+          1.8829525817829322,
+          -0.36619628179376307,
+          -1.750708059279986
+        ]
+      },
+      {
+        "g": 0.025,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5048835754294556,
+          -0.8530977660510413,
+          -1.124138332702046
+        ]
+      },
+      {
+        "g": 0.03,
+        "a": "MainWheelBayShutter_Left",
+        "b": "GearDoor_Left_Inner",
+        "point": [
+          -1.8921202108885078,
+          -0.40861980442203416,
+          -1.8539914227313812
+        ]
+      },
+      {
+        "g": 0.03,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5514826220175988,
+          -0.7854087655972999,
+          -1.8535995239207534
+        ]
+      },
+      {
+        "g": 0.03,
+        "a": "MainWheelBayShutter_Right",
+        "b": "GearDoor_Right_Outer",
+        "point": [
+          1.871675356363962,
+          -0.4382079534188973,
+          -1.8539679128300681
+        ]
+      },
+      {
+        "g": 0.03,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5109979879575743,
+          -0.8542099094649503,
+          -1.1243954759690664
+        ]
+      },
+      {
+        "g": 0.035,
+        "a": "MainWheelBayShutter_Left",
+        "b": "GearDoor_Left_Inner",
+        "point": [
+          -1.9371349516330048,
+          -0.12890812372189253,
+          -1.2925732650922608
+        ]
+      },
+      {
+        "g": 0.035,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.53721364842723,
+          -0.9067546563676984,
+          -1.8540335733075741
+        ]
+      },
+      {
+        "g": 0.035,
+        "a": "MainWheelBayShutter_Right",
+        "b": "GearDoor_Right_Outer",
+        "point": [
+          1.946556896676138,
+          -0.13626000802040994,
+          -1.3472683514844552
+        ]
+      },
+      {
+        "g": 0.035,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5071326630885313,
+          -0.9900144756896634,
+          -1.8539755762225028
+        ]
+      },
+      {
+        "g": 0.04,
+        "a": "MainWheelBayShutter_Left",
+        "b": "GearDoor_Left_Inner",
+        "point": [
+          -1.9385981191598316,
+          -0.14877479339546706,
+          -1.2923528555751234
+        ]
+      },
+      {
+        "g": 0.04,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5456535159201839,
+          -0.9240450995817565,
+          -1.8545112818171758
+        ]
+      },
+      {
+        "g": 0.04,
+        "a": "MainWheelBayShutter_Right",
+        "b": "GearDoor_Right_Outer",
+        "point": [
+          1.9835912101475484,
+          -0.16165356294413724,
+          -1.34816655158237
+        ]
+      },
+      {
+        "g": 0.04,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5197757063253707,
+          -0.9884700669710555,
+          -1.1703315370158218
+        ]
+      },
+      {
+        "g": 0.045,
+        "a": "MainWheelBayShutter_Left",
+        "b": "GearDoor_Left_Inner",
+        "point": [
+          -2.0299812797853156,
+          -0.21808452416097157,
+          -1.349425042796598
+        ]
+      },
+      {
+        "g": 0.045,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5430467837160888,
+          -0.9223530779614899,
+          -1.1259611195281327
+        ]
+      },
+      {
+        "g": 0.045,
+        "a": "MainWheelBayShutter_Right",
+        "b": "GearDoor_Right_Outer",
+        "point": [
+          2.03225949971132,
+          -0.20921733929230857,
+          -1.2640468385439456
+        ]
+      },
+      {
+        "g": 0.045,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5906004419082729,
+          -0.8509764249355598,
+          -1.8553217751773718
+        ]
+      },
+      {
+        "g": 0.86,
+        "a": "MainWheelBayShutter_Left",
+        "b": "WheelFairing_Left",
+        "point": [
+          -1.860398185522154,
+          -1.7151270073599059,
+          -1.8863103171863518
+        ]
+      },
+      {
+        "g": 0.86,
+        "a": "MainWheelBayShutter_Right",
+        "b": "WheelFairing_Right",
+        "point": [
+          1.8651998959100804,
+          -1.7068942058434635,
+          -1.885996471054467
+        ]
+      },
+      {
+        "g": 0.96,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.547074156005266,
+          -0.9312485680297886,
+          -1.126203498711232
+        ]
+      },
+      {
+        "g": 0.96,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5940959231586636,
+          -0.868599156737057,
+          -1.8555714550788123
+        ]
+      },
+      {
+        "g": 0.965,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5833996394514003,
+          -0.8474930576537285,
+          -1.8550121734320086
+        ]
+      },
+      {
+        "g": 0.965,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5392605194155031,
+          -0.9040193518408735,
+          -1.1256958738677918
+        ]
+      },
+      {
+        "g": 0.97,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5437912437014818,
+          -0.9196917313180207,
+          -1.8544065681228696
+        ]
+      },
+      {
+        "g": 0.97,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.518325327334107,
+          -0.9843500063184087,
+          -1.1702333328222223
+        ]
+      },
+      {
+        "g": 0.975,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5369070660512825,
+          -0.9060730421415268,
+          -1.8540085725610194
+        ]
+      },
+      {
+        "g": 0.975,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5069375379684664,
+          -0.9893731689203499,
+          -1.853952244039926
+        ]
+      },
+      {
+        "g": 0.98,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5531590618816036,
+          -0.79640643147891,
+          -1.8536516346107643
+        ]
+      },
+      {
+        "g": 0.98,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5127405086691075,
+          -0.8569783108800556,
+          -1.1244437041755453
+        ]
+      },
+      {
+        "g": 0.985,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5470857725910667,
+          -0.778984916808184,
+          -1.8533961218887325
+        ]
+      },
+      {
+        "g": 0.985,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.5069270302564992,
+          -0.8562880140353658,
+          -1.1242081152957712
+        ]
+      },
+      {
+        "g": 0.99,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5404515787310054,
+          -0.7696777390945055,
+          -1.8531464086634089
+        ]
+      },
+      {
+        "g": 0.99,
+        "a": "MainWheelBayShutter_Left",
+        "b": "DoorSeat_GearDoor_Left_Inner",
+        "point": [
+          -1.884093,
+          -0.1831579999999996,
+          -1.527368
+        ]
+      },
+      {
+        "g": 0.99,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.501449281210681,
+          -0.8397063939590818,
+          -1.123978164785307
+        ]
+      },
+      {
+        "g": 0.99,
+        "a": "MainWheelBayShutter_Right",
+        "b": "DoorSeat_GearDoor_Right_Outer",
+        "point": [
+          1.8700000000000006,
+          -0.033345999999999654,
+          -1.3799840000000003
+        ]
+      },
+      {
+        "g": 0.995,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.538081108715059,
+          -0.766457364371504,
+          -1.853072707223688
+        ]
+      },
+      {
+        "g": 0.995,
+        "a": "MainWheelBayShutter_Left",
+        "b": "DoorSeat_GearDoor_Left_Inner",
+        "point": [
+          -1.8840930000000005,
+          -0.1831579999999997,
+          -1.527368
+        ]
+      },
+      {
+        "g": 0.995,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.499417183704234,
+          -0.8367326512529081,
+          -1.1239101415924428
+        ]
+      },
+      {
+        "g": 0.995,
+        "a": "MainWheelBayShutter_Right",
+        "b": "DoorSeat_GearDoor_Right_Outer",
+        "point": [
+          1.8700000000000003,
+          -0.033345999999999654,
+          -1.379984
+        ]
+      },
+      {
+        "g": 1.0,
+        "a": "MainWheelBayShutter_Left",
+        "b": "IntakeDuct_-1",
+        "point": [
+          -1.5356903,
+          -0.7632526,
+          -1.8529996999999998
+        ]
+      },
+      {
+        "g": 1.0,
+        "a": "MainWheelBayShutter_Right",
+        "b": "IntakeDuct_1",
+        "point": [
+          1.4973663,
+          -0.8337717,
+          -1.1238427
+        ]
+      }
+    ],
+    "elapsed_seconds": 2.46
+  }
+}
