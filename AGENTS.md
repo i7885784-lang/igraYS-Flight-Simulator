@@ -1,3 +1,7 @@
+# Актуальное указание пользователя: откат на тест5
+
+CURRENT_VERSION.json/md закрепляют Су30СМ тест5 после явного отклонения6/7. Следующую работу начинать от полногоGame5. Старые записи о продолжении от6/7 ниже исторические и отменены.
+
 # Project context for coding assistants
 
 Read [CURRENT_VERSION.md](CURRENT_VERSION.md) and

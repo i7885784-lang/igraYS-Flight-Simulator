@@ -1,13 +1,13 @@
 {
-  "current_baseline": "su57-test-2",
-  "pinned_date": "2026-10-26",
-  "baseline_commit": "0e30991",
-  "archive": "downloads/YSFlight_Su57_Test_2_32bit.zip",
-  "archive_sha256": "ad8fa53419f06532e25d65669d83b785d6d4c5568ee6fbf0d530d00bab038697",
-  "report": "reports/su57-test-2/REPORT.md",
-  "model_changes": "changes/su57-test-2",
-  "model_source": "changes/su57-test-2/model-source",
-  "engine_patch": "changes/su57-test-1/native.patch",
-  "target": "Windows 32-bit",
-  "status": "current development baseline; user liked photos, in-game user review pending"
+  "current_baseline": "su30sm-test-5",
+  "pinned_date": "2026-11-04",
+  "baseline_commit": "67ff51a",
+  "archive": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Game_Win32_Win64.zip",
+  "archive_sha256": "31d22516a2a8a62661681618585519c8a7ac33f4dc4211bf46aa58d83cd9bc67",
+  "report": "reports/su30sm-test-5/index.html",
+  "model_changes": "changes/aircraft-su30sm-test5",
+  "model_source": "changes/aircraft-su30sm-test5/model-source",
+  "target": "Windows 32-bit and 64-bit",
+  "status": "User explicitly rolled back to test5; test6 and test7 rejected, historical only",
+  "local_runtime": "/workspace/ysflight-dev/rollback-su30sm-test5/runtime"
 }
