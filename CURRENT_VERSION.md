@@ -1,9 +1,9 @@
-# Текущая основа — Су-30СМ, тест №5
+# Текущая основа — Су-30СМ №5 с точечной правкой впуска
 
-4 ноября 2026 пользователь явно потребовал полный откат на тест5. Тесты6 и7 отклонены и сохранены только как история. Начинать дальнейшие изменения от полного архива5, без геометрии/материалов/анимаций6/7.
+Основа — полная версия5. Изменён только aircraft/su30sm.dnm: удалены пересекающие впуск грани передних стенок GearWell_Left/Right. Все остальные файлы игры побайтно совпадают с5. Правки6/7неиспользуются.
 
-[Скачать игру Windows32/64](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Game_Win32_Win64.zip)
+[Скачать игру Windows32/64](https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-061e06793cc0c14f70a7/YSFlight_Su30SM_Test5_IntakeFix_Game_Win32_Win64.zip)
 
-Полностью распаковать в новую папку, запустить Play_Su30SM.bat. Черновой GitHub release требует входа владельца.
+Распаковать в новую папку и запустить Play_Su30SM.bat. Черновой релиз требует входа владельца.
 
-[Фото/видео](reports/su30sm-test-5/index.html) · [SHA и источники](reports/su30sm-test-5/STATUS.json). Полный соответствующий движок находится в SourcesZIP/sources/su30sm-test3/engine. Прежняя закреплённая основа сохранена в docs/baseline-history.
+[До/после и описание](reports/su30sm-test5-intake-fix/index.html) · [Ссылки/SHA/аудит](reports/su30sm-test5-intake-fix/STATUS.json). Исходная нетронутая версия5сохранена в reports/su30sm-test-5/STATUS.json.

@@ -2,12 +2,14 @@
   "current_baseline": "su30sm-test-5",
   "pinned_date": "2026-11-04",
   "baseline_commit": "67ff51a",
-  "archive": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-26ac02ddaaa01c0273af/YSFlight_Su30SM_Test_5_Game_Win32_Win64.zip",
-  "archive_sha256": "31d22516a2a8a62661681618585519c8a7ac33f4dc4211bf46aa58d83cd9bc67",
-  "report": "reports/su30sm-test-5/index.html",
-  "model_changes": "changes/aircraft-su30sm-test5",
-  "model_source": "changes/aircraft-su30sm-test5/model-source",
+  "archive": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-061e06793cc0c14f70a7/YSFlight_Su30SM_Test5_IntakeFix_Game_Win32_Win64.zip",
+  "archive_sha256": "3c12eb2c858ebb18e43e079a96e44adebf69ca11ac5f4045e5d26c59f9959781",
+  "report": "reports/su30sm-test5-intake-fix/index.html",
+  "model_changes": "changes/su30sm-test5-intake-fix",
+  "model_source": "changes/su30sm-test5-intake-fix",
   "target": "Windows 32-bit and 64-bit",
   "status": "User explicitly rolled back to test5; test6 and test7 rejected, historical only",
-  "local_runtime": "/workspace/ysflight-dev/rollback-su30sm-test5/runtime"
+  "local_runtime": "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime",
+  "correction": "intake obstruction only; all other game files identical to test5",
+  "correction_commit": "5f07c37"
 }
