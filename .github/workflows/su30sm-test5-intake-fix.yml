@@ -1,0 +1,28 @@
+name: Su30SM test5 intake-only fix
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-test5-intake-fix
+            reports/su30sm-test5-intake-fix
+            reports/su30sm-test-5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r changes/su30sm-test5-intake-fix/requirements.txt
+      - run: python changes/su30sm-test5-intake-fix/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}

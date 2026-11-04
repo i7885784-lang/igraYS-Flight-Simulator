@@ -1,0 +1,3001 @@
+{
+  "changed_packs": [
+    "GearWell_Left.srf",
+    "GearWell_Right.srf"
+  ],
+  "nodes_transforms_states_hierarchy_unchanged": true,
+  "all_other_meshes_exactly_unchanged": true,
+  "audit": {
+    "GearWell_Left": {
+      "removed_faces": [
+        {
+          "original_line": 14322,
+          "vertex_indices": [
+            408,
+            409,
+            410,
+            411
+          ],
+          "face_block_sha256": "490107d2b8bb58cf5299b7f102896112aff74f4700ba37ff20c70ab5094e0ec7"
+        },
+        {
+          "original_line": 14327,
+          "vertex_indices": [
+            412,
+            413,
+            414,
+            415
+          ],
+          "face_block_sha256": "db2e05ceae740a89c72525394da8a53b2eba3eaf79b02aba87a04e3b264d4f07"
+        },
+        {
+          "original_line": 14342,
+          "vertex_indices": [
+            424,
+            425,
+            426,
+            427
+          ],
+          "face_block_sha256": "95637bd89610866e681ebb0220c57550830f643f6486d5af0b4dc96b3d76cf4f"
+        },
+        {
+          "original_line": 14347,
+          "vertex_indices": [
+            428,
+            429,
+            430,
+            431
+          ],
+          "face_block_sha256": "9c351809dea3bfb38e54155fde960f25d8dfc114fd4c1a22785c07115f6e56ef"
+        },
+        {
+          "original_line": 14362,
+          "vertex_indices": [
+            440,
+            441,
+            442,
+            443
+          ],
+          "face_block_sha256": "c8c43c37bb8c1ce9ccb7982c34fc62fd4dd8c0a36c022eda4ce6464bc8d5008b"
+        },
+        {
+          "original_line": 14367,
+          "vertex_indices": [
+            444,
+            445,
+            446,
+            447
+          ],
+          "face_block_sha256": "8cd653405ec11b1ba3b599c6276cce9da32af6fd314f3d7c7c0da67119856ad5"
+        },
+        {
+          "original_line": 14382,
+          "vertex_indices": [
+            456,
+            457,
+            458,
+            459
+          ],
+          "face_block_sha256": "a03bafda23dcc1069bb3416d25c0faef32984ae30211803e8052cf0b74665091"
+        },
+        {
+          "original_line": 14387,
+          "vertex_indices": [
+            460,
+            461,
+            462,
+            463
+          ],
+          "face_block_sha256": "afc7e6165c31798085912de0cea3c55ce81200d2e72c5e00ab40138a1629f317"
+        },
+        {
+          "original_line": 14402,
+          "vertex_indices": [
+            472,
+            473,
+            474,
+            475
+          ],
+          "face_block_sha256": "4df4f3192b44fb0c1e0a465d72fca2a77e3b3e32ba58d7c7e49e679ff1aabaa4"
+        },
+        {
+          "original_line": 14407,
+          "vertex_indices": [
+            476,
+            477,
+            478,
+            479
+          ],
+          "face_block_sha256": "d22f0c6dc6be75232d93774017530e96e725b8449aa2a29bed54653db9eda877"
+        },
+        {
+          "original_line": 14422,
+          "vertex_indices": [
+            488,
+            489,
+            490,
+            491
+          ],
+          "face_block_sha256": "abc4796e52ba2214b4d0f411cf28c5c8eb7695f68565b82bd129141930c5c3eb"
+        },
+        {
+          "original_line": 14427,
+          "vertex_indices": [
+            492,
+            493,
+            494,
+            495
+          ],
+          "face_block_sha256": "fe842ab9b4aa4956fe8ae0168426c2d818c472b40e08018e713247b7e552e8a3"
+        },
+        {
+          "original_line": 14442,
+          "vertex_indices": [
+            504,
+            505,
+            506,
+            507
+          ],
+          "face_block_sha256": "733f23c15c5017d9654cc68c8af9c997edc3f4f8b46284a284e50e45a807b757"
+        },
+        {
+          "original_line": 14447,
+          "vertex_indices": [
+            508,
+            509,
+            510,
+            511
+          ],
+          "face_block_sha256": "3eb7f2ba6a4ce42876f0b2088df7ffd144f605d6fd149f166f7030864f5c834e"
+        },
+        {
+          "original_line": 14462,
+          "vertex_indices": [
+            520,
+            521,
+            522,
+            523
+          ],
+          "face_block_sha256": "c33132d4e966c425980632874657323cb56af95d935cfe643ebfb7a18f496118"
+        },
+        {
+          "original_line": 14467,
+          "vertex_indices": [
+            524,
+            525,
+            526,
+            527
+          ],
+          "face_block_sha256": "f75d41ed9213e6529295023e7370ecdb23b9c46f89f2bbda4f1dd3683094cdfd"
+        },
+        {
+          "original_line": 14482,
+          "vertex_indices": [
+            536,
+            537,
+            538,
+            539
+          ],
+          "face_block_sha256": "2cdce5601e0c06e97cb9e014dc700d40c6eeb73429ac08dbd9ea26a82881b550"
+        },
+        {
+          "original_line": 14487,
+          "vertex_indices": [
+            540,
+            541,
+            542,
+            543
+          ],
+          "face_block_sha256": "41f184c5b1ab0fa448f9757d4fa19827648ef03dd597ebf45b6a2789f585d5c3"
+        },
+        {
+          "original_line": 14502,
+          "vertex_indices": [
+            552,
+            553,
+            554,
+            555
+          ],
+          "face_block_sha256": "7e703eb85b8f028ca18c92792f9aaa83eba38d5ca33a7402c90e11d329bed617"
+        },
+        {
+          "original_line": 14507,
+          "vertex_indices": [
+            556,
+            557,
+            558,
+            559
+          ],
+          "face_block_sha256": "1f5da7968c60b0bf775853449ab1e2e3c731463428a8e1581f050f77990a6921"
+        },
+        {
+          "original_line": 14522,
+          "vertex_indices": [
+            568,
+            569,
+            570,
+            571
+          ],
+          "face_block_sha256": "a1568001fcabbc840a169abb31f9d1e0445668737e9ddc5530b0f1ab4fb875ce"
+        },
+        {
+          "original_line": 14527,
+          "vertex_indices": [
+            572,
+            573,
+            574,
+            575
+          ],
+          "face_block_sha256": "bf5a435203e110ec63ec4407266e434448c38099afbfa4006916d6908c7b9f74"
+        },
+        {
+          "original_line": 14542,
+          "vertex_indices": [
+            584,
+            585,
+            586,
+            587
+          ],
+          "face_block_sha256": "be62d1c7b73110c1c4759fc1bfaa11c306d52465be9f56f9371849ad025042a9"
+        },
+        {
+          "original_line": 14547,
+          "vertex_indices": [
+            588,
+            589,
+            590,
+            591
+          ],
+          "face_block_sha256": "c099fa96b62cc7b92aff367bd89b0439cd3528e987edb91405af6a0dfff33664"
+        },
+        {
+          "original_line": 14562,
+          "vertex_indices": [
+            600,
+            601,
+            602,
+            603
+          ],
+          "face_block_sha256": "20ea89c8418ab6d8a72745ca184ba41cdbe8db81f74afe7e19c0a9e1fd281c80"
+        },
+        {
+          "original_line": 14567,
+          "vertex_indices": [
+            604,
+            605,
+            606,
+            607
+          ],
+          "face_block_sha256": "7d99b9369c53c4feeeef37dad5ee3297ded4443761eed7a8a922bb7421bed199"
+        },
+        {
+          "original_line": 14582,
+          "vertex_indices": [
+            616,
+            617,
+            618,
+            619
+          ],
+          "face_block_sha256": "41d9b4402ff5e34dce1ca5ebac73529842a15b5ea10c7c3f23fb7619225b3f2f"
+        },
+        {
+          "original_line": 14587,
+          "vertex_indices": [
+            620,
+            621,
+            622,
+            623
+          ],
+          "face_block_sha256": "9b61c5ac02621a7be3949b6c85e8c3c9902e361cfb3303e3b72e38b2a0a37768"
+        },
+        {
+          "original_line": 14602,
+          "vertex_indices": [
+            632,
+            633,
+            634,
+            635
+          ],
+          "face_block_sha256": "a7cfe20778b96eb6640d6c278d2def45a9f0626827f98b92ce394e3d485f86dc"
+        },
+        {
+          "original_line": 14607,
+          "vertex_indices": [
+            636,
+            637,
+            638,
+            639
+          ],
+          "face_block_sha256": "b61a4541064e668c5190764f53e5f16e8c2c9b0a1dbd52216d051dfd9a6a415d"
+        },
+        {
+          "original_line": 14622,
+          "vertex_indices": [
+            648,
+            649,
+            650,
+            651
+          ],
+          "face_block_sha256": "2e419ec0f014873743dd35b37a94267217d2abbb30299f83dbf1c27c79098014"
+        },
+        {
+          "original_line": 14627,
+          "vertex_indices": [
+            652,
+            653,
+            654,
+            655
+          ],
+          "face_block_sha256": "dc5f5d83d30b0c7f327bdab57234eff4d9bba400be6f08c0353db59a21c968dc"
+        },
+        {
+          "original_line": 14642,
+          "vertex_indices": [
+            664,
+            665,
+            666,
+            667
+          ],
+          "face_block_sha256": "ee55588c903f1e6b31343558d9bf19fe6422e02e14be8fcc3b67e50c7426ac0a"
+        },
+        {
+          "original_line": 14647,
+          "vertex_indices": [
+            668,
+            669,
+            670,
+            671
+          ],
+          "face_block_sha256": "a0b087ee687dfd1806e88788a2ce1bbdcb288fe30765f6fbdc5ad53997ef6ee3"
+        },
+        {
+          "original_line": 14662,
+          "vertex_indices": [
+            680,
+            681,
+            682,
+            683
+          ],
+          "face_block_sha256": "30f2c7cf08cad2ef1334e771fadd8e0750064c5a4d8a4aaaa722e192dfffe3b4"
+        },
+        {
+          "original_line": 14667,
+          "vertex_indices": [
+            684,
+            685,
+            686,
+            687
+          ],
+          "face_block_sha256": "ab6f08d79dc0f4834ab1e8f3e20d41592d3c2a3d3f53cde2c0a0f5744f760cbb"
+        },
+        {
+          "original_line": 14682,
+          "vertex_indices": [
+            696,
+            697,
+            698,
+            699
+          ],
+          "face_block_sha256": "c3428881a52b5889e0268644f3137bf03e637049af47c57ce2fab75dd1df8a72"
+        },
+        {
+          "original_line": 14687,
+          "vertex_indices": [
+            700,
+            701,
+            702,
+            703
+          ],
+          "face_block_sha256": "26f69bef6379e89ffdf1591ecb5e077aed2718d3c8af7f0e29c53f97044d3ae8"
+        },
+        {
+          "original_line": 14702,
+          "vertex_indices": [
+            712,
+            713,
+            714,
+            715
+          ],
+          "face_block_sha256": "841807dada1860883a7027f3852360831f50ce72fd5386cf9f7d17339f8aa203"
+        },
+        {
+          "original_line": 14707,
+          "vertex_indices": [
+            716,
+            717,
+            718,
+            719
+          ],
+          "face_block_sha256": "b508abb95d632476cabd0c9cf96db262666cb7249ae129ab990941f0c7fc284b"
+        },
+        {
+          "original_line": 14722,
+          "vertex_indices": [
+            728,
+            729,
+            730,
+            731
+          ],
+          "face_block_sha256": "375bf7518d0eece0169955a9c86713d3996dbfe2150f6fe7d1c6dbc2daad6928"
+        },
+        {
+          "original_line": 14727,
+          "vertex_indices": [
+            732,
+            733,
+            734,
+            735
+          ],
+          "face_block_sha256": "05e37623beaba413a33e732ef022f739595a8cd864e9761420b927d8fe1bf35d"
+        },
+        {
+          "original_line": 14742,
+          "vertex_indices": [
+            744,
+            745,
+            746,
+            747
+          ],
+          "face_block_sha256": "5d49994e1d243602f0dcb43f3f7780a4cca9b65eae5b91b80d1af0d548cc0071"
+        },
+        {
+          "original_line": 14747,
+          "vertex_indices": [
+            748,
+            749,
+            750,
+            751
+          ],
+          "face_block_sha256": "5d63103fc2c645f0c7fc5339cb87e8bf737cb68fd4a992a8a40246747754b08e"
+        },
+        {
+          "original_line": 14762,
+          "vertex_indices": [
+            760,
+            761,
+            762,
+            763
+          ],
+          "face_block_sha256": "cfa5a78d0fdc1a2bad620c57f0757c59669111ab7897c52272acc88942182469"
+        },
+        {
+          "original_line": 14767,
+          "vertex_indices": [
+            764,
+            765,
+            766,
+            767
+          ],
+          "face_block_sha256": "4c054758431bfb13171da046e78c7cfb69d27751729e4451d051eca89b097f80"
+        },
+        {
+          "original_line": 14782,
+          "vertex_indices": [
+            776,
+            777,
+            778,
+            779
+          ],
+          "face_block_sha256": "b0941f24c555f3bbb33f0268e20fa5fffb36a18fa0633dd0b6798b36d7b1d68b"
+        },
+        {
+          "original_line": 14787,
+          "vertex_indices": [
+            780,
+            781,
+            782,
+            783
+          ],
+          "face_block_sha256": "29236694f2441e9e57160d390416337b37e23861ab9a98052611f20ceaf3eebe"
+        },
+        {
+          "original_line": 14802,
+          "vertex_indices": [
+            792,
+            793,
+            794,
+            795
+          ],
+          "face_block_sha256": "d61b2c656b272227eda59663dfedac2084e707244ff6a2d8434a821634a45543"
+        },
+        {
+          "original_line": 14807,
+          "vertex_indices": [
+            796,
+            797,
+            798,
+            799
+          ],
+          "face_block_sha256": "4a1450f293809b6a17e095f7e4733c2c0a5f8f707f87ad1e137833b2784a070c"
+        },
+        {
+          "original_line": 14822,
+          "vertex_indices": [
+            808,
+            809,
+            810,
+            811
+          ],
+          "face_block_sha256": "0839c7dbdb344624161d71f26137c58df76dafa4d6712a844349062f40b6c713"
+        },
+        {
+          "original_line": 14827,
+          "vertex_indices": [
+            812,
+            813,
+            814,
+            815
+          ],
+          "face_block_sha256": "be0d221f7299e13a285ed30fb18b8632630ac912f11c1b6adfd550dd94026e62"
+        },
+        {
+          "original_line": 14842,
+          "vertex_indices": [
+            824,
+            825,
+            826,
+            827
+          ],
+          "face_block_sha256": "e2f9a73a839382068da174d6affb31518a060559b22b9d621ba848cb92a46e74"
+        },
+        {
+          "original_line": 14847,
+          "vertex_indices": [
+            828,
+            829,
+            830,
+            831
+          ],
+          "face_block_sha256": "6e9091c0a220ab839f7d2fc953f51feb7445efc8ed0f947d47d76e8a07754446"
+        },
+        {
+          "original_line": 14862,
+          "vertex_indices": [
+            840,
+            841,
+            842,
+            843
+          ],
+          "face_block_sha256": "0f23f044377441092723f8eecd3455914a5c33ba5461d5c41162e74cfd7155c3"
+        },
+        {
+          "original_line": 14867,
+          "vertex_indices": [
+            844,
+            845,
+            846,
+            847
+          ],
+          "face_block_sha256": "f09c2592a71064706c6f76d79e4029e2cb3d30cae8d31a90f8856e77732db99f"
+        },
+        {
+          "original_line": 14882,
+          "vertex_indices": [
+            856,
+            857,
+            858,
+            859
+          ],
+          "face_block_sha256": "1ab1099d9371f2e5e39b079301eb4763458d5ce3edbb9e056c896a5307f57054"
+        },
+        {
+          "original_line": 14887,
+          "vertex_indices": [
+            860,
+            861,
+            862,
+            863
+          ],
+          "face_block_sha256": "464becfbf563fc363f7f3af8bd0c0ae62c6412b6f411130163a02cace4e1aef8"
+        },
+        {
+          "original_line": 14902,
+          "vertex_indices": [
+            872,
+            873,
+            874,
+            875
+          ],
+          "face_block_sha256": "c110fdb752dcebc4141631ff5b3fc3b956e30dde09297453aa7efa6ffe68d955"
+        },
+        {
+          "original_line": 14907,
+          "vertex_indices": [
+            876,
+            877,
+            878,
+            879
+          ],
+          "face_block_sha256": "18f6abd193ae546a53a0dc2603c6bdf53fa2c9c8b373e36e36d6d48fa35eaff1"
+        },
+        {
+          "original_line": 14922,
+          "vertex_indices": [
+            888,
+            889,
+            890,
+            891
+          ],
+          "face_block_sha256": "9de028f306e64d9cc24c5f45ab9d5ffcd8fb2ad22ceb8db3e9923a5d1a1107e6"
+        },
+        {
+          "original_line": 14927,
+          "vertex_indices": [
+            892,
+            893,
+            894,
+            895
+          ],
+          "face_block_sha256": "8251ffb92c110ff14f79aa6c817a24505f50408f0d1b19f03626f5fbfa43291a"
+        },
+        {
+          "original_line": 14942,
+          "vertex_indices": [
+            904,
+            905,
+            906,
+            907
+          ],
+          "face_block_sha256": "22d0f8c93d5a0a8b80a6e06c1255619f9068f554bb0766c2e9978cf54d5beabb"
+        },
+        {
+          "original_line": 14947,
+          "vertex_indices": [
+            908,
+            909,
+            910,
+            911
+          ],
+          "face_block_sha256": "05889bcb24cbf48b1c1b50fb99f335f42877c4ab0c57c1188d77a0136a1f31f8"
+        },
+        {
+          "original_line": 14962,
+          "vertex_indices": [
+            920,
+            921,
+            922,
+            923
+          ],
+          "face_block_sha256": "1965726ac6043f5a6d566b09837c6527f68584603e2913b3facb3508cc110aa1"
+        },
+        {
+          "original_line": 14967,
+          "vertex_indices": [
+            924,
+            925,
+            926,
+            927
+          ],
+          "face_block_sha256": "7739ce0a9f6dbdb71ec333a47d4b7cefd1f543c6eaaa3bee3bc02e046660f6cb"
+        },
+        {
+          "original_line": 14982,
+          "vertex_indices": [
+            936,
+            937,
+            938,
+            939
+          ],
+          "face_block_sha256": "cd24ae6b9a8e9b7303102b0b24616bb986d2db5e861a865c25012f3329374c66"
+        },
+        {
+          "original_line": 14987,
+          "vertex_indices": [
+            940,
+            941,
+            942,
+            943
+          ],
+          "face_block_sha256": "d1d786d0beafc2da185358cdf6c2806b50a2f4599f04a55edd080a418f2a219f"
+        },
+        {
+          "original_line": 15002,
+          "vertex_indices": [
+            952,
+            953,
+            954,
+            955
+          ],
+          "face_block_sha256": "1311c6e18c2507b3d18a4563b1bbb6d3bf77a079497efae337e9004ba59d9c8b"
+        },
+        {
+          "original_line": 15007,
+          "vertex_indices": [
+            956,
+            957,
+            958,
+            959
+          ],
+          "face_block_sha256": "a7cf5bebecd7860fb0aade9f557bc1877ee88e497979b9e9488c4c0772e06f4a"
+        },
+        {
+          "original_line": 15022,
+          "vertex_indices": [
+            968,
+            969,
+            970,
+            971
+          ],
+          "face_block_sha256": "80d66d3d28c7b6435b5e9840077c39d421a474acc12dfcaee5e7d175c5a435c6"
+        },
+        {
+          "original_line": 15027,
+          "vertex_indices": [
+            972,
+            973,
+            974,
+            975
+          ],
+          "face_block_sha256": "f2626a7107faab08111b8a8dacc96cc5f3fe449cab9ba14a2499f270284ec036"
+        },
+        {
+          "original_line": 15042,
+          "vertex_indices": [
+            984,
+            985,
+            986,
+            987
+          ],
+          "face_block_sha256": "5619761adfdc53f77f338fd459c734faadd507124d33fb7ba18af5419259cbce"
+        },
+        {
+          "original_line": 15047,
+          "vertex_indices": [
+            988,
+            989,
+            990,
+            991
+          ],
+          "face_block_sha256": "7b805639a9a0c4b07568e2c24e68779e7ce3d892f2337f729e6e32574dcc7750"
+        },
+        {
+          "original_line": 17742,
+          "vertex_indices": [
+            3144,
+            3145,
+            3146,
+            3147
+          ],
+          "face_block_sha256": "8b3e97cad38e93f5e0dd42de5a37e3a6fbea496bfbf06c540ee4194b3df9ec4a"
+        },
+        {
+          "original_line": 17747,
+          "vertex_indices": [
+            3148,
+            3149,
+            3150,
+            3151
+          ],
+          "face_block_sha256": "737df5d2e6171bfe5e73463467217e881f71848876a92c52b612cfa302d9ec59"
+        },
+        {
+          "original_line": 17762,
+          "vertex_indices": [
+            3160,
+            3161,
+            3162,
+            3163
+          ],
+          "face_block_sha256": "c0055053320bd9b0d935f7e242224cb20abe8c9a6c4f12074107033fb61f5117"
+        },
+        {
+          "original_line": 17767,
+          "vertex_indices": [
+            3164,
+            3165,
+            3166,
+            3167
+          ],
+          "face_block_sha256": "a0681073c8790d0684f0d288045302cc3be5e79c18e6436900a29ff979de8c7d"
+        },
+        {
+          "original_line": 17782,
+          "vertex_indices": [
+            3176,
+            3177,
+            3178,
+            3179
+          ],
+          "face_block_sha256": "8e212ee492a28418c8e8210bb1932b60e39ffa3066c0486f58011894908af754"
+        },
+        {
+          "original_line": 17787,
+          "vertex_indices": [
+            3180,
+            3181,
+            3182,
+            3183
+          ],
+          "face_block_sha256": "0e12193bfa12f9b5ae97d018c4b9bbcb207130776594147341f8edc1c0c74575"
+        },
+        {
+          "original_line": 17802,
+          "vertex_indices": [
+            3192,
+            3193,
+            3194,
+            3195
+          ],
+          "face_block_sha256": "3f28142f0058e2baf5ade67c381af3706bf69d5ab45a0a12e2077fface850a7f"
+        },
+        {
+          "original_line": 17807,
+          "vertex_indices": [
+            3196,
+            3197,
+            3198,
+            3199
+          ],
+          "face_block_sha256": "f8c1b7eab44bdbe75253378c6d19f9e880128ae1a6f3c864964d7e8a9f47492b"
+        },
+        {
+          "original_line": 17822,
+          "vertex_indices": [
+            3208,
+            3209,
+            3210,
+            3211
+          ],
+          "face_block_sha256": "849f3a5090b9289b013f64fa7b3e75c86f422514194ef7685802721a7c553058"
+        },
+        {
+          "original_line": 17827,
+          "vertex_indices": [
+            3212,
+            3213,
+            3214,
+            3215
+          ],
+          "face_block_sha256": "78d59249e5c8ed58f7910079e9b3ffafe04cf8d12ad35f5c2637164f9eea1093"
+        },
+        {
+          "original_line": 17842,
+          "vertex_indices": [
+            3224,
+            3225,
+            3226,
+            3227
+          ],
+          "face_block_sha256": "6566c78cd01f3a25b675858e49ab5a6f585da3956895d1107f1be25f1ab7fef0"
+        },
+        {
+          "original_line": 17847,
+          "vertex_indices": [
+            3228,
+            3229,
+            3230,
+            3231
+          ],
+          "face_block_sha256": "7661ab8af71efbbfc94064f454fe32917e8660c75fb0521ebb11bbd3fc0b83e7"
+        },
+        {
+          "original_line": 17862,
+          "vertex_indices": [
+            3240,
+            3241,
+            3242,
+            3243
+          ],
+          "face_block_sha256": "6d4dd9e2b2fda9aff3bd31caaa1fd5d96fcff7b6db9e5dfc6dc0379c9dcb0f5b"
+        },
+        {
+          "original_line": 17867,
+          "vertex_indices": [
+            3244,
+            3245,
+            3246,
+            3247
+          ],
+          "face_block_sha256": "884e009cfef1c8a9f672de3854b74a48ed857804f4ad3df119e1585d1b074c1a"
+        },
+        {
+          "original_line": 17882,
+          "vertex_indices": [
+            3256,
+            3257,
+            3258,
+            3259
+          ],
+          "face_block_sha256": "dbf52323c46ef6618513e55f3f74e63337eb8ecaf712fd84ba917b14a9ad1af1"
+        },
+        {
+          "original_line": 17887,
+          "vertex_indices": [
+            3260,
+            3261,
+            3262,
+            3263
+          ],
+          "face_block_sha256": "2cf9b0a68a7ef929a9f567309632c116a7b6903170910d7ec5fb39111ab2c337"
+        },
+        {
+          "original_line": 17902,
+          "vertex_indices": [
+            3272,
+            3273,
+            3274,
+            3275
+          ],
+          "face_block_sha256": "9b88f6ecae642b7c1ff40164dccb5ba5efc3e678da83df4f2fee060600093016"
+        },
+        {
+          "original_line": 17907,
+          "vertex_indices": [
+            3276,
+            3277,
+            3278,
+            3279
+          ],
+          "face_block_sha256": "67e9b3582d079aba70bc2a1eac6339fb588939e1079673739507be7be15fef80"
+        },
+        {
+          "original_line": 17922,
+          "vertex_indices": [
+            3288,
+            3289,
+            3290,
+            3291
+          ],
+          "face_block_sha256": "fc698b8b805dd33f68e4d20b1b11217a15810b68823cdcc33205c149d7a7f342"
+        },
+        {
+          "original_line": 17927,
+          "vertex_indices": [
+            3292,
+            3293,
+            3294,
+            3295
+          ],
+          "face_block_sha256": "98f02934808cdfb930d88b1af536011edba766e1486f7eee5652e74fdcf170d6"
+        },
+        {
+          "original_line": 17942,
+          "vertex_indices": [
+            3304,
+            3305,
+            3306,
+            3307
+          ],
+          "face_block_sha256": "86e1f505e287002c6862796c907c64afbf5c03d6e017309e363df33118cf3f76"
+        },
+        {
+          "original_line": 17947,
+          "vertex_indices": [
+            3308,
+            3309,
+            3310,
+            3311
+          ],
+          "face_block_sha256": "c1284e544c6416d850e1ea388d05ed31b038e23414b729911d8d592130031abc"
+        },
+        {
+          "original_line": 17962,
+          "vertex_indices": [
+            3320,
+            3321,
+            3322,
+            3323
+          ],
+          "face_block_sha256": "f6568fa3a735be44bfe7539924e46142f09ca6a12ca6e0d9c5ca016341a506cc"
+        },
+        {
+          "original_line": 17967,
+          "vertex_indices": [
+            3324,
+            3325,
+            3326,
+            3327
+          ],
+          "face_block_sha256": "a78ff459d7051fb81b8a01f0e4445dde90b81acbcf8b51af53893183e6740d15"
+        },
+        {
+          "original_line": 17982,
+          "vertex_indices": [
+            3336,
+            3337,
+            3338,
+            3339
+          ],
+          "face_block_sha256": "8a1609c0e0553601923899fed5886171f5b8f5cd44e8c7043ff242f6f86750d4"
+        },
+        {
+          "original_line": 17987,
+          "vertex_indices": [
+            3340,
+            3341,
+            3342,
+            3343
+          ],
+          "face_block_sha256": "e02cf6a0ccd9f4009165f08d47cf789ad00d157dff7851b4f8fcadd7e10c4f02"
+        },
+        {
+          "original_line": 18002,
+          "vertex_indices": [
+            3352,
+            3353,
+            3354,
+            3355
+          ],
+          "face_block_sha256": "e776cb172bd1ea163123231a804a4051f5e138faaf168eff03ff6bc6ff45380c"
+        },
+        {
+          "original_line": 18007,
+          "vertex_indices": [
+            3356,
+            3357,
+            3358,
+            3359
+          ],
+          "face_block_sha256": "b7f7174fe562442bf27f4a84dddca03db43fab7909218cb9f8cf78f695208ec6"
+        },
+        {
+          "original_line": 18022,
+          "vertex_indices": [
+            3368,
+            3369,
+            3370,
+            3371
+          ],
+          "face_block_sha256": "b4ac72fac38c2933f6d7fca5c43ed9dd2a411cf5998cf6dfbb24ca7d8589d9c1"
+        },
+        {
+          "original_line": 18027,
+          "vertex_indices": [
+            3372,
+            3373,
+            3374,
+            3375
+          ],
+          "face_block_sha256": "c52d5ea03ff3547efcaae142b028cbaeaca987fc253dca7d2bdd13d4b7c30aed"
+        },
+        {
+          "original_line": 18042,
+          "vertex_indices": [
+            3384,
+            3385,
+            3386,
+            3387
+          ],
+          "face_block_sha256": "fc47d0da35eccaa2a78f300bbab0c18c2c082d243306d0f84c7979d4fda3fd77"
+        },
+        {
+          "original_line": 18047,
+          "vertex_indices": [
+            3388,
+            3389,
+            3390,
+            3391
+          ],
+          "face_block_sha256": "6245761e8f73bc31108999166479cb996cb8db59787861dea75a653b9376e76a"
+        },
+        {
+          "original_line": 18062,
+          "vertex_indices": [
+            3400,
+            3401,
+            3402,
+            3403
+          ],
+          "face_block_sha256": "d098b5d2140ac9b0c9b64dd1e85118a0c9c8550628f6faa4d5aeee4dc4ec91df"
+        },
+        {
+          "original_line": 18067,
+          "vertex_indices": [
+            3404,
+            3405,
+            3406,
+            3407
+          ],
+          "face_block_sha256": "d2df23d6c2fd8df71b804c43f8aea7eec680f74507281fbbeeac7c94779ff01e"
+        },
+        {
+          "original_line": 18082,
+          "vertex_indices": [
+            3416,
+            3417,
+            3418,
+            3419
+          ],
+          "face_block_sha256": "d0b0ab7d66a3b0eb07d5afecd2cb019aeda0dab1fd26761ffd84f257fa3caf7a"
+        },
+        {
+          "original_line": 18087,
+          "vertex_indices": [
+            3420,
+            3421,
+            3422,
+            3423
+          ],
+          "face_block_sha256": "432fe1c15552723cb51ad4bfc40f252475a6379b396d84b09cc015461b849e7b"
+        },
+        {
+          "original_line": 18102,
+          "vertex_indices": [
+            3432,
+            3433,
+            3434,
+            3435
+          ],
+          "face_block_sha256": "10137dadc56b67819b3a4ee4864873aa7f1a2098961f29518732019f451d9685"
+        },
+        {
+          "original_line": 18107,
+          "vertex_indices": [
+            3436,
+            3437,
+            3438,
+            3439
+          ],
+          "face_block_sha256": "eee3f756969c57f282345f0e3932c604cd9f6c61ff094a1093a0fb95d6219bc0"
+        },
+        {
+          "original_line": 18122,
+          "vertex_indices": [
+            3448,
+            3449,
+            3450,
+            3451
+          ],
+          "face_block_sha256": "5c5b570d61b798071f9bd8f2fbe5c2a0c0d12eb8029a263398585c35a187d4be"
+        },
+        {
+          "original_line": 18127,
+          "vertex_indices": [
+            3452,
+            3453,
+            3454,
+            3455
+          ],
+          "face_block_sha256": "e58a8b76b75d349559487549474bd3a8d74ba3846b0a7e4a3e2c1255acf54f80"
+        },
+        {
+          "original_line": 18142,
+          "vertex_indices": [
+            3464,
+            3465,
+            3466,
+            3467
+          ],
+          "face_block_sha256": "fd76ff74275c352a6a04a1c3378921ae360d68a8387228e446f0a0ab4405ad2f"
+        },
+        {
+          "original_line": 18147,
+          "vertex_indices": [
+            3468,
+            3469,
+            3470,
+            3471
+          ],
+          "face_block_sha256": "3ae9affefc4e1d135b736cf5be87ce09ddcc77d68343f0b1a7febb144b0f5716"
+        },
+        {
+          "original_line": 18162,
+          "vertex_indices": [
+            3480,
+            3481,
+            3482,
+            3483
+          ],
+          "face_block_sha256": "8f84f4ec53e502a6ab72a76ebe0d082a4269b09346d7968f04c4a948443dd18e"
+        },
+        {
+          "original_line": 18167,
+          "vertex_indices": [
+            3484,
+            3485,
+            3486,
+            3487
+          ],
+          "face_block_sha256": "a70fb59f769eb0b1ac6e56ef7f7a2746cab580430282dcde491dd704631960b2"
+        },
+        {
+          "original_line": 18182,
+          "vertex_indices": [
+            3496,
+            3497,
+            3498,
+            3499
+          ],
+          "face_block_sha256": "be0eb68d01cdd1e1038303d97246c46c7254f191176f509e2d51659c59aebac0"
+        },
+        {
+          "original_line": 18187,
+          "vertex_indices": [
+            3500,
+            3501,
+            3502,
+            3503
+          ],
+          "face_block_sha256": "765587558182b75bfcb2660b5ec1b624f1fc5e1c3f67d06b49e534cc2a90cdd9"
+        },
+        {
+          "original_line": 18202,
+          "vertex_indices": [
+            3512,
+            3513,
+            3514,
+            3515
+          ],
+          "face_block_sha256": "49ab7e13551413113a5b0338f192c4f124c19355a3a1f181c3f415ba5d44e56d"
+        },
+        {
+          "original_line": 18207,
+          "vertex_indices": [
+            3516,
+            3517,
+            3518,
+            3519
+          ],
+          "face_block_sha256": "c0e75c4a53d86a1537d4740c17c40bf10530d1351f4c4e75e2df184fd3302150"
+        },
+        {
+          "original_line": 18222,
+          "vertex_indices": [
+            3528,
+            3529,
+            3530,
+            3531
+          ],
+          "face_block_sha256": "9333e7700c6b42b5a51e5addecacf2e336107057853d63db440773c18fe6dd10"
+        },
+        {
+          "original_line": 18227,
+          "vertex_indices": [
+            3532,
+            3533,
+            3534,
+            3535
+          ],
+          "face_block_sha256": "7ebffa1cbe2b54e5f53292b960c17c8fff375ee4e5e1e165c86af526447ee511"
+        },
+        {
+          "original_line": 18242,
+          "vertex_indices": [
+            3544,
+            3545,
+            3546,
+            3547
+          ],
+          "face_block_sha256": "624d4965afea7522ace8f2f8507b6551233a6706824609165ec5401a40778ca3"
+        },
+        {
+          "original_line": 18247,
+          "vertex_indices": [
+            3548,
+            3549,
+            3550,
+            3551
+          ],
+          "face_block_sha256": "cf4020b3883d3dc4638417dddc7f29a15fb3bd1f93a3485ddf7ce28b19a4f0bb"
+        },
+        {
+          "original_line": 18262,
+          "vertex_indices": [
+            3560,
+            3561,
+            3562,
+            3563
+          ],
+          "face_block_sha256": "8ccc19ed98242bf0b3a00446571d9de4f0a3079f8a86f195d6cc606aaa366043"
+        },
+        {
+          "original_line": 18267,
+          "vertex_indices": [
+            3564,
+            3565,
+            3566,
+            3567
+          ],
+          "face_block_sha256": "9b023b6251ce3788db9c6e286940890e01e422cb6cf9f0a74f03a6a0042501b9"
+        },
+        {
+          "original_line": 18282,
+          "vertex_indices": [
+            3576,
+            3577,
+            3578,
+            3579
+          ],
+          "face_block_sha256": "16d32c035dd3aa4c3cd2926ed468363b61c5049d4d30a3a815e54fb0502d15ab"
+        },
+        {
+          "original_line": 18287,
+          "vertex_indices": [
+            3580,
+            3581,
+            3582,
+            3583
+          ],
+          "face_block_sha256": "1ca8a481f5088b010c73f114172f274b522928a6851a6eb364bf57f1ab8a6ced"
+        },
+        {
+          "original_line": 18302,
+          "vertex_indices": [
+            3592,
+            3593,
+            3594,
+            3595
+          ],
+          "face_block_sha256": "58f690ad44a463dc137439cb95b655591513c502388667b526b553044b74f360"
+        },
+        {
+          "original_line": 18307,
+          "vertex_indices": [
+            3596,
+            3597,
+            3598,
+            3599
+          ],
+          "face_block_sha256": "aeddfec2405d84e87194613f3debd486543156a5c700e85a4ba5d5a619c87e8d"
+        },
+        {
+          "original_line": 18322,
+          "vertex_indices": [
+            3608,
+            3609,
+            3610,
+            3611
+          ],
+          "face_block_sha256": "a054a99480a3326ac24aad92a3c3487a4fab94000959934d3f823e4b243c0af0"
+        },
+        {
+          "original_line": 18327,
+          "vertex_indices": [
+            3612,
+            3613,
+            3614,
+            3615
+          ],
+          "face_block_sha256": "88e2422853e5fc6cceb96196bff95c0a470eb67b2dca757dac637b09be8ae360"
+        },
+        {
+          "original_line": 18342,
+          "vertex_indices": [
+            3624,
+            3625,
+            3626,
+            3627
+          ],
+          "face_block_sha256": "a92eb78e072bbf8bb4fd84a69839b70a96dbca8670ce301a2d0afa8eba03cf57"
+        },
+        {
+          "original_line": 18347,
+          "vertex_indices": [
+            3628,
+            3629,
+            3630,
+            3631
+          ],
+          "face_block_sha256": "99f0693f940128c13792cf8a0426d37eaf5a83b2ecda1ab41dec23aa62e83b18"
+        },
+        {
+          "original_line": 18362,
+          "vertex_indices": [
+            3640,
+            3641,
+            3642,
+            3643
+          ],
+          "face_block_sha256": "bd8de832a9291244b4ea1e89eb38a7f60ccdd56570424fce89dded64e4508604"
+        },
+        {
+          "original_line": 18367,
+          "vertex_indices": [
+            3644,
+            3645,
+            3646,
+            3647
+          ],
+          "face_block_sha256": "275dae828624ce6fb7fb0ce525d0cf26b1e0b5ac33d727d6e43d7681dc7793a0"
+        },
+        {
+          "original_line": 18382,
+          "vertex_indices": [
+            3656,
+            3657,
+            3658,
+            3659
+          ],
+          "face_block_sha256": "ac756649c4831aa8334108d80364a554660a9ab393537c1f3979774470898a2f"
+        },
+        {
+          "original_line": 18387,
+          "vertex_indices": [
+            3660,
+            3661,
+            3662,
+            3663
+          ],
+          "face_block_sha256": "c845fb669e83046362fec4aa443543e40b75d918b3f1828c052533bfbc150030"
+        },
+        {
+          "original_line": 18402,
+          "vertex_indices": [
+            3672,
+            3673,
+            3674,
+            3675
+          ],
+          "face_block_sha256": "3788549d6b60208e453ff9456f850a723bb9c255387113799ce90f7c10cd0b99"
+        },
+        {
+          "original_line": 18407,
+          "vertex_indices": [
+            3676,
+            3677,
+            3678,
+            3679
+          ],
+          "face_block_sha256": "c74651072b2f88bcbec2f44591499d80f5633ae931b24287b1ddf4c5276add86"
+        },
+        {
+          "original_line": 18422,
+          "vertex_indices": [
+            3688,
+            3689,
+            3690,
+            3691
+          ],
+          "face_block_sha256": "9c4bfed042f271fac3d653f27cc32c35d40bd2d8bfee685e84c60f3d5268c755"
+        },
+        {
+          "original_line": 18427,
+          "vertex_indices": [
+            3692,
+            3693,
+            3694,
+            3695
+          ],
+          "face_block_sha256": "d3b8cfcb3c7df5706bce97ac06d104f13dcfb35acad796f723172f3020734a28"
+        },
+        {
+          "original_line": 18442,
+          "vertex_indices": [
+            3704,
+            3705,
+            3706,
+            3707
+          ],
+          "face_block_sha256": "e96d553240816369b5df228c645b28ee9b526760bff05933b866bdd40ae480e5"
+        },
+        {
+          "original_line": 18447,
+          "vertex_indices": [
+            3708,
+            3709,
+            3710,
+            3711
+          ],
+          "face_block_sha256": "4a68e6734023ae8fc97cdeb128111a4b92eb1fb0eedacfc843262a2f709e4cf9"
+        },
+        {
+          "original_line": 18462,
+          "vertex_indices": [
+            3720,
+            3721,
+            3722,
+            3723
+          ],
+          "face_block_sha256": "116211e87cdf4f27cb5031ed2545e0b3fa08ad625fb81fcc62805139a836daad"
+        },
+        {
+          "original_line": 18467,
+          "vertex_indices": [
+            3724,
+            3725,
+            3726,
+            3727
+          ],
+          "face_block_sha256": "2df0825ec4db05370542dad25cc239efef896deaa31945de2c1d9058287297a9"
+        }
+      ],
+      "vertex_records_unchanged": false
+    },
+    "GearWell_Right": {
+      "removed_faces": [
+        {
+          "original_line": 13308,
+          "vertex_indices": [
+            1592,
+            1593,
+            1594,
+            1595
+          ],
+          "face_block_sha256": "92ef71c5de16de892f5f252e34da7dfbef93fe75641e810138728376bb92ec9f"
+        },
+        {
+          "original_line": 13313,
+          "vertex_indices": [
+            1596,
+            1597,
+            1598,
+            1599
+          ],
+          "face_block_sha256": "6850b5d4d78e904ad551ba8bbeeb4d3def467895002bce43324a5278d225945e"
+        },
+        {
+          "original_line": 13328,
+          "vertex_indices": [
+            1608,
+            1609,
+            1610,
+            1611
+          ],
+          "face_block_sha256": "4edbf3e798619c4c6e058eb8b0f95ff39bfd2c6d0d71514ddc9ccbb77f2ff150"
+        },
+        {
+          "original_line": 13333,
+          "vertex_indices": [
+            1612,
+            1613,
+            1614,
+            1615
+          ],
+          "face_block_sha256": "4adcfcb8a7bf7432205d2eb0012366f9b5265befda167bff20477149a70167e1"
+        },
+        {
+          "original_line": 13348,
+          "vertex_indices": [
+            1624,
+            1625,
+            1626,
+            1627
+          ],
+          "face_block_sha256": "00deb0e787f3cb9640962eee5e557ad98a7c2e9f58b6d9164ef7dd017ec89d75"
+        },
+        {
+          "original_line": 13353,
+          "vertex_indices": [
+            1628,
+            1629,
+            1630,
+            1631
+          ],
+          "face_block_sha256": "fbc360037b8ee1c84030c9c43a1652f79580a9667cb79e69cf3ed5ee1834cb7d"
+        },
+        {
+          "original_line": 13368,
+          "vertex_indices": [
+            1640,
+            1641,
+            1642,
+            1643
+          ],
+          "face_block_sha256": "e5fb51a28a3a3667bc06a076357bf8f554373c59ea56ff2302edb2192ca11c75"
+        },
+        {
+          "original_line": 13373,
+          "vertex_indices": [
+            1644,
+            1645,
+            1646,
+            1647
+          ],
+          "face_block_sha256": "2d4f318bb33709e75ec4994ef2a4d45ff81eb2c6a63ef4b8ba39b32242fb3f2b"
+        },
+        {
+          "original_line": 13388,
+          "vertex_indices": [
+            1656,
+            1657,
+            1658,
+            1659
+          ],
+          "face_block_sha256": "d6788ffc1652acc70bbb2ce48bd25a612ed26f59e200630fe8f11195a6006307"
+        },
+        {
+          "original_line": 13393,
+          "vertex_indices": [
+            1660,
+            1661,
+            1662,
+            1663
+          ],
+          "face_block_sha256": "dcc24c5db3f752e7d0dd63ad71ee55f5067e39087c09c6b8a87c5cf933bed4e6"
+        },
+        {
+          "original_line": 13408,
+          "vertex_indices": [
+            1672,
+            1673,
+            1674,
+            1675
+          ],
+          "face_block_sha256": "b969cdb74a28fbbf31a6412a30aaafd737fe423879a08f5b54d0577ef020491e"
+        },
+        {
+          "original_line": 13413,
+          "vertex_indices": [
+            1676,
+            1677,
+            1678,
+            1679
+          ],
+          "face_block_sha256": "fcac742910ee3182fe8750171c3ac23a55642e8f458c7b87807767765e5019a0"
+        },
+        {
+          "original_line": 13428,
+          "vertex_indices": [
+            1688,
+            1689,
+            1690,
+            1691
+          ],
+          "face_block_sha256": "d508ece517ae20cd5eb7e2a6fa5a5d997a37abbcf82db7694d114c8124e02ce4"
+        },
+        {
+          "original_line": 13433,
+          "vertex_indices": [
+            1692,
+            1693,
+            1694,
+            1695
+          ],
+          "face_block_sha256": "32d231dfcb69ec186c2341d8ac0c494f7939a0709eaead508953a00f373ffdb7"
+        },
+        {
+          "original_line": 13448,
+          "vertex_indices": [
+            1704,
+            1705,
+            1706,
+            1707
+          ],
+          "face_block_sha256": "9864eab25bef3c982f0d1d0320595cf373f00f26fef522d649026dd02e1e6ca2"
+        },
+        {
+          "original_line": 13453,
+          "vertex_indices": [
+            1708,
+            1709,
+            1710,
+            1711
+          ],
+          "face_block_sha256": "f36439279de049057e34fe4c28de68189d9376d7a7968bce0891e71d3870429b"
+        },
+        {
+          "original_line": 13468,
+          "vertex_indices": [
+            1720,
+            1721,
+            1722,
+            1723
+          ],
+          "face_block_sha256": "d6e945959ae23be0fdd3f6f3adf3dd475679d45e8f1825142670c80e7da5defd"
+        },
+        {
+          "original_line": 13473,
+          "vertex_indices": [
+            1724,
+            1725,
+            1726,
+            1727
+          ],
+          "face_block_sha256": "4d10cb9be5177a4a765c58c2c7ab6cc7958c246c2c87bfc88c58e0084ad9fd3c"
+        },
+        {
+          "original_line": 13488,
+          "vertex_indices": [
+            1736,
+            1737,
+            1738,
+            1739
+          ],
+          "face_block_sha256": "c7ff8ee6961c176b865c0aec46f2fe442e119fd3f6340a8a810f84aefb66c041"
+        },
+        {
+          "original_line": 13493,
+          "vertex_indices": [
+            1740,
+            1741,
+            1742,
+            1743
+          ],
+          "face_block_sha256": "251224eee9a333d73407304587ae525cffc8263f57984c43b13e01fa1a1a8407"
+        },
+        {
+          "original_line": 13508,
+          "vertex_indices": [
+            1752,
+            1753,
+            1754,
+            1755
+          ],
+          "face_block_sha256": "3e556e9e0f5aa4b104a295566c9989f86cea3df86eeb457500a56896e1d79bf2"
+        },
+        {
+          "original_line": 13513,
+          "vertex_indices": [
+            1756,
+            1757,
+            1758,
+            1759
+          ],
+          "face_block_sha256": "c2960a6bded76802e759833a8981ede150b25aa1782e389895b2050cca1f7103"
+        },
+        {
+          "original_line": 13528,
+          "vertex_indices": [
+            1768,
+            1769,
+            1770,
+            1771
+          ],
+          "face_block_sha256": "62973e073c6a3287c6fc900b7c081095d561e8ecad40e1dd5828b4e85210e85b"
+        },
+        {
+          "original_line": 13533,
+          "vertex_indices": [
+            1772,
+            1773,
+            1774,
+            1775
+          ],
+          "face_block_sha256": "7db2de1af797056a1130a625bbc482858d5b7d8e302c4b500ef7411ea4d6193f"
+        },
+        {
+          "original_line": 13548,
+          "vertex_indices": [
+            1784,
+            1785,
+            1786,
+            1787
+          ],
+          "face_block_sha256": "af67d84ac1e297272a9af83ac8c32b779bc26578feba1587dd09bd5e8eb909a5"
+        },
+        {
+          "original_line": 13553,
+          "vertex_indices": [
+            1788,
+            1789,
+            1790,
+            1791
+          ],
+          "face_block_sha256": "b8ec78554b71c9efe0c71a8aa79e779574782a571f414af21548b979391c8326"
+        },
+        {
+          "original_line": 13568,
+          "vertex_indices": [
+            1800,
+            1801,
+            1802,
+            1803
+          ],
+          "face_block_sha256": "768d610c849e704b9ca51a8084c5a3b7374babefecdbba71edb6a056588eaa81"
+        },
+        {
+          "original_line": 13573,
+          "vertex_indices": [
+            1804,
+            1805,
+            1806,
+            1807
+          ],
+          "face_block_sha256": "02d008fc4f2e5411fb553becaa940c3d7fe8e125f3c97cd0ea580f88c45841cc"
+        },
+        {
+          "original_line": 13588,
+          "vertex_indices": [
+            1816,
+            1817,
+            1818,
+            1819
+          ],
+          "face_block_sha256": "0b118fa814f172cc4170d1a1e32705959970f5171311acd97b68244327f3acf2"
+        },
+        {
+          "original_line": 13593,
+          "vertex_indices": [
+            1820,
+            1821,
+            1822,
+            1823
+          ],
+          "face_block_sha256": "c5cb635780e929754af3db48ca65595acf290a5e70ce8b6a79858106944a2567"
+        },
+        {
+          "original_line": 13608,
+          "vertex_indices": [
+            1832,
+            1833,
+            1834,
+            1835
+          ],
+          "face_block_sha256": "e6d027b741d7f0f1a2095c3b5840e7e691982ad1927c8f07f746c7ba816c0027"
+        },
+        {
+          "original_line": 13613,
+          "vertex_indices": [
+            1836,
+            1837,
+            1838,
+            1839
+          ],
+          "face_block_sha256": "6b16e6502bfc74f79ab046ed239fd05db036302e8efc4e45ddc48b60333e4a35"
+        },
+        {
+          "original_line": 13628,
+          "vertex_indices": [
+            1848,
+            1849,
+            1850,
+            1851
+          ],
+          "face_block_sha256": "9b6a5d9b62e6abe73a4e37fbbc0c37b3dc772187ea8d11db434196cd540a8e17"
+        },
+        {
+          "original_line": 13633,
+          "vertex_indices": [
+            1852,
+            1853,
+            1854,
+            1855
+          ],
+          "face_block_sha256": "da99f3696855260fef963f27cfa0d2a8e2932259def79880196434df8de66569"
+        },
+        {
+          "original_line": 13648,
+          "vertex_indices": [
+            1864,
+            1865,
+            1866,
+            1867
+          ],
+          "face_block_sha256": "cf298fca0d3f5d1ca717fba24a4eb7de7c6c578da7f1e7662afad4eb74efe104"
+        },
+        {
+          "original_line": 13653,
+          "vertex_indices": [
+            1868,
+            1869,
+            1870,
+            1871
+          ],
+          "face_block_sha256": "5fca661152a51758beeb257bdb8ca29291f7f37befbaa2a7fa9d0e83dcdd410a"
+        },
+        {
+          "original_line": 13668,
+          "vertex_indices": [
+            1880,
+            1881,
+            1882,
+            1883
+          ],
+          "face_block_sha256": "86e9eac866c292f6e4daf2453164fc281f0067e47f359f5a22439dc37e21aa21"
+        },
+        {
+          "original_line": 13673,
+          "vertex_indices": [
+            1884,
+            1885,
+            1886,
+            1887
+          ],
+          "face_block_sha256": "4bd4641cd71a2834a096a0a9ab99a5c5a3759537524da8db676466ccb7867b55"
+        },
+        {
+          "original_line": 13688,
+          "vertex_indices": [
+            1896,
+            1897,
+            1898,
+            1899
+          ],
+          "face_block_sha256": "71dee2ef03a6d7cace47f29cdf0f3c397d9687df688c1a7d0f278c3658507d78"
+        },
+        {
+          "original_line": 13693,
+          "vertex_indices": [
+            1900,
+            1901,
+            1902,
+            1903
+          ],
+          "face_block_sha256": "afa4e18aff2994f0eb1112fa0923643c408638c670c7e6b0cb842b96d3995c0a"
+        },
+        {
+          "original_line": 13708,
+          "vertex_indices": [
+            1912,
+            1913,
+            1914,
+            1915
+          ],
+          "face_block_sha256": "bc135e18190e6b70a307cb1854df43ad3943670791fc7018b8117bb14bf08e12"
+        },
+        {
+          "original_line": 13713,
+          "vertex_indices": [
+            1916,
+            1917,
+            1918,
+            1919
+          ],
+          "face_block_sha256": "ec6eb11a1b5e52fd73a9bbbe414690f3a78e0eb7a2883f7ad1284596caaf8e0a"
+        },
+        {
+          "original_line": 13728,
+          "vertex_indices": [
+            1928,
+            1929,
+            1930,
+            1931
+          ],
+          "face_block_sha256": "9b65c03473caaeb6cbb4fee1250c219b33dee3517bcec792311af75dd55f57b8"
+        },
+        {
+          "original_line": 13733,
+          "vertex_indices": [
+            1932,
+            1933,
+            1934,
+            1935
+          ],
+          "face_block_sha256": "2a6db1bf3cae336e8c06dc6dadba3a1c504fa25c2a747ba9f74c5216cf03f824"
+        },
+        {
+          "original_line": 13748,
+          "vertex_indices": [
+            1944,
+            1945,
+            1946,
+            1947
+          ],
+          "face_block_sha256": "c391c17eeaf146acab1fe84bd6dd0b2a3fb7a8202244faa346bc621c6d2b0da9"
+        },
+        {
+          "original_line": 13753,
+          "vertex_indices": [
+            1948,
+            1949,
+            1950,
+            1951
+          ],
+          "face_block_sha256": "5bc1a88857cad0d70e3d3477b253b870f5fce89f0f12b0795f0d7c34de86fed6"
+        },
+        {
+          "original_line": 13768,
+          "vertex_indices": [
+            1960,
+            1961,
+            1962,
+            1963
+          ],
+          "face_block_sha256": "0fc87342e838e361534f0b6d03e233de527a21a7cb1ebfa84df00d291f949561"
+        },
+        {
+          "original_line": 13773,
+          "vertex_indices": [
+            1964,
+            1965,
+            1966,
+            1967
+          ],
+          "face_block_sha256": "5267a4c8e1e88708f662ffc14f7b5cfaa255324905994d2e20a251eda706ea3c"
+        },
+        {
+          "original_line": 13788,
+          "vertex_indices": [
+            1976,
+            1977,
+            1978,
+            1979
+          ],
+          "face_block_sha256": "89748d8c3ed77603f48bd69ec7a8272ad9a82deebee5f6838e4ee183d1dc4efe"
+        },
+        {
+          "original_line": 13793,
+          "vertex_indices": [
+            1980,
+            1981,
+            1982,
+            1983
+          ],
+          "face_block_sha256": "f6cecab01487f722052097450484b66ef1f1347cfaac9f15504d439204c4b4cf"
+        },
+        {
+          "original_line": 13808,
+          "vertex_indices": [
+            1992,
+            1993,
+            1994,
+            1995
+          ],
+          "face_block_sha256": "93ef6f0aba676cc5049cbfe1d7078cfc1449da5c53bc9e345c94613dd4810c8a"
+        },
+        {
+          "original_line": 13813,
+          "vertex_indices": [
+            1996,
+            1997,
+            1998,
+            1999
+          ],
+          "face_block_sha256": "2e9ed5d90bf8e615847ca7c02ffcf2271e30847429d5a550b5c70e80888b7854"
+        },
+        {
+          "original_line": 13828,
+          "vertex_indices": [
+            2008,
+            2009,
+            2010,
+            2011
+          ],
+          "face_block_sha256": "5e82f1dfca9562c17a7b9d47017e2f3165660600a341ec10c5e0290da071526d"
+        },
+        {
+          "original_line": 13833,
+          "vertex_indices": [
+            2012,
+            2013,
+            2014,
+            2015
+          ],
+          "face_block_sha256": "d8513d68413b8f7ad9be8c09ab15c0de53ef8053329b3317a17fccb69eaec168"
+        },
+        {
+          "original_line": 13848,
+          "vertex_indices": [
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "face_block_sha256": "02fe0086971cba22e19788ec712471c003f20dd1864c49c36e76dc238a9392d5"
+        },
+        {
+          "original_line": 13853,
+          "vertex_indices": [
+            2028,
+            2029,
+            2030,
+            2031
+          ],
+          "face_block_sha256": "c597291519cf2e9bd7d70b717eb8c3080ee71d93759ffa6627962c009b6b06b4"
+        },
+        {
+          "original_line": 13868,
+          "vertex_indices": [
+            2040,
+            2041,
+            2042,
+            2043
+          ],
+          "face_block_sha256": "800454c502bf482859ec6aae53a6183fec4ee1159920de291d7f01a90d7b8f56"
+        },
+        {
+          "original_line": 13873,
+          "vertex_indices": [
+            2044,
+            2045,
+            2046,
+            2047
+          ],
+          "face_block_sha256": "0a7f37b4bb6d6550ce954123af9d0c805332cd985ed4ad961e2163915913264c"
+        },
+        {
+          "original_line": 13888,
+          "vertex_indices": [
+            2056,
+            2057,
+            2058,
+            2059
+          ],
+          "face_block_sha256": "e0f64d9ef49172cbaee7f5b11bc64b7197da686bb417262dd8a4b94f58346b76"
+        },
+        {
+          "original_line": 13893,
+          "vertex_indices": [
+            2060,
+            2061,
+            2062,
+            2063
+          ],
+          "face_block_sha256": "403aaeffdd9391ce292ec6af2a15bbf3c17d57a56a390f7a7e3081abf81c0245"
+        },
+        {
+          "original_line": 13908,
+          "vertex_indices": [
+            2072,
+            2073,
+            2074,
+            2075
+          ],
+          "face_block_sha256": "3dd38a8e5f290e131812805bccc2b034b2ca4ecadbe7146c832cda71607a1d90"
+        },
+        {
+          "original_line": 13913,
+          "vertex_indices": [
+            2076,
+            2077,
+            2078,
+            2079
+          ],
+          "face_block_sha256": "5fdd361ff3cac98adf1f6ba5b58fe42a4c791f6dbf899e5ef60fcd9dfd226fe5"
+        },
+        {
+          "original_line": 13928,
+          "vertex_indices": [
+            2088,
+            2089,
+            2090,
+            2091
+          ],
+          "face_block_sha256": "7b12e5a341ca97309de2ae58ec4f611d0bec1246d7432bb4424e7cf56bae23c5"
+        },
+        {
+          "original_line": 13933,
+          "vertex_indices": [
+            2092,
+            2093,
+            2094,
+            2095
+          ],
+          "face_block_sha256": "8d13a4b2336a0cc1071950af742b2a48147a5657b8b06fd802ea7c6e7d681caa"
+        },
+        {
+          "original_line": 13948,
+          "vertex_indices": [
+            2104,
+            2105,
+            2106,
+            2107
+          ],
+          "face_block_sha256": "9ac0ddf01773a049fc426806a0c397ac30db8da9e71300ac6c0c5ae534603250"
+        },
+        {
+          "original_line": 13953,
+          "vertex_indices": [
+            2108,
+            2109,
+            2110,
+            2111
+          ],
+          "face_block_sha256": "ce79f4118b7c9945963573c95ccc0bd2df1c37901853f77b3003cb5183269dfd"
+        },
+        {
+          "original_line": 13968,
+          "vertex_indices": [
+            2120,
+            2121,
+            2122,
+            2123
+          ],
+          "face_block_sha256": "25b104949ada3d1abffc6fa87820169ad8a09b03c4006effb7d28badbbefb9fd"
+        },
+        {
+          "original_line": 13973,
+          "vertex_indices": [
+            2124,
+            2125,
+            2126,
+            2127
+          ],
+          "face_block_sha256": "915c1f4068d1f9ef1691f169d8c80bc2edb931365c7f4ae690418628d97e0a10"
+        },
+        {
+          "original_line": 13988,
+          "vertex_indices": [
+            2136,
+            2137,
+            2138,
+            2139
+          ],
+          "face_block_sha256": "ca70d9585ab44c6d618216e36016463b2392f61d8daa6d5bd36d4e070fbc3dca"
+        },
+        {
+          "original_line": 13993,
+          "vertex_indices": [
+            2140,
+            2141,
+            2142,
+            2143
+          ],
+          "face_block_sha256": "fbac77d8c6ac1d48e089a76a0327f1d737b5a1eda7111a424846833832c7c141"
+        },
+        {
+          "original_line": 14008,
+          "vertex_indices": [
+            2152,
+            2153,
+            2154,
+            2155
+          ],
+          "face_block_sha256": "7a563de490992784e4b8b7a499cd38c95953cd6558bf6808a8ae4d6c46122d01"
+        },
+        {
+          "original_line": 14013,
+          "vertex_indices": [
+            2156,
+            2157,
+            2158,
+            2159
+          ],
+          "face_block_sha256": "5284540dca566995825e2801befec94851d1152c46ffe3b12743b5426a079b77"
+        },
+        {
+          "original_line": 14028,
+          "vertex_indices": [
+            2168,
+            2169,
+            2170,
+            2171
+          ],
+          "face_block_sha256": "7ddd190639da5ba1293e9abce811e38564010f046c10854df83839be3975d09b"
+        },
+        {
+          "original_line": 14033,
+          "vertex_indices": [
+            2172,
+            2173,
+            2174,
+            2175
+          ],
+          "face_block_sha256": "43a5c32c5f6c316010e0ab330a1e6f68b81453a91e2305f327345bac4ddd70cc"
+        },
+        {
+          "original_line": 14048,
+          "vertex_indices": [
+            2184,
+            2185,
+            2186,
+            2187
+          ],
+          "face_block_sha256": "644c2f3e2a303928853c611f85c4e673376b01c89bfb8bc537f66e8439830c48"
+        },
+        {
+          "original_line": 14053,
+          "vertex_indices": [
+            2188,
+            2189,
+            2190,
+            2191
+          ],
+          "face_block_sha256": "7f25c1475fdc56ef6f99c45a272ffcc8c6b18e565e3cfe0b34e412c354b5d57c"
+        },
+        {
+          "original_line": 14068,
+          "vertex_indices": [
+            2200,
+            2201,
+            2202,
+            2203
+          ],
+          "face_block_sha256": "1ab45382962a9133161f58334201b1922fb320ad7a35f8239bab64e5734c42d8"
+        },
+        {
+          "original_line": 14073,
+          "vertex_indices": [
+            2204,
+            2205,
+            2206,
+            2207
+          ],
+          "face_block_sha256": "4265b498abede1b8c06799067376cca7c2de7956b9a26bcf3583ecdbb6312fd6"
+        },
+        {
+          "original_line": 14088,
+          "vertex_indices": [
+            2216,
+            2217,
+            2218,
+            2219
+          ],
+          "face_block_sha256": "18c0f0960f39dbbac7b56a203a55e15a6bc9a5ef3b87e86a3bdb573dfffce36e"
+        },
+        {
+          "original_line": 14093,
+          "vertex_indices": [
+            2220,
+            2221,
+            2222,
+            2223
+          ],
+          "face_block_sha256": "32d04d201c1c9b0d5feecfe63fd2d7b85192ea5eb12a5512b49438767d418546"
+        },
+        {
+          "original_line": 14108,
+          "vertex_indices": [
+            2232,
+            2233,
+            2234,
+            2235
+          ],
+          "face_block_sha256": "d1a30039a8eea80d47d136e571c70e758ebd49f9c62f2e969b8ed6e71485424a"
+        },
+        {
+          "original_line": 14113,
+          "vertex_indices": [
+            2236,
+            2237,
+            2238,
+            2239
+          ],
+          "face_block_sha256": "444f224e5fa49e83ad74be882ad3054e3b1a651414234b777d2cd28a4401b482"
+        },
+        {
+          "original_line": 14128,
+          "vertex_indices": [
+            2248,
+            2249,
+            2250,
+            2251
+          ],
+          "face_block_sha256": "d55692951a5072bc2fbfbcdddb8a699867a6652ce21bc76ef4a89768e5cb078d"
+        },
+        {
+          "original_line": 14133,
+          "vertex_indices": [
+            2252,
+            2253,
+            2254,
+            2255
+          ],
+          "face_block_sha256": "b1c3e2a8ffeef98851f8fd8cdcd3f9c7f6126ca195b26f5dfd5f3bf725055b97"
+        },
+        {
+          "original_line": 14148,
+          "vertex_indices": [
+            2264,
+            2265,
+            2266,
+            2267
+          ],
+          "face_block_sha256": "cd56634bd6e6c878f4ac5c743756b808e89541812def471ce3795f6f91f796ca"
+        },
+        {
+          "original_line": 14153,
+          "vertex_indices": [
+            2268,
+            2269,
+            2270,
+            2271
+          ],
+          "face_block_sha256": "405a3983f4e5344b33af011cc9204bdf13e8b013f7ee22d2ffacdc01e98f1d69"
+        },
+        {
+          "original_line": 14168,
+          "vertex_indices": [
+            2280,
+            2281,
+            2282,
+            2283
+          ],
+          "face_block_sha256": "e3268ae534b81cbd8408df86c0f036529dd9741e3c9370ee8ab6a3471df7810c"
+        },
+        {
+          "original_line": 14173,
+          "vertex_indices": [
+            2284,
+            2285,
+            2286,
+            2287
+          ],
+          "face_block_sha256": "b1d1ae17e8239ce3bd5a5bb8733131d97ee4a7011b68c7579e529eada445dc88"
+        },
+        {
+          "original_line": 14188,
+          "vertex_indices": [
+            2296,
+            2297,
+            2298,
+            2299
+          ],
+          "face_block_sha256": "0b2ef80cc2d6e8d6a7b6db9a33a5c5322e41fd08a2a18498ce5917f96d823150"
+        },
+        {
+          "original_line": 14193,
+          "vertex_indices": [
+            2300,
+            2301,
+            2302,
+            2303
+          ],
+          "face_block_sha256": "54794beffeb09718967faad4608dbcbcc7861c199b57e4969e976f2a86065363"
+        },
+        {
+          "original_line": 14208,
+          "vertex_indices": [
+            2312,
+            2313,
+            2314,
+            2315
+          ],
+          "face_block_sha256": "092287cae54288129258a540db2deb718cc17e4a6efe66be388b0d29cbd7692b"
+        },
+        {
+          "original_line": 14213,
+          "vertex_indices": [
+            2316,
+            2317,
+            2318,
+            2319
+          ],
+          "face_block_sha256": "79a917bbcee5a544a2cb15a5f76c71d6d1e1a26ef2b5aac9870f58218b2624dc"
+        },
+        {
+          "original_line": 14228,
+          "vertex_indices": [
+            2328,
+            2329,
+            2330,
+            2331
+          ],
+          "face_block_sha256": "6875ac426588211c3670a17015aba6bbd30c2cd612067d16cb4b768645ffc501"
+        },
+        {
+          "original_line": 14233,
+          "vertex_indices": [
+            2332,
+            2333,
+            2334,
+            2335
+          ],
+          "face_block_sha256": "6f70e7b9787ec68842fe0a9d647f882903b0ae5211df0010a1bd1832840db961"
+        },
+        {
+          "original_line": 14248,
+          "vertex_indices": [
+            2344,
+            2345,
+            2346,
+            2347
+          ],
+          "face_block_sha256": "96477207af7693da4cb96615141e71ce0017878908ca1828068442ccc02a3ac3"
+        },
+        {
+          "original_line": 14253,
+          "vertex_indices": [
+            2348,
+            2349,
+            2350,
+            2351
+          ],
+          "face_block_sha256": "4df9eea19b3eb6749de141003a5c92a2a2bdfb54da5a5377a8b443b14c229c04"
+        },
+        {
+          "original_line": 14268,
+          "vertex_indices": [
+            2360,
+            2361,
+            2362,
+            2363
+          ],
+          "face_block_sha256": "2e245afada9bf80094b4dcc6af445491481eefb5dd4f3a1ba83633296854825c"
+        },
+        {
+          "original_line": 14273,
+          "vertex_indices": [
+            2364,
+            2365,
+            2366,
+            2367
+          ],
+          "face_block_sha256": "5501b9b8572a4626b2f35eebf242349edf54e08360c8185688062bcf8e8fb7d2"
+        },
+        {
+          "original_line": 14288,
+          "vertex_indices": [
+            2376,
+            2377,
+            2378,
+            2379
+          ],
+          "face_block_sha256": "cb329fca124dc3eefafda9dcd2ef488e5f167a0e24b8eb5f3685899ad72b91f4"
+        },
+        {
+          "original_line": 14293,
+          "vertex_indices": [
+            2380,
+            2381,
+            2382,
+            2383
+          ],
+          "face_block_sha256": "20890dbbb2176793b56e58f14c1b84eadcb0001b487e16f348dde28752376dfb"
+        },
+        {
+          "original_line": 14308,
+          "vertex_indices": [
+            2392,
+            2393,
+            2394,
+            2395
+          ],
+          "face_block_sha256": "1341914ab122cd69d2ac6b3001cb7af86cb98975a646a23f52e582269f0fb485"
+        },
+        {
+          "original_line": 14313,
+          "vertex_indices": [
+            2396,
+            2397,
+            2398,
+            2399
+          ],
+          "face_block_sha256": "eb9729bf3e8783f65547427a9aafe0635c33db056d3547df57f5212b1c5554cc"
+        },
+        {
+          "original_line": 14328,
+          "vertex_indices": [
+            2408,
+            2409,
+            2410,
+            2411
+          ],
+          "face_block_sha256": "9827ab67a0db36f24c8b0b01cbd162da7919f725f8547549955b244331508fe0"
+        },
+        {
+          "original_line": 14333,
+          "vertex_indices": [
+            2412,
+            2413,
+            2414,
+            2415
+          ],
+          "face_block_sha256": "eebd776d2abe5b2398dccc7a36090f8030a983028cd8555f433e41c454d1c3a6"
+        },
+        {
+          "original_line": 14348,
+          "vertex_indices": [
+            2424,
+            2425,
+            2426,
+            2427
+          ],
+          "face_block_sha256": "18c0c3132cc16ba38806f93913c21be4b58127600905fc11b8a25da5df32825e"
+        },
+        {
+          "original_line": 14353,
+          "vertex_indices": [
+            2428,
+            2429,
+            2430,
+            2431
+          ],
+          "face_block_sha256": "23892f41c318723e17a2249f5d42cf257647d66953f79398361e35b31c6267d2"
+        },
+        {
+          "original_line": 14368,
+          "vertex_indices": [
+            2440,
+            2441,
+            2442,
+            2443
+          ],
+          "face_block_sha256": "14dbb0ebc4f5eea6ee7a36053e5fe8404386401aa85e365dd07ddec25b93cf9c"
+        },
+        {
+          "original_line": 14373,
+          "vertex_indices": [
+            2444,
+            2445,
+            2446,
+            2447
+          ],
+          "face_block_sha256": "50d78da289848fc7f873db5ffbbae73381dc388ae67702791355ff4ce73103e3"
+        },
+        {
+          "original_line": 14388,
+          "vertex_indices": [
+            2456,
+            2457,
+            2458,
+            2459
+          ],
+          "face_block_sha256": "bff90a8db72fe4d3a34d25656bbe96d0dfa7b682e02a8c76258a076719ac8a01"
+        },
+        {
+          "original_line": 14393,
+          "vertex_indices": [
+            2460,
+            2461,
+            2462,
+            2463
+          ],
+          "face_block_sha256": "574490e9d52ceefd89d8f7271236245315fe516af0aafbb0b89a5d2539c13f45"
+        },
+        {
+          "original_line": 14408,
+          "vertex_indices": [
+            2472,
+            2473,
+            2474,
+            2475
+          ],
+          "face_block_sha256": "50676af095c758b1ef786330508db412e81414be6abb603dd42b1b58213fdaa4"
+        },
+        {
+          "original_line": 14413,
+          "vertex_indices": [
+            2476,
+            2477,
+            2478,
+            2479
+          ],
+          "face_block_sha256": "54f16367f7ccc7f71561c49975ff1c827f714fc5f9f421631b9905231b5787ca"
+        },
+        {
+          "original_line": 14428,
+          "vertex_indices": [
+            2488,
+            2489,
+            2490,
+            2491
+          ],
+          "face_block_sha256": "808067e43d652c17cc7f90a8edeb15bae20657b705c662229e1e911581c5b1b6"
+        },
+        {
+          "original_line": 14433,
+          "vertex_indices": [
+            2492,
+            2493,
+            2494,
+            2495
+          ],
+          "face_block_sha256": "7de844c4e829eee7247aa656307e440a73f84506ff48c48c08324081bc051cb3"
+        },
+        {
+          "original_line": 14448,
+          "vertex_indices": [
+            2504,
+            2505,
+            2506,
+            2507
+          ],
+          "face_block_sha256": "73dbcf40e4ec9dafd5844ab1a8b2031c0f1725ad4e8fda4a4625e80354a4223c"
+        },
+        {
+          "original_line": 14453,
+          "vertex_indices": [
+            2508,
+            2509,
+            2510,
+            2511
+          ],
+          "face_block_sha256": "eface662f45562342e9a673a54571bad8712257e438a27e4d9cc26e8374ef53a"
+        },
+        {
+          "original_line": 14468,
+          "vertex_indices": [
+            2520,
+            2521,
+            2522,
+            2523
+          ],
+          "face_block_sha256": "4a5cdca68f8426d81405aade79a4b817c77b591d0674cfd6e9652aa71d16f5d6"
+        },
+        {
+          "original_line": 14473,
+          "vertex_indices": [
+            2524,
+            2525,
+            2526,
+            2527
+          ],
+          "face_block_sha256": "daeeac8fdc96e5761e005950ed31554374bde9875c6d8e8abe631515d0bac7b0"
+        },
+        {
+          "original_line": 14488,
+          "vertex_indices": [
+            2536,
+            2537,
+            2538,
+            2539
+          ],
+          "face_block_sha256": "04e93936c70393a914007dd9f848b8db98e578bb4d1fc3864018ada05a36077f"
+        },
+        {
+          "original_line": 14493,
+          "vertex_indices": [
+            2540,
+            2541,
+            2542,
+            2543
+          ],
+          "face_block_sha256": "666d3891270a9a8ee495974d1ce4ad37a072f31809e92b7c1b152ee82fbfcd8a"
+        },
+        {
+          "original_line": 14508,
+          "vertex_indices": [
+            2552,
+            2553,
+            2554,
+            2555
+          ],
+          "face_block_sha256": "6c20031bc3b174c0f4d747cf617861b40941466c556fe743a53a938665dad498"
+        },
+        {
+          "original_line": 14513,
+          "vertex_indices": [
+            2556,
+            2557,
+            2558,
+            2559
+          ],
+          "face_block_sha256": "30fabfe03ae5d10b0763bf4f59617b831a3b9c69b5fe97e95eba50c6349ff7fc"
+        },
+        {
+          "original_line": 14528,
+          "vertex_indices": [
+            2568,
+            2569,
+            2570,
+            2571
+          ],
+          "face_block_sha256": "c9b45bb0a38a298336f0a874e1f3e2868164e2384b4ec3e9a21943659a687fa7"
+        },
+        {
+          "original_line": 14533,
+          "vertex_indices": [
+            2572,
+            2573,
+            2574,
+            2575
+          ],
+          "face_block_sha256": "667cdd54d5ddda5acc92c64c5da8d9ffa1aabdfbbd07a87c9ca849848342ea03"
+        },
+        {
+          "original_line": 14548,
+          "vertex_indices": [
+            2584,
+            2585,
+            2586,
+            2587
+          ],
+          "face_block_sha256": "d7562fe0c386889b8d7e86c826016ded1fc7b6450c9417b52bfe75a97796252a"
+        },
+        {
+          "original_line": 14553,
+          "vertex_indices": [
+            2588,
+            2589,
+            2590,
+            2591
+          ],
+          "face_block_sha256": "0db808735d557bcf038b317c93739de16971b913115cf339b226484740cceb6a"
+        },
+        {
+          "original_line": 14568,
+          "vertex_indices": [
+            2600,
+            2601,
+            2602,
+            2603
+          ],
+          "face_block_sha256": "2763dc809e6b2d857967b5ae82a427d688a785e84a02bc5226e440f54c5df862"
+        },
+        {
+          "original_line": 14573,
+          "vertex_indices": [
+            2604,
+            2605,
+            2606,
+            2607
+          ],
+          "face_block_sha256": "512fc2742279e8b925d322806f0e2f66428d47231e8e491406cc812d89298f94"
+        },
+        {
+          "original_line": 14588,
+          "vertex_indices": [
+            2616,
+            2617,
+            2618,
+            2619
+          ],
+          "face_block_sha256": "5840dda74e76f6d39d231fe8113def333fdbf21803509978132f3cafb3ec8976"
+        },
+        {
+          "original_line": 14593,
+          "vertex_indices": [
+            2620,
+            2621,
+            2622,
+            2623
+          ],
+          "face_block_sha256": "bb2dd019f20807b85a0c0a662cb6084062db2b417bf9a3dd316aa135af8b98b5"
+        },
+        {
+          "original_line": 14608,
+          "vertex_indices": [
+            2632,
+            2633,
+            2634,
+            2635
+          ],
+          "face_block_sha256": "6071b8f52094075a7446900f756cc1fe086956928385397adad45fdb92f06371"
+        },
+        {
+          "original_line": 14613,
+          "vertex_indices": [
+            2636,
+            2637,
+            2638,
+            2639
+          ],
+          "face_block_sha256": "a77eb79139928dda59b8657e7df3ce1fcba48dc318898630b75914c44235fc55"
+        },
+        {
+          "original_line": 14628,
+          "vertex_indices": [
+            2648,
+            2649,
+            2650,
+            2651
+          ],
+          "face_block_sha256": "350bc2f069c53143ebcbbdb8df9ccd05d37ee4aa492f94181616240dfb332dc3"
+        },
+        {
+          "original_line": 14633,
+          "vertex_indices": [
+            2652,
+            2653,
+            2654,
+            2655
+          ],
+          "face_block_sha256": "bc3839bfaaa8ec88008a99630f6883b39f88e730b5e034f0f02c4161abb97841"
+        },
+        {
+          "original_line": 14648,
+          "vertex_indices": [
+            2664,
+            2665,
+            2666,
+            2667
+          ],
+          "face_block_sha256": "1ed193a3a99bca02d32d3ae305570043267cad42b7968031e69ddb456310e8cb"
+        },
+        {
+          "original_line": 14653,
+          "vertex_indices": [
+            2668,
+            2669,
+            2670,
+            2671
+          ],
+          "face_block_sha256": "606465002b2a843dd5723cf9756c6bce2be9f9114f76fa58b7b6f61a05d041eb"
+        },
+        {
+          "original_line": 14668,
+          "vertex_indices": [
+            2680,
+            2681,
+            2682,
+            2683
+          ],
+          "face_block_sha256": "6ca30e34942ad42b93c41cf1c41bef13de7c7660c4c73b026ea96e050fbd7d2b"
+        },
+        {
+          "original_line": 14673,
+          "vertex_indices": [
+            2684,
+            2685,
+            2686,
+            2687
+          ],
+          "face_block_sha256": "9a3d0d9f0cc759b3189a05630e75fc222668265818a3e79b85c35eb19d7f2ac5"
+        },
+        {
+          "original_line": 14688,
+          "vertex_indices": [
+            2696,
+            2697,
+            2698,
+            2699
+          ],
+          "face_block_sha256": "b71615ebabbda72c15cdc7b1b9e3dee7b6850eb64b5b70152bdb4efb577b981d"
+        },
+        {
+          "original_line": 14693,
+          "vertex_indices": [
+            2700,
+            2701,
+            2702,
+            2703
+          ],
+          "face_block_sha256": "64fb14744e57374c9a2477339f9e2b898e251a858d00015e0b3fa79e536c7638"
+        },
+        {
+          "original_line": 14708,
+          "vertex_indices": [
+            2712,
+            2713,
+            2714,
+            2715
+          ],
+          "face_block_sha256": "62252efcae306b1ddb7077b3ed49e177296ca624abb4bcecf193125d702a15e8"
+        },
+        {
+          "original_line": 14713,
+          "vertex_indices": [
+            2716,
+            2717,
+            2718,
+            2719
+          ],
+          "face_block_sha256": "51358dd39049e62b8b26e5ec833f23fb6ebbc4f0dbe2ae6696073c82a1c7a69a"
+        },
+        {
+          "original_line": 14728,
+          "vertex_indices": [
+            2728,
+            2729,
+            2730,
+            2731
+          ],
+          "face_block_sha256": "477fed95b6e6b21c12eb4ca0fa21ec25566cdfd483600643ff828ae9f55d0d4d"
+        },
+        {
+          "original_line": 14733,
+          "vertex_indices": [
+            2732,
+            2733,
+            2734,
+            2735
+          ],
+          "face_block_sha256": "4886efe5c9e39f13e59dd2ee6d16c34fb0f272e0c8313db79925c42ad5b88d42"
+        },
+        {
+          "original_line": 14748,
+          "vertex_indices": [
+            2744,
+            2745,
+            2746,
+            2747
+          ],
+          "face_block_sha256": "6fa79d015ef3d38ccd6e392ddc55a23b46fd49a51640e5106ee00ac2782c52d1"
+        },
+        {
+          "original_line": 14753,
+          "vertex_indices": [
+            2748,
+            2749,
+            2750,
+            2751
+          ],
+          "face_block_sha256": "286d8680f06009b5d9c1caeba1ca388e615af0a6d3431355d446590a77128583"
+        },
+        {
+          "original_line": 14768,
+          "vertex_indices": [
+            2760,
+            2761,
+            2762,
+            2763
+          ],
+          "face_block_sha256": "3dc6e29e52d5f03281a4d714334b0d419e1e244b26cb4ac0dccf20f339cdc076"
+        },
+        {
+          "original_line": 14773,
+          "vertex_indices": [
+            2764,
+            2765,
+            2766,
+            2767
+          ],
+          "face_block_sha256": "72a03cc680fa26b384964cf31fdcf45410d1b8d74c905dfa0e71f5fe90439d0f"
+        },
+        {
+          "original_line": 14788,
+          "vertex_indices": [
+            2776,
+            2777,
+            2778,
+            2779
+          ],
+          "face_block_sha256": "74addfeed838ebebd5a847824496242e77de4d6c0e4c32565caa62777c924c6d"
+        },
+        {
+          "original_line": 14793,
+          "vertex_indices": [
+            2780,
+            2781,
+            2782,
+            2783
+          ],
+          "face_block_sha256": "bb86d91369c116ccddbac8e76e971510a48a4850c87d284ae450fa5894c79ca6"
+        }
+      ],
+      "vertex_records_unchanged": false
+    }
+  },
+  "output_sha256": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504"
+}
