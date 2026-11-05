@@ -1,0 +1,17 @@
+{
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "checks": {
+    "Left": {
+      "vertices": 1462,
+      "outside_valid_source_projection_points": 0,
+      "projected_triangle_area_outside_m2": 0.0,
+      "projection_tolerance_m": 2e-06
+    },
+    "Right": {
+      "vertices": 1764,
+      "outside_valid_source_projection_points": 0,
+      "projected_triangle_area_outside_m2": 0.0,
+      "projection_tolerance_m": 2e-06
+    }
+  }
+}
