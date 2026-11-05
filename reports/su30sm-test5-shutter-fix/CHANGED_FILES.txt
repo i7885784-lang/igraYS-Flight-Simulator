@@ -1,4 +1,4 @@
-Changed repository files relative to e4214f0 (documentation and evidence included):
+All changed repository files relative to e4214f0; includes code, metadata and evidence:
 .github/workflows/su30sm-test5-shutter-fix.yml
 AGENTS.md
 PROJECT_HANDOFF.md
@@ -9,6 +9,7 @@ changes/su30sm-test5-shutter-fix/classify_contacts.py
 changes/su30sm-test5-shutter-fix/collision.py
 changes/su30sm-test5-shutter-fix/deliver.py
 changes/su30sm-test5-shutter-fix/extract_support.py
+changes/su30sm-test5-shutter-fix/finish_delivery.py
 changes/su30sm-test5-shutter-fix/intersection_helpers.py
 changes/su30sm-test5-shutter-fix/model-source/common.py
 changes/su30sm-test5-shutter-fix/model-source/dnm.py
@@ -26,7 +27,9 @@ changes/su30sm-test5-shutter-fix/source-data/validated-layout-Left.json
 changes/su30sm-test5-shutter-fix/source-data/validated-layout-Right.json
 changes/su30sm-test5-shutter-fix/surface.py
 changes/su30sm-test5-shutter-fix/validate.py
+reports/su30sm-test5-shutter-fix/CHANGED_FILES.txt
 reports/su30sm-test5-shutter-fix/REPORT_RU.md
+reports/su30sm-test5-shutter-fix/STATUS.json
 reports/su30sm-test5-shutter-fix/acceptance.json
 reports/su30sm-test5-shutter-fix/baseline-collisions.json
 reports/su30sm-test5-shutter-fix/capture-final.sh
@@ -95,6 +98,7 @@ reports/su30sm-test5-shutter-fix/checks/before-poses/up.png
 reports/su30sm-test5-shutter-fix/classified-contacts.json
 reports/su30sm-test5-shutter-fix/collision-comparison.json
 reports/su30sm-test5-shutter-fix/comparison-views.json
+reports/su30sm-test5-shutter-fix/download-verification.json
 reports/su30sm-test5-shutter-fix/index.html
 reports/su30sm-test5-shutter-fix/prior-diagnostic/REPORT_RU.md
 reports/su30sm-test5-shutter-fix/prior-diagnostic/axes.json
@@ -106,6 +110,5 @@ reports/su30sm-test5-shutter-fix/refinement.json
 reports/su30sm-test5-shutter-fix/selfcheck.json
 reports/su30sm-test5-shutter-fix/validation.json
 
-Changed game payload: runtime/aircraft/su30sm.dnm ONLY
-Changed embedded SRF: MainWheelBayShutter_Left.srf, MainWheelBayShutter_Right.srf ONLY
-This list itself plus final STATUS/download-verification metadata are delivery documentation.
+Game payload: runtime/aircraft/su30sm.dnm ONLY. Embedded changes: MainWheelBayShutter_Left.srf and MainWheelBayShutter_Right.srf ONLY.
+Sources ZIP contains the verified a428d4e geometry pipeline; later publisher/verification/handoff documentation does not alter game geometry.

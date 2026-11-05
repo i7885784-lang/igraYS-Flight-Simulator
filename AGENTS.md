@@ -1,3 +1,5 @@
+Поставка Task1 завершена: reports/su30sm-test5-shutter-fix/STATUS.json, draft434249450. Все3ZIP повторно скачаны/SHA/CRC проверены,1156 прочих файлов игры точные. CURRENT_VERSION5+IntakeFix остаётся точкой отката. Промежуточная validated-layout зафиксирована: не подменять поставку произвольным --retriangulate. См. REPORT_RU.md об оставшихся54контактах.
+
 ## Текущий узкий запрос: две крышки шасси №5
 
 Работа Task1 — только MainWheelBayShutter_Left/Right, см. changes/su30sm-test5-shutter-fix и reports/su30sm-test5-shutter-fix. Кандидат отделён от CURRENT_VERSION №5+IntakeFix для отката. Не менять другие детали/анимацию. Остались54 унаследованных соседних контакта, вся система шасси НЕ исправлена. Точная проверка/ограничения в REPORT_RU.md.

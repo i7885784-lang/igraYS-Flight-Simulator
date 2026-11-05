@@ -1,0 +1,60 @@
+{
+  "draft": true,
+  "baseline": "su30sm-test-5 + approved IntakeFix",
+  "rollback_current_version_unchanged": true,
+  "changed_game_files": [
+    "aircraft/su30sm.dnm"
+  ],
+  "changed_packs": [
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "all_nodes_transforms_states_parents_unchanged": true,
+  "all_other_game_files_byte_identical": true,
+  "unchanged_game_files": 1156,
+  "model_sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+  "release_id": 434249450,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-3fce319073296221c163",
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_ShutterFix_Game_Win32_Win64.zip",
+      "sha256": "a0648d269e009fcbdd9f60bc20c9da8462eaa20c8c99f27b71c498d3ffb3391f",
+      "bytes": 45908184,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-3fce319073296221c163/YSFlight_Su30SM_Test5_ShutterFix_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_ShutterFix_Sources.zip",
+      "sha256": "bfe308b4b17c573fbb84f2acf31719eb6dac5ff84203b6b419ccca7ff3c051dc",
+      "bytes": 225844881,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-3fce319073296221c163/YSFlight_Su30SM_Test5_ShutterFix_Sources.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_ShutterFix_Report.zip",
+      "sha256": "5a0da3fb83ce3d387498abf8790ce80c933e64cc6944d18a91f4e87f934f66bd",
+      "bytes": 3914354,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-3fce319073296221c163/YSFlight_Su30SM_Test5_ShutterFix_Report.zip"
+    }
+  ],
+  "acceptance": {
+    "model_sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+    "scope": "Only two MainWheelBayShutter SRF packs; every node/state/parent and other pack identical",
+    "source_support_pass": true,
+    "body_Fuselage_0_4_contacts_in_201_poses": 0,
+    "new_contact_pair_pose_vs_baseline": 0,
+    "degenerate_triangles": 0,
+    "self_intersections": 0,
+    "all_neighbor_contact_free": false,
+    "residual_pair_pose_records": 54,
+    "native_game_cycle_pass": true,
+    "native_backend": "Unmodified Windows OpenGL64 executable under Wine/Xvfb",
+    "native_cycle_render_override": -1,
+    "visual_review": "Matched ground main-close, inverted up/down/mid and native gear frames opened; full video recorded but not watched in full",
+    "continuous_collision_proof": false,
+    "windows32_rerun": false,
+    "unchanged_executables": true,
+    "raw_retriangulation_cross_platform_byte_determinism": false,
+    "delivery_assembly": "Frozen verified surface layout; output SHA unchanged"
+  },
+  "reproduction": "Exact refinement.json/model SHA assembled on Actions41881978070 from frozen verified surface layout. Raw --retriangulate can vary by platform. This continuation verifies existing Game/Sources and uploads Report/STATUS without replacing earlier assets.",
+  "scope_result": "201 sampled poses: no Fuselage_0_4 intersections; 54 inherited neighboring pair-pose intersections remain; not a complete gear fix"
+}

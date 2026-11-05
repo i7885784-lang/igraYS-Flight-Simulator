@@ -1,0 +1,17 @@
+{
+  "release_id": 434249450,
+  "actions_run": 41882717840,
+  "all_three_archives_downloaded_SHA_CRC_pass": true,
+  "changed_game_files": [
+    "runtime/aircraft/su30sm.dnm"
+  ],
+  "unchanged_game_files": 1156,
+  "changed_DNM_packs": [
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "all_DNM_nodes_unchanged": true,
+  "source_baseline_code_support_engine_GLB_pass": true,
+  "rollback_runtime_preserved": true,
+  "residual_intersections": 54
+}
