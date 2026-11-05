@@ -1,0 +1,82 @@
+{
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "checks": [
+    {
+      "name": "GearDoor_Nose_Inner",
+      "triangles": 732,
+      "candidate_pairs": 1035,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearDoor_Nose_Outer",
+      "triangles": 728,
+      "candidate_pairs": 976,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearDoor_Left_Inner",
+      "triangles": 1732,
+      "candidate_pairs": 2169,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearDoor_Right_Outer",
+      "triangles": 1732,
+      "candidate_pairs": 2969,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearDoor_Nose_Aft",
+      "triangles": 440,
+      "candidate_pairs": 1029,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "MainWheelBayShutter_Left",
+      "triangles": 2872,
+      "candidate_pairs": 18054,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "MainWheelBayShutter_Right",
+      "triangles": 3504,
+      "candidate_pairs": 22088,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearDoor_Nose_Aft_Right",
+      "triangles": 440,
+      "candidate_pairs": 994,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearWell_Nose",
+      "triangles": 298,
+      "candidate_pairs": 895,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearWell_Left",
+      "triangles": 2866,
+      "candidate_pairs": 12682,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    },
+    {
+      "name": "GearWell_Right",
+      "triangles": 2863,
+      "candidate_pairs": 12703,
+      "self_crossing": [],
+      "coplanar_overlap": []
+    }
+  ]
+}

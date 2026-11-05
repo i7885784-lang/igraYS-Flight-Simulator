@@ -1,0 +1,18 @@
+{
+  "source_sha256": "56352ecd1b3ca88fbb5e6a7202ca92fab95879cbefdc85d8fa8f9a643b1b21c8",
+  "source_description": "Original pre-gear4 model, not test6/7; only missing upper patches over existing main-bay apertures, Y>=.025m. Exterior paint formula4 retained.",
+  "audit": [
+    {
+      "node": "Fuselage_0_4",
+      "restored_unique_triangles": 126,
+      "restored_projected_area_m2": 0.30050946448158017
+    },
+    {
+      "node": "Fuselage_0_5",
+      "restored_unique_triangles": 0,
+      "restored_projected_area_m2": 0.0
+    }
+  ],
+  "zero_area_faces_removed_after_six_decimal_serialization": 164,
+  "final_face_instances": 88
+}

@@ -1,0 +1,234 @@
+{
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "GearDoor_Nose_Inner.srf",
+    "GearDoor_Nose_Outer.srf",
+    "GearWell_Nose.srf",
+    "GearDoor_Left_Inner.srf",
+    "GearWell_Left.srf",
+    "GearDoor_Right_Outer.srf",
+    "GearWell_Right.srf",
+    "GearDoor_Nose_Aft.srf",
+    "DoorSeat_GearDoor_Nose_Inner.srf",
+    "DoorSeat_GearDoor_Nose_Outer.srf",
+    "DoorSeat_GearDoor_Left_Inner.srf",
+    "DoorSeat_GearDoor_Right_Outer.srf",
+    "DoorSeat_GearDoor_Nose_Aft.srf",
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "retimed_original_nodes": [
+    "MainWheelBayShutter_Left",
+    "MainWheelBayShutter_Right"
+  ],
+  "all_other_original_nodes_exact": true,
+  "all_original_node_metadata_exact": true,
+  "all_other_meshes_byte_exact": true,
+  "geometry": {
+    "Fuselage_0_4": {
+      "unique_vertices": 15510,
+      "unique_triangles": 32681,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 5914
+    },
+    "GearDoor_Nose_Inner": {
+      "unique_vertices": 368,
+      "unique_triangles": 732,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "GearDoor_Nose_Outer": {
+      "unique_vertices": 366,
+      "unique_triangles": 728,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "GearWell_Nose": {
+      "unique_vertices": 296,
+      "unique_triangles": 298,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 300
+    },
+    "GearDoor_Left_Inner": {
+      "unique_vertices": 868,
+      "unique_triangles": 1732,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "GearWell_Left": {
+      "unique_vertices": 2195,
+      "unique_triangles": 2866,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 1524
+    },
+    "GearDoor_Right_Outer": {
+      "unique_vertices": 868,
+      "unique_triangles": 1732,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "GearWell_Right": {
+      "unique_vertices": 2193,
+      "unique_triangles": 2863,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 1523
+    },
+    "GearDoor_Nose_Aft": {
+      "unique_vertices": 222,
+      "unique_triangles": 440,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorSeat_GearDoor_Nose_Inner": {
+      "unique_vertices": 92,
+      "unique_triangles": 89,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 89
+    },
+    "DoorSeat_GearDoor_Nose_Outer": {
+      "unique_vertices": 93,
+      "unique_triangles": 89,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 91
+    },
+    "DoorSeat_GearDoor_Left_Inner": {
+      "unique_vertices": 176,
+      "unique_triangles": 166,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 176
+    },
+    "DoorSeat_GearDoor_Right_Outer": {
+      "unique_vertices": 178,
+      "unique_triangles": 168,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 178
+    },
+    "DoorSeat_GearDoor_Nose_Aft": {
+      "unique_vertices": 131,
+      "unique_triangles": 121,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 131
+    },
+    "MainWheelBayShutter_Left": {
+      "unique_vertices": 1462,
+      "unique_triangles": 2872,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "MainWheelBayShutter_Right": {
+      "unique_vertices": 1764,
+      "unique_triangles": 3504,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "GearBayStructure_Nose": {
+      "unique_vertices": 824,
+      "unique_triangles": 1696,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 288
+    },
+    "GearBayStructure_Left": {
+      "unique_vertices": 884,
+      "unique_triangles": 1792,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 142
+    },
+    "GearBayStructure_Right": {
+      "unique_vertices": 884,
+      "unique_triangles": 1792,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 142
+    },
+    "BayCornerSkin_GearDoor_Left_Inner": {
+      "unique_vertices": 14,
+      "unique_triangles": 6,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 14
+    },
+    "BayCornerSkin_GearDoor_Right_Outer": {
+      "unique_vertices": 14,
+      "unique_triangles": 6,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 14
+    },
+    "BayCornerSkin_GearDoor_Nose_Inner": {
+      "unique_vertices": 18,
+      "unique_triangles": 15,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 17
+    },
+    "BayCornerSkin_GearDoor_Nose_Outer": {
+      "unique_vertices": 17,
+      "unique_triangles": 14,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 16
+    },
+    "BayCornerSkin_GearDoor_Nose_Aft": {
+      "unique_vertices": 7,
+      "unique_triangles": 3,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 7
+    },
+    "GearDoor_Nose_Aft_Right": {
+      "unique_vertices": 222,
+      "unique_triangles": 440,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "BayCornerSkin_Nose_Aft_Right": {
+      "unique_vertices": 7,
+      "unique_triangles": 3,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 7
+    },
+    "GearBayUpperClosure": {
+      "unique_vertices": 45,
+      "unique_triangles": 44,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 42
+    },
+    "DoorHingePin_GearDoor_Nose_Inner": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Outer": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingePin_GearDoor_Left_Inner": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingePin_GearDoor_Right_Outer": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Aft": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Aft_Right": {
+      "unique_vertices": 44,
+      "unique_triangles": 80,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    },
+    "DoorHingeForks": {
+      "unique_vertices": 696,
+      "unique_triangles": 1248,
+      "zero_area_triangles": 0,
+      "non_two_sided_edges": 0
+    }
+  }
+}

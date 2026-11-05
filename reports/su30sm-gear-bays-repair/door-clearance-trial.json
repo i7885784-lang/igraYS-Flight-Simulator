@@ -1,0 +1,111 @@
+{
+  "before": [
+    {
+      "g": 0.0,
+      "a": "GearDoor_Nose_Inner",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.0,
+      "a": "GearDoor_Nose_Outer",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.0,
+      "a": "GearDoor_Left_Inner",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.0,
+      "a": "GearDoor_Right_Outer",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.0,
+      "a": "GearDoor_Nose_Aft",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.025,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.025,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.03,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.03,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.035,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.035,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.04,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.04,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.045,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.045,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    }
+  ],
+  "after": [
+    {
+      "g": 0.09,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.09,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.095,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.095,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    },
+    {
+      "g": 0.1,
+      "a": "GearDoor_Left_Inner",
+      "b": "MainWheelBayShutter_Left"
+    },
+    {
+      "g": 0.1,
+      "a": "GearDoor_Right_Outer",
+      "b": "MainWheelBayShutter_Right"
+    }
+  ]
+}

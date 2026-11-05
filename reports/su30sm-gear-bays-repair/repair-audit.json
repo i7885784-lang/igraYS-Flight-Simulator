@@ -1,0 +1,786 @@
+{
+  "nose_fore_aperture": {
+    "old_front_z_m": 4.16,
+    "new_front_z_m": 4.45,
+    "half_width_m": 0.38,
+    "reason": "Original wheel/body and wheel/front-wall collisions at g=.30/.35; unchanged swept tyre reaches Z4.415m. New opening clearance35mm.",
+    "original_paint_geometry_retained_on_extended_closed_doors": true,
+    "changed_body_parts": [
+      {
+        "name": "Fuselage_0_4",
+        "cut_face_instances": 76,
+        "outside_local_window_preserved": true
+      }
+    ]
+  },
+  "GearWell_Nose": {
+    "zero_area_triangles_removed": 92,
+    "repeated_triangle_instances_removed_including_reverse_render_faces": 985,
+    "retained_unique_triangles": 1465,
+    "real_wall_roof_coordinates_preserved": false,
+    "lining_source": "rebuilt full nose compartment",
+    "interior_colors": [
+      [
+        226,
+        228,
+        215
+      ],
+      [
+        210,
+        214,
+        200
+      ]
+    ],
+    "ceiling_stiffeners": [
+      [
+        [
+          -0.335,
+          0.439,
+          2.3
+        ],
+        [
+          -0.25125000000000003,
+          0.439,
+          2.3
+        ],
+        [
+          -0.1675,
+          0.439,
+          2.3
+        ],
+        [
+          -0.08374999999999999,
+          0.439,
+          2.3
+        ],
+        [
+          0.0,
+          0.439,
+          2.3
+        ],
+        [
+          0.08374999999999999,
+          0.439,
+          2.3
+        ],
+        [
+          0.16750000000000004,
+          0.439,
+          2.3
+        ],
+        [
+          0.25125000000000003,
+          0.439,
+          2.3
+        ],
+        [
+          0.335,
+          0.439,
+          2.3
+        ]
+      ],
+      [
+        [
+          -0.335,
+          0.439,
+          3.05
+        ],
+        [
+          -0.25125000000000003,
+          0.439,
+          3.05
+        ],
+        [
+          -0.1675,
+          0.439,
+          3.05
+        ],
+        [
+          -0.08374999999999999,
+          0.439,
+          3.05
+        ],
+        [
+          0.0,
+          0.439,
+          3.05
+        ],
+        [
+          0.08374999999999999,
+          0.439,
+          3.05
+        ],
+        [
+          0.16750000000000004,
+          0.439,
+          3.05
+        ],
+        [
+          0.25125000000000003,
+          0.439,
+          3.05
+        ],
+        [
+          0.335,
+          0.439,
+          3.05
+        ]
+      ]
+    ],
+    "perimeter_ribs": [
+      [
+        -0.383,
+        0.08,
+        0.433,
+        2.22
+      ],
+      [
+        -0.383,
+        0.08,
+        0.433,
+        2.8
+      ],
+      [
+        -0.383,
+        0.08,
+        0.433,
+        3.17
+      ],
+      [
+        -0.383,
+        0.08,
+        0.433,
+        3.95
+      ],
+      [
+        0.383,
+        0.08,
+        0.433,
+        2.22
+      ],
+      [
+        0.383,
+        0.08,
+        0.433,
+        2.8
+      ],
+      [
+        0.383,
+        0.08,
+        0.433,
+        3.17
+      ],
+      [
+        0.383,
+        0.08,
+        0.433,
+        3.95
+      ]
+    ],
+    "hydraulic_runs_keep_to_existing_roof": true,
+    "ribs_and_pipes_have_wall_roof_mounts": true
+  },
+  "GearWell_Left": {
+    "zero_area_triangles_removed": 46,
+    "repeated_triangle_instances_removed_including_reverse_render_faces": 1550,
+    "retained_unique_triangles": 2212,
+    "real_wall_roof_coordinates_preserved": false,
+    "lining_source": "mirrored collision-free right bay",
+    "interior_colors": [
+      [
+        226,
+        228,
+        215
+      ],
+      [
+        210,
+        214,
+        200
+      ]
+    ],
+    "ceiling_stiffeners": [
+      [
+        [
+          -1.1,
+          0.12023819999999998,
+          -2.9
+        ],
+        [
+          -1.1900000000000002,
+          0.11620300000000001,
+          -2.9
+        ],
+        [
+          -1.28,
+          0.11251859999999998,
+          -2.9
+        ],
+        [
+          -1.37,
+          0.1049562,
+          -2.9
+        ],
+        [
+          -1.46,
+          0.0976437,
+          -2.9
+        ],
+        [
+          -1.55,
+          0.0919784,
+          -2.9
+        ],
+        [
+          -1.6400000000000001,
+          0.0920616,
+          -2.9
+        ],
+        [
+          -1.73,
+          0.09340799999999999,
+          -2.9
+        ],
+        [
+          -1.8199999999999998,
+          0.0958288,
+          -2.9
+        ],
+        [
+          -1.91,
+          0.09861160000000001,
+          -2.9
+        ],
+        [
+          -2.0,
+          0.1000535,
+          -2.9
+        ],
+        [
+          -2.09,
+          0.0974246,
+          -2.9
+        ],
+        [
+          -2.1799999999999997,
+          0.0947699,
+          -2.9
+        ],
+        [
+          -2.2699999999999996,
+          0.09684319999999996,
+          -2.9
+        ],
+        [
+          -2.36,
+          0.092048371557454,
+          -2.9
+        ]
+      ],
+      [
+        [
+          -1.1,
+          0.3157697,
+          -0.62
+        ],
+        [
+          -1.1900000000000002,
+          0.3039206,
+          -0.62
+        ],
+        [
+          -1.28,
+          0.292168,
+          -0.62
+        ],
+        [
+          -1.37,
+          0.28028459999999994,
+          -0.62
+        ],
+        [
+          -1.46,
+          0.2696401,
+          -0.62
+        ],
+        [
+          -1.55,
+          0.2603768,
+          -0.62
+        ],
+        [
+          -1.6400000000000001,
+          0.2521267,
+          -0.62
+        ],
+        [
+          -1.73,
+          0.243877,
+          -0.62
+        ],
+        [
+          -1.8199999999999998,
+          0.23562760000000005,
+          -0.62
+        ],
+        [
+          -1.91,
+          0.2273776,
+          -0.62
+        ],
+        [
+          -2.0,
+          0.21757119999999996,
+          -0.62
+        ],
+        [
+          -2.09,
+          0.21325300000000003,
+          -0.62
+        ],
+        [
+          -2.1799999999999997,
+          0.2093704,
+          -0.62
+        ],
+        [
+          -2.2699999999999996,
+          0.20565380000000005,
+          -0.62
+        ],
+        [
+          -2.36,
+          0.20193113272215857,
+          -0.62
+        ]
+      ]
+    ],
+    "perimeter_ribs": [
+      [
+        -2.355,
+        -0.06907562726247019,
+        0.05332562123137829,
+        -3.15
+      ],
+      [
+        -2.355,
+        -0.04576626276949088,
+        0.09753770857335828,
+        -2.4
+      ],
+      [
+        -2.355,
+        -0.022946204856473203,
+        0.13389142534949236,
+        -1.75
+      ],
+      [
+        -2.355,
+        0.01639120435605307,
+        0.19748956927194364,
+        -0.65
+      ]
+    ],
+    "hydraulic_runs_keep_to_existing_roof": true,
+    "ribs_and_pipes_have_wall_roof_mounts": true
+  },
+  "GearWell_Right": {
+    "zero_area_triangles_removed": 46,
+    "repeated_triangle_instances_removed_including_reverse_render_faces": 1550,
+    "retained_unique_triangles": 2212,
+    "real_wall_roof_coordinates_preserved": false,
+    "lining_source": "original surface with measured hinge pockets",
+    "interior_colors": [
+      [
+        226,
+        228,
+        215
+      ],
+      [
+        210,
+        214,
+        200
+      ]
+    ],
+    "ceiling_stiffeners": [
+      [
+        [
+          1.1,
+          0.12023819999999998,
+          -2.9
+        ],
+        [
+          1.1900000000000002,
+          0.11620300000000001,
+          -2.9
+        ],
+        [
+          1.28,
+          0.11251860000000001,
+          -2.9
+        ],
+        [
+          1.37,
+          0.1049562,
+          -2.9
+        ],
+        [
+          1.46,
+          0.09764370000000001,
+          -2.9
+        ],
+        [
+          1.55,
+          0.0919784,
+          -2.9
+        ],
+        [
+          1.6400000000000001,
+          0.09206160000000001,
+          -2.9
+        ],
+        [
+          1.73,
+          0.093408,
+          -2.9
+        ],
+        [
+          1.8199999999999998,
+          0.0958288,
+          -2.9
+        ],
+        [
+          1.91,
+          0.09861160000000001,
+          -2.9
+        ],
+        [
+          2.0,
+          0.1000535,
+          -2.9
+        ],
+        [
+          2.09,
+          0.0974246,
+          -2.9
+        ],
+        [
+          2.1799999999999997,
+          0.0947699,
+          -2.9
+        ],
+        [
+          2.2699999999999996,
+          0.09684319999999996,
+          -2.9
+        ],
+        [
+          2.36,
+          0.092048371557454,
+          -2.9
+        ]
+      ],
+      [
+        [
+          1.1,
+          0.3157697,
+          -0.62
+        ],
+        [
+          1.1900000000000002,
+          0.3039206,
+          -0.62
+        ],
+        [
+          1.28,
+          0.292168,
+          -0.62
+        ],
+        [
+          1.37,
+          0.2802846,
+          -0.62
+        ],
+        [
+          1.46,
+          0.2696401,
+          -0.62
+        ],
+        [
+          1.55,
+          0.2603768,
+          -0.62
+        ],
+        [
+          1.6400000000000001,
+          0.2521267,
+          -0.62
+        ],
+        [
+          1.73,
+          0.243877,
+          -0.62
+        ],
+        [
+          1.8199999999999998,
+          0.2356276,
+          -0.62
+        ],
+        [
+          1.91,
+          0.2273776,
+          -0.62
+        ],
+        [
+          2.0,
+          0.21757119999999996,
+          -0.62
+        ],
+        [
+          2.09,
+          0.21325300000000003,
+          -0.62
+        ],
+        [
+          2.1799999999999997,
+          0.2093704,
+          -0.62
+        ],
+        [
+          2.2699999999999996,
+          0.2056538,
+          -0.62
+        ],
+        [
+          2.36,
+          0.20193113272215857,
+          -0.62
+        ]
+      ]
+    ],
+    "perimeter_ribs": [
+      [
+        2.355,
+        -0.06907562726247019,
+        0.05332562123137829,
+        -3.15
+      ],
+      [
+        2.355,
+        -0.045766471524832174,
+        0.09753770857335828,
+        -2.4
+      ],
+      [
+        2.355,
+        -0.022946204856473203,
+        0.13389142534949236,
+        -1.75
+      ],
+      [
+        2.355,
+        0.016390883601336087,
+        0.19748956927194364,
+        -0.65
+      ]
+    ],
+    "hydraulic_runs_keep_to_existing_roof": true,
+    "ribs_and_pipes_have_wall_roof_mounts": true
+  },
+  "GearDoor_Left_Inner": {
+    "actual_surface_triangles": 684,
+    "running_seam_m": 0.002,
+    "corner_chamfer_m": 0.055,
+    "closed_bounds_before": [
+      [
+        -2.4,
+        -0.4868786,
+        -3.38
+      ],
+      [
+        -1.8699999999999999,
+        0.037405400000000005,
+        -0.4099999999999999
+      ]
+    ],
+    "source_surface_preserved": true,
+    "removed_artificial_drop_7cm": false,
+    "seating_only_on_physical_aperture_perimeter": true
+  },
+  "GearDoor_Right_Outer": {
+    "actual_surface_triangles": 684,
+    "running_seam_m": 0.002,
+    "corner_chamfer_m": 0.055,
+    "closed_bounds_before": [
+      [
+        1.8699999999999999,
+        -0.4868786,
+        -3.38
+      ],
+      [
+        2.4,
+        0.037405400000000005,
+        -0.4099999999999999
+      ]
+    ],
+    "source_surface_preserved": true,
+    "removed_artificial_drop_7cm": false,
+    "seating_only_on_physical_aperture_perimeter": true
+  },
+  "GearDoor_Nose_Inner": {
+    "actual_surface_triangles": 276,
+    "running_seam_m": 0.002,
+    "corner_chamfer_m": 0.025,
+    "closed_bounds_before": [
+      [
+        -0.38,
+        -0.391932,
+        3.15
+      ],
+      [
+        0.0,
+        -0.2087858,
+        4.45
+      ]
+    ],
+    "source_surface_preserved": true,
+    "removed_artificial_drop_7cm": false,
+    "seating_only_on_physical_aperture_perimeter": true
+  },
+  "GearDoor_Nose_Outer": {
+    "actual_surface_triangles": 275,
+    "running_seam_m": 0.002,
+    "corner_chamfer_m": 0.025,
+    "closed_bounds_before": [
+      [
+        0.0,
+        -0.391932,
+        3.15
+      ],
+      [
+        0.38,
+        -0.2087858,
+        4.45
+      ]
+    ],
+    "source_surface_preserved": true,
+    "removed_artificial_drop_7cm": false,
+    "seating_only_on_physical_aperture_perimeter": true
+  },
+  "GearDoor_Nose_Aft": {
+    "actual_surface_triangles": 148,
+    "running_seam_m": 0.002,
+    "corner_chamfer_m": 0.025,
+    "closed_bounds_before": [
+      [
+        -0.38,
+        -0.3664048,
+        1.9899999999999998
+      ],
+      [
+        0.38,
+        -0.10955079999999999,
+        3.15
+      ]
+    ],
+    "source_surface_preserved": true,
+    "removed_artificial_drop_7cm": false,
+    "seating_only_on_physical_aperture_perimeter": true
+  },
+  "nose_rear_pair": {
+    "new_right_leaf_uses_unchanged_existing_right_door_curve": true,
+    "existing_left_leaf_uses_existing_left_curve": true,
+    "original_full_width_one_sided_panel_removed": true
+  },
+  "MainWheelBayShutter_Left": {
+    "removed_surface_area_inside_channel_clearance_m2": 0.10547595862614428,
+    "channel_geometry_unchanged": true,
+    "channel_clearance_m": 0.02,
+    "same_hinge_path_and_endpoints": true,
+    "opening_phase_old": [
+      0.015,
+      0.175
+    ],
+    "opening_phase_new": [
+      0.12,
+      0.2
+    ],
+    "closing_phase_old": [
+      0.8,
+      1
+    ],
+    "closing_phase_new": [
+      0.84,
+      1
+    ],
+    "reason": "Confirmed outer-door intersections g=.025..045 and fairing collision g=.86; no wheel/strut curves changed."
+  },
+  "MainWheelBayShutter_Right": {
+    "removed_surface_area_inside_channel_clearance_m2": 0.16371825940997561,
+    "channel_geometry_unchanged": true,
+    "channel_clearance_m": 0.02,
+    "same_hinge_path_and_endpoints": true,
+    "opening_phase_old": [
+      0.015,
+      0.175
+    ],
+    "opening_phase_new": [
+      0.12,
+      0.2
+    ],
+    "closing_phase_old": [
+      0.8,
+      1
+    ],
+    "closing_phase_new": [
+      0.84,
+      1
+    ],
+    "reason": "Confirmed outer-door intersections g=.025..045 and fairing collision g=.86; no wheel/strut curves changed."
+  },
+  "hinge_mounts": {
+    "fork_pairs": 12,
+    "existing_door_curves_unchanged": true,
+    "inherited_70mm_clearance_slide_accommodated": true,
+    "construction": "Plausible coupling of preserved game hinges, not a factory mechanism replica"
+  },
+  "stage": 2,
+  "changed_existing_packs": [
+    "Fuselage_0_4.srf",
+    "GearDoor_Nose_Inner.srf",
+    "GearDoor_Nose_Outer.srf",
+    "GearWell_Nose.srf",
+    "GearDoor_Left_Inner.srf",
+    "GearWell_Left.srf",
+    "GearDoor_Right_Outer.srf",
+    "GearWell_Right.srf",
+    "GearDoor_Nose_Aft.srf",
+    "DoorSeat_GearDoor_Nose_Inner.srf",
+    "DoorSeat_GearDoor_Nose_Outer.srf",
+    "DoorSeat_GearDoor_Left_Inner.srf",
+    "DoorSeat_GearDoor_Right_Outer.srf",
+    "DoorSeat_GearDoor_Nose_Aft.srf",
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "new_nodes": [
+    "GearBayStructure_Nose",
+    "GearBayStructure_Left",
+    "GearBayStructure_Right",
+    "BayCornerSkin_GearDoor_Left_Inner",
+    "BayCornerSkin_GearDoor_Right_Outer",
+    "BayCornerSkin_GearDoor_Nose_Inner",
+    "BayCornerSkin_GearDoor_Nose_Outer",
+    "BayCornerSkin_GearDoor_Nose_Aft",
+    "GearDoor_Nose_Aft_Right",
+    "BayCornerSkin_Nose_Aft_Right",
+    "GearBayUpperClosure",
+    "DoorHingePin_GearDoor_Nose_Inner",
+    "DoorHingePin_GearDoor_Nose_Outer",
+    "DoorHingePin_GearDoor_Left_Inner",
+    "DoorHingePin_GearDoor_Right_Outer",
+    "DoorHingePin_GearDoor_Nose_Aft",
+    "DoorHingePin_GearDoor_Nose_Aft_Right",
+    "DoorHingeForks"
+  ],
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4"
+}

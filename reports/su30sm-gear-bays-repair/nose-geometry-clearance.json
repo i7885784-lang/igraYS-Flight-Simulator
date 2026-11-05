@@ -1,0 +1,1685 @@
+{
+  "before": [
+    {
+      "g": 0.0,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.0,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.005,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.005,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.01,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.01,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.015,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.015,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.02,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.02,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.025,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.025,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.03,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.03,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.035,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.035,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.04,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.04,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.045,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.045,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.05,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.05,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.055,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.055,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.06,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.06,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.065,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.065,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.07,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.07,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.075,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.075,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.08,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.08,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.085,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.085,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.09,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.09,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.095,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.095,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.1,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.1,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.105,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.105,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.11,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.11,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.115,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.115,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.12,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.12,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.125,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.125,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.13,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.13,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.135,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.135,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.14,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.14,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.145,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.145,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.15,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.15,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.155,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.155,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.16,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.16,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.165,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.165,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.17,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.17,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.175,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.175,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.18,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.18,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.185,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.185,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.19,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.19,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.195,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.195,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.2,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.2,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.205,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.205,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.21,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.21,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.215,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.215,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.22,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.22,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.225,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.225,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.23,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.23,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.235,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.235,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.24,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.24,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.245,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.245,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.25,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.25,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.255,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.255,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.255,
+      "a": "GearPiston_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.26,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.26,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.265,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.265,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.27,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.27,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.27,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.275,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.275,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.275,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.28,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.28,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.28,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.285,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.285,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.285,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.29,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.29,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.29,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.295,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.295,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.295,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.3,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.3,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.3,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.3,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.3,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.305,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.305,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.305,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.305,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.305,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.31,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.31,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.31,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.31,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.31,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.315,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.315,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.315,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.315,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.315,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.32,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.32,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.32,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.32,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.32,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.325,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.325,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.325,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.325,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.325,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.33,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.33,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.33,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.33,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.33,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.335,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.335,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.335,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.335,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.335,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.34,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.34,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.34,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.34,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.34,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.345,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.345,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.345,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.345,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.345,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.35,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.35,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.35,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.35,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.35,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.355,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.355,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.355,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.355,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.355,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.36,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.36,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.36,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.36,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.36,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.365,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.365,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.365,
+      "a": "WheelHub_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.365,
+      "a": "WheelHub_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.365,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.37,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.37,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.37,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.375,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.375,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.375,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.38,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.38,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.38,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.385,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.385,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.385,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.39,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.39,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.39,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.395,
+      "a": "Wheel_Nose",
+      "b": "Fuselage_0_4"
+    },
+    {
+      "g": 0.395,
+      "a": "Wheel_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.395,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.4,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.405,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.41,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.415,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.42,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.425,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.43,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.435,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.44,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.445,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.45,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.455,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.46,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.465,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.47,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.475,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.48,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.485,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.49,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.495,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.5,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.505,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.51,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.515,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.52,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.525,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.53,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.535,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.54,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.545,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.55,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.555,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.56,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.565,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.57,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.575,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.58,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.585,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.59,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.595,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.6,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.605,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.61,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.615,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.62,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.625,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.63,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.635,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.64,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.645,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.65,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.655,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.66,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.665,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.67,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.675,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.68,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.685,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.69,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.695,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.7,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.705,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.71,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.715,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.72,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.725,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.73,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.735,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.74,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.745,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.75,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.755,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.76,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.765,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.77,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.775,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.78,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.785,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.79,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.795,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.8,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.805,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.81,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.815,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.82,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.825,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.83,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.835,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.84,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.845,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.85,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.855,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.86,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.865,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.87,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.875,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.88,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.885,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.89,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.895,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.9,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.905,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.91,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.915,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.92,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.925,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.93,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.935,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.94,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.945,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.95,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.955,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.96,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.965,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.97,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.975,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.98,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.985,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.99,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 0.995,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    },
+    {
+      "g": 1.0,
+      "a": "GearUpper_Nose",
+      "b": "GearWell_Nose"
+    }
+  ],
+  "after": []
+}

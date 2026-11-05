@@ -1,0 +1,2 @@
+patches/*.srf text eol=lf
+source-data/*.srf text eol=lf
