@@ -1,0 +1,52 @@
+{
+  "release_id": 435097963,
+  "actions_run": 42017042257,
+  "all_download_sha_crc_pass": true,
+  "assets": {
+    "YSFlight_Su30SM_Test5_GearBays_Game_Win32_Win64.zip": {
+      "sha256": "ed56d7ac5fd56c2f62454591fdb6371835355b718f31a7b77cc1079dcec0e932",
+      "bytes": 45963105,
+      "crc_pass": true,
+      "duplicate_entries": 0
+    },
+    "YSFlight_Su30SM_Test5_GearBays_Sources.zip": {
+      "sha256": "dc2e611a1ee4096a0188e0cfdea6ad8633e3b3ccaaeb477b7bfe77af7c2525de",
+      "bytes": 232847343,
+      "crc_pass": true,
+      "duplicate_entries": 0
+    },
+    "YSFlight_Su30SM_Test5_GearBays_Report.zip": {
+      "sha256": "727a9f4abdfc06a4d0bdd547a470cdf494151253f4b24587a08662a88c726d7f",
+      "bytes": 6010010,
+      "crc_pass": true,
+      "duplicate_entries": 0
+    }
+  },
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "game_file_count": 1157,
+  "changed_game_files": [
+    "runtime/aircraft/su30sm.dnm"
+  ],
+  "unchanged_game_files": 1156,
+  "changed_original_packs": 16,
+  "new_packs": 18,
+  "retimed_original_nodes": [
+    "MainWheelBayShutter_Left",
+    "MainWheelBayShutter_Right"
+  ],
+  "other_nodes_and_original_metadata_exact": true,
+  "full_previous_source_files_preserved_byte_identical": 8068,
+  "downloaded_sources_exact_model_rebuild": true,
+  "original_engine_and_glb_present": true,
+  "matched_screenshot_pairs": 20,
+  "native_cycle_video_present": true,
+  "valid_source_support_outside_points": {
+    "Left": 0,
+    "Right": 0
+  },
+  "current_version_pin_changed": false,
+  "limitations": [
+    "Original main gear/wheels intersect original IntakeDuct volumes in portions of stowed motion; these meshes and curves unchanged.",
+    "Existing faceted model, legacy skin seams and shading remain; this is not factory CAD."
+  ]
+}

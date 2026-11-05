@@ -1,0 +1,115 @@
+{
+  "draft": true,
+  "release_id": 435097963,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-e872e8ea05a63da095a3",
+  "tag": "personal-su30sm-gearbays-20261105",
+  "source_commit": "a08524687ae9f658b6745079bfb2dd54d19d6280",
+  "baseline_release_id": 434249450,
+  "baseline_model_sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "changed_game_files": [
+    "aircraft/su30sm.dnm"
+  ],
+  "unchanged_game_files": 1156,
+  "all_other_game_files_byte_identical": true,
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "GearDoor_Nose_Inner.srf",
+    "GearDoor_Nose_Outer.srf",
+    "GearWell_Nose.srf",
+    "GearDoor_Left_Inner.srf",
+    "GearWell_Left.srf",
+    "GearDoor_Right_Outer.srf",
+    "GearWell_Right.srf",
+    "GearDoor_Nose_Aft.srf",
+    "DoorSeat_GearDoor_Nose_Inner.srf",
+    "DoorSeat_GearDoor_Nose_Outer.srf",
+    "DoorSeat_GearDoor_Left_Inner.srf",
+    "DoorSeat_GearDoor_Right_Outer.srf",
+    "DoorSeat_GearDoor_Nose_Aft.srf",
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf"
+  ],
+  "added_packs": [
+    "GearBayStructure_Nose.srf",
+    "GearBayStructure_Left.srf",
+    "GearBayStructure_Right.srf",
+    "BayCornerSkin_GearDoor_Left_Inner.srf",
+    "BayCornerSkin_GearDoor_Right_Outer.srf",
+    "BayCornerSkin_GearDoor_Nose_Inner.srf",
+    "BayCornerSkin_GearDoor_Nose_Outer.srf",
+    "BayCornerSkin_GearDoor_Nose_Aft.srf",
+    "GearDoor_Nose_Aft_Right.srf",
+    "BayCornerSkin_Nose_Aft_Right.srf",
+    "GearBayUpperClosure.srf",
+    "DoorHingePin_GearDoor_Nose_Inner.srf",
+    "DoorHingePin_GearDoor_Nose_Outer.srf",
+    "DoorHingePin_GearDoor_Left_Inner.srf",
+    "DoorHingePin_GearDoor_Right_Outer.srf",
+    "DoorHingePin_GearDoor_Nose_Aft.srf",
+    "DoorHingePin_GearDoor_Nose_Aft_Right.srf",
+    "DoorHingeForks.srf"
+  ],
+  "retimed_original_nodes": [
+    "MainWheelBayShutter_Left",
+    "MainWheelBayShutter_Right"
+  ],
+  "all_other_original_nodes_exact": true,
+  "stable_current_version_unchanged": true,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_GearBays_Game_Win32_Win64.zip",
+      "sha256": "ed56d7ac5fd56c2f62454591fdb6371835355b718f31a7b77cc1079dcec0e932",
+      "bytes": 45963105,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-e872e8ea05a63da095a3/YSFlight_Su30SM_Test5_GearBays_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_GearBays_Sources.zip",
+      "sha256": "dc2e611a1ee4096a0188e0cfdea6ad8633e3b3ccaaeb477b7bfe77af7c2525de",
+      "bytes": 232847343,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-e872e8ea05a63da095a3/YSFlight_Su30SM_Test5_GearBays_Sources.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_GearBays_Report.zip",
+      "sha256": "727a9f4abdfc06a4d0bdd547a470cdf494151253f4b24587a08662a88c726d7f",
+      "bytes": 6010010,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-e872e8ea05a63da095a3/YSFlight_Su30SM_Test5_GearBays_Report.zip"
+    }
+  ],
+  "acceptance": {
+    "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+    "recovered_partial_sha256": "965b609b60b565649b52ed3b853d9ab7f455bb13c35664a02096f6b2fc69e885",
+    "geometry_frozen": true,
+    "changed_original_meshes": 16,
+    "new_meshes_nodes": 18,
+    "retimed_original_nodes": [
+      "MainWheelBayShutter_Left",
+      "MainWheelBayShutter_Right"
+    ],
+    "original_wheel_strut_outer_door_curves_exact": true,
+    "original_engine_meshes_exact": true,
+    "sampled_poses": 201,
+    "tested_distinct_pose_pairs": 131511,
+    "scoped_contacts": 0,
+    "degenerate_changed_new_triangles": 0,
+    "selfcheck_panels_and_linings": 11,
+    "proper_self_crossings": 0,
+    "coplanar_self_overlaps": 0,
+    "native_cycle_pass": true,
+    "native_backend": "Unchanged Windows OpenGL64 executable under Wine/Xvfb",
+    "native_cycle_renderGear": -1,
+    "native_cycle": "0 -> 1 -> 0",
+    "matched_screenshot_pairs": 20,
+    "visual_review": "Selected final ground front/main-left, stowed overview, nose bay, both intermediate main closeups and native video frames opened. Entire video recorded, not watched in full.",
+    "continuous_collision_proof": false,
+    "windows32_rerun": false,
+    "residuals": [
+      "Original main gear/wheels intersect original IntakeDuct volumes in portions of stowed motion; these meshes and curves unchanged.",
+      "Existing faceted model, legacy skin seams and shading remain; this is not factory CAD."
+    ],
+    "stable_current_version_unchanged": true
+  },
+  "reproduction": "build.py exact SHA assembly from complete editable SRF/state resources on Ubuntu22.04/Python3.12; full raw generator also included",
+  "remaining_defect": "Unchanged main wheel/gear versus original IntakeDuct intersections during some stowed poses; not a complete all-aircraft collision fix",
+  "full_sources_engine_glb_history_preserved": true
+}

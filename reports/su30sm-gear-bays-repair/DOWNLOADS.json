@@ -1,0 +1,17 @@
+{
+  "release_id": 435097963,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_GearBays_Game_Win32_Win64.zip",
+      "sha256": "ed56d7ac5fd56c2f62454591fdb6371835355b718f31a7b77cc1079dcec0e932",
+      "bytes": 45963105,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-e872e8ea05a63da095a3/YSFlight_Su30SM_Test5_GearBays_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_GearBays_Sources.zip",
+      "sha256": "dc2e611a1ee4096a0188e0cfdea6ad8633e3b3ccaaeb477b7bfe77af7c2525de",
+      "bytes": 232847343,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-e872e8ea05a63da095a3/YSFlight_Su30SM_Test5_GearBays_Sources.zip"
+    }
+  ]
+}
