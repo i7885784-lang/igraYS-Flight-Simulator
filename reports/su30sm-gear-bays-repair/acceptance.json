@@ -1,0 +1,33 @@
+{
+  "model_sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+  "recovered_partial_sha256": "965b609b60b565649b52ed3b853d9ab7f455bb13c35664a02096f6b2fc69e885",
+  "geometry_frozen": true,
+  "changed_original_meshes": 16,
+  "new_meshes_nodes": 18,
+  "retimed_original_nodes": [
+    "MainWheelBayShutter_Left",
+    "MainWheelBayShutter_Right"
+  ],
+  "original_wheel_strut_outer_door_curves_exact": true,
+  "original_engine_meshes_exact": true,
+  "sampled_poses": 201,
+  "tested_distinct_pose_pairs": 131511,
+  "scoped_contacts": 0,
+  "degenerate_changed_new_triangles": 0,
+  "selfcheck_panels_and_linings": 11,
+  "proper_self_crossings": 0,
+  "coplanar_self_overlaps": 0,
+  "native_cycle_pass": true,
+  "native_backend": "Unchanged Windows OpenGL64 executable under Wine/Xvfb",
+  "native_cycle_renderGear": -1,
+  "native_cycle": "0 -> 1 -> 0",
+  "matched_screenshot_pairs": 20,
+  "visual_review": "Selected final ground front/main-left, stowed overview, nose bay, both intermediate main closeups and native video frames opened. Entire video recorded, not watched in full.",
+  "continuous_collision_proof": false,
+  "windows32_rerun": false,
+  "residuals": [
+    "Original main gear/wheels intersect original IntakeDuct volumes in portions of stowed motion; these meshes and curves unchanged.",
+    "Existing faceted model, legacy skin seams and shading remain; this is not factory CAD."
+  ],
+  "stable_current_version_unchanged": true
+}

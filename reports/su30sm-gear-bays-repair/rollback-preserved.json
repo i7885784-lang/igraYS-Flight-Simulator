@@ -1,0 +1,17 @@
+{
+  "stable": {
+    "path": "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dnm",
+    "sha256": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504",
+    "preserved": true
+  },
+  "prior": {
+    "path": "/workspace/ysflight-dev/su30sm-shutter-fix/runtime/aircraft/su30sm.dnm",
+    "sha256": "86455c587b7d15e59a487b6bcae276713aceafafb7d0e5a2b8672901d5cb4558",
+    "preserved": true
+  },
+  "partial": {
+    "path": "/workspace/ysflight-dev/su30sm-gear-bays-repair/checkpoints/stage1-before-interruption.dnm",
+    "sha256": "965b609b60b565649b52ed3b853d9ab7f455bb13c35664a02096f6b2fc69e885",
+    "preserved": true
+  }
+}

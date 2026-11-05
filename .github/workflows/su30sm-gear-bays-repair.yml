@@ -1,0 +1,27 @@
+name: Su30SM test5 gear bays separate candidate delivery
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-gear-bays-repair
+            reports/su30sm-gear-bays-repair
+            reports/su30sm-test5-shutter-fix
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python changes/su30sm-gear-bays-repair/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}

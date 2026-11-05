@@ -1240,5 +1240,5 @@
     ]
   ],
   "other_existing_nodes_exact": true,
-  "status": "Awaiting final native captures and acceptance checks"
+  "status": "Verified final geometry, 201 sampled poses, native Windows OpenGL64 gear cycle and matched captures; see acceptance.json. Residual legacy main gear/intake overlap documented."
 }

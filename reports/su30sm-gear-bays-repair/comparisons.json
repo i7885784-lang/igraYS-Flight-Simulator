@@ -1,0 +1,102 @@
+[
+  {
+    "name": "front",
+    "before": "captures/before-ground/front.png",
+    "after": "captures/after-final-ground/front.png"
+  },
+  {
+    "name": "main-close",
+    "before": "captures/before-ground/main-close.png",
+    "after": "captures/after-final-ground/main-close.png"
+  },
+  {
+    "name": "nose-close",
+    "before": "captures/before-ground/nose-close.png",
+    "after": "captures/after-final-ground/nose-close.png"
+  },
+  {
+    "name": "bottom",
+    "before": "captures/before-ground/bottom.png",
+    "after": "captures/after-final-ground/bottom.png"
+  },
+  {
+    "name": "main-left",
+    "before": "captures/before-ground-add/main-left.png",
+    "after": "captures/after-final-ground/main-left.png"
+  },
+  {
+    "name": "side",
+    "before": "captures/before-ground-add/side.png",
+    "after": "captures/after-final-ground/side.png"
+  },
+  {
+    "name": "nose-front",
+    "before": "captures/before-ground-add/nose-front.png",
+    "after": "captures/after-final-ground/nose-front.png"
+  },
+  {
+    "name": "up",
+    "before": "captures/before-final-poses/up.png",
+    "after": "captures/after-final-poses/up.png"
+  },
+  {
+    "name": "opening",
+    "before": "captures/before-final-poses/opening.png",
+    "after": "captures/after-final-poses/opening.png"
+  },
+  {
+    "name": "mid",
+    "before": "captures/before-final-poses/mid.png",
+    "after": "captures/after-final-poses/mid.png"
+  },
+  {
+    "name": "closing",
+    "before": "captures/before-final-poses/closing.png",
+    "after": "captures/after-final-poses/closing.png"
+  },
+  {
+    "name": "down",
+    "before": "captures/before-final-poses/down.png",
+    "after": "captures/after-final-poses/down.png"
+  },
+  {
+    "name": "main-up",
+    "before": "captures/before-final-poses/main-up.png",
+    "after": "captures/after-final-poses/main-up.png"
+  },
+  {
+    "name": "main-down",
+    "before": "captures/before-final-poses/main-down.png",
+    "after": "captures/after-final-poses/main-down.png"
+  },
+  {
+    "name": "nose-up",
+    "before": "captures/before-final-poses/nose-up.png",
+    "after": "captures/after-final-poses/nose-up.png"
+  },
+  {
+    "name": "nose-mid",
+    "before": "captures/before-final-poses/nose-mid.png",
+    "after": "captures/after-final-poses/nose-mid.png"
+  },
+  {
+    "name": "nose-down",
+    "before": "captures/before-final-poses/nose-down.png",
+    "after": "captures/after-final-poses/nose-down.png"
+  },
+  {
+    "name": "main-mid-right",
+    "before": "captures/before-detail/main-mid-right.png",
+    "after": "captures/after-detail/main-mid-right.png"
+  },
+  {
+    "name": "main-mid-left",
+    "before": "captures/before-detail/main-mid-left.png",
+    "after": "captures/after-detail/main-mid-left.png"
+  },
+  {
+    "name": "main-closing",
+    "before": "captures/before-detail/main-closing.png",
+    "after": "captures/after-detail/main-closing.png"
+  }
+]
