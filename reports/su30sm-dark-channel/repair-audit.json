@@ -1,0 +1,55 @@
+{
+  "model_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "all_nodes_animations_parents_pivots_exact": true,
+  "all_original_aircraft_skin_and_mechanics_packs_exact": true,
+  "exterior_paint_unchanged": true,
+  "no_added_nodes_or_effects": true,
+  "inserts": {
+    "IntakeDuct_-1.srf": {
+      "old_insert_faces": 116,
+      "new_liner_faces": 144,
+      "front_z_m": -0.55,
+      "termination_z_m": -0.75,
+      "body_clearance_m": 0.008,
+      "body_section_based": true,
+      "single_sided_inward_walls": true,
+      "termination_facing_inlet": true,
+      "emissive_faces": 0,
+      "matte_colors": [
+        [
+          25,
+          30,
+          33
+        ]
+      ],
+      "old_artificial_rectangular_walls_and_spoked_disc_replaced": true,
+      "original_aircraft_source_surfaces_removed": false,
+      "occlusion_screen_explicitly_used": true
+    },
+    "IntakeDuct_1.srf": {
+      "old_insert_faces": 116,
+      "new_liner_faces": 144,
+      "front_z_m": -0.55,
+      "termination_z_m": -0.75,
+      "body_clearance_m": 0.008,
+      "body_section_based": true,
+      "single_sided_inward_walls": true,
+      "termination_facing_inlet": true,
+      "emissive_faces": 0,
+      "matte_colors": [
+        [
+          25,
+          30,
+          33
+        ]
+      ],
+      "old_artificial_rectangular_walls_and_spoked_disc_replaced": true,
+      "original_aircraft_source_surfaces_removed": false,
+      "occlusion_screen_explicitly_used": true
+    }
+  }
+}

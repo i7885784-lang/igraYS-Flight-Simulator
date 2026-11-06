@@ -1,0 +1,56 @@
+{
+  "model_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "all_nodes_states_pivots_parents_exact": true,
+  "all_other_meshes_including_original_aircraft_skin_byte_exact": true,
+  "no_new_nodes": true,
+  "exterior_paint_exact": true,
+  "internal_material_only": [
+    25,
+    30,
+    33
+  ],
+  "motion_201_pose_contacts": 0,
+  "geometry": {
+    "IntakeDuct_-1": {
+      "vertices": 145,
+      "unique_triangles": 240,
+      "zero_area_triangles": 0,
+      "same_xy_projection_overlap_m2": 0.0,
+      "open_inlet_boundary_edges": 48,
+      "other_edges_two_faces": true,
+      "no_duplicate_or_reverse_surface_faces": true,
+      "all_face_normals_towards_inlet": true,
+      "emissive_faces": 0,
+      "original_body_or_bay_intersections": {
+        "Fuselage_0_4": false,
+        "GearWell_Left": false,
+        "GearWell_Right": false
+      },
+      "area_m2": 0.5413724856238402,
+      "depth_m": 0.19999999999999996
+    },
+    "IntakeDuct_1": {
+      "vertices": 145,
+      "unique_triangles": 240,
+      "zero_area_triangles": 0,
+      "same_xy_projection_overlap_m2": 0.0,
+      "open_inlet_boundary_edges": 48,
+      "other_edges_two_faces": true,
+      "no_duplicate_or_reverse_surface_faces": true,
+      "all_face_normals_towards_inlet": true,
+      "emissive_faces": 0,
+      "original_body_or_bay_intersections": {
+        "Fuselage_0_4": false,
+        "GearWell_Left": false,
+        "GearWell_Right": false
+      },
+      "area_m2": 0.541372673997119,
+      "depth_m": 0.19999999999999996
+    }
+  },
+  "continuous_collision_proof": false
+}

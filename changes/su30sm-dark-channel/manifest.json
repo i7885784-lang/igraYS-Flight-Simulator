@@ -1,0 +1,16 @@
+{
+  "baseline_sha256": "6fd0f2982c657eb4524573744ce949d5aeea9e26f16d3bd74a21f69f598a4c83",
+  "model_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "all_nodes_states_parents_exact": true,
+  "no_added_nodes": true,
+  "all_original_aircraft_source_geometry_and_exterior_paint_exact": true,
+  "internal_visual_screen_explicitly_used": true,
+  "patch_sha256": {
+    "IntakeDuct_-1.srf": "3358f977db1548dbd3657d9ab6a0aaf416ec158c94251681a7d7350df2d7f2e6",
+    "IntakeDuct_1.srf": "fd51cb7dd138f0ce6b7d617fd54623624a1f9adf19e20204e1488225ead210a1"
+  }
+}
