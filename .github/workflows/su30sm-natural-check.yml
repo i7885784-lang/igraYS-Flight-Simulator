@@ -2,7 +2,7 @@ name: Su30SM native Windows x86 and x64 check
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   native:
     runs-on: windows-2022
