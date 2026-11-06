@@ -1,0 +1,46 @@
+name: Su30SM native Windows x86 and x64 check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        bits: [32, 64]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-natural-pass
+            reports/su30sm-intake-depth
+            reports/su30sm-bay-seams
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow
+      - name: Obtain verified base and reproduce new model
+        shell: python
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEST_BITS: ${{ matrix.bits }}
+        run: |
+          from pathlib import Path
+          import json,subprocess,zipfile,hashlib,os,shutil
+          bits=int(os.environ['TEST_BITS']);cpu=86 if bits==32 else 64
+          for report,pattern in [('su30sm-bay-seams',f'_Windows_x{cpu}.zip'),('su30sm-intake-depth','_Model_Report.zip')]:
+            status=json.loads(Path(f'reports/{report}/STATUS.json').read_text());a=next(a for a in status['assets'] if a['name'].endswith(pattern));subprocess.run(['gh','release','download',status['tag'],'--pattern',a['name'],'--dir','downloads'],check=True);p=Path('downloads')/a['name'];assert hashlib.sha256(p.read_bytes()).hexdigest()==a['sha256']
+            with zipfile.ZipFile(p) as z:
+              if report=='su30sm-bay-seams':z.extractall('.')
+              else:
+                f=Path('changes/su30sm-natural-pass/baseline/su30sm.dnm');f.parent.mkdir(exist_ok=True);f.write_bytes(z.read('Su30SM_IntakeDepth/aircraft/su30sm.dnm'))
+          subprocess.run(['python','changes/su30sm-natural-pass/build.py'],check=True);shutil.copy2('changes/su30sm-natural-pass/runtime/aircraft/su30sm.dnm','runtime/aircraft/su30sm.dnm')
+      - run: python changes/su30sm-natural-pass/windows_check.py ${{ matrix.bits }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-windows-${{ matrix.bits }}
+          path: native-${{ matrix.bits }}
