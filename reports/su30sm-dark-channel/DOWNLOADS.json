@@ -1,0 +1,44 @@
+{
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-7d63ad8f12fadc9938be",
+  "draft": true,
+  "source_commit": "a9d91501b86dc87d23f4fe6a47e41ff8b9b01844",
+  "downloaded_and_sha256_verified": true,
+  "game_included": false,
+  "assets": [
+    {
+      "name": "Su30SM_Report_Photos_Videos.zip",
+      "sha256": "599efa9b34cdc17edeb7d5ca9a9f50ed32e494b4c54ebf7a613911f26e3528dd",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/Su30SM_Report_Photos_Videos.zip"
+    },
+    {
+      "name": "Su30SM_Report_RU.pdf",
+      "sha256": "13c39a3fbd306fe816a36e3de67ac38f0973f2bade452911b78ff6a07049bca2",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/Su30SM_Report_RU.pdf"
+    },
+    {
+      "name": "after-close-left.mp4",
+      "sha256": "8e44951479d10ddfb7a7b016bb88402ca191d57a5e4815a8c0d0bd5b8b0d8db8",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/after-close-left.mp4"
+    },
+    {
+      "name": "after-close-right.mp4",
+      "sha256": "12a6d694a57ac6d8a2893a6f13c5523b89c48e7384ea1edcadc1fbe397b823cb",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/after-close-right.mp4"
+    },
+    {
+      "name": "after-gear.mp4",
+      "sha256": "c469b2ef55986004db3e8f4faafd894d699454ab7d8e8e81b4be380f0241aafc",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/after-gear.mp4"
+    },
+    {
+      "name": "after-orbit.mp4",
+      "sha256": "44fa9d45cee7f1deaf2f6220e53ca6ded6abfb07d4d80d72df53d88eff75750a",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/after-orbit.mp4"
+    },
+    {
+      "name": "before-orbit.mp4",
+      "sha256": "3d167ebacd12d6e82d18664241a34d1a59c8006eb3a6ba4533a5481769811bb8",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-7d63ad8f12fadc9938be/before-orbit.mp4"
+    }
+  ]
+}
