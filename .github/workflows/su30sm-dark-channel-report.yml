@@ -1,0 +1,22 @@
+name: Su30SM report PDF images and videos only
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            reports/su30sm-dark-channel
+            changes/su30sm-dark-channel/publish_report.py
+      - run: python changes/su30sm-dark-channel/publish_report.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}
