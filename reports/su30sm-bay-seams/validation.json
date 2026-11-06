@@ -1,0 +1,125 @@
+{
+  "model_sha256": "5fd0ba0e36a746ebcb832e66d2792a9c10f74a964c09035bddc0e74cb10a095d",
+  "all_nodes_STAs_parents_pivots_exact": true,
+  "intake_dark_channels_exact": true,
+  "original_airframe_engine_meshes_exact": true,
+  "no_new_nodes": true,
+  "changed_packs": [
+    "GearDoor_Nose_Inner.srf",
+    "GearDoor_Nose_Outer.srf",
+    "GearDoor_Left_Inner.srf",
+    "GearWell_Left.srf",
+    "GearDoor_Right_Outer.srf",
+    "GearWell_Right.srf",
+    "MainBayFixedSkin_Left.srf",
+    "MainBayFixedSkin_Right.srf",
+    "GearDoor_Nose_Aft.srf",
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf",
+    "GearDoor_Nose_Aft_Right.srf"
+  ],
+  "geometry": {
+    "GearDoor_Nose_Inner.srf": {
+      "vertices": 2016,
+      "faces": 642,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 1.6653345369377348e-16,
+      "emissive_faces": 0
+    },
+    "GearDoor_Nose_Outer.srf": {
+      "vertices": 2006,
+      "faces": 639,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 1.1102230246251565e-16,
+      "emissive_faces": 0
+    },
+    "GearDoor_Left_Inner.srf": {
+      "vertices": 4832,
+      "faces": 1550,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": -2.220446049250313e-15,
+      "emissive_faces": 0
+    },
+    "GearWell_Left.srf": {
+      "vertices": 352632,
+      "faces": 117544,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 0,
+      "emissive_faces": 0
+    },
+    "GearDoor_Right_Outer.srf": {
+      "vertices": 4832,
+      "faces": 1550,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": -2.220446049250313e-15,
+      "emissive_faces": 0
+    },
+    "GearWell_Right.srf": {
+      "vertices": 349227,
+      "faces": 116409,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 0,
+      "emissive_faces": 0
+    },
+    "MainBayFixedSkin_Left.srf": {
+      "vertices": 3928,
+      "faces": 1228,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 3.767430034606889e-08,
+      "emissive_faces": 0
+    },
+    "MainBayFixedSkin_Right.srf": {
+      "vertices": 4088,
+      "faces": 1282,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 7.475739960405292e-08,
+      "emissive_faces": 0
+    },
+    "GearDoor_Nose_Aft.srf": {
+      "vertices": 1176,
+      "faces": 368,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": -5.551115123125783e-17,
+      "emissive_faces": 0
+    },
+    "MainWheelBayShutter_Left.srf": {
+      "vertices": 9900,
+      "faces": 3137,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 2.220446049250313e-16,
+      "emissive_faces": 0
+    },
+    "MainWheelBayShutter_Right.srf": {
+      "vertices": 12122,
+      "faces": 3846,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": 1.2212453270876722e-15,
+      "emissive_faces": 0
+    },
+    "GearDoor_Nose_Aft_Right.srf": {
+      "vertices": 1176,
+      "faces": 368,
+      "degenerate_triangles": 0,
+      "duplicate_or_reverse_triangles": 0,
+      "exterior_projected_overlap_m2": -5.551115123125783e-17,
+      "emissive_faces": 0
+    }
+  },
+  "motion_samples": 201,
+  "new_pair_poses": 0,
+  "removed_pair_poses": 804,
+  "inherited_pair_poses": 4426,
+  "continuous_collision_proof": false,
+  "self_intersection_scope": "Single-valued projected outer sheets and matching inward 8mm sheets, rim walls only on actual union boundary. No all-aircraft self-intersection assertion."
+}

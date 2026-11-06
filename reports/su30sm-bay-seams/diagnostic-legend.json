@@ -1,0 +1,172 @@
+{
+  "GearDoor_Nose_Inner.srf": [
+    35,
+    90,
+    255
+  ],
+  "GearDoor_Nose_Outer.srf": [
+    35,
+    90,
+    255
+  ],
+  "GearWell_Nose.srf": [
+    255,
+    230,
+    40
+  ],
+  "GearDoor_Left_Inner.srf": [
+    35,
+    90,
+    255
+  ],
+  "GearWell_Left.srf": [
+    255,
+    230,
+    40
+  ],
+  "GearDoor_Right_Outer.srf": [
+    35,
+    90,
+    255
+  ],
+  "GearWell_Right.srf": [
+    255,
+    230,
+    40
+  ],
+  "MainBayFixedSkin_Left.srf": [
+    255,
+    40,
+    40
+  ],
+  "MainBayFixedSkin_Right.srf": [
+    255,
+    40,
+    40
+  ],
+  "GearDoor_Nose_Aft.srf": [
+    35,
+    90,
+    255
+  ],
+  "DoorSeat_GearDoor_Nose_Inner.srf": [
+    20,
+    255,
+    255
+  ],
+  "DoorSeat_GearDoor_Nose_Outer.srf": [
+    20,
+    255,
+    255
+  ],
+  "DoorSeat_GearDoor_Left_Inner.srf": [
+    20,
+    255,
+    255
+  ],
+  "DoorSeat_GearDoor_Right_Outer.srf": [
+    20,
+    255,
+    255
+  ],
+  "DoorSeat_GearDoor_Nose_Aft.srf": [
+    20,
+    255,
+    255
+  ],
+  "MainWheelBayShutter_Left.srf": [
+    255,
+    40,
+    255
+  ],
+  "MainWheelBayShutter_Right.srf": [
+    255,
+    40,
+    255
+  ],
+  "GearBayStructure_Nose.srf": [
+    90,
+    255,
+    120
+  ],
+  "GearBayStructure_Left.srf": [
+    90,
+    255,
+    120
+  ],
+  "GearBayStructure_Right.srf": [
+    90,
+    255,
+    120
+  ],
+  "BayCornerSkin_GearDoor_Left_Inner.srf": [
+    255,
+    140,
+    25
+  ],
+  "BayCornerSkin_GearDoor_Right_Outer.srf": [
+    255,
+    140,
+    25
+  ],
+  "BayCornerSkin_GearDoor_Nose_Inner.srf": [
+    255,
+    140,
+    25
+  ],
+  "BayCornerSkin_GearDoor_Nose_Outer.srf": [
+    255,
+    140,
+    25
+  ],
+  "BayCornerSkin_GearDoor_Nose_Aft.srf": [
+    255,
+    140,
+    25
+  ],
+  "GearDoor_Nose_Aft_Right.srf": [
+    35,
+    90,
+    255
+  ],
+  "BayCornerSkin_Nose_Aft_Right.srf": [
+    255,
+    140,
+    25
+  ],
+  "DoorHingePin_GearDoor_Nose_Inner.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingePin_GearDoor_Nose_Outer.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingePin_GearDoor_Left_Inner.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingePin_GearDoor_Right_Outer.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingePin_GearDoor_Nose_Aft.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingePin_GearDoor_Nose_Aft_Right.srf": [
+    160,
+    90,
+    240
+  ],
+  "DoorHingeForks.srf": [
+    160,
+    90,
+    240
+  ]
+}

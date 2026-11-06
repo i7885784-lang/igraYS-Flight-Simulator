@@ -1,0 +1,249 @@
+{
+  "MainBayFixedSkin_Left / MainBayFixedSkin_Left": {
+    "conflict_count": 12,
+    "projected_area_sum": 0.0010758806194354946,
+    "examples": [
+      {
+        "a_face": 51,
+        "b_face": 418,
+        "overlap_xz_m2": 3.896221500000079e-05,
+        "dy_range": [
+          -0.007999999999999619,
+          0.02150839933137791
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            77,
+            92,
+            101
+          ]
+        ]
+      },
+      {
+        "a_face": 53,
+        "b_face": 361,
+        "overlap_xz_m2": 0.00013619681870447064,
+        "dy_range": [
+          -0.008000000000006224,
+          0.013756584515132175
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            77,
+            92,
+            101
+          ]
+        ]
+      },
+      {
+        "a_face": 53,
+        "b_face": 361,
+        "overlap_xz_m2": 0.00032230318129551985,
+        "dy_range": [
+          -0.008000000000002672,
+          0.06523305687203873
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            77,
+            92,
+            101
+          ]
+        ]
+      },
+      {
+        "a_face": 53,
+        "b_face": 361,
+        "overlap_xz_m2": 5.755318129551171e-05,
+        "dy_range": [
+          -0.008000000000002672,
+          0.02295105187004509
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            77,
+            92,
+            101
+          ]
+        ]
+      },
+      {
+        "a_face": 122,
+        "b_face": 416,
+        "overlap_xz_m2": 2.9267010703362224e-05,
+        "dy_range": [
+          -0.008000000000006224,
+          0.007525521276591007
+        ],
+        "colors": [
+          [
+            77,
+            139,
+            163
+          ],
+          [
+            77,
+            92,
+            101
+          ]
+        ]
+      }
+    ]
+  },
+  "MainBayFixedSkin_Left / Fuselage_0_4": {
+    "conflict_count": 116,
+    "projected_area_sum": 0.00012712812196093105,
+    "examples": [
+      {
+        "a_face": 35,
+        "b_face": 13089,
+        "overlap_xz_m2": 1.6087015866077109e-09,
+        "dy_range": [
+          -8.809318501334928e-07,
+          7.105427357601002e-15
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            142,
+            169,
+            181
+          ]
+        ]
+      },
+      {
+        "a_face": 35,
+        "b_face": 37772,
+        "overlap_xz_m2": 1.6087015866077109e-09,
+        "dy_range": [
+          -8.809318501334928e-07,
+          7.105427357601002e-15
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            142,
+            169,
+            181
+          ]
+        ]
+      },
+      {
+        "a_face": 36,
+        "b_face": 13090,
+        "overlap_xz_m2": 4.470816772224025e-10,
+        "dy_range": [
+          -8.81179907707974e-07,
+          0.0
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            142,
+            169,
+            181
+          ]
+        ]
+      },
+      {
+        "a_face": 36,
+        "b_face": 37773,
+        "overlap_xz_m2": 4.470816772224025e-10,
+        "dy_range": [
+          -8.81179907707974e-07,
+          0.0
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            142,
+            169,
+            181
+          ]
+        ]
+      },
+      {
+        "a_face": 42,
+        "b_face": 37687,
+        "overlap_xz_m2": 5.015158854162236e-09,
+        "dy_range": [
+          2.1142659623052396e-08,
+          3.80542845457299e-07
+        ],
+        "colors": [
+          [
+            142,
+            169,
+            181
+          ],
+          [
+            142,
+            169,
+            181
+          ]
+        ]
+      }
+    ]
+  },
+  "GearDoor_Left_Inner / Fuselage_0_4": {
+    "conflict_count": 0,
+    "projected_area_sum": 0,
+    "examples": []
+  },
+  "GearDoor_Nose_Inner / Fuselage_0_4": {
+    "conflict_count": 0,
+    "projected_area_sum": 0,
+    "examples": []
+  },
+  "GearDoor_Nose_Aft / Fuselage_0_4": {
+    "conflict_count": 0,
+    "projected_area_sum": 0,
+    "examples": []
+  },
+  "MainWheelBayShutter_Left / MainBayFixedSkin_Left": {
+    "conflict_count": 0,
+    "projected_area_sum": 0,
+    "examples": []
+  },
+  "GearDoor_Left_Inner / GearWell_Left": {
+    "conflict_count": 0,
+    "projected_area_sum": 0,
+    "examples": []
+  }
+}

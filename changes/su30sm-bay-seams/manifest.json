@@ -1,0 +1,34 @@
+{
+  "baseline_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "model_sha256": "5fd0ba0e36a746ebcb832e66d2792a9c10f74a964c09035bddc0e74cb10a095d",
+  "changed_packs": [
+    "GearDoor_Nose_Inner.srf",
+    "GearDoor_Nose_Outer.srf",
+    "GearDoor_Left_Inner.srf",
+    "GearWell_Left.srf",
+    "GearDoor_Right_Outer.srf",
+    "GearWell_Right.srf",
+    "MainBayFixedSkin_Left.srf",
+    "MainBayFixedSkin_Right.srf",
+    "GearDoor_Nose_Aft.srf",
+    "MainWheelBayShutter_Left.srf",
+    "MainWheelBayShutter_Right.srf",
+    "GearDoor_Nose_Aft_Right.srf"
+  ],
+  "patch_sha256": {
+    "GearDoor_Nose_Inner.srf": "821e6f8f0a4dea79c1ce976a764872983c18d7f728e0f4805e223a1be29a562b",
+    "GearDoor_Nose_Outer.srf": "93105c99112e151c0f73d10ee6a8180285a76afa426230886fccdb1e5b022a28",
+    "GearDoor_Left_Inner.srf": "81451e999b44dc4e8e28c056465b7b4b642ab748ec41b20e56e1f2ac58efbea0",
+    "GearWell_Left.srf": "6050961fcb1f51bbd5c08a6a9f3c337252b2220c5d26a5fb7747bb4c40c66d74",
+    "GearDoor_Right_Outer.srf": "17f576f0e43ccfc303626c3d8865d057a28f87f37722d86b6960da2bf4901d2b",
+    "GearWell_Right.srf": "530e6ef7bc9059bc9d8fdffeb66df5eaaa405fd0dbb3938e8b281765b91516cd",
+    "MainBayFixedSkin_Left.srf": "b82fe9ce37e5eaeb11694b1a0be0643d0c9313a124a36d57d351dd0d98ac3f94",
+    "MainBayFixedSkin_Right.srf": "f1f7d8833f5035935d20b756a0f9e88562fc05c02605069a1e2910f4c8d6ffa7",
+    "GearDoor_Nose_Aft.srf": "60b42dd62d0f205c96ff1416997bc73f8f55aaf367eb33e9f51ade4b1c74ddb9",
+    "MainWheelBayShutter_Left.srf": "afee7cee860bb31195f2a45db0c4b6f3315dc8ff2a3f05fe756e32cd180945d5",
+    "MainWheelBayShutter_Right.srf": "991b9ec26de7f97befa2a3b77ac2852cc29fd6044d7770ae7fb3f35a7447514b",
+    "GearDoor_Nose_Aft_Right.srf": "289d6190a7703e4ea37cb4426f3cb57beb408614bbd686bc7abf1e941a024eff"
+  },
+  "all_nodes_states_parents_pivots_exact": true,
+  "intake_channels_exact": true
+}
