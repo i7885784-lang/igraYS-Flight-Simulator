@@ -1,0 +1,30 @@
+name: Su30SM natural intake separate Windows builds and evidence
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-natural-pass
+            reports/su30sm-natural-pass
+            reports/su30sm-bay-seams
+            reports/su30sm-intake-seal
+            reports/su30sm-intake-depth
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow
+      - run: python changes/su30sm-natural-pass/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}

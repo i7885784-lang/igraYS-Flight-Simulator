@@ -1,0 +1,349 @@
+[
+  {
+    "angle_deg": 11,
+    "introduced": [],
+    "remaining_mainfixed": [
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Left",
+        "b": "MainBayFixedSkin_Left"
+      },
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Right",
+        "b": "MainBayFixedSkin_Right"
+      }
+    ],
+    "joint_gap_max_m": 0.00013513607891937088,
+    "anchor_drift_max_m": 4.155962834231462e-05
+  },
+  {
+    "angle_deg": 12,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.4504684107446129,
+          -0.13070843274500424,
+          -1.616718767358114
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461286,
+          -1.6663942
+        ]
+      }
+    ],
+    "remaining_mainfixed": [
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Left",
+        "b": "MainBayFixedSkin_Left"
+      },
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Right",
+        "b": "MainBayFixedSkin_Right"
+      }
+    ],
+    "joint_gap_max_m": 0.00013396247036247572,
+    "anchor_drift_max_m": 4.395613286781965e-05
+  },
+  {
+    "angle_deg": 13,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.45070078317807,
+          -0.13040048145900734,
+          -1.6166038531702265
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461288,
+          -1.6663942
+        ]
+      }
+    ],
+    "remaining_mainfixed": [
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Left",
+        "b": "MainBayFixedSkin_Left"
+      },
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Right",
+        "b": "MainBayFixedSkin_Right"
+      }
+    ],
+    "joint_gap_max_m": 0.00013450736845704845,
+    "anchor_drift_max_m": 4.6394210726637464e-05
+  },
+  {
+    "angle_deg": 14,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.4509039729201811,
+          -0.13008739519661716,
+          -1.6165012714470985
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461286,
+          -1.6663942
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Left",
+        "point": [
+          -1.9076775236585155,
+          -0.3326824616625831,
+          -1.8394981644798232
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Right",
+        "point": [
+          1.917814887775191,
+          -0.1771822156216586,
+          -2.1191514747748705
+        ]
+      }
+    ],
+    "remaining_mainfixed": [
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Left",
+        "b": "MainBayFixedSkin_Left"
+      },
+      {
+        "g": 0.32,
+        "a": "GearLink_TorqueUpper_Right",
+        "b": "MainBayFixedSkin_Right"
+      }
+    ],
+    "joint_gap_max_m": 0.00013425781800519417,
+    "anchor_drift_max_m": 4.198842852488115e-05
+  },
+  {
+    "angle_deg": 15,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.4510771432437353,
+          -0.12977143665380364,
+          -1.6164112320863562
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461286,
+          -1.6663942
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Left",
+        "point": [
+          -1.9094936528014703,
+          -0.3423863806446072,
+          -1.8455063052189924
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Right",
+        "point": [
+          1.9179294222427177,
+          -0.17679588323442183,
+          -2.1190814418183948
+        ]
+      }
+    ],
+    "remaining_mainfixed": [],
+    "joint_gap_max_m": 0.00013306128006295554,
+    "anchor_drift_max_m": 4.4420836545322656e-05
+  },
+  {
+    "angle_deg": 16,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.451274370465554,
+          -0.1294329709809498,
+          -1.6163166634050838
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461286,
+          -1.6663942
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Left",
+        "point": [
+          -1.9057227386474593,
+          -0.3214809912549083,
+          -1.8331545950299335
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Right",
+        "point": [
+          1.9117412102201643,
+          -0.1855195172861778,
+          -2.124642190735443
+        ]
+      }
+    ],
+    "remaining_mainfixed": [],
+    "joint_gap_max_m": 0.000133194655022391,
+    "anchor_drift_max_m": 5.6114977480517784e-05
+  },
+  {
+    "angle_deg": 17,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.4514981557641466,
+          -0.12909287306887895,
+          -1.6162086022607485
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461286,
+          -1.6663942
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Left",
+        "point": [
+          -1.9076142818546555,
+          -0.32055647626174544,
+          -1.8327423091001245
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Right",
+        "point": [
+          1.9120115388686574,
+          -0.18525195495725078,
+          -2.1245643670383725
+        ]
+      }
+    ],
+    "remaining_mainfixed": [],
+    "joint_gap_max_m": 0.0001322487341177618,
+    "anchor_drift_max_m": 5.588274356261274e-05
+  },
+  {
+    "angle_deg": 18,
+    "introduced": [
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Left",
+        "b": "Wheel_Left",
+        "point": [
+          -1.4516720357208186,
+          -0.12877144789107037,
+          -1.6161151000520733
+        ]
+      },
+      {
+        "g": 0.24,
+        "a": "GearLink_TorqueLower_Right",
+        "b": "Wheel_Right",
+        "point": [
+          1.4838225203865756,
+          -0.14418163585461274,
+          -1.6663942
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Left",
+        "point": [
+          -1.9094700710588195,
+          -0.31963793615483127,
+          -1.832347552421625
+        ]
+      },
+      {
+        "g": 0.32,
+        "a": "Fuselage_0_4",
+        "b": "GearLink_TorqueUpper_Right",
+        "point": [
+          1.9122785625312322,
+          -0.1849775563593899,
+          -2.1244870008756074
+        ]
+      }
+    ],
+    "remaining_mainfixed": [],
+    "joint_gap_max_m": 0.00013192066668382864,
+    "anchor_drift_max_m": 4.638010867002982e-05
+  }
+]

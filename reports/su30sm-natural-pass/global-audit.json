@@ -1,0 +1,74 @@
+{
+  "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+  "finite_coordinates_valid_indices_all_meshes": true,
+  "unchanged_other_runtime_file_count": 1156,
+  "changed_runtime_files": [
+    "aircraft/su30sm.dnm"
+  ],
+  "symmetry": {
+    "Fuselage_0_4": {
+      "max_reflected_vertex_distance_m": 0.7777981759074775,
+      "p99_m": 0.28639090317745786
+    },
+    "new_intake_pair": {
+      "max_reflection_m": 4.90407993410269e-05
+    }
+  },
+  "sampled_geometry": {
+    "Fuselage_0_4": {
+      "triangles": 31367,
+      "degenerate_triangles_including_unchanged_source": 0
+    },
+    "IntakeDuct_-1": {
+      "triangles": 21051,
+      "degenerate_triangles_including_unchanged_source": 0
+    },
+    "IntakeDuct_1": {
+      "triangles": 21051,
+      "degenerate_triangles_including_unchanged_source": 0
+    }
+  },
+  "inherited_torque_contacts_201_samples": [
+    {
+      "gear": 0.32,
+      "a": "GearLink_TorqueUpper_Left",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.8650713563863974,
+        -0.35840221382912585,
+        -1.8576687077698568
+      ]
+    },
+    {
+      "gear": 0.32,
+      "a": "GearLink_TorqueUpper_Right",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.3457919999999999,
+        -1.8599999999999997
+      ]
+    },
+    {
+      "gear": 0.325,
+      "a": "GearLink_TorqueUpper_Left",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.8649156185544744,
+        -0.37130937710126544,
+        -1.8608564409990884
+      ]
+    },
+    {
+      "gear": 0.325,
+      "a": "GearLink_TorqueUpper_Right",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.8610600000000002,
+        -0.3569629999999998,
+        -1.8600000000000003
+      ]
+    }
+  ],
+  "notes": "Global finite/index/vertex-symmetry inventory; not a proof of absence of all old intersections or factory-dimensional accuracy."
+}

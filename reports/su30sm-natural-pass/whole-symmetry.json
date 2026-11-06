@@ -1,0 +1,18 @@
+{
+  "closed_pose": 0,
+  "sampled_reflected_vertices": 9473,
+  "max_distance_to_other_geometry_m": 0.22660111197806798,
+  "p99_m": 0.11226728215349277,
+  "over_1mm": 1682,
+  "worst_reflected_point": [
+    1.10747,
+    -0.45377,
+    -2.00376
+  ],
+  "nearest": [
+    1.2002705115856294,
+    -0.24764458112818602,
+    -1.987997998411953
+  ],
+  "note": "Whole visual mesh sampled symmetry incl internal mechanisms; component Fuselage0_4 alone has deliberate openings filled by other nodes. Not certified factory geometry."
+}

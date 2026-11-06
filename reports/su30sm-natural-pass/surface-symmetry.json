@@ -1,0 +1,17 @@
+{
+  "points": 16159,
+  "max_m": 0.2901555812770896,
+  "p99_m": 0.18965172796470903,
+  "over_1mm_count": 1094,
+  "worst_mirrored_point": [
+    0.097512,
+    -0.367887,
+    4.159999773252864
+  ],
+  "nearest_surface": [
+    0.0997134895002106,
+    -0.3771290122390202,
+    4.449999773252864
+  ],
+  "note": "Distance from reflected Fuselage_0_4 vertices to actual mesh surface, not to vertices; same unchanged baseline source."
+}

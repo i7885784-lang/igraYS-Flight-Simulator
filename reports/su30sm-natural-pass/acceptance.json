@@ -1,0 +1,16 @@
+{
+  "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+  "visual_intake_improvement_confirmed_in_examined_views": true,
+  "whole_aircraft_all_defects_resolved": false,
+  "comparison_sets": 33,
+  "full_resolution_comparison_images": 91,
+  "in_game_recordings": 5,
+  "native_windows_run": 42234017006,
+  "native_windows_x86_and_x64_launched": true,
+  "whole_geometry_factory_certified": false,
+  "outstanding": [
+    "closed gear-door faceted/jagged seams",
+    "4 inherited torque-link/MainBayFixedSkin contacts at .32/.325",
+    "source internal symmetry imperfect; no blanket mirror rewrite"
+  ]
+}

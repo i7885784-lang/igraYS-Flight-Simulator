@@ -1,0 +1,879 @@
+{
+  "packs": 162,
+  "nodes": 162,
+  "invalid_index_packs": [],
+  "nonfinite_packs": [],
+  "unfiltered_degenerate_triangle_count": 232,
+  "packs_with_degenerate_triangles": {
+    "Cylinder_8_35.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_001_9_37.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_003_11_41.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_004_12_43.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_005_13_45.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_006_14_47.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_008_16_51.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_009_17_53.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_010_18_55.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_011_19_57.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_012_20_59.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_013_21_61.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_014_22_63.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_015_23_65.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_016_24_67.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_017_25_69.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_018_26_71.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_019_27_73.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_020_28_75.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_021_29_77.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_022_30_79.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_024_32_83.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_025_33_85.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_026_34_87.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_027_35_89.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_028_36_91.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_029_37_93.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_030_38_95.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_031_39_97.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_032_40_99.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_033_41_101.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_035_43_105.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_036_44_107.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_037_45_109.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_038_46_111.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_040_48_115.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_041_49_117.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_042_50_119.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_043_51_121.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_044_52_123.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_045_53_125.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_046_54_127.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_047_55_129.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_048_56_131.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_049_57_133.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_050_58_135.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_051_59_137.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_052_60_139.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_053_61_141.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_054_62_143.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_056_64_147.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_057_65_149.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_058_66_151.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_059_67_153.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_060_68_155.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_061_69_157.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_062_70_159.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_063_71_161.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    }
+  },
+  "per_pack": {
+    "Fuselage_0_4.srf": {
+      "raw_fan_triangles": 57148,
+      "degenerate": 0
+    },
+    "Fuselage_0_5.srf": {
+      "raw_fan_triangles": 2584,
+      "degenerate": 0
+    },
+    "Fuselage_0_6.srf": {
+      "raw_fan_triangles": 848,
+      "degenerate": 0
+    },
+    "Fuselage_0_7.srf": {
+      "raw_fan_triangles": 120,
+      "degenerate": 0
+    },
+    "Fuselage_0_13.srf": {
+      "raw_fan_triangles": 128,
+      "degenerate": 0
+    },
+    "Air_Brake_1_20.srf": {
+      "raw_fan_triangles": 908,
+      "degenerate": 0
+    },
+    "Front_Stabilizers_R_2_22.srf": {
+      "raw_fan_triangles": 740,
+      "degenerate": 0
+    },
+    "Rudder_Right_3_24.srf": {
+      "raw_fan_triangles": 240,
+      "degenerate": 0
+    },
+    "Elevator_R_4_26.srf": {
+      "raw_fan_triangles": 220,
+      "degenerate": 0
+    },
+    "Flaps_5_28.srf": {
+      "raw_fan_triangles": 100,
+      "degenerate": 0
+    },
+    "Cockpit_cover_6_30.srf": {
+      "raw_fan_triangles": 2348,
+      "degenerate": 0
+    },
+    "Cockpit_cover_6_31.srf": {
+      "raw_fan_triangles": 1400,
+      "degenerate": 0
+    },
+    "Rudder_Left_7_33.srf": {
+      "raw_fan_triangles": 408,
+      "degenerate": 0
+    },
+    "Cylinder_8_35.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_001_9_37.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_002_10_39.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_003_11_41.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_004_12_43.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_005_13_45.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_006_14_47.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_007_15_49.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_008_16_51.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_009_17_53.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_010_18_55.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_011_19_57.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_012_20_59.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_013_21_61.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_014_22_63.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_015_23_65.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_016_24_67.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_017_25_69.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_018_26_71.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_019_27_73.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_020_28_75.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_021_29_77.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_022_30_79.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_023_31_81.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_024_32_83.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_025_33_85.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_026_34_87.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_027_35_89.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_028_36_91.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_029_37_93.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_030_38_95.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_031_39_97.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_032_40_99.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_033_41_101.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_034_42_103.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_035_43_105.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_036_44_107.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_037_45_109.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_038_46_111.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_039_47_113.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_040_48_115.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_041_49_117.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_042_50_119.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_043_51_121.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_044_52_123.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_045_53_125.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_046_54_127.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_047_55_129.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_048_56_131.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_049_57_133.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_050_58_135.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_051_59_137.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_052_60_139.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_053_61_141.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_054_62_143.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_055_63_145.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 0
+    },
+    "Cylinder_056_64_147.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_057_65_149.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_058_66_151.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_059_67_153.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_060_68_155.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_061_69_157.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_062_70_159.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Cylinder_063_71_161.srf": {
+      "raw_fan_triangles": 116,
+      "degenerate": 4
+    },
+    "Front_Stabilizers_L_75_163.srf": {
+      "raw_fan_triangles": 732,
+      "degenerate": 0
+    },
+    "Elevator_L_76_165.srf": {
+      "raw_fan_triangles": 132,
+      "degenerate": 0
+    },
+    "Aileron_Left_77_167.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "Aileron_Left_77_168.srf": {
+      "raw_fan_triangles": 4,
+      "degenerate": 0
+    },
+    "Aileron_Right_78_170.srf": {
+      "raw_fan_triangles": 96,
+      "degenerate": 0
+    },
+    "Aileron_Right_78_171.srf": {
+      "raw_fan_triangles": 4,
+      "degenerate": 0
+    },
+    "Flaps_001_79_173.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "Su30Plume_0.srf": {
+      "raw_fan_triangles": 1152,
+      "degenerate": 0
+    },
+    "Su30Plume_1.srf": {
+      "raw_fan_triangles": 1152,
+      "degenerate": 0
+    },
+    "Su30DryExhaust_0.srf": {
+      "raw_fan_triangles": 160,
+      "degenerate": 0
+    },
+    "Su30DryExhaust_1.srf": {
+      "raw_fan_triangles": 160,
+      "degenerate": 0
+    },
+    "GearBearing_Nose.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "GearUpper_Nose.srf": {
+      "raw_fan_triangles": 160,
+      "degenerate": 0
+    },
+    "GearPiston_Nose.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "GearAxle_Nose.srf": {
+      "raw_fan_triangles": 224,
+      "degenerate": 0
+    },
+    "GearLink_TorqueUpper_Nose.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "GearLink_TorqueLower_Nose.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "Wheel_Nose.srf": {
+      "raw_fan_triangles": 1440,
+      "degenerate": 0
+    },
+    "WheelHub_Nose.srf": {
+      "raw_fan_triangles": 1664,
+      "degenerate": 0
+    },
+    "GearDoor_Nose_Inner.srf": {
+      "raw_fan_triangles": 732,
+      "degenerate": 0
+    },
+    "GearDoor_Nose_Outer.srf": {
+      "raw_fan_triangles": 728,
+      "degenerate": 0
+    },
+    "GearWell_Nose.srf": {
+      "raw_fan_triangles": 298,
+      "degenerate": 0
+    },
+    "GearBearing_Left.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "GearUpper_Left.srf": {
+      "raw_fan_triangles": 160,
+      "degenerate": 0
+    },
+    "GearPiston_Left.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "GearAxle_Left.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "GearLink_TorqueUpper_Left.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "GearLink_TorqueLower_Left.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "Wheel_Left.srf": {
+      "raw_fan_triangles": 720,
+      "degenerate": 0
+    },
+    "WheelHub_Left.srf": {
+      "raw_fan_triangles": 832,
+      "degenerate": 0
+    },
+    "GearDoor_Left_Inner.srf": {
+      "raw_fan_triangles": 1732,
+      "degenerate": 0
+    },
+    "GearWell_Left.srf": {
+      "raw_fan_triangles": 14500,
+      "degenerate": 0
+    },
+    "GearBearing_Right.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "GearUpper_Right.srf": {
+      "raw_fan_triangles": 160,
+      "degenerate": 0
+    },
+    "GearPiston_Right.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "GearAxle_Right.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "GearLink_TorqueUpper_Right.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "GearLink_TorqueLower_Right.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "Wheel_Right.srf": {
+      "raw_fan_triangles": 720,
+      "degenerate": 0
+    },
+    "WheelHub_Right.srf": {
+      "raw_fan_triangles": 832,
+      "degenerate": 0
+    },
+    "GearDoor_Right_Outer.srf": {
+      "raw_fan_triangles": 1732,
+      "degenerate": 0
+    },
+    "GearWell_Right.srf": {
+      "raw_fan_triangles": 14068,
+      "degenerate": 0
+    },
+    "Su30Interior.srf": {
+      "raw_fan_triangles": 252,
+      "degenerate": 0
+    },
+    "Su30NozzleThroat_0.srf": {
+      "raw_fan_triangles": 576,
+      "degenerate": 0
+    },
+    "Su30NozzleThroat_1.srf": {
+      "raw_fan_triangles": 576,
+      "degenerate": 0
+    },
+    "IntakeDuct_-1.srf": {
+      "raw_fan_triangles": 21051,
+      "degenerate": 0
+    },
+    "IntakeDuct_1.srf": {
+      "raw_fan_triangles": 21051,
+      "degenerate": 0
+    },
+    "MainBayFixedSkin_Left.srf": {
+      "raw_fan_triangles": 1472,
+      "degenerate": 0
+    },
+    "MainBayFixedSkin_Right.srf": {
+      "raw_fan_triangles": 1524,
+      "degenerate": 0
+    },
+    "GearDoor_Nose_Aft.srf": {
+      "raw_fan_triangles": 440,
+      "degenerate": 0
+    },
+    "DoorSeat_GearDoor_Nose_Inner.srf": {
+      "raw_fan_triangles": 178,
+      "degenerate": 0
+    },
+    "DoorSeat_GearDoor_Nose_Outer.srf": {
+      "raw_fan_triangles": 178,
+      "degenerate": 0
+    },
+    "DoorSeat_GearDoor_Left_Inner.srf": {
+      "raw_fan_triangles": 332,
+      "degenerate": 0
+    },
+    "DoorSeat_GearDoor_Right_Outer.srf": {
+      "raw_fan_triangles": 336,
+      "degenerate": 0
+    },
+    "DoorSeat_GearDoor_Nose_Aft.srf": {
+      "raw_fan_triangles": 242,
+      "degenerate": 0
+    },
+    "AirbrakeBayFloor.srf": {
+      "raw_fan_triangles": 608,
+      "degenerate": 0
+    },
+    "AirbrakeActuator_Cylinder.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "AirbrakeActuator_Piston.srf": {
+      "raw_fan_triangles": 64,
+      "degenerate": 0
+    },
+    "MainWheelBayShutter_Left.srf": {
+      "raw_fan_triangles": 3626,
+      "degenerate": 0
+    },
+    "WheelFairing_Left.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "WheelFairingBrace_Left.srf": {
+      "raw_fan_triangles": 144,
+      "degenerate": 0
+    },
+    "MainWheelBayShutter_Right.srf": {
+      "raw_fan_triangles": 4430,
+      "degenerate": 0
+    },
+    "WheelFairing_Right.srf": {
+      "raw_fan_triangles": 48,
+      "degenerate": 0
+    },
+    "WheelFairingBrace_Right.srf": {
+      "raw_fan_triangles": 144,
+      "degenerate": 0
+    },
+    "GearBayStructure_Nose.srf": {
+      "raw_fan_triangles": 1984,
+      "degenerate": 0
+    },
+    "GearBayStructure_Left.srf": {
+      "raw_fan_triangles": 1860,
+      "degenerate": 0
+    },
+    "GearBayStructure_Right.srf": {
+      "raw_fan_triangles": 1860,
+      "degenerate": 0
+    },
+    "BayCornerSkin_GearDoor_Left_Inner.srf": {
+      "raw_fan_triangles": 12,
+      "degenerate": 0
+    },
+    "BayCornerSkin_GearDoor_Right_Outer.srf": {
+      "raw_fan_triangles": 12,
+      "degenerate": 0
+    },
+    "BayCornerSkin_GearDoor_Nose_Inner.srf": {
+      "raw_fan_triangles": 30,
+      "degenerate": 0
+    },
+    "BayCornerSkin_GearDoor_Nose_Outer.srf": {
+      "raw_fan_triangles": 28,
+      "degenerate": 0
+    },
+    "BayCornerSkin_GearDoor_Nose_Aft.srf": {
+      "raw_fan_triangles": 6,
+      "degenerate": 0
+    },
+    "GearDoor_Nose_Aft_Right.srf": {
+      "raw_fan_triangles": 440,
+      "degenerate": 0
+    },
+    "BayCornerSkin_Nose_Aft_Right.srf": {
+      "raw_fan_triangles": 6,
+      "degenerate": 0
+    },
+    "GearBayUpperClosure.srf": {
+      "raw_fan_triangles": 88,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Inner.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Outer.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Left_Inner.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Right_Outer.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Aft.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingePin_GearDoor_Nose_Aft_Right.srf": {
+      "raw_fan_triangles": 80,
+      "degenerate": 0
+    },
+    "DoorHingeForks.srf": {
+      "raw_fan_triangles": 1248,
+      "degenerate": 0
+    }
+  }
+}

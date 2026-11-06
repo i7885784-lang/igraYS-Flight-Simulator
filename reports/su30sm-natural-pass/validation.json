@@ -1,0 +1,40 @@
+{
+  "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "all_other_packs_original_geometry_and_paint_exact": true,
+  "all_nodes_parents_states_animations_exact": true,
+  "all_gear_and_doors_exact": true,
+  "gear_sweep_samples": 201,
+  "insert_vs_other_object_contacts": 0,
+  "max_measured_section_area_error_m2": 0.0,
+  "geometry": {
+    "IntakeDuct_-1.srf": {
+      "unique_vertices": 10811,
+      "triangles": 21051,
+      "degenerate_triangles": 0,
+      "duplicate_reverse_triangles": 0,
+      "nonmanifold_edges": 0,
+      "unexpected_open_edges": 0,
+      "open_front_boundary_edges": 569,
+      "rear_cap_projection_overlap_m2": -1.1102230246251565e-16,
+      "normals_inward_walls_and_forward_rear_cap": true,
+      "emissive_faces": 0
+    },
+    "IntakeDuct_1.srf": {
+      "unique_vertices": 10811,
+      "triangles": 21051,
+      "degenerate_triangles": 0,
+      "duplicate_reverse_triangles": 0,
+      "nonmanifold_edges": 0,
+      "unexpected_open_edges": 0,
+      "open_front_boundary_edges": 569,
+      "rear_cap_projection_overlap_m2": 1.1102230246251565e-16,
+      "normals_inward_walls_and_forward_rear_cap": true,
+      "emissive_faces": 0
+    }
+  },
+  "universal_camera_or_continuous_collision_proof": false
+}

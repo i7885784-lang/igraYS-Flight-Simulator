@@ -1,0 +1,21 @@
+{
+  "executable": {
+    "exe": "ysflight64_gl1.exe",
+    "machine": "0x8664",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+  },
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "active": true,
+  "frames": [
+    "full-front",
+    "full-top",
+    "full-side",
+    "full-bottom-up",
+    "full-bottom-down",
+    "full-rear",
+    "quarter-front",
+    "quarter-rear"
+  ]
+}

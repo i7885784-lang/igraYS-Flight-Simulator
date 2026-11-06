@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "native_windows": true,
+  "wine": false,
+  "bits": 32,
+  "machine": "0x14c",
+  "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+  "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+  "frames": [
+    "gear-up",
+    "transition-down",
+    "gear-down",
+    "transition-up",
+    "gear-up-final",
+    "rear-quarter"
+  ],
+  "states": [],
+  "scope": "Native Windows real game captures; x86 uses ordinary native gear buttons (diagnostic MODELPOSE/LABVIEW commands unavailable), x64 uses diagnostic camera poses."
+}
