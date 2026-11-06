@@ -1,0 +1,29 @@
+{
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "shift_m": 0.05,
+  "changed_nodes": {
+    "IntakeDuct_-1": {
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1",
+      "world_translation_m": [
+        0,
+        0,
+        -0.05
+      ]
+    },
+    "IntakeDuct_1": {
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1",
+      "world_translation_m": [
+        0,
+        0,
+        -0.05
+      ]
+    }
+  },
+  "all_mesh_packs_byte_exact": true,
+  "face_indices_normals_materials_geometry_exact": true,
+  "all_animation_states_and_parents_exact": true,
+  "all_other_nodes_exact": true,
+  "mesh_shape_depth_unchanged_m": 0.53
+}

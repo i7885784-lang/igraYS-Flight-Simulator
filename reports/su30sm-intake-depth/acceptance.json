@@ -1,0 +1,17 @@
+{
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "baseline_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "matched_pairs": 18,
+  "native_game": "Windows x64 OpenGL under Wine",
+  "rigid_translation_m": [
+    0,
+    0,
+    -0.05
+  ],
+  "only_two_POS_lines_changed": true,
+  "all_mesh_resources_byte_exact": true,
+  "all_animation_states_exact": true,
+  "checked_gear_poses": 201,
+  "insert_contacts": 0,
+  "tested_views_include_front_ground_air_diagonal_below_side": true
+}

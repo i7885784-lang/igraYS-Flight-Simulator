@@ -1,0 +1,28 @@
+name: Su30SM pure axial intake placement and comparisons
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-intake-depth
+            reports/su30sm-intake-depth
+            reports/su30sm-intake-seal/STATUS.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r changes/su30sm-intake-depth/requirements.txt
+      - run: python changes/su30sm-intake-depth/publish.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}

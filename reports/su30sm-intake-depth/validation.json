@@ -1,0 +1,32 @@
+{
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "all_mesh_resources_exact": true,
+  "all_vertices_face_indices_normals_colors_brightness_exact": true,
+  "only_two_POS_lines_changed": [
+    {
+      "node": "IntakeDuct_-1",
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1"
+    },
+    {
+      "node": "IntakeDuct_1",
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1"
+    }
+  ],
+  "x_y_rotations_unchanged": true,
+  "all_animation_STA_and_parent_lines_exact": true,
+  "rigid_axial_translation_m": -0.05,
+  "shape_dimensions_unchanged": true,
+  "old_and_new_channel_length_m": 0.53,
+  "old_z_bounds_m": [
+    0.12,
+    0.65
+  ],
+  "new_z_bounds_m": [
+    0.07,
+    0.6
+  ],
+  "no_contacts_in_201_poses": true,
+  "continuous_collision_or_all_camera_proof": false
+}

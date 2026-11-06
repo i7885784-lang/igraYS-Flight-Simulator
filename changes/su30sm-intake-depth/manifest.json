@@ -1,0 +1,16 @@
+{
+  "baseline_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "changed_nodes": [
+    "IntakeDuct_-1",
+    "IntakeDuct_1"
+  ],
+  "changed_fields_only": [
+    "POS.Z"
+  ],
+  "translation_m": [
+    0,
+    0,
+    -0.05
+  ]
+}
