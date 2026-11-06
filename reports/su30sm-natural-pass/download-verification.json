@@ -1,0 +1,68 @@
+{
+  "release_id": 436604170,
+  "delivery_actions": 42235140547,
+  "all_assets_sha_pass": true,
+  "all_zip_crc_pass": true,
+  "exact_model_rebuild_from_downloaded_full_sources": true,
+  "all_previous_source_files_preserved_exact": 8244,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_Windows_x86.zip",
+      "sha256": "5571d69cbc6aa13c73054c13a663c0bb20a628ba76a221a1e67415ea388c3ef2",
+      "size": 46874415,
+      "sha_match": true,
+      "zip_crc_pass": true,
+      "machine": "0x14c",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+      "rollback_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d"
+    },
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_Windows_x64.zip",
+      "sha256": "af46ec5b1c8ea2e0505afa42b40e880cd245745a8942a92f932d134b54e3c45f",
+      "size": 46964847,
+      "sha_match": true,
+      "zip_crc_pass": true,
+      "machine": "0x8664",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+      "rollback_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d"
+    },
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_FullSources.zip",
+      "sha256": "569f5eecfff2be77caeeabdb8f63879847eea7ad0b3bd5e70d43f4d48a11028f",
+      "size": 271295132,
+      "sha_match": true,
+      "zip_crc_pass": true
+    },
+    {
+      "name": "Su30SM_NaturalIntake_Report_Photos_Videos.zip",
+      "sha256": "1e760de2323385b393cb82d47fa9a1e5070260e1785368aaf72ee6ca71d68c62",
+      "size": 22563886,
+      "sha_match": true,
+      "zip_crc_pass": true
+    },
+    {
+      "name": "Su30SM_NaturalIntake_Report_RU.pdf",
+      "sha256": "57086c41fc779ae895dfec787c805545518f49eac2318723a34d9a610f70b6f9",
+      "size": 5082526,
+      "sha_match": true
+    }
+  ],
+  "downloaded_x64_game_launched_and_visually_checked": {
+    "executable": {
+      "exe": "ysflight64_gl1.exe",
+      "machine": "0x8664",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+    },
+    "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+    "passed": true,
+    "aircraft": "SU-30SM_CUSTOM",
+    "active": true,
+    "frames": [
+      "intake",
+      "closed-bottom",
+      "whole"
+    ]
+  }
+}

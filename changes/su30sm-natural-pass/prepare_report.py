@@ -18,7 +18,7 @@ for group in ['old-gap-ground','before-ground','after-ground','old-gap-air','bef
   if f.suffix in ['.json','.log','.script','.yfs','.mp4'] or (group.startswith('after-') and group.split('-',1)[1] in ['gear','canopy','brake','engine','orbit'] and f.suffix=='.png'):shutil.copy2(f,dest/f.name)
 for name in ['validation.json','repair-audit.json','motion.json','global-audit.json','surface-symmetry.json','whole-symmetry.json','rotate-scan.json','rotate-fine-scan.json','torque-radius-scan.json']:
  shutil.copy2(b/name,out/name)
-for f in ['intakes-review.jpg','model-review.jpg','cycles-review.jpg']:shutil.copy2(b/f,out/f)
+for f in ['intakes-review.jpg','cycles-review.jpg']:shutil.copy2(b/f,out/f)
 (out/'comparisons.json').write_text(json.dumps(comps,ensure_ascii=False,indent=2)+'\n')
 hero=Image.new('RGB',(1950,380),'#e8edef');d=ImageDraw.Draw(hero)
 for j,(v,label) in enumerate([('old-gap','Old: light gaps'),('before','Before: short close cap'),('after','After: deep dark channel')]):

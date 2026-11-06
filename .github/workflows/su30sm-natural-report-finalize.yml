@@ -1,0 +1,33 @@
+name: Finalize Su30SM natural intake evidence archive
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: reports/su30sm-natural-pass
+      - shell: python
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          from pathlib import Path
+          import json,hashlib,zipfile,subprocess
+          r=Path('reports/su30sm-natural-pass');tag='personal-su30sm-natural-intake-20261106';repo='i7885784-lang/igraYS-Flight-Simulator'
+          s=json.loads((r/'STATUS.json').read_text());assert s['release_id']==436604170
+          p=Path('Su30SM_NaturalIntake_Report_Photos_Videos.zip')
+          with zipfile.ZipFile(p,'w',zipfile.ZIP_DEFLATED,6) as z:
+            for f in sorted(r.rglob('*')):
+              if f.is_file():z.write(f,'su30sm-natural-pass/'+f.relative_to(r).as_posix())
+          with zipfile.ZipFile(p) as z:assert z.testzip() is None and not any(n.endswith('/model-review.jpg') for n in z.namelist())
+          subprocess.run(['gh','release','upload',tag,str(p),'--repo',repo,'--clobber'],check=True)
+          subprocess.run(['gh','release','download',tag,'--pattern',p.name,'--repo',repo,'--dir','verified'],check=True)
+          sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+          assert sha(p)==sha(Path('verified')/p.name)
+          a=next(a for a in s['assets'] if a['name']==p.name);a.update({'sha256':sha(p),'size':p.stat().st_size})
+          s['evidence_archive_finalized']=True;s['downloaded_x64_launch_checked']=True;s['old_source_files_preserved_exact']=8244
+          f=Path('STATUS.json');f.write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\n');subprocess.run(['gh','release','upload',tag,str(f),'--repo',repo,'--clobber'],check=True)

@@ -1,0 +1,75 @@
+{
+  "release_id": 436604170,
+  "draft": true,
+  "tag": "personal-su30sm-natural-intake-20261106",
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-2cf93b3898c4a7239cb3",
+  "source_commit": "671e298205c55c2dca159def6e0fe43962801b65",
+  "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+  "baseline_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "architectures": {
+    "32": {
+      "architecture": "Windows 32-bit",
+      "machine": "0x14c",
+      "exe": "ysflight32_gl1.exe",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+      "engine_recompiled": false,
+      "native_windows_launch_verified": true,
+      "native_windows_run": 42234017006,
+      "check_scope": "Native Windows real game captures; x86 uses ordinary native gear buttons (diagnostic MODELPOSE/LABVIEW commands unavailable), x64 uses diagnostic camera poses."
+    },
+    "64": {
+      "architecture": "Windows 64-bit",
+      "machine": "0x8664",
+      "exe": "ysflight64_gl1.exe",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "model_sha256": "c71a27b0897b01f28528e4975f3abf1770e577223925b16684bcdf0d2ec823b0",
+      "engine_recompiled": false,
+      "native_windows_launch_verified": true,
+      "native_windows_run": 42234017006,
+      "check_scope": "Native Windows real game captures; x86 uses ordinary native gear buttons (diagnostic MODELPOSE/LABVIEW commands unavailable), x64 uses diagnostic camera poses."
+    }
+  },
+  "download_sha_crc_verified": true,
+  "exact_model_rebuild_verified": true,
+  "complete_previous_sources_preserved": true,
+  "comparison_sets": 33,
+  "native_windows_run": 42234017006,
+  "remaining_defects": [
+    "old faceted/jagged door seams",
+    "four inherited torque-link contacts at g=.32/.325",
+    "no factory-certified complete geometry reconstruction"
+  ],
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_Windows_x86.zip",
+      "size": 46874415,
+      "sha256": "5571d69cbc6aa13c73054c13a663c0bb20a628ba76a221a1e67415ea388c3ef2",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/YSFlight_Su30SM_NaturalIntake_Windows_x86.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_Windows_x64.zip",
+      "size": 46964847,
+      "sha256": "af46ec5b1c8ea2e0505afa42b40e880cd245745a8942a92f932d134b54e3c45f",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/YSFlight_Su30SM_NaturalIntake_Windows_x64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_NaturalIntake_FullSources.zip",
+      "size": 271295132,
+      "sha256": "569f5eecfff2be77caeeabdb8f63879847eea7ad0b3bd5e70d43f4d48a11028f",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/YSFlight_Su30SM_NaturalIntake_FullSources.zip"
+    },
+    {
+      "name": "Su30SM_NaturalIntake_Report_Photos_Videos.zip",
+      "size": 22563886,
+      "sha256": "1e760de2323385b393cb82d47fa9a1e5070260e1785368aaf72ee6ca71d68c62",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/Su30SM_NaturalIntake_Report_Photos_Videos.zip"
+    },
+    {
+      "name": "Su30SM_NaturalIntake_Report_RU.pdf",
+      "size": 5082526,
+      "sha256": "57086c41fc779ae895dfec787c805545518f49eac2318723a34d9a610f70b6f9",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/Su30SM_NaturalIntake_Report_RU.pdf"
+    }
+  ]
+}
