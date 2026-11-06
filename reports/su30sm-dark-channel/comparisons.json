@@ -1,0 +1,212 @@
+[
+  {
+    "id": "ground-front",
+    "before": "images/before/ground-front.png",
+    "after": "images/after/ground-front.png"
+  },
+  {
+    "id": "ground-left-close",
+    "before": "images/before/ground-left-close.png",
+    "after": "images/after/ground-left-close.png"
+  },
+  {
+    "id": "ground-left-low",
+    "before": "images/before/ground-left-low.png",
+    "after": "images/after/ground-left-low.png"
+  },
+  {
+    "id": "ground-rear",
+    "before": "images/before/ground-rear.png",
+    "after": "images/after/ground-rear.png"
+  },
+  {
+    "id": "ground-right-close",
+    "before": "images/before/ground-right-close.png",
+    "after": "images/after/ground-right-close.png"
+  },
+  {
+    "id": "ground-right-low",
+    "before": "images/before/ground-right-low.png",
+    "after": "images/after/ground-right-low.png"
+  },
+  {
+    "id": "ground-screen-match",
+    "before": "images/before/ground-screen-match.png",
+    "after": "images/after/ground-screen-match.png"
+  },
+  {
+    "id": "ground-side-left",
+    "before": "images/before/ground-side-left.png",
+    "after": "images/after/ground-side-left.png"
+  },
+  {
+    "id": "ground-side-right",
+    "before": "images/before/ground-side-right.png",
+    "after": "images/after/ground-side-right.png"
+  },
+  {
+    "id": "ground-top",
+    "before": "images/before/ground-top.png",
+    "after": "images/after/ground-top.png"
+  },
+  {
+    "id": "extra-macro-front",
+    "before": "images/before/extra-macro-front.png",
+    "after": "images/after/extra-macro-front.png"
+  },
+  {
+    "id": "extra-macro-left",
+    "before": "images/before/extra-macro-left.png",
+    "after": "images/after/extra-macro-left.png"
+  },
+  {
+    "id": "extra-macro-low",
+    "before": "images/before/extra-macro-low.png",
+    "after": "images/after/extra-macro-low.png"
+  },
+  {
+    "id": "extra-macro-right",
+    "before": "images/before/extra-macro-right.png",
+    "after": "images/after/extra-macro-right.png"
+  },
+  {
+    "id": "extra-mid-left",
+    "before": "images/before/extra-mid-left.png",
+    "after": "images/after/extra-mid-left.png"
+  },
+  {
+    "id": "extra-mid-right",
+    "before": "images/before/extra-mid-right.png",
+    "after": "images/after/extra-mid-right.png"
+  },
+  {
+    "id": "extra-stowed-left",
+    "before": "images/before/extra-stowed-left.png",
+    "after": "images/after/extra-stowed-left.png"
+  },
+  {
+    "id": "extra-stowed-right",
+    "before": "images/before/extra-stowed-right.png",
+    "after": "images/after/extra-stowed-right.png"
+  },
+  {
+    "id": "bottom-bottom-down",
+    "before": "images/before/bottom-bottom-down.png",
+    "after": "images/after/bottom-bottom-down.png"
+  },
+  {
+    "id": "bottom-bottom-mid",
+    "before": "images/before/bottom-bottom-mid.png",
+    "after": "images/after/bottom-bottom-mid.png"
+  },
+  {
+    "id": "bottom-bottom-up",
+    "before": "images/before/bottom-bottom-up.png",
+    "after": "images/after/bottom-bottom-up.png"
+  },
+  {
+    "id": "orbit-orbit-angle-000",
+    "before": "images/before/orbit-orbit-angle-000.png",
+    "after": "images/after/orbit-orbit-angle-000.png"
+  },
+  {
+    "id": "orbit-orbit-angle-030",
+    "before": "images/before/orbit-orbit-angle-030.png",
+    "after": "images/after/orbit-orbit-angle-030.png"
+  },
+  {
+    "id": "orbit-orbit-angle-060",
+    "before": "images/before/orbit-orbit-angle-060.png",
+    "after": "images/after/orbit-orbit-angle-060.png"
+  },
+  {
+    "id": "orbit-orbit-angle-090",
+    "before": "images/before/orbit-orbit-angle-090.png",
+    "after": "images/after/orbit-orbit-angle-090.png"
+  },
+  {
+    "id": "orbit-orbit-angle-120",
+    "before": "images/before/orbit-orbit-angle-120.png",
+    "after": "images/after/orbit-orbit-angle-120.png"
+  },
+  {
+    "id": "orbit-orbit-angle-130",
+    "before": "images/before/orbit-orbit-angle-130.png",
+    "after": "images/after/orbit-orbit-angle-130.png"
+  },
+  {
+    "id": "orbit-orbit-angle-140",
+    "before": "images/before/orbit-orbit-angle-140.png",
+    "after": "images/after/orbit-orbit-angle-140.png"
+  },
+  {
+    "id": "orbit-orbit-angle-150",
+    "before": "images/before/orbit-orbit-angle-150.png",
+    "after": "images/after/orbit-orbit-angle-150.png"
+  },
+  {
+    "id": "orbit-orbit-angle-160",
+    "before": "images/before/orbit-orbit-angle-160.png",
+    "after": "images/after/orbit-orbit-angle-160.png"
+  },
+  {
+    "id": "orbit-orbit-angle-170",
+    "before": "images/before/orbit-orbit-angle-170.png",
+    "after": "images/after/orbit-orbit-angle-170.png"
+  },
+  {
+    "id": "orbit-orbit-angle-180",
+    "before": "images/before/orbit-orbit-angle-180.png",
+    "after": "images/after/orbit-orbit-angle-180.png"
+  },
+  {
+    "id": "orbit-orbit-angle-190",
+    "before": "images/before/orbit-orbit-angle-190.png",
+    "after": "images/after/orbit-orbit-angle-190.png"
+  },
+  {
+    "id": "orbit-orbit-angle-200",
+    "before": "images/before/orbit-orbit-angle-200.png",
+    "after": "images/after/orbit-orbit-angle-200.png"
+  },
+  {
+    "id": "orbit-orbit-angle-210",
+    "before": "images/before/orbit-orbit-angle-210.png",
+    "after": "images/after/orbit-orbit-angle-210.png"
+  },
+  {
+    "id": "orbit-orbit-angle-220",
+    "before": "images/before/orbit-orbit-angle-220.png",
+    "after": "images/after/orbit-orbit-angle-220.png"
+  },
+  {
+    "id": "orbit-orbit-angle-230",
+    "before": "images/before/orbit-orbit-angle-230.png",
+    "after": "images/after/orbit-orbit-angle-230.png"
+  },
+  {
+    "id": "orbit-orbit-angle-240",
+    "before": "images/before/orbit-orbit-angle-240.png",
+    "after": "images/after/orbit-orbit-angle-240.png"
+  },
+  {
+    "id": "orbit-orbit-angle-270",
+    "before": "images/before/orbit-orbit-angle-270.png",
+    "after": "images/after/orbit-orbit-angle-270.png"
+  },
+  {
+    "id": "orbit-orbit-angle-300",
+    "before": "images/before/orbit-orbit-angle-300.png",
+    "after": "images/after/orbit-orbit-angle-300.png"
+  },
+  {
+    "id": "orbit-orbit-angle-330",
+    "before": "images/before/orbit-orbit-angle-330.png",
+    "after": "images/after/orbit-orbit-angle-330.png"
+  },
+  {
+    "id": "orbit-orbit-angle-360",
+    "before": "images/before/orbit-orbit-angle-360.png",
+    "after": "images/after/orbit-orbit-angle-360.png"
+  }
+]

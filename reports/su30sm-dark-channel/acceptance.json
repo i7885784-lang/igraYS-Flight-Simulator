@@ -1,0 +1,104 @@
+{
+  "model_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "actual_game_capture": true,
+  "before_after_pairs": 42,
+  "validated_capture_groups": 11,
+  "videos": [
+    {
+      "path": "videos/after-close-left.mp4",
+      "sha256": "8e44951479d10ddfb7a7b016bb88402ca191d57a5e4815a8c0d0bd5b8b0d8db8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 768,
+            "nb_frames": "720"
+          }
+        ],
+        "format": {
+          "duration": "60.000000"
+        }
+      }
+    },
+    {
+      "path": "videos/after-close-right.mp4",
+      "sha256": "12a6d694a57ac6d8a2893a6f13c5523b89c48e7384ea1edcadc1fbe397b823cb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 768,
+            "nb_frames": "720"
+          }
+        ],
+        "format": {
+          "duration": "60.000000"
+        }
+      }
+    },
+    {
+      "path": "videos/after-gear.mp4",
+      "sha256": "c469b2ef55986004db3e8f4faafd894d699454ab7d8e8e81b4be380f0241aafc",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 768,
+            "nb_frames": "192"
+          }
+        ],
+        "format": {
+          "duration": "16.000000"
+        }
+      }
+    },
+    {
+      "path": "videos/after-orbit.mp4",
+      "sha256": "44fa9d45cee7f1deaf2f6220e53ca6ded6abfb07d4d80d72df53d88eff75750a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 768,
+            "nb_frames": "720"
+          }
+        ],
+        "format": {
+          "duration": "60.000000"
+        }
+      }
+    },
+    {
+      "path": "videos/before-orbit.mp4",
+      "sha256": "3d167ebacd12d6e82d18664241a34d1a59c8006eb3a6ba4533a5481769811bb8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1024,
+            "height": 768,
+            "nb_frames": "720"
+          }
+        ],
+        "format": {
+          "duration": "60.000000"
+        }
+      }
+    }
+  ],
+  "review_scope": "All static/orbit/close heading contact sheets and selected full size closeups and gear frames; not every video frame manually viewed.",
+  "remaining": [
+    "Thin original gray internal rim visible at some oblique angles.",
+    "Original painted inlet lip and faceted skin/door shading retained."
+  ],
+  "no_game_download_provided": true
+}
