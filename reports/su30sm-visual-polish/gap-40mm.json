@@ -1,0 +1,10 @@
+{
+  "model_sha256": "0967722bd6dc2e561eb976f651a6af1fe58e29fdbc67fe425baf4f510f5535a5",
+  "samples": 201,
+  "all_101_keys_and_100_midpoints": true,
+  "pair_definitions": 1259,
+  "distinct_pose_pairs_tested": 131511,
+  "contacts": [],
+  "intentional_hinge_pin_own_fork_and_door_contacts_not_classified_as_obstruction": true,
+  "full_continuous_collision_proof": false
+}
