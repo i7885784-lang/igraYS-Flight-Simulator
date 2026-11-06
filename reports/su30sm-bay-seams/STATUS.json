@@ -1,0 +1,69 @@
+{
+  "draft": true,
+  "release_id": 436324142,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-957712639cc52c11496f",
+  "tag": "personal-su30sm-bay-seams-20261106",
+  "source_commit": "887eda74f711c8bd028f394858a185c2dc579a35",
+  "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+  "baseline_sha256": "c5c9ead3bf759b9d7cdb0b0701aa469b487f6442d88de76c6f200b300d26fe2d",
+  "all_other_runtime_files_exact_before_architecture_packaging": 1156,
+  "architecture_packaging_changes": "Remove opposite EXE/plugin DLLs/architecture BAT, adapt launchers, add architecture/readme metadata only.",
+  "architectures": {
+    "32": {
+      "architecture": "Windows x86",
+      "machine": "0x14c",
+      "exe": "ysflight32_gl1.exe",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+      "engine_recompiled": false,
+      "model_asset_updated": true,
+      "native_launch_verified": false,
+      "x86_wine_attempt_failed": true
+    },
+    "64": {
+      "architecture": "Windows x64",
+      "machine": "0x8664",
+      "exe": "ysflight64_gl1.exe",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+      "engine_recompiled": false,
+      "model_asset_updated": true,
+      "native_launch_verified": true,
+      "x86_wine_attempt_failed": false
+    }
+  },
+  "download_sha_crc_verified": true,
+  "full_previous_sources_preserved": true,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_BaySeams_Windows_x86.zip",
+      "size": 41147612,
+      "sha256": "89a3c82b1d83415057100c9da07c14f2cb8bf90d74a529647d19a4d2b3677b26",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-957712639cc52c11496f/YSFlight_Su30SM_BaySeams_Windows_x86.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_BaySeams_Windows_x64.zip",
+      "size": 41238039,
+      "sha256": "7bb6d96d18427a8fc3008d662d829f600df400fa6f13660fdfa27e08b5701f0c",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-957712639cc52c11496f/YSFlight_Su30SM_BaySeams_Windows_x64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_BaySeams_FullSources.zip",
+      "size": 255825428,
+      "sha256": "ceccce10125a357ae45e479e3dd76fc6440e74448c82c70c309ac89d39800eee",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-957712639cc52c11496f/YSFlight_Su30SM_BaySeams_FullSources.zip"
+    },
+    {
+      "name": "Su30SM_BaySeams_Report_Photos_Videos.zip",
+      "size": 19632755,
+      "sha256": "d017150ac2f36555ac99ec456e893ed7fcf4f43894847e1993e6d39b2111cea0",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-957712639cc52c11496f/Su30SM_BaySeams_Report_Photos_Videos.zip"
+    },
+    {
+      "name": "Su30SM_BaySeams_Report_RU.pdf",
+      "size": 3036520,
+      "sha256": "8f6ba5012e0ec486864ca3c452018f30492b90ea795095dbdb25e0ae5e327967",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-957712639cc52c11496f/Su30SM_BaySeams_Report_RU.pdf"
+    }
+  ]
+}

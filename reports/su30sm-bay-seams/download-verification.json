@@ -1,0 +1,61 @@
+{
+  "all_downloaded_sha_crc_verified": true,
+  "source_rebuild_verified": true,
+  "games": {
+    "32": {
+      "correct_architecture": true,
+      "machine": "0x14c",
+      "only_corresponding_exe_and_plugins": true,
+      "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7"
+    },
+    "64": {
+      "correct_architecture": true,
+      "machine": "0x8664",
+      "only_corresponding_exe_and_plugins": true,
+      "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+    }
+  },
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_BaySeams_Windows_x86.zip",
+      "sha256": "89a3c82b1d83415057100c9da07c14f2cb8bf90d74a529647d19a4d2b3677b26"
+    },
+    {
+      "name": "YSFlight_Su30SM_BaySeams_Windows_x64.zip",
+      "sha256": "7bb6d96d18427a8fc3008d662d829f600df400fa6f13660fdfa27e08b5701f0c"
+    },
+    {
+      "name": "YSFlight_Su30SM_BaySeams_FullSources.zip",
+      "sha256": "ceccce10125a357ae45e479e3dd76fc6440e74448c82c70c309ac89d39800eee"
+    },
+    {
+      "name": "Su30SM_BaySeams_Report_Photos_Videos.zip",
+      "sha256": "d017150ac2f36555ac99ec456e893ed7fcf4f43894847e1993e6d39b2111cea0"
+    },
+    {
+      "name": "Su30SM_BaySeams_Report_RU.pdf",
+      "sha256": "8f6ba5012e0ec486864ca3c452018f30492b90ea795095dbdb25e0ae5e327967"
+    }
+  ],
+  "downloaded_x64_native_launch_verified": true,
+  "downloaded_x64_capture": {
+    "executable": {
+      "exe": "ysflight64_gl1.exe",
+      "machine": "0x8664",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+    },
+    "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+    "passed": true,
+    "aircraft": "SU-30SM_CUSTOM",
+    "active": true,
+    "frames": [
+      "downloaded-front",
+      "downloaded-left",
+      "downloaded-right"
+    ]
+  },
+  "x86_native_launch_verified": false,
+  "stable_current_and_dark_channel_baselines_unchanged": true
+}

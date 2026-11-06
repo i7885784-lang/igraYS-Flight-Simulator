@@ -1,0 +1,16 @@
+{
+  "executable": {
+    "exe": "ysflight64_gl1.exe",
+    "machine": "0x8664",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+  },
+  "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "active": true,
+  "frames": [
+    "downloaded-front",
+    "downloaded-left",
+    "downloaded-right"
+  ]
+}
