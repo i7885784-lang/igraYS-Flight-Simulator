@@ -61,8 +61,8 @@
     },
     {
       "name": "Su30SM_NaturalIntake_Report_Photos_Videos.zip",
-      "size": 22563886,
-      "sha256": "1e760de2323385b393cb82d47fa9a1e5070260e1785368aaf72ee6ca71d68c62",
+      "size": 22613451,
+      "sha256": "e2808ab26e2cbbfd38c587a1dd156d6dc6d4cff2d3b6d21c72987dfc7f683504",
       "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/Su30SM_NaturalIntake_Report_Photos_Videos.zip"
     },
     {
@@ -71,5 +71,8 @@
       "sha256": "57086c41fc779ae895dfec787c805545518f49eac2318723a34d9a610f70b6f9",
       "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-2cf93b3898c4a7239cb3/Su30SM_NaturalIntake_Report_RU.pdf"
     }
-  ]
+  ],
+  "evidence_archive_finalized": true,
+  "downloaded_x64_launch_checked": true,
+  "old_source_files_preserved_exact": 8244
 }
