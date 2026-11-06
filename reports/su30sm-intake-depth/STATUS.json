@@ -1,0 +1,39 @@
+{
+  "release_id": 436501229,
+  "draft": true,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-29a9fdefb3e73cceb447",
+  "tag": "personal-su30sm-intake-depth-20261106",
+  "source_commit": "74d8d7d60c2a465326fc186d162f5f89aa0cda12",
+  "model_sha256": "ecee03ce446116a7eb046db0d127a9038748f365fe4cafd952f2929fca52567d",
+  "baseline_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "model_only_no_executables": true,
+  "all_mesh_resources_byte_exact": true,
+  "only_two_POS_Z_lines_changed": true,
+  "rigid_translation_m": [
+    0,
+    0,
+    -0.05
+  ],
+  "download_sha_crc_verified": true,
+  "exact_rebuild_verified": true,
+  "assets": [
+    {
+      "name": "Su30SM_IntakeDepth_Model_Report.zip",
+      "size": 18643006,
+      "sha256": "f5305af2090917b318a4f90473d578a0f63a1be43cad0a326cfa0af20fa6c95d",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-29a9fdefb3e73cceb447/Su30SM_IntakeDepth_Model_Report.zip"
+    },
+    {
+      "name": "Su30SM_IntakeDepth_Comparisons.zip",
+      "size": 4154048,
+      "sha256": "c9658478ca9694d2667f13f1d3e84ca0223800e7b4ba61d8d915d2550f19fef5",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-29a9fdefb3e73cceb447/Su30SM_IntakeDepth_Comparisons.zip"
+    },
+    {
+      "name": "Su30SM_IntakeDepth_Report_RU.pdf",
+      "size": 2321543,
+      "sha256": "838a0fb7ae34681b4841c43cd64e4f26b73feb0385223f0e0c3f3d571e4da35d",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-29a9fdefb3e73cceb447/Su30SM_IntakeDepth_Report_RU.pdf"
+    }
+  ]
+}

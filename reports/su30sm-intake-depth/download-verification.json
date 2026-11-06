@@ -1,0 +1,33 @@
+{
+  "assets_sha_verified": true,
+  "zip_crc_verified": true,
+  "downloaded_model_and_rollback_exact": true,
+  "only_two_raw_file_lines_differ": true,
+  "downloaded_source_rebuild_exact": true,
+  "assets": [
+    {
+      "name": "Su30SM_IntakeDepth_Model_Report.zip",
+      "sha256": "f5305af2090917b318a4f90473d578a0f63a1be43cad0a326cfa0af20fa6c95d"
+    },
+    {
+      "name": "Su30SM_IntakeDepth_Comparisons.zip",
+      "sha256": "c9658478ca9694d2667f13f1d3e84ca0223800e7b4ba61d8d915d2550f19fef5"
+    },
+    {
+      "name": "Su30SM_IntakeDepth_Report_RU.pdf",
+      "sha256": "838a0fb7ae34681b4841c43cd64e4f26b73feb0385223f0e0c3f3d571e4da35d"
+    }
+  ],
+  "exact_line_diff": [
+    {
+      "line": 1414274,
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1"
+    },
+    {
+      "line": 1414285,
+      "before": "POS 0 0 0 0 0 0 1",
+      "after": "POS 0 0 -0.05 0 0 0 1"
+    }
+  ]
+}
