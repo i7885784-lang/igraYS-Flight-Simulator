@@ -1,9 +1,9 @@
 {
-  "model_sha256": "032ac0014a614d57481d3038f90e5b873d8a898d530cd25554dd633543eb50f3",
+  "model_sha256": "6fd0f2982c657eb4524573744ce949d5aeea9e26f16d3bd74a21f69f598a4c83",
   "all_nodes_and_animation_states_exact": true,
   "all_other_packs_exact": true,
   "new_zero_area_triangles": 0,
-  "replacement_triangles_proven_original_surface_subsets": 3781,
+  "replacement_triangles_proven_original_surface_subsets": 2925,
   "maximum_off_original_plane_m": 6.576162561837625e-10,
   "maximum_area_outside_source_triangle_m2": 0,
   "maximum_same_source_replacement_overlap_m2": 2.3254982141340808e-11,
@@ -12,7 +12,7 @@
   "stats": {
     "Fuselage_0_4.srf": {
       "faces_before": 51844,
-      "faces_after": 49472,
+      "faces_after": 49362,
       "new_zero_area_triangles": 0,
       "all_old_vertices_preserved": true
     },

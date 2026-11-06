@@ -1,30 +1,44 @@
 {
   "-1": {
     "first_hit_counts": {
-      "IntakeDuct_-1": 33,
-      "Fuselage_0_4": 1
+      "Fuselage_0_4": 8,
+      "IntakeDuct_-1": 28
     },
     "rays": [
       {
         "x": -1.45,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.46602,
+        "tri_index": 3675
+      },
+      {
+        "x": -1.45,
         "y": -0.6367,
-        "first_node": "IntakeDuct_-1",
-        "hit_z": -3.12,
-        "tri_index": 12
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.15324,
+        "tri_index": 3424
       },
       {
         "x": -1.45,
         "y": -0.54,
-        "first_node": "IntakeDuct_-1",
-        "hit_z": -3.12,
-        "tri_index": 9
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.21782,
+        "tri_index": 3533
       },
       {
         "x": -1.45,
         "y": -0.4433,
-        "first_node": "IntakeDuct_-1",
-        "hit_z": -3.12,
-        "tri_index": 16
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.58239,
+        "tri_index": 3524
+      },
+      {
+        "x": -1.36,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.75516,
+        "tri_index": 4455
       },
       {
         "x": -1.36,
@@ -57,16 +71,16 @@
       {
         "x": -1.36,
         "y": -0.3467,
-        "first_node": "IntakeDuct_-1",
-        "hit_z": -3.12,
-        "tri_index": 32
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.19561,
+        "tri_index": 4556
       },
       {
         "x": -1.36,
         "y": -0.25,
         "first_node": "Fuselage_0_4",
         "hit_z": -3.10706,
-        "tri_index": 4793
+        "tri_index": 4710
       },
       {
         "x": -1.27,
@@ -99,9 +113,9 @@
       {
         "x": -1.27,
         "y": -0.25,
-        "first_node": "IntakeDuct_-1",
-        "hit_z": -3.12,
-        "tri_index": 48
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.38833,
+        "tri_index": 5511
       },
       {
         "x": -1.18,
@@ -247,8 +261,8 @@
   },
   "1": {
     "first_hit_counts": {
-      "IntakeDuct_1": 33,
-      "Fuselage_0_4": 1
+      "IntakeDuct_1": 28,
+      "Fuselage_0_4": 8
     },
     "rays": [
       {
@@ -422,9 +436,16 @@
       {
         "x": 1.27,
         "y": -0.25,
-        "first_node": "IntakeDuct_1",
-        "hit_z": -3.12,
-        "tri_index": 101
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.38833,
+        "tri_index": 25774
+      },
+      {
+        "x": 1.36,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.75516,
+        "tri_index": 26978
       },
       {
         "x": 1.36,
@@ -457,37 +478,44 @@
       {
         "x": 1.36,
         "y": -0.3467,
-        "first_node": "IntakeDuct_1",
-        "hit_z": -3.12,
-        "tri_index": 117
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.19561,
+        "tri_index": 27037
       },
       {
         "x": 1.36,
         "y": -0.25,
         "first_node": "Fuselage_0_4",
         "hit_z": -3.10706,
-        "tri_index": 27301
+        "tri_index": 27105
+      },
+      {
+        "x": 1.45,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.46602,
+        "tri_index": 27860
       },
       {
         "x": 1.45,
         "y": -0.6367,
-        "first_node": "IntakeDuct_1",
-        "hit_z": -3.12,
-        "tri_index": 136
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.15324,
+        "tri_index": 28226
       },
       {
         "x": 1.45,
         "y": -0.54,
-        "first_node": "IntakeDuct_1",
-        "hit_z": -3.12,
-        "tri_index": 145
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.21782,
+        "tri_index": 28159
       },
       {
         "x": 1.45,
         "y": -0.4433,
-        "first_node": "IntakeDuct_1",
-        "hit_z": -3.12,
-        "tri_index": 132
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.58239,
+        "tri_index": 28315
       }
     ]
   }

@@ -40,9 +40,13 @@ for name,front in [('Fuselage_0_4',-1.25),('Fuselage_0_7',-.39),('Fuselage_0_13'
  n=lu[name];fn=dnm.fil(n);ls=p[fn];raw=dnm.mesh(ls);R,t=transform(n,0);pos=np.array(next(s[4:] for s in n if s.startswith('POS ')).split()[:3],float);C=t+pos;world=np.array(raw.v)@R.T+C;first=ls.index('F');prefix=ls[:first];blocks=[];i=first
  while i<len(ls) and ls[i]=='F':
   j=ls.index('E',i);blocks.append(ls[i:j+1]);i=j+1
- assert len(blocks)==len(raw.f);appendv=[];outfaces=[];changed=0;removed_area=0.;newfaces=0;retained=0
+ assert len(blocks)==len(raw.f)
+ if name=='Fuselage_0_4':
+  from envelope import Envelope
+  envelope=Envelope(world,raw.f)
+ appendv=[];outfaces=[];changed=0;removed_area=0.;newfaces=0;retained=0;protected=[]
  for face_id,((ids,color,bright),block) in enumerate(zip(raw.f,blocks)):
-  poly=world[ids];pieces=[(j-1,poly[[0,j,j+1]],list(poly[[0,j,j+1]])) for j in range(1,len(poly)-1)];removed=0.
+  poly=world[ids];pieces=[(j-1,poly[[0,j,j+1]],list(poly[[0,j,j+1]])) for j in range(1,len(poly)-1)];removed=0.;removed_regions=[]
   # Skip polygons outside both exact passage boxes cheaply.
   if poly[:,2].max()< -3.100001 or poly[:,2].min()>front+.000001 or poly[:,1].min()>.1 or abs(poly[:,0]).min()>1.6:
    outfaces.append(block);retained+=1;continue
@@ -50,10 +54,11 @@ for name,front in [('Fuselage_0_4',-1.25),('Fuselage_0_7',-.39),('Fuselage_0_13'
    nextpieces=[]
    for source_index,source_tri,piece in pieces:
     outside,inside=subtract(piece,planes(side,front));a=area(inside)
-    if a>1e-12:nextpieces += [(source_index,source_tri,part) for part in outside];removed+=a
+    if a>1e-12:nextpieces += [(source_index,source_tri,part) for part in outside];removed+=a;removed_regions.append(np.array(inside))
     else:nextpieces.append((source_index,source_tri,piece))
    pieces=nextpieces
   if removed<=1e-12:outfaces.append(block);retained+=1;continue
+  if name=='Fuselage_0_4' and (envelope.external(poly) or any(envelope.external(q) for q in removed_regions)):outfaces.append(block);retained+=1;protected.append(face_id);continue
   changed+=1;removed_area+=removed
   assert area(poly)+1e-8>=sum(area(q) for _,_,q in pieces)
   for source_index,source_tri,part in pieces:
@@ -69,7 +74,10 @@ for name,front in [('Fuselage_0_4',-1.25),('Fuselage_0_7',-.39),('Fuselage_0_13'
     outfaces.append(newblock);newfaces+=1;tests.append({'node':name,'source_face':face_id,'source_triangle_index':source_index,'source_world':source_tri.tolist(),'replacement_world':q.tolist()})
  p[fn]=prefix+['V %.9f %.9f %.9f'%tuple(v) for v in appendv]+sum(outfaces,[])+ls[i:]
  assert dnm.mesh(p[fn]).v[:len(raw.v)]==raw.v
- audit[name]={'source_faces':len(raw.f),'untouched_face_blocks_exact':retained,'clipped_or_removed_face_blocks':changed,'replacement_triangles':newfaces,'removed_triangle_instance_area_m2':removed_area,'cut_front_z_m':front,'cut_back_z_m':-3.1,'all_original_vertices_preserved':True,'all_colors_and_brightness_preserved':True,'original_frame_outside_passage_preserved':True}
+ audit[name]={'source_faces':len(raw.f),'untouched_face_blocks_exact':retained,'clipped_or_removed_face_blocks':changed,'replacement_triangles':newfaces,'removed_triangle_instance_area_m2':removed_area,'cut_front_z_m':front,'cut_back_z_m':-3.1,'external_source_faces_protected':len(protected),'protected_source_face_ids':protected,'all_original_vertices_preserved':True,'all_colors_and_brightness_preserved':True,'original_frame_outside_passage_preserved':True}
+# F4 is the real exterior skin; a wider duct-volume subtraction cut a side opening in the trial.
+# Protect the original visible shell; clip only hidden internal F4 surfaces plus duplicate front compressor layers and bay lining.
+# Only fully occluded interior F4 faces may be clipped; original outside-X/bottom-Y skin is protected.
 # All mechanisms and all unrelated packs remain literally the same records.
 out=r/'runtime/aircraft/su30sm.dnm';dnm.write(out,p,ns);_,after_nodes=dnm.read(out);assert ns==after_nodes
 changed=[k for k in old if p[k]!=old[k]];audit['changed_packs']=changed;audit['all_nodes_and_animation_states_exact']=True;audit['all_other_packs_exact']=True;audit['model_sha256']=hashlib.sha256(out.read_bytes()).hexdigest();(r/'repair-audit.json').write_text(json.dumps(audit,indent=2));(r/'subset-provenance.json').write_text(json.dumps(tests,separators=(',',':')))

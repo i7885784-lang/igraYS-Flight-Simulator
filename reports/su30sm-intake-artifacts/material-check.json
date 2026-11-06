@@ -1,0 +1,27 @@
+{
+  "Fuselage_0_4.srf": {
+    "new_material_colors": 0,
+    "emissive_solid_faces_before": 0,
+    "emissive_solid_faces_after": 0
+  },
+  "Fuselage_0_7.srf": {
+    "new_material_colors": 0,
+    "emissive_solid_faces_before": 0,
+    "emissive_solid_faces_after": 0
+  },
+  "Fuselage_0_13.srf": {
+    "new_material_colors": 0,
+    "emissive_solid_faces_before": 0,
+    "emissive_solid_faces_after": 0
+  },
+  "GearWell_Left.srf": {
+    "new_material_colors": 0,
+    "emissive_solid_faces_before": 0,
+    "emissive_solid_faces_after": 0
+  },
+  "GearWell_Right.srf": {
+    "new_material_colors": 0,
+    "emissive_solid_faces_before": 0,
+    "emissive_solid_faces_after": 0
+  }
+}

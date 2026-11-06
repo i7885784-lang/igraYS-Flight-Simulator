@@ -1,0 +1,194 @@
+[
+  {
+    "name": "user-angle",
+    "before": "captures/before-ground/user-angle.png",
+    "after": "captures/after-ground/user-angle.png",
+    "group": "main"
+  },
+  {
+    "name": "front",
+    "before": "captures/before-ground/front.png",
+    "after": "captures/after-ground/front.png",
+    "group": "main"
+  },
+  {
+    "name": "left-intake",
+    "before": "captures/before-ground/left-intake.png",
+    "after": "captures/after-ground/left-intake.png",
+    "group": "main"
+  },
+  {
+    "name": "right-intake",
+    "before": "captures/before-ground/right-intake.png",
+    "after": "captures/after-ground/right-intake.png",
+    "group": "main"
+  },
+  {
+    "name": "low-left",
+    "before": "captures/before-ground/low-left.png",
+    "after": "captures/after-ground/low-left.png",
+    "group": "main"
+  },
+  {
+    "name": "side",
+    "before": "captures/before-ground/side.png",
+    "after": "captures/after-ground/side.png",
+    "group": "main"
+  },
+  {
+    "name": "screen-match",
+    "before": "captures/before-detail/screen-match.png",
+    "after": "captures/after-detail/screen-match.png",
+    "group": "main"
+  },
+  {
+    "name": "screen-low",
+    "before": "captures/before-detail/screen-low.png",
+    "after": "captures/after-detail/screen-low.png",
+    "group": "main"
+  },
+  {
+    "name": "underside-up",
+    "before": "captures/before-bottom/underside-up.png",
+    "after": "captures/after-bottom/underside-up.png",
+    "group": "main"
+  },
+  {
+    "name": "underside-mid",
+    "before": "captures/before-bottom/underside-mid.png",
+    "after": "captures/after-bottom/underside-mid.png",
+    "group": "main"
+  },
+  {
+    "name": "underside-down",
+    "before": "captures/before-bottom/underside-down.png",
+    "after": "captures/after-bottom/underside-down.png",
+    "group": "main"
+  },
+  {
+    "name": "orbit-angle-000",
+    "before": "captures/before-orbit/orbit-angle-000.png",
+    "after": "captures/after-orbit/orbit-angle-000.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-030",
+    "before": "captures/before-orbit/orbit-angle-030.png",
+    "after": "captures/after-orbit/orbit-angle-030.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-060",
+    "before": "captures/before-orbit/orbit-angle-060.png",
+    "after": "captures/after-orbit/orbit-angle-060.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-090",
+    "before": "captures/before-orbit/orbit-angle-090.png",
+    "after": "captures/after-orbit/orbit-angle-090.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-120",
+    "before": "captures/before-orbit/orbit-angle-120.png",
+    "after": "captures/after-orbit/orbit-angle-120.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-130",
+    "before": "captures/before-orbit/orbit-angle-130.png",
+    "after": "captures/after-orbit/orbit-angle-130.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-140",
+    "before": "captures/before-orbit/orbit-angle-140.png",
+    "after": "captures/after-orbit/orbit-angle-140.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-150",
+    "before": "captures/before-orbit/orbit-angle-150.png",
+    "after": "captures/after-orbit/orbit-angle-150.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-160",
+    "before": "captures/before-orbit/orbit-angle-160.png",
+    "after": "captures/after-orbit/orbit-angle-160.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-170",
+    "before": "captures/before-orbit/orbit-angle-170.png",
+    "after": "captures/after-orbit/orbit-angle-170.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-180",
+    "before": "captures/before-orbit/orbit-angle-180.png",
+    "after": "captures/after-orbit/orbit-angle-180.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-190",
+    "before": "captures/before-orbit/orbit-angle-190.png",
+    "after": "captures/after-orbit/orbit-angle-190.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-200",
+    "before": "captures/before-orbit/orbit-angle-200.png",
+    "after": "captures/after-orbit/orbit-angle-200.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-210",
+    "before": "captures/before-orbit/orbit-angle-210.png",
+    "after": "captures/after-orbit/orbit-angle-210.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-220",
+    "before": "captures/before-orbit/orbit-angle-220.png",
+    "after": "captures/after-orbit/orbit-angle-220.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-230",
+    "before": "captures/before-orbit/orbit-angle-230.png",
+    "after": "captures/after-orbit/orbit-angle-230.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-240",
+    "before": "captures/before-orbit/orbit-angle-240.png",
+    "after": "captures/after-orbit/orbit-angle-240.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-270",
+    "before": "captures/before-orbit/orbit-angle-270.png",
+    "after": "captures/after-orbit/orbit-angle-270.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-300",
+    "before": "captures/before-orbit/orbit-angle-300.png",
+    "after": "captures/after-orbit/orbit-angle-300.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-330",
+    "before": "captures/before-orbit/orbit-angle-330.png",
+    "after": "captures/after-orbit/orbit-angle-330.png",
+    "group": "orbit"
+  },
+  {
+    "name": "orbit-angle-360",
+    "before": "captures/before-orbit/orbit-angle-360.png",
+    "after": "captures/after-orbit/orbit-angle-360.png",
+    "group": "orbit"
+  }
+]

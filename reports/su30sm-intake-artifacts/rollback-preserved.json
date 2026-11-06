@@ -1,0 +1,12 @@
+{
+  "stable5": {
+    "path": "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dnm",
+    "sha256": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504",
+    "preserved": true
+  },
+  "previousVisualPolish": {
+    "path": "/workspace/ysflight-dev/su30sm-visual-polish/runtime/aircraft/su30sm.dnm",
+    "sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+    "preserved": true
+  }
+}
