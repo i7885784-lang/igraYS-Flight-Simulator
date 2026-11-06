@@ -1,0 +1,109 @@
+{
+  "draft": true,
+  "release_id": 436127550,
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/untagged-15c09e1e93d77025735b",
+  "tag": "personal-su30sm-intake-artifacts-20261106",
+  "source_commit": "975307766b2dd009c7cf4dadffd20563dd2bbe53",
+  "baseline_release_id": 436099010,
+  "baseline_model_sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+  "model_sha256": "6fd0f2982c657eb4524573744ce949d5aeea9e26f16d3bd74a21f69f598a4c83",
+  "changed_game_files": [
+    "aircraft/su30sm.dnm"
+  ],
+  "unchanged_game_files": 1156,
+  "all_other_game_files_byte_identical": true,
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "Fuselage_0_7.srf",
+    "Fuselage_0_13.srf",
+    "GearWell_Left.srf",
+    "GearWell_Right.srf"
+  ],
+  "all_nodes_animation_states_and_parents_exact": true,
+  "all_material_colors_brightness_unchanged": true,
+  "stable_current_version_unchanged": true,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_IntakeArtifacts_Game_Win32_Win64.zip",
+      "sha256": "2eb74e729420da3074944f623caf315a5a463ffba5b6215b9e72d34dbdfa4d4a",
+      "bytes": 44980045,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-15c09e1e93d77025735b/YSFlight_Su30SM_Test5_IntakeArtifacts_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_IntakeArtifacts_Sources.zip",
+      "sha256": "d186feb9d07970b83ca3e2bc4f09015c09f78d3b187d33a81aa3979451688390",
+      "bytes": 247432254,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-15c09e1e93d77025735b/YSFlight_Su30SM_Test5_IntakeArtifacts_Sources.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_IntakeArtifacts_Report.zip",
+      "sha256": "03d2f8c5b36ccd02d6f37fb7be2ca57facb31dde827b59abb747568d3d0da01e",
+      "bytes": 19462365,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-15c09e1e93d77025735b/YSFlight_Su30SM_Test5_IntakeArtifacts_Report.zip"
+    }
+  ],
+  "acceptance": {
+    "model_sha256": "6fd0f2982c657eb4524573744ce949d5aeea9e26f16d3bd74a21f69f598a4c83",
+    "baseline_model_sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+    "only_changed_game_file": "aircraft/su30sm.dnm",
+    "changed_packs": [
+      "Fuselage_0_4.srf",
+      "Fuselage_0_7.srf",
+      "Fuselage_0_13.srf",
+      "GearWell_Left.srf",
+      "GearWell_Right.srf"
+    ],
+    "all_nodes_animations_pivots_parents_and_other_packs_exact": true,
+    "all_original_paint_material_and_brightness_assignments_preserved": true,
+    "new_black_recoloring": false,
+    "new_zero_area_triangles": 0,
+    "replacement_triangles_original_surface_subsets": 2925,
+    "sampled_gear_poses": 201,
+    "scoped_contacts": 0,
+    "native_win64_opengl_under_wine": true,
+    "windows32_rerun": false,
+    "native_gear_cycle_pass": true,
+    "matched_main_screenshot_pairs": 11,
+    "matched_orbit_screenshot_pairs": 21,
+    "camera_orbit_360_native_gear_down_pass": true,
+    "native_orbit_angles_deg": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      220,
+      230,
+      240,
+      270,
+      300,
+      330,
+      360
+    ],
+    "camera_mode_reset_before_each_heading": true,
+    "invalid_first_camera_cycle_recordings_excluded": true,
+    "visual_review": "Final front/intake/bottom frames opened; corrected 21-heading before/after camera contact sheets reviewed. Full videos recorded, not every second watched.",
+    "continuous_collision_proof": false,
+    "stable_current_version_unchanged": true,
+    "remaining_limits": [
+      "Existing faceted shading/striping on other doors/skin remains.",
+      "Original main gear/intake overlap in parts of stowed motion is outside this repair; all animations preserved.",
+      "Legitimate sunlit inlet rims/floors remain visible, not painted black."
+    ]
+  },
+  "reproduction": "Exact tested subset-clipped SRF assembly; complete algorithm and triangle provenance included",
+  "remaining_defects": [
+    "Legacy faceted shading on some original doors/skin remains.",
+    "Legacy main gear/intake overlap during some stowed poses remains; all mechanism animations exact."
+  ],
+  "full_sources_engine_glb_history_preserved": true
+}

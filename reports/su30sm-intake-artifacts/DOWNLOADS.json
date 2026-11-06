@@ -1,0 +1,17 @@
+{
+  "release_id": 436127550,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_IntakeArtifacts_Game_Win32_Win64.zip",
+      "sha256": "2eb74e729420da3074944f623caf315a5a463ffba5b6215b9e72d34dbdfa4d4a",
+      "bytes": 44980045,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-15c09e1e93d77025735b/YSFlight_Su30SM_Test5_IntakeArtifacts_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_IntakeArtifacts_Sources.zip",
+      "sha256": "d186feb9d07970b83ca3e2bc4f09015c09f78d3b187d33a81aa3979451688390",
+      "bytes": 247432254,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-15c09e1e93d77025735b/YSFlight_Su30SM_Test5_IntakeArtifacts_Sources.zip"
+    }
+  ]
+}
