@@ -1,0 +1,45 @@
+{
+  "model_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "all_nodes_states_parents_exact": true,
+  "all_other_packs_including_gear_and_original_engine_exact": true,
+  "inserts": {
+    "IntakeDuct_-1.srf": {
+      "front_z_m": 0.65,
+      "rear_z_m": 0.12,
+      "depth_m": 0.53,
+      "section_count": 12,
+      "common_angles_including_all_measured_corners": 634,
+      "inward_liner_offset_m": 0.005,
+      "rear_closed_triangles": 632,
+      "faces": 14580,
+      "matte_rgb": [
+        25,
+        30,
+        33
+      ],
+      "emissive": false,
+      "actual_air_cell_not_union_of_solid_and_air": true
+    },
+    "IntakeDuct_1.srf": {
+      "front_z_m": 0.65,
+      "rear_z_m": 0.12,
+      "depth_m": 0.53,
+      "section_count": 12,
+      "common_angles_including_all_measured_corners": 687,
+      "inward_liner_offset_m": 0.005,
+      "rear_closed_triangles": 685,
+      "faces": 15799,
+      "matte_rgb": [
+        25,
+        30,
+        33
+      ],
+      "emissive": false,
+      "actual_air_cell_not_union_of_solid_and_air": true
+    }
+  }
+}

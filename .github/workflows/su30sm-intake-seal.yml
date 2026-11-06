@@ -1,0 +1,28 @@
+name: Su30SM measured intake liner model and visual report
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-intake-seal
+            reports/su30sm-intake-seal
+            reports/su30sm-bay-seams/STATUS.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r changes/su30sm-intake-seal/requirements.txt
+      - run: python changes/su30sm-intake-seal/publish.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}

@@ -1,0 +1,13 @@
+{
+  "baseline_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+  "model_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "changed_packs": [
+    "IntakeDuct_-1.srf",
+    "IntakeDuct_1.srf"
+  ],
+  "patch_sha256": {
+    "IntakeDuct_-1.srf": "a392b461799a6ee5c8ad1d15bfaa37d415bfb0ed9cf1887372d76b8fecdc48de",
+    "IntakeDuct_1.srf": "c4e22503421eaf13e8a63168e0a165d81c064aee84d5dcc04b42913bc5ebf988"
+  },
+  "all_other_packs_and_nodes_states_exact": true
+}

@@ -1,0 +1,22 @@
+{
+  "model_sha256": "8404cc19dff1bd0c1d768a1d00940904da6f8b629afe9beeef0714dc13680b0d",
+  "native_game": "Windows x64 OpenGL under Wine",
+  "matched_pairs": 18,
+  "air_inspection": true,
+  "ground_inspection": true,
+  "camera_sweep_headings": [
+    120,
+    135,
+    150,
+    165,
+    180,
+    195,
+    210,
+    225,
+    240
+  ],
+  "all_gear_animations_exact": true,
+  "contacts_201_poses": 0,
+  "source_outer_airframe_exact": true,
+  "limitations": "Only tested external cameras; no universal claim for cameras clipping inside geometry."
+}
