@@ -69,7 +69,10 @@ for name in ['GearWell_Left','GearWell_Right','GearWell_Nose']:
    # Subdivide only a confirmed boundary crossing; keep unchanged interior faces verbatim.
    affected+=1;todo=[q]
    while todo:
-    t=todo.pop();d=np.array([signed(a) for a in t]);lens=np.linalg.norm(np.roll(t,-1,axis=0)-t,axis=1);j=int(lens.argmax())
+    t=todo.pop();d=np.array([signed(a) for a in t]);probes=np.array([signed((t[j]+t[(j+1)%3])/2) for j in range(3)]+[signed(t.mean(0))])
+    if d.min()>=0 and probes.min()>=0:out.face(t,c,b);continue
+    if d.max()<0 and probes.max()<0:removed+=1;continue
+    lens=np.linalg.norm(np.roll(t,-1,axis=0)-t,axis=1);j=int(lens.argmax())
     if lens[j]>.025:
      a,jj,kk=j,(j+1)%3,(j+2)%3;mid=(t[a]+t[jj])/2;todo.extend([np.array([t[a],mid,t[kk]]),np.array([mid,t[jj],t[kk]])]);continue
     poly=clip(t,d)
@@ -77,6 +80,7 @@ for name in ['GearWell_Left','GearWell_Right','GearWell_Nose']:
     for j in range(1,len(poly)-1):
      tri=np.round(np.array([poly[0],poly[j],poly[j+1]]),6)
      if np.linalg.norm(np.cross(tri[1]-tri[0],tri[2]-tri[0]))>1e-11:out.face(tri,c,b)
+ rounded=np.round(np.array(out.v),6);out.f=[(ids,c,b) for ids,c,b in out.f if np.linalg.norm(np.cross(rounded[ids[1]]-rounded[ids[0]],rounded[ids[2]]-rounded[ids[0]]))>1e-12]
  p[dnm.fil(n)]=out.srf() if affected else old[dnm.fil(n)];audit[name]={'boundary_faces_clipped':affected,'outside_subtriangles_removed':removed,'worst_old_below_clearance_m':minimum,'new_clearance_m':.010,'interior_colors_preserved':True}
 changed=[k for k in p if p[k]!=old[k]];assert all(k.removesuffix('.srf') in names+['GearWell_Left','GearWell_Right','GearWell_Nose'] for k in changed)
 assert p['IntakeDuct_-1.srf']==old['IntakeDuct_-1.srf'] and p['IntakeDuct_1.srf']==old['IntakeDuct_1.srf']

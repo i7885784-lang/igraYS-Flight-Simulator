@@ -27083,14 +27083,14 @@
   },
   "GearWell_Left": {
     "boundary_faces_clipped": 1706,
-    "outside_subtriangles_removed": 2776,
+    "outside_subtriangles_removed": 1330,
     "worst_old_below_clearance_m": -0.43568131668003224,
     "new_clearance_m": 0.01,
     "interior_colors_preserved": true
   },
   "GearWell_Right": {
     "boundary_faces_clipped": 1691,
-    "outside_subtriangles_removed": 2758,
+    "outside_subtriangles_removed": 1236,
     "worst_old_below_clearance_m": -0.43568131668003224,
     "new_clearance_m": 0.01,
     "interior_colors_preserved": true
@@ -27117,5 +27117,5 @@
     "GearDoor_Nose_Aft_Right.srf"
   ],
   "all_nodes_states_parents_exact": true,
-  "model_sha256": "5fd0ba0e36a746ebcb832e66d2792a9c10f74a964c09035bddc0e74cb10a095d"
+  "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53"
 }

@@ -1,5 +1,5 @@
 {
-  "model_sha256": "5fd0ba0e36a746ebcb832e66d2792a9c10f74a964c09035bddc0e74cb10a095d",
+  "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
   "all_nodes_STAs_parents_pivots_exact": true,
   "intake_dark_channels_exact": true,
   "original_airframe_engine_meshes_exact": true,
@@ -44,8 +44,8 @@
       "emissive_faces": 0
     },
     "GearWell_Left.srf": {
-      "vertices": 352632,
-      "faces": 117544,
+      "vertices": 43503,
+      "faces": 14500,
       "degenerate_triangles": 0,
       "duplicate_or_reverse_triangles": 0,
       "exterior_projected_overlap_m2": 0,
@@ -60,8 +60,8 @@
       "emissive_faces": 0
     },
     "GearWell_Right.srf": {
-      "vertices": 349227,
-      "faces": 116409,
+      "vertices": 42207,
+      "faces": 14068,
       "degenerate_triangles": 0,
       "duplicate_or_reverse_triangles": 0,
       "exterior_projected_overlap_m2": 0,
