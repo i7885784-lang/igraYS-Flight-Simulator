@@ -1,0 +1,81 @@
+{
+  "release_id": 436099010,
+  "all_download_sha_crc_pass": true,
+  "assets": {
+    "YSFlight_Su30SM_Test5_VisualPolish_Game_Win32_Win64.zip": {
+      "sha256": "2fcefe0f6df49e2b4c57db100ce1679e6ae50fa21b1309a3268ff1be1a051e03",
+      "bytes": 45963236,
+      "crc_pass": true,
+      "duplicate_zip_entries": 0
+    },
+    "YSFlight_Su30SM_Test5_VisualPolish_Sources.zip": {
+      "sha256": "3a80c7836c1b753d68b8f8c3891e2eb5bc544ed9853c29b56a588a027c8a7238",
+      "bytes": 240153398,
+      "crc_pass": true,
+      "duplicate_zip_entries": 0
+    },
+    "YSFlight_Su30SM_Test5_VisualPolish_Report.zip": {
+      "sha256": "5b5648e6399b5b75d0ebe8452f463236546c85888452a67d690b9b5f53bbf065",
+      "bytes": 8745773,
+      "crc_pass": true,
+      "duplicate_zip_entries": 0
+    }
+  },
+  "models": {
+    "su30sm.dnm": {
+      "sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+      "changed_packs": [
+        "Fuselage_0_13.srf",
+        "IntakeDuct_-1.srf",
+        "IntakeDuct_1.srf",
+        "DoorHingeForks.srf"
+      ],
+      "changed_nodes": [
+        "Air_Brake_1_20",
+        "Cockpit_cover_6_30",
+        "Cockpit_cover_6_31",
+        "GearDoor_Nose_Inner",
+        "GearDoor_Nose_Outer",
+        "GearDoor_Left_Inner",
+        "GearDoor_Right_Outer",
+        "GearDoor_Nose_Aft",
+        "AirbrakeActuator_Cylinder",
+        "AirbrakeActuator_Piston",
+        "GearDoor_Nose_Aft_Right",
+        "DoorHingePin_GearDoor_Nose_Inner",
+        "DoorHingePin_GearDoor_Nose_Outer",
+        "DoorHingePin_GearDoor_Left_Inner",
+        "DoorHingePin_GearDoor_Right_Outer",
+        "DoorHingePin_GearDoor_Nose_Aft",
+        "DoorHingePin_GearDoor_Nose_Aft_Right"
+      ],
+      "no_added_deleted_packs_nodes": true,
+      "all_other_packs_nodes_exact": true
+    },
+    "su30smcockpit.dnm": {
+      "sha256": "59e8226dede7a10d526e48332043d9d2f4dc27c018b6f3b732b188b567274b31",
+      "changed_packs": [],
+      "changed_nodes": [
+        "Cockpit_cover_6_30",
+        "Cockpit_cover_6_31"
+      ],
+      "no_added_deleted_packs_nodes": true,
+      "all_other_packs_nodes_exact": true
+    }
+  },
+  "changed_game_files": [
+    "runtime/aircraft/su30sm.dnm",
+    "runtime/aircraft/su30smcockpit.dnm"
+  ],
+  "unchanged_game_files": 1155,
+  "downloaded_sources_both_models_exact_rebuild": true,
+  "previous_source_files_byte_identical": 8135,
+  "full_engine_original_glb_history_present": true,
+  "matched_screenshot_pairs": 15,
+  "native_four_cycle_videos_and_final_hash_logs_present": true,
+  "stable_current_version_changed": false,
+  "remaining_defects": [
+    "Legacy faceted shading on doors/skin remains.",
+    "Original main gear/intake volume overlap during parts of stow remains; unchanged mechanism."
+  ]
+}

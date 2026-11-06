@@ -1,0 +1,17 @@
+{
+  "release_id": 436099010,
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_Test5_VisualPolish_Game_Win32_Win64.zip",
+      "sha256": "2fcefe0f6df49e2b4c57db100ce1679e6ae50fa21b1309a3268ff1be1a051e03",
+      "bytes": 45963236,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-85ce924581c27cd3b259/YSFlight_Su30SM_Test5_VisualPolish_Game_Win32_Win64.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_Test5_VisualPolish_Sources.zip",
+      "sha256": "3a80c7836c1b753d68b8f8c3891e2eb5bc544ed9853c29b56a588a027c8a7238",
+      "bytes": 240153398,
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-85ce924581c27cd3b259/YSFlight_Su30SM_Test5_VisualPolish_Sources.zip"
+    }
+  ]
+}
