@@ -1,0 +1,23 @@
+{
+  "release_id": 436678340,
+  "draft": true,
+  "tag": "personal-su30sm-black-wells-20261106",
+  "assets": [
+    {
+      "name": "YSFlight_Su30SM_BlackWells_Windows_x86.zip",
+      "sha256": "75c8667aae74d2ee488b5f2ea65c4c57f1e7f9b0489288178ee18114a3518071",
+      "machine": "0x14c",
+      "model_sha256": "c53e0d2060d39d108bae6dabab6645f15179eac985bd66c23a36c1e1f7ffd928",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-76710fabd957ebac0751/YSFlight_Su30SM_BlackWells_Windows_x86.zip"
+    },
+    {
+      "name": "YSFlight_Su30SM_BlackWells_Windows_x64.zip",
+      "sha256": "1d7dafaf19ec123488800bb0c7e58d861a64bfd95a76470c62e5a52fe8b1c0ef",
+      "machine": "0x8664",
+      "model_sha256": "c53e0d2060d39d108bae6dabab6645f15179eac985bd66c23a36c1e1f7ffd928",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/untagged-76710fabd957ebac0751/YSFlight_Su30SM_BlackWells_Windows_x64.zip"
+    }
+  ],
+  "only_three_mesh_colors_changed": true,
+  "download_sha_crc_verified": true
+}
