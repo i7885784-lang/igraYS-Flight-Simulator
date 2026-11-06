@@ -1,0 +1,12 @@
+{
+  "samples": 201,
+  "maximum_rod_attachment_error_m": 0.00035598165716551976,
+  "minimum_telescopic_overlap_m": 0.25288282472767665,
+  "fixed_base_m": [
+    0.0,
+    1.0239403,
+    1.3755151
+  ],
+  "no_detached_attachment_at_sampled_poses": true,
+  "no_separated_cylinder_rod": true
+}

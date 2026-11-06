@@ -1,0 +1,45 @@
+{
+  "model_sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+  "cockpit_sha256": "59e8226dede7a10d526e48332043d9d2f4dc27c018b6f3b732b188b567274b31",
+  "matched_screenshot_pairs": 15,
+  "native_windows_opengl64_under_wine": true,
+  "native_gear_canopy_brake_engine_checks_pass": true,
+  "native_videos": [
+    "gear",
+    "canopy",
+    "brake",
+    "engine"
+  ],
+  "native_gear_cycle": "0 -> 1 -> 0, renderGear=-1",
+  "sampled_gear_poses": 201,
+  "scoped_contacts": 0,
+  "actuator_max_attachment_error_m": 0.00035598165716551976,
+  "new_degenerate_triangles": 0,
+  "all_wheel_strut_inner_shutter_and_petal_meshes_curves_exact": true,
+  "door_angles_and_timing_exact": true,
+  "door_slide_m_before_after": [
+    0.07,
+    0.03
+  ],
+  "canopy_rotation_deg_before_after": [
+    55,
+    43
+  ],
+  "brake_rotation_deg_before_after": [
+    60,
+    50
+  ],
+  "angles_are_photographic_approximations_not_certified_factory_values": true,
+  "color_scheme_preserved": true,
+  "no_added_nodes_or_meshes": true,
+  "unchanged_node_metadata": true,
+  "windows32_rerun": false,
+  "continuous_collision_proof": false,
+  "entire_videos_watched": false,
+  "visual_review": "Opened final rear/door gap/canopy/brake and selected gear/engine game frames; before/after use identical camera scripts.",
+  "remaining_defects": [
+    "Legacy faceted shading/striping remains on some original doors and skin.",
+    "Legacy main gear versus IntakeDuct stow-volume overlap remains."
+  ],
+  "stable_current_version_unchanged": true
+}

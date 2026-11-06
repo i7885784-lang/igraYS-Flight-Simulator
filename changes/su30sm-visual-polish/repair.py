@@ -43,7 +43,8 @@ def axis(a,b):
  y=b-a;y/=np.linalg.norm(y);z=np.cross([1.,0,0],y);z/=np.linalg.norm(z);return np.c_[np.cross(y,z),y,z]
 lengths=[];cs=[];ps=[]
 for u in np.linspace(0,1,21):
- R=Rotation.from_rotvec([math.radians(50)*u,0,0]).as_matrix();T=R@(B-bp)+bp;Q=axis(A,T);lengths.append(float(np.linalg.norm(T-A)));cs.append(state(Q,A));ps.append(state(Q,T-Q[:,1]*L))
+ # Match native YsShellDnmContainer::SetClassStateRecursive forward/up-vector interpolation.
+ E=transform(brake,1)[0];z=(1-u)*np.array([0.,0,1])+u*E[:,2];z/=np.linalg.norm(z);y=(1-u)*np.array([0.,1,0])+u*E[:,1];x=np.cross(y,z);x/=np.linalg.norm(x);R=np.c_[x,np.cross(z,x),z];T=R@(B-bp)+bp;Q=axis(A,T);lengths.append(float(np.linalg.norm(T-A)));cs.append(state(Q,A));ps.append(state(Q,T-Q[:,1]*L))
 assert min(lengths)>L and max(lengths)<2*L
 replace_states(cn,cs);replace_states(pn,ps)
 audit['brake']={'old_deg':60,'new_deg':50,'basis':'Conservative photographic fit to supplied raised-brake views; projected angles are perspective-dependent, not an official measured limit','pivot_surface_and_closed_attachment_preserved':True,'actuator_length_m':L,'actuator_attachment_distances_m':lengths,'minimum_telescopic_overlap_m':2*L-max(lengths)}

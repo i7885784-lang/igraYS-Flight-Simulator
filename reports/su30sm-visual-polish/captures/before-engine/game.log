@@ -1,0 +1,702 @@
+YSFLIGHT
+VERSION 20181124
+YFSVERSION 20180930
+NETVERSION 20180930
+Depth Bits:   24
+Stencil Bits: 8
+Bit Depth=24
+Loading Sound Plug-In.
+Sound Plug-In Loaded.
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1342:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5205:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5728:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM default
+Loading Voice Plug-In.
+Voice Plug-In Loaded.
+All functions from Voice Dll are ready.
+[VOICEDLL] This is a skeleton for the future voice extension.
+[VOICEDLL] This DLL does not actually function at this time.
+FsVoiceDllInitialize (Line 19)
+FsVoiceDllSetMasterSwitch (Line 38)
+Localization File: ru.uitxt
+Initialization Counter 0
+Initialization Counter 1
+Initialization Counter 2
+Free 453
+Free 459
+Free 465
+Free 471
+Free 477
+Free 483
+Free 489
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 2
+Initialization Counter 3
+Initialization Counter 4
+Date 20261106
+Initialization Counter 5
+Common YSFLIGHT Dir=
+Common YSFLIGHT Dir=.
+Detected ./20181124
+Date 20261106
+Initialization Counter 6
+Initialization Counter 7
+Initialization Counter 8
+Script>>WAITFOR:GUI
+Script>>SLEEP:500
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>GUI:CLOSEMODAL
+>> CLOSEMODAL
+Script>>SLEEP:8000
+The file does not have PNG signature.
+Script>>FILE:OPEN Z:/workspace/ysflight-dev/su30sm-visual-polish/checks/before-engine/start.yfs
+Waiting for thread #0 gets ready.
+Thread 0 ready.
+Waiting for thread #1 gets ready.
+Thread 1 ready.
+Waiting for thread #2 gets ready.
+Thread 2 ready.
+Waiting for thread #3 gets ready.
+Thread 3 ready.
+0 same-plane map groups.
+FsLattice
+ -20000.000000 -20000.000000 to 20000.000000 20000.000000
+ NX=41, NY=41
+Read 10000 Vertices
+Read 20000 Vertices
+Read 30000 Vertices
+Read 40000 Vertices
+Read 50000 Vertices
+Read 60000 Vertices
+Read 70000 Vertices
+Read 80000 Vertices
+Read 90000 Vertices
+Read 100000 Vertices
+Read 110000 Vertices
+Read 120000 Vertices
+Read 130000 Vertices
+Read 140000 Vertices
+Read 150000 Vertices
+Read 160000 Vertices
+Read 10000 Polygons
+Read 20000 Polygons
+Read 30000 Polygons
+Read 40000 Polygons
+Read 50000 Polygons
+Read 10000 Vertices
+Read 20000 Vertices
+Read 30000 Vertices
+Read 40000 Vertices
+Read 50000 Vertices
+Read 60000 Vertices
+Read 70000 Vertices
+Read 80000 Vertices
+Read 10000 Polygons
+Read 20000 Polygons
+Read 10000 Vertices
+Read 20000 Vertices
+Read 30000 Vertices
+Read 40000 Vertices
+Read 50000 Vertices
+Read 60000 Vertices
+Read 10000 Polygons
+Read 20000 Polygons
+GLASSALPHA name=Fuselage_0_6 alpha=42
+GLASSALPHA name=Cockpit_cover_6_31 alpha=42
+Read 10000 Vertices
+Read 20000 Vertices
+Read 30000 Vertices
+Read 40000 Vertices
+Read 50000 Vertices
+Read 60000 Vertices
+Read 70000 Vertices
+Read 80000 Vertices
+Read 90000 Vertices
+Read 100000 Vertices
+Read 110000 Vertices
+Read 120000 Vertices
+Read 130000 Vertices
+Read 140000 Vertices
+Read 150000 Vertices
+Read 160000 Vertices
+Read 10000 Polygons
+Read 20000 Polygons
+Read 30000 Polygons
+Read 40000 Polygons
+Read 50000 Polygons
+GLASSALPHA name=Fuselage_0_6 alpha=42
+GLASSALPHA name=Cockpit_cover_6_31 alpha=42
+Script>>GUI:CLICK mainDlg flyNow
+>> CLICK mainDlg flyNow
+Script>>WAITFOR:FLYING
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+Set Vertices
+RegisterShell 58175/75
+Done!
+Setting Polygons
+146/146
+Done!
+400 particles / cloud.
+V862BALANCE id=1 speed=180.0000 pitch=0.3149 trim=0.013693 throttle=0.418154
+Script>>FLIGHTCMD:TESTADVANCE .1
+COCKPITLOOK eye=0.0000,1.1800,5.5500 mesh=1
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 -.3 -9.65
+Script>>FLIGHTCMD:LABVIEW 38 -3 50 0
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>REM CAPTURE_READY
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=2.0610 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.7626 throttle=0.418154 ab=0 nozzle=0.650820 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.942934 jetLY=0.942934 jetLZ=0.008848 jetRX=0.942934 jetRY=0.942934 jetRZ=0.008848
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=2.0810 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=2.3300 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.7650 throttle=0.418154 ab=0 nozzle=0.650820 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.942934 jetLY=0.942934 jetLZ=0.008848 jetRX=0.942934 jetRY=0.942934 jetRZ=0.008848
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=2.3500 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=2.5850 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=179.8787 throttle=0.518154 ab=0 nozzle=0.548339 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.926223 jetLY=0.926223 jetLZ=0.011630 jetRX=0.926223 jetRY=0.926223 jetRZ=0.011630
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=2.6240 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=2.8480 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=180.1684 throttle=0.618154 ab=0 nozzle=0.444298 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.909249 jetLY=0.909249 jetLZ=0.014519 jetRX=0.909249 jetRY=0.909249 jetRZ=0.014519
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=2.8680 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=3.0980 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=180.5989 throttle=0.718154 ab=0 nozzle=0.349917 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.893915 jetLY=0.893915 jetLZ=0.017229 jetRX=0.893915 jetRY=0.893915 jetRZ=0.017229
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=3.1180 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=3.3470 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=181.1605 throttle=0.818154 ab=0 nozzle=0.265557 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.880090 jetLY=0.880090 jetLZ=0.019724 jetRX=0.880090 jetRY=0.880090 jetRZ=0.019724
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=3.3660 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=3.6100 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=181.9167 throttle=0.918154 ab=0 nozzle=0.168146 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.864154 jetLY=0.864154 jetLZ=0.022660 jetRX=0.864154 jetRY=0.864154 jetRZ=0.022660
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=3.6300 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=3.8510 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=182.7180 throttle=0.968154 ab=0 nozzle=0.097615 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.852563 jetLY=0.852563 jetLZ=0.024819 jetRX=0.852563 jetRY=0.852563 jetRZ=0.024819
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=3.8720 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.1020 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=183.6450 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=4.1210 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.3490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=184.5583 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=4.3680 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.6060 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=185.5003 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=4.6250 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=4.8450 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=186.3684 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=4.8620 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.0940 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=187.2648 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=5.1140 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.3410 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=188.1457 throttle=1.000000 ab=0 nozzle=0.050000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.845003 jetLY=0.845003 jetLZ=0.026309 jetRX=0.845003 jetRY=0.845003 jetRZ=0.026309
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=5.3590 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.5820 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=189.6008 throttle=1.000000 ab=1 nozzle=0.117500 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.855852 jetLY=0.855852 jetLZ=0.024209 jetRX=0.855852 jetRY=0.855852 jetRZ=0.024209
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=5.6020 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=5.8300 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=191.4601 throttle=1.000000 ab=1 nozzle=0.229100 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.874087 jetLY=0.874087 jetLZ=0.020813 jetRX=0.874087 jetRY=0.874087 jetRZ=0.020813
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=5.8550 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.0870 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=193.3691 throttle=1.000000 ab=1 nozzle=0.344750 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.893062 jetLY=0.893062 jetLZ=0.017381 jetRX=0.893062 jetRY=0.893062 jetRZ=0.017381
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=6.1080 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.3400 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=195.2303 throttle=1.000000 ab=1 nozzle=0.458600 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.911568 jetLY=0.911568 jetLZ=0.014115 jetRX=0.911568 jetRY=0.911568 jetRZ=0.014115
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=6.3620 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.5810 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=196.9862 throttle=1.000000 ab=1 nozzle=0.567050 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.929239 jetLY=0.929239 jetLZ=0.011116 jetRX=0.929239 jetRY=0.929239 jetRZ=0.011116
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=6.6020 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=6.8290 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=198.7756 throttle=1.000000 ab=1 nozzle=0.678650 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.947379 jetLY=0.947379 jetLZ=0.008104 jetRX=0.947379 jetRY=0.947379 jetRZ=0.008104
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=6.8480 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.0770 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=200.5468 throttle=1.000000 ab=1 nozzle=0.790250 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.965671 jetLY=0.965671 jetLZ=0.005204 jetRX=0.965671 jetRY=0.965671 jetRZ=0.005204
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=7.0990 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.3250 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=202.2997 throttle=1.000000 ab=1 nozzle=0.901850 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.983912 jetLY=0.983912 jetLZ=0.002391 jetRX=0.983912 jetRY=0.983912 jetRZ=0.002391
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=7.3460 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.5720 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=204.0268 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=7.5880 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=7.8140 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=205.7009 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=7.8310 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.0680 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=207.4383 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=8.0830 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.3130 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=209.0949 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=8.3340 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.5710 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=210.8189 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=8.5920 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=8.8180 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=212.4492 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=8.8400 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.0780 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=214.1438 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=9.0980 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.3280 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=214.8273 throttle=1.000000 ab=0 nozzle=0.896500 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.983033 jetLY=0.983033 jetLZ=0.002523 jetRX=0.983033 jetRY=0.983033 jetRZ=0.002523
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=9.3550 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.5990 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=215.4677 throttle=1.000000 ab=0 nozzle=0.774550 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.963119 jetLY=0.963119 jetLZ=0.005606 jetRX=0.963119 jetRY=0.963119 jetRZ=0.005606
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=9.6190 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=9.8490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=216.4134 throttle=1.000000 ab=1 nozzle=0.743950 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.958118 jetLY=0.958118 jetLZ=0.006391 jetRX=0.958118 jetRY=0.958118 jetRZ=0.006391
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=9.8680 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.1130 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=218.0698 throttle=1.000000 ab=1 nozzle=0.862750 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.977507 jetLY=0.977507 jetLZ=0.003362 jetRX=0.977507 jetRY=0.977507 jetRZ=0.003362
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=10.1330 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.3680 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=219.6478 throttle=1.000000 ab=1 nozzle=0.977500 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.996355 jetLY=0.996355 jetLZ=0.000540 jetRX=0.996355 jetRY=0.996355 jetRZ=0.000540
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=10.3900 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.6320 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=221.2585 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=10.6510 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=10.8780 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=222.7383 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=10.8980 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.1300 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=224.2331 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=11.1520 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.3940 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=225.7762 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=11.4150 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.6490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=227.2441 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=11.6700 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=11.9130 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=228.7405 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=11.9390 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.1760 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=230.2076 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=12.1940 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.4290 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=231.5965 throttle=1.000000 ab=1 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=12.4490 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.6800 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.6380 throttle=1.000000 ab=0 nozzle=0.964900 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.994314 jetLY=0.994314 jetLZ=0.000843 jetRX=0.994314 jetRY=0.994314 jetRZ=0.000843
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=12.6990 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=12.9250 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.8644 throttle=0.900000 ab=0 nozzle=0.854650 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.976181 jetLY=0.976181 jetLZ=0.003563 jetRX=0.976181 jetRY=0.976181 jetRZ=0.003563
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=12.9430 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.1710 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.9166 throttle=0.800000 ab=0 nozzle=0.743950 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.958118 jetLY=0.958118 jetLZ=0.006391 jetRX=0.958118 jetRY=0.958118 jetRZ=0.006391
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=13.1920 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.4260 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.7968 throttle=0.700000 ab=0 nozzle=0.629200 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.939365 jetLY=0.939365 jetLZ=0.009427 jetRX=0.939365 jetRY=0.939365 jetRZ=0.009427
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=13.4450 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.6780 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.4974 throttle=0.600000 ab=0 nozzle=0.515800 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.920866 jetLY=0.920866 jetLZ=0.012525 jetRX=0.920866 jetRY=0.920866 jetRZ=0.012525
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=13.7000 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=13.9350 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=232.0268 throttle=0.500000 ab=0 nozzle=0.558324 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.927835 jetLY=0.927835 jetLZ=0.011355 jetRX=0.927835 jetRY=0.927835 jetRZ=0.011355
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=13.9540 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.1770 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=231.4079 throttle=0.400000 ab=0 nozzle=0.666654 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.945463 jetLY=0.945463 jetLZ=0.008425 jetRX=0.945463 jetRY=0.945463 jetRZ=0.008425
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=14.2020 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.4380 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=230.5695 throttle=0.300000 ab=0 nozzle=0.772826 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.962838 jetLY=0.962838 jetLZ=0.005650 jetRX=0.962838 jetRY=0.962838 jetRZ=0.005650
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=14.4590 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.6970 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=229.5511 throttle=0.200000 ab=0 nozzle=0.876087 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.979691 jetLY=0.979691 jetLZ=0.003030 jetRX=0.979691 jetRY=0.979691 jetRZ=0.003030
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=14.7180 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=14.9510 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=228.3822 throttle=0.062000 ab=0 nozzle=0.987898 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=0.998040 jetLY=0.998040 jetLZ=0.000291 jetRX=0.998040 jetRY=0.998040 jetRZ=0.000291
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=14.9700 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.1830 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=227.1732 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=15.2240 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.5030 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=225.4568 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=15.5290 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=15.7630 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=224.0688 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=15.7840 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=16.0020 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=222.7981 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=16.0270 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=16.2490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=221.4902 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=16.2740 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=16.5200 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=220.0615 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=16.5410 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=16.7720 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=218.7389 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=16.7900 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.0140 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=217.4743 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=17.0330 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.2440 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=216.2775 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=17.2710 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.4880 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=215.0133 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=17.5080 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.7350 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=213.7393 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=17.7560 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=17.9860 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=212.4507 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=18.0090 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=18.2310 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=211.1989 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=18.2510 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=18.4780 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=209.9428 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=18.5000 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=18.7300 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=208.6677 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=18.7530 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=18.9900 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=207.3588 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=19.0090 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.2380 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=206.1167 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=19.2570 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.4780 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=204.9209 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=19.4980 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.7330 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=203.6569 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=19.7520 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=19.9740 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=202.4687 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=19.9940 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.2310 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=201.2086 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=20.2510 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.4710 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=200.0383 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=20.4910 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.7110 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=198.8744 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=20.7310 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=20.9550 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=197.6978 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=20.9750 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=21.1980 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=196.5326 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=21.2180 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=21.4420 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=195.3695 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=21.4620 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=21.6940 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=194.1756 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=21.7130 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>FLIGHTCMD:MODELCHECK
+MODELCHECK t=21.9490 gear=0.000000 flap=0.000000 elevator=0.000000 aileron=0.000000 rudder=0.000000 canopy=0.000000 spoiler=0.000000 renderGear=-1.000000 renderCanopy=-1.000000 active=1 speed=192.9751 throttle=0.000000 ab=0 nozzle=1.000000 intake=0.000000 louvers=0.000000 diagnostic=0 jetLX=1.000000 jetLY=1.000000 jetLZ=0.000000 jetRX=1.000000 jetRY=1.000000 jetRZ=0.000000
+Script>>FLIGHTCMD:ARMAMENTCHECK
+ARMAMENTCHECK time=21.9680 aim9=0 aim9x=0 aim120=0 choice=0 ready=1 active=1
+Script>>SLEEP:200
+Script>>BTNFUNC:PAUSESIMULATION
+Script>>BTNFUNC:COCKPITVIEW
+Script>>FLIGHTCMD:LABAIM 0 -.3 -9.65
+Script>>FLIGHTCMD:LABVIEW 0 -3 34 0
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>BTNFUNC:VIEWZOOM
+Script>>REM FINAL_engine-idle
+Script>>SLEEP:5000
+X connection to :189 broken (explicit kill or server shutdown).
+X connection to :189 broken (explicit kill or server shutdown).

@@ -1,0 +1,12 @@
+{
+  "stable5": {
+    "path": "/workspace/ysflight-dev/active-su30sm-test5-intake-fix/runtime/aircraft/su30sm.dnm",
+    "sha256": "17ddccbe820b4220463d2b4303f36460cb5effc7aa10973c7693dc1d1a68a504",
+    "unchanged": true
+  },
+  "previousGearBays": {
+    "path": "/workspace/ysflight-dev/su30sm-gear-bays-repair/runtime/aircraft/su30sm.dnm",
+    "sha256": "08e5e8fc66098f87cd926526cf508e92d39848888c487d425a7213829465e5b4",
+    "unchanged": true
+  }
+}

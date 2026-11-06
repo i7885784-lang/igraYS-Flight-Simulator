@@ -1,0 +1,77 @@
+[
+  {
+    "name": "rear",
+    "before": "captures/before-ground/rear.png",
+    "after": "captures/after-ground/rear.png"
+  },
+  {
+    "name": "rear-quarter",
+    "before": "captures/before-ground/rear-quarter.png",
+    "after": "captures/after-ground/rear-quarter.png"
+  },
+  {
+    "name": "main-gap",
+    "before": "captures/before-ground/main-gap.png",
+    "after": "captures/after-ground/main-gap.png"
+  },
+  {
+    "name": "nose-gap",
+    "before": "captures/before-ground/nose-gap.png",
+    "after": "captures/after-ground/nose-gap.png"
+  },
+  {
+    "name": "canopy-open",
+    "before": "captures/before-ground/canopy-open.png",
+    "after": "captures/after-ground/canopy-open.png"
+  },
+  {
+    "name": "front",
+    "before": "captures/before-ground/front.png",
+    "after": "captures/after-ground/front.png"
+  },
+  {
+    "name": "side",
+    "before": "captures/before-ground/side.png",
+    "after": "captures/after-ground/side.png"
+  },
+  {
+    "name": "rear-bottom",
+    "before": "captures/before-bottom/rear-bottom.png",
+    "after": "captures/after-bottom/rear-bottom.png"
+  },
+  {
+    "name": "centre-bottom",
+    "before": "captures/before-bottom/centre-bottom.png",
+    "after": "captures/after-bottom/centre-bottom.png"
+  },
+  {
+    "name": "gear-mid",
+    "before": "captures/before-bottom/gear-mid.png",
+    "after": "captures/after-bottom/gear-mid.png"
+  },
+  {
+    "name": "main-mid",
+    "before": "captures/before-bottom/main-mid.png",
+    "after": "captures/after-bottom/main-mid.png"
+  },
+  {
+    "name": "brake-040",
+    "before": "captures/before-brake/brake-040.png",
+    "after": "captures/after-brake/brake-040.png"
+  },
+  {
+    "name": "engine-idle-rear",
+    "before": "captures/before-engine/engine-idle-rear.png",
+    "after": "captures/after-engine/engine-idle-rear.png"
+  },
+  {
+    "name": "plume-wide",
+    "before": "captures/before-engine/plume-wide.png",
+    "after": "captures/after-engine/plume-wide.png"
+  },
+  {
+    "name": "plume-narrow",
+    "before": "captures/before-engine/plume-narrow.png",
+    "after": "captures/after-engine/plume-narrow.png"
+  }
+]
