@@ -1,0 +1,659 @@
+{
+  "-1": {
+    "first_hit_counts": {
+      "Fuselage_0_4": 32,
+      "IntakeDuct_-1": 6,
+      "Fuselage_0_7": 7,
+      "GearWell_Left": 1
+    },
+    "rays": [
+      {
+        "x": -1.45,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.46602,
+        "tri_index": 3675
+      },
+      {
+        "x": -1.45,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.15324,
+        "tri_index": 3424
+      },
+      {
+        "x": -1.45,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.21782,
+        "tri_index": 3533
+      },
+      {
+        "x": -1.45,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.58239,
+        "tri_index": 3524
+      },
+      {
+        "x": -1.36,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.75516,
+        "tri_index": 4453
+      },
+      {
+        "x": -1.36,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.14154,
+        "tri_index": 4752
+      },
+      {
+        "x": -1.36,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.02693,
+        "tri_index": 4727
+      },
+      {
+        "x": -1.36,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.11624,
+        "tri_index": 4336
+      },
+      {
+        "x": -1.36,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.65509,
+        "tri_index": 4263
+      },
+      {
+        "x": -1.36,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.95041,
+        "tri_index": 4238
+      },
+      {
+        "x": -1.36,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.92001,
+        "tri_index": 4238
+      },
+      {
+        "x": -1.27,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.0201,
+        "tri_index": 5638
+      },
+      {
+        "x": -1.27,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.81944,
+        "tri_index": 5676
+      },
+      {
+        "x": -1.27,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.90028,
+        "tri_index": 5712
+      },
+      {
+        "x": -1.27,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.87464,
+        "tri_index": 5792
+      },
+      {
+        "x": -1.27,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.60894,
+        "tri_index": 5802
+      },
+      {
+        "x": -1.27,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.38385,
+        "tri_index": 5741
+      },
+      {
+        "x": -1.27,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.38833,
+        "tri_index": 5589
+      },
+      {
+        "x": -1.18,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.82578,
+        "tri_index": 6454
+      },
+      {
+        "x": -1.18,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.98986,
+        "tri_index": 6490
+      },
+      {
+        "x": -1.18,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.1192,
+        "tri_index": 72
+      },
+      {
+        "x": -1.18,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.115,
+        "tri_index": 86
+      },
+      {
+        "x": -1.18,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91754,
+        "tri_index": 6637
+      },
+      {
+        "x": -1.18,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.98709,
+        "tri_index": 6636
+      },
+      {
+        "x": -1.18,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.86589,
+        "tri_index": 6471
+      },
+      {
+        "x": -1.09,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91461,
+        "tri_index": 7316
+      },
+      {
+        "x": -1.09,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 103
+      },
+      {
+        "x": -1.09,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.02524,
+        "tri_index": 2626
+      },
+      {
+        "x": -1.09,
+        "y": -0.54,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.10525,
+        "tri_index": 3091
+      },
+      {
+        "x": -1.09,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.13835,
+        "tri_index": 3153
+      },
+      {
+        "x": -1.09,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.13479,
+        "tri_index": 3391
+      },
+      {
+        "x": -1.09,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.58342,
+        "tri_index": 7236
+      },
+      {
+        "x": -1.0,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91238,
+        "tri_index": 8230
+      },
+      {
+        "x": -1.0,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 121
+      },
+      {
+        "x": -1.0,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.00783,
+        "tri_index": 5954
+      },
+      {
+        "x": -1.0,
+        "y": -0.54,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.08472,
+        "tri_index": 7097
+      },
+      {
+        "x": -1.0,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.99053,
+        "tri_index": 8277
+      },
+      {
+        "x": -1.0,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.71709,
+        "tri_index": 8334
+      },
+      {
+        "x": -1.0,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.51063,
+        "tri_index": 7113
+      },
+      {
+        "x": -0.91,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.81889,
+        "tri_index": 9456
+      },
+      {
+        "x": -0.91,
+        "y": -0.7333,
+        "first_node": "GearWell_Left",
+        "hit_z": -0.58622,
+        "tri_index": 2693
+      },
+      {
+        "x": -0.91,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 136
+      },
+      {
+        "x": -0.91,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 143
+      },
+      {
+        "x": -0.91,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_7",
+        "hit_z": -1.12723,
+        "tri_index": 11864
+      },
+      {
+        "x": -0.91,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.9879,
+        "tri_index": 9397
+      },
+      {
+        "x": -0.91,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.22466,
+        "tri_index": 8322
+      }
+    ]
+  },
+  "1": {
+    "first_hit_counts": {
+      "Fuselage_0_4": 35,
+      "GearWell_Right": 1,
+      "IntakeDuct_1": 8,
+      "Fuselage_0_13": 1
+    },
+    "rays": [
+      {
+        "x": 0.91,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.81889,
+        "tri_index": 22447
+      },
+      {
+        "x": 0.91,
+        "y": -0.7333,
+        "first_node": "GearWell_Right",
+        "hit_z": -0.59209,
+        "tri_index": 174
+      },
+      {
+        "x": 0.91,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 12
+      },
+      {
+        "x": 0.91,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": 0.91,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.90847,
+        "tri_index": 22401
+      },
+      {
+        "x": 0.91,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.9879,
+        "tri_index": 22396
+      },
+      {
+        "x": 0.91,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.22466,
+        "tri_index": 20212
+      },
+      {
+        "x": 1.0,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91238,
+        "tri_index": 23775
+      },
+      {
+        "x": 1.0,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 28
+      },
+      {
+        "x": 1.0,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 20
+      },
+      {
+        "x": 1.0,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": 1.0,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.99053,
+        "tri_index": 23643
+      },
+      {
+        "x": 1.0,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.71709,
+        "tri_index": 23520
+      },
+      {
+        "x": 1.0,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.51063,
+        "tri_index": 23720
+      },
+      {
+        "x": 1.09,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91461,
+        "tri_index": 24823
+      },
+      {
+        "x": 1.09,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 31
+      },
+      {
+        "x": 1.09,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.11891,
+        "tri_index": 52
+      },
+      {
+        "x": 1.09,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.99484,
+        "tri_index": 24770
+      },
+      {
+        "x": 1.09,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.71803,
+        "tri_index": 24834
+      },
+      {
+        "x": 1.09,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.58342,
+        "tri_index": 24853
+      },
+      {
+        "x": 1.18,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.82578,
+        "tri_index": 25822
+      },
+      {
+        "x": 1.18,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.98986,
+        "tri_index": 25710
+      },
+      {
+        "x": 1.18,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.1192,
+        "tri_index": 72
+      },
+      {
+        "x": 1.18,
+        "y": -0.54,
+        "first_node": "Fuselage_0_13",
+        "hit_z": -1.12554,
+        "tri_index": 2596
+      },
+      {
+        "x": 1.18,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.91754,
+        "tri_index": 25803
+      },
+      {
+        "x": 1.18,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.98709,
+        "tri_index": 25678
+      },
+      {
+        "x": 1.18,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.86589,
+        "tri_index": 25771
+      },
+      {
+        "x": 1.27,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.0201,
+        "tri_index": 26978
+      },
+      {
+        "x": 1.27,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.81944,
+        "tri_index": 26771
+      },
+      {
+        "x": 1.27,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.90028,
+        "tri_index": 26761
+      },
+      {
+        "x": 1.27,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.87464,
+        "tri_index": 26709
+      },
+      {
+        "x": 1.27,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.60894,
+        "tri_index": 26839
+      },
+      {
+        "x": 1.27,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.38385,
+        "tri_index": 26846
+      },
+      {
+        "x": 1.27,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.38833,
+        "tri_index": 26861
+      },
+      {
+        "x": 1.36,
+        "y": -0.83,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.75516,
+        "tri_index": 28266
+      },
+      {
+        "x": 1.36,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.14154,
+        "tri_index": 28137
+      },
+      {
+        "x": 1.36,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -1.02693,
+        "tri_index": 28305
+      },
+      {
+        "x": 1.36,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.11626,
+        "tri_index": 28380
+      },
+      {
+        "x": 1.36,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.65508,
+        "tri_index": 27632
+      },
+      {
+        "x": 1.36,
+        "y": -0.3467,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.9504,
+        "tri_index": 27007
+      },
+      {
+        "x": 1.36,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -0.92,
+        "tri_index": 27007
+      },
+      {
+        "x": 1.45,
+        "y": -0.7333,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.46602,
+        "tri_index": 29174
+      },
+      {
+        "x": 1.45,
+        "y": -0.6367,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.15324,
+        "tri_index": 29540
+      },
+      {
+        "x": 1.45,
+        "y": -0.54,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.21782,
+        "tri_index": 29473
+      },
+      {
+        "x": 1.45,
+        "y": -0.4433,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -2.58239,
+        "tri_index": 29629
+      }
+    ]
+  }
+}

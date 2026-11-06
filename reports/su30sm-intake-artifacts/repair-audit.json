@@ -1,0 +1,72 @@
+{
+  "Fuselage_0_4": {
+    "source_faces": 51844,
+    "untouched_face_blocks_exact": 46762,
+    "clipped_or_removed_face_blocks": 5082,
+    "replacement_triangles": 2710,
+    "removed_triangle_instance_area_m2": 16.371186376073165,
+    "cut_front_z_m": -1.25,
+    "cut_back_z_m": -3.1,
+    "all_original_vertices_preserved": true,
+    "all_colors_and_brightness_preserved": true,
+    "original_frame_outside_passage_preserved": true
+  },
+  "Fuselage_0_7": {
+    "source_faces": 27194,
+    "untouched_face_blocks_exact": 120,
+    "clipped_or_removed_face_blocks": 27074,
+    "replacement_triangles": 0,
+    "removed_triangle_instance_area_m2": 0.3023097473606086,
+    "cut_front_z_m": -0.39,
+    "cut_back_z_m": -3.1,
+    "all_original_vertices_preserved": true,
+    "all_colors_and_brightness_preserved": true,
+    "original_frame_outside_passage_preserved": true
+  },
+  "Fuselage_0_13": {
+    "source_faces": 21306,
+    "untouched_face_blocks_exact": 128,
+    "clipped_or_removed_face_blocks": 21178,
+    "replacement_triangles": 0,
+    "removed_triangle_instance_area_m2": 0.05214856482373576,
+    "cut_front_z_m": -0.39,
+    "cut_back_z_m": -3.1,
+    "all_original_vertices_preserved": true,
+    "all_colors_and_brightness_preserved": true,
+    "original_frame_outside_passage_preserved": true
+  },
+  "GearWell_Left": {
+    "source_faces": 2868,
+    "untouched_face_blocks_exact": 2656,
+    "clipped_or_removed_face_blocks": 212,
+    "replacement_triangles": 538,
+    "removed_triangle_instance_area_m2": 1.2753149339314276,
+    "cut_front_z_m": -0.39,
+    "cut_back_z_m": -3.1,
+    "all_original_vertices_preserved": true,
+    "all_colors_and_brightness_preserved": true,
+    "original_frame_outside_passage_preserved": true
+  },
+  "GearWell_Right": {
+    "source_faces": 2865,
+    "untouched_face_blocks_exact": 2654,
+    "clipped_or_removed_face_blocks": 211,
+    "replacement_triangles": 533,
+    "removed_triangle_instance_area_m2": 1.2784587143640902,
+    "cut_front_z_m": -0.39,
+    "cut_back_z_m": -3.1,
+    "all_original_vertices_preserved": true,
+    "all_colors_and_brightness_preserved": true,
+    "original_frame_outside_passage_preserved": true
+  },
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "Fuselage_0_7.srf",
+    "Fuselage_0_13.srf",
+    "GearWell_Left.srf",
+    "GearWell_Right.srf"
+  ],
+  "all_nodes_and_animation_states_exact": true,
+  "all_other_packs_exact": true,
+  "model_sha256": "032ac0014a614d57481d3038f90e5b873d8a898d530cd25554dd633543eb50f3"
+}

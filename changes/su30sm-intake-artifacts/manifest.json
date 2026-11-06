@@ -1,0 +1,20 @@
+{
+  "baseline_sha256": "1a10d466acf32d9647ee7fe2963b47419b94d44f34ed32229544eb72ad1bb032",
+  "model_sha256": "032ac0014a614d57481d3038f90e5b873d8a898d530cd25554dd633543eb50f3",
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "Fuselage_0_7.srf",
+    "Fuselage_0_13.srf",
+    "GearWell_Left.srf",
+    "GearWell_Right.srf"
+  ],
+  "all_nodes_states_parents_exact": true,
+  "no_added_packs_nodes": true,
+  "patch_sha256": {
+    "Fuselage_0_4.srf": "09fdec6636bc08be94f660becd2ac9f999f9d35036466cd046dc97a32d4a23b4",
+    "Fuselage_0_7.srf": "158cd70e82a037a7cff46342e77d98d35683fd6484b5fb38182b972e393a0e27",
+    "Fuselage_0_13.srf": "0194c5231ce4b721dd78d1976b948f83082c09640d2ec59fb3d596dfeb2cfb3a",
+    "GearWell_Left.srf": "4288be55fd79511e7ef7a08160365f4fc6fb86f04ea603a95cd24fe57d1bb661",
+    "GearWell_Right.srf": "2e97953bc13192bc0546ef28657266262a67b3ae1533b71f3c96abb0600d5e9c"
+  }
+}

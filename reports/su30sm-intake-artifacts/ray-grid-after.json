@@ -1,0 +1,494 @@
+{
+  "-1": {
+    "first_hit_counts": {
+      "IntakeDuct_-1": 33,
+      "Fuselage_0_4": 1
+    },
+    "rays": [
+      {
+        "x": -1.45,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 12
+      },
+      {
+        "x": -1.45,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": -1.45,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 16
+      },
+      {
+        "x": -1.36,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 28
+      },
+      {
+        "x": -1.36,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 20
+      },
+      {
+        "x": -1.36,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": -1.36,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 25
+      },
+      {
+        "x": -1.36,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 32
+      },
+      {
+        "x": -1.36,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -3.10706,
+        "tri_index": 4793
+      },
+      {
+        "x": -1.27,
+        "y": -0.83,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 45
+      },
+      {
+        "x": -1.27,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 31
+      },
+      {
+        "x": -1.27,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.11891,
+        "tri_index": 52
+      },
+      {
+        "x": -1.27,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 51
+      },
+      {
+        "x": -1.27,
+        "y": -0.25,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 48
+      },
+      {
+        "x": -1.18,
+        "y": -0.83,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 65
+      },
+      {
+        "x": -1.18,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 65
+      },
+      {
+        "x": -1.18,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.1192,
+        "tri_index": 72
+      },
+      {
+        "x": -1.18,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.115,
+        "tri_index": 88
+      },
+      {
+        "x": -1.18,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.1192,
+        "tri_index": 73
+      },
+      {
+        "x": -1.18,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 93
+      },
+      {
+        "x": -1.18,
+        "y": -0.25,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 93
+      },
+      {
+        "x": -1.09,
+        "y": -0.83,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 104
+      },
+      {
+        "x": -1.09,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 103
+      },
+      {
+        "x": -1.09,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.11891,
+        "tri_index": 91
+      },
+      {
+        "x": -1.09,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 114
+      },
+      {
+        "x": -1.09,
+        "y": -0.25,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 101
+      },
+      {
+        "x": -1.0,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 121
+      },
+      {
+        "x": -1.0,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 128
+      },
+      {
+        "x": -1.0,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 143
+      },
+      {
+        "x": -1.0,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 123
+      },
+      {
+        "x": -1.0,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 117
+      },
+      {
+        "x": -0.91,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 136
+      },
+      {
+        "x": -0.91,
+        "y": -0.54,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 143
+      },
+      {
+        "x": -0.91,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_-1",
+        "hit_z": -3.12,
+        "tri_index": 132
+      }
+    ]
+  },
+  "1": {
+    "first_hit_counts": {
+      "IntakeDuct_1": 33,
+      "Fuselage_0_4": 1
+    },
+    "rays": [
+      {
+        "x": 0.91,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 12
+      },
+      {
+        "x": 0.91,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": 0.91,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 16
+      },
+      {
+        "x": 1.0,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 28
+      },
+      {
+        "x": 1.0,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 20
+      },
+      {
+        "x": 1.0,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 9
+      },
+      {
+        "x": 1.0,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 24
+      },
+      {
+        "x": 1.0,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 32
+      },
+      {
+        "x": 1.09,
+        "y": -0.83,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 44
+      },
+      {
+        "x": 1.09,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 31
+      },
+      {
+        "x": 1.09,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.11891,
+        "tri_index": 52
+      },
+      {
+        "x": 1.09,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 51
+      },
+      {
+        "x": 1.09,
+        "y": -0.25,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 48
+      },
+      {
+        "x": 1.18,
+        "y": -0.83,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 65
+      },
+      {
+        "x": 1.18,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 65
+      },
+      {
+        "x": 1.18,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.1192,
+        "tri_index": 72
+      },
+      {
+        "x": 1.18,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.115,
+        "tri_index": 70
+      },
+      {
+        "x": 1.18,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.1192,
+        "tri_index": 73
+      },
+      {
+        "x": 1.18,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 93
+      },
+      {
+        "x": 1.18,
+        "y": -0.25,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 93
+      },
+      {
+        "x": 1.27,
+        "y": -0.83,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 104
+      },
+      {
+        "x": 1.27,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 103
+      },
+      {
+        "x": 1.27,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.11891,
+        "tri_index": 91
+      },
+      {
+        "x": 1.27,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 114
+      },
+      {
+        "x": 1.27,
+        "y": -0.25,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 101
+      },
+      {
+        "x": 1.36,
+        "y": -0.7333,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 121
+      },
+      {
+        "x": 1.36,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 128
+      },
+      {
+        "x": 1.36,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 145
+      },
+      {
+        "x": 1.36,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 123
+      },
+      {
+        "x": 1.36,
+        "y": -0.3467,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 117
+      },
+      {
+        "x": 1.36,
+        "y": -0.25,
+        "first_node": "Fuselage_0_4",
+        "hit_z": -3.10706,
+        "tri_index": 27301
+      },
+      {
+        "x": 1.45,
+        "y": -0.6367,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 136
+      },
+      {
+        "x": 1.45,
+        "y": -0.54,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 145
+      },
+      {
+        "x": 1.45,
+        "y": -0.4433,
+        "first_node": "IntakeDuct_1",
+        "hit_z": -3.12,
+        "tri_index": 132
+      }
+    ]
+  }
+}
