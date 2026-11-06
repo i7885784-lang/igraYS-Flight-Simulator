@@ -1,0 +1,24 @@
+{
+  "all_assets_download_sha_verified": true,
+  "all_zip_crc_verified": true,
+  "exact_source_rebuild_from_downloaded_archive": true,
+  "model_only": true,
+  "assets": [
+    {
+      "name": "Su30SM_IntakeSeal_Model_Report.zip",
+      "sha256": "714e61f8e823dacd0276365c9c0170673f434ddf86061821d873c19fa3df4a9f"
+    },
+    {
+      "name": "Su30SM_IntakeSeal_Photos_Video.zip",
+      "sha256": "38bd637a63d18b84a9b4584a9353e278d7f0c712f26d4d69f367d88f230831cc"
+    },
+    {
+      "name": "Su30SM_IntakeSeal_Report_RU.pdf",
+      "sha256": "22cb1bb6e0388c782c35e1bfa8f0d58ae614cfc8cacad40eeb678e36fff28b73"
+    },
+    {
+      "name": "intake-camera-sweep.mp4",
+      "sha256": "e58db3959ccedd32fd5394bd578bf9639d90c58b9e7646e91a40db417eeec366"
+    }
+  ]
+}
