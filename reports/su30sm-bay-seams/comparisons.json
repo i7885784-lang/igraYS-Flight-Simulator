@@ -1,0 +1,97 @@
+[
+  {
+    "id": "bottom-bottom-down",
+    "before": "images/before/bottom-bottom-down.png",
+    "after": "images/after/bottom-bottom-down.png"
+  },
+  {
+    "id": "bottom-bottom-up",
+    "before": "images/before/bottom-bottom-up.png",
+    "after": "images/after/bottom-bottom-up.png"
+  },
+  {
+    "id": "bottom-main-left-down",
+    "before": "images/before/bottom-main-left-down.png",
+    "after": "images/after/bottom-main-left-down.png"
+  },
+  {
+    "id": "bottom-main-left-up",
+    "before": "images/before/bottom-main-left-up.png",
+    "after": "images/after/bottom-main-left-up.png"
+  },
+  {
+    "id": "bottom-main-right-down",
+    "before": "images/before/bottom-main-right-down.png",
+    "after": "images/after/bottom-main-right-down.png"
+  },
+  {
+    "id": "bottom-main-right-up",
+    "before": "images/before/bottom-main-right-up.png",
+    "after": "images/after/bottom-main-right-up.png"
+  },
+  {
+    "id": "bottom-nose-down",
+    "before": "images/before/bottom-nose-down.png",
+    "after": "images/after/bottom-nose-down.png"
+  },
+  {
+    "id": "bottom-nose-up",
+    "before": "images/before/bottom-nose-up.png",
+    "after": "images/after/bottom-nose-up.png"
+  },
+  {
+    "id": "mid-main-left-mid",
+    "before": "images/before/mid-main-left-mid.png",
+    "after": "images/after/mid-main-left-mid.png"
+  },
+  {
+    "id": "mid-main-right-mid",
+    "before": "images/before/mid-main-right-mid.png",
+    "after": "images/after/mid-main-right-mid.png"
+  },
+  {
+    "id": "mid-nose-mid",
+    "before": "images/before/mid-nose-mid.png",
+    "after": "images/after/mid-nose-mid.png"
+  },
+  {
+    "id": "ground-front-close",
+    "before": "images/before/ground-front-close.png",
+    "after": "images/after/ground-front-close.png"
+  },
+  {
+    "id": "ground-front-left",
+    "before": "images/before/ground-front-left.png",
+    "after": "images/after/ground-front-left.png"
+  },
+  {
+    "id": "ground-front-right",
+    "before": "images/before/ground-front-right.png",
+    "after": "images/after/ground-front-right.png"
+  },
+  {
+    "id": "ground-front",
+    "before": "images/before/ground-front.png",
+    "after": "images/after/ground-front.png"
+  },
+  {
+    "id": "ground-rear",
+    "before": "images/before/ground-rear.png",
+    "after": "images/after/ground-rear.png"
+  },
+  {
+    "id": "ground-side-left",
+    "before": "images/before/ground-side-left.png",
+    "after": "images/after/ground-side-left.png"
+  },
+  {
+    "id": "ground-side-right",
+    "before": "images/before/ground-side-right.png",
+    "after": "images/after/ground-side-right.png"
+  },
+  {
+    "id": "ground-top",
+    "before": "images/before/ground-top.png",
+    "after": "images/after/ground-top.png"
+  }
+]

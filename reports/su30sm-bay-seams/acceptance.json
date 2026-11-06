@@ -1,0 +1,23 @@
+{
+  "model_sha256": "ea3d9ced56a637c5a81c75b4acd2641f35902397149e72b495cfebe5196f0a53",
+  "matched_pairs": 19,
+  "videos": 4,
+  "architectures": {
+    "32": {
+      "exe": "ysflight32_gl1.exe",
+      "machine": "0x14c",
+      "sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "native_game_cycle_verified": false
+    },
+    "64": {
+      "exe": "ysflight64_gl1.exe",
+      "machine": "0x8664",
+      "sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "native_game_cycle_verified": true
+    }
+  },
+  "x86_attempt": "Wine WoW64 exits -11 before game log startup; not a successful launch.",
+  "new_collision_pair_poses": 0,
+  "inherited_collision_pair_poses": 4426,
+  "no_claim_all_defects_fixed": true
+}

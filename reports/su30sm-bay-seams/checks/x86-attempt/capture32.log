@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/ysflight-dev/su30sm-bay-seams/capture.py", line 108, in <module>
+    wait('Script>>SLEEP:8000')
+  File "/workspace/ysflight-dev/su30sm-bay-seams/capture.py", line 91, in wait
+    if game.poll() is not None:raise RuntimeError('Game exited '+str(game.returncode)+'\n'+t[-1500:])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Game exited -11
+

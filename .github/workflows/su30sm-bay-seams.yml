@@ -1,0 +1,29 @@
+name: Su30SM bay seams separate Windows x86 and x64
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  deliver:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-bay-seams
+            changes/su30sm-dark-channel
+            reports/su30sm-bay-seams
+            reports/su30sm-intake-artifacts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r changes/su30sm-bay-seams/requirements.txt
+      - run: python changes/su30sm-bay-seams/deliver.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ inputs.release_id }}
