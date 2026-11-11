@@ -1,0 +1,8 @@
+{
+  "downloaded_sources_raw_generator_result_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+  "byte_exact_to_validated_model": true,
+  "github_actions_run": 43080950281,
+  "source_code_files_exact": 22,
+  "release_download_sha_crc_pe_checks": "passed",
+  "repository_fallback_download_sha_crc_pe_checks": "passed"
+}

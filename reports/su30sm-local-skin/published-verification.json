@@ -1,0 +1,24 @@
+[
+  {
+    "file": "Su30SM_LocalSkin_Windows_x86.zip",
+    "sha256": "dcd8bbe5abbc5eef5c379412092eecbc064b521ddc4a64f64898d1532dc7655f",
+    "zip_crc_passed": true,
+    "PE_machine": "0x14c",
+    "model_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+    "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7"
+  },
+  {
+    "file": "Su30SM_LocalSkin_Windows_x64.zip",
+    "sha256": "55b1287a4e2bd2979e3f69e2b76bc79e1aacfb88b41080435f393bb5def7e7b0",
+    "zip_crc_passed": true,
+    "PE_machine": "0x8664",
+    "model_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83"
+  },
+  {
+    "file": "Su30SM_LocalSkin_FullSources.zip",
+    "sha256": "3ea56be22239beca5e49833d5a75085cad4e3faf81afa64a1189639636510011",
+    "zip_crc_passed": true,
+    "legacy_archive_sha256": "569f5eecfff2be77caeeabdb8f63879847eea7ad0b3bd5e70d43f4d48a11028f"
+  }
+]
