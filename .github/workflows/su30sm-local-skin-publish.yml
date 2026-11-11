@@ -1,0 +1,36 @@
+name: Publish validated Su30SM local skin archives
+on:
+  push:
+    branches: [fix/su30sm-local-skin-20261111]
+    paths: [.github/workflows/su30sm-local-skin-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            dist/su30sm-local-skin
+            dist/su30sm-rear-seams
+            changes/su30sm-local-skin
+            changes/su30sm-rear-seams
+            changes/su30sm-black-wells
+            reports/su30sm-local-skin
+      - name: Assemble corresponding sources and validate frozen game archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/su30sm-local-skin/publish.py
+      - name: Upload to the new draft release only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release upload su30sm-local-skin-20261111
+          dist/su30sm-local-skin/Su30SM_LocalSkin_Windows_x86.zip
+          dist/su30sm-local-skin/Su30SM_LocalSkin_Windows_x64.zip
+          work/delivery/Su30SM_LocalSkin_FullSources.zip
+          work/delivery/SHA256SUMS.txt
+          --repo i7885784-lang/igraYS-Flight-Simulator
