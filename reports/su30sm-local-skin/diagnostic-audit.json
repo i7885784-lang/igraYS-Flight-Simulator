@@ -1,0 +1,64 @@
+{
+  "baseline_commit": "3d463be98234aed309c08e7f5767badf95eea61c",
+  "baseline_model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83",
+  "delivery_model_modified": false,
+  "diagnostic_visibility_probes_only": true,
+  "packs": {
+    "MainBayFixedSkin_Left": {
+      "file": "MainBayFixedSkin_Left.srf",
+      "raw_sha256": "8b638fc314b8bb6bb8b2f70ee220b36b4582d9d8c70f063258eded9ce4f65397",
+      "faces": 4528,
+      "degenerate_polygons_threshold_1e-12": 0,
+      "duplicate_position_polygons_including_reverse_at_1e-7m": 0,
+      "min_normal_winding_dot": 0.9999993460267628
+    },
+    "MainBayFixedSkin_Right": {
+      "file": "MainBayFixedSkin_Right.srf",
+      "raw_sha256": "2e71509611f4823f900f6f29a3d5d9c546f4b4e4372d35cca627874042ca8a90",
+      "faces": 5920,
+      "degenerate_polygons_threshold_1e-12": 0,
+      "duplicate_position_polygons_including_reverse_at_1e-7m": 0,
+      "min_normal_winding_dot": 0.9999366230750806
+    },
+    "MainWheelBayShutter_Left": {
+      "file": "MainWheelBayShutter_Left.srf",
+      "raw_sha256": "4c1a6ff75c33544d1d0cfb759f61614e617743b1f6ca8ad285a272f06bb00f3d",
+      "faces": 46460,
+      "degenerate_polygons_threshold_1e-12": 0,
+      "duplicate_position_polygons_including_reverse_at_1e-7m": 0,
+      "min_normal_winding_dot": 0.9999978581791151
+    },
+    "MainWheelBayShutter_Right": {
+      "file": "MainWheelBayShutter_Right.srf",
+      "raw_sha256": "52adc5fcd1b62bf021c00c5e7fc98cbeb029604c0880f9270859de02746a6c38",
+      "faces": 45748,
+      "degenerate_polygons_threshold_1e-12": 0,
+      "duplicate_position_polygons_including_reverse_at_1e-7m": 0,
+      "min_normal_winding_dot": 0.9999992515266777
+    }
+  },
+  "existing_archives": [
+    {
+      "name": "Su30SM_RearSeams_Windows_32bit.zip",
+      "sha256": "03ccb182e928fce711e8954c626441ae1ba974985267568c1ff941c86aefdf3a",
+      "exe": "runtime/ysflight32_gl1.exe",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "machine": "0x14c",
+      "optional_header_magic": "0x10b",
+      "architecture": "Windows x86 PE32",
+      "zip_crc_error": null,
+      "model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83"
+    },
+    {
+      "name": "Su30SM_RearSeams_Windows_64bit.zip",
+      "sha256": "1a6bf5ac082a3a9a32a2c59ea6e708d1709eef8ce2677c0ae9d4b452fc373306",
+      "exe": "runtime/ysflight64_gl1.exe",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "machine": "0x8664",
+      "optional_header_magic": "0x20b",
+      "architecture": "Windows x64 PE32+",
+      "zip_crc_error": null,
+      "model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83"
+    }
+  ]
+}

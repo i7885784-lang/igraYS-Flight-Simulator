@@ -1,0 +1,6 @@
+before MainBayFixedSkin_Right [-0.48178, -0.47842, -0.36608, None, None, None, -0.01946]
+before MainWheelBayShutter_Right [None, None, None, -0.18768, -0.04659, -0.0396, None]
+before GearDoor_Right_Outer [-0.48178, -0.47842, -0.36609, -0.18768, -0.04659, -0.0396, -0.01946]
+candidate MainBayFixedSkin_Right [-0.48178, -0.47842, -0.36608, None, None, None, -0.01946]
+candidate MainWheelBayShutter_Right [None, None, None, -0.18768, -0.04659, -0.0396, None]
+candidate GearDoor_Right_Outer [-0.48178, -0.47842, -0.36609, -0.18768, -0.04659, -0.0396, -0.01946]

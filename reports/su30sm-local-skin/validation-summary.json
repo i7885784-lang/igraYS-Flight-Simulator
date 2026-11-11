@@ -1,0 +1,28 @@
+{
+  "same_contact_keys": true,
+  "added_contact_keys": 0,
+  "removed_contact_keys": 0,
+  "before_raw_hits": 808,
+  "after_raw_hits": 808,
+  "sampled_gear_positions": 201,
+  "pairs_per_position": 618,
+  "native_cycles": {
+    "before": {
+      "model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83",
+      "passed": true,
+      "state_records": 49,
+      "min_gear": 0.0,
+      "max_gear": 1.0,
+      "last_gear": 0.0
+    },
+    "after": {
+      "model_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+      "passed": true,
+      "state_records": 48,
+      "min_gear": 0.0,
+      "max_gear": 1.0,
+      "last_gear": 0.0
+    }
+  },
+  "reproduction_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6"
+}

@@ -1,0 +1,8088 @@
+{
+  "model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83",
+  "samples": 201,
+  "pairs": 618,
+  "distinct_pose_pairs": 30301,
+  "hits": [
+    {
+      "g": 0.0,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.0,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.0,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.0,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.005,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.005,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.005,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.005,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.01,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.01,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.01,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.01,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.015,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.015,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.015,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.015,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.02,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.02,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.02,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.02,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.025,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.025,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.025,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.025,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.03,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.03,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.03,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.03,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.035,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.035,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.035,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.035,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.04,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.04,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.04,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.04,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.045,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.045,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.045,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.045,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.05,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.05,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.05,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.05,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.055,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.055,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.055,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.055,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.06,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.06,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.06,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.06,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.065,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.065,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.065,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.065,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.07,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.07,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.07,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.07,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.075,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.075,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.075,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.075,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.08,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.08,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.08,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.08,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.085,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.085,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.085,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.085,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.09,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.09,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.09,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.09,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.095,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.095,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.095,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.095,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.1,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.1,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.1,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.1,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.105,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.105,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.105,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.105,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.11,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.11,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.11,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.11,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.115,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.115,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.115,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.115,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.12,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.12,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.12,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.12,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.125,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.125,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.125,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.125,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.13,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.13,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.13,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.13,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.135,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.135,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.135,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.135,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.14,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.14,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.14,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.14,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.145,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.145,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.145,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.145,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.15,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.15,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.15,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.15,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.155,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.155,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.155,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.155,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.16,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.16,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.16,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.16,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.165,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.165,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.165,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.165,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.17,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.17,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.17,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.17,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.175,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.175,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.175,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.175,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.18,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.18,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.18,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.18,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.185,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.185,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.185,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.185,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.19,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.19,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.19,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.19,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.195,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.195,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.195,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.195,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.2,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.2,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.2,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.2,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.205,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.205,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.205,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.205,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.21,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.21,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.21,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.21,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.215,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.215,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.215,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.215,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.22,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.22,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.22,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.22,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.225,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.225,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.225,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.225,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.23,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.23,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.23,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.23,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.235,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.235,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.235,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.235,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.24,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.24,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.24,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.24,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.245,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.245,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.245,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.245,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.25,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.25,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.25,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.25,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.255,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.255,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.255,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.255,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.26,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.26,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.26,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.26,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.265,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.265,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.265,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.265,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.27,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.27,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.27,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.27,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.275,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.275,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.275,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.275,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.28,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.28,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.28,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.28,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.285,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.285,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.285,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.285,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.29,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.29,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.29,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.29,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.295,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.295,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.295,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.295,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.3,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.3,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.3,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.3,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.305,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.305,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.305,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.305,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.31,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.31,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.31,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.31,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.315,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.315,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.315,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.315,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "GearLink_TorqueUpper_Left",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.863308,
+        -0.3533689999999998,
+        -1.8599999999999997
+      ]
+    },
+    {
+      "g": 0.32,
+      "a": "GearLink_TorqueUpper_Right",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.8422,
+        -0.3688640000000001,
+        -1.8599999999999997
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "GearLink_TorqueUpper_Left",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.8649156185544744,
+        -0.37130937710126544,
+        -1.8608564409990884
+      ]
+    },
+    {
+      "g": 0.325,
+      "a": "GearLink_TorqueUpper_Right",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.8529950215873328,
+        -0.353095450233778,
+        -1.850748599438558
+      ]
+    },
+    {
+      "g": 0.33,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.33,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.33,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.33,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.335,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.335,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.335,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.335,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.34,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.34,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.34,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.34,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.345,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.345,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.345,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.345,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.35,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.35,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.35,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.35,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.355,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.355,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.355,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.355,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.36,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.36,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.36,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.36,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.365,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.365,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.365,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.365,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.37,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.37,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.37,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.37,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.375,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.375,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.375,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.375,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.38,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.38,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.38,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.38,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.385,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.385,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.385,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.385,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.39,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.39,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.39,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.39,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.395,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.395,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.395,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.395,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.4,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.4,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.4,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.4,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.405,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.405,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.405,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.405,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.41,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.41,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.41,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.41,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.415,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.415,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.415,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.415,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.42,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.42,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.42,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.42,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.425,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.425,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.425,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.425,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.43,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.43,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.43,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.43,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.435,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.435,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.435,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.435,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.44,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.44,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.44,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.44,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.445,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.445,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.445,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.445,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.45,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.45,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.45,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.45,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.455,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.455,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.455,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.455,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.46,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.46,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.46,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.46,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.465,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.465,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.465,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.465,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.47,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.47,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.47,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.47,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.475,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.475,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.475,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.475,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.48,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.48,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.48,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.48,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.485,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.485,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.485,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.485,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.49,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.49,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.49,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.49,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.495,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.495,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.495,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.495,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.5,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.5,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.5,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.5,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.505,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.505,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.505,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.505,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.51,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.51,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.51,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.51,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.515,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.515,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.515,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.515,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.52,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.52,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.52,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.52,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.525,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.525,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.525,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.525,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.53,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.53,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.53,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.53,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.535,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.535,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.535,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.535,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.54,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.54,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.54,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.54,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.545,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.545,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.545,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.545,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.55,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.55,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.55,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.55,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.555,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.555,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.555,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.555,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.56,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.56,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.56,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.56,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.565,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.565,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.565,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.565,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.57,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.57,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.57,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.57,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.575,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.575,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.575,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.575,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.58,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.58,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.58,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.58,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.585,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.585,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.585,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.585,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.59,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.59,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.59,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.59,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.595,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.595,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.595,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.595,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.6,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.6,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.6,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.6,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.605,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.605,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.605,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.605,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.61,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.61,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.61,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.61,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.615,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.615,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.615,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.615,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.62,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.62,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.62,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.62,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.625,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.625,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.625,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.625,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.63,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.63,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.63,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.63,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.635,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.635,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.635,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.635,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.64,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.64,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.64,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.64,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.645,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.645,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.645,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.645,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.65,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.65,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.65,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.65,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.655,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.655,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.655,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.655,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.66,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.66,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.66,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.66,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.665,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.665,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.665,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.665,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.67,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.67,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.67,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.67,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.675,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.675,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.675,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.675,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.68,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.68,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.68,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.68,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.685,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.685,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.685,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.685,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.69,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.69,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.69,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.69,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.695,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.695,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.695,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.695,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.7,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.7,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.7,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.7,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.705,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.705,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.705,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.705,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.71,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.71,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.71,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.71,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.715,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.715,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.715,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.715,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.72,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.72,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.72,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.72,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.725,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.725,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.725,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.725,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.73,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.73,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.73,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.73,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.735,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.735,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.735,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.735,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.74,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.74,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.74,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.74,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.745,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.745,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.745,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.745,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.75,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.75,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.75,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.75,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.755,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.755,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.755,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.755,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.76,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.76,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.76,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.76,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.765,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.765,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.765,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.765,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.77,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.77,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.77,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.77,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.775,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.775,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.775,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.775,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.78,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.78,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.78,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.78,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.785,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.785,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.785,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.785,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.79,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.79,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.79,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.79,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.795,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.795,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.795,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.795,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.8,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.8,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.8,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.8,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.805,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.805,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.805,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.805,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.81,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.81,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.81,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.81,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.815,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.815,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.815,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.815,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.82,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.82,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.82,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.82,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.825,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.825,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.825,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.825,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.83,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.83,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.83,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.83,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.835,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.835,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.835,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.835,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.84,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.84,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.84,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.84,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.845,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.845,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.845,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.845,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.85,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.85,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.85,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.85,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.855,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.855,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.855,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.855,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.86,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.86,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.86,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.86,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.865,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.865,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.865,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.865,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.87,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.87,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.87,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.87,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.875,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.875,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.875,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.875,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.88,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.88,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.88,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.88,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.885,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.885,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.885,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.885,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.89,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.89,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.89,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.89,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.895,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.895,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.895,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.895,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.9,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.9,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.9,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.9,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.905,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.905,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.905,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.905,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.91,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.91,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.91,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.91,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.915,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.915,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.915,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.915,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.92,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.92,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.92,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.92,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.925,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.925,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.925,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.925,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.93,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.93,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.93,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.93,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.935,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.935,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.935,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.935,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.94,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.94,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.94,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.94,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.945,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.945,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.945,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.945,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.95,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.95,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.95,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.95,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.955,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.955,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.955,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.955,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.96,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.96,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.96,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.96,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.965,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.965,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.965,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.965,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.97,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.97,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.97,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.97,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.975,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.975,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.975,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.975,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.98,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.98,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.98,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.98,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.985,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.985,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.985,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.985,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.99,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.99,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.99,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.99,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.995,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.995,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.995,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 0.995,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    },
+    {
+      "g": 1.0,
+      "a": "BayCornerSkin_GearDoor_Left_Inner",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.859112,
+        -0.493446,
+        -3.38
+      ]
+    },
+    {
+      "g": 1.0,
+      "a": "BayCornerSkin_GearDoor_Right_Outer",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.87,
+        -0.484552,
+        -3.38
+      ]
+    },
+    {
+      "g": 1.0,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Left",
+      "point": [
+        -1.718921,
+        -0.57343,
+        -3.38
+      ]
+    },
+    {
+      "g": 1.0,
+      "a": "Fuselage_0_4",
+      "b": "MainBayFixedSkin_Right",
+      "point": [
+        1.03,
+        -1.11858,
+        -3.38
+      ]
+    }
+  ]
+}

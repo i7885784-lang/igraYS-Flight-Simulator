@@ -1,0 +1,10 @@
+numpy==2.3.5
+scipy==1.17.0
+shapely==2.1.2
+triangle==20250106
+trimesh==5.2.0
+rtree==1.4.1
+python-fcl==0.7.0.11
+Pillow
+osqp==1.1.3
+networkx==3.7

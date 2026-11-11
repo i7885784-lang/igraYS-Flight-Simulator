@@ -1,0 +1,14 @@
+{
+  "model_sha256": "bfabbd8ff2728ca417cbb9bb948fff27c750de297a156c718aafb51705d4ce83",
+  "passed": true,
+  "aircraft": "SU-30SM_CUSTOM",
+  "active": true,
+  "frames": [
+    "top",
+    "side-left",
+    "side-right",
+    "bottom",
+    "front",
+    "rear"
+  ]
+}
