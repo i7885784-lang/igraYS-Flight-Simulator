@@ -1,0 +1,31 @@
+{
+  "actions_run": 43456223774,
+  "release_public": true,
+  "assets": [
+    {
+      "file": "Su30SM_OrderedFacets_Windows_x86.zip",
+      "sha256": "d165c2d8d8a00802666a9a2cf695bf03a9c21eae0e3fbd59652683ee1ab13b5e",
+      "zip_crc_passed": true,
+      "PE_machine": "0x14c",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "model_sha256": "8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422",
+      "unchanged_original_entries": 1160
+    },
+    {
+      "file": "Su30SM_OrderedFacets_Windows_x64.zip",
+      "sha256": "eddec6b47f148d50bb0ef2cf6cf02d10c181db566e00582445544f006e66bf05",
+      "zip_crc_passed": true,
+      "PE_machine": "0x8664",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "model_sha256": "8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422",
+      "unchanged_original_entries": 1160
+    },
+    {
+      "file": "Su30SM_OrderedFacets_ModelSources.zip",
+      "sha256": "490f2a97217cfa47087287f264ccf89863a11e22ea2cb0ff8dc99b0a8fff1da8",
+      "zip_crc_passed": true
+    }
+  ],
+  "published_sources_raw_regeneration_sha256": "8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422",
+  "published_sources_byte_exact_to_viewed_model": true
+}
