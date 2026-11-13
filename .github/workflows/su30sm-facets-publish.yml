@@ -19,6 +19,8 @@ jobs:
             dist/su30sm-facets
             dist/su30sm-local-skin
             reports/su30sm-facets
+      - name: Install existing model parser dependency
+        run: python -m pip install Pillow
       - name: Assemble frozen one-PCK patch and check both PE architectures
         run: python changes/su30sm-facets/package.py work/packages
       - name: Publish separate game ZIPs and model sources
