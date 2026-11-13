@@ -1,0 +1,46 @@
+name: Su30SM ordered skin plane correction
+on:
+  push:
+    branches: [fix/su30sm-ordered-facets-20261113]
+    paths: [.github/workflows/su30sm-ordered-facets-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-ordered-facets
+            changes/su30sm-local-skin
+            dist/su30sm-ordered-facets
+            dist/su30sm-local-skin
+            reports/su30sm-ordered-facets
+      - name: Install existing model parser dependency
+        run: python -m pip install Pillow
+      - name: Assemble frozen one-PCK patch and check both PE architectures
+        run: python changes/su30sm-ordered-facets/package.py work/packages
+      - name: Publish separate game ZIPs and model sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create su30sm-ordered-facets-20261113
+          --repo i7885784-lang/igraYS-Flight-Simulator
+          --target "${{ github.sha }}"
+          --prerelease
+          --title "Су-30СМ: ровные продольные грани — x86 и x64"
+          --notes-file reports/su30sm-ordered-facets/RELEASE.md
+      - name: Upload checked game ZIPs and model sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release upload su30sm-ordered-facets-20261113
+          work/packages/Su30SM_OrderedFacets_Windows_x86.zip
+          work/packages/Su30SM_OrderedFacets_Windows_x64.zip
+          work/packages/Su30SM_OrderedFacets_ModelSources.zip
+          work/packages/SHA256SUMS.txt
+          work/packages/packages.json
+          --repo i7885784-lang/igraYS-Flight-Simulator
