@@ -1,0 +1,26 @@
+[
+  {
+    "file": "Su30SM_LargePanels_Windows_x86.zip",
+    "sha256": "692d73e0756a686f26c886de22969388832c3d21e21534473e036228b196841b",
+    "bytes": 90337125,
+    "architecture": "x86",
+    "PE_machine": "0x14c",
+    "optional_header": "0x10b",
+    "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+    "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+    "unchanged_previous_entries": 1162,
+    "zip_crc_passed": true
+  },
+  {
+    "file": "Su30SM_LargePanels_Windows_x64.zip",
+    "sha256": "5aa84b30d32ee1e7a974b963c80f0fe7faf0a6c3904f0af8835716da399af7b0",
+    "bytes": 90427554,
+    "architecture": "x64",
+    "PE_machine": "0x8664",
+    "optional_header": "0x20b",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+    "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+    "unchanged_previous_entries": 1162,
+    "zip_crc_passed": true
+  }
+]

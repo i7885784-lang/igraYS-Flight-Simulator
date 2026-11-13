@@ -1,0 +1,34 @@
+{
+  "release_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/su30sm-large-panels-20261113",
+  "public": true,
+  "assets": [
+    {
+      "file": "Su30SM_LargePanels_Windows_x86.zip",
+      "sha256": "692d73e0756a686f26c886de22969388832c3d21e21534473e036228b196841b",
+      "zip_crc_passed": true,
+      "PE_machine": "0x14c",
+      "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+      "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+      "rollback_sha256": "8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422",
+      "unchanged_previous_entries": 1162
+    },
+    {
+      "file": "Su30SM_LargePanels_Windows_x64.zip",
+      "sha256": "5aa84b30d32ee1e7a974b963c80f0fe7faf0a6c3904f0af8835716da399af7b0",
+      "zip_crc_passed": true,
+      "PE_machine": "0x8664",
+      "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+      "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+      "rollback_sha256": "8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422",
+      "unchanged_previous_entries": 1162
+    },
+    {
+      "file": "Su30SM_LargePanels_ModelSources.zip",
+      "sha256": "1466e4ecf25ffa6c34d8f01cc2b94101d4941df2d4fbf683c5db4bd7682beec5",
+      "zip_crc_passed": true,
+      "source_files_byte_exact": 39,
+      "published_sources_equal_locally_regenerated_sources": true,
+      "generated_model_byte_exact_to_viewed_game": true
+    }
+  ]
+}
