@@ -1,0 +1,14 @@
+{
+  "model_sha256": "04f7d3c0b823b53990a010fcc29009d032e648b9c781fd02f44c8a86b3dfb129",
+  "tolerance_m": 2e-06,
+  "shared_vertex_pairs_excluded": true,
+  "vertex_positions": "actual serialized positions, no coordinate welding or rounding",
+  "separating_plane_tolerance_m": 1e-08,
+  "panels": {
+    "MainBayFixedSkin_Left": {
+      "triangles": 9484,
+      "narrow_phase_pairs": 16688,
+      "hits": []
+    }
+  }
+}

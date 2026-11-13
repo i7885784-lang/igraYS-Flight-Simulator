@@ -1,0 +1,44 @@
+name: Su30SM single fixed skin faceting builds
+on:
+  push:
+    branches: [fix/su30sm-facets-20261113]
+    paths: [.github/workflows/su30sm-facets-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-facets
+            changes/su30sm-local-skin
+            dist/su30sm-facets
+            dist/su30sm-local-skin
+            reports/su30sm-facets
+      - name: Assemble frozen one-PCK patch and check both PE architectures
+        run: python changes/su30sm-facets/package.py work/packages
+      - name: Publish separate game ZIPs and model sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create su30sm-facets-20261113
+          --repo i7885784-lang/igraYS-Flight-Simulator
+          --target "${{ github.sha }}"
+          --prerelease
+          --title "Су-30СМ: фасеточная левая обшивка — x86 и x64"
+          --notes-file reports/su30sm-facets/RELEASE.md
+      - name: Upload checked game ZIPs and model sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release upload su30sm-facets-20261113
+          work/packages/Su30SM_Facets_Windows_x86.zip
+          work/packages/Su30SM_Facets_Windows_x64.zip
+          work/packages/Su30SM_Facets_ModelSources.zip
+          work/packages/SHA256SUMS.txt
+          work/packages/packages.json
+          --repo i7885784-lang/igraYS-Flight-Simulator

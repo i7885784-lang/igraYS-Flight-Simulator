@@ -1,0 +1,42 @@
+{
+  "baseline_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+  "model_sha256": "04f7d3c0b823b53990a010fcc29009d032e648b9c781fd02f44c8a86b3dfb129",
+  "changed_pack": "MainBayFixedSkin_Left.srf",
+  "unchanged_packs": 161,
+  "all_node_records_exact": true,
+  "coarse_facets": 4287,
+  "source_exterior_triangles": 22244,
+  "result_exterior_triangles": 3286,
+  "max_sampled_shape_deviation_m": 0.006293116063595672,
+  "rms_sampled_shape_deviation_m": 0.00028527277536087597,
+  "max_boundary_height_deviation_m": 2.488897976604676e-12,
+  "adaptation_max_errors_m": [
+    0.27546412801851194,
+    0.23508251420045134,
+    0.2665336085126475,
+    0.04453878494417729,
+    0.03225648604071518,
+    0.058952146177333464,
+    0.022287952356415897,
+    0.021704364155360034,
+    0.019456135928759055,
+    0.016597171753766404,
+    0.005960672608776751
+  ],
+  "paint_projection_grid_m": 1e-06,
+  "shell": {
+    "exterior_triangles": 3286,
+    "boundary_segments": 1456,
+    "pinch_fans_split_without_moving_vertices": 1,
+    "projected_area_m2": 1.5108244932390014,
+    "paint_coverage_missing_m2": 3.9149999987327985e-10,
+    "discarded_disconnected_outline_areas_m2": [],
+    "thickness_y_m": 0.008,
+    "height_range_m": [
+      -1.1660182813,
+      -0.009149
+    ],
+    "source": "shared constrained curved reference; no independent per-triangle height fitting",
+    "projected_vertex_grid_m": 1e-06
+  }
+}
