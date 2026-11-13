@@ -1,0 +1,26 @@
+[
+  {
+    "file": "Su30SM_Facets_Windows_x86.zip",
+    "sha256": "1f9afda2bcbc4793208797d8a2b94c1c5c704dd773ba133cd793df63777966b5",
+    "bytes": 80480658,
+    "architecture": "x86",
+    "PE_machine": "0x14c",
+    "optional_header": "0x10b",
+    "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+    "model_sha256": "04f7d3c0b823b53990a010fcc29009d032e648b9c781fd02f44c8a86b3dfb129",
+    "unchanged_original_entries": 1160,
+    "zip_crc_passed": true
+  },
+  {
+    "file": "Su30SM_Facets_Windows_x64.zip",
+    "sha256": "60640b0775b21604491ecf1fc90aaba8084baf825223e5a3d54829919e5fb153",
+    "bytes": 80571088,
+    "architecture": "x64",
+    "PE_machine": "0x8664",
+    "optional_header": "0x20b",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+    "model_sha256": "04f7d3c0b823b53990a010fcc29009d032e648b9c781fd02f44c8a86b3dfb129",
+    "unchanged_original_entries": 1160,
+    "zip_crc_passed": true
+  }
+]
