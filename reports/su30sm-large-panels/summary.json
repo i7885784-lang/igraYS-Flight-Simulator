@@ -1,0 +1,17 @@
+{
+  "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+  "local_raw_regeneration_byte_exact": true,
+  "native_game_cycle": {
+    "state_records": 34,
+    "min_gear": 0.0,
+    "max_gear": 1.0,
+    "last_gear": 0.0,
+    "passed": true
+  },
+  "indexed_euler_characteristic": {
+    "MainBayFixedSkin_Left.srf": 2,
+    "MainBayFixedSkin_Right.srf": 2,
+    "MainWheelBayShutter_Left.srf": 2,
+    "MainWheelBayShutter_Right.srf": 2
+  }
+}

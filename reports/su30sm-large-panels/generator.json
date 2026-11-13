@@ -1,0 +1,321 @@
+{
+  "baseline_sha256": "6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6",
+  "panels": {
+    "MainBayFixedSkin_Left": {
+      "name": "MainBayFixedSkin_Left",
+      "filled_projection_holes_m2": [
+        2.700000000022053e-11
+      ],
+      "clearance": {},
+      "discarded_numeric_planar_components": [],
+      "ordered_x_stations": [
+        1.03,
+        1.06,
+        1.2,
+        1.4,
+        1.45,
+        1.475,
+        1.5,
+        1.525,
+        1.55,
+        1.6,
+        1.645,
+        1.69,
+        1.78,
+        1.87
+      ],
+      "ordered_z_stations": [
+        -3.38,
+        -3.34,
+        -2.65,
+        -2.255,
+        -1.86,
+        -1.25,
+        -0.66,
+        -0.555,
+        -0.45,
+        -0.41
+      ],
+      "source_exterior_triangles": 22317,
+      "result_exterior_triangles": 18665,
+      "max_sampled_height_deviation_m": 0.0319096320433333,
+      "rms_sampled_height_deviation_m": 0.004458963956436518,
+      "max_boundary_height_deviation_m": 0.0,
+      "adaptation_max_errors_m": [
+        0.1463033709492405,
+        0.13334590351666664,
+        0.1192021116021098,
+        0.10844690586666672,
+        0.08405024925056281,
+        0.06195365346666659,
+        0.05174103843306954,
+        0.04317196561047609,
+        0.036628853747142864,
+        0.03450053406183584
+      ],
+      "paint_projection_grid_m": 1e-06,
+      "shell": {
+        "exterior_triangles": 18665,
+        "boundary_segments": 1423,
+        "pinch_fans_split_without_moving_vertices": 0,
+        "projected_area_m2": 1.5108244947965015,
+        "paint_coverage_missing_m2": 6.709999998806394e-10,
+        "discarded_disconnected_outline_areas_m2": [],
+        "thickness_y_m": 0.008,
+        "height_range_m": [
+          -1.1660182813,
+          -0.009149
+        ],
+        "source": "shared constrained curved reference; no independent per-triangle height fitting",
+        "projected_vertex_grid_m": 1e-06
+      }
+    },
+    "MainBayFixedSkin_Right": {
+      "name": "MainBayFixedSkin_Right",
+      "filled_projection_holes_m2": [
+        1.979999999727522e-10,
+        1.8149999999855806e-10,
+        5.000000000037757e-12,
+        6.9999999998752234e-12,
+        8.499999999989246e-12,
+        6.000000000178535e-12,
+        3.150000000070138e-11,
+        1.6999999999201334e-11,
+        7.500000000350854e-11,
+        1.9000000000232282e-11,
+        4.000000000119023e-12,
+        1.499999999947489e-12,
+        3.5000000001457785e-12,
+        4.4999999997592006e-12,
+        5.610000000042308e-10,
+        1.3750000000052484e-10,
+        2.849999999972394e-11,
+        1.4500000000001246e-11,
+        7.000000000291557e-12,
+        2.0800000001301745e-10,
+        1.515000000043276e-10
+      ],
+      "clearance": {},
+      "discarded_numeric_planar_components": [],
+      "ordered_x_stations": [
+        1.03,
+        1.06,
+        1.2,
+        1.3,
+        1.4,
+        1.45,
+        1.475,
+        1.5,
+        1.55,
+        1.6,
+        1.645,
+        1.69,
+        1.78,
+        1.87
+      ],
+      "ordered_z_stations": [
+        -3.38,
+        -3.34,
+        -2.65,
+        -2.255,
+        -1.86,
+        -1.25,
+        -0.66,
+        -0.555,
+        -0.45,
+        -0.41
+      ],
+      "source_exterior_triangles": 23843,
+      "result_exterior_triangles": 20093,
+      "max_sampled_height_deviation_m": 0.031672449543333314,
+      "rms_sampled_height_deviation_m": 0.003926967597887356,
+      "max_boundary_height_deviation_m": 0.0,
+      "adaptation_max_errors_m": [
+        0.19446840898380935,
+        0.13291777770571434,
+        0.12071637434050642,
+        0.115478669452381,
+        0.08870125102939552,
+        0.05559951912974703,
+        0.0528836719638095,
+        0.051339738088571396,
+        0.03572257128428569,
+        0.034375529894202894
+      ],
+      "paint_projection_grid_m": 1e-06,
+      "shell": {
+        "exterior_triangles": 20093,
+        "boundary_segments": 1483,
+        "pinch_fans_split_without_moving_vertices": 0,
+        "projected_area_m2": 1.5108245378840008,
+        "paint_coverage_missing_m2": 9.274499999975656e-09,
+        "discarded_disconnected_outline_areas_m2": [],
+        "thickness_y_m": 0.008,
+        "height_range_m": [
+          -1.1660220785,
+          -0.009149
+        ],
+        "source": "shared constrained curved reference; no independent per-triangle height fitting",
+        "projected_vertex_grid_m": 1e-06
+      }
+    },
+    "MainWheelBayShutter_Left": {
+      "name": "MainWheelBayShutter_Left",
+      "filled_projection_holes_m2": [
+        5.0000000001436715e-09,
+        9.99999999946489e-13,
+        5.37999999955668e-10,
+        9.999999999464891e-13,
+        5.204999999958389e-10,
+        1.9999999998929782e-12,
+        1.9079999999841653e-09
+      ],
+      "clearance": {
+        "mesh": "Fuselage_0_4",
+        "rows": 54449,
+        "vertical_constraints": 0,
+        "ambiguous_baseline_samples": 0,
+        "max_constraint_violation_m": 1.1102230246251565e-16,
+        "max_station_adjustment_m": 0.018666450252315503,
+        "status": "solved"
+      },
+      "discarded_numeric_planar_components": [],
+      "ordered_x_stations": [
+        1.03,
+        1.06,
+        1.2,
+        1.4,
+        1.45,
+        1.475,
+        1.5,
+        1.55,
+        1.6,
+        1.78,
+        1.825,
+        1.87
+      ],
+      "ordered_z_stations": [
+        -3.38,
+        -3.34,
+        -2.65,
+        -1.86,
+        -1.25,
+        -0.955,
+        -0.8075,
+        -0.66,
+        -0.45,
+        -0.41
+      ],
+      "source_exterior_triangles": 19650,
+      "result_exterior_triangles": 14827,
+      "max_sampled_height_deviation_m": 0.03278122176830628,
+      "rms_sampled_height_deviation_m": 0.005771195627076569,
+      "max_boundary_height_deviation_m": 0.0,
+      "adaptation_max_errors_m": [
+        0.1826404243228813,
+        0.1061806456196609,
+        0.06388494173711856,
+        0.06201111566508466,
+        0.057231770859184516,
+        0.04419021236102327,
+        0.039682154219059185,
+        0.03278122176830617
+      ],
+      "paint_projection_grid_m": 1e-06,
+      "shell": {
+        "exterior_triangles": 14827,
+        "boundary_segments": 739,
+        "pinch_fans_split_without_moving_vertices": 0,
+        "projected_area_m2": 0.9783280000000001,
+        "paint_coverage_missing_m2": 1.2998499999852552e-08,
+        "discarded_disconnected_outline_areas_m2": [],
+        "thickness_y_m": 0.001,
+        "height_range_m": [
+          -1.1712688558925746,
+          -0.036893100899999975
+        ],
+        "source": "shared constrained curved reference; no independent per-triangle height fitting",
+        "projected_vertex_grid_m": 1e-06
+      }
+    },
+    "MainWheelBayShutter_Right": {
+      "name": "MainWheelBayShutter_Right",
+      "filled_projection_holes_m2": [
+        3.999999999119822e-12,
+        4.499999999925735e-12
+      ],
+      "clearance": {
+        "mesh": "Fuselage_0_4",
+        "rows": 41168,
+        "vertical_constraints": 0,
+        "ambiguous_baseline_samples": 0,
+        "max_constraint_violation_m": 2.220446049250313e-16,
+        "max_station_adjustment_m": 0.010040847301425293,
+        "status": "solved"
+      },
+      "discarded_numeric_planar_components": [],
+      "ordered_x_stations": [
+        1.03,
+        1.06,
+        1.2,
+        1.4,
+        1.45,
+        1.475,
+        1.5,
+        1.55,
+        1.6,
+        1.78,
+        1.825,
+        1.87
+      ],
+      "ordered_z_stations": [
+        -3.38,
+        -3.34,
+        -2.65,
+        -1.86,
+        -1.555,
+        -1.25,
+        -0.955,
+        -0.8075,
+        -0.66,
+        -0.45,
+        -0.41
+      ],
+      "source_exterior_triangles": 19474,
+      "result_exterior_triangles": 14978,
+      "max_sampled_height_deviation_m": 0.03382060067760112,
+      "rms_sampled_height_deviation_m": 0.005314562582761228,
+      "max_boundary_height_deviation_m": 0.0,
+      "adaptation_max_errors_m": [
+        0.17228587829813558,
+        0.09053073528271194,
+        0.09012562065762714,
+        0.06181381650338985,
+        0.05710173198174334,
+        0.05042512828490733,
+        0.04438080583508486,
+        0.036566667562390576,
+        0.034739914493573665
+      ],
+      "paint_projection_grid_m": 1e-06,
+      "shell": {
+        "exterior_triangles": 14978,
+        "boundary_segments": 746,
+        "pinch_fans_split_without_moving_vertices": 0,
+        "projected_area_m2": 0.9783279999999995,
+        "paint_coverage_missing_m2": 1.5879999999866895e-09,
+        "discarded_disconnected_outline_areas_m2": [],
+        "thickness_y_m": 0.001,
+        "height_range_m": [
+          -1.1712747323326917,
+          -0.03689429489999996
+        ],
+        "source": "shared constrained curved reference; no independent per-triangle height fitting",
+        "projected_vertex_grid_m": 1e-06
+      }
+    }
+  },
+  "model_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+  "all_node_records_exact": true,
+  "unchanged_packs": 158
+}

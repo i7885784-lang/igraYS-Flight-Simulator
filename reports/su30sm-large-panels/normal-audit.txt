@@ -1,0 +1,2 @@
+MainWheelBayShutter_Left triangles 1913 max angle 0.10004626581107133 over 1deg 0 over .1deg 1 bad area 2.9601003181176494e-06
+MainWheelBayShutter_Right triangles 1518 max angle 0.006038312833286546 over 1deg 0 over .1deg 0 bad area 0
