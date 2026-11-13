@@ -1,0 +1,6 @@
+{
+  "new_exterior_vertices": 10820,
+  "metric": "each new exterior vertex to closest original exterior triangle; finite sampled check",
+  "max_distance_m": 0.014996488894844473,
+  "rms_distance_m": 0.0012002372709269057
+}
