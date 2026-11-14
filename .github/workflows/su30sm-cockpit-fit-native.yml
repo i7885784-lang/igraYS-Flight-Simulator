@@ -1,0 +1,41 @@
+name: Su30SM fitted cockpit native Windows x86 and x64
+on:
+  push:
+    branches: [fix/su30sm-cockpit-fit-20261114]
+    paths: [.github/workflows/su30sm-cockpit-fit-native.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        bits: [32, 64]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-cockpit-fit
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-cockpit-fit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install Pillow
+      - name: Restore exact previous architecture and patch both models
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/su30sm-cockpit-fit/windows_prepare.py ${{ matrix.bits }}
+      - name: Launch actual Windows game and capture cockpit and canopy
+        run: python changes/su30sm-cockpit-fit/windows_check.py ${{ matrix.bits }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Su30SM-CockpitFit-native-${{ matrix.bits }}
+          path: |
+            native-${{ matrix.bits }}/*.png
+            native-${{ matrix.bits }}/results.json
+          retention-days: 30
