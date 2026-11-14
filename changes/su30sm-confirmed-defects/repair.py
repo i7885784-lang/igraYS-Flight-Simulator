@@ -10,6 +10,7 @@ from shapely.strtree import STRtree
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'changes/su30sm-large-panels'));from facet import dnm,exterior,world,Projected,make_panel
 from bay_cut import cut
+from front_profile import extract as extract_front
 BASE='91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c'
 NAMES=['MainBayFixedSkin_Left','MainBayFixedSkin_Right'];sha=lambda b:hashlib.sha256(b).hexdigest()
 def parts(g):return [p for p in shapely.get_parts(g) if p.geom_type=='Polygon' and p.area>1e-12]
@@ -22,14 +23,15 @@ def graph_mesh(lines,domain):
    if a!=b:pts.update([a,b]);segments.add(tuple(sorted((a,b))))
  pts=sorted(pts);lookup={p:i for i,p in enumerate(pts)};raw=triangle.triangulate({'vertices':np.array(pts),'segments':np.array([[lookup[a],lookup[b]] for a,b in sorted(segments)])},'pQ')
  uv=raw['vertices'];f=raw['triangles'];return uv,f[shapely.covers(domain,shapely.points(uv[f].mean(1)))]
-def build_panel(p,lu,name):
- n=lu[name];sg=-1 if name.endswith('Left') else 1;old=exterior(p[dnm.fil(n)],n);tris=np.array([q for q,c in old]);polys=[Polygon(np.c_[sg*q[:,0],q[:,2]]) for q,c in old];domain=max(parts(shapely.union_all(polys,grid_size=1e-7)),key=lambda x:x.area);holes=sum(Polygon(r).area for r in domain.interiors);assert holes<1e-7;domain=Polygon(domain.exterior.coords);numeric_front_sliver=domain.difference(box(-10,-20,10,-.41)).area;assert numeric_front_sliver<2e-6;domain=domain.intersection(box(-10,-20,10,-.41));reference=Projected(tris,sg)
+def build_panel(p,lu,name,profile):
+ n=lu[name];sg=-1 if name.endswith('Left') else 1;old=exterior(p[dnm.fil(n)],n);tris=np.array([q for q,c in old]);polys=[Polygon(np.c_[sg*q[:,0],q[:,2]]) for q,c in old];domain=max(parts(shapely.union_all(polys,grid_size=1e-7)),key=lambda x:x.area);holes=sum(Polygon(r).area for r in domain.interiors);assert holes<1e-7;domain=Polygon(domain.exterior.coords);numeric_front_sliver=domain.difference(box(-10,-20,10,-.41)).area;assert numeric_front_sliver<2e-6;domain=domain.intersection(box(-10,-20,10,-.41));front_notches=box(1.03,-.66,1.87,-.41).difference(domain).area;assert front_notches<1e-6,(name,front_notches);domain=domain.union(box(1.03,-.66,1.87,-.41));reference=Projected(tris,sg)
  rear=-.66;front=-.41;uvold=np.c_[sg*tris[:,:,0].ravel(),tris[:,:,2].ravel()];edge=uvold[(abs(uvold[:,1]-rear)<1e-7)|(abs(uvold[:,1]-front)<1e-7)];xs=np.unique(np.round(edge[:,0],7));xs=xs[(xs>=1.03)&(xs<=1.87)];xs=np.unique(np.r_[1.03,xs,1.87]);h0=np.array([reference.lower([x,rear],nearest=True) for x in xs]);h1=np.array([reference.lower([x,front],nearest=True) for x in xs])
- # Remove only redundant collinear stations; keep all real section corners.
- while len(xs)>2:
-  t=(xs[1:-1]-xs[:-2])/(xs[2:]-xs[:-2]);err=np.maximum(abs(h0[1:-1]-((1-t)*h0[:-2]+t*h0[2:])),abs(h1[1:-1]-((1-t)*h1[:-2]+t*h1[2:])));eligible=np.where(err<1e-7)[0]
-  if not len(eligible):break
-  i=int(eligible[0]+1);xs=np.delete(xs,i);h0=np.delete(h0,i);h1=np.delete(h1,i)
+ # Arc length retains the measured overhang instead of collapsing multiple
+ # heights onto one X. Both end profiles are immutable spatial curves.
+ rear_curve=np.c_[xs,h0]
+ def arc(q):return np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
+ rear_arc=arc(rear_curve);rear_arc/=rear_arc[-1];front_curve=profile['outside'];inside_curve=profile['inside'];front_arc=arc(front_curve);front_arc/=front_arc[-1];assert len(inside_curve)==len(front_curve),'Offset correspondence changed';inside_arc=front_arc.copy()
+ knot_u=np.unique(np.r_[rear_arc,front_arc,inside_arc]);xs=np.interp(knot_u,rear_arc,rear_curve[:,0]);rxy=np.c_[xs,np.interp(xs,rear_curve[:,0],rear_curve[:,1])];fxy=np.c_[np.interp(knot_u,front_arc,front_curve[:,0]),np.interp(knot_u,front_arc,front_curve[:,1])];ixy=np.c_[np.interp(knot_u,inside_arc,inside_curve[:,0]),np.interp(knot_u,inside_arc,inside_curve[:,1])]
  band=box(1.03,rear,1.87,front);groups=collections.defaultdict(list)
  for poly,(q,c) in zip(polys,old):groups[c].append(poly)
  paint=[(shapely.union_all(reg,grid_size=1e-7).intersection(domain),c) for c,reg in sorted(groups.items())];ptree=STRtree([q for q,c in paint])
@@ -44,19 +46,32 @@ def build_panel(p,lu,name):
   hits=ptree.query(Point(*pt),predicate='intersects');colors.append(paint[int(hits[0] if len(hits) else ptree.nearest(Point(*pt)))][1])
  class Field:
   def __init__(self):self.sg=sg
-  def height(self,points):
-   result=np.array([reference.lower(q,nearest=True) for q in points]);inside=(points[:,0]>=1.03)&(points[:,0]<=1.87)&(points[:,1]>=rear)&(points[:,1]<=front);q=points[inside];ix=np.clip(np.searchsorted(xs,q[:,0],side='right')-1,0,len(xs)-2);a=(q[:,0]-xs[ix])/(xs[ix+1]-xs[ix]);b=(q[:,1]-rear)/(front-rear)
-   result[inside]=np.where(a>=b,h0[ix]+(h0[ix+1]-h0[ix])*a+(h1[ix+1]-h0[ix+1])*b,h0[ix]+(h1[ix+1]-h1[ix])*a+(h1[ix]-h0[ix])*b)
-   return result
- field=Field();height=field.height(uv);oldheight=np.array([reference.lower(q,nearest=True) for q in uv]);inside=(uv[:,0]>=1.03)&(uv[:,0]<=1.87)&(uv[:,1]>=rear)&(uv[:,1]<=front);outside_error=float(max(abs(height[~inside]-oldheight[~inside]),default=0));boundary=(abs(uv[:,1]-rear)<1e-8)|(abs(uv[:,1]-front)<1e-8);boundary_error=float(max(abs(height[boundary]-oldheight[boundary]),default=0));assert outside_error<1e-8 and boundary_error<2e-6,(name,outside_error,boundary_error)
+  def positions(self,points,inside=False):
+   hh=np.array([reference.lower(q,nearest=True) for q in points]);result=np.c_[sg*points[:,0],hh+(.008 if inside else 0),points[:,1]];mask=(points[:,0]>=1.03-1e-8)&(points[:,0]<=1.87+1e-8)&(points[:,1]>=rear-1e-9)&(points[:,1]<=front+1e-9);q=points[mask];ix=np.clip(np.searchsorted(xs,q[:,0],side='right')-1,0,len(xs)-2);a=(q[:,0]-xs[ix])/(xs[ix+1]-xs[ix]);b=(q[:,1]-rear)/(front-rear);A=np.c_[rxy,np.full(len(xs),rear)];B=np.c_[ixy if inside else fxy,np.full(len(xs),front)]
+   if inside:A[:,1]+=.008
+   mapped=np.where((a>=b)[:,None],A[ix]+(A[ix+1]-A[ix])*a[:,None]+(B[ix+1]-A[ix+1])*b[:,None],A[ix]+(B[ix+1]-B[ix])*a[:,None]+(B[ix]-A[ix])*b[:,None]);mapped[:,0]*=sg;result[mask]=mapped;return result
+  def height(self,points):return self.positions(points)[:,1]
+ field=Field();height=field.height(uv);oldheight=np.array([reference.lower(q,nearest=True) for q in uv]);mask=(uv[:,0]>=1.03)&(uv[:,0]<=1.87)&(uv[:,1]>=rear)&(uv[:,1]<=front);outside_error=float(max(abs(height[~mask]-oldheight[~mask]),default=0));frontpoints=field.positions(uv[abs(uv[:,1]-front)<1e-8]);frontpoints[:,0]*=sg;front_curve_error=float(max((LineString(front_curve).distance(Point(*q[:2])) for q in frontpoints),default=0));rearpoints=field.positions(uv[abs(uv[:,1]-rear)<1e-8]);rearpoints[:,0]*=sg;rear_curve_error=float(max((LineString(rear_curve).distance(Point(*q[:2])) for q in rearpoints),default=0));boundary_error=max(front_curve_error,rear_curve_error);assert outside_error<1e-8 and boundary_error<5e-5
  used=np.unique(faces);remap=np.full(len(uv),-1);remap[used]=np.arange(len(used));uv=uv[used];faces=remap[faces];part={'uv':uv,'faces':faces.tolist(),'colors':colors,'domain':domain,'paint_missing_m2':0,'discarded_disconnected_outline_areas_m2':[]};m,meta=make_panel(part,field,n,.008)
- # Retreat the internal front rim behind the measured stationary joint.
- # Keep X and the existing 8-mm Y thickness; a normal offset folds the
- # very sharp sidewall and was rejected by the self-intersection check.
- half=len(m.v)//2;vv=np.array(m.v);R,T=world(n);q=vv[:half]@R.T+T;w=np.clip((q[:,2]-rear)/(front-rear),0,1);w=w*w*(3-2*w);retreat=np.c_[np.zeros(half),np.zeros(half),-.008*w]@R;vv[half:]+=retreat;m.v=list(map(tuple,vv))
+ # Map BOTH faces of the shell through the same spatial loft. The inside
+ # follows the measured profile's valid offset, not a global Y extrusion.
+ half=len(m.v)//2;vv=np.array(m.v);R,T=world(n);q=vv[:half]@R.T+T;params=np.c_[sg*q[:,0],q[:,2]];vv[:half]=(field.positions(params)-T)@R;vv[half:]=(field.positions(params,inside=True)-T)@R;m.v=list(map(tuple,vv))
+ # The measured contour is concave. A fan of quadrilateral end faces cuts
+ # across its overhang; triangulate the actual closed rim polygon instead.
+ caps=[];kept=[]
+ for ids,c,b in m.f:
+  if c==(105,118,123) and all(abs(params[i%half,1]-front)<1e-8 for i in ids):caps.extend(i for i in ids if i<half)
+  else:kept.append((ids,c,b))
+ rim=sorted(set(caps),key=lambda i:params[i,0]);worldv=vv@R.T+T;ring=worldv[rim,:2].tolist()+worldv[np.array(rim[::-1])+half,:2].tolist();polygon=Polygon(ring);assert polygon.is_valid,(name,'invalid inward rim')
+ ringids=rim+[i+half for i in rim[::-1]];ringxy=worldv[ringids,:2];segments=np.c_[np.arange(len(ringids)),np.roll(np.arange(len(ringids)),-1)];cap=triangle.triangulate({'vertices':ringxy,'segments':segments},'pQ');assert len(cap['vertices'])==len(ringids) and np.max(abs(cap['vertices']-ringxy))<1e-12
+ for indices in cap['triangles']:
+  ids=[ringids[int(i)] for i in indices];coords=worldv[ids,:2];cross=(coords[1,0]-coords[0,0])*(coords[2,1]-coords[0,1])-(coords[1,1]-coords[0,1])*(coords[2,0]-coords[0,0])
+  if cross<0:ids=ids[::-1]
+  kept.append((ids,(105,118,123),False))
+ m.f=kept
  p[dnm.fil(n)]=m.srf()
  samples=np.unique(uvold.round(7),axis=0);sample_error=field.height(samples)-np.array([reference.lower(q,nearest=True) for q in samples])
- meta.update(front_band_abs_xz_m=[1.03,1.87,rear,front],outside_band_height_error_m=outside_error,mating_sections_height_error_m=boundary_error,max_local_height_correction_m=float(max(abs(sample_error))),x_stations=xs.tolist(),z_stations=[rear,front],numeric_front_sliver_removed_m2=numeric_front_sliver,internal_rim_retreat_z_m=.008,method='planar interpolation between unchanged rear and forward mating profiles; no extrapolated/narrow blend rim')
+ meta.update(front_band_abs_xz_m=[1.03,1.87,rear,front],outside_band_height_error_m=outside_error,mating_sections_curve_error_m=boundary_error,front_section_error_m=front_curve_error,rear_section_error_m=rear_curve_error,source_section_plane_z_m=profile['extraction_z'],source_section_snap_tolerance_m=profile['simplification_tolerance_m'],max_local_height_correction_m=float(max(abs(sample_error))),x_stations=xs.tolist(),z_stations=[rear,front],numeric_front_sliver_removed_m2=numeric_front_sliver,numeric_front_notches_filled_m2=front_notches,internal_rim_retreat_z_m=0,method='spatial loft between unchanged rear profile and actual connected F4 front contour; retain overhang and offset inside profile')
  print(name,'triangles',len(faces),'stations',len(xs),'max correction',meta['max_local_height_correction_m'],'edge error',boundary_error,flush=True);return meta
 
 def well_roofs(p,lu,side):
@@ -70,7 +85,11 @@ def well_roofs(p,lu,side):
 def run(base,out):
  assert sha(base.read_bytes())==BASE
  p,ns=dnm.read(base);old={k:list(v) for k,v in p.items()};lu={dnm.name(n):n for n in ns};audit={'baseline_sha256':BASE,'panels':{}}
- for name in NAMES:audit['panels'][name]=build_panel(p,lu,name)
+ ends={}
+ for side,sg in [('Left',-1),('Right',1)]:
+  n=lu['MainBayFixedSkin_'+side];ref=Projected(np.array([q for q,c in exterior(p[dnm.fil(n)],n)]),sg);ends[side]=[(sg*x,ref.lower([x,-.41],nearest=True)) for x in [1.03,1.87]]
+ profiles=extract_front(p,lu,dnm,world,ends)
+ for name in NAMES:audit['panels'][name]=build_panel(p,lu,name,profiles['Left' if name.endswith('Left') else 'Right'])
  roofs={side:well_roofs(p,lu,side) for side in ['Left','Right']};audit['internal_body_cut']=cut(p,lu,roofs,dnm,world)
  out.parent.mkdir(parents=True,exist_ok=True);dnm.write(out,p,ns);out.write_bytes(out.read_bytes().replace(b'\r\n',b'\n'));audit.update(model_sha256=sha(out.read_bytes()),changed_packs=[k for k in p if p[k]!=old[k]],all_node_records_exact=True)
  assert set(audit['changed_packs'])=={n+'.srf' for n in NAMES}|{'Fuselage_0_4.srf'}

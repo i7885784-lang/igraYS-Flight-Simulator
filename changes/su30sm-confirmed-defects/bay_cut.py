@@ -35,7 +35,7 @@ def subtract(poly,planes):
 def cut(p,lu,roofs,dnm,world):
  cells=[];coverage={}
  for side,sg in [('Left',-1),('Right',1)]:
-  rect=box(-2.4 if sg<0 else 1.87,-3.38,-1.87 if sg<0 else 2.4,-.41)
+  rect=box(-2.4 if sg<0 else 1.87,-3.38,-1.87 if sg<0 else 2.4,-.41).union(box(-1.87 if sg<0 else 1.03,-.66,-1.03 if sg<0 else 1.87,-.41))
   cover=[]
   for Q in roofs[side]:
    poly=Polygon(Q[:,[0,2]])
@@ -97,4 +97,4 @@ def cut(p,lu,roofs,dnm,world):
   if len(rows)%1000==0:print('clipped',len(rows),'source index',fi,flush=True)
  p[fn]=ls[:first]+newv+[s for b in out for s in b]+ls[k:]
  print('F4 clipped',len(rows),'retained raw',protected,'area',total_removed,flush=True)
- return {'changed_face_blocks':len(rows),'untouched_face_blocks_exact':protected,'original_vertices_exact':True,'removed_area_triangle_instances_m2':total_removed,'bay_rectangles_m':[[1.87,2.4,-3.38,-.41],[-2.4,-1.87,-3.38,-.41]],'ceiling_protection_m':.012,'cells':len(cells),'source_face_changes':rows,'replacement_max_plane_error_m':max_plane_error,'replacement_max_barycentric_violation':max_barycentric_violation,'roof_projection_unmodified_area_m2':coverage}
+ return {'changed_face_blocks':len(rows),'untouched_face_blocks_exact':protected,'original_vertices_exact':True,'removed_area_triangle_instances_m2':total_removed,'bay_rectangles_m':[[1.87,2.4,-3.38,-.41],[-2.4,-1.87,-3.38,-.41],[1.03,1.87,-.66,-.41],[-1.87,-1.03,-.66,-.41]],'ceiling_protection_m':.012,'cells':len(cells),'source_face_changes':rows,'replacement_max_plane_error_m':max_plane_error,'replacement_max_barycentric_violation':max_barycentric_violation,'roof_projection_unmodified_area_m2':coverage}

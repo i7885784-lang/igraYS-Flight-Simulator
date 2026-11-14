@@ -1,34 +1,34 @@
 {
   "baseline_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
-  "model_sha256": "9d97ef82d00577cc257013b730350873d46c5b86d502ed114599500a107a85ad",
+  "model_sha256": "0af68b56600b92d45f5bdd41f7775a6787af38aa13f1887ab3f5c3c5bd936003",
   "patches": [
     {
       "pack": "Fuselage_0_4.srf",
-      "sha256": "1a70e96dc22831dcbebc3e79994f0520b07b1114db0efdbb000b864b41269da0",
-      "bytes": 23191255,
+      "sha256": "c02117bd7c03bf5db2c03d298c9208b8361ecaf8dcee06355fa9c5f12cc753dc",
+      "bytes": 22946424,
       "type": "face-delta",
-      "payload_sha256": "26b788c574dc23991a0bb96bac62acf601f5827f849d640a91c1ac734ffa6bc2",
+      "payload_sha256": "6b65645fc7891ed44795b68f87533420a6328d71e0b746f9341eaeec27b9e59f",
       "zip": "Fuselage_0_4.face-delta.json.zip",
       "member": "Fuselage_0_4.face-delta.json",
-      "zip_bytes": 1954
+      "zip_bytes": 49922
     },
     {
       "pack": "MainBayFixedSkin_Left.srf",
-      "sha256": "575ec35b9450c5078e9dfb15b5d1e9c5dae0adfcc2a113cb22bce22d37123b18",
-      "bytes": 2439329,
+      "sha256": "f0b75646b1369c69d107f95eab3aaf62340e982f47a2d17c7d0eabc119e4eb7d",
+      "bytes": 2541878,
       "type": "srf",
       "zip": "MainBayFixedSkin_Left.srf.zip",
       "member": "MainBayFixedSkin_Left.srf",
-      "zip_bytes": 503415
+      "zip_bytes": 525664
     },
     {
       "pack": "MainBayFixedSkin_Right.srf",
-      "sha256": "73295715c9eeab39390722756492fdd50b1a1d4ecb597e10a20feffcb594b833",
-      "bytes": 2453072,
+      "sha256": "4cfe5ba3604df5e707b69e7a4527da9b5ac6d7c931e2f052f813dcaa870e752a",
+      "bytes": 2641291,
       "type": "srf",
       "zip": "MainBayFixedSkin_Right.srf.zip",
       "member": "MainBayFixedSkin_Right.srf",
-      "zip_bytes": 509352
+      "zip_bytes": 552630
     }
   ],
   "visual_check": "x64 OpenGL Wine: matched ground/air/near views, three gear poses and native G cycle; x86 launch status in report"

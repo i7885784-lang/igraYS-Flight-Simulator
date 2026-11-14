@@ -35,7 +35,7 @@ try:
  for name,*_ in views:
   wait('Script>>REM SHOT_'+name);time.sleep(.6);im=ImageGrab.grab(bbox=(0,0,1024,768),all_screens=False).convert('RGB');assert max(ImageStat.Stat(im).stddev)>12,'Blank desktop';im.save(out/(name+'.png'));print(bits,name,flush=True)
  states=[dict(re.findall(r'(\w+)=(-?[0-9.]+)',l)) for l in log.read_text(errors='replace').splitlines() if l.startswith('MODELCHECK ')];assert bits==32 or (len(states)==len(views) and all(s['active']=='1' for s in states))
- assert hashlib.sha256((rt/'aircraft/su30sm.dnm').read_bytes()).hexdigest()=='9d97ef82d00577cc257013b730350873d46c5b86d502ed114599500a107a85ad'
+ assert hashlib.sha256((rt/'aircraft/su30sm.dnm').read_bytes()).hexdigest()==json.loads((root/'dist/su30sm-confirmed-defects/metadata.json').read_text())['model_sha256']
  assert len({hashlib.sha256((out/(v[0]+'.png')).read_bytes()).hexdigest() for v in views})>=4, 'Desktop stayed on startup/menu; screenshot verification failed'
  result={'passed':True,'native_windows':True,'wine':False,'bits':bits,'machine':hex(machine),'exe_sha256':hashlib.sha256(b).hexdigest(),'model_sha256':hashlib.sha256((rt/'aircraft/su30sm.dnm').read_bytes()).hexdigest(),'frames':[x[0] for x in views],'states':states,'scope':'Native Windows real game captures; x86 uses ordinary native gear buttons (diagnostic MODELPOSE/LABVIEW commands unavailable), x64 uses diagnostic camera poses.'};(out/'results.json').write_text(json.dumps(result,indent=2))
 finally:
