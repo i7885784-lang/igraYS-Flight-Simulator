@@ -1,0 +1,29 @@
+{
+  "model_sha256": "001bf8ca00fd30cd722a31c53d8b2d160644c9a68b9f00f1f834d99a1f751de4",
+  "tolerance_m": 2e-06,
+  "shared_vertex_pairs_excluded": true,
+  "vertex_positions": "actual serialized positions, no coordinate welding or rounding",
+  "separating_plane_tolerance_m": 1e-08,
+  "panels": {
+    "MainBayFixedSkin_Left": {
+      "triangles": 12482,
+      "narrow_phase_pairs": 93424,
+      "hits": []
+    },
+    "MainBayFixedSkin_Right": {
+      "triangles": 13646,
+      "narrow_phase_pairs": 126363,
+      "hits": []
+    },
+    "GearDoor_Left_Inner": {
+      "triangles": 19757,
+      "narrow_phase_pairs": 21383,
+      "hits": []
+    },
+    "GearDoor_Right_Outer": {
+      "triangles": 19649,
+      "narrow_phase_pairs": 19860,
+      "hits": []
+    }
+  }
+}
