@@ -15,6 +15,7 @@ def build(out,prior):
  rows=[];model=None;previous=None
  for arch,machine,magic in [('x86',0x14c,0x10b),('x64',0x8664,0x20b)]:
   old=prior/f'Su30SM_LargePanels_Windows_{arch}.zip';new=out/f'Su30SM_LocalDefects_Windows_{arch}.zip'
+  expected=next(e for e in json.loads((ROOT/'changes/su30sm-confirmed-defects/previous-packages.json').read_text()) if e['file']==old.name);assert sha(old.read_bytes())==expected['sha256']
   with zipfile.ZipFile(old) as zi:
    previous=zi.read('runtime/aircraft/su30sm.dnm');assert sha(previous)==PREVIOUS
    with tempfile.TemporaryDirectory() as td:

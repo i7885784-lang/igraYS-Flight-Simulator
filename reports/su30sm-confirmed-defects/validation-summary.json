@@ -1,0 +1,28 @@
+{
+  "baseline_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
+  "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+  "changed_packs": [
+    "Fuselage_0_4.srf",
+    "MainBayFixedSkin_Left.srf",
+    "MainBayFixedSkin_Right.srf"
+  ],
+  "protected_pack_count": 159,
+  "node_records_unchanged": 162,
+  "matched_camera_pairs": 11,
+  "self_intersections": 0,
+  "animation_pose_samples": 201,
+  "collision_pairs": 618,
+  "before_contact_keys": 808,
+  "after_contact_keys": 808,
+  "added_contact_keys": 0,
+  "removed_contact_keys": 0,
+  "generator_reproduced_byte_exact": true,
+  "moving_meshes_unchanged": true,
+  "wells_unchanged": true,
+  "intakes_unchanged": true,
+  "native_windows_architectures_passed": [
+    32,
+    64
+  ],
+  "native_windows_run": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/actions/runs/43569980672"
+}

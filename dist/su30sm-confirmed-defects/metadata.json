@@ -31,5 +31,6 @@
       "zip_bytes": 581343
     }
   ],
-  "visual_check": "x64 OpenGL Wine: matched ground/air/near views, three gear poses and native G cycle; x86 launch status in report"
+  "visual_check": "Actual native Windows x86 and x64 passed (43569980672), images opened; x64 Wine eleven matched camera pairs and live keyboard G cycle",
+  "visual_accepted": true
 }
