@@ -26,7 +26,7 @@ def build(out,prior):
   for folder in ['changes/su30sm-cockpit-fit','changes/su30sm-local-skin/model-source','dist/su30sm-cockpit-fit','reports/su30sm-cockpit-fit']:
    for f in sorted((ROOT/folder).rglob('*')):
     if f.is_file() and '__pycache__' not in f.parts and 'geometry-cache' not in f.parts:put(z,str(f.relative_to(ROOT)),f.read_bytes())
-  for rel in ['changes/su30sm-local-skin/requirements.txt','changes/su30sm-local-skin/validation/triangles.py']:put(z,rel,(ROOT/rel).read_bytes())
+  for rel in ['changes/su30sm-local-skin/requirements.txt','changes/su30sm-local-skin/validation/triangles.py','.github/workflows/su30sm-cockpit-fit-native.yml']:put(z,rel,(ROOT/rel).read_bytes())
   for n in models:put(z,'baseline/'+n,baseline[n]);put(z,'generated/'+n,models[n])
   put(z,'README_ENGINE_SOURCES.txt',b'Engine unchanged. Full engine source/history/notices: https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-local-skin-20261111/Su30SM_LocalSkin_FullSources.zip\n')
  with zipfile.ZipFile(source) as z:assert z.testzip() is None and not any('TASK_CONTEXT' in n for n in z.namelist())
