@@ -1,22 +1,29 @@
-# Су-30СМ: крупные грани двух показанных областей
+# Су-30СМ: локальные дефекты у основной ниши
 
-Актуальная задача: пользователь разрешил локально гранить выделенные створки и потребовал явную разницу с выпущенным шасси. Цветовая диагностика установила: первый инвертированный снимок показывает левую створку, наземный — правую обшивку/правую створку. Поэтому изменены только MainBayFixedSkin_Left/Right и MainWheelBayShutter_Left/Right. Прочие158PCK,162узла, оси, родители, посадочные кромки/зазоры, стойки/колёса/ниши/анимации защищены.
+Задача: убрать подтверждённые нижний зуб/складку и полосы корпуса внутри чёрной ниши; исследовать соседние стыки. Не делать глобальную переделку. Пользователь14ноября разрешил исправления после диагностики.
 
-Отдельная ветка fix/su30sm-large-panels-20261113. Чистая геометрическая база6f8e20b21990820dcc3aa49f91e92ef4a1771047951671f61732d111256b30c6 (work/proposed/su30sm.dnm). Сравнение и откат — последняя8f0b40ea8897103c9756c1b08471d1525275adc9267030b239c0d95351257422 (work/ordered-facets/su30sm.dnm). Итог91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c (work/large-panels/su30sm.dnm). Все прежние ZIP и модели сохранены.
+Рабочая копия /workspace/work/su30sm-local-skin, ветка fix/su30sm-confirmed-defects-20261114. База и откат work/large-panels/su30sm.dnm SHA91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c. Старыйпубличныйrelease su30sm-large-panels-20261113 не менять. Итог work/confirmed-defects/final.dnm SHA9d97ef82d00577cc257013b730350873d46c5b86d502ed114599500a107a85ad.
 
-Нужные пути в i7885784-lang/igraYS-Flight-Simulator:
-- changes/su30sm-large-panels/facet.py: run()/build_panel(), полный отбор передних PAINT-треугольников, настоящий внешний контур, крупные согласованные станции, точные ограничения соседнего Fuselage_0_4 на пересечениях треугольников, OSQP. Никаких изменений самого Fuselage.
-- check.py/check_self.py/check_motion.py — повторное использование прежних узких валидаторов. package.py —4замороженныхPCK, отдельные настоящие x86/x64 ZIP, SHA/CRC/PE и побайтовая сохранность1162 прочих записей предыдущих ZIP.
-- changes/su30sm-local-skin/repair.py make_panel(), model-source/dnm.py и validation/ — прежние неизменные зависимости. Глобальный прежний QP не запускать.
-- dist/su30sm-large-panels/:4*.srf.zip+metadata.json. Игровая база — два OrderedFacets ZIP из work/ordered-downloaded (предыдущий публичный Release). Новая инструкция и rollback-large-panels содержат8f.
-- reports/su30sm-large-panels/:12пар PNG before/after, дневной наземный ракурс в тени и освещённый, native/gear.mp4 и результаты, JSONпроверок и REPORT.md.
+Точные изменения: MainBayFixedSkin_Left/Right — только передняя полоса absX1.03..1.87,Z-.66..-.41, плавное сопряжение по неизменным переднему/заднему сечениям вместо узкой складки; плоская триангуляция, внутренний край отведён назад8мм. Убран численный передний выступ контура2мкм. Fuselage_0_4 — удалены150остаточных исходных полигонов только в проёмах наружных основных створок absX1.87..2.4,Z-3.38..-.41, ниже настоящего потолка GearWell с12ммзащитой. Новых полигоновF4нет,всеегоисходныевершиныточные. Другие159PCK и все162узла/STA/POS/родители точные, включая ВСЕ створки, стойки, колёса, ниши, воздухозаборники, материалы/анимации.
 
-Подтверждённые причины прошлых неудач: правилась только левая сторона, наземная правая оставалась прежней; створка ранее была запрещена. Старый fit_field.exterior пропускал тонкие треугольники, образовывал микроскопические пробелы проекции (не исходной модели), их ошибочно считали краями, что давало рябь и не-копланарность внутри крупных граней. Новый код сохраняет все передние треугольники и заполняет только численные пробелы суммарной площадью<1e-7м². Настоящий проём U-образной обшивки открыт наружу и не закрывается.
+Пути GitHub i7885784-lang/igraYS-Flight-Simulator:
+- changes/su30sm-confirmed-defects/repair.py build_panel()/run(), bay_cut.py cut() — новый исходный алгоритм.
+- changes/su30sm-large-panels/facet.py exterior()/Projected и changes/su30sm-local-skin/repair.py make_panel(), model-source/ — неизменные зависимости. Требования в local-skin/requirements.txt.
+- check.py: сохранность + нормали/топология; check_self.py: самопересечения; прежний large-panels/check_motion.py:201поза.
+- freeze.py: точные3патча; F4малыйface-delta1954байтаZIP, безповторнойзагрузкивсего23МБмеша. package.py: разныеPE32/PE32+архивы отпредыдущихLargePanelsZIP.
+- windows_prepare.py/windows_check.py/windows-start.yfs — реальный запуск обоих PE на Windows2022, x86штатные LANDINGGEAR бездиагностическихкоманд.
+- dist/su30sm-confirmed-defects/:3patchZIP+metadata. reports/su30sm-confirmed-defects/:отчёт/PNG/проверки.
 
-Отклонены пробы9e061/c151 (52новых контакта створок с Fuselage_0_4),1582(массовая рябь вокруг внутренних численных «краёв»). Итог91a:4оболочки замкнуты/связны/Эйлер2/нормали согласованы,158PCK/162узла точные;201поза×618пар=808прежних контактных ключей,0добавлено/удалено;самопересечений0. Локальная повторная генерация побайтово совпала. На общей внутренней плоскости створок отклонения нормалей >1° теперь0. Свежие кадры91a открыты: крупные ровные плоскости видны на створке и наземной правой стороне; мелкая рябь убрана. Контур закреплён, внутренняя поверхность аппроксимирована до≈33,9мм поY от чистой основы (не объявлять все вершины неизменными).
+Команды /workspace/work/venv/bin/python:
+repair.py --baseline work/large-panels/su30sm.dnm --output work/confirmed-defects/final.dnm
+check.py --baseline BASE --candidate FINAL --output JSON
+check_self.py FINAL JSON
+changes/su30sm-large-panels/check_motion.py BASE FINAL OUTDIR
+freeze.py BASE FINAL work/confirmed-defects/reproduced.audit.json dist/su30sm-confirmed-defects
+package.py work/confirmed-packages work/large-downloaded
 
-Живой G0→1→0 реально проверен в x64 Wine:49состояний,active1, MODELPOSE не использовался. PNGкадры цикла открыты, весьролик не просмотрен. x86/нативнаяWindows заново не запускались, не заявлять обратного.
+Проверки: обе оболочки замкнуты/Эйлер2/согласованы/0дублей/0вырожденных/0самопересечений.201поза:808контактныхключейкакбыло,0новых/удалённых. Побайтоваяперегенерацияподтверждена. x64Wine:11парракурсов+живойGцикл, реальныеPNGоткрываютсядлясравнения. Промежуточныеполныереставрации и нормальнаяэкструзияотклонены, невыпускать. Нижнийзуб/полосы исчезли; тонкая фасеточная линия исходного корпуса местами видна, не объявлять весьсамолёт бездефектным. Опорастойки соединена — еёподъём не обоснован.
 
-Команды /workspace/work/venv/bin/python: facet.py --baseline BASE6f8 --output MODEL; check.py --baseline PREVIOUS8f --candidate MODEL --output JSON; check_self.py MODEL OUT; check_motion.py PREVIOUS MODEL OUTDIR; package.py OUTDIR PREVIOUS_ZIP_DIR. Зависимости requirements.txt прежнего local-skin. Фото: work/large-panels/capture-clean.sh (air/ground/native) и capture-side-lit.sh + work/lab/capture-side-lit.py. Наземный свет: временный fixture yaw270°, камераh0/p0/d28, LABAIM -1.45 -.8 -1.3, g1. LIGHTSRCD(0,.866,-.5), краска и конфигурация поставки не менялись. В глубокой тени контраст граней естественно слабый; не подменять это обещанием любойвидимости.
+GitHubлокальныйGH_TOKENистёк: использовать подключённыеGitHubtools длязаписи; publicAPI/downloadчерезurllib/curl доступны. Созданаудалённаяветка;база8bac3003d73a20cf96ba829aaa805c6552071a59,tree f7b5765bf2f28c0ef92b3faf11d16dc598cb00b1. GitDataupdate_ref НЕ запускалActions; послеисходников создатьworkflow черезContentscreate_file.
 
-Доставка: GH_TOKEN в локальном gh истёк — не повторять gh push/auth. Работают подключённые GitHub инструменты. Binary create_blob(base64) читать96КиБ-чанками, сверятьGitSHA; create_tree/create_commit/update_ref с lease. Для запускаActions создать новыйworkflow через Contents create_file ПОСЛЕ исходников: обычныйGitDataupdate_ref не запускалActions. Текущая удалённая база44bde032916747a56c347c7446bf3de8be29f7cf, локальная соответствующая база780af66. Плановый новый Release su30sm-large-panels-20261113. ЗАВЕРШЕНО: Release su30sm-large-panels-20261113 публичный, Actions43471460180 SUCCESS. ТриZIP скачаны/SHA/CRC проверены; оба PE, модель91a, откат8f и1162 прочих записей точные. Все исходники/4патча в ModelSources побайтово совпали, модели6f/8f/91a проверены. Протокол reports/su30sm-large-panels/publication-check.json. Повторный полный аудит и полныйпереген одинакового скачанного кода не нужны.
+Осталось: NativeWindows32/64 CI, открытькадры; окончательныепаспортасборок/ZIP;публикацияновогоrelease su30sm-confirmed-defects-20261114, скачать/проверитьархивы, датьдвепрямыессылки. Wine32неподдержанэтойсредой(syswow64 ntdll.dll c0000135);этоограничениесреды,неархитектурыигры.
