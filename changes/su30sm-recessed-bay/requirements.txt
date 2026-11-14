@@ -1,0 +1,2 @@
+-r ../su30sm-local-skin/requirements.txt
+manifold3d==3.5.5
