@@ -28,33 +28,4 @@
       "byte_exact_local_package": true
     }
   ]
-}[fix/su30sm-cockpit-fit-20261114 3a2b823] Fit Su30SM cockpit interior and close rear bay with native Windows evidence
- 28 files changed, 1119 insertions(+)
- create mode 100644 .github/workflows/su30sm-cockpit-fit-native.yml
- create mode 100644 .github/workflows/su30sm-cockpit-fit-publish.yml
- create mode 100644 changes/su30sm-cockpit-fit/README.md
- create mode 100644 changes/su30sm-cockpit-fit/apply.py
- create mode 100644 changes/su30sm-cockpit-fit/check.py
- create mode 100644 changes/su30sm-cockpit-fit/check_canopy.py
- create mode 100644 changes/su30sm-cockpit-fit/freeze.py
- create mode 100644 changes/su30sm-cockpit-fit/package.py
- create mode 100644 changes/su30sm-cockpit-fit/previous-packages.json
- create mode 100644 changes/su30sm-cockpit-fit/repair.py
- create mode 100644 changes/su30sm-cockpit-fit/windows-start.yfs
- create mode 100644 changes/su30sm-cockpit-fit/windows_check.py
- create mode 100644 changes/su30sm-cockpit-fit/windows_prepare.py
- create mode 100644 dist/su30sm-cockpit-fit/Su30Interior.srf.zip
- create mode 100644 dist/su30sm-cockpit-fit/metadata.json
- create mode 100644 reports/su30sm-cockpit-fit/RELEASE.md
- create mode 100644 reports/su30sm-cockpit-fit/REPORT_RU.md
- create mode 100644 reports/su30sm-cockpit-fit/Su30SM_CockpitFit_VisualReport.zip
- create mode 100644 reports/su30sm-cockpit-fit/after.png
- create mode 100644 reports/su30sm-cockpit-fit/before.png
- create mode 100644 reports/su30sm-cockpit-fit/canopy.json
- create mode 100644 reports/su30sm-cockpit-fit/generator-audit.json
- create mode 100644 reports/su30sm-cockpit-fit/native-32-results.json
- create mode 100644 reports/su30sm-cockpit-fit/native-64-results.json
- create mode 100644 reports/su30sm-cockpit-fit/publication-verified.json
- create mode 100644 reports/su30sm-cockpit-fit/quality.json
- create mode 100644 reports/su30sm-cockpit-fit/rear-after.png
- create mode 100644 reports/su30sm-cockpit-fit/rear-before.png
+}
