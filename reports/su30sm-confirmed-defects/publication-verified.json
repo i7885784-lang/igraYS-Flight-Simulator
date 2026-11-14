@@ -1,0 +1,31 @@
+{
+  "release": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/su30sm-confirmed-defects-20261114",
+  "publish_run": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/actions/runs/43573709247",
+  "passed": true,
+  "packages": [
+    {
+      "file": "Su30SM_LocalDefects_Windows_x86.zip",
+      "sha256": "55aa7091ad897829f6d2aee7a9a340390aa0a94faf99d1a06b7f4dd9739e6f04",
+      "zip_crc_passed": true,
+      "byte_exact_local_package": true,
+      "PE_machine": "0x14c",
+      "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+      "native_windows_verified": true
+    },
+    {
+      "file": "Su30SM_LocalDefects_Windows_x64.zip",
+      "sha256": "ee913097758288be7f5de712f0e2adcea77a7d22c5eb4dba86b802664c156e0a",
+      "zip_crc_passed": true,
+      "byte_exact_local_package": true,
+      "PE_machine": "0x8664",
+      "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+      "native_windows_verified": true
+    },
+    {
+      "file": "Su30SM_LocalDefects_ModelSources.zip",
+      "sha256": "8933bf1c11eb066c6542be43be76180452f3ab476b271f19ba5fed0e58b3988b",
+      "zip_crc_passed": true,
+      "byte_exact_local_package": true
+    }
+  ]
+}
