@@ -1,0 +1,26 @@
+[
+  {
+    "file": "Su30SM_LocalDefects_Windows_x86.zip",
+    "sha256": "55aa7091ad897829f6d2aee7a9a340390aa0a94faf99d1a06b7f4dd9739e6f04",
+    "bytes": 99174917,
+    "architecture": "x86",
+    "PE_machine": "0x14c",
+    "optional_header": "0x10b",
+    "exe_sha256": "c436a09eae7aab6d149618f3ec3cb35ffb187d8165b5f962d56d9f5c5fb331a7",
+    "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+    "unchanged_previous_entries": 1164,
+    "zip_crc_passed": true
+  },
+  {
+    "file": "Su30SM_LocalDefects_Windows_x64.zip",
+    "sha256": "ee913097758288be7f5de712f0e2adcea77a7d22c5eb4dba86b802664c156e0a",
+    "bytes": 99265346,
+    "architecture": "x64",
+    "PE_machine": "0x8664",
+    "optional_header": "0x20b",
+    "exe_sha256": "638c7ab349ca06f7991d8877f641ebca53e1a3e8f47fc0febc959934afebdb83",
+    "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+    "unchanged_previous_entries": 1164,
+    "zip_crc_passed": true
+  }
+]

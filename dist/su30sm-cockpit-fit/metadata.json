@@ -1,0 +1,17 @@
+{
+  "interior_sha256": "422b7ed095e4bd95a4ac66e4105333696424e397b9a1d5b5a1d4682013bcb90e",
+  "changed_packs": [
+    "Su30Interior.srf"
+  ],
+  "all_nodes_unchanged": true,
+  "models": {
+    "su30sm.dnm": {
+      "baseline_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
+      "sha256": "ee1f9324e1c4a46179efd2af2323e5cd0b599e19221e1d8e04910e3332071f27"
+    },
+    "su30smcockpit.dnm": {
+      "baseline_sha256": "59e8226dede7a10d526e48332043d9d2f4dc27c018b6f3b732b188b567274b31",
+      "sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9"
+    }
+  }
+}
