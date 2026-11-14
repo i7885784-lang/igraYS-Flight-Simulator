@@ -1,0 +1,38 @@
+name: Publish locally repaired Su30SM with native Windows proofs
+on:
+  push:
+    branches: [fix/su30sm-confirmed-defects-20261114]
+    paths: [.github/workflows/su30sm-confirmed-defects-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-confirmed-defects
+            changes/su30sm-large-panels
+            changes/su30sm-local-skin
+            dist/su30sm-confirmed-defects
+            reports/su30sm-confirmed-defects
+      - name: Download exact previous genuine architecture archives
+        run: |
+          mkdir -p work/previous-zips
+          curl -fLsS --retry 3 https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-large-panels-20261113/Su30SM_LargePanels_Windows_x86.zip -o work/previous-zips/Su30SM_LargePanels_Windows_x86.zip
+          curl -fLsS --retry 3 https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-large-panels-20261113/Su30SM_LargePanels_Windows_x64.zip -o work/previous-zips/Su30SM_LargePanels_Windows_x64.zip
+      - name: Install parser dependency
+        run: python -m pip install Pillow
+      - name: Package only native verified model and verify resources PE and CRC
+        env:
+          REQUIRE_NATIVE_CHECKS: "1"
+        run: python changes/su30sm-confirmed-defects/package.py work/packages work/previous-zips
+      - name: Publish verified separate games and evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-confirmed-defects-20261114 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: локальная обшивка, сопряжение и проёмы шасси" --notes-file reports/su30sm-confirmed-defects/RELEASE.md
+          gh release upload su30sm-confirmed-defects-20261114 work/packages/Su30SM_LocalDefects_Windows_x86.zip work/packages/Su30SM_LocalDefects_Windows_x64.zip work/packages/Su30SM_LocalDefects_ModelSources.zip work/packages/SHA256SUMS.txt work/packages/packages.json reports/su30sm-confirmed-defects/Su30SM_LocalDefects_VisualReport.zip reports/su30sm-confirmed-defects/before.png reports/su30sm-confirmed-defects/after.png --repo i7885784-lang/igraYS-Flight-Simulator
