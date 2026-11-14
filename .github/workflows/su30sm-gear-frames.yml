@@ -1,0 +1,37 @@
+name: Export requested landing gear cycle frames
+on:
+  push:
+    branches: [fix/su30sm-cockpit-fit-20261114]
+    paths: [.github/workflows/su30sm-gear-frames.yml]
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: reports/su30sm-cockpit-fit
+      - name: Export every actual recorded frame
+        run: |
+          echo "35ea4ebb6247c4e1a965774ec846a9c18a45774e4e4a3a497f4e75a153f683ae  reports/su30sm-cockpit-fit/gear-cycle.mp4" | sha256sum -c -
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+          mkdir -p cycle/frames
+          ffmpeg -y -loglevel error -i reports/su30sm-cockpit-fit/gear-cycle.mp4 -vsync 0 cycle/frames/frame_%04d.png
+          cp reports/su30sm-cockpit-fit/gear-cycle.mp4 cycle/
+          cp reports/su30sm-cockpit-fit/gear-cycle-results.json cycle/results.json
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          p=Path('cycle')
+          assert len(list((p/'frames').glob('*.png')))==192
+          (p/'README_RU.txt').write_text('Су-30СМ: выпуск и уборка шасси. 192 последовательных PNG, 12 кадров/с, 16 секунд. Время кадра N=(N-1)/12 с. Выпуск клавишей G около 0.2 с, уборка около 7.3 с. Камера неподвижна. Исходное видео и протокол включены. Модель EE1F9324.\n')
+          with zipfile.ZipFile('Su30SM_GearCycle_Frames.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for f in sorted(p.rglob('*')):
+                  if f.is_file(): z.write(f,f.relative_to(p))
+          with zipfile.ZipFile('Su30SM_GearCycle_Frames.zip') as z: assert z.testzip() is None
+          PY
+      - name: Upload requested ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload su30sm-cockpit-fit-20261114 Su30SM_GearCycle_Frames.zip --repo i7885784-lang/igraYS-Flight-Simulator
