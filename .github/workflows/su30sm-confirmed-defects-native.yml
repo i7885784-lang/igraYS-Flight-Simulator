@@ -1,0 +1,38 @@
+name: Su30SM local defects native Windows x86 and x64
+on:
+  push:
+    branches: [fix/su30sm-confirmed-defects-20261114]
+    paths: [.github/workflows/su30sm-confirmed-defects-native.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        bits: [32, 64]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-confirmed-defects
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-confirmed-defects
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow
+      - name: Prepare exact model and original architecture binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python changes/su30sm-confirmed-defects/windows_prepare.py ${{ matrix.bits }}
+      - name: Open real game and capture gear states on Windows
+        run: python changes/su30sm-confirmed-defects/windows_check.py ${{ matrix.bits }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-defects-native-${{ matrix.bits }}
+          path: native-${{ matrix.bits }}
