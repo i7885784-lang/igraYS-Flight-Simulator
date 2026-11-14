@@ -1,6 +1,6 @@
 {
   "baseline_sha256": "91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c",
-  "model_sha256": "0af68b56600b92d45f5bdd41f7775a6787af38aa13f1887ab3f5c3c5bd936003",
+  "model_sha256": "dd9c29fd7e555be4ba1b7257adb91bcc63f7a7d3943b1b3421c865daa529ada7",
   "patches": [
     {
       "pack": "Fuselage_0_4.srf",
@@ -14,21 +14,21 @@
     },
     {
       "pack": "MainBayFixedSkin_Left.srf",
-      "sha256": "f0b75646b1369c69d107f95eab3aaf62340e982f47a2d17c7d0eabc119e4eb7d",
-      "bytes": 2541878,
+      "sha256": "b11966f09a2c766cd53e76c2f2a4fb4eebbfac83b212196fdc5efd15c77bd82e",
+      "bytes": 2647969,
       "type": "srf",
       "zip": "MainBayFixedSkin_Left.srf.zip",
       "member": "MainBayFixedSkin_Left.srf",
-      "zip_bytes": 525664
+      "zip_bytes": 553228
     },
     {
       "pack": "MainBayFixedSkin_Right.srf",
-      "sha256": "4cfe5ba3604df5e707b69e7a4527da9b5ac6d7c931e2f052f813dcaa870e752a",
-      "bytes": 2641291,
+      "sha256": "ee3bd6d8aaa48886cc5da1a0e3498bfdfda448654ab4c0905380b487ac17ba72",
+      "bytes": 2747924,
       "type": "srf",
       "zip": "MainBayFixedSkin_Right.srf.zip",
       "member": "MainBayFixedSkin_Right.srf",
-      "zip_bytes": 552630
+      "zip_bytes": 581343
     }
   ],
   "visual_check": "x64 OpenGL Wine: matched ground/air/near views, three gear poses and native G cycle; x86 launch status in report"

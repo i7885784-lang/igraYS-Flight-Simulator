@@ -34,7 +34,7 @@ def build(out,prior):
   for folder in ['changes/su30sm-confirmed-defects','changes/su30sm-large-panels','changes/su30sm-local-skin','reports/su30sm-confirmed-defects','dist/su30sm-confirmed-defects']:
    for f in sorted((ROOT/folder).rglob('*')):
     if f.is_file() and '__pycache__' not in f.parts and 'geometry-cache' not in f.parts:put(z,str(f.relative_to(ROOT)),f.read_bytes())
-  put(z,'baseline/su30sm.dnm',previous);put(z,'generated/su30sm.dnm',model);put(z,'TASK_CONTEXT.md',(ROOT/'TASK_CONTEXT.md').read_bytes());put(z,'README_ENGINE_SOURCES.txt',b'Unchanged engine sources and license history: https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-local-skin-20261111/Su30SM_LocalSkin_FullSources.zip\n')
+  put(z,'baseline/su30sm.dnm',previous);put(z,'generated/su30sm.dnm',model);put(z,'README_ENGINE_SOURCES.txt',b'Unchanged engine sources and license history: https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-local-skin-20261111/Su30SM_LocalSkin_FullSources.zip\n')
  with zipfile.ZipFile(source) as z:assert z.testzip() is None
  (out/'packages.json').write_text(json.dumps(rows,indent=2));files=[out/e['file'] for e in rows]+[source];(out/'SHA256SUMS.txt').write_text(''.join(sha(f.read_bytes())+'  '+f.name+'\n' for f in files));print(json.dumps(rows,indent=2))
 if __name__=='__main__':build(Path(sys.argv[1]),Path(sys.argv[2]))

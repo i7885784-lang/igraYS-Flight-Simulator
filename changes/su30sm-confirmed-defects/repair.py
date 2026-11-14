@@ -10,7 +10,7 @@ from shapely.strtree import STRtree
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'changes/su30sm-large-panels'));from facet import dnm,exterior,world,Projected,make_panel
 from bay_cut import cut
-from front_profile import extract as extract_front
+from front_profile import extract as extract_front,inboard_floor
 BASE='91a201f3ca02d7c69345d197827b1567cedcc87edb51409ffc0006b8cc0ae61c'
 NAMES=['MainBayFixedSkin_Left','MainBayFixedSkin_Right'];sha=lambda b:hashlib.sha256(b).hexdigest()
 def parts(g):return [p for p in shapely.get_parts(g) if p.geom_type=='Polygon' and p.area>1e-12]
@@ -32,26 +32,39 @@ def build_panel(p,lu,name,profile):
  def arc(q):return np.r_[0,np.cumsum(np.linalg.norm(np.diff(q,axis=0),axis=1))]
  rear_arc=arc(rear_curve);rear_arc/=rear_arc[-1];front_curve=profile['outside'];inside_curve=profile['inside'];front_arc=arc(front_curve);front_arc/=front_arc[-1];assert len(inside_curve)==len(front_curve),'Offset correspondence changed';inside_arc=front_arc.copy()
  knot_u=np.unique(np.r_[rear_arc,front_arc,inside_arc]);xs=np.interp(knot_u,rear_arc,rear_curve[:,0]);rxy=np.c_[xs,np.interp(xs,rear_curve[:,0],rear_curve[:,1])];fxy=np.c_[np.interp(knot_u,front_arc,front_curve[:,0]),np.interp(knot_u,front_arc,front_curve[:,1])];ixy=np.c_[np.interp(knot_u,inside_arc,inside_curve[:,0]),np.interp(knot_u,inside_arc,inside_curve[:,1])]
- band=box(1.03,rear,1.87,front);groups=collections.defaultdict(list)
+ band=box(1.03,rear,1.87,front);side_rear=-1.86;side_front=-.66;side_band=box(1.03,side_rear,1.05,side_front);body_z,body_y=inboard_floor(p,lu,dnm,world,sg,side_rear,side_front);numeric_side_sliver=domain.intersection(box(-10,side_rear,1.03,side_front)).area;assert numeric_side_sliver<1e-4 and domain.bounds[0]>=1.02975,(name,numeric_side_sliver,domain.bounds[0]);domain=domain.difference(box(-10,side_rear,1.03,side_front)).union(side_band);side_z=set(np.r_[body_z,side_rear,side_front].tolist())
+ for q in tris:
+  uvq=np.c_[sg*q[:,0],q[:,2]]
+  for a,b in zip(uvq,np.roll(uvq,-1,axis=0)):
+   if abs(b[0]-a[0])>1e-12:
+    t=(1.05-a[0])/(b[0]-a[0])
+    if 0<=t<=1:
+     z=a[1]+t*(b[1]-a[1])
+     if side_rear<z<side_front:side_z.add(float(z))
+ side_z=np.unique(np.round(sorted(side_z),7));groups=collections.defaultdict(list)
  for poly,(q,c) in zip(polys,old):groups[c].append(poly)
  paint=[(shapely.union_all(reg,grid_size=1e-7).intersection(domain),c) for c,reg in sorted(groups.items())];ptree=STRtree([q for q,c in paint])
- lines=[domain.boundary,band.boundary]+[q.boundary for q,c in paint]
+ lines=[domain.boundary,band.boundary,side_band.boundary]+[q.boundary for q,c in paint]
  # The geometry outside the confirmed front band remains exactly on its old triangles.
  for poly in polys:
   q=poly.difference(band)
   if not q.is_empty:lines.append(q.boundary)
  for a,b in zip(xs,xs[1:]):lines.extend([LineString([(a,rear),(a,front)]),LineString([(a,rear),(b,front)])])
+ for a,b in zip(side_z,side_z[1:]):lines.extend([LineString([(1.03,a),(1.05,a)]),LineString([(1.03,a),(1.05,b)])])
  uv,faces=graph_mesh(lines,domain);colors=[]
  for pt in uv[faces].mean(1):
   hits=ptree.query(Point(*pt),predicate='intersects');colors.append(paint[int(hits[0] if len(hits) else ptree.nearest(Point(*pt)))][1])
  class Field:
-  def __init__(self):self.sg=sg
-  def positions(self,points,inside=False):
+  def __init__(self):
+   self.sg=sg;y=np.interp(side_z,body_z,body_y);oldA=self._base(np.c_[np.full(len(side_z),1.03),side_z])[:,1];end_error=oldA[[0,-1]]-y[[0,-1]];print(name,'inboard endpoint errors',end_error,flush=True);assert max(abs(end_error))<5e-5;self.D=y-oldA+np.interp(side_z,[side_rear,side_front],end_error)
+  def _base(self,points,inside=False):
    hh=np.array([reference.lower(q,nearest=True) for q in points]);result=np.c_[sg*points[:,0],hh+(.008 if inside else 0),points[:,1]];mask=(points[:,0]>=1.03-1e-8)&(points[:,0]<=1.87+1e-8)&(points[:,1]>=rear-1e-9)&(points[:,1]<=front+1e-9);q=points[mask];ix=np.clip(np.searchsorted(xs,q[:,0],side='right')-1,0,len(xs)-2);a=(q[:,0]-xs[ix])/(xs[ix+1]-xs[ix]);b=(q[:,1]-rear)/(front-rear);A=np.c_[rxy,np.full(len(xs),rear)];B=np.c_[ixy if inside else fxy,np.full(len(xs),front)]
    if inside:A[:,1]+=.008
    mapped=np.where((a>=b)[:,None],A[ix]+(A[ix+1]-A[ix])*a[:,None]+(B[ix+1]-A[ix+1])*b[:,None],A[ix]+(B[ix+1]-B[ix])*a[:,None]+(B[ix]-A[ix])*b[:,None]);mapped[:,0]*=sg;result[mask]=mapped;return result
+  def positions(self,points,inside=False):
+   result=self._base(points,inside);mask=(points[:,0]>=1.03-1e-9)&(points[:,0]<=1.05+1e-9)&(points[:,1]>=side_rear-1e-9)&(points[:,1]<=side_front+1e-9);q=points[mask];iz=np.clip(np.searchsorted(side_z,q[:,1],side='right')-1,0,len(side_z)-2);a=(q[:,0]-1.03)/.02;b=(q[:,1]-side_z[iz])/(side_z[iz+1]-side_z[iz]);d=np.where(a>=b,self.D[iz]*(1-a),self.D[iz]-self.D[iz+1]*a+(self.D[iz+1]-self.D[iz])*b);result[mask,1]+=d;return result
   def height(self,points):return self.positions(points)[:,1]
- field=Field();height=field.height(uv);oldheight=np.array([reference.lower(q,nearest=True) for q in uv]);mask=(uv[:,0]>=1.03)&(uv[:,0]<=1.87)&(uv[:,1]>=rear)&(uv[:,1]<=front);outside_error=float(max(abs(height[~mask]-oldheight[~mask]),default=0));frontpoints=field.positions(uv[abs(uv[:,1]-front)<1e-8]);frontpoints[:,0]*=sg;front_curve_error=float(max((LineString(front_curve).distance(Point(*q[:2])) for q in frontpoints),default=0));rearpoints=field.positions(uv[abs(uv[:,1]-rear)<1e-8]);rearpoints[:,0]*=sg;rear_curve_error=float(max((LineString(rear_curve).distance(Point(*q[:2])) for q in rearpoints),default=0));boundary_error=max(front_curve_error,rear_curve_error);assert outside_error<1e-8 and boundary_error<5e-5
+ field=Field();height=field.height(uv);oldheight=np.array([reference.lower(q,nearest=True) for q in uv]);mask=((uv[:,0]>=1.03)&(uv[:,0]<=1.87)&(uv[:,1]>=rear)&(uv[:,1]<=front))|((uv[:,0]>=1.03)&(uv[:,0]<=1.05)&(uv[:,1]>=side_rear)&(uv[:,1]<=side_front));outside_error=float(max(abs(height[~mask]-oldheight[~mask]),default=0));frontpoints=field.positions(uv[abs(uv[:,1]-front)<1e-8]);frontpoints[:,0]*=sg;front_curve_error=float(max((LineString(front_curve).distance(Point(*q[:2])) for q in frontpoints),default=0));rearpoints=field.positions(uv[abs(uv[:,1]-rear)<1e-8]);rearpoints[:,0]*=sg;rear_curve_error=float(max((LineString(rear_curve).distance(Point(*q[:2])) for q in rearpoints),default=0));boundary_error=max(front_curve_error,rear_curve_error);assert outside_error<1e-8 and boundary_error<5e-5
  used=np.unique(faces);remap=np.full(len(uv),-1);remap[used]=np.arange(len(used));uv=uv[used];faces=remap[faces];part={'uv':uv,'faces':faces.tolist(),'colors':colors,'domain':domain,'paint_missing_m2':0,'discarded_disconnected_outline_areas_m2':[]};m,meta=make_panel(part,field,n,.008)
  # Map BOTH faces of the shell through the same spatial loft. The inside
  # follows the measured profile's valid offset, not a global Y extrusion.
@@ -71,7 +84,7 @@ def build_panel(p,lu,name,profile):
  m.f=kept
  p[dnm.fil(n)]=m.srf()
  samples=np.unique(uvold.round(7),axis=0);sample_error=field.height(samples)-np.array([reference.lower(q,nearest=True) for q in samples])
- meta.update(front_band_abs_xz_m=[1.03,1.87,rear,front],outside_band_height_error_m=outside_error,mating_sections_curve_error_m=boundary_error,front_section_error_m=front_curve_error,rear_section_error_m=rear_curve_error,source_section_plane_z_m=profile['extraction_z'],source_section_snap_tolerance_m=profile['simplification_tolerance_m'],max_local_height_correction_m=float(max(abs(sample_error))),x_stations=xs.tolist(),z_stations=[rear,front],numeric_front_sliver_removed_m2=numeric_front_sliver,numeric_front_notches_filled_m2=front_notches,internal_rim_retreat_z_m=0,method='spatial loft between unchanged rear profile and actual connected F4 front contour; retain overhang and offset inside profile')
+ meta.update(front_band_abs_xz_m=[1.03,1.87,rear,front],outside_band_height_error_m=outside_error,mating_sections_curve_error_m=boundary_error,front_section_error_m=front_curve_error,rear_section_error_m=rear_curve_error,source_section_plane_z_m=profile['extraction_z'],source_section_snap_tolerance_m=profile['simplification_tolerance_m'],max_local_height_correction_m=float(max(abs(sample_error))),x_stations=xs.tolist(),z_stations=[rear,front],numeric_front_sliver_removed_m2=numeric_front_sliver,numeric_front_notches_filled_m2=front_notches,inboard_strip_abs_xz_m=[1.03,1.05,side_rear,side_front],numeric_inboard_sliver_removed_m2=numeric_side_sliver,max_inboard_edge_correction_m=float(max(abs(field.D))),internal_rim_retreat_z_m=0,method='spatial loft between unchanged rear profile and actual connected F4 front contour; retain overhang and offset inside profile')
  print(name,'triangles',len(faces),'stations',len(xs),'max correction',meta['max_local_height_correction_m'],'edge error',boundary_error,flush=True);return meta
 
 def well_roofs(p,lu,side):
