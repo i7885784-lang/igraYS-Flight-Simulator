@@ -39,3 +39,5 @@ jobs:
             native-${{ matrix.bits }}/*.png
             native-${{ matrix.bits }}/results.json
           retention-days: 30
+
+# Verified corner-clearance candidate: 001bf8ca00fd30cd722a31c53d8b2d160644c9a68b9f00f1f834d99a1f751de4
