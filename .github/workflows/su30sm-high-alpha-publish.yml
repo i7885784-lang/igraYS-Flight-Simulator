@@ -1,0 +1,56 @@
+name: Publish native-verified Su30SM high-alpha control and Cobra video
+on:
+  push:
+    branches: [fix/su30sm-high-alpha-20261115]
+    paths: [.github/workflows/su30sm-high-alpha-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-high-alpha
+            changes/su30sm-nozzle-vector
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-high-alpha
+            dist/su30sm-nozzle-vector
+            reports/su30sm-high-alpha
+            .github/workflows
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-HighAlpha-build-32
+          path: artifacts/build-32
+          run-id: 43687813404
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-HighAlpha-build-64
+          path: artifacts/build-64
+          run-id: 43687813404
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-HighAlpha-native-64
+          path: artifacts/native-64
+          run-id: 43687813404
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-HighAlpha-native-32
+          path: artifacts/native-32
+          run-id: 43689098018
+          github-token: ${{ github.token }}
+      - name: Package exact tested binaries and complete corresponding sources
+        run: python changes/su30sm-high-alpha/package.py work/packages
+      - name: Publish separate games, source, report and actual in-game video
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-high-alpha-20261115 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: ручное снятие ограничителя и кобра с входом 600 км/ч" --notes-file reports/su30sm-high-alpha/RELEASE.md
+          gh release upload su30sm-high-alpha-20261115 work/packages/* --repo i7885784-lang/igraYS-Flight-Simulator
