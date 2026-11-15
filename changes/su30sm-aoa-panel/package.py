@@ -2,7 +2,7 @@ from pathlib import Path
 import sys,json,zipfile,shutil,subprocess,urllib.request
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'changes/su30sm-high-alpha'))
 from build_candidate import source,FILES,MODEL,COCKPIT,pe,SHA
-NATIVE_RUN=43700656590
+NATIVE_RUN=43701212771
 TAG='su30sm-aoa-panel-20261115';REPO='i7885784-lang/igraYS-Flight-Simulator'
 OLD={32:('x86','1ecb5b8b5b22a2648d88263c3bbf3ab3d5f52efdaf119057b44b114958b7b226'),64:('x64','27927b0375548ee4c9dc07b003e0ba4dc1bcfa0dc59850c7c120cea01feaf62d')}
 STAMP=(2026,11,15,0,0,0)
