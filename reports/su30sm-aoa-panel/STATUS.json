@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "release": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/tag/su30sm-aoa-panel-20261115",
+  "native_run": 43701212771,
+  "publish_run": 43701687861,
+  "default_limit_deg": 65,
+  "range_deg": [
+    30,
+    110
+  ],
+  "shortcut": "Ctrl+Shift+L",
+  "step_keys": "F7/F8",
+  "reset_key": "F9",
+  "mode_shortcut": "Ctrl+L",
+  "session_only": true,
+  "stabilization_changed": false,
+  "geometry_changed": false,
+  "peak_aoa_x64": 63.436564,
+  "release_aoa_x64": 0.637383,
+  "verification": {
+    "passed": true,
+    "rows": [
+      {
+        "file": "Su30SM_AOAPanel_Windows_x86.zip",
+        "bits": 32,
+        "sha256": "f7c802db48a71433cb4c8057a8dfca689b9b19bd7f6eb6a622a993eb77eb16c2",
+        "bytes": 134420945,
+        "exe_sha256": "2bbf163cfd5cd8affb3cfb26123d39e4ad6aa10e92b1b8b4ff76b14be0b6a7ae",
+        "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+        "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+        "native_windows_verified": true,
+        "zip_crc_passed": true,
+        "unchanged_previous_entries": 1182,
+        "machine": "0x14c",
+        "optional_header": "0x10b"
+      },
+      {
+        "file": "Su30SM_AOAPanel_Windows_x64.zip",
+        "bits": 64,
+        "sha256": "ec219a6d412b2043c4ad1c3ce33a7f780891daadcb2c601c02258a402faafefd",
+        "bytes": 134853402,
+        "exe_sha256": "4e5e50fc823925b329f83d2b5a3e2e60922217178045efec4a9baa385813ca32",
+        "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+        "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+        "native_windows_verified": true,
+        "zip_crc_passed": true,
+        "unchanged_previous_entries": 1182,
+        "machine": "0x8664",
+        "optional_header": "0x20b"
+      }
+    ],
+    "all_release_hashes_checked": true,
+    "full_sources_crc_and_correspondence_passed": true,
+    "report_native_exe_hashes_match_games": true
+  }
+}
