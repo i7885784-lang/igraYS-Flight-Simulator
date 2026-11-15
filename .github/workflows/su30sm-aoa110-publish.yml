@@ -1,0 +1,55 @@
+name: Publish verified Su30SM 110-degree limiter without video
+on:
+  push:
+    branches: [fix/su30sm-aoa110-20261115]
+    paths: [.github/workflows/su30sm-aoa110-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-aoa110
+            changes/su30sm-high-alpha
+            changes/su30sm-nozzle-vector
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-nozzle-vector
+            reports/su30sm-aoa110
+            .github/workflows
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOA110-build-32
+          path: artifacts/build-32
+          run-id: 43694670462
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOA110-build-64
+          path: artifacts/build-64
+          run-id: 43694670462
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOA110-native-32
+          path: artifacts/native-32
+          run-id: 43694670462
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOA110-native-64
+          path: artifacts/native-64
+          run-id: 43694670462
+          github-token: ${{ github.token }}
+      - run: python changes/su30sm-aoa110/package.py
+      - name: Publish genuine separate architectures and corresponding sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-aoa110-20261115 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: положительный ограничитель Ctrl+L около 110°" --notes "Обычный режим прежний (задание до23°). В Ctrl+L целевая положительная граница110° с упреждающим торможением и согласованием сопел. Нативный тест x64: максимум108.688258° при удержании ручки, восстановление после отпускания; x86 запуск/клавиши проверены. Это игровая настройка, не заводской предел. Все модели и ресурсы сохранены. Две настоящие архитектуры, полный исходный код, численный отчёт и откат. Видео/скриншоты не создавались."
+          gh release upload su30sm-aoa110-20261115 work/packages/* --repo i7885784-lang/igraYS-Flight-Simulator
