@@ -1,0 +1,55 @@
+name: Publish verified Su30 compact AOA panel
+on:
+  push:
+    branches: [fix/su30sm-aoa-panel-20261115]
+    paths: [.github/workflows/su30sm-aoa-panel-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-aoa-panel
+            changes/su30sm-high-alpha
+            changes/su30sm-nozzle-vector
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-nozzle-vector
+            reports/su30sm-aoa-panel
+            .github/workflows
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOAPanel-build-32
+          path: artifacts/build-32
+          run-id: 43701212771
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOAPanel-build-64
+          path: artifacts/build-64
+          run-id: 43701212771
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOAPanel-native-32
+          path: artifacts/native-32
+          run-id: 43701212771
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-AOAPanel-native-64
+          path: artifacts/native-64
+          run-id: 43701212771
+          github-token: ${{ github.token }}
+      - run: python changes/su30sm-aoa-panel/package.py
+      - name: Publish separate Windows architectures and matching sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-aoa-panel-20261115 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: настройка угла атаки в полёте" --notes "Ctrl+Shift+L: небольшая панель справа. F7/F8: предел30–110°, шаг5°. F9: исходные65°. Ctrl+L включает манёвренный режим; обычное управление и стабилизация прежние. Значение сохраняется на текущий полёт. Нативные Windows x86/x64: открытие, изменение, сброс, закрытие; численный предел65° и возврат проверены в x64. Игровые параметры, не заводские характеристики. Геометрия, DAT, окраска и шасси сохранены. Две реальные архитектуры, полный исходный код, отчёт и откат; без видео."
+          gh release upload su30sm-aoa-panel-20261115 work/packages/* --repo i7885784-lang/igraYS-Flight-Simulator
