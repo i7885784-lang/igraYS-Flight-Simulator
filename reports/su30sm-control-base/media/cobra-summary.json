@@ -1,0 +1,16 @@
+{
+  "peak_aoa": 102.174497,
+  "final": {
+    "t": 31.217,
+    "h": -0.0,
+    "b": -0.0,
+    "p": 7.643,
+    "y": 2830.398,
+    "speed": 186.051
+  },
+  "active": "1",
+  "manual_controls": true,
+  "autopilot": false,
+  "speedup": 2,
+  "bytes": 110026
+}
