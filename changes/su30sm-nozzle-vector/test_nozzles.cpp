@@ -20,6 +20,29 @@ int main()
  settle(s,1,false,0,0,0);assert(std::abs(s.angle[0])+std::abs(s.angle[1])<1e-12);
  State high;settle(high,1,false,1,0,0,400);State low;settle(low,1,false,1,0,0,40);assert(std::abs(high.angle[0])<std::abs(low.angle[0]));
  State cold;cold.update(.1,0,false,false,0,0,1,1,1,0,0,0);assert(cold.opening==1 && cold.angle[0]==0 && cold.angle[1]==0);
+ // Independent analytic force/moment checks for the actual canted geometry.
+ State pose;pose.angle={{Limit,-Limit}};
+ auto f=pose.meanDirection();auto torque=pose.moment(200000);
+ const double fx=200000*std::sin(Cant)*std::sin(Limit);
+ const double loss=200000*(std::cos(Limit)-1);
+ assert(std::abs(f[0]*200000-fx)<1e-9 && std::abs(f[1])<1e-12);
+ assert(std::abs(f[2]-std::cos(Limit))<1e-12);
+ assert(std::abs(torque[0]-(-.50023219*loss))<1e-8);
+ assert(std::abs(torque[1]-(-8.34445498*fx))<1e-8);
+ const double roll=-200000*1.19030109*std::cos(Cant)*std::sin(Limit)+.50023219*fx;
+ assert(std::abs(torque[2]-roll)<1e-8);
+ // The two differential axes are physically coupled; do not invent pure yaw.
+ assert(std::abs(torque[1])>1000 && std::abs(torque[2])>1000);
+ // Match the engine's positive NoseUp / YawLeft / bank-rate conventions.
+ for(int axis=0;axis<3;++axis)
+ {
+  State damp;for(int i=0;i<1000;++i)damp.update(.01,1,false,true,80,0,0,0,0,axis==0?.5:0,axis==1?.5:0,axis==2?.5:0);
+  const auto t=damp.moment(200000);
+  const double acceleration=axis==0?-t[0]:axis==1?t[2]:-t[1];
+  assert(acceleration<0); // opposes the positive angular rate
+ }
+ State alpha;for(int i=0;i<2000;++i)alpha.update(.01,1,false,true,400,30*Pi/180,1,0,0,0,0,0);
+ assert(std::abs(alpha.angle[0]-Limit)<1e-10);
  std::mt19937 rng(1730);std::uniform_real_distribution<double> u(-1,1),t(.001,.15);
  for(int i=0;i<20000;++i)
  {

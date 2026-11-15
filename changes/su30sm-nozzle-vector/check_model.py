@@ -22,6 +22,15 @@ def verify(base,model,out):
   seals[name]=dict(watertight=True,components=1,volume_m3=float(tm.volume),minimum_triangle_area_m2=float(tm.area_faces.min()))
   g=lu['Su30NozzleGimbal_'+str(side)];assert sum(s.startswith('STA ') for s in g)==61
   R,t=transform(g,0);assert np.max(abs(R-np.eye(3)))<1e-12
- result=dict(baseline_sha256=sha(base.read_bytes()),model_sha256=sha(model.read_bytes()),all_original_packs_exact=len(p),original_nodes_exact=len(ns)-len(changed),nozzle_nodes_only_POS_rebased=len(changed),all_original_STA_CNT_PAX_exact=True,neutral_position_max_error_m=maxrest,new_nodes=[dnm.name(n) for n in nt if dnm.name(n) not in oldlu],new_seals=seals,protected_pack_sha256={k:sha(('\n'.join(v)+'\n').encode()) for k,v in p.items()})
+ # Check rendered gimbal axis against the force model independently, all encoded states.
+ maxaxis=0.
+ for side in range(2):
+  g=lu['Su30NozzleGimbal_'+str(side)]
+  for idx,a in enumerate([0]+[x*.5 for x in range(1,31)]+[-x*.5 for x in range(1,31)]):
+   R,_=transform(g,idx);rad=np.deg2rad(a);cant=np.deg2rad(32)
+   expected=np.array([(1 if side==0 else -1)*np.sin(cant)*np.sin(rad),-np.cos(cant)*np.sin(rad),np.cos(rad)])
+   maxaxis=max(maxaxis,float(np.linalg.norm(R@np.array([0,0,1])-expected)))
+ assert maxaxis<.00014 # DNM uses integer angle units pi/32768.
+ result=dict(render_force_direction_max_error=maxaxis,baseline_sha256=sha(base.read_bytes()),model_sha256=sha(model.read_bytes()),all_original_packs_exact=len(p),original_nodes_exact=len(ns)-len(changed),nozzle_nodes_only_POS_rebased=len(changed),all_original_STA_CNT_PAX_exact=True,neutral_position_max_error_m=maxrest,new_nodes=[dnm.name(n) for n in nt if dnm.name(n) not in oldlu],new_seals=seals,protected_pack_sha256={k:sha(('\n'.join(v)+'\n').encode()) for k,v in p.items()})
  out.write_text(json.dumps(result,indent=2));print('PASS original SRFs/gear/cockpit unaffected; nozzle rig neutral pose exact; two closed seals')
 if __name__=='__main__':verify(*map(Path,sys.argv[1:]))
