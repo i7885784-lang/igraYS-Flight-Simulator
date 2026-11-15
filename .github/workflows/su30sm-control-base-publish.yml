@@ -1,0 +1,55 @@
+name: Publish verified Su30 compact AOA panel
+on:
+  push:
+    branches: [fix/su30sm-control-base-20261115]
+    paths: [.github/workflows/su30sm-control-base-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-control-base
+            changes/su30sm-high-alpha
+            changes/su30sm-nozzle-vector
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-nozzle-vector
+            reports/su30sm-control-base
+            .github/workflows
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-ControlBase-build-32
+          path: artifacts/build-32
+          run-id: 43705370941
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-ControlBase-build-64
+          path: artifacts/build-64
+          run-id: 43705370941
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-ControlBase-native-32
+          path: artifacts/native-32
+          run-id: 43705370941
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-ControlBase-native-64
+          path: artifacts/native-64
+          run-id: 43705370941
+          github-token: ${{ github.token }}
+      - run: python changes/su30sm-control-base/package.py
+      - name: Publish separate Windows architectures and matching sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-control-base-20261115 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: основа ручного управления" --notes "Прогрессивная команда крена до120°/с вместо360°, ограниченное ускорение и гашение вращения. Устранена двойная команда автоматического руля в ручном полёте; пространственный угол скольжения и согласованные сопла. Панель иCtrlL сохранены. Без кнопки выхода и автовыравнивания. Геометрия,DAT,окраска,шасси,тяга сохранены. Нативные проверкиWin32/64, полный соответствующий исходный код, отчёт и откат. Не заводская СДУ, не гарантия вывода при любых условиях."
+          gh release upload su30sm-control-base-20261115 work/packages/* --repo i7885784-lang/igraYS-Flight-Simulator
