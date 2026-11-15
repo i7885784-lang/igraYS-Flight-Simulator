@@ -9,12 +9,18 @@ def put(rel,s):
  p.write_text(s)
 patch('YSFLIGHT/src/vehicle/fsairplaneproperty.h','#include "su30_nozzles.h"','#include "su30_nozzles.h"\n#include "su30_high_alpha.h"')
 patch('YSFLIGHT/src/vehicle/fsairplaneproperty.h','double GetNozzleOpening() const { return staNozzleOpening; }','double GetNozzleOpening() const { return staNozzleOpening; }\n bool IsSu30HighAlphaMode() const { return su30HighAlphaMode; }\n void SetSu30HighAlphaMode(bool value) {su30HighAlphaMode=value;}')
-patch('YSFLIGHT/src/vehicle/fsairplaneproperty.h','    Su30Nozzles::State su30Nozzles;','    bool su30HighAlphaMode=false;\n    Su30Nozzles::State su30Nozzles;')
-patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp','su30Nozzles.reset();staNozzleOpening=','su30HighAlphaMode=false;su30Nozzles.reset();staNozzleOpening=')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.h','    Su30Nozzles::State su30Nozzles;','    bool su30HighAlphaMode=false, su30HaveAoaSample=false;\n    double su30PreviousAoa=0, su30AoaRate=0;\n    Su30Nozzles::State su30Nozzles;')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp','su30Nozzles.reset();staNozzleOpening=','su30HighAlphaMode=false;su30HaveAoaSample=false;su30AoaRate=0;su30PreviousAoa=0;su30Nozzles.reset();staNozzleOpening=')
 patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp','\t\t\tstaDVPitch=(inputAOA-staAOA)*kPitch-staVPitch*bPitch;','''\t\t\tstaDVPitch=(inputAOA-staAOA)*kPitch-staVPitch*bPitch;
             if(su30HighAlphaMode && 0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM") && IsOnGround()!=YSTRUE &&
                ctlGControllerSwitch!=YSTRUE && ctlAOAControllerSwitch!=YSTRUE && ctlPitchControllerSwitch!=YSTRUE)
-                staDVPitch=Su30HighAlpha::acceleration(staV,staAOA,staVPitch,YsBound(ctlElevator+ctlElvTrim,-1.0,1.0),staDVPitch);''')
+                staDVPitch=Su30HighAlpha::acceleration(staV,staAOA,staVPitch,YsBound(ctlElevator+ctlElvTrim,-1.0,1.0),staDVPitch,su30AoaRate);''')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp',
+      '                          YsBound(ctlElevator+ctlElvTrim,-1.0,1.0),ctlAileron,GetRudder(),staVPitch,staVRoll,staVYaw);',
+      '                          (su30HighAlphaMode && IsOnGround()!=YSTRUE && ctlGControllerSwitch!=YSTRUE && ctlAOAControllerSwitch!=YSTRUE && ctlPitchControllerSwitch!=YSTRUE ? Su30HighAlpha::nozzlePitch(staV,staAOA,su30AoaRate,YsBound(ctlElevator+ctlElvTrim,-1.0,1.0)) : YsBound(ctlElevator+ctlElvTrim,-1.0,1.0)),ctlAileron,GetRudder(),staVPitch,staVRoll,staVYaw);')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp',
+      '        su30Nozzles.update(dt,staThrottle,YSTRUE==ctlAb && staThrottle>.90,running,staV,staAOA,',
+      '        su30AoaRate=su30HaveAoaSample?std::remainder(staAOA-su30PreviousAoa,2*YsPi)/dt:staVPitch;\n        su30PreviousAoa=staAOA;su30HaveAoaSample=true;\n        su30Nozzles.update(dt,staThrottle,YSTRUE==ctlAb && staThrottle>.90,running,staV,staAOA,')
 patch('YSFLIGHT/src/core/fssimulation.cpp','                if(mainWindowViewmode==FSCOCKPITVIEW && rawKey==FSKEY_SPACE)continue;','''                if(rawKey==FSKEY_L && FsGetKeyState(FSKEY_CTRL)==YSTRUE && GetPlayerAirplane() &&
                    0==strcmp(GetPlayerAirplane()->Prop().GetIdentifier(),"SU-30SM_CUSTOM"))
                 {
