@@ -10,4 +10,6 @@ cmake -S "$engine/YSFLIGHT/src" -B "$build" -G Ninja \
  '-DCMAKE_C_FLAGS=-Wno-error=incompatible-pointer-types' \
  '-DCMAKE_SHARED_LINKER_FLAGS=-static -static-libgcc -static-libstdc++' \
  '-DCMAKE_EXE_LINKER_FLAGS=-static -static-libgcc -static-libstdc++ -mwindows'
+# The source-only archive omits empty runtime directories needed by POST_BUILD.
+mkdir -p "$build/main/plugin"
 cmake --build "$build" --target "ysflight${bits}_gl1" --parallel 3
