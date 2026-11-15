@@ -66,3 +66,5 @@ jobs:
             native-${{ matrix.bits }}/results.json
             native-${{ matrix.bits }}/panel.png
           retention-days: 30
+
+# Include the panel submenu guard and telemetry window.
