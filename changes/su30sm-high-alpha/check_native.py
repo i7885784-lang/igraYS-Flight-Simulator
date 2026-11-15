@@ -41,9 +41,10 @@ def wait(needle,timeout=100):
   if needle in s:return s
   if game.poll() is not None:raise RuntimeError('Game exit '+str(game.returncode))
   time.sleep(.1)
- raise RuntimeError('Timeout '+needle)
+ raise RuntimeError('Timeout '+needle+'\n'+log.read_text(errors='replace')[-1800:])
 def key(k,down):u.keybd_event(k,0,0 if down else 2,0)
-def toggle():key(0x11,True);time.sleep(.08);key(0x4C,True);time.sleep(.16);key(0x4C,False);key(0x11,False);time.sleep(.15)
+def toggle():
+ u.SetForegroundWindow(window);time.sleep(.2);key(0x11,True);time.sleep(.4);key(0x4C,True);time.sleep(.5);key(0x4C,False);time.sleep(.1);key(0x11,False);time.sleep(.2)
 def shot(n):
  im=ImageGrab.grab(bbox=(0,0,1024,768)).convert('RGB');assert max(ImageStat.Stat(im).stddev)>12;im.save(out/(n+'.png'))
 try:
