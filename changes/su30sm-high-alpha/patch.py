@@ -52,4 +52,19 @@ patch('YSFLIGHT/src/core/fssimulation.cpp',
 patch('YSFLIGHT/src/core/fssimulation.cpp',
  ' if(Su27Cockpit(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW){',
  ' if(GetPlayerAirplane() && 0==strcmp(GetPlayerAirplane()->Prop().GetIdentifier(),"SU-30SM_CUSTOM") && GetPlayerAirplane()->Prop().su30AoaPanel && YSTRUE==FsIsMainWindowActive())\n {\n  FsSet2DDrawing();int w,h;FsGetWindowSize(w,h);const auto &p=GetPlayerAirplane()->Prop();\n  const int x=YsGreater(4,w-370),y=80;\n  FsDrawRect(x,y,x+360,y+150,YsBlack(),YSTRUE);\n  FsDrawRect(x,y,x+360,y+150,YsWhite(),YSFALSE);\n  FsDrawString(x+10,y+22,L"Су-30СМ: настройка пилотажа",YsWhite());\n  wchar_t text[160];swprintf(text,160,L"Предел: %.0f° | Сейчас: %.1f°",p.su30AoaLimitDeg,p.GetAOA()*180/YsPi);FsDrawString(x+10,y+47,text,YsWhite());\n  FsDrawString(x+10,y+72,p.IsSu30HighAlphaMode()?L"Ctrl+L: манёвренный режим":L"Ctrl+L: обычный режим",YsWhite());\n  FsDrawString(x+10,y+97,L"F7 −5° | F8 +5° | F9 сброс 65°",YsWhite());\n  FsDrawString(x+10,y+120,L"Ctrl+Shift+L: закрыть | Диапазон 30–110°",YsWhite());\n }\n if(Su27Cockpit(GetPlayerAirplane()) && mainWindowViewmode==FSCOCKPITVIEW){')
+
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.h',
+ ' bool IsSu30HighAlphaMode() const { return su30HighAlphaMode; }',
+ ' bool IsSu30HighAlphaMode() const { return su30HighAlphaMode; }\n bool IsSu30ManualAirborne() const {return 0==strcmp(GetIdentifier(),"SU-30SM_CUSTOM") && IsOnGround()!=YSTRUE && ctlBankControllerSwitch!=YSTRUE && ctlPitchControllerSwitch!=YSTRUE && ctlGControllerSwitch!=YSTRUE && ctlAOAControllerSwitch!=YSTRUE;}')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp',
+ 'void FsAirplaneProperty::SmartRudder(const double & /*dt*/)\n{',
+ 'void FsAirplaneProperty::SmartRudder(const double & /*dt*/)\n{\n    // Manual Su30 yaw feedback is handled once, with a non-singular sideslip.\n    if(IsSu30ManualAirborne()){ctlRudderControl=0;return;}')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp',
+ '\t\tstaDVRoll=(inputROLL-staVRoll)*kRoll;',
+ '\t\tstaDVRoll=(inputROLL-staVRoll)*kRoll;\n        if(IsSu30ManualAirborne())\n        {\n            YsVec3 flow;staAttitude.MulInverse(flow,staVelocity);\n            const double beta=Su30HighAlpha::sideslip(flow.x(),flow.y(),flow.z());\n            staDVRoll=Su30HighAlpha::rollAcceleration(ctlAileron,staVRoll,kRoll/3.0);\n            staDVYaw=YsBound((chMaxInputSSA*GetRudderUserInput()-beta)*kYaw-staVYaw*chYawStabConst,-YsPi*2/3,YsPi*2/3);\n        }')
+patch('YSFLIGHT/src/vehicle/fsairplaneproperty.cpp',
+ ')),ctlAileron,GetRudder(),staVPitch,staVRoll,staVYaw);',
+ ')),(IsSu30ManualAirborne()?Su30HighAlpha::rollDemand(ctlAileron)/(2*YsPi):ctlAileron),(IsSu30ManualAirborne()?GetRudderUserInput():GetRudder()),staVPitch,staVRoll,staVYaw);')
+patch('YSFLIGHT/src/ui/fsrunloop.cpp','pitchRate=%.6f highAlpha=%d','pitchRate=%.6f rollRate=%.6f yawRate=%.6f highAlpha=%d')
+patch('YSFLIGHT/src/ui/fsrunloop.cpp', 'return r.p()*180.0/YsPi;})(),int(p.IsSu30HighAlphaMode())', 'return r.p()*180.0/YsPi;})(),([&](){YsAtt3 r;p.GetRotationSpeed(r);return r.b()*180.0/YsPi;})(),([&](){YsAtt3 r;p.GetRotationSpeed(r);return r.h()*180.0/YsPi;})(),int(p.IsSu30HighAlphaMode())')
 print('Patched high-alpha manual control; no geometry/aircraft DAT changes')

@@ -7,6 +7,10 @@ namespace Su30HighAlpha {
 constexpr double Pi=3.14159265358979323846;
 inline double clamp(double x,double a,double b){return std::max(a,std::min(b,x));}
 inline double smooth(double x){x=clamp(x,0,1);return x*x*(3-2*x);}
+// Manual control: bounded roll demand with precision around center.
+inline double rollDemand(double stick){stick=clamp(stick,-1,1);return 120*Pi/180*(.35*stick+.65*stick*stick*stick);}
+inline double sideslip(double x,double y,double z){return std::atan2(x,std::hypot(y,z));}
+inline double rollAcceleration(double stick,double rate,double effectiveness){return clamp(5*(rollDemand(stick)-rate),-240*Pi/180,240*Pi/180)*clamp(effectiveness,0,1);}
 constexpr double PositiveLimit=110*Pi/180;
 constexpr double PositiveSoftStart=95*Pi/180;
 // Reserve stopping distance and input/actuator response time before the AOA boundary.
