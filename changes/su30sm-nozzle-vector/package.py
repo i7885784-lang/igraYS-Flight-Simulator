@@ -58,7 +58,7 @@ def build(out):
   for folder,data in [('baseline',baseline),('generated',models)]:
    for n,b in data.items():put(z,folder+'/'+n,b)
   put(z,'README.md',(STAGE/'README.md').read_bytes());put(z,'REPORT_RU.md',(report/'REPORT_RU.md').read_bytes())
-  for n in ['su30sm-nozzle-vector-native.yml','su30sm-nozzle-vector-publish.yml']:put(z,'.github/workflows/'+n,(ROOT/'.github/workflows'/n).read_bytes())
+  for n in ['su30sm-nozzle-vector-native.yml','su30sm-nozzle-vector-camera.yml','su30sm-nozzle-vector-publish.yml']:put(z,'.github/workflows/'+n,(ROOT/'.github/workflows'/n).read_bytes())
  with zipfile.ZipFile(sources) as z:assert z.testzip() is None
  visual=out/'Su30SM_VectorNozzles_Report.zip'
  with zipfile.ZipFile(visual,'w') as z:
