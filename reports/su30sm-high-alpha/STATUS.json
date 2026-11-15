@@ -1,0 +1,54 @@
+{
+  "completed": true,
+  "tag": "su30sm-high-alpha-20261115",
+  "release_id": 445882555,
+  "publish_run": 43689820693,
+  "native_runs": {
+    "32": 43689098018,
+    "64": 43687813404
+  },
+  "game_and_video_download_sha256_verified": true,
+  "source_zip_crc_and_seven_source_files_exact": true,
+  "report_crc_and_native_exe_hashes_match": true,
+  "video_url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-high-alpha-20261115/Su30SM_Cobra_600kmh_Views.mp4",
+  "video_sha256": "524d7a96e385502eda49cf47d048df240e4dac2a20ed853682bb2b7acd988cbc",
+  "video_duration_seconds": 66,
+  "mode_key": "Ctrl+L",
+  "default_mode": "normal; high-alpha override disabled",
+  "manual_cobra_recovery": "Standard native STRAIGHT autopilot after manual Cobra, disclosed in video",
+  "games": [
+    {
+      "file": "Su30SM_HighAlpha_Windows_x86.zip",
+      "bits": 32,
+      "sha256": "b5d147009328318cb0db438f6cef04a643ca92cb6286f3a1fc7d36e3010c0e77",
+      "bytes": 126750453,
+      "exe_sha256": "28e2e653bf715f94007bd243ddfea530ac70733f40bbe159b1f8ca249f18f52c",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "zip_crc_passed": true,
+      "unchanged_previous_entries": 1174,
+      "native_run": 43689098018,
+      "machine": "0x14c",
+      "optional_header": "0x10b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-high-alpha-20261115/Su30SM_HighAlpha_Windows_x86.zip"
+    },
+    {
+      "file": "Su30SM_HighAlpha_Windows_x64.zip",
+      "bits": 64,
+      "sha256": "41b84485eb58eddacaa82f6208c127447c4c00ff7470f5ce5fd98ecf6b0f2f2f",
+      "bytes": 127011964,
+      "exe_sha256": "9c8c0bd4df45bc55a7c54f93c760d58a8335f1c4de7ff560e8e20a15ac50c865",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "zip_crc_passed": true,
+      "unchanged_previous_entries": 1174,
+      "native_run": 43687813404,
+      "machine": "0x8664",
+      "optional_header": "0x20b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-high-alpha-20261115/Su30SM_HighAlpha_Windows_x64.zip"
+    }
+  ],
+  "scope": "Game approximation for SU-30SM_CUSTOM; geometry/DAT/paint/gear exact previous VectorNozzles. x64 detailed AOA telemetry; x86 actual keys/events/images on lightweight field. Not factory flight-control certification."
+}
