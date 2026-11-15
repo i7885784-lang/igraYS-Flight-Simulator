@@ -68,3 +68,4 @@ jobs:
           retention-days: 30
 
 # Include the panel submenu guard and telemetry window.
+# Final rectangle includes font baseline and footer.
