@@ -26,10 +26,12 @@ AIRPCMND INITSPED 166.666667m/s
 AIRPCMND CTLLDGEA FALSE
 AIRPCMND CTLTHROT 0.4
 AIRPCMND CTLABRNR FALSE
-''';(out/'start.yfs').write_text(fixture)
+'''
+if bits==32:fixture=fixture.replace('FIELDNAM AOMORI','FIELDNAM STRAIGHT_TEST')
+(out/'start.yfs').write_text(fixture)
 script='WAITFOR:GUI\nSLEEP:500\n'+'GUI:CLOSEMODAL\n'*4+'SLEEP:8000\nFILE:OPEN '+str(out/'start.yfs').replace('\\','/')+'\nGUI:CLICK mainDlg flyNow\nWAITFOR:FLYING\n'
 if bits==64:script+='FLIGHTCMD:TESTADVANCE .1\nBTNFUNC:COCKPITVIEW\nFLIGHTCMD:LABVIEW 90 5 125 0\n'+'BTNFUNC:VIEWZOOM\n'*26
-else:script+='BTNFUNC:OUTSIDEPLAYERVIEW\n'+'BTNFUNC:VIEWZOOM\n'*18
+else:script+='BTNFUNC:PAUSESIMULATION\nBTNFUNC:OUTSIDEPLAYERVIEW\n'+'BTNFUNC:VIEWZOOM\n'*18+'BTNFUNC:PAUSESIMULATION\n'
 script+='REM LIVE_READY\n'
 for i in range(240):script+='FLIGHTCMD:REPORT\n'+('FLIGHTCMD:MODELCHECK\n' if bits==64 else '')+'SLEEP:100\n'
 script+='SLEEP:60000\n';(out/'run.script').write_text(script);log=out/'game.log';h=log.open('w');game=subprocess.Popen([str(exe),'-userdir',str(profile),'-configdir',str(profile/'config'),'-script',str(out/'run.script')],cwd=rt,stdout=h,stderr=h)
@@ -44,7 +46,7 @@ def wait(needle,timeout=100):
  raise RuntimeError('Timeout '+needle+'\n'+log.read_text(errors='replace')[-1800:])
 def key(k,down):u.keybd_event(k,0,0 if down else 2,0)
 def toggle():
- u.SetForegroundWindow(window);time.sleep(.2);key(0x11,True);time.sleep(.4);key(0x4C,True);time.sleep(.5);key(0x4C,False);time.sleep(.1);key(0x11,False);time.sleep(.2)
+ u.SetForegroundWindow(window);time.sleep(.2);key(0x11,True);time.sleep(1.2 if bits==32 else .4);key(0x4C,True);time.sleep(1.2 if bits==32 else .5);key(0x4C,False);time.sleep(.1);key(0x11,False);time.sleep(.2)
 def shot(n):
  im=ImageGrab.grab(bbox=(0,0,1024,768)).convert('RGB');assert max(ImageStat.Stat(im).stddev)>12;im.save(out/(n+'.png'))
 try:
@@ -55,7 +57,7 @@ try:
   if pid.value==game.pid and u.IsWindowVisible(hwnd):wins.append(hwnd)
   return True
  u.EnumWindows(enum,0);assert wins;window=wins[-1];u.SetWindowLongW(window,-16,0x90000000);u.MoveWindow(window,0,0,1024,768,True);u.SetForegroundWindow(window)
- wait('Script>>REM LIVE_READY');time.sleep(.3);shot('normal-default');toggle();wait('SU30_HIGH_ALPHA enabled=1');time.sleep(.6);key(0x28,True)
+ wait('Script>>REM LIVE_READY');time.sleep(.3);shot('normal-default');toggle();wait('SU30_HIGH_ALPHA enabled=1');shot('limiter-enabled');time.sleep(.6);key(0x28,True)
  start=time.monotonic()
  for j in range(48):
   t=time.monotonic()-start
