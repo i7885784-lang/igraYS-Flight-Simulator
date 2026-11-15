@@ -1,0 +1,46 @@
+{
+  "completed": true,
+  "release_tag": "su30sm-nozzle-vectoring-20261115",
+  "native_run": 43676877534,
+  "rear_camera_run": 43677560943,
+  "publish_run": 43677767928,
+  "release_downloads_sha256_passed": true,
+  "source_zip_crc_and_corresponding_code_passed": true,
+  "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+  "cockpit_unchanged_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+  "games": [
+    {
+      "file": "Su30SM_VectorNozzles_Windows_x86.zip",
+      "sha256": "4a30f79a697f558979e3f1b1f8d23ede083c0c0769ff79e54d58bd10912637a4",
+      "bytes": 122923504,
+      "bits": 32,
+      "exe_sha256": "e649db35440467ae336ea104417ffed11dd3e5f2b4bc97e6a2e5981aa4e69872",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "native_run": 43676877534,
+      "unchanged_previous_entries": 1167,
+      "zip_crc_passed": true,
+      "machine": "0x14c",
+      "optional_header": "0x10b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-nozzle-vectoring-20261115/Su30SM_VectorNozzles_Windows_x86.zip"
+    },
+    {
+      "file": "Su30SM_VectorNozzles_Windows_x64.zip",
+      "sha256": "62f5d07fe623880dbb89862bec7e77e00643efd13bcca0b100b361ff03d69d52",
+      "bytes": 123098479,
+      "bits": 64,
+      "exe_sha256": "58f7a5fecc27f64bb0602d640d214f6159044f5fd2af62443f962abf097d2b51",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "native_run": 43676877534,
+      "unchanged_previous_entries": 1167,
+      "zip_crc_passed": true,
+      "machine": "0x8664",
+      "optional_header": "0x20b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-nozzle-vectoring-20261115/Su30SM_VectorNozzles_Windows_x64.zip"
+    }
+  ],
+  "limitations": "Game approximation of canted single-axis thrust vectoring. Factory FCS/FADEC tables, inertia, 32-degree cant and 15-degree/s actuator speed not independently confirmed. Old faceted petal edges preserved. Original CockpitFit remains rollback baseline."
+}
