@@ -1,10 +1,12 @@
 """Run genuine Windows executables, inspect extremes, then actual keyboard inputs."""
 from pathlib import Path
-import ctypes as C,ctypes.wintypes as W,sys,json,subprocess,time,re,hashlib,math
+import ctypes as C,ctypes.wintypes as W,sys,json,subprocess,time,re,hashlib,math,os
 from PIL import ImageGrab,ImageStat
 from prepare import ROOT,META,SHA,pe
 bits=int(sys.argv[1]);rt=ROOT/'runtime';out=ROOT/f'native-{bits}';out.mkdir(exist_ok=True);profile=out/'profile';(profile/'config').mkdir(parents=True,exist_ok=True)
 (profile/'config/option.cfg').write_text('OPENDEMO FALSE\nFONTHEIGHT 18\nLANGUAGE "FILE:ru.uitxt"\n');(out/'start.yfs').write_text((ROOT/'changes/su30sm-nozzle-vector/windows-start.yfs').read_text())
+if bits==64:
+ fixture=(out/'start.yfs').read_text().replace('AIRPLANE SU-30SM_CUSTOM TRUE','EXTENSIO AIRSHOW_V8 CONFIG 0 0 0 16 0.2 0.35\nAIRPLANE SU-30SM_CUSTOM TRUE');(out/'start.yfs').write_text(fixture)
 script='WAITFOR:GUI\nSLEEP:500\n'+'GUI:CLOSEMODAL\n'*4+'SLEEP:8000\nFILE:OPEN '+str(out/'start.yfs').replace('\\','/')+'\nGUI:CLICK mainDlg flyNow\nWAITFOR:FLYING\n'
 poses=[('neutral-open',0,0,1,0),('up-open',15,15,1,0),('down-open',-15,-15,1,0),('differential',15,-15,1,0),('narrow',0,0,0,0),('up-narrow',15,15,0,0),('gear-open',0,0,.5,1),('gear-half',0,0,.5,.5)]
 if bits==64:
@@ -44,6 +46,10 @@ try:
  u.EnumWindows(enum,0);assert wins;window=wins[-1];u.SetWindowLongW(window,-16,0x90000000);u.MoveWindow(window,0,0,1024,768,True);u.SetForegroundWindow(window)
  if bits==64:
   for name,*_ in poses:wait('Script>>REM SHOT_'+name);time.sleep(.4);shot(name)
+ if os.environ.get('STATIC_ONLY')=='1':
+  assert bits==64
+  result=dict(passed=True,native_windows=True,bits=bits,static_camera_only=True,exe_sha256=SHA(exe_data),model_sha256=META['model_sha256'],frames=frames)
+  (out/'results.json').write_text(json.dumps(result,indent=2));sys.exit(0)
  wait('Script>>REM LIVE_READY');time.sleep(1)
  for i in range(22):tap(0x51);time.sleep(.025)
  time.sleep(5);shot('live-dry-narrow');tap(9);time.sleep(3.5);shot('live-afterburner-open')

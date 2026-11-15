@@ -20,6 +20,11 @@ def build(out):
   destreport=report/f'native-{bits}';destreport.mkdir(exist_ok=True)
   for f in native.glob('*.png'):shutil.copyfile(f,destreport/f.name)
   check['actions_run_url']=f'https://github.com/{REPO}/actions/runs/{RUN}';(destreport/'results.json').write_text(json.dumps(check,indent=2));shutil.copyfile(built/'build-info.json',destreport/'build-info.json')
+  if bits==64:
+   static=ROOT/'artifacts/static-64';pose=json.loads((static/'results.json').read_text());assert pose['passed'] and pose['static_camera_only'] and pose['exe_sha256']==SHA(exe) and pose['model_sha256']==SHA(model)
+   poses=destreport/'rear-camera';poses.mkdir(exist_ok=True)
+   for f in static.glob('*.png'):shutil.copyfile(f,poses/f.name)
+   shutil.copyfile(static/'results.json',poses/'results.json')
   previous=old_game(bits,ROOT/'work/previous');dest=out/f'Su30SM_VectorNozzles_Windows_{arch}.zip'
   with zipfile.ZipFile(previous) as zi:
    assert zi.testzip() is None
