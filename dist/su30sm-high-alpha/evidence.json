@@ -1,0 +1,17 @@
+{
+  "file": "evidence.zip",
+  "bytes": 4833782,
+  "sha256": "7122f745b5049846901b3143cc36c0a9043ba2b7c12027f543c906a04a8cd267",
+  "parts": [
+    {
+      "file": "evidence.zip.part00",
+      "sha256": "347df4b8024689ef23e374fe93be79a14536a72687fefb6d306f8f5a59ba3861",
+      "bytes": 2621440
+    },
+    {
+      "file": "evidence.zip.part01",
+      "sha256": "d38e61dd8f6f03d212d63d0f2c1822772ead6db561ce01d74479d0b6db89c52b",
+      "bytes": 2212342
+    }
+  ]
+}
