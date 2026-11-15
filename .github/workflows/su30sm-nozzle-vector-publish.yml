@@ -1,0 +1,64 @@
+name: Publish verified Su30SM vector nozzles
+on:
+  push:
+    branches: [fix/su30sm-nozzle-vectoring-20261114]
+    paths: [.github/workflows/su30sm-nozzle-vector-publish.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            changes/su30sm-nozzle-vector
+            changes/su30sm-local-skin/model-source
+            dist/su30sm-nozzle-vector
+            reports/su30sm-nozzle-vector
+            .github/workflows
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-VectorNozzles-build-32
+          path: artifacts/build-32
+          run-id: 43676877534
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-VectorNozzles-build-64
+          path: artifacts/build-64
+          run-id: 43676877534
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-VectorNozzles-native-32
+          path: artifacts/native-32
+          run-id: 43676877534
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-VectorNozzles-native-64
+          path: artifacts/native-64
+          run-id: 43676877534
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: Su30SM-VectorNozzles-static-64
+          path: artifacts/static-64
+          run-id: 43677560943
+          github-token: ${{ github.token }}
+      - name: Verify enhanced independent controller tests without rebuilding the game
+        run: |
+          g++ -std=c++11 -O2 changes/su30sm-nozzle-vector/test_nozzles.cpp -o /tmp/su30-controller-test
+          /tmp/su30-controller-test
+      - name: Package exact native-tested architectures and corresponding sources
+        run: python changes/su30sm-nozzle-vector/package.py work/packages
+      - name: Publish separate architectures, sources, evidence and videos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create su30sm-nozzle-vectoring-20261115 --repo i7885784-lang/igraYS-Flight-Simulator --target "${{ github.sha }}" --prerelease --title "Су-30СМ: управляемые сопла и согласованное раскрытие" --notes-file reports/su30sm-nozzle-vector/RELEASE.md
+          gh release upload su30sm-nozzle-vectoring-20261115 work/packages/* --repo i7885784-lang/igraYS-Flight-Simulator
