@@ -37,3 +37,5 @@ jobs:
             native-32/*.png
             native-32/results.json
           retention-days: 30
+
+# Use lightweight field for software-rendered x86 input sampling.
