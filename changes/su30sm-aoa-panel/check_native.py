@@ -34,7 +34,7 @@ script='WAITFOR:GUI\nSLEEP:500\n'+'GUI:CLOSEMODAL\n'*4+'SLEEP:8000\nFILE:OPEN '+
 if bits==64:script+='FLIGHTCMD:TESTADVANCE .1\nBTNFUNC:COCKPITVIEW\nFLIGHTCMD:LABVIEW 90 5 125 0\n'+'BTNFUNC:VIEWZOOM\n'*26
 else:script+='BTNFUNC:PAUSESIMULATION\nBTNFUNC:OUTSIDEPLAYERVIEW\n'+'BTNFUNC:VIEWZOOM\n'*18+'BTNFUNC:PAUSESIMULATION\n'
 script+='REM LIVE_READY\n'
-for i in range(240):script+='FLIGHTCMD:REPORT\n'+('FLIGHTCMD:MODELCHECK\n' if bits==64 else '')+'SLEEP:100\n'
+for i in range(480):script+='FLIGHTCMD:REPORT\n'+('FLIGHTCMD:MODELCHECK\n' if bits==64 else '')+'SLEEP:100\n'
 script+='SLEEP:60000\n';(out/'run.script').write_text(script);log=out/'game.log';h=log.open('w');game=subprocess.Popen([str(exe),'-userdir',str(profile),'-configdir',str(profile/'config'),'-script',str(out/'run.script')],cwd=rt,stdout=h,stderr=h)
 u=C.windll.user32;u.GetWindowThreadProcessId.argtypes=[W.HWND,C.POINTER(W.DWORD)];u.IsWindowVisible.argtypes=[W.HWND];u.SetWindowLongW.argtypes=[W.HWND,C.c_int,C.c_long];u.MoveWindow.argtypes=[W.HWND,C.c_int,C.c_int,C.c_int,C.c_int,W.BOOL];u.SetForegroundWindow.argtypes=[W.HWND]
 def wait(needle,timeout=100):
@@ -63,6 +63,7 @@ try:
   return True
  u.EnumWindows(enum,0);assert wins;window=wins[-1];u.SetWindowLongW(window,-16,0x90000000);u.MoveWindow(window,0,0,1024,768,True);u.SetForegroundWindow(window)
  wait('Script>>REM LIVE_READY');time.sleep(.3);panel();wait('SU30_AOA_PANEL open=1 limit=65');tap(0x77);wait('SU30_AOA_PANEL open=1 limit=70');tap(0x76);wait('SU30_AOA_PANEL open=1 limit=65');tap(0x77);tap(0x78)
+ assert re.findall(r'SU30_AOA_PANEL open=1 limit=(\d+)',log.read_text(errors='replace'))[-1]=='65'
  if bits==64:ImageGrab.grab().save(out/'panel.png')
  panel();wait('SU30_AOA_PANEL open=0 limit=65');toggle();wait('SU30_HIGH_ALPHA enabled=1');shot('limiter-enabled');time.sleep(.6);key(0x28,True)
  start=time.monotonic()
