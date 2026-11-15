@@ -1,0 +1,46 @@
+{
+  "completed": true,
+  "release_id": 445915673,
+  "tag": "su30sm-aoa110-20261115",
+  "native_run": 43694670462,
+  "publish_run": 43695257441,
+  "positive_target_deg": 110,
+  "native_x64_held_stick_peak_deg": 108.688258,
+  "native_x64_release_aoa_deg": 0.578332,
+  "ordinary_control": "unchanged ~23-degree AOA command",
+  "mode_key": "Ctrl+L",
+  "video_and_screenshots_created": false,
+  "download_hashes_and_source_crc_verified": true,
+  "games": [
+    {
+      "file": "Su30SM_AOA110_Windows_x86.zip",
+      "bits": 32,
+      "sha256": "1ecb5b8b5b22a2648d88263c3bbf3ab3d5f52efdaf119057b44b114958b7b226",
+      "bytes": 130578521,
+      "exe_sha256": "820f90830da4fc3f73e075a472d821656f05bdc161c94cdac92a2936b224804e",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "zip_crc_passed": true,
+      "unchanged_previous_entries": 1178,
+      "machine": "0x14c",
+      "optional_header": "0x10b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-aoa110-20261115/Su30SM_AOA110_Windows_x86.zip"
+    },
+    {
+      "file": "Su30SM_AOA110_Windows_x64.zip",
+      "bits": 64,
+      "sha256": "27927b0375548ee4c9dc07b003e0ba4dc1bcfa0dc59850c7c120cea01feaf62d",
+      "bytes": 130925726,
+      "exe_sha256": "d08598d3e2a2f3806071b4b1853391b20b9bf1090b7d12c3d74ea2dc62a1c986",
+      "model_sha256": "e869eb09b071299f570fe840e24cd964c925cd74d2ad68ecaf1fea6818f6ab55",
+      "cockpit_sha256": "564308f1149862461dbc254dfb4372475a067ed0182eb61faf9d7345fa1807b9",
+      "native_windows_verified": true,
+      "zip_crc_passed": true,
+      "unchanged_previous_entries": 1178,
+      "machine": "0x8664",
+      "optional_header": "0x20b",
+      "url": "https://github.com/i7885784-lang/igraYS-Flight-Simulator/releases/download/su30sm-aoa110-20261115/Su30SM_AOA110_Windows_x64.zip"
+    }
+  ]
+}
